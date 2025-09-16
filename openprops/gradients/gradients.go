@@ -1,0 +1,37 @@
+package gradients
+
+type Gradient string
+
+const (
+	Gradient_1  Gradient = "--gradient-1"
+	Gradient_2  Gradient = "--gradient-2"
+	Gradient_3  Gradient = "--gradient-3"
+	Gradient_4  Gradient = "--gradient-4"
+	Gradient_5  Gradient = "--gradient-5"
+	Gradient_6  Gradient = "--gradient-6"
+	Gradient_7  Gradient = "--gradient-7"
+	Gradient_8  Gradient = "--gradient-8"
+	Gradient_9  Gradient = "--gradient-9"
+	Gradient_10 Gradient = "--gradient-10"
+	Gradient_11 Gradient = "--gradient-11"
+	Gradient_12 Gradient = "--gradient-12"
+	Gradient_13 Gradient = "--gradient-13"
+	Gradient_14 Gradient = "--gradient-14"
+	Gradient_15 Gradient = "--gradient-15"
+	Gradient_16 Gradient = "--gradient-16"
+	Gradient_17 Gradient = "--gradient-17"
+	Gradient_18 Gradient = "--gradient-18"
+	Gradient_19 Gradient = "--gradient-19"
+	Gradient_20 Gradient = "--gradient-20"
+	Gradient_21 Gradient = "--gradient-21"
+	Gradient_22 Gradient = "--gradient-22"
+	Gradient_23 Gradient = "--gradient-23"
+	Gradient_24 Gradient = "--gradient-24"
+	Gradient_25 Gradient = "--gradient-25"
+	Gradient_26 Gradient = "--gradient-26"
+	Gradient_27 Gradient = "--gradient-27"
+	Gradient_28 Gradient = "--gradient-28"
+	Gradient_29 Gradient = "--gradient-29"
+	Gradient_30 Gradient = "--gradient-30"
+	Gradient_31 Gradient = "--gradient-31"
+)
