@@ -1,22 +1,21 @@
 package gomix
 
 import (
-	"context"
 	"fmt"
 	"log"
 	"net/http"
 	"slices"
 
 	"github.com/raitucarp/gomix/components"
+	"github.com/raitucarp/gomix/element"
 )
 
 type App struct {
 	name      string
 	port      int
-	layout    *components.Component
+	layout    components.IsComponent
 	pages     []*Page
 	fragments []*Fragment
-	ctx       context.Context
 
 	scripts      []string
 	stylesheets  []string
@@ -25,18 +24,21 @@ type App struct {
 
 type LocationPath string
 
-func New(ctx context.Context, name string) *App {
+func New(name string) *App {
 	return &App{
-		name:   name,
-		ctx:    ctx,
-		layout: components.Body(components.Slot()).Component(),
+		name: name,
+		layout: components.Component(
+			element.Body(
+				element.Element(components.Slot()),
+			),
+		),
 	}
 }
 
 func (app *App) flattenPages() (pages []*Page) {
 	for _, page := range app.pages {
 		page.flattened = true
-		page.AddLayouts(func(page *Page) *components.Component { return app.layout })
+		page.AddLayouts(func(page *Page) components.IsComponent { return app.layout })
 		page.AddScripts(app.scripts...)
 
 		pages = append(pages, page)
@@ -57,8 +59,12 @@ func (app *App) EnableLogger() {
 	app.enableLogger = true
 }
 
-func (app *App) Layout(component *components.Component) {
-	app.layout = components.Body(component).Component()
+func (app *App) Layout(component components.IsComponent) {
+	app.layout = components.Component(
+		element.Body(
+			element.Element(component),
+		),
+	)
 }
 
 func (app *App) Addons(addons ...func(app *App)) {

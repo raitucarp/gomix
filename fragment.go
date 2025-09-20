@@ -21,7 +21,7 @@ type Fragment struct {
 	handler  func(w http.ResponseWriter, req *http.Request)
 }
 
-type FragmentComponent func(fragment *Fragment) *components.Component
+type FragmentComponent func(fragment *Fragment) components.IsComponent
 
 func (app *App) Fragment(path FragmentPath, component FragmentComponent) *Fragment {
 	fragment := NewFragment(path, component)
@@ -37,7 +37,7 @@ func (app *App) Fragment(path FragmentPath, component FragmentComponent) *Fragme
 func (fragment *Fragment) Render() {
 	component := fragment.component(fragment)
 
-	html.Render(fragment.response, component.GetNode())
+	html.Render(fragment.response, component.Element().GetNode())
 }
 
 func (fragment *Fragment) Request() *http.Request {

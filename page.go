@@ -5,9 +5,10 @@ import (
 	"net/http"
 
 	"github.com/raitucarp/gomix/components"
+	"github.com/raitucarp/gomix/element"
 )
 
-type PageComponent func(page *Page) *components.Component
+type PageComponent func(page *Page) components.IsComponent
 type PageSetup func(page *Page)
 
 type Page struct {
@@ -36,8 +37,8 @@ func (app *App) Page(path LocationPath, setup PageSetup) *Page {
 func NewPage(path LocationPath, setup PageSetup) *Page {
 	newPage := &Page{path: path,
 
-		component: func(page *Page) *components.Component {
-			return components.TextRaw("")
+		component: func(page *Page) components.IsComponent {
+			return element.Element(element.Text(""))
 		},
 		request: &http.Request{},
 	}
@@ -129,30 +130,32 @@ func (page *Page) Children(pages Pages) {
 	page.children = append(page.children, pages...)
 }
 
-func (page *Page) Render(lang string) string {
-	head := []*components.Component{
-		components.Meta(map[string]string{"charset": "UTF-8"}),
-		components.Meta(map[string]string{"name": "viewport", "content": "width=device-width, initial-scale=1.0"}),
-		components.Title(page.title),
+func (page *Page) Render(lang element.LanguageCode) string {
+	head := []element.IsHeadElement{
+		element.Meta(map[string]string{"charset": "UTF-8"}),
+		element.Meta(map[string]string{"name": "viewport", "content": "width=device-width, initial-scale=1.0"}),
+		element.Title(page.title),
 	}
 
 	for _, script := range page.scripts {
-		head = append(head, components.Script(script))
+		head = append(head, element.Script().Src(script))
 	}
 
-	layout := components.Html(lang).Children(
-		components.Head().Children(head...),
-		components.Body(
-			components.Slot(),
-		).Component(),
+	layout := components.Component(
+		element.Html(
+			element.Head(head...),
+			element.Body(
+				element.Element(
+					components.Slot(),
+				),
+			),
+		).Lang(lang),
 	)
 
 	for _, pageLayout := range page.layouts {
 		c := pageLayout(page)
 		layout = components.ApplyLayout(layout, c)
 	}
-
-	// component := page.component(page)
 
 	return components.Render(layout)
 }
