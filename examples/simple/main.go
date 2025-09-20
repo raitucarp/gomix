@@ -1,15 +1,14 @@
 package main
 
 import (
-	"context"
 	"log"
 	"net/http"
 	"time"
 
 	"github.com/raitucarp/gomix"
-	"github.com/raitucarp/gomix/addons"
+	"github.com/raitucarp/gomix/addons/htmx"
 	"github.com/raitucarp/gomix/components"
-	"github.com/raitucarp/gomix/components/styles"
+	"github.com/raitucarp/gomix/element"
 )
 
 func check(err error) {
@@ -29,23 +28,21 @@ const (
 	blogArticle gomix.FragmentPath = "/blog/{permalink}"
 )
 
-func MainLayout() *components.Component {
-	return components.Div().
-		Children(
-			components.TextRaw("This is main layout"),
-			components.Slot(),
-		)
+func MainLayout() components.IsComponent {
+	return element.Div(
+		element.Text("This is main layout"),
+		components.Slot(),
+	)
 }
 
-func HomeLayout(page *gomix.Page) *components.Component {
-	return components.Div().
-		Children(
-			components.Slot(),
-			components.TextRaw("Home layout"),
-		)
+func HomeLayout(page *gomix.Page) components.IsComponent {
+	return element.Div(
+		components.Slot(),
+		element.Text("Home layout"),
+	)
 }
 
-func BlogHomePage(page *gomix.Page) *components.Component {
+func BlogHomePage(page *gomix.Page) components.IsComponent {
 	http.SetCookie(page.Response(), &http.Cookie{
 		Name:     "my_cookie",
 		Value:    "some_value",
@@ -56,49 +53,43 @@ func BlogHomePage(page *gomix.Page) *components.Component {
 		SameSite: http.SameSiteLaxMode,
 	})
 
-	return components.Div(
+	return element.Div(
 		components.Slot(),
-		components.Div().Id("response-div"),
-		components.TextRaw("Welcome to the blog!"),
-		components.Button(components.TextRaw("testa")).
-			Autofocus().
-			Component().
-			Id("button-good").
-			HxGet("/blog/doyouwant").
-			HxTarget("#response-div"),
+		element.Element(element.Div()).Id("response-div"),
+		element.Text("Welcome to the blog!"),
+		htmx.Htmx(
+			element.Element(
+				element.Button(element.Text("testa")).Autofocus(),
+			).Id("button-good"),
+		).
+			Get("/blog/doyouwant").
+			Target("#response-div"),
 	)
 }
 
-func BlogArticle(fragment *gomix.Fragment) *components.Component {
+func BlogArticle(fragment *gomix.Fragment) components.IsComponent {
 	bb := fragment.Request().PathValue("permalink")
 
-	toAa := components.AsComponent(
-		components.
-			A(components.TextRaw("rere " + bb)).
-			Href("http://aa.com").
-			Target(components.AnchorBlank),
-	)
+	toAa := element.A(element.Text("rere " + bb)).
+		Href("http://aa.com").
+		Target(element.TargetBlank)
 
-	return components.Div(
-		components.TextRaw("what is "+bb),
+	return element.Div(
+		element.Text("what is "+bb),
 		toAa,
 	)
 }
 
-func ShopLayout(page *gomix.Page) *components.Component {
-	return components.Div().
-		Styles(styles.New().Aspect("3/4")).
-		Children(
-			components.TextRaw("Shop layout"),
-		)
+func ShopLayout(page *gomix.Page) components.IsComponent {
+	return element.Div(element.Text("Shop layout"))
 }
 
 func main() {
 
-	ctx := context.Background()
-
-	app := gomix.New(ctx, "Sample Test")
-	app.Addons(addons.Htmx)
+	app := gomix.New("Sample Test")
+	app.Addons(
+		htmx.Addon("2.0.7"),
+	)
 
 	app.EnableLogger()
 	app.Layout(MainLayout())
