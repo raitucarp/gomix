@@ -1,0 +1,5 @@
+package hyperscript
+
+func Element() {
+	
+}
