@@ -2,125 +2,87 @@ package components
 
 import (
 	"bytes"
-	"slices"
-	"strings"
 
 	"github.com/raitucarp/gomix/components/styles"
+	"github.com/raitucarp/gomix/element"
 	"golang.org/x/net/html"
 )
 
-type AsComponentInter interface {
-	Component() *Component
+type IsComponent interface {
+	Element() *element.HtmlElement
+	// Render() string
 }
 
-func AsComponent(c AsComponentInter) *Component {
-	return c.Component()
-}
-
-type Component struct {
-	node   *html.Node
+type component struct {
+	el     *element.HtmlElement
 	styles *styles.Styles
 
-	stylesheets []string
-	scripts     []string
+	// stylesheets []string
+	// scripts     []string
 }
 
-type Components []*Component
+func Component(c IsComponent) IsComponent {
+	comp := &component{
+		el: c.Element(),
+	}
 
-func (e *Component) addAttribute(key string, value string) {
-	e.node.Attr = append(e.node.Attr, html.Attribute{Namespace: "", Key: key, Val: value})
-	e.node.Attr = slices.CompactFunc(e.node.Attr, func(attr1 html.Attribute, attr2 html.Attribute) bool {
-		return attr1.Key == attr2.Key
-	})
+	return *comp
 }
 
-func (e *Component) addAttributeBool(key string) {
-	e.node.Attr = append(e.node.Attr, html.Attribute{Namespace: "", Key: key})
-	e.node.Attr = slices.CompactFunc(e.node.Attr, func(attr1 html.Attribute, attr2 html.Attribute) bool {
-		return attr1.Key == attr2.Key
-	})
+func cloneNode(n *html.Node) *html.Node {
+	if n == nil {
+		return nil
+	}
+	clone := &html.Node{
+		Type:      n.Type,
+		DataAtom:  n.DataAtom,
+		Data:      n.Data,
+		Namespace: n.Namespace,
+		Attr:      append([]html.Attribute{}, n.Attr...),
+	}
+	for c := n.FirstChild; c != nil; c = c.NextSibling {
+		childClone := cloneNode(c)
+		clone.AppendChild(childClone)
+	}
+	return clone
 }
 
-func (e *Component) Id(id string) *Component {
-	e.addAttribute("id", id)
-	return e
-}
+func ApplyLayout(layout IsComponent, e IsComponent) IsComponent {
 
-func (e *Component) Class(classnames ...string) *Component {
-	e.addAttribute("class", strings.Join(classnames, " "))
-	return e
-}
-
-func (c *Component) Title(title string) *Component {
-	c.addAttribute("title", title)
-	return c
-}
-
-func (c *Component) Lang(lang string) *Component {
-	c.addAttribute("lang", lang)
-	return c
-}
-
-func (c *Component) Aria(name string, value string) *Component {
-	c.addAttribute("aria-"+name, value)
-	return c
-}
-
-func (c *Component) Role(role string) *Component {
-	c.addAttribute("role", role)
-	return c
-}
-
-func (e *Component) Styles(s *styles.Styles) *Component {
-	e.styles = s
-	return e
-}
-
-func (e *Component) GetNode() *html.Node {
-	return e.node
-}
-
-func ApplyLayout(layout *Component, e *Component) *Component {
 	buffer := bytes.Buffer{}
-	html.Render(&buffer, layout.node)
+	html.Render(&buffer, cloneNode(layout.Element().GetNode()))
 
 	node, _ := html.Parse(&buffer)
-	r := *e.node
+	r := cloneNode(e.Element().GetNode())
 
 	for desc := range node.Descendants() {
 		if desc.Type == html.ElementNode && desc.Data == "slot" {
-			desc.Parent.InsertBefore(&r, desc)
+			desc.Parent.InsertBefore(r, desc)
 			desc.Parent.RemoveChild(desc)
 
 		}
 	}
 
-	n := &Component{node: node, styles: e.styles, stylesheets: e.stylesheets, scripts: e.scripts}
+	n := element.CreateElementByNode(node)
 
 	return n
 }
 
-func (e *Component) Children(components ...*Component) *Component {
+func (e *component) Children(components ...*component) *component {
 	for _, comp := range components {
-		e.node.AppendChild(comp.node)
+		e.el.Children(comp.el)
+		// e.node.AppendChild(comp.node)
 	}
 	return e
 }
 
-func Slot() *Component {
-	slot := &Component{
-		node: &html.Node{
-			Type: html.ElementNode,
-			Data: "slot",
-		},
-	}
-
-	return slot
+func (e component) Element() *element.HtmlElement {
+	return e.el
 }
 
-func Render(component *Component) string {
+func Render(c IsComponent) string {
 	buffer := bytes.Buffer{}
-	html.Render(&buffer, component.node)
+	html.Render(&buffer, c.Element().GetNode())
 
 	node, _ := html.Parse(&buffer)
 
