@@ -17,7 +17,7 @@ func (b *blockquote) Children(children ...IsElement) *blockquote {
 }
 func (b *blockquote) Component()            {}
 func (b *blockquote) isHtml()               {}
-func (b *blockquote) element() *HtmlElement { return b.el }
+func (b *blockquote) Element() *HtmlElement { return b.el }
 func (b *blockquote) Render() string        { return b.el.Render() }
 
 func Blockquote(child ...IsElement) *blockquote {

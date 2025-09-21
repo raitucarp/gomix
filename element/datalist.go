@@ -8,7 +8,7 @@ type datalist struct {
 
 func (d *datalist) Component()            {}
 func (d *datalist) isHtml()               {}
-func (d *datalist) element() *HtmlElement { return d.el }
+func (d *datalist) Element() *HtmlElement { return d.el }
 func (d *datalist) Render() string        { return d.el.Render() }
 
 func DataList(child *HtmlElement) *datalist {

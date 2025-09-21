@@ -18,7 +18,7 @@ func (b *bdo) Rtl() *bdo {
 
 func (b *bdo) Component()            {}
 func (b *bdo) isHtml()               {}
-func (b *bdo) element() *HtmlElement { return b.el }
+func (b *bdo) Element() *HtmlElement { return b.el }
 func (b *bdo) Render() string        { return b.el.Render() }
 
 func Bdo() *bdo {

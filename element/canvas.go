@@ -8,7 +8,7 @@ type canvas struct {
 
 func (c *canvas) Component()            {}
 func (c *canvas) isHtml()               {}
-func (c *canvas) element() *HtmlElement { return c.el }
+func (c *canvas) Element() *HtmlElement { return c.el }
 func (c *canvas) Render() string        { return c.el.Render() }
 
 func Canvas(message string) *canvas {

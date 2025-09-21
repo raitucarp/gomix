@@ -12,7 +12,7 @@ func (b *bold) Children(children ...IsElement) *bold {
 }
 func (b *bold) Component()            {}
 func (b *bold) isHtml()               {}
-func (b *bold) element() *HtmlElement { return b.el }
+func (b *bold) Element() *HtmlElement { return b.el }
 func (b *bold) Render() string        { return b.el.Render() }
 
 func B(child *HtmlElement) *bold {

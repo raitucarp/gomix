@@ -12,7 +12,7 @@ func (a *aside) Children(children ...IsElement) *aside {
 }
 func (a *aside) Component()            {}
 func (a *aside) isHtml()               {}
-func (a *aside) element() *HtmlElement { return a.el }
+func (a *aside) Element() *HtmlElement { return a.el }
 func (a *aside) Render() string        { return a.el.Render() }
 
 func Aside(child ...IsElement) *aside {

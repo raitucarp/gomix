@@ -8,7 +8,7 @@ type caption struct {
 
 func (c *caption) Component()            {}
 func (c *caption) isHtml()               {}
-func (c *caption) element() *HtmlElement { return c.el }
+func (c *caption) Element() *HtmlElement { return c.el }
 func (c *caption) Render() string        { return c.el.Render() }
 
 func Caption(child *HtmlElement) *caption {

@@ -13,7 +13,7 @@ func (d *dialog) Open() *HtmlElement {
 
 func (d *dialog) Component()            {}
 func (d *dialog) isHtml()               {}
-func (d *dialog) element() *HtmlElement { return d.el }
+func (d *dialog) Element() *HtmlElement { return d.el }
 func (d *dialog) Render() string        { return d.el.Render() }
 
 func Dialog(child *HtmlElement) *dialog {

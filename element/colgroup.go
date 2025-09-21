@@ -17,7 +17,7 @@ func (c *colgroup) Span(span int) *colgroup {
 
 func (c *colgroup) Component()            {}
 func (c *colgroup) isHtml()               {}
-func (c *colgroup) element() *HtmlElement { return c.el }
+func (c *colgroup) Element() *HtmlElement { return c.el }
 func (c *colgroup) Render() string        { return c.el.Render() }
 
 func ColGroup(child *HtmlElement) *colgroup {

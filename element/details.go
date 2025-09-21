@@ -18,7 +18,7 @@ func (d *details) Name(groupname string) *HtmlElement {
 
 func (d *details) Component()            {}
 func (d *details) isHtml()               {}
-func (d *details) element() *HtmlElement { return d.el }
+func (d *details) Element() *HtmlElement { return d.el }
 func (d *details) Render() string        { return d.el.Render() }
 
 func Details(children ...IsElement) *details {

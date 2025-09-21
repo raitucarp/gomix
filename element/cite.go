@@ -8,7 +8,7 @@ type cite struct {
 
 func (c *cite) Component()            {}
 func (c *cite) isHtml()               {}
-func (c *cite) element() *HtmlElement { return c.el }
+func (c *cite) Element() *HtmlElement { return c.el }
 func (c *cite) Render() string        { return c.el.Render() }
 
 func Cite(child *HtmlElement) *cite {

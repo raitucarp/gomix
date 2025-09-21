@@ -18,7 +18,7 @@ func (b *base) Target(target AnchorTarget) *HtmlElement {
 
 func (b *base) Component()            {}
 func (b *base) isHtml()               {}
-func (b *base) element() *HtmlElement { return b.el }
+func (b *base) Element() *HtmlElement { return b.el }
 func (b *base) Render() string        { return b.el.Render() }
 
 func Base() *base {

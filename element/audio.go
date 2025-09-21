@@ -50,7 +50,7 @@ func (a *audio) Children(children ...IsElement) *audio {
 }
 func (a *audio) Component()            {}
 func (a *audio) isHtml()               {}
-func (a *audio) element() *HtmlElement { return a.el }
+func (a *audio) Element() *HtmlElement { return a.el }
 func (a *audio) Render() string        { return a.el.Render() }
 
 func Audio(child ...IsElement) *audio {

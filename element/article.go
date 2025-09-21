@@ -12,7 +12,7 @@ func (a *article) Children(children ...IsElement) *article {
 }
 func (a *article) Component()            {}
 func (a *article) isHtml()               {}
-func (a *article) element() *HtmlElement { return a.el }
+func (a *article) Element() *HtmlElement { return a.el }
 func (a *article) Render() string        { return a.el.Render() }
 
 func Article(children ...IsElement) *article {

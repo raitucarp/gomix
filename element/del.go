@@ -22,7 +22,7 @@ func (d *del) DateTime(datetime time.Time) *HtmlElement {
 
 func (d *del) Component()            {}
 func (d *del) isHtml()               {}
-func (d *del) element() *HtmlElement { return d.el }
+func (d *del) Element() *HtmlElement { return d.el }
 func (d *del) Render() string        { return d.el.Render() }
 
 func Del(child *HtmlElement) *del {

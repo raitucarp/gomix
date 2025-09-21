@@ -13,7 +13,7 @@ func (d *data) Value(value string) *HtmlElement {
 
 func (d *data) Component()            {}
 func (d *data) isHtml()               {}
-func (d *data) element() *HtmlElement { return d.el }
+func (d *data) Element() *HtmlElement { return d.el }
 func (d *data) Render() string        { return d.el.Render() }
 
 func Data(child *HtmlElement) *data {

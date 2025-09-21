@@ -8,7 +8,7 @@ type dfn struct {
 
 func (d *dfn) Component()            {}
 func (d *dfn) isHtml()               {}
-func (d *dfn) element() *HtmlElement { return d.el }
+func (d *dfn) Element() *HtmlElement { return d.el }
 func (d *dfn) Render() string        { return d.el.Render() }
 
 func Dfn(child *HtmlElement) *dfn {

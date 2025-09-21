@@ -8,7 +8,7 @@ type dd struct {
 
 func (d *dd) Component()            {}
 func (d *dd) isHtml()               {}
-func (d *dd) element() *HtmlElement { return d.el }
+func (d *dd) Element() *HtmlElement { return d.el }
 func (d *dd) Render() string        { return d.el.Render() }
 
 func Dd(child *HtmlElement) *dd {

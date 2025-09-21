@@ -8,7 +8,7 @@ type br struct {
 
 func (b *br) Component()            {}
 func (b *br) isHtml()               {}
-func (b *br) element() *HtmlElement { return b.el }
+func (b *br) Element() *HtmlElement { return b.el }
 func (b *br) Render() string        { return b.el.Render() }
 
 func Br() *br {
