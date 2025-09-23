@@ -132,8 +132,8 @@ func (page *Page) Children(pages Pages) {
 
 func (page *Page) Render(lang element.LanguageCode) string {
 	head := []element.IsHeadElement{
-		element.Meta(map[string]string{"charset": "UTF-8"}),
-		element.Meta(map[string]string{"name": "viewport", "content": "width=device-width, initial-scale=1.0"}),
+		element.Meta().CharSet("UTF-8"),
+		element.Meta().Name(element.MetaNameViewport).Content("width=device-width, initial-scale=1.0"),
 		element.Title(page.title),
 	}
 
