@@ -25,24 +25,26 @@ const (
 )
 
 const (
-	blogArticle gomix.FragmentPath = "/blog/{permalink}"
+	blogArticleFramentPath gomix.FragmentPath = "/blog/{permalink}"
 )
 
-func MainLayout() components.IsComponent {
-	return element.Div(
-		element.Text("This is main layout"),
-		components.Slot(),
+type isComponent = components.IsComponent
+
+func MainLayout() isComponent {
+	return div(
+		text("This is main layout"),
+		slot(),
 	)
 }
 
-func HomeLayout(page *gomix.Page) components.IsComponent {
-	return element.Div(
-		components.Slot(),
-		element.Text("Home layout"),
+func HomeLayout(page *gomix.Page) isComponent {
+	return div(
+		slot(),
+		text("Home layout"),
 	)
 }
 
-func BlogHomePage(page *gomix.Page) components.IsComponent {
+func BlogHomePage(page *gomix.Page) isComponent {
 	http.SetCookie(page.Response(), &http.Cookie{
 		Name:     "my_cookie",
 		Value:    "some_value",
@@ -53,38 +55,56 @@ func BlogHomePage(page *gomix.Page) components.IsComponent {
 		SameSite: http.SameSiteLaxMode,
 	})
 
-	return element.Div(
-		components.Slot(),
-		element.Element(element.Div()).Id("response-div"),
-		element.Text("Welcome to the blog!"),
-		htmx.Htmx(
-			element.Element(
-				element.Button(element.Text("testa")).Autofocus(),
-			).Id("button-good"),
-		).
-			Get("/blog/doyouwant").
-			Target("#response-div"),
+	return div(
+		slot(),
+		div(
+			text("this is response div"),
+			div(text("inner div")),
+		).Element().Id("response-div"),
+		text("Welcome to the blog!"),
+		Htmx(
+			button(text("testa")).Autofocus().Element().Id("button-good"),
+		).Get("/blog/doyouwant").Target("#response-div"),
 	)
 }
 
-func BlogArticle(fragment *gomix.Fragment) components.IsComponent {
-	bb := fragment.Request().PathValue("permalink")
+func BlogArticle(fragment *gomix.Fragment) isComponent {
+	permalinkValue := fragment.Request().PathValue("permalink")
 
-	toAa := element.A(element.Text("rere " + bb)).
-		Href("http://aa.com").
-		Target(element.TargetBlank)
+	aaLink := a(
+		text("rere " + permalinkValue),
+	).Href("http://aa.com").Target(element.TargetBlank)
 
-	return element.Div(
-		element.Text("what is "+bb),
-		toAa,
+	return div(
+		text("what is "+permalinkValue),
+		text(" "),
+		aaLink,
 	)
 }
 
-func ShopLayout(page *gomix.Page) components.IsComponent {
-	return element.Div(element.Text("Shop layout"))
+func ShopLayout(page *gomix.Page) isComponent {
+	return div(
+		text("Shop layout"),
+	)
 }
 
 func main() {
+
+	/*
+		app(
+			addons(
+				htmx("2.0.7"),
+			),
+			features(
+				logger(),
+			),
+			pages(
+				page(homePath, HomePage),
+				page(shopPath, ShopPage),
+			),
+			port(8080),
+		)
+	*/
 
 	app := gomix.New("Sample Test")
 	app.Addons(
@@ -94,7 +114,7 @@ func main() {
 	app.EnableLogger()
 	app.Layout(MainLayout())
 
-	app.Fragment(blogArticle, BlogArticle)
+	app.Fragment(blogArticleFramentPath, BlogArticle)
 
 	app.Page(homePath, HomePage)
 	app.Page(shopPath, ShopPage)
