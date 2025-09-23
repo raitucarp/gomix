@@ -32,7 +32,7 @@ const (
 	Noopener   AnchorRel = "noopener"   // Requires that any browsing context created by following the hyperlink must not have an opener browsing context
 	Noreferrer AnchorRel = "noreferrer" // Makes the referrer unknown. No referer header will be included when the user clicks the hyperlink
 	Prev       AnchorRel = "prev"       // The previous document in a selection
-	Search     AnchorRel = "search"     // Links to a search tool for the document
+	SearchRel  AnchorRel = "search"     // Links to a search tool for the document
 	Tag        AnchorRel = "tag"        // A tag (keyword) for the current document
 )
 
