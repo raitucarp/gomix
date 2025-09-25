@@ -1,0 +1,161 @@
+package styles
+
+import (
+	"fmt"
+	"strconv"
+
+	"github.com/raitucarp/gomix/themes"
+)
+
+func Basis(number int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+		}
+	}
+}
+
+func BasisFraction(fraction float64) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): fmt.Sprintf("calc(%s * 100)", strconv.FormatFloat(fraction, 'f', -1, 32)),
+		}
+	}
+}
+
+func BasisFull() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): "100%",
+		}
+	}
+}
+
+func BasisAuto() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): "auto",
+		}
+	}
+}
+
+func Basis3xs() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "3xs"),
+		}
+	}
+}
+
+func Basis2xs() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "2xs"),
+		}
+	}
+}
+
+func BasisXs() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "xs"),
+		}
+	}
+}
+
+func BasisSm() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "sm"),
+		}
+	}
+}
+
+func BasisMd() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "md"),
+		}
+	}
+}
+
+func BasisLg() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "lg"),
+		}
+	}
+}
+
+func BasisXl() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "xl"),
+		}
+	}
+}
+
+func Basis2xl() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "2xl"),
+		}
+	}
+}
+
+func Basis3xl() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "3xl"),
+		}
+	}
+}
+
+func Basis4xl() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "4xl"),
+		}
+	}
+}
+
+func Basis5xl() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "5xl"),
+		}
+	}
+}
+
+func Basis6xl() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "6xl"),
+		}
+	}
+
+}
+
+func Basis7xl() ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "7xl"),
+		}
+	}
+}
+
+func BasisCustomProperty(customProperty string) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): fmt.Sprintf("var(--%s)", customProperty),
+		}
+	}
+}
+
+func BasisValue(value customValue) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(flexBasisProp): value.String(),
+		}
+	}
+}
