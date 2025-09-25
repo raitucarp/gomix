@@ -3,7 +3,6 @@ package components
 import (
 	"bytes"
 
-	"github.com/raitucarp/gomix/components/styles"
 	"github.com/raitucarp/gomix/element"
 	"golang.org/x/net/html"
 )
@@ -14,8 +13,8 @@ type IsComponent interface {
 }
 
 type component struct {
-	el     *element.HtmlElement
-	styles *styles.Styles
+	el *element.HtmlElement
+	// styles *styles.Styles
 
 	// stylesheets []string
 	// scripts     []string

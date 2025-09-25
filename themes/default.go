@@ -6,6 +6,20 @@ var DefaultVariables = map[string]*Variables{
 
 }
 
+/*
+DefaultTheme = Theme(
+	fonts(
+		sans(),
+		serif(),
+		mono(),
+	), 
+
+	colors(
+		redColor()
+	)
+)
+*/
+
 // --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 // --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
