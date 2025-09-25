@@ -36,7 +36,20 @@ const (
 	overscrollBehaviorYProp Prop = "overscroll-behavior-y"
 	visibilityProp          Prop = "visibility"
 	zIndexProp              Prop = "z-index"
+	insetProp               Prop = "inset"
+	insetInlineProp         Prop = "inset-inline"
+	insetBlockProp          Prop = "inset-block"
+	insetStartProp          Prop = "inset-inline-start"
+	insetEndProp            Prop = "inset-inline-end"
+	topProp                 Prop = "top"
+	bottomProp              Prop = "bottom"
+	leftProp                Prop = "left"
+	rightProp               Prop = "right"
 )
+
+type customValue interface {
+	String() string
+}
 
 type properties map[string]string
 
