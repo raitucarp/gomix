@@ -10,7 +10,7 @@ import (
 func Basis(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexBasisProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+			string(flexBasisProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }

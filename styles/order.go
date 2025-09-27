@@ -16,7 +16,7 @@ func Order(number int) ApplyProp {
 func NegOrder(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(orderProp): fmt.Sprintf("calc(%s * -1)", strconv.Itoa(number)),
+			string(orderProp): fmt.Sprintf("calc(%d * -1)", number),
 		}
 	}
 }

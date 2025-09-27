@@ -2,13 +2,12 @@ package styles
 
 import (
 	"fmt"
-	"strconv"
 )
 
 func GridCols(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridTemplateColumnsProp): fmt.Sprintf("repeat(%s, minmax(0, 1fr))", strconv.Itoa(number)),
+			string(gridTemplateColumnsProp): fmt.Sprintf("repeat(%d, minmax(0, 1fr))", number),
 		}
 	}
 }

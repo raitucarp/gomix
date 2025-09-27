@@ -8,7 +8,7 @@ import (
 func Inset(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+			string(insetProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }
@@ -16,7 +16,7 @@ func Inset(number int) ApplyProp {
 func NegInset(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetProp): fmt.Sprintf("calc(var(--spacing) * -%s)", strconv.Itoa(number)),
+			string(insetProp): fmt.Sprintf("calc(var(--spacing) * -%d)", number),
 		}
 	}
 }
@@ -98,7 +98,7 @@ func InsetValue(value customValue) ApplyProp {
 func InsetX(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetInlineProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+			string(insetInlineProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }
@@ -106,7 +106,7 @@ func InsetX(number int) ApplyProp {
 func NegInsetX(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetInlineProp): fmt.Sprintf("calc(var(--spacing) * -%s)", strconv.Itoa(number)),
+			string(insetInlineProp): fmt.Sprintf("calc(var(--spacing) * -%d)", number),
 		}
 	}
 }
@@ -188,7 +188,7 @@ func InsetXValue(value customValue) ApplyProp {
 func InsetY(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetBlockProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+			string(insetBlockProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }
@@ -196,7 +196,7 @@ func InsetY(number int) ApplyProp {
 func NegInsetY(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetBlockProp): fmt.Sprintf("calc(var(--spacing) * -%s)", strconv.Itoa(number)),
+			string(insetBlockProp): fmt.Sprintf("calc(var(--spacing) * -%d)", number),
 		}
 	}
 }
@@ -278,7 +278,7 @@ func InsetYValue(value customValue) ApplyProp {
 func Start(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetStartProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+			string(insetStartProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }
@@ -286,7 +286,7 @@ func Start(number int) ApplyProp {
 func NegStart(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetStartProp): fmt.Sprintf("calc(var(--spacing) * -%s)", strconv.Itoa(number)),
+			string(insetStartProp): fmt.Sprintf("calc(var(--spacing) * -%d)", number),
 		}
 	}
 }
@@ -368,7 +368,7 @@ func StartValue(value customValue) ApplyProp {
 func End(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetEndProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+			string(insetEndProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }
@@ -376,7 +376,7 @@ func End(number int) ApplyProp {
 func NegEnd(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetEndProp): fmt.Sprintf("calc(var(--spacing) * -%s)", strconv.Itoa(number)),
+			string(insetEndProp): fmt.Sprintf("calc(var(--spacing) * -%d)", number),
 		}
 	}
 }
@@ -458,7 +458,7 @@ func EndValue(value customValue) ApplyProp {
 func Top(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(topProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+			string(topProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }
@@ -466,7 +466,7 @@ func Top(number int) ApplyProp {
 func NegTop(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(topProp): fmt.Sprintf("calc(var(--spacing) * -%s)", strconv.Itoa(number)),
+			string(topProp): fmt.Sprintf("calc(var(--spacing) * -%d)", number),
 		}
 	}
 }
@@ -548,7 +548,7 @@ func TopValue(value customValue) ApplyProp {
 func Right(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(rightProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+			string(rightProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }
@@ -556,7 +556,7 @@ func Right(number int) ApplyProp {
 func NegRight(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(rightProp): fmt.Sprintf("calc(var(--spacing) * -%s)", strconv.Itoa(number)),
+			string(rightProp): fmt.Sprintf("calc(var(--spacing) * -%d)", number),
 		}
 	}
 }
@@ -638,7 +638,7 @@ func RightValue(value customValue) ApplyProp {
 func Bottom(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(bottomProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+			string(bottomProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }
@@ -646,7 +646,7 @@ func Bottom(number int) ApplyProp {
 func NegBottom(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(bottomProp): fmt.Sprintf("calc(var(--spacing) * -%s)", strconv.Itoa(number)),
+			string(bottomProp): fmt.Sprintf("calc(var(--spacing) * -%d)", number),
 		}
 	}
 }
@@ -728,7 +728,7 @@ func BottomValue(value customValue) ApplyProp {
 func Left(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(leftProp): fmt.Sprintf("calc(var(--spacing) * %s)", strconv.Itoa(number)),
+			string(leftProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }
@@ -736,7 +736,7 @@ func Left(number int) ApplyProp {
 func NegLeft(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(leftProp): fmt.Sprintf("calc(var(--spacing) * -%s)", strconv.Itoa(number)),
+			string(leftProp): fmt.Sprintf("calc(var(--spacing) * -%d)", number),
 		}
 	}
 }

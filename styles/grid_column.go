@@ -8,7 +8,7 @@ import (
 func ColSpan(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnProp): fmt.Sprintf("span %s / span %s", strconv.Itoa(number), strconv.Itoa(number)),
+			string(gridColumnProp): fmt.Sprintf("span %d / span %d", number, number),
 		}
 	}
 }
@@ -48,7 +48,7 @@ func ColStart(number int) ApplyProp {
 func NegColStart(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnStartProp): fmt.Sprintf("calc(%s * -1)", strconv.Itoa(number)),
+			string(gridColumnStartProp): fmt.Sprintf("calc(%d * -1)", number),
 		}
 	}
 }
@@ -88,7 +88,7 @@ func ColEnd(number int) ApplyProp {
 func NegColEnd(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnEndProp): fmt.Sprintf("calc(%s * -1)", strconv.Itoa(number)),
+			string(gridColumnEndProp): fmt.Sprintf("calc(%d * -1)", number),
 		}
 	}
 }
@@ -136,7 +136,7 @@ func Col(number int) ApplyProp {
 func NegCol(number int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnProp): fmt.Sprintf("calc(%s * -1)", strconv.Itoa(number)),
+			string(gridColumnProp): fmt.Sprintf("calc(%d * -1)", number),
 		}
 	}
 }
