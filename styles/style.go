@@ -14,6 +14,13 @@ const (
 	alignItemsProp           Prop = "align-items"
 	alignSelfProp            Prop = "align-self"
 	aspectRatioProp          Prop = "aspect-ratio"
+	backgroundAttachmentProp Prop = "background-attachment"
+	backgroundClipProp       Prop = "background-clip"
+	backgroundColorProp      Prop = "background-color"
+	backgroundOriginProp     Prop = "background-origin"
+	backgroundPositionProp   Prop = "background-position"
+	backgroundRepeatProp     Prop = "background-repeat"
+	backgroundSizeProp       Prop = "background-size"
 	borderWidthProp          Prop = "border-width"
 	bottomProp               Prop = "bottom"
 	boxDecorationProp        Prop = "box-decoration"
@@ -128,13 +135,6 @@ const (
 	widthProp                Prop = "width"
 	wordBreakProp            Prop = "word-break"
 	zIndexProp               Prop = "z-index"
-	backgroundAttachmentProp Prop = "background-attachment"
-	backgroundClipProp       Prop = "background-clip"
-	backgroundColorProp      Prop = "background-color"
-	backgroundSizeProp       Prop = "background-size"
-	backgroundRepeatProp     Prop = "background-repeat"
-	backgroundPositionProp   Prop = "background-position"
-	backgroundOriginProp     Prop = "background-origin"
 )
 
 type CustomValue interface {
