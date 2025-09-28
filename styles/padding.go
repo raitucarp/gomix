@@ -26,7 +26,7 @@ func PCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func PValue(value customValue) ApplyProp {
+func PValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(paddingProp): value.String(),
@@ -58,7 +58,7 @@ func PxCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func PxValue(value customValue) ApplyProp {
+func PxValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(paddingInlineProp): value.String(),
@@ -90,7 +90,7 @@ func PyCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func PyValue(value customValue) ApplyProp {
+func PyValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(paddingBlockProp): value.String(),
@@ -122,7 +122,7 @@ func PsCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func PsValue(value customValue) ApplyProp {
+func PsValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(paddingInlineStartProp): value.String(),
@@ -154,7 +154,7 @@ func PeCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func PeValue(value customValue) ApplyProp {
+func PeValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(paddingInlineEndProp): value.String(),
@@ -186,7 +186,7 @@ func PtCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func PtValue(value customValue) ApplyProp {
+func PtValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(paddingTopProp): value.String(),
@@ -218,7 +218,7 @@ func PrCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func PrValue(value customValue) ApplyProp {
+func PrValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(paddingRightProp): value.String(),
@@ -250,7 +250,7 @@ func PbCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func PbValue(value customValue) ApplyProp {
+func PbValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(paddingBottomProp): value.String(),
@@ -282,7 +282,7 @@ func PlCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func PlValue(value customValue) ApplyProp {
+func PlValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(paddingLeftProp): value.String(),

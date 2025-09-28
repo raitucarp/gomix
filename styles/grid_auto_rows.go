@@ -42,7 +42,7 @@ func AutoRowsCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func AutoRowsValue(value customValue) ApplyProp {
+func AutoRowsValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(gridAutoRowsProp): value.String(),

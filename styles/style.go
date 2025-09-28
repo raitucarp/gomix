@@ -93,7 +93,7 @@ const (
 	zIndexProp              Prop = "z-index"
 )
 
-type customValue interface {
+type CustomValue interface {
 	String() string
 }
 

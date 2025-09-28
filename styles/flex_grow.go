@@ -21,7 +21,7 @@ func GrowNumber(number int) ApplyProp {
 	}
 }
 
-func GrowValue(value customValue) ApplyProp {
+func GrowValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(flexGrowProp): value.String(),

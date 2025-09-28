@@ -42,7 +42,7 @@ func AutoColsCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func AutoColsValue(value customValue) ApplyProp {
+func AutoColsValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(gridAutoColumnsProp): value.String(),

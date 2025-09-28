@@ -45,7 +45,7 @@ func OrderCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func OrderValue(value customValue) ApplyProp {
+func OrderValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(orderProp): value.String(),

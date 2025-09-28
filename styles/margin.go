@@ -50,7 +50,7 @@ func MCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func MValue(value customValue) ApplyProp {
+func MValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(marginProp): value.String(),
@@ -106,7 +106,7 @@ func MxCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func MxValue(value customValue) ApplyProp {
+func MxValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(marginInlineProp): value.String(),
@@ -162,7 +162,7 @@ func MyCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func MyValue(value customValue) ApplyProp {
+func MyValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(marginBlockProp): value.String(),
@@ -218,7 +218,7 @@ func MsCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func MsValue(value customValue) ApplyProp {
+func MsValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(marginInlineStartProp): value.String(),
@@ -274,7 +274,7 @@ func MeCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func MeValue(value customValue) ApplyProp {
+func MeValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(marginInlineEndProp): value.String(),
@@ -330,7 +330,7 @@ func MtCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func MtValue(value customValue) ApplyProp {
+func MtValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(marginTopProp): value.String(),
@@ -386,7 +386,7 @@ func MrCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func MrValue(value customValue) ApplyProp {
+func MrValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(marginRightProp): value.String(),
@@ -442,7 +442,7 @@ func MbCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func MbValue(value customValue) ApplyProp {
+func MbValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(marginBottomProp): value.String(),
@@ -498,7 +498,7 @@ func MlCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func MlValue(value customValue) ApplyProp {
+func MlValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(marginLeftProp): value.String(),

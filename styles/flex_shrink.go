@@ -21,7 +21,7 @@ func ShrinkNumber(number int) ApplyProp {
 	}
 }
 
-func ShrinkValue(value customValue) ApplyProp {
+func ShrinkValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(flexShrinkProp): value.String(),

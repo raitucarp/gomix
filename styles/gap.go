@@ -18,7 +18,7 @@ func GapCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func GapValue(value customValue) ApplyProp {
+func GapValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(gapProp): value.String(),
@@ -42,7 +42,7 @@ func GapXCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func GapXValue(value customValue) ApplyProp {
+func GapXValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(gapXProp): value.String(),
@@ -66,7 +66,7 @@ func GapYCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func GapYValue(value customValue) ApplyProp {
+func GapYValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(gapYProp): value.String(),

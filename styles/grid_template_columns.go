@@ -36,7 +36,7 @@ func GridColsCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func GridColsValue(value customValue) ApplyProp {
+func GridColsValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(gridTemplateColumnsProp): value.String(),

@@ -152,7 +152,7 @@ func BasisCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func BasisValue(value customValue) ApplyProp {
+func BasisValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(flexBasisProp): value.String(),

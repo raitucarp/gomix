@@ -53,7 +53,7 @@ func FlexCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func FlexValue(value customValue) ApplyProp {
+func FlexValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(flexProp): value.String(),

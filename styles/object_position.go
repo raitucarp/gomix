@@ -82,7 +82,7 @@ func ObjectCustomProperty(propertyName string) ApplyProp {
 	}
 }
 
-func ObjectValue(value customValue) ApplyProp {
+func ObjectValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(objectPositionProp): value.String(),

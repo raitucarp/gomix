@@ -29,7 +29,7 @@ func ZCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func ZValue(value customValue) ApplyProp {
+func ZValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(zIndexProp): value.String(),

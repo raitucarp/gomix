@@ -85,7 +85,7 @@ func InsetCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func InsetValue(value customValue) ApplyProp {
+func InsetValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(insetProp): value.String(),
@@ -175,7 +175,7 @@ func InsetXCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func InsetXValue(value customValue) ApplyProp {
+func InsetXValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(insetInlineProp): value.String(),
@@ -265,7 +265,7 @@ func InsetYCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func InsetYValue(value customValue) ApplyProp {
+func InsetYValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(insetBlockProp): value.String(),
@@ -355,7 +355,7 @@ func StartCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func StartValue(value customValue) ApplyProp {
+func StartValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(insetStartProp): value.String(),
@@ -445,7 +445,7 @@ func EndCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func EndValue(value customValue) ApplyProp {
+func EndValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(insetEndProp): value.String(),
@@ -535,7 +535,7 @@ func TopCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func TopValue(value customValue) ApplyProp {
+func TopValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(topProp): value.String(),
@@ -625,7 +625,7 @@ func RightCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func RightValue(value customValue) ApplyProp {
+func RightValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(rightProp): value.String(),
@@ -715,7 +715,7 @@ func BottomCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func BottomValue(value customValue) ApplyProp {
+func BottomValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(bottomProp): value.String(),
@@ -805,7 +805,7 @@ func LeftCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func LeftValue(value customValue) ApplyProp {
+func LeftValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(leftProp): value.String(),

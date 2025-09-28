@@ -29,7 +29,7 @@ func ColSpanCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func ColSpanValue(value customValue) ApplyProp {
+func ColSpanValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(gridColumnProp): fmt.Sprintf("span %v / span %v", value.String(), value.String()),
@@ -69,7 +69,7 @@ func ColStartCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func ColStartValue(value customValue) ApplyProp {
+func ColStartValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(gridColumnStartProp): value.String(),
@@ -109,7 +109,7 @@ func ColEndCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func ColEndValue(value customValue) ApplyProp {
+func ColEndValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(gridColumnEndProp): value.String(),
@@ -149,7 +149,7 @@ func ColCustomProperty(customProperty string) ApplyProp {
 	}
 }
 
-func ColValue(value customValue) ApplyProp {
+func ColValue(value CustomValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(gridColumnProp): value.String(),
