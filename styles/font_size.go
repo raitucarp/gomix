@@ -6,120 +6,190 @@ import (
 	"github.com/raitucarp/gomix/themes"
 )
 
-func TextXs() ApplyProp {
+func addLineHeight(s *style, prop *properties, size string, lineHeights ...any) {
+	if len(lineHeights) <= 0 {
+		(*prop)[string(lineHeightProp)] = s.theme.UseVarKey(themes.Text, size+"--line-height")
+		return
+	}
+
+	lineHeight := lineHeights[0]
+
+	switch v := lineHeight.(type) {
+	case int:
+		(*prop)[string(lineHeightProp)] = fmt.Sprintf("calc(var(--spacing) * %d)", v)
+	case string:
+		(*prop)[string(lineHeightProp)] = fmt.Sprintf("var(--%s)", v)
+	case CustomValue:
+		(*prop)[string(lineHeightProp)] = fmt.Sprintf("var(--%s)", v)
+	}
+
+}
+
+func TextXs(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "xs"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "xs--line-height"),
+		size := "xs"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func TextSm() ApplyProp {
+func TextSm(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "sm"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "sm--line-height"),
+		size := "sm"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+		return prop
 	}
 }
 
-func TextBase() ApplyProp {
+func TextBase(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "base"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "base--line-height"),
+		size := "base"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func TextLg() ApplyProp {
+func TextLg(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "lg"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "lg--line-height"),
+		size := "lg"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func TextXl() ApplyProp {
+func TextXl(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "xl"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "xl--line-height"),
+		size := "xl"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func Text2xl() ApplyProp {
+func Text2xl(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "2xl"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "2xl--line-height"),
+		size := "2xl"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func Text3xl() ApplyProp {
+func Text3xl(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "3xl"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "3xl--line-height"),
+		size := "3xl"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func Text4xl() ApplyProp {
+func Text4xl(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "4xl"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "4xl--line-height"),
+		size := "4xl"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func Text5xl() ApplyProp {
+func Text5xl(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "5xl"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "5xl--line-height"),
+		size := "5xl"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func Text6xl() ApplyProp {
+func Text6xl(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "6xl"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "6xl--line-height"),
+		size := "6xl"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func Text7xl() ApplyProp {
+func Text7xl(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "7xl"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "7xl--line-height"),
+		size := "7xl"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func Text8xl() ApplyProp {
+func Text8xl(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "8xl"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "8xl--line-height"),
+		size := "8xl"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
-func Text9xl() ApplyProp {
+func Text9xl(lineHeights ...any) ApplyProp {
 	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp):   s.theme.UseVarKey(themes.Text, "9xl"),
-			string(lineHeightProp): s.theme.UseVarKey(themes.Text, "9xl--line-height"),
+		size := "9xl"
+		prop := &properties{
+			string(fontSizeProp): s.theme.UseVarKey(themes.Text, size),
 		}
+
+		addLineHeight(s, prop, size, lineHeights...)
+
+		return prop
 	}
 }
 
