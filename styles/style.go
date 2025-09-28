@@ -1,6 +1,9 @@
 package styles
 
 import (
+	"fmt"
+	"strings"
+
 	"github.com/raitucarp/gomix/themes"
 )
 
@@ -63,6 +66,10 @@ const (
 	marginProp              Prop = "margin"
 	marginRightProp         Prop = "margin-right"
 	marginTopProp           Prop = "margin-top"
+	maxHeightProp           Prop = "max-height"
+	maxWidthProp            Prop = "max-width"
+	minHeightProp           Prop = "min-height"
+	minWidthProp            Prop = "min-width"
 	objectFitProp           Prop = "object-fit"
 	objectPositionProp      Prop = "object-position"
 	orderProp               Prop = "order"
@@ -135,6 +142,20 @@ type styleProp interface {
 	GetProps() map[string]string
 	Kind() kind
 	Variant() variant
+}
+
+type atRules struct {
+	name   string
+	params []string
+	prop   Prop
+}
+
+func (r atRules) String() string {
+	return fmt.Sprintf("@%s (%s) | %s", r.name, strings.Join(r.params, ", "), r.prop)
+}
+
+func mediaQueryProp(prop Prop, params ...string) atRules {
+	return atRules{name: "media", params: params, prop: prop}
 }
 
 /*
