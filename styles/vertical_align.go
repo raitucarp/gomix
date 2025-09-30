@@ -1,7 +1,5 @@
 package styles
 
-import "fmt"
-
 func AlignBaseline() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -67,18 +65,10 @@ func AlignSuper() ApplyProp {
 	}
 }
 
-func AlignCustomProperty(customProperty string) ApplyProp {
+func AlignBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(verticalAlignProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func AlignValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(verticalAlignProp): value.String(),
+			string(verticalAlignProp): value.Value(),
 		}
 	}
 }

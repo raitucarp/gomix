@@ -222,18 +222,10 @@ func TextStone(scale int) ApplyProp {
 	}
 }
 
-func TextColorCustomProperty(customProperty string) ApplyProp {
+func TextColor(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func TextColorValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(colorProp): value.String(),
+			string(colorProp): value.Value(),
 		}
 	}
 }

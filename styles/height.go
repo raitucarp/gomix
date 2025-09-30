@@ -132,18 +132,10 @@ func HLh() ApplyProp {
 	}
 }
 
-func HCustomProperty(customProperty string) ApplyProp {
+func HValueBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(heightProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func HValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(heightProp): value.String(),
+			string(heightProp): value.Value(),
 		}
 	}
 }

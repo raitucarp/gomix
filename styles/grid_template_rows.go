@@ -28,18 +28,10 @@ func GridRowsSubgrid() ApplyProp {
 	}
 }
 
-func GridRowsCustomProperty(customProperty string) ApplyProp {
+func GridRowsBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridTemplateRowsProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func GridRowsValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gridTemplateRowsProp): value.String(),
+			string(gridTemplateRowsProp): value.Value(),
 		}
 	}
 }

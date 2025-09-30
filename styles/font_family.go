@@ -1,8 +1,6 @@
 package styles
 
 import (
-	"fmt"
-
 	"github.com/raitucarp/gomix/themes"
 )
 
@@ -30,18 +28,10 @@ func FontMono() ApplyProp {
 	}
 }
 
-func FontFamilyCustomProperty(customProperty string) ApplyProp {
+func FontFamilyBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fontFamilyProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func FontFamilyValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(fontFamilyProp): value.String(),
+			string(fontFamilyProp): value.Value(),
 		}
 	}
 }

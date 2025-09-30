@@ -21,18 +21,10 @@ func ColSpanFull() ApplyProp {
 	}
 }
 
-func ColSpanCustomProperty(customProperty string) ApplyProp {
+func ColSpanBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnProp): fmt.Sprintf("span var(--%s) / span var(--%s)", customProperty, customProperty),
-		}
-	}
-}
-
-func ColSpanValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gridColumnProp): fmt.Sprintf("span %v / span %v", value.String(), value.String()),
+			string(gridColumnProp): fmt.Sprintf("span %v / span %v", value.Value(), value.Value()),
 		}
 	}
 }
@@ -61,18 +53,10 @@ func ColStartAuto() ApplyProp {
 	}
 }
 
-func ColStartCustomProperty(customProperty string) ApplyProp {
+func ColStartBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnStartProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func ColStartValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gridColumnStartProp): value.String(),
+			string(gridColumnStartProp): value.Value(),
 		}
 	}
 }
@@ -101,18 +85,10 @@ func ColEndAuto() ApplyProp {
 	}
 }
 
-func ColEndCustomProperty(customProperty string) ApplyProp {
+func ColEndBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnEndProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func ColEndValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gridColumnEndProp): value.String(),
+			string(gridColumnEndProp): value.Value(),
 		}
 	}
 }
@@ -141,18 +117,10 @@ func NegCol(number int) ApplyProp {
 	}
 }
 
-func ColCustomProperty(customProperty string) ApplyProp {
+func ColBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func ColValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gridColumnProp): value.String(),
+			string(gridColumnProp): value.Value(),
 		}
 	}
 }

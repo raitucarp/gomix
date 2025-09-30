@@ -2,16 +2,7 @@ package styles
 
 import (
 	"fmt"
-	"strconv"
 )
-
-func FlexNumber(number int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(flexProp): strconv.Itoa(number),
-		}
-	}
-}
 
 func FlexFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
@@ -45,18 +36,10 @@ func FlexNone() ApplyProp {
 	}
 }
 
-func FlexCustomProperty(customProperty string) ApplyProp {
+func FlexBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func FlexValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(flexProp): value.String(),
+			string(flexProp): value.Value(),
 		}
 	}
 }

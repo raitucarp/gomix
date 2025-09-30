@@ -21,18 +21,10 @@ func RowSpanFull() ApplyProp {
 	}
 }
 
-func RowSpanCustomProperty(customProperty string) ApplyProp {
+func RowSpanBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridRowProp): fmt.Sprintf("span var(--%s) / span var(--%s)", customProperty, customProperty),
-		}
-	}
-}
-
-func RowSpanValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gridRowProp): fmt.Sprintf("span %v / span %v", value.String(), value.String()),
+			string(gridRowProp): fmt.Sprintf("span %v / span %v", value.Value(), value.Value()),
 		}
 	}
 }
@@ -61,18 +53,10 @@ func RowStartAuto() ApplyProp {
 	}
 }
 
-func RowStartCustomProperty(customProperty string) ApplyProp {
+func RowStartBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridRowStartProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func RowStartValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gridRowStartProp): value.String(),
+			string(gridRowStartProp): value.Value(),
 		}
 	}
 }
@@ -101,18 +85,10 @@ func RowEndAuto() ApplyProp {
 	}
 }
 
-func RowEndCustomProperty(customProperty string) ApplyProp {
+func RowEndBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridRowEndProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func RowEndValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gridRowEndProp): value.String(),
+			string(gridRowEndProp): value.Value(),
 		}
 	}
 }
@@ -141,18 +117,10 @@ func NegRow(number int) ApplyProp {
 	}
 }
 
-func RowCustomProperty(customProperty string) ApplyProp {
+func RowBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridRowProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func RowValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gridRowProp): value.String(),
+			string(gridRowProp): value.Value(),
 		}
 	}
 }

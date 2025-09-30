@@ -1,7 +1,5 @@
 package styles
 
-import "fmt"
-
 func AutoColsAuto() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -34,18 +32,10 @@ func AutoColsFr() ApplyProp {
 	}
 }
 
-func AutoColsCustomProperty(customProperty string) ApplyProp {
+func AutoColsBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridAutoColumnsProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func AutoColsValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gridAutoColumnsProp): value.String(),
+			string(gridAutoColumnsProp): value.Value(),
 		}
 	}
 }

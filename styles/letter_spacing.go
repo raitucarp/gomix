@@ -1,8 +1,6 @@
 package styles
 
 import (
-	"fmt"
-
 	"github.com/raitucarp/gomix/themes"
 )
 
@@ -54,18 +52,10 @@ func TrackingWidest() ApplyProp {
 	}
 }
 
-func TrackingCustomProperty(customProperty string) ApplyProp {
+func TrackingBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(letterSpacingProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func TrackingValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(letterSpacingProp): value.String(),
+			string(letterSpacingProp): value.Value(),
 		}
 	}
 }

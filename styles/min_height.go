@@ -132,18 +132,10 @@ func MinHLh() ApplyProp {
 	}
 }
 
-func MinHCustomProperty(customProperty string) ApplyProp {
+func MinHBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(minHeightProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MinHValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(minHeightProp): value.String(),
+			string(minHeightProp): value.Value(),
 		}
 	}
 }

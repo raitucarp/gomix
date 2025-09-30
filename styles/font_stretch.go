@@ -82,18 +82,10 @@ func FontStretchPercentage(percentage int) ApplyProp {
 	}
 }
 
-func FontStretchCustomProperty(customProperty string) ApplyProp {
+func FontStretchBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fontStretchProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func FontStretchValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(fontStretchProp): value.String(),
+			string(fontStretchProp): value.Value(),
 		}
 	}
 }

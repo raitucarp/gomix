@@ -26,18 +26,10 @@ func DecorationAuto() ApplyProp {
 	}
 }
 
-func DecorationLengthCustomProperty(customProperty string) ApplyProp {
+func DecorationBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorThicknessProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func DecorationValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(textDecorThicknessProp): value.String(),
+			string(textDecorThicknessProp): value.Value(),
 		}
 	}
 }

@@ -243,18 +243,10 @@ func Container() ApplyProp {
 	}
 }
 
-func MaxWCustomProperty(customProperty string) ApplyProp {
+func MaxWBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MaxWValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(maxWidthProp): value.String(),
+			string(maxWidthProp): value.Value(),
 		}
 	}
 }

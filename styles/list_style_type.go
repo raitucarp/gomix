@@ -1,7 +1,5 @@
 package styles
 
-import "fmt"
-
 func ListDisc() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -26,18 +24,10 @@ func ListNone() ApplyProp {
 	}
 }
 
-func ListCustomProperty(customProperty string) ApplyProp {
+func List(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(listStyleTypeProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func ListValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(listStyleTypeProp): value.String(),
+			string(listStyleTypeProp): value.Value(),
 		}
 	}
 }

@@ -18,18 +18,10 @@ func PPx(number int) ApplyProp {
 	}
 }
 
-func PCustomProperty(customProperty string) ApplyProp {
+func PBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func PValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(paddingProp): value.String(),
+			string(paddingProp): value.Value(),
 		}
 	}
 }
@@ -50,18 +42,10 @@ func PxPx(number int) ApplyProp {
 	}
 }
 
-func PxCustomProperty(customProperty string) ApplyProp {
+func PxBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingInlineProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func PxValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(paddingInlineProp): value.String(),
+			string(paddingInlineProp): value.Value(),
 		}
 	}
 }
@@ -82,18 +66,10 @@ func PyPx(number int) ApplyProp {
 	}
 }
 
-func PyCustomProperty(customProperty string) ApplyProp {
+func PyBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingBlockProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func PyValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(paddingBlockProp): value.String(),
+			string(paddingBlockProp): value.Value(),
 		}
 	}
 }
@@ -114,18 +90,10 @@ func PsPx(number int) ApplyProp {
 	}
 }
 
-func PsCustomProperty(customProperty string) ApplyProp {
+func PsBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingInlineStartProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func PsValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(paddingInlineStartProp): value.String(),
+			string(paddingInlineStartProp): value.Value(),
 		}
 	}
 }
@@ -146,18 +114,10 @@ func PePx(number int) ApplyProp {
 	}
 }
 
-func PeCustomProperty(customProperty string) ApplyProp {
+func PeBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingInlineEndProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func PeValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(paddingInlineEndProp): value.String(),
+			string(paddingInlineEndProp): value.Value(),
 		}
 	}
 }
@@ -178,18 +138,10 @@ func PtPx(number int) ApplyProp {
 	}
 }
 
-func PtCustomProperty(customProperty string) ApplyProp {
+func PtBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingTopProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func PtValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(paddingTopProp): value.String(),
+			string(paddingTopProp): value.Value(),
 		}
 	}
 }
@@ -210,18 +162,10 @@ func PrPx(number int) ApplyProp {
 	}
 }
 
-func PrCustomProperty(customProperty string) ApplyProp {
+func PrBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingRightProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func PrValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(paddingRightProp): value.String(),
+			string(paddingRightProp): value.Value(),
 		}
 	}
 }
@@ -242,18 +186,10 @@ func PbPx(number int) ApplyProp {
 	}
 }
 
-func PbCustomProperty(customProperty string) ApplyProp {
+func PbBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingBottomProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func PbValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(paddingBottomProp): value.String(),
+			string(paddingBottomProp): value.Value(),
 		}
 	}
 }
@@ -274,18 +210,10 @@ func PlPx(number int) ApplyProp {
 	}
 }
 
-func PlCustomProperty(customProperty string) ApplyProp {
+func PlBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingLeftProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func PlValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(paddingLeftProp): value.String(),
+			string(paddingLeftProp): value.Value(),
 		}
 	}
 }

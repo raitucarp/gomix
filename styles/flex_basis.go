@@ -6,10 +6,10 @@ import (
 	"github.com/raitucarp/gomix/themes"
 )
 
-func Basis(number int) ApplyProp {
+func Basis(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexBasisProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
+			string(flexBasisProp): value.Value(),
 		}
 	}
 }
@@ -139,22 +139,6 @@ func Basis7xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(flexBasisProp): s.theme.UseVarKey(themes.Container, "7xl"),
-		}
-	}
-}
-
-func BasisCustomProperty(customProperty string) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(flexBasisProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func BasisValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(flexBasisProp): value.String(),
 		}
 	}
 }

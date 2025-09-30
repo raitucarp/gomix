@@ -76,18 +76,10 @@ func InsetAuto() ApplyProp {
 	}
 }
 
-func InsetCustomProperty(customProperty string) ApplyProp {
+func InsetBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func InsetValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(insetProp): value.String(),
+			string(insetProp): value.Value(),
 		}
 	}
 }
@@ -166,18 +158,10 @@ func InsetXAuto() ApplyProp {
 	}
 }
 
-func InsetXCustomProperty(customProperty string) ApplyProp {
+func InsetXBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetInlineProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func InsetXValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(insetInlineProp): value.String(),
+			string(insetInlineProp): value.Value(),
 		}
 	}
 }
@@ -256,18 +240,10 @@ func InsetYAuto() ApplyProp {
 	}
 }
 
-func InsetYCustomProperty(customProperty string) ApplyProp {
+func InsetYBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetBlockProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func InsetYValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(insetBlockProp): value.String(),
+			string(insetBlockProp): value.Value(),
 		}
 	}
 }
@@ -346,18 +322,10 @@ func StartAuto() ApplyProp {
 	}
 }
 
-func StartCustomProperty(customProperty string) ApplyProp {
+func StartBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetStartProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func StartValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(insetStartProp): value.String(),
+			string(insetStartProp): value.Value(),
 		}
 	}
 }
@@ -436,18 +404,10 @@ func EndAuto() ApplyProp {
 	}
 }
 
-func EndCustomProperty(customProperty string) ApplyProp {
+func EndBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetEndProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func EndValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(insetEndProp): value.String(),
+			string(insetEndProp): value.Value(),
 		}
 	}
 }
@@ -526,18 +486,10 @@ func TopAuto() ApplyProp {
 	}
 }
 
-func TopCustomProperty(customProperty string) ApplyProp {
+func TopBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(topProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func TopValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(topProp): value.String(),
+			string(topProp): value.Value(),
 		}
 	}
 }
@@ -616,18 +568,10 @@ func RightAuto() ApplyProp {
 	}
 }
 
-func RightCustomProperty(customProperty string) ApplyProp {
+func RightBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(rightProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func RightValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(rightProp): value.String(),
+			string(rightProp): value.Value(),
 		}
 	}
 }
@@ -706,18 +650,10 @@ func BottomAuto() ApplyProp {
 	}
 }
 
-func BottomCustomProperty(customProperty string) ApplyProp {
+func BottomBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(bottomProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func BottomValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(bottomProp): value.String(),
+			string(bottomProp): value.Value(),
 		}
 	}
 }
@@ -796,18 +732,10 @@ func LeftAuto() ApplyProp {
 	}
 }
 
-func LeftCustomProperty(customProperty string) ApplyProp {
+func LeftBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(leftProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func LeftValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(leftProp): value.String(),
+			string(leftProp): value.Value(),
 		}
 	}
 }

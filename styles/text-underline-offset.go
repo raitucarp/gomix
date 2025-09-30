@@ -26,18 +26,10 @@ func UnderlineOffsetAuto() ApplyProp {
 	}
 }
 
-func UnderlineOffsetCustomProperty(customProperty string) ApplyProp {
+func UnderlineOffsetBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textUnderlineOffsetProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func UnderlineOffsetValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(textUnderlineOffsetProp): value.String(),
+			string(textUnderlineOffsetProp): value.Value(),
 		}
 	}
 }

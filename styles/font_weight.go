@@ -1,7 +1,5 @@
 package styles
 
-import "fmt"
-
 func FontThin() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -74,18 +72,10 @@ func FontBlack() ApplyProp {
 	}
 }
 
-func FontWeightCustomProperty(customProperty string) ApplyProp {
+func FontWeightBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fontWeightProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func FontWeightValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(fontWeightProp): value.String(),
+			string(fontWeightProp): value.Value(),
 		}
 	}
 }

@@ -10,18 +10,10 @@ func Gap(number int) ApplyProp {
 	}
 }
 
-func GapCustomProperty(customProperty string) ApplyProp {
+func GapBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gapProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func GapValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gapProp): value.String(),
+			string(gapProp): value.Value(),
 		}
 	}
 }
@@ -34,18 +26,10 @@ func GapX(number int) ApplyProp {
 	}
 }
 
-func GapXCustomProperty(customProperty string) ApplyProp {
+func GapXBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gapXProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func GapXValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gapXProp): value.String(),
+			string(gapXProp): value.Value(),
 		}
 	}
 }
@@ -58,18 +42,10 @@ func GapY(number int) ApplyProp {
 	}
 }
 
-func GapYCustomProperty(customProperty string) ApplyProp {
+func GapYBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gapYProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func GapYValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(gapYProp): value.String(),
+			string(gapYProp): value.Value(),
 		}
 	}
 }

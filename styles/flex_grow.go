@@ -1,7 +1,6 @@
 package styles
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -21,18 +20,10 @@ func GrowNumber(number int) ApplyProp {
 	}
 }
 
-func GrowValue(value CustomValue) ApplyProp {
+func GrowValue(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexGrowProp): value.String(),
-		}
-	}
-}
-
-func GrowCustomProperty(customProperty string) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(flexGrowProp): fmt.Sprintf("var(--%s)", customProperty),
+			string(flexGrowProp): value.Value(),
 		}
 	}
 }

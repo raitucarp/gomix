@@ -1,7 +1,6 @@
 package styles
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -27,24 +26,13 @@ func LineClampNone() ApplyProp {
 	}
 }
 
-func LineClampCustomProperty(customProperty string) ApplyProp {
+func LineClampBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(overflowProp):        "hidden",
 			string(displayProp):         "-webkit-box",
 			string(webkitBoxOrientProp): "vertical",
-			string(webkitLineClampProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func LineClampValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(overflowProp):        "hidden",
-			string(displayProp):         "-webkit-box",
-			string(webkitBoxOrientProp): "vertical",
-			string(webkitLineClampProp): value.String(),
+			string(webkitLineClampProp): value.Value(),
 		}
 	}
 }

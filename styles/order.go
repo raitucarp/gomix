@@ -37,18 +37,10 @@ func OrderLast() ApplyProp {
 	}
 }
 
-func OrderCustomProperty(customProperty string) ApplyProp {
+func OrderBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(orderProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func OrderValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(orderProp): value.String(),
+			string(orderProp): value.Value(),
 		}
 	}
 }

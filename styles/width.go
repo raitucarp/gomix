@@ -230,18 +230,10 @@ func WFit() ApplyProp {
 	}
 }
 
-func WCustomProperty(customProperty string) ApplyProp {
+func WBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(widthProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func WValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(widthProp): value.String(),
+			string(widthProp): value.Value(),
 		}
 	}
 }
@@ -363,20 +355,11 @@ func SizeFit() ApplyProp {
 	}
 }
 
-func SizeCustomProperty(customProperty string) ApplyProp {
+func SizeBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(widthProp):  fmt.Sprintf("var(--%s)", customProperty),
-			string(heightProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func SizeValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(widthProp):  value.String(),
-			string(heightProp): value.String(),
+			string(widthProp):  value.Value(),
+			string(heightProp): value.Value(),
 		}
 	}
 }

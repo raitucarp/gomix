@@ -42,18 +42,10 @@ func NegMPx() ApplyProp {
 	}
 }
 
-func MCustomProperty(customProperty string) ApplyProp {
+func MBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(marginProp): value.String(),
+			string(marginProp): value.Value(),
 		}
 	}
 }
@@ -98,18 +90,10 @@ func NegMxPx() ApplyProp {
 	}
 }
 
-func MxCustomProperty(customProperty string) ApplyProp {
+func MxBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginInlineProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MxValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(marginInlineProp): value.String(),
+			string(marginInlineProp): value.Value(),
 		}
 	}
 }
@@ -154,18 +138,10 @@ func NegMyPx() ApplyProp {
 	}
 }
 
-func MyCustomProperty(customProperty string) ApplyProp {
+func MyBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginBlockProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MyValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(marginBlockProp): value.String(),
+			string(marginBlockProp): value.Value(),
 		}
 	}
 }
@@ -210,18 +186,10 @@ func NegMsPx() ApplyProp {
 	}
 }
 
-func MsCustomProperty(customProperty string) ApplyProp {
+func MsBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginInlineStartProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MsValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(marginInlineStartProp): value.String(),
+			string(marginInlineStartProp): value.Value(),
 		}
 	}
 }
@@ -266,18 +234,10 @@ func NegMePx() ApplyProp {
 	}
 }
 
-func MeCustomProperty(customProperty string) ApplyProp {
+func MeBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginInlineEndProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MeValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(marginInlineEndProp): value.String(),
+			string(marginInlineEndProp): value.Value(),
 		}
 	}
 }
@@ -322,18 +282,10 @@ func NegMtPx() ApplyProp {
 	}
 }
 
-func MtCustomProperty(customProperty string) ApplyProp {
+func MtBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginTopProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MtValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(marginTopProp): value.String(),
+			string(marginTopProp): value.Value(),
 		}
 	}
 }
@@ -378,18 +330,10 @@ func NegMrPx() ApplyProp {
 	}
 }
 
-func MrCustomProperty(customProperty string) ApplyProp {
+func MrBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginRightProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MrValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(marginRightProp): value.String(),
+			string(marginRightProp): value.Value(),
 		}
 	}
 }
@@ -434,18 +378,10 @@ func NegMbPx() ApplyProp {
 	}
 }
 
-func MbCustomProperty(customProperty string) ApplyProp {
+func MbBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginBottomProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MbValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(marginBottomProp): value.String(),
+			string(marginBottomProp): value.Value(),
 		}
 	}
 }
@@ -490,18 +426,10 @@ func NegMlPx() ApplyProp {
 	}
 }
 
-func MlCustomProperty(customProperty string) ApplyProp {
+func MlBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginLeftProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MlValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(marginLeftProp): value.String(),
+			string(marginLeftProp): value.Value(),
 		}
 	}
 }

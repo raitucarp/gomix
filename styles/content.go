@@ -1,19 +1,9 @@
 package styles
 
-import "fmt"
-
-func Content(value string) ApplyProp {
+func Content(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(contentProp): value,
-		}
-	}
-}
-
-func ContentCustomProperty(customProperty string) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(contentProp): fmt.Sprintf("var(--%s)", customProperty),
+			string(contentProp): value.Value(),
 		}
 	}
 }

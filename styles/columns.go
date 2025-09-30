@@ -1,17 +1,13 @@
 package styles
 
 import (
-	"fmt"
-	"strconv"
-
-	"github.com/iancoleman/strcase"
 	"github.com/raitucarp/gomix/themes"
 )
 
-func Columns(number int) ApplyProp {
+func Columns(cols customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(columnsProp): strconv.Itoa(number),
+			string(columnsProp): cols.Value(),
 		}
 	}
 }
@@ -124,14 +120,6 @@ func ColumnsAuto() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(columnsProp): "auto",
-		}
-	}
-}
-
-func ColumnsCustomProperty(customProperty string) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(columnsProp): fmt.Sprintf("var(--%s)", strcase.ToDelimited(customProperty, '-')),
 		}
 	}
 }

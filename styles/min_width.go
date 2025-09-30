@@ -230,18 +230,10 @@ func MinWFit() ApplyProp {
 	}
 }
 
-func MinWCustomProperty(customProperty string) ApplyProp {
+func MinWBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(minWidthProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MinWValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(minWidthProp): value.String(),
+			string(minWidthProp): value.Value(),
 		}
 	}
 }

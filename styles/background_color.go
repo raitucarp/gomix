@@ -222,18 +222,10 @@ func BgStone(scale int) ApplyProp {
 	}
 }
 
-func BgColorCustomProperty(customProperty string) ApplyProp {
+func BgColor(color customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func BgColorValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(backgroundColorProp): value.String(),
+			string(backgroundColorProp): color.Value(),
 		}
 	}
 }

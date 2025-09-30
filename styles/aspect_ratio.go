@@ -1,16 +1,14 @@
 package styles
 
 import (
-	"fmt"
-
-	"github.com/iancoleman/strcase"
 	"github.com/raitucarp/gomix/themes"
 )
 
-func Aspect(ratio string) ApplyProp {
+func Aspect(ratio customValue) ApplyProp {
 	return func(s *style) styleProp {
+
 		return &properties{
-			string(aspectRatioProp): ratio,
+			string(aspectRatioProp): ratio.Value(),
 		}
 	}
 }
@@ -35,14 +33,6 @@ func AspectAuto() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(aspectRatioProp): "auto",
-		}
-	}
-}
-
-func AspectCustomProperty(customProperty string) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(aspectRatioProp): fmt.Sprintf("var(--%s)", strcase.ToDelimited(customProperty, '-')),
 		}
 	}
 }

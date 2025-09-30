@@ -1,7 +1,5 @@
 package styles
 
-import "fmt"
-
 func BgAuto() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -26,18 +24,10 @@ func BgContain() ApplyProp {
 	}
 }
 
-func BgSizeCustomProperty(customProperty string) ApplyProp {
+func BgSize(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundSizeProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func BgSizeValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(backgroundSizeProp): fmt.Sprintf("var(--%s)", value.String()),
+			string(backgroundSizeProp): value.Value(),
 		}
 	}
 }

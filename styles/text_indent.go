@@ -34,18 +34,10 @@ func NegIndentPx() ApplyProp {
 	}
 }
 
-func IndentCustomProperty(customProperty string) ApplyProp {
+func IndentBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textIndentProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func IndentValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(textIndentProp): value.String(),
+			string(textIndentProp): value.Value(),
 		}
 	}
 }

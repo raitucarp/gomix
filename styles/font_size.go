@@ -19,7 +19,7 @@ func addLineHeight(s *style, prop *properties, size string, lineHeights ...any) 
 		(*prop)[string(lineHeightProp)] = fmt.Sprintf("calc(var(--spacing) * %d)", v)
 	case string:
 		(*prop)[string(lineHeightProp)] = fmt.Sprintf("var(--%s)", v)
-	case CustomValue:
+	case customValue:
 		(*prop)[string(lineHeightProp)] = fmt.Sprintf("var(--%s)", v)
 	}
 
@@ -193,18 +193,10 @@ func Text9xl(lineHeights ...any) ApplyProp {
 	}
 }
 
-func TextCustomProperty(customProperty string) ApplyProp {
+func TextSizeBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fontSizeProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func TextValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(fontSizeProp): value.String(),
+			string(fontSizeProp): value.Value(),
 		}
 	}
 }

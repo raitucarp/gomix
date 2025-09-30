@@ -132,18 +132,10 @@ func MaxHLh() ApplyProp {
 	}
 }
 
-func MaxHCustomProperty(customProperty string) ApplyProp {
+func MaxHBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxHeightProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func MaxHValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(maxHeightProp): value.String(),
+			string(maxHeightProp): value.Value(),
 		}
 	}
 }

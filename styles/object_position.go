@@ -1,7 +1,5 @@
 package styles
 
-import "fmt"
-
 func ObjectTopLeft() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -74,18 +72,10 @@ func ObjectBottomRight() ApplyProp {
 	}
 }
 
-func ObjectCustomProperty(propertyName string) ApplyProp {
+func ObjectBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(objectPositionProp): fmt.Sprintf("var(--%s)", propertyName),
-		}
-	}
-}
-
-func ObjectValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(objectPositionProp): value.String(),
+			string(objectPositionProp): value.Value(),
 		}
 	}
 }

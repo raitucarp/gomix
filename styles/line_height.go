@@ -18,18 +18,10 @@ func Leading(number int) ApplyProp {
 	}
 }
 
-func LeadingCustomProperty(customProperty string) ApplyProp {
+func LeadingBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(lineHeightProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func LeadingValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(lineHeightProp): value.String(),
+			string(lineHeightProp): value.Value(),
 		}
 	}
 }

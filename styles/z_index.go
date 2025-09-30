@@ -1,7 +1,6 @@
 package styles
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -21,18 +20,10 @@ func ZAuto() ApplyProp {
 	}
 }
 
-func ZCustomProperty(customProperty string) ApplyProp {
+func ZBy(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(zIndexProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func ZValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(zIndexProp): value.String(),
+			string(zIndexProp): value.Value(),
 		}
 	}
 }

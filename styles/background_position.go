@@ -1,7 +1,5 @@
 package styles
 
-import "fmt"
-
 func BgTopLeft() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -74,18 +72,10 @@ func BgBottomRight() ApplyProp {
 	}
 }
 
-func BgPositionCustomProperty(customProperty string) ApplyProp {
+func BgPosition(value customValue) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundPositionProp): fmt.Sprintf("var(--%s)", customProperty),
-		}
-	}
-}
-
-func BgPositionValue(value CustomValue) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(backgroundPositionProp): value.String(),
+			string(backgroundPositionProp): value.Value(),
 		}
 	}
 }
