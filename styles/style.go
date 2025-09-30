@@ -157,14 +157,23 @@ func (p *properties) Kind() kind {
 type Props map[Prop]string
 
 type style struct {
-	props   Props
-	variant variant
-	theme   *themes.Theme
+	props       Props
+	variant     variant
+	theme       *themes.Theme
+	customProps []customProperty
+}
+
+type customProperty struct {
+	name         string
+	inherits     bool
+	initialValue any
 }
 
 func (s *style) addProp(prop Prop, value string) {
 	s.props[prop] = value
 }
+
+func Percentage(value float32) {}
 
 type kind string
 
