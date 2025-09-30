@@ -2,7 +2,6 @@ package styles
 
 import (
 	"fmt"
-	"strconv"
 
 	"github.com/raitucarp/gomix/themes"
 )
@@ -18,7 +17,7 @@ func Basis(number int) ApplyProp {
 func BasisFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexBasisProp): fmt.Sprintf("calc(%s * 100)", strconv.FormatFloat(fraction, 'f', -1, 32)),
+			string(flexBasisProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
 		}
 	}
 }

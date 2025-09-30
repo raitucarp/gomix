@@ -16,7 +16,7 @@ func FlexNumber(number int) ApplyProp {
 func FlexFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexProp): fmt.Sprintf("calc(%s * 100)", strconv.FormatFloat(fraction, 'f', -1, 32)),
+			string(flexProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
 		}
 	}
 }
