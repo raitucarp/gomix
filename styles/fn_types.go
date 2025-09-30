@@ -192,3 +192,15 @@ func (s *withSpacing) Value() string {
 func NumberWithSpacing(number int) *withSpacing {
 	return &withSpacing{value: number}
 }
+
+type url struct {
+	value string
+}
+
+func (u *url) Value() string {
+	return fmt.Sprintf("url(%s)", u.value)
+}
+
+func Url(uri string) *url {
+	return &url{value: uri}
+}

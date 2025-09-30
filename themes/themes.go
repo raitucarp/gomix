@@ -28,6 +28,7 @@ const (
 	Aspect      Namespace = "aspect"
 	Ease        Namespace = "ease"
 	Animate     Namespace = "animate"
+	Custom      Namespace = ""
 )
 
 type UtilityClass map[string]string
