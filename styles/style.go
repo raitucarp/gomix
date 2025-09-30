@@ -62,6 +62,10 @@ func mediaQueryProp(prop Prop, params ...string) atRules {
 	return atRules{name: "media", params: params, prop: prop}
 }
 
+func notLastChildProp(prop Prop) string {
+	return fmt.Sprintf("& > :not(:last-child) | %s", prop)
+}
+
 /*
 styles(
 	aspectRatioVideo(),
