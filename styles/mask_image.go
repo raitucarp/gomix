@@ -841,13 +841,13 @@ func MaskConic(number float64) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
 		if number < 0 {
-			prop = fmt.Sprintf("conic-gradient(from calc(%ddeg * -1), black %s, transparent %s)",
+			prop = fmt.Sprintf("conic-gradient(from calc(%.2fdeg * -1), black %s, transparent %s)",
 				number,
 				s.theme.UseVarKey(themes.Custom, "mask-conic-from"),
 				s.theme.UseVarKey(themes.Custom, "mask-conic-to"),
 			)
 		} else {
-			prop = fmt.Sprintf("conic-gradient(from %ddeg, black %s, transparent %s)",
+			prop = fmt.Sprintf("conic-gradient(from %.2fdeg, black %s, transparent %s)",
 				number,
 				s.theme.UseVarKey(themes.Custom, "mask-conic-from"),
 				s.theme.UseVarKey(themes.Custom, "mask-conic-to"),
