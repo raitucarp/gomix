@@ -74,6 +74,12 @@ func (t *Theme) UseVarKey(namespace Namespace, class string) string {
 }
 
 func (t *Theme) VarKey(namespace Namespace, class string) string {
+	if namespace == Custom {
+		return fmt.Sprintf("--%s",
+			strcase.ToDelimited(class, '-'),
+		)
+	}
+
 	return fmt.Sprintf("--%s-%s",
 		namespace, strcase.ToDelimited(class, '-'),
 	)
