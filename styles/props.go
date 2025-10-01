@@ -196,4 +196,8 @@ const (
 	filterProp                  Prop = "filter"
 	backdropFilterProp          Prop = "backdrop-filter"
 	dropShadowColor             Prop = "--drop-shadow-color"
+	borderCollapseProp          Prop = "border-collapse"
+	tableLayoutProp             Prop = "table-layout"
+	captionSideProp             Prop = "caption-side"
+	borderSpacing               Prop = "border-spacing"
 )
