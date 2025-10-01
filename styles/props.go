@@ -200,4 +200,11 @@ const (
 	tableLayoutProp             Prop = "table-layout"
 	captionSideProp             Prop = "caption-side"
 	borderSpacing               Prop = "border-spacing"
+	transitionPropertyProp      Prop = "transition-prop"
+	transitionTimingProp        Prop = "transition-timing-function"
+	transitionDurationProp      Prop = "transition-duration"
+	transitionDelayProp         Prop = "transition-delay"
+	transitionBehaviorProp      Prop = "transition-behavior"
+	animationProp               Prop = "animation"
+	rawProp                     Prop = "raw" // TODO: raw is for plain text
 )
