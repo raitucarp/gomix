@@ -49,9 +49,15 @@ func NewVariable(namespace Namespace, class string, value ...string) *Variables 
 func (v *Variables) ToCSSVariables() (vars []string) {
 	for namespace, class := range *v {
 		for c := range class {
-			vars = append(vars, fmt.Sprintf("--%s-%s",
-				namespace, strcase.ToDelimited(c, '-'),
-			))
+			if namespace == Custom {
+				vars = append(vars, fmt.Sprintf("--%s",
+					strcase.ToDelimited(c, '-'),
+				))
+			} else {
+				vars = append(vars, fmt.Sprintf("--%s-%s",
+					namespace, strcase.ToDelimited(c, '-'),
+				))
+			}
 		}
 	}
 	return
