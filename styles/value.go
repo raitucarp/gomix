@@ -47,3 +47,26 @@ func Val(value any) *val {
 	v := val{value: value}
 	return &v
 }
+
+type scale struct {
+	value       uint
+	transparent percentage
+}
+
+func (s *scale) Value() string {
+	return fmt.Sprintf("%d", s.value)
+}
+
+func (s *scale) Transparent(p percentage) *scale {
+	s.transparent = p
+	return s
+}
+
+func Scale(value uint) *scale {
+	return &scale{value: value}
+}
+
+type size struct {
+	value any
+}
+
