@@ -193,4 +193,7 @@ const (
 	maskRadialSizeProp          Prop = "--mask-radial-size"
 	maskRadialShapeProp         Prop = "--mask-radial-shape"
 	maskRadialPositionProp      Prop = "--mask-radial-position"
+	filterProp                  Prop = "filter"
+	backdropFilterProp          Prop = "backdrop-filter"
+	dropShadowColor             Prop = "--drop-shadow-color"
 )
