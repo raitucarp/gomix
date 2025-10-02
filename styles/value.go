@@ -48,25 +48,24 @@ func Val(value any) *val {
 	return &v
 }
 
-type scale struct {
+type colorScale struct {
 	value       uint
 	transparent percentage
 }
 
-func (s *scale) Value() string {
+func (s *colorScale) Value() string {
 	return fmt.Sprintf("%d", s.value)
 }
 
-func (s *scale) Transparent(p percentage) *scale {
+func (s *colorScale) Transparent(p percentage) *colorScale {
 	s.transparent = p
 	return s
 }
 
-func Scale(value uint) *scale {
-	return &scale{value: value}
+func ColorScale(value uint) *colorScale {
+	return &colorScale{value: value}
 }
 
 type size struct {
 	value any
 }
-
