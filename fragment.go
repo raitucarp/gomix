@@ -23,13 +23,6 @@ type Fragment struct {
 
 type FragmentComponent func(fragment *Fragment) components.IsComponent
 
-func (app *App) Fragment(path FragmentPath, component FragmentComponent) *Fragment {
-	fragment := NewFragment(path, component)
-	app.fragments = append(app.fragments, fragment)
-
-	return fragment
-}
-
 // func (fragment *Fragment) Write() {
 // 	io.WriteString(fragment.response, fragment.Render())
 // }

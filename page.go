@@ -1,6 +1,7 @@
 package gomix
 
 import (
+	"fmt"
 	"io"
 	"net/http"
 
@@ -25,13 +26,6 @@ type Page struct {
 	request   *http.Request
 	response  http.ResponseWriter
 	handler   func(w http.ResponseWriter, req *http.Request)
-}
-
-func (app *App) Page(path LocationPath, setup PageSetup) *Page {
-	newPage := NewPage(path, setup)
-	app.pages = append(app.pages, newPage)
-
-	return newPage
 }
 
 func NewPage(path LocationPath, setup PageSetup) *Page {
@@ -140,6 +134,8 @@ func (page *Page) Render(lang element.LanguageCode) string {
 	for _, script := range page.scripts {
 		head = append(head, element.Script().Src(script))
 	}
+
+	fmt.Println(page.scripts)
 
 	layout := components.Component(
 		element.Html(

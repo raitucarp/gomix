@@ -10,9 +10,18 @@ import (
 	"github.com/raitucarp/gomix/element"
 )
 
-type App struct {
-	name      string
-	port      int
+type web struct {
+	prefixTitle string
+	suffixTitle string
+}
+
+type Application struct {
+	name string
+	port int
+
+	features []string
+	addons   []string
+
 	layout    components.IsComponent
 	pages     []*Page
 	fragments []*Fragment
@@ -23,65 +32,140 @@ type App struct {
 }
 
 type LocationPath string
+type AppParam func(app *Application)
 
-func New(name string) *App {
-	return &App{
-		name: name,
+func App(params ...AppParam) {
+	app := &Application{
+		port: -1,
 		layout: components.Component(
 			element.Body(
 				element.Element(components.Slot()),
 			),
 		),
 	}
+	for _, param := range params {
+		param(app)
+	}
+
+	if app.port > 0 {
+		app.serve()
+	}
 }
 
-func (app *App) flattenPages() (pages []*Page) {
-	for _, page := range app.pages {
-		page.flattened = true
-		page.AddLayouts(func(page *Page) components.IsComponent { return app.layout })
-		page.AddScripts(app.scripts...)
+func Name(name string) AppParam {
+	return func(app *Application) {
+		app.name = name
+	}
+}
 
-		pages = append(pages, page)
-		if len(page.children) > 0 {
-			pages = append(pages, page.flattenPages()...)
+func Addons(addons ...AppParam) AppParam {
+	return func(app *Application) {
+		for _, addon := range addons {
+			addon(app)
+		}
+	}
+}
+
+func Features(features ...AppParam) AppParam {
+	return func(app *Application) {
+		for _, feature := range features {
+			feature(app)
+		}
+	}
+}
+
+func Webpage(features ...AppParam) AppParam {
+	return func(app *Application) {
+		for _, feature := range features {
+			feature(app)
+		}
+	}
+}
+
+func Port(port int) AppParam {
+	return func(app *Application) {
+		app.port = port
+	}
+}
+
+func Logger() AppParam {
+	return func(app *Application) {
+		app.features = append(app.features, "logger")
+	}
+}
+
+func Rest(apis ...AppParam) AppParam {
+	return func(app *Application) {
+		for _, aa := range apis {
+			aa(app)
+		}
+	}
+}
+
+func Scripts(url ...string) AppParam {
+	return func(app *Application) {
+		app.scripts = append(app.scripts, url...)
+		app.scripts = slices.Compact(app.scripts)
+	}
+}
+
+func PageAt(path LocationPath, setup PageSetup) AppParam {
+	return func(app *Application) {
+		newPage := NewPage(path, setup)
+		app.pages = append(app.pages, newPage)
+	}
+}
+
+func FragmentAt(path FragmentPath, component FragmentComponent) AppParam {
+	return func(app *Application) {
+		fragment := NewFragment(path, component)
+		app.fragments = append(app.fragments, fragment)
+	}
+}
+
+func Layout(component components.IsComponent) AppParam {
+	return func(app *Application) {
+		app.layout = components.Component(
+			element.Body(
+				element.Element(component),
+			),
+		)
+	}
+}
+
+func (app *Application) Apply(param AppParam) {
+	param(app)
+}
+
+func (app *Application) InstallAddon(addonName string) {
+	log.Println("Install", addonName)
+	app.addons = append(app.addons, addonName)
+}
+
+func (app *Application) IsAddonActivated(addonName string) bool {
+	return slices.Contains(app.addons, addonName)
+}
+
+func (app *Application) flattenPages() (pages []*Page) {
+	for _, p := range app.pages {
+		p.flattened = true
+		p.AddLayouts(func(page *Page) components.IsComponent { return app.layout })
+		p.AddScripts(app.scripts...)
+
+		pages = append(pages, p)
+		if len(p.children) > 0 {
+			pages = append(pages, p.flattenPages()...)
 		}
 
 	}
 	return
 }
 
-func (app *App) Scripts(url ...string) {
-	app.scripts = append(app.scripts, url...)
-	app.scripts = slices.Compact(app.scripts)
-}
-
-func (app *App) EnableLogger() {
-	app.enableLogger = true
-}
-
-func (app *App) Layout(component components.IsComponent) {
-	app.layout = components.Component(
-		element.Body(
-			element.Element(component),
-		),
-	)
-}
-
-func (app *App) Addons(addons ...func(app *App)) {
-	for _, addon := range addons {
-		addon(app)
-	}
-}
-
-func (app *App) ServeAtPort(port int) {
-	app.port = port
-
+func (app *Application) serve() {
 	mux := http.NewServeMux()
-
-	portString := fmt.Sprintf(":%d", port)
+	portString := fmt.Sprintf(":%d", app.port)
 
 	allPages := app.flattenPages()
-
 	for _, page := range allPages {
 		mux.HandleFunc(string(page.path), page.handler)
 	}

@@ -8,9 +8,16 @@ import (
 	"github.com/raitucarp/gomix/element"
 )
 
-func Addon(version string) func(app *gomix.App) {
-	return func(app *gomix.App) {
-		app.Scripts(fmt.Sprintf("https://cdn.jsdelivr.net/npm/htmx.org@%s/dist/htmx.min.js", version))
+const AddonName = "htmx"
+
+func Addon(version string) func(app *gomix.Application) {
+	return func(app *gomix.Application) {
+		app.InstallAddon(AddonName)
+		htmxUrl := fmt.Sprintf("https://cdn.jsdelivr.net/npm/htmx.org@%s/dist/htmx.min.js", version)
+
+		app.Apply(
+			gomix.Scripts(htmxUrl),
+		)
 	}
 }
 
