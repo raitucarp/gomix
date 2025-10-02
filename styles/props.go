@@ -250,4 +250,7 @@ const (
 	willChangeProp               Prop = "will-change"
 	wordBreakProp                Prop = "word-break"
 	zIndexProp                   Prop = "z-index"
+	fillProp                     Prop = "fill"
+	strokeProp                   Prop = "stroke"
+	strokeWidthProp              Prop = "stroke-width"
 )
