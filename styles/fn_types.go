@@ -109,6 +109,10 @@ func Ratio(first uint, second uint) *ratio {
 	return &ratio{first: first, second: second}
 }
 
+func Fraction(first uint, second uint) *ratio {
+	return &ratio{first: first, second: second}
+}
+
 type mColor struct {
 	color color.Color
 }
