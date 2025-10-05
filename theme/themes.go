@@ -1,8 +1,7 @@
-package themes
+package theme
 
 import (
 	"fmt"
-	"strings"
 
 	"github.com/iancoleman/strcase"
 )
@@ -21,8 +20,9 @@ const (
 	Spacing     Namespace = "spacing"
 	Radius      Namespace = "radius"
 	Shadow      Namespace = "shadow"
-	InsetShadow Namespace = "insetshadow"
-	DropShadow  Namespace = "dropshadow"
+	InsetShadow Namespace = "inset-shadow"
+	DropShadow  Namespace = "drop-shadow"
+	TextShadow  Namespace = "text-shadow"
 	Blur        Namespace = "blur"
 	Perspective Namespace = "perspective"
 	Aspect      Namespace = "aspect"
@@ -38,13 +38,6 @@ func (u *UtilityClass) Value(class string) string {
 }
 
 type Variables map[Namespace]UtilityClass
-
-func NewVariable(namespace Namespace, class string, value ...string) *Variables {
-	v := make(Variables)
-	v[namespace] = make(UtilityClass)
-	v[namespace][class] = strings.Join(value, ",")
-	return &v
-}
 
 func (v *Variables) ToCSSVariables() (vars []string) {
 	for namespace, class := range *v {
@@ -64,8 +57,16 @@ func (v *Variables) ToCSSVariables() (vars []string) {
 }
 
 type Theme struct {
-	name      string
-	variables Variables
+	name       string
+	variables  Variables
+	keyframes  map[string]string
+	properties []customProperty
+}
+
+type customProperty struct {
+	name         string
+	inherits     bool
+	initialValue any
 }
 
 func (t *Theme) UseVarKey(namespace Namespace, class string) string {
@@ -86,6 +87,7 @@ func (t *Theme) VarKey(namespace Namespace, class string) string {
 }
 
 func (t *Theme) AddVariable(namespace Namespace, class string, value string) {
+
 	if t.variables[namespace] == nil {
 		t.variables[namespace] = map[string]string{}
 	}
@@ -93,10 +95,20 @@ func (t *Theme) AddVariable(namespace Namespace, class string, value string) {
 	t.variables[namespace][class] = value
 }
 
+func (t *Theme) AddKeyframe(name string, value string) {
+	t.keyframes[name] = value
+}
+
 func (t *Theme) ListVariables() (vars []string) {
 	return t.variables.ToCSSVariables()
 }
 
-func NewTheme(name string) *Theme {
-	return &Theme{name: name, variables: Variables{}}
+type ThemeParam func(t *Theme)
+
+func CreateTheme(name string, params ...ThemeParam) *Theme {
+	theme := &Theme{name: name, variables: Variables{}, keyframes: make(map[string]string)}
+	for _, p := range params {
+		p(theme)
+	}
+	return theme
 }
