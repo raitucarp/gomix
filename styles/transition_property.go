@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func Transition(value ...customValue) ApplyProp {
@@ -11,19 +11,19 @@ func Transition(value ...customValue) ApplyProp {
 		if len(value) == 1 {
 			return &properties{
 				string(transitionPropertyProp): value[0].Value(),
-				string(transitionTimingProp):   s.theme.UseVarKey(themes.Custom, "default-transition-timing-function"),
-				string(transitionDurationProp): s.theme.UseVarKey(themes.Custom, "default-transition-duration"),
+				string(transitionTimingProp):   s.theme.UseVarKey(theme.Custom, "default-transition-timing-function"),
+				string(transitionDurationProp): s.theme.UseVarKey(theme.Custom, "default-transition-duration"),
 			}
 		}
 
 		return &properties{
 			string(transitionPropertyProp): fmt.Sprintf("color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, %s, %s, %s, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events",
-				s.theme.UseVarKey(themes.Custom, "gradient-from"),
-				s.theme.UseVarKey(themes.Custom, "gradient-via"),
-				s.theme.UseVarKey(themes.Custom, "gradient-to"),
+				s.theme.UseVarKey(theme.Custom, "gradient-from"),
+				s.theme.UseVarKey(theme.Custom, "gradient-via"),
+				s.theme.UseVarKey(theme.Custom, "gradient-to"),
 			),
-			string(transitionTimingProp):   s.theme.UseVarKey(themes.Custom, "default-transition-timing-function"),
-			string(transitionDurationProp): s.theme.UseVarKey(themes.Custom, "default-transition-duration"),
+			string(transitionTimingProp):   s.theme.UseVarKey(theme.Custom, "default-transition-timing-function"),
+			string(transitionDurationProp): s.theme.UseVarKey(theme.Custom, "default-transition-duration"),
 		}
 	}
 }
@@ -32,8 +32,8 @@ func TransitionAll() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(transitionPropertyProp): "all",
-			string(transitionTimingProp):   s.theme.UseVarKey(themes.Custom, "default-transition-timing-function"),
-			string(transitionDurationProp): s.theme.UseVarKey(themes.Custom, "default-transition-duration"),
+			string(transitionTimingProp):   s.theme.UseVarKey(theme.Custom, "default-transition-timing-function"),
+			string(transitionDurationProp): s.theme.UseVarKey(theme.Custom, "default-transition-duration"),
 		}
 	}
 }
@@ -41,9 +41,9 @@ func TransitionAll() ApplyProp {
 func TransitionColors() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(transitionPropertyProp): fmt.Sprintf("color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, %s, %s, %s", s.theme.UseVarKey(themes.Custom, "gradient-from"), s.theme.UseVarKey(themes.Custom, "gradient-via"), s.theme.UseVarKey(themes.Custom, "gradient-to")),
-			string(transitionTimingProp):   s.theme.UseVarKey(themes.Custom, "default-transition-timing-function"),
-			string(transitionDurationProp): s.theme.UseVarKey(themes.Custom, "default-transition-duration"),
+			string(transitionPropertyProp): fmt.Sprintf("color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, %s, %s, %s", s.theme.UseVarKey(theme.Custom, "gradient-from"), s.theme.UseVarKey(theme.Custom, "gradient-via"), s.theme.UseVarKey(theme.Custom, "gradient-to")),
+			string(transitionTimingProp):   s.theme.UseVarKey(theme.Custom, "default-transition-timing-function"),
+			string(transitionDurationProp): s.theme.UseVarKey(theme.Custom, "default-transition-duration"),
 		}
 	}
 }
@@ -52,8 +52,8 @@ func TransitionOpacity() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(transitionPropertyProp): "opacity",
-			string(transitionTimingProp):   s.theme.UseVarKey(themes.Custom, "default-transition-timing-function"),
-			string(transitionDurationProp): s.theme.UseVarKey(themes.Custom, "default-transition-duration"),
+			string(transitionTimingProp):   s.theme.UseVarKey(theme.Custom, "default-transition-timing-function"),
+			string(transitionDurationProp): s.theme.UseVarKey(theme.Custom, "default-transition-duration"),
 		}
 	}
 }
@@ -62,8 +62,8 @@ func TransitionShadow() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(transitionPropertyProp): "box-shadow",
-			string(transitionTimingProp):   s.theme.UseVarKey(themes.Custom, "default-transition-timing-function"),
-			string(transitionDurationProp): s.theme.UseVarKey(themes.Custom, "default-transition-duration"),
+			string(transitionTimingProp):   s.theme.UseVarKey(theme.Custom, "default-transition-timing-function"),
+			string(transitionDurationProp): s.theme.UseVarKey(theme.Custom, "default-transition-duration"),
 		}
 	}
 }
@@ -72,8 +72,8 @@ func TransitionTransform() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(transitionPropertyProp): "transform, translate, scale, rotate",
-			string(transitionTimingProp):   s.theme.UseVarKey(themes.Custom, "default-transition-timing-function"),
-			string(transitionDurationProp): s.theme.UseVarKey(themes.Custom, "default-transition-duration"),
+			string(transitionTimingProp):   s.theme.UseVarKey(theme.Custom, "default-transition-timing-function"),
+			string(transitionDurationProp): s.theme.UseVarKey(theme.Custom, "default-transition-duration"),
 		}
 	}
 }

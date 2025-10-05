@@ -1,6 +1,6 @@
 package styles
 
-import "github.com/raitucarp/gomix/themes"
+import "github.com/raitucarp/gomix/theme"
 
 func EaseLinear() ApplyProp {
 	return func(s *style) styleProp {
@@ -13,7 +13,7 @@ func EaseLinear() ApplyProp {
 func EaseIn() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(transitionTimingProp): s.theme.UseVarKey(themes.Ease, "in"),
+			string(transitionTimingProp): s.theme.UseVarKey(theme.Ease, "in"),
 		}
 	}
 }
@@ -21,7 +21,7 @@ func EaseIn() ApplyProp {
 func EaseOut() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(transitionTimingProp): s.theme.UseVarKey(themes.Ease, "out"),
+			string(transitionTimingProp): s.theme.UseVarKey(theme.Ease, "out"),
 		}
 	}
 }
@@ -29,7 +29,7 @@ func EaseOut() ApplyProp {
 func EaseInOut() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(transitionTimingProp): s.theme.UseVarKey(themes.Ease, "in-out"),
+			string(transitionTimingProp): s.theme.UseVarKey(theme.Ease, "in-out"),
 		}
 	}
 }
@@ -37,7 +37,7 @@ func EaseInOut() ApplyProp {
 func EaseInitial() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(transitionTimingProp): s.theme.UseVarKey(themes.Ease, "initial"),
+			string(transitionTimingProp): s.theme.UseVarKey(theme.Ease, "initial"),
 		}
 	}
 }

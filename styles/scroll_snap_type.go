@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func SnapNone() ApplyProp {
@@ -17,7 +17,7 @@ func SnapNone() ApplyProp {
 func SnapX() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(scrollSnapTypeProp): fmt.Sprintf("x %s", s.theme.UseVarKey(themes.Custom, "scroll-snap-strictness")),
+			string(scrollSnapTypeProp): fmt.Sprintf("x %s", s.theme.UseVarKey(theme.Custom, "scroll-snap-strictness")),
 		}
 	}
 }
@@ -25,7 +25,7 @@ func SnapX() ApplyProp {
 func SnapY() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(scrollSnapTypeProp): fmt.Sprintf("y %s", s.theme.UseVarKey(themes.Custom, "scroll-snap-strictness")),
+			string(scrollSnapTypeProp): fmt.Sprintf("y %s", s.theme.UseVarKey(theme.Custom, "scroll-snap-strictness")),
 		}
 	}
 }
@@ -33,7 +33,7 @@ func SnapY() ApplyProp {
 func SnapBoth() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(scrollSnapTypeProp): fmt.Sprintf("both %s", s.theme.UseVarKey(themes.Custom, "scroll-snap-strictness")),
+			string(scrollSnapTypeProp): fmt.Sprintf("both %s", s.theme.UseVarKey(theme.Custom, "scroll-snap-strictness")),
 		}
 	}
 }

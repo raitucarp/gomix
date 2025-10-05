@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func BgInherit() ApplyProp {
@@ -33,7 +33,7 @@ func BgTransparent() ApplyProp {
 func BgBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -41,7 +41,7 @@ func BgBlack() ApplyProp {
 func BgWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -49,7 +49,7 @@ func BgWhite() ApplyProp {
 func BgRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -57,7 +57,7 @@ func BgRed(scale int) ApplyProp {
 func BgOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -65,7 +65,7 @@ func BgOrange(scale int) ApplyProp {
 func BgAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -73,7 +73,7 @@ func BgAmber(scale int) ApplyProp {
 func BgYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -81,7 +81,7 @@ func BgYellow(scale int) ApplyProp {
 func BgLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -89,7 +89,7 @@ func BgLime(scale int) ApplyProp {
 func BgGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -97,7 +97,7 @@ func BgGreen(scale int) ApplyProp {
 func BgEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -105,7 +105,7 @@ func BgEmerald(scale int) ApplyProp {
 func BgTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -113,7 +113,7 @@ func BgTeal(scale int) ApplyProp {
 func BgCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -121,7 +121,7 @@ func BgCyan(scale int) ApplyProp {
 func BgSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -129,7 +129,7 @@ func BgSky(scale int) ApplyProp {
 func BgBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -137,7 +137,7 @@ func BgBlue(scale int) ApplyProp {
 func BgIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -145,7 +145,7 @@ func BgIndigo(scale int) ApplyProp {
 func BgViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -153,7 +153,7 @@ func BgViolet(scale int) ApplyProp {
 func BgPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -161,7 +161,7 @@ func BgPurple(scale int) ApplyProp {
 func BgFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -169,7 +169,7 @@ func BgFuchsia(scale int) ApplyProp {
 func BgPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -177,7 +177,7 @@ func BgPink(scale int) ApplyProp {
 func BgRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -185,7 +185,7 @@ func BgRose(scale int) ApplyProp {
 func BgSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -193,7 +193,7 @@ func BgSlate(scale int) ApplyProp {
 func BgGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -201,7 +201,7 @@ func BgGray(scale int) ApplyProp {
 func BgZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -209,7 +209,7 @@ func BgZinc(scale int) ApplyProp {
 func BgNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -217,7 +217,7 @@ func BgNeutral(scale int) ApplyProp {
 func BgStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(backgroundColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }

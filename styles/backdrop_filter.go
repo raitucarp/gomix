@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func BackdropFilterNone() ApplyProp {
@@ -25,49 +25,49 @@ func BackdropFilter(value customValue) ApplyProp {
 func BackdropBlurXs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "xs")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "xs")),
 		}
 	}
 }
 func BackdropBlurSm() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "sm")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "sm")),
 		}
 	}
 }
 func BackdropBlurMd() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "md")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "md")),
 		}
 	}
 }
 func BackdropBlurLg() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "lg")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "lg")),
 		}
 	}
 }
 func BackdropBlurXl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "xl")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "xl")),
 		}
 	}
 }
 func BackdropBlur2xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "2xl")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "2xl")),
 		}
 	}
 }
 func BackdropBlur3xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "3xl")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "3xl")),
 		}
 	}
 }

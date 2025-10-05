@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func TextInherit() ApplyProp {
@@ -33,7 +33,7 @@ func TextTransparent() ApplyProp {
 func TextBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(colorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -41,7 +41,7 @@ func TextBlack() ApplyProp {
 func TextWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(colorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -49,7 +49,7 @@ func TextWhite() ApplyProp {
 func TextRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -57,7 +57,7 @@ func TextRed(scale int) ApplyProp {
 func TextOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -65,7 +65,7 @@ func TextOrange(scale int) ApplyProp {
 func TextAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -73,7 +73,7 @@ func TextAmber(scale int) ApplyProp {
 func TextYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -81,7 +81,7 @@ func TextYellow(scale int) ApplyProp {
 func TextLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -89,7 +89,7 @@ func TextLime(scale int) ApplyProp {
 func TextGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -97,7 +97,7 @@ func TextGreen(scale int) ApplyProp {
 func TextEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -105,7 +105,7 @@ func TextEmerald(scale int) ApplyProp {
 func TextTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -113,7 +113,7 @@ func TextTeal(scale int) ApplyProp {
 func TextCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -121,7 +121,7 @@ func TextCyan(scale int) ApplyProp {
 func TextSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -129,7 +129,7 @@ func TextSky(scale int) ApplyProp {
 func TextBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -137,7 +137,7 @@ func TextBlue(scale int) ApplyProp {
 func TextIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -145,7 +145,7 @@ func TextIndigo(scale int) ApplyProp {
 func TextViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -153,7 +153,7 @@ func TextViolet(scale int) ApplyProp {
 func TextPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -161,7 +161,7 @@ func TextPurple(scale int) ApplyProp {
 func TextFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -169,7 +169,7 @@ func TextFuchsia(scale int) ApplyProp {
 func TextPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -177,7 +177,7 @@ func TextPink(scale int) ApplyProp {
 func TextRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -185,7 +185,7 @@ func TextRose(scale int) ApplyProp {
 func TextSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -193,7 +193,7 @@ func TextSlate(scale int) ApplyProp {
 func TextGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -201,7 +201,7 @@ func TextGray(scale int) ApplyProp {
 func TextZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -209,7 +209,7 @@ func TextZinc(scale int) ApplyProp {
 func TextNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -217,7 +217,7 @@ func TextNeutral(scale int) ApplyProp {
 func TextStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(colorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(colorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }

@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func StrokeInherit() ApplyProp {
@@ -33,7 +33,7 @@ func StrokeTransparent() ApplyProp {
 func StrokeBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -41,7 +41,7 @@ func StrokeBlack() ApplyProp {
 func StrokeWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -49,7 +49,7 @@ func StrokeWhite() ApplyProp {
 func StrokeRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -57,7 +57,7 @@ func StrokeRed(scale int) ApplyProp {
 func StrokeOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -65,7 +65,7 @@ func StrokeOrange(scale int) ApplyProp {
 func StrokeAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -73,7 +73,7 @@ func StrokeAmber(scale int) ApplyProp {
 func StrokeYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -81,7 +81,7 @@ func StrokeYellow(scale int) ApplyProp {
 func StrokeLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -89,7 +89,7 @@ func StrokeLime(scale int) ApplyProp {
 func StrokeGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -97,7 +97,7 @@ func StrokeGreen(scale int) ApplyProp {
 func StrokeEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -105,7 +105,7 @@ func StrokeEmerald(scale int) ApplyProp {
 func StrokeTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -113,7 +113,7 @@ func StrokeTeal(scale int) ApplyProp {
 func StrokeCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -121,7 +121,7 @@ func StrokeCyan(scale int) ApplyProp {
 func StrokeSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -129,7 +129,7 @@ func StrokeSky(scale int) ApplyProp {
 func StrokeBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -137,7 +137,7 @@ func StrokeBlue(scale int) ApplyProp {
 func StrokeIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -145,7 +145,7 @@ func StrokeIndigo(scale int) ApplyProp {
 func StrokeViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -153,7 +153,7 @@ func StrokeViolet(scale int) ApplyProp {
 func StrokePurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -161,7 +161,7 @@ func StrokePurple(scale int) ApplyProp {
 func StrokeFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -169,7 +169,7 @@ func StrokeFuchsia(scale int) ApplyProp {
 func StrokePink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -177,7 +177,7 @@ func StrokePink(scale int) ApplyProp {
 func StrokeRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -185,7 +185,7 @@ func StrokeRose(scale int) ApplyProp {
 func StrokeSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -193,7 +193,7 @@ func StrokeSlate(scale int) ApplyProp {
 func StrokeGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -201,7 +201,7 @@ func StrokeGray(scale int) ApplyProp {
 func StrokeZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -209,7 +209,7 @@ func StrokeZinc(scale int) ApplyProp {
 func StrokeNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -217,7 +217,7 @@ func StrokeNeutral(scale int) ApplyProp {
 func StrokeStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(strokeProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }

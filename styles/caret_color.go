@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func CaretInherit() ApplyProp {
@@ -33,7 +33,7 @@ func CaretTransparent() ApplyProp {
 func CaretBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -41,7 +41,7 @@ func CaretBlack() ApplyProp {
 func CaretWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -49,7 +49,7 @@ func CaretWhite() ApplyProp {
 func CaretRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -57,7 +57,7 @@ func CaretRed(scale int) ApplyProp {
 func CaretOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -65,7 +65,7 @@ func CaretOrange(scale int) ApplyProp {
 func CaretAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -73,7 +73,7 @@ func CaretAmber(scale int) ApplyProp {
 func CaretYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -81,7 +81,7 @@ func CaretYellow(scale int) ApplyProp {
 func CaretLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -89,7 +89,7 @@ func CaretLime(scale int) ApplyProp {
 func CaretGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -97,7 +97,7 @@ func CaretGreen(scale int) ApplyProp {
 func CaretEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -105,7 +105,7 @@ func CaretEmerald(scale int) ApplyProp {
 func CaretTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -113,7 +113,7 @@ func CaretTeal(scale int) ApplyProp {
 func CaretCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -121,7 +121,7 @@ func CaretCyan(scale int) ApplyProp {
 func CaretSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -129,7 +129,7 @@ func CaretSky(scale int) ApplyProp {
 func CaretBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -137,7 +137,7 @@ func CaretBlue(scale int) ApplyProp {
 func CaretIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -145,7 +145,7 @@ func CaretIndigo(scale int) ApplyProp {
 func CaretViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -153,7 +153,7 @@ func CaretViolet(scale int) ApplyProp {
 func CaretPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -161,7 +161,7 @@ func CaretPurple(scale int) ApplyProp {
 func CaretFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -169,7 +169,7 @@ func CaretFuchsia(scale int) ApplyProp {
 func CaretPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -177,7 +177,7 @@ func CaretPink(scale int) ApplyProp {
 func CaretRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -185,7 +185,7 @@ func CaretRose(scale int) ApplyProp {
 func CaretSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -193,7 +193,7 @@ func CaretSlate(scale int) ApplyProp {
 func CaretGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -201,7 +201,7 @@ func CaretGray(scale int) ApplyProp {
 func CaretZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -209,7 +209,7 @@ func CaretZinc(scale int) ApplyProp {
 func CaretNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -217,7 +217,7 @@ func CaretNeutral(scale int) ApplyProp {
 func CaretStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(caretColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }

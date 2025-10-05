@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func TranslateNone() ApplyProp {
@@ -90,12 +90,12 @@ func TranslateX(value any) ApplyProp {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("calc(var(--spacing) * %d) %s",
 				v,
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			)
 		case ratio:
-			propValue = fmt.Sprintf("calc(%s * 100%%) %s", v.Value(), s.theme.UseVarKey(themes.Custom, "translate-y"))
+			propValue = fmt.Sprintf("calc(%s * 100%%) %s", v.Value(), s.theme.UseVarKey(theme.Custom, "translate-y"))
 		case customValue:
-			propValue = fmt.Sprintf("%s %s", v, s.theme.UseVarKey(themes.Custom, "translate-y"))
+			propValue = fmt.Sprintf("%s %s", v, s.theme.UseVarKey(theme.Custom, "translate-y"))
 		}
 
 		return &properties{
@@ -112,10 +112,10 @@ func NegTranslateX(value any) ApplyProp {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("calc(var(--spacing) * -%d) %s",
 				v,
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			)
 		case ratio:
-			propValue = fmt.Sprintf("calc(%s * -100%%) %s", v.Value(), s.theme.UseVarKey(themes.Custom, "translate-y"))
+			propValue = fmt.Sprintf("calc(%s * -100%%) %s", v.Value(), s.theme.UseVarKey(theme.Custom, "translate-y"))
 		}
 
 		return &properties{
@@ -128,7 +128,7 @@ func TranslateXFull() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(translatePropp): fmt.Sprintf("100%% %s",
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			),
 		}
 	}
@@ -138,7 +138,7 @@ func NegTranslateXFull() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(translatePropp): fmt.Sprintf("-100%% %s",
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			),
 		}
 	}
@@ -148,7 +148,7 @@ func TranslateXPx() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(translatePropp): fmt.Sprintf("1px %s",
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			),
 		}
 	}
@@ -158,7 +158,7 @@ func NegTranslateXPx() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(translatePropp): fmt.Sprintf("-1px %s",
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			),
 		}
 	}
@@ -171,17 +171,17 @@ func TranslateY(value any) ApplyProp {
 		switch v := value.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("%s calc(var(--spacing) * %d)",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				v,
 			)
 		case ratio:
 			propValue = fmt.Sprintf("%s calc(%s * 100%%)",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				v.Value(),
 			)
 		case customValue:
 			propValue = fmt.Sprintf("%s %s",
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 				v,
 			)
 		}
@@ -199,12 +199,12 @@ func NegTranslateY(value any) ApplyProp {
 		switch v := value.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("%s calc(var(--spacing) * -%d)",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				v,
 			)
 		case ratio:
 			propValue = fmt.Sprintf("%s calc(%s * -100%%)",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				v.Value(),
 			)
 		}
@@ -219,7 +219,7 @@ func TranslateYFull() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(translatePropp): fmt.Sprintf("%s 100%%",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
 			),
 		}
 	}
@@ -229,7 +229,7 @@ func NegTranslateYFull() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(translatePropp): fmt.Sprintf("%s -100%%",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
 			),
 		}
 	}
@@ -239,7 +239,7 @@ func TranslateYPx() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(translatePropp): fmt.Sprintf("%s 1px",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
 			),
 		}
 	}
@@ -249,7 +249,7 @@ func NegTranslateYPx() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(translatePropp): fmt.Sprintf("%s -1px",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
 			),
 		}
 	}
@@ -262,20 +262,20 @@ func TranslateZ(value any) ApplyProp {
 		switch v := value.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("%s %s calc(var(--spacing) * %d)",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 				v,
 			)
 		case ratio:
 			propValue = fmt.Sprintf("%s %s calc(%s * 100%%)",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 				v.Value(),
 			)
 		case customValue:
 			propValue = fmt.Sprintf("%s %s %s",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 				v,
 			)
 		}
@@ -293,14 +293,14 @@ func NegTranslateZ(value any) ApplyProp {
 		switch v := value.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("%s %s calc(var(--spacing) * -%d)",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 				v,
 			)
 		case ratio:
 			propValue = fmt.Sprintf("%s %s calc(%s * -100%%)",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 				v.Value(),
 			)
 		}
@@ -315,8 +315,8 @@ func TranslateZPx() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(translatePropp): fmt.Sprintf("%s %s 1px",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			),
 		}
 	}
@@ -326,8 +326,8 @@ func NegTranslateZPx() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(translatePropp): fmt.Sprintf("%s %s -1px",
-				s.theme.UseVarKey(themes.Custom, "translate-x"),
-				s.theme.UseVarKey(themes.Custom, "translate-y"),
+				s.theme.UseVarKey(theme.Custom, "translate-x"),
+				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			),
 		}
 	}

@@ -3,13 +3,13 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func DropShadow2xs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(themes.Shadow, "2xs")),
+			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(theme.Shadow, "2xs")),
 		}
 	}
 }
@@ -17,7 +17,7 @@ func DropShadow2xs() ApplyProp {
 func DropShadowXs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(themes.Shadow, "xs")),
+			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(theme.Shadow, "xs")),
 		}
 	}
 }
@@ -25,7 +25,7 @@ func DropShadowXs() ApplyProp {
 func DropShadowSm() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(themes.Shadow, "sm")),
+			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(theme.Shadow, "sm")),
 		}
 	}
 }
@@ -33,7 +33,7 @@ func DropShadowSm() ApplyProp {
 func DropShadowMd() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(themes.Shadow, "md")),
+			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(theme.Shadow, "md")),
 		}
 	}
 }
@@ -41,7 +41,7 @@ func DropShadowMd() ApplyProp {
 func DropShadowLg() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(themes.Shadow, "lg")),
+			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(theme.Shadow, "lg")),
 		}
 	}
 }
@@ -49,7 +49,7 @@ func DropShadowLg() ApplyProp {
 func DropShadowXl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(themes.Shadow, "xl")),
+			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(theme.Shadow, "xl")),
 		}
 	}
 }
@@ -57,7 +57,7 @@ func DropShadowXl() ApplyProp {
 func DropShadow2xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(themes.Shadow, "2xl")),
+			string(filterProp): fmt.Sprintf("drop-shadow(%s)", s.theme.UseVarKey(theme.Shadow, "2xl")),
 		}
 	}
 }
@@ -105,7 +105,7 @@ func DropShadowTransparent() ApplyProp {
 func DropShadowBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, "black"),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -113,7 +113,7 @@ func DropShadowBlack() ApplyProp {
 func DropShadowWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, "white"),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -121,7 +121,7 @@ func DropShadowWhite() ApplyProp {
 func DropShadowRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -129,7 +129,7 @@ func DropShadowRed(scale int) ApplyProp {
 func DropShadowOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -137,7 +137,7 @@ func DropShadowOrange(scale int) ApplyProp {
 func DropShadowAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -145,7 +145,7 @@ func DropShadowAmber(scale int) ApplyProp {
 func DropShadowYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -153,7 +153,7 @@ func DropShadowYellow(scale int) ApplyProp {
 func DropShadowLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -161,7 +161,7 @@ func DropShadowLime(scale int) ApplyProp {
 func DropShadowGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -169,7 +169,7 @@ func DropShadowGreen(scale int) ApplyProp {
 func DropShadowEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -177,7 +177,7 @@ func DropShadowEmerald(scale int) ApplyProp {
 func DropShadowTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -185,7 +185,7 @@ func DropShadowTeal(scale int) ApplyProp {
 func DropShadowCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -193,7 +193,7 @@ func DropShadowCyan(scale int) ApplyProp {
 func DropShadowSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -201,7 +201,7 @@ func DropShadowSky(scale int) ApplyProp {
 func DropShadowBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -209,7 +209,7 @@ func DropShadowBlue(scale int) ApplyProp {
 func DropShadowIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -217,7 +217,7 @@ func DropShadowIndigo(scale int) ApplyProp {
 func DropShadowViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -225,7 +225,7 @@ func DropShadowViolet(scale int) ApplyProp {
 func DropShadowPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -233,7 +233,7 @@ func DropShadowPurple(scale int) ApplyProp {
 func DropShadowFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -241,7 +241,7 @@ func DropShadowFuchsia(scale int) ApplyProp {
 func DropShadowPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -249,7 +249,7 @@ func DropShadowPink(scale int) ApplyProp {
 func DropShadowRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -257,7 +257,7 @@ func DropShadowRose(scale int) ApplyProp {
 func DropShadowSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -265,7 +265,7 @@ func DropShadowSlate(scale int) ApplyProp {
 func DropShadowGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -273,7 +273,7 @@ func DropShadowGray(scale int) ApplyProp {
 func DropShadowZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -281,7 +281,7 @@ func DropShadowZinc(scale int) ApplyProp {
 func DropShadowNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -289,7 +289,7 @@ func DropShadowNeutral(scale int) ApplyProp {
 func DropShadowStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }

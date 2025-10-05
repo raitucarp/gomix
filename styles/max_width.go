@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func MaxW(number int) ApplyProp {
@@ -25,7 +25,7 @@ func MaxWFraction(fraction float32) ApplyProp {
 func MaxW3xs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "3xs"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "3xs"),
 		}
 	}
 }
@@ -33,7 +33,7 @@ func MaxW3xs() ApplyProp {
 func MaxW2xs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "2xs"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "2xs"),
 		}
 	}
 }
@@ -41,7 +41,7 @@ func MaxW2xs() ApplyProp {
 func MaxWXs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "xs"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "xs"),
 		}
 	}
 }
@@ -49,7 +49,7 @@ func MaxWXs() ApplyProp {
 func MaxWSm() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "sm"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "sm"),
 		}
 	}
 }
@@ -57,7 +57,7 @@ func MaxWSm() ApplyProp {
 func MaxWMd() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "md"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "md"),
 		}
 	}
 }
@@ -65,7 +65,7 @@ func MaxWMd() ApplyProp {
 func MaxWLg() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "lg"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "lg"),
 		}
 	}
 }
@@ -73,7 +73,7 @@ func MaxWLg() ApplyProp {
 func MaxWXl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "xl"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "xl"),
 		}
 	}
 }
@@ -81,7 +81,7 @@ func MaxWXl() ApplyProp {
 func MaxW2xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "2xl"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "2xl"),
 		}
 	}
 }
@@ -89,7 +89,7 @@ func MaxW2xl() ApplyProp {
 func MaxW3xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "3xl"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "3xl"),
 		}
 	}
 }
@@ -97,7 +97,7 @@ func MaxW3xl() ApplyProp {
 func MaxW4xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "4xl"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "4xl"),
 		}
 	}
 }
@@ -105,7 +105,7 @@ func MaxW4xl() ApplyProp {
 func MaxW5xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "5xl"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "5xl"),
 		}
 	}
 }
@@ -113,7 +113,7 @@ func MaxW5xl() ApplyProp {
 func MaxW6xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "6xl"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "6xl"),
 		}
 	}
 }
@@ -121,7 +121,7 @@ func MaxW6xl() ApplyProp {
 func MaxW7xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): s.theme.UseVarKey(themes.Container, "7xl"),
+			string(maxWidthProp): s.theme.UseVarKey(theme.Container, "7xl"),
 		}
 	}
 }

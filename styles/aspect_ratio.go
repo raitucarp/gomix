@@ -1,8 +1,6 @@
 package styles
 
-import (
-	"github.com/raitucarp/gomix/themes"
-)
+import "github.com/raitucarp/gomix/theme"
 
 func Aspect(ratio customValue) ApplyProp {
 	return func(s *style) styleProp {
@@ -24,7 +22,7 @@ func AspectSquare() ApplyProp {
 func AspectVideo() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(aspectRatioProp): s.theme.UseVarKey(themes.Aspect, "video"),
+			string(aspectRatioProp): s.theme.UseVarKey(theme.Aspect, "video"),
 		}
 	}
 }

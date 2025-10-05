@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func AccentInherit() ApplyProp {
@@ -33,7 +33,7 @@ func AccentTransparent() ApplyProp {
 func AccentBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -41,7 +41,7 @@ func AccentBlack() ApplyProp {
 func AccentWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -49,7 +49,7 @@ func AccentWhite() ApplyProp {
 func AccentRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -57,7 +57,7 @@ func AccentRed(scale int) ApplyProp {
 func AccentOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -65,7 +65,7 @@ func AccentOrange(scale int) ApplyProp {
 func AccentAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -73,7 +73,7 @@ func AccentAmber(scale int) ApplyProp {
 func AccentYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -81,7 +81,7 @@ func AccentYellow(scale int) ApplyProp {
 func AccentLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -89,7 +89,7 @@ func AccentLime(scale int) ApplyProp {
 func AccentGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -97,7 +97,7 @@ func AccentGreen(scale int) ApplyProp {
 func AccentEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -105,7 +105,7 @@ func AccentEmerald(scale int) ApplyProp {
 func AccentTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -113,7 +113,7 @@ func AccentTeal(scale int) ApplyProp {
 func AccentCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -121,7 +121,7 @@ func AccentCyan(scale int) ApplyProp {
 func AccentSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -129,7 +129,7 @@ func AccentSky(scale int) ApplyProp {
 func AccentBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -137,7 +137,7 @@ func AccentBlue(scale int) ApplyProp {
 func AccentIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -145,7 +145,7 @@ func AccentIndigo(scale int) ApplyProp {
 func AccentViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -153,7 +153,7 @@ func AccentViolet(scale int) ApplyProp {
 func AccentPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -161,7 +161,7 @@ func AccentPurple(scale int) ApplyProp {
 func AccentFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -169,7 +169,7 @@ func AccentFuchsia(scale int) ApplyProp {
 func AccentPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -177,7 +177,7 @@ func AccentPink(scale int) ApplyProp {
 func AccentRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -185,7 +185,7 @@ func AccentRose(scale int) ApplyProp {
 func AccentSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -193,7 +193,7 @@ func AccentSlate(scale int) ApplyProp {
 func AccentGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -201,7 +201,7 @@ func AccentGray(scale int) ApplyProp {
 func AccentZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -209,7 +209,7 @@ func AccentZinc(scale int) ApplyProp {
 func AccentNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -217,7 +217,7 @@ func AccentNeutral(scale int) ApplyProp {
 func AccentStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(accentColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }

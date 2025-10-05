@@ -1,12 +1,12 @@
 package styles
 
-import "github.com/raitucarp/gomix/themes"
+import "github.com/raitucarp/gomix/theme"
 
 func AnimateSpin() ApplyProp {
 	return func(s *style) styleProp {
 
 		return &properties{
-			string(animationProp): s.theme.UseVarKey(themes.Animate, "spin"),
+			string(animationProp): s.theme.UseVarKey(theme.Animate, "spin"),
 			string(rawProp): `
 				@keyframes spin {
 					to {
@@ -21,7 +21,7 @@ func AnimateSpin() ApplyProp {
 func AnimatePing() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(animationProp): s.theme.UseVarKey(themes.Animate, "ping"),
+			string(animationProp): s.theme.UseVarKey(theme.Animate, "ping"),
 			string(rawProp): `
 				@keyframes ping {
 					75%, 100% {
@@ -37,7 +37,7 @@ func AnimatePing() ApplyProp {
 func AnimatePulse() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(animationProp): s.theme.UseVarKey(themes.Animate, "pulse"),
+			string(animationProp): s.theme.UseVarKey(theme.Animate, "pulse"),
 			string(rawProp): `
 				@keyframes pulse {
 					50% {
@@ -52,7 +52,7 @@ func AnimatePulse() ApplyProp {
 func AnimateBounce() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(animationProp): s.theme.UseVarKey(themes.Animate, "bounce"),
+			string(animationProp): s.theme.UseVarKey(theme.Animate, "bounce"),
 			string(rawProp): `
 				@keyframes bounce {
 					0%, 100% {

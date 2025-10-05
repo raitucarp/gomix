@@ -6,12 +6,6 @@ import (
 	"github.com/iancoleman/strcase"
 )
 
-type customProperty struct {
-	name         string
-	inherits     bool
-	initialValue any
-}
-
 type customVariableProp struct {
 	name string
 }

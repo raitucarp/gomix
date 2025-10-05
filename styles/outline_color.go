@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func OutlineInherit() ApplyProp {
@@ -33,7 +33,7 @@ func OutlineTransparent() ApplyProp {
 func OutlineBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -41,7 +41,7 @@ func OutlineBlack() ApplyProp {
 func OutlineWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -49,7 +49,7 @@ func OutlineWhite() ApplyProp {
 func OutlineRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -57,7 +57,7 @@ func OutlineRed(scale int) ApplyProp {
 func OutlineOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -65,7 +65,7 @@ func OutlineOrange(scale int) ApplyProp {
 func OutlineAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -73,7 +73,7 @@ func OutlineAmber(scale int) ApplyProp {
 func OutlineYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -81,7 +81,7 @@ func OutlineYellow(scale int) ApplyProp {
 func OutlineLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -89,7 +89,7 @@ func OutlineLime(scale int) ApplyProp {
 func OutlineGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -97,7 +97,7 @@ func OutlineGreen(scale int) ApplyProp {
 func OutlineEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -105,7 +105,7 @@ func OutlineEmerald(scale int) ApplyProp {
 func OutlineTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -113,7 +113,7 @@ func OutlineTeal(scale int) ApplyProp {
 func OutlineCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -121,7 +121,7 @@ func OutlineCyan(scale int) ApplyProp {
 func OutlineSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -129,7 +129,7 @@ func OutlineSky(scale int) ApplyProp {
 func OutlineBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -137,7 +137,7 @@ func OutlineBlue(scale int) ApplyProp {
 func OutlineIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -145,7 +145,7 @@ func OutlineIndigo(scale int) ApplyProp {
 func OutlineViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -153,7 +153,7 @@ func OutlineViolet(scale int) ApplyProp {
 func OutlinePurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -161,7 +161,7 @@ func OutlinePurple(scale int) ApplyProp {
 func OutlineFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -169,7 +169,7 @@ func OutlineFuchsia(scale int) ApplyProp {
 func OutlinePink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -177,7 +177,7 @@ func OutlinePink(scale int) ApplyProp {
 func OutlineRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -185,7 +185,7 @@ func OutlineRose(scale int) ApplyProp {
 func OutlineSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -193,7 +193,7 @@ func OutlineSlate(scale int) ApplyProp {
 func OutlineGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -201,7 +201,7 @@ func OutlineGray(scale int) ApplyProp {
 func OutlineZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -209,7 +209,7 @@ func OutlineZinc(scale int) ApplyProp {
 func OutlineNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -217,7 +217,7 @@ func OutlineNeutral(scale int) ApplyProp {
 func OutlineStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(outlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(outlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }

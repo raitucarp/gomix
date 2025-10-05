@@ -3,13 +3,13 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func Shadow2xs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "2xs"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "2xs"),
 		}
 	}
 }
@@ -17,7 +17,7 @@ func Shadow2xs() ApplyProp {
 func ShadowXs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "xs"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "xs"),
 		}
 	}
 }
@@ -25,7 +25,7 @@ func ShadowXs() ApplyProp {
 func ShadowSm() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "sm"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "sm"),
 		}
 	}
 }
@@ -33,7 +33,7 @@ func ShadowSm() ApplyProp {
 func ShadowMd() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "md"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "md"),
 		}
 	}
 }
@@ -41,7 +41,7 @@ func ShadowMd() ApplyProp {
 func ShadowLg() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "lg"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "lg"),
 		}
 	}
 }
@@ -49,7 +49,7 @@ func ShadowLg() ApplyProp {
 func ShadowXl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "xl"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "xl"),
 		}
 	}
 }
@@ -57,7 +57,7 @@ func ShadowXl() ApplyProp {
 func Shadow2xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "2xl"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "2xl"),
 		}
 	}
 }
@@ -105,7 +105,7 @@ func ShadowTransparent() ApplyProp {
 func ShadowBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -113,7 +113,7 @@ func ShadowBlack() ApplyProp {
 func ShadowWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -121,7 +121,7 @@ func ShadowWhite() ApplyProp {
 func ShadowRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -129,7 +129,7 @@ func ShadowRed(scale int) ApplyProp {
 func ShadowOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -137,7 +137,7 @@ func ShadowOrange(scale int) ApplyProp {
 func ShadowAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -145,7 +145,7 @@ func ShadowAmber(scale int) ApplyProp {
 func ShadowYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -153,7 +153,7 @@ func ShadowYellow(scale int) ApplyProp {
 func ShadowLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -161,7 +161,7 @@ func ShadowLime(scale int) ApplyProp {
 func ShadowGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -169,7 +169,7 @@ func ShadowGreen(scale int) ApplyProp {
 func ShadowEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -177,7 +177,7 @@ func ShadowEmerald(scale int) ApplyProp {
 func ShadowTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -185,7 +185,7 @@ func ShadowTeal(scale int) ApplyProp {
 func ShadowCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -193,7 +193,7 @@ func ShadowCyan(scale int) ApplyProp {
 func ShadowSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -201,7 +201,7 @@ func ShadowSky(scale int) ApplyProp {
 func ShadowBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -209,7 +209,7 @@ func ShadowBlue(scale int) ApplyProp {
 func ShadowIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -217,7 +217,7 @@ func ShadowIndigo(scale int) ApplyProp {
 func ShadowViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -225,7 +225,7 @@ func ShadowViolet(scale int) ApplyProp {
 func ShadowPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -233,7 +233,7 @@ func ShadowPurple(scale int) ApplyProp {
 func ShadowFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -241,7 +241,7 @@ func ShadowFuchsia(scale int) ApplyProp {
 func ShadowPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -249,7 +249,7 @@ func ShadowPink(scale int) ApplyProp {
 func ShadowRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -257,7 +257,7 @@ func ShadowRose(scale int) ApplyProp {
 func ShadowSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -265,7 +265,7 @@ func ShadowSlate(scale int) ApplyProp {
 func ShadowGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -273,7 +273,7 @@ func ShadowGray(scale int) ApplyProp {
 func ShadowZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -281,7 +281,7 @@ func ShadowZinc(scale int) ApplyProp {
 func ShadowNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -289,7 +289,7 @@ func ShadowNeutral(scale int) ApplyProp {
 func ShadowStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(shadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -307,7 +307,7 @@ func ShadowColor(value customValue) ApplyProp {
 func InsetShadow2xs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "2xs"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "2xs"),
 		}
 	}
 }
@@ -315,7 +315,7 @@ func InsetShadow2xs() ApplyProp {
 func InsetShadowXs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "xs"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "xs"),
 		}
 	}
 }
@@ -323,7 +323,7 @@ func InsetShadowXs() ApplyProp {
 func InsetShadowSm() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "sm"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "sm"),
 		}
 	}
 }
@@ -331,7 +331,7 @@ func InsetShadowSm() ApplyProp {
 func InsetShadowMd() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "md"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "md"),
 		}
 	}
 }
@@ -339,7 +339,7 @@ func InsetShadowMd() ApplyProp {
 func InsetShadowLg() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "lg"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "lg"),
 		}
 	}
 }
@@ -347,7 +347,7 @@ func InsetShadowLg() ApplyProp {
 func InsetShadowXl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "xl"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "xl"),
 		}
 	}
 }
@@ -355,7 +355,7 @@ func InsetShadowXl() ApplyProp {
 func InsetShadow2xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): s.theme.UseVarKey(themes.Shadow, "2xl"),
+			string(boxShadowProp): s.theme.UseVarKey(theme.Shadow, "2xl"),
 		}
 	}
 }
@@ -403,7 +403,7 @@ func InsetShadowTransparent() ApplyProp {
 func InsetShadowBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -411,7 +411,7 @@ func InsetShadowBlack() ApplyProp {
 func InsetShadowWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -419,7 +419,7 @@ func InsetShadowWhite() ApplyProp {
 func InsetShadowRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -427,7 +427,7 @@ func InsetShadowRed(scale int) ApplyProp {
 func InsetShadowOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -435,7 +435,7 @@ func InsetShadowOrange(scale int) ApplyProp {
 func InsetShadowAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -443,7 +443,7 @@ func InsetShadowAmber(scale int) ApplyProp {
 func InsetShadowYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -451,7 +451,7 @@ func InsetShadowYellow(scale int) ApplyProp {
 func InsetShadowLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -459,7 +459,7 @@ func InsetShadowLime(scale int) ApplyProp {
 func InsetShadowGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -467,7 +467,7 @@ func InsetShadowGreen(scale int) ApplyProp {
 func InsetShadowEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -475,7 +475,7 @@ func InsetShadowEmerald(scale int) ApplyProp {
 func InsetShadowTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -483,7 +483,7 @@ func InsetShadowTeal(scale int) ApplyProp {
 func InsetShadowCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -491,7 +491,7 @@ func InsetShadowCyan(scale int) ApplyProp {
 func InsetShadowSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -499,7 +499,7 @@ func InsetShadowSky(scale int) ApplyProp {
 func InsetShadowBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -507,7 +507,7 @@ func InsetShadowBlue(scale int) ApplyProp {
 func InsetShadowIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -515,7 +515,7 @@ func InsetShadowIndigo(scale int) ApplyProp {
 func InsetShadowViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -523,7 +523,7 @@ func InsetShadowViolet(scale int) ApplyProp {
 func InsetShadowPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -531,7 +531,7 @@ func InsetShadowPurple(scale int) ApplyProp {
 func InsetShadowFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -539,7 +539,7 @@ func InsetShadowFuchsia(scale int) ApplyProp {
 func InsetShadowPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -547,7 +547,7 @@ func InsetShadowPink(scale int) ApplyProp {
 func InsetShadowRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -555,7 +555,7 @@ func InsetShadowRose(scale int) ApplyProp {
 func InsetShadowSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -563,7 +563,7 @@ func InsetShadowSlate(scale int) ApplyProp {
 func InsetShadowGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -571,7 +571,7 @@ func InsetShadowGray(scale int) ApplyProp {
 func InsetShadowZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -579,7 +579,7 @@ func InsetShadowZinc(scale int) ApplyProp {
 func InsetShadowNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -587,7 +587,7 @@ func InsetShadowNeutral(scale int) ApplyProp {
 func InsetShadowStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(insetShadowColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -655,7 +655,7 @@ func RingTransparent() ApplyProp {
 func RingBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -663,7 +663,7 @@ func RingBlack() ApplyProp {
 func RingWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -671,7 +671,7 @@ func RingWhite() ApplyProp {
 func RingRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -679,7 +679,7 @@ func RingRed(scale int) ApplyProp {
 func RingOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -687,7 +687,7 @@ func RingOrange(scale int) ApplyProp {
 func RingAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -695,7 +695,7 @@ func RingAmber(scale int) ApplyProp {
 func RingYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -703,7 +703,7 @@ func RingYellow(scale int) ApplyProp {
 func RingLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -711,7 +711,7 @@ func RingLime(scale int) ApplyProp {
 func RingGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -719,7 +719,7 @@ func RingGreen(scale int) ApplyProp {
 func RingEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -727,7 +727,7 @@ func RingEmerald(scale int) ApplyProp {
 func RingTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -735,7 +735,7 @@ func RingTeal(scale int) ApplyProp {
 func RingCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -743,7 +743,7 @@ func RingCyan(scale int) ApplyProp {
 func RingSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -751,7 +751,7 @@ func RingSky(scale int) ApplyProp {
 func RingBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -759,7 +759,7 @@ func RingBlue(scale int) ApplyProp {
 func RingIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -767,7 +767,7 @@ func RingIndigo(scale int) ApplyProp {
 func RingViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -775,7 +775,7 @@ func RingViolet(scale int) ApplyProp {
 func RingPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -783,7 +783,7 @@ func RingPurple(scale int) ApplyProp {
 func RingFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -791,7 +791,7 @@ func RingFuchsia(scale int) ApplyProp {
 func RingPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -799,7 +799,7 @@ func RingPink(scale int) ApplyProp {
 func RingRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -807,7 +807,7 @@ func RingRose(scale int) ApplyProp {
 func RingSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -815,7 +815,7 @@ func RingSlate(scale int) ApplyProp {
 func RingGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -823,7 +823,7 @@ func RingGray(scale int) ApplyProp {
 func RingZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -831,7 +831,7 @@ func RingZinc(scale int) ApplyProp {
 func RingNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -839,7 +839,7 @@ func RingNeutral(scale int) ApplyProp {
 func RingStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(ringColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -899,7 +899,7 @@ func InsetRingTransparent() ApplyProp {
 func InsetRingBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -907,7 +907,7 @@ func InsetRingBlack() ApplyProp {
 func InsetRingWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -915,7 +915,7 @@ func InsetRingWhite() ApplyProp {
 func InsetRingRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -923,7 +923,7 @@ func InsetRingRed(scale int) ApplyProp {
 func InsetRingOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -931,7 +931,7 @@ func InsetRingOrange(scale int) ApplyProp {
 func InsetRingAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -939,7 +939,7 @@ func InsetRingAmber(scale int) ApplyProp {
 func InsetRingYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -947,7 +947,7 @@ func InsetRingYellow(scale int) ApplyProp {
 func InsetRingLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -955,7 +955,7 @@ func InsetRingLime(scale int) ApplyProp {
 func InsetRingGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -963,7 +963,7 @@ func InsetRingGreen(scale int) ApplyProp {
 func InsetRingEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -971,7 +971,7 @@ func InsetRingEmerald(scale int) ApplyProp {
 func InsetRingTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -979,7 +979,7 @@ func InsetRingTeal(scale int) ApplyProp {
 func InsetRingCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -987,7 +987,7 @@ func InsetRingCyan(scale int) ApplyProp {
 func InsetRingSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -995,7 +995,7 @@ func InsetRingSky(scale int) ApplyProp {
 func InsetRingBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -1003,7 +1003,7 @@ func InsetRingBlue(scale int) ApplyProp {
 func InsetRingIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -1011,7 +1011,7 @@ func InsetRingIndigo(scale int) ApplyProp {
 func InsetRingViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -1019,7 +1019,7 @@ func InsetRingViolet(scale int) ApplyProp {
 func InsetRingPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -1027,7 +1027,7 @@ func InsetRingPurple(scale int) ApplyProp {
 func InsetRingFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -1035,7 +1035,7 @@ func InsetRingFuchsia(scale int) ApplyProp {
 func InsetRingPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -1043,7 +1043,7 @@ func InsetRingPink(scale int) ApplyProp {
 func InsetRingRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -1051,7 +1051,7 @@ func InsetRingRose(scale int) ApplyProp {
 func InsetRingSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -1059,7 +1059,7 @@ func InsetRingSlate(scale int) ApplyProp {
 func InsetRingGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -1067,7 +1067,7 @@ func InsetRingGray(scale int) ApplyProp {
 func InsetRingZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -1075,7 +1075,7 @@ func InsetRingZinc(scale int) ApplyProp {
 func InsetRingNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -1083,7 +1083,7 @@ func InsetRingNeutral(scale int) ApplyProp {
 func InsetRingStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(insetRingColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }

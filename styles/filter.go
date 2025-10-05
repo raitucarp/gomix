@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func FilterNone() ApplyProp {
@@ -25,49 +25,49 @@ func Filter(value customValue) ApplyProp {
 func BlurXs() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "xs")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "xs")),
 		}
 	}
 }
 func BlurSm() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "sm")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "sm")),
 		}
 	}
 }
 func BlurMd() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "md")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "md")),
 		}
 	}
 }
 func BlurLg() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "lg")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "lg")),
 		}
 	}
 }
 func BlurXl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "xl")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "xl")),
 		}
 	}
 }
 func Blur2xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "2xl")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "2xl")),
 		}
 	}
 }
 func Blur3xl() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themes.Blur, "3xl")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "3xl")),
 		}
 	}
 }

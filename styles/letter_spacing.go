@@ -1,13 +1,11 @@
 package styles
 
-import (
-	"github.com/raitucarp/gomix/themes"
-)
+import "github.com/raitucarp/gomix/theme"
 
 func TrackingTighter() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(letterSpacingProp): s.theme.UseVarKey(themes.Tracking, "tighter"),
+			string(letterSpacingProp): s.theme.UseVarKey(theme.Tracking, "tighter"),
 		}
 	}
 }
@@ -15,7 +13,7 @@ func TrackingTighter() ApplyProp {
 func TrackingTight() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(letterSpacingProp): s.theme.UseVarKey(themes.Tracking, "tight"),
+			string(letterSpacingProp): s.theme.UseVarKey(theme.Tracking, "tight"),
 		}
 	}
 }
@@ -23,7 +21,7 @@ func TrackingTight() ApplyProp {
 func TrackingNormal() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(letterSpacingProp): s.theme.UseVarKey(themes.Tracking, "normal"),
+			string(letterSpacingProp): s.theme.UseVarKey(theme.Tracking, "normal"),
 		}
 	}
 }
@@ -31,7 +29,7 @@ func TrackingNormal() ApplyProp {
 func TrackingWide() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(letterSpacingProp): s.theme.UseVarKey(themes.Tracking, "wide"),
+			string(letterSpacingProp): s.theme.UseVarKey(theme.Tracking, "wide"),
 		}
 	}
 }
@@ -39,7 +37,7 @@ func TrackingWide() ApplyProp {
 func TrackingWider() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(letterSpacingProp): s.theme.UseVarKey(themes.Tracking, "wider"),
+			string(letterSpacingProp): s.theme.UseVarKey(theme.Tracking, "wider"),
 		}
 	}
 }
@@ -47,7 +45,7 @@ func TrackingWider() ApplyProp {
 func TrackingWidest() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(letterSpacingProp): s.theme.UseVarKey(themes.Tracking, "widest"),
+			string(letterSpacingProp): s.theme.UseVarKey(theme.Tracking, "widest"),
 		}
 	}
 }

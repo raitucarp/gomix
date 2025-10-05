@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 type properties map[string]string
@@ -23,10 +23,9 @@ func (p *properties) Kind() kind {
 type Props map[Prop]string
 
 type style struct {
-	props       Props
-	variant     variant
-	theme       *themes.Theme
-	customProps []customProperty
+	props   Props
+	variant variant
+	theme   *theme.Theme
 }
 
 func (s *style) addProp(prop Prop, value string) {
@@ -76,7 +75,7 @@ func Style(props ...ApplyProp) map[variant]Props {
 	defaultStyle := &style{
 		props:   make(Props),
 		variant: defaultVar,
-		// theme:   themes.DefaultTheme(),
+		// theme:   theme.DefaultTheme(),
 	}
 
 	allStyles := map[variant]Props{}

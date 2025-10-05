@@ -1,13 +1,11 @@
 package styles
 
-import (
-	"github.com/raitucarp/gomix/themes"
-)
+import "github.com/raitucarp/gomix/theme"
 
 func FontSans() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fontFamilyProp): s.theme.UseVarKey(themes.Font, "sans"),
+			string(fontFamilyProp): s.theme.UseVarKey(theme.Font, "sans"),
 		}
 	}
 }
@@ -15,7 +13,7 @@ func FontSans() ApplyProp {
 func FontSerif() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fontFamilyProp): s.theme.UseVarKey(themes.Font, "serif"),
+			string(fontFamilyProp): s.theme.UseVarKey(theme.Font, "serif"),
 		}
 	}
 }
@@ -23,7 +21,7 @@ func FontSerif() ApplyProp {
 func FontMono() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fontFamilyProp): s.theme.UseVarKey(themes.Font, "mono"),
+			string(fontFamilyProp): s.theme.UseVarKey(theme.Font, "mono"),
 		}
 	}
 }

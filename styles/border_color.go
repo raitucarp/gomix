@@ -3,7 +3,7 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/themes"
+	"github.com/raitucarp/gomix/theme"
 )
 
 func BorderInherit() ApplyProp {
@@ -33,7 +33,7 @@ func BorderTransparent() ApplyProp {
 func BorderBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -41,7 +41,7 @@ func BorderBlack() ApplyProp {
 func BorderWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -49,7 +49,7 @@ func BorderWhite() ApplyProp {
 func BorderRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -57,7 +57,7 @@ func BorderRed(scale int) ApplyProp {
 func BorderOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -65,7 +65,7 @@ func BorderOrange(scale int) ApplyProp {
 func BorderAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -73,7 +73,7 @@ func BorderAmber(scale int) ApplyProp {
 func BorderYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -81,7 +81,7 @@ func BorderYellow(scale int) ApplyProp {
 func BorderLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -89,7 +89,7 @@ func BorderLime(scale int) ApplyProp {
 func BorderGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -97,7 +97,7 @@ func BorderGreen(scale int) ApplyProp {
 func BorderEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -105,7 +105,7 @@ func BorderEmerald(scale int) ApplyProp {
 func BorderTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -113,7 +113,7 @@ func BorderTeal(scale int) ApplyProp {
 func BorderCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -121,7 +121,7 @@ func BorderCyan(scale int) ApplyProp {
 func BorderSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -129,7 +129,7 @@ func BorderSky(scale int) ApplyProp {
 func BorderBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -137,7 +137,7 @@ func BorderBlue(scale int) ApplyProp {
 func BorderIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -145,7 +145,7 @@ func BorderIndigo(scale int) ApplyProp {
 func BorderViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -153,7 +153,7 @@ func BorderViolet(scale int) ApplyProp {
 func BorderPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -161,7 +161,7 @@ func BorderPurple(scale int) ApplyProp {
 func BorderFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -169,7 +169,7 @@ func BorderFuchsia(scale int) ApplyProp {
 func BorderPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -177,7 +177,7 @@ func BorderPink(scale int) ApplyProp {
 func BorderRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -185,7 +185,7 @@ func BorderRose(scale int) ApplyProp {
 func BorderSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -193,7 +193,7 @@ func BorderSlate(scale int) ApplyProp {
 func BorderGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -201,7 +201,7 @@ func BorderGray(scale int) ApplyProp {
 func BorderZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -209,7 +209,7 @@ func BorderZinc(scale int) ApplyProp {
 func BorderNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -217,7 +217,7 @@ func BorderNeutral(scale int) ApplyProp {
 func BorderStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -259,7 +259,7 @@ func BorderXTransparent() ApplyProp {
 func BorderXBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -267,7 +267,7 @@ func BorderXBlack() ApplyProp {
 func BorderXWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -275,7 +275,7 @@ func BorderXWhite() ApplyProp {
 func BorderXRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -283,7 +283,7 @@ func BorderXRed(scale int) ApplyProp {
 func BorderXOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -291,7 +291,7 @@ func BorderXOrange(scale int) ApplyProp {
 func BorderXAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -299,7 +299,7 @@ func BorderXAmber(scale int) ApplyProp {
 func BorderXYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -307,7 +307,7 @@ func BorderXYellow(scale int) ApplyProp {
 func BorderXLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -315,7 +315,7 @@ func BorderXLime(scale int) ApplyProp {
 func BorderXGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -323,7 +323,7 @@ func BorderXGreen(scale int) ApplyProp {
 func BorderXEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -331,7 +331,7 @@ func BorderXEmerald(scale int) ApplyProp {
 func BorderXTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -339,7 +339,7 @@ func BorderXTeal(scale int) ApplyProp {
 func BorderXCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -347,7 +347,7 @@ func BorderXCyan(scale int) ApplyProp {
 func BorderXSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -355,7 +355,7 @@ func BorderXSky(scale int) ApplyProp {
 func BorderXBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -363,7 +363,7 @@ func BorderXBlue(scale int) ApplyProp {
 func BorderXIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -371,7 +371,7 @@ func BorderXIndigo(scale int) ApplyProp {
 func BorderXViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -379,7 +379,7 @@ func BorderXViolet(scale int) ApplyProp {
 func BorderXPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -387,7 +387,7 @@ func BorderXPurple(scale int) ApplyProp {
 func BorderXFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -395,7 +395,7 @@ func BorderXFuchsia(scale int) ApplyProp {
 func BorderXPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -403,7 +403,7 @@ func BorderXPink(scale int) ApplyProp {
 func BorderXRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -411,7 +411,7 @@ func BorderXRose(scale int) ApplyProp {
 func BorderXSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -419,7 +419,7 @@ func BorderXSlate(scale int) ApplyProp {
 func BorderXGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -427,7 +427,7 @@ func BorderXGray(scale int) ApplyProp {
 func BorderXZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -435,7 +435,7 @@ func BorderXZinc(scale int) ApplyProp {
 func BorderXNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -443,7 +443,7 @@ func BorderXNeutral(scale int) ApplyProp {
 func BorderXStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(borderInlineColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -485,7 +485,7 @@ func BorderYTransparent() ApplyProp {
 func BorderYBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -493,7 +493,7 @@ func BorderYBlack() ApplyProp {
 func BorderYWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -501,7 +501,7 @@ func BorderYWhite() ApplyProp {
 func BorderYRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -509,7 +509,7 @@ func BorderYRed(scale int) ApplyProp {
 func BorderYOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -517,7 +517,7 @@ func BorderYOrange(scale int) ApplyProp {
 func BorderYAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -525,7 +525,7 @@ func BorderYAmber(scale int) ApplyProp {
 func BorderYYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -533,7 +533,7 @@ func BorderYYellow(scale int) ApplyProp {
 func BorderYLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -541,7 +541,7 @@ func BorderYLime(scale int) ApplyProp {
 func BorderYGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -549,7 +549,7 @@ func BorderYGreen(scale int) ApplyProp {
 func BorderYEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -557,7 +557,7 @@ func BorderYEmerald(scale int) ApplyProp {
 func BorderYTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -565,7 +565,7 @@ func BorderYTeal(scale int) ApplyProp {
 func BorderYCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -573,7 +573,7 @@ func BorderYCyan(scale int) ApplyProp {
 func BorderYSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -581,7 +581,7 @@ func BorderYSky(scale int) ApplyProp {
 func BorderYBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -589,7 +589,7 @@ func BorderYBlue(scale int) ApplyProp {
 func BorderYIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -597,7 +597,7 @@ func BorderYIndigo(scale int) ApplyProp {
 func BorderYViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -605,7 +605,7 @@ func BorderYViolet(scale int) ApplyProp {
 func BorderYPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -613,7 +613,7 @@ func BorderYPurple(scale int) ApplyProp {
 func BorderYFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -621,7 +621,7 @@ func BorderYFuchsia(scale int) ApplyProp {
 func BorderYPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -629,7 +629,7 @@ func BorderYPink(scale int) ApplyProp {
 func BorderYRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -637,7 +637,7 @@ func BorderYRose(scale int) ApplyProp {
 func BorderYSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -645,7 +645,7 @@ func BorderYSlate(scale int) ApplyProp {
 func BorderYGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -653,7 +653,7 @@ func BorderYGray(scale int) ApplyProp {
 func BorderYZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -661,7 +661,7 @@ func BorderYZinc(scale int) ApplyProp {
 func BorderYNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -669,7 +669,7 @@ func BorderYNeutral(scale int) ApplyProp {
 func BorderYStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(borderBlockColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -711,7 +711,7 @@ func BorderStartTransparent() ApplyProp {
 func BorderStartBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -719,7 +719,7 @@ func BorderStartBlack() ApplyProp {
 func BorderStartWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -727,7 +727,7 @@ func BorderStartWhite() ApplyProp {
 func BorderStartRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -735,7 +735,7 @@ func BorderStartRed(scale int) ApplyProp {
 func BorderStartOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -743,7 +743,7 @@ func BorderStartOrange(scale int) ApplyProp {
 func BorderStartAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -751,7 +751,7 @@ func BorderStartAmber(scale int) ApplyProp {
 func BorderStartYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -759,7 +759,7 @@ func BorderStartYellow(scale int) ApplyProp {
 func BorderStartLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -767,7 +767,7 @@ func BorderStartLime(scale int) ApplyProp {
 func BorderStartGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -775,7 +775,7 @@ func BorderStartGreen(scale int) ApplyProp {
 func BorderStartEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -783,7 +783,7 @@ func BorderStartEmerald(scale int) ApplyProp {
 func BorderStartTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -791,7 +791,7 @@ func BorderStartTeal(scale int) ApplyProp {
 func BorderStartCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -799,7 +799,7 @@ func BorderStartCyan(scale int) ApplyProp {
 func BorderStartSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -807,7 +807,7 @@ func BorderStartSky(scale int) ApplyProp {
 func BorderStartBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -815,7 +815,7 @@ func BorderStartBlue(scale int) ApplyProp {
 func BorderStartIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -823,7 +823,7 @@ func BorderStartIndigo(scale int) ApplyProp {
 func BorderStartViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -831,7 +831,7 @@ func BorderStartViolet(scale int) ApplyProp {
 func BorderStartPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -839,7 +839,7 @@ func BorderStartPurple(scale int) ApplyProp {
 func BorderStartFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -847,7 +847,7 @@ func BorderStartFuchsia(scale int) ApplyProp {
 func BorderStartPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -855,7 +855,7 @@ func BorderStartPink(scale int) ApplyProp {
 func BorderStartRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -863,7 +863,7 @@ func BorderStartRose(scale int) ApplyProp {
 func BorderStartSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -871,7 +871,7 @@ func BorderStartSlate(scale int) ApplyProp {
 func BorderStartGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -879,7 +879,7 @@ func BorderStartGray(scale int) ApplyProp {
 func BorderStartZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -887,7 +887,7 @@ func BorderStartZinc(scale int) ApplyProp {
 func BorderStartNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -895,7 +895,7 @@ func BorderStartNeutral(scale int) ApplyProp {
 func BorderStartStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(borderInlineStartColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -937,7 +937,7 @@ func BorderEndTransparent() ApplyProp {
 func BorderEndBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -945,7 +945,7 @@ func BorderEndBlack() ApplyProp {
 func BorderEndWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -953,7 +953,7 @@ func BorderEndWhite() ApplyProp {
 func BorderEndRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -961,7 +961,7 @@ func BorderEndRed(scale int) ApplyProp {
 func BorderEndOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -969,7 +969,7 @@ func BorderEndOrange(scale int) ApplyProp {
 func BorderEndAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -977,7 +977,7 @@ func BorderEndAmber(scale int) ApplyProp {
 func BorderEndYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -985,7 +985,7 @@ func BorderEndYellow(scale int) ApplyProp {
 func BorderEndLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -993,7 +993,7 @@ func BorderEndLime(scale int) ApplyProp {
 func BorderEndGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -1001,7 +1001,7 @@ func BorderEndGreen(scale int) ApplyProp {
 func BorderEndEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -1009,7 +1009,7 @@ func BorderEndEmerald(scale int) ApplyProp {
 func BorderEndTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -1017,7 +1017,7 @@ func BorderEndTeal(scale int) ApplyProp {
 func BorderEndCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -1025,7 +1025,7 @@ func BorderEndCyan(scale int) ApplyProp {
 func BorderEndSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -1033,7 +1033,7 @@ func BorderEndSky(scale int) ApplyProp {
 func BorderEndBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -1041,7 +1041,7 @@ func BorderEndBlue(scale int) ApplyProp {
 func BorderEndIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -1049,7 +1049,7 @@ func BorderEndIndigo(scale int) ApplyProp {
 func BorderEndViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -1057,7 +1057,7 @@ func BorderEndViolet(scale int) ApplyProp {
 func BorderEndPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -1065,7 +1065,7 @@ func BorderEndPurple(scale int) ApplyProp {
 func BorderEndFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -1073,7 +1073,7 @@ func BorderEndFuchsia(scale int) ApplyProp {
 func BorderEndPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -1081,7 +1081,7 @@ func BorderEndPink(scale int) ApplyProp {
 func BorderEndRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -1089,7 +1089,7 @@ func BorderEndRose(scale int) ApplyProp {
 func BorderEndSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -1097,7 +1097,7 @@ func BorderEndSlate(scale int) ApplyProp {
 func BorderEndGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -1105,7 +1105,7 @@ func BorderEndGray(scale int) ApplyProp {
 func BorderEndZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -1113,7 +1113,7 @@ func BorderEndZinc(scale int) ApplyProp {
 func BorderEndNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -1121,7 +1121,7 @@ func BorderEndNeutral(scale int) ApplyProp {
 func BorderEndStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(borderInlineEndColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -1163,7 +1163,7 @@ func BorderTopTransparent() ApplyProp {
 func BorderTopBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -1171,7 +1171,7 @@ func BorderTopBlack() ApplyProp {
 func BorderTopWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -1179,7 +1179,7 @@ func BorderTopWhite() ApplyProp {
 func BorderTopRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -1187,7 +1187,7 @@ func BorderTopRed(scale int) ApplyProp {
 func BorderTopOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -1195,7 +1195,7 @@ func BorderTopOrange(scale int) ApplyProp {
 func BorderTopAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -1203,7 +1203,7 @@ func BorderTopAmber(scale int) ApplyProp {
 func BorderTopYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -1211,7 +1211,7 @@ func BorderTopYellow(scale int) ApplyProp {
 func BorderTopLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -1219,7 +1219,7 @@ func BorderTopLime(scale int) ApplyProp {
 func BorderTopGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -1227,7 +1227,7 @@ func BorderTopGreen(scale int) ApplyProp {
 func BorderTopEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -1235,7 +1235,7 @@ func BorderTopEmerald(scale int) ApplyProp {
 func BorderTopTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -1243,7 +1243,7 @@ func BorderTopTeal(scale int) ApplyProp {
 func BorderTopCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -1251,7 +1251,7 @@ func BorderTopCyan(scale int) ApplyProp {
 func BorderTopSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -1259,7 +1259,7 @@ func BorderTopSky(scale int) ApplyProp {
 func BorderTopBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -1267,7 +1267,7 @@ func BorderTopBlue(scale int) ApplyProp {
 func BorderTopIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -1275,7 +1275,7 @@ func BorderTopIndigo(scale int) ApplyProp {
 func BorderTopViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -1283,7 +1283,7 @@ func BorderTopViolet(scale int) ApplyProp {
 func BorderTopPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -1291,7 +1291,7 @@ func BorderTopPurple(scale int) ApplyProp {
 func BorderTopFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -1299,7 +1299,7 @@ func BorderTopFuchsia(scale int) ApplyProp {
 func BorderTopPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -1307,7 +1307,7 @@ func BorderTopPink(scale int) ApplyProp {
 func BorderTopRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -1315,7 +1315,7 @@ func BorderTopRose(scale int) ApplyProp {
 func BorderTopSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -1323,7 +1323,7 @@ func BorderTopSlate(scale int) ApplyProp {
 func BorderTopGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -1331,7 +1331,7 @@ func BorderTopGray(scale int) ApplyProp {
 func BorderTopZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -1339,7 +1339,7 @@ func BorderTopZinc(scale int) ApplyProp {
 func BorderTopNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -1347,7 +1347,7 @@ func BorderTopNeutral(scale int) ApplyProp {
 func BorderTopStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(borderTopColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -1389,7 +1389,7 @@ func BorderRightTransparent() ApplyProp {
 func BorderRightBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -1397,7 +1397,7 @@ func BorderRightBlack() ApplyProp {
 func BorderRightWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -1405,7 +1405,7 @@ func BorderRightWhite() ApplyProp {
 func BorderRightRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -1413,7 +1413,7 @@ func BorderRightRed(scale int) ApplyProp {
 func BorderRightOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -1421,7 +1421,7 @@ func BorderRightOrange(scale int) ApplyProp {
 func BorderRightAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -1429,7 +1429,7 @@ func BorderRightAmber(scale int) ApplyProp {
 func BorderRightYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -1437,7 +1437,7 @@ func BorderRightYellow(scale int) ApplyProp {
 func BorderRightLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -1445,7 +1445,7 @@ func BorderRightLime(scale int) ApplyProp {
 func BorderRightGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -1453,7 +1453,7 @@ func BorderRightGreen(scale int) ApplyProp {
 func BorderRightEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -1461,7 +1461,7 @@ func BorderRightEmerald(scale int) ApplyProp {
 func BorderRightTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -1469,7 +1469,7 @@ func BorderRightTeal(scale int) ApplyProp {
 func BorderRightCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -1477,7 +1477,7 @@ func BorderRightCyan(scale int) ApplyProp {
 func BorderRightSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -1485,7 +1485,7 @@ func BorderRightSky(scale int) ApplyProp {
 func BorderRightBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -1493,7 +1493,7 @@ func BorderRightBlue(scale int) ApplyProp {
 func BorderRightIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -1501,7 +1501,7 @@ func BorderRightIndigo(scale int) ApplyProp {
 func BorderRightViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -1509,7 +1509,7 @@ func BorderRightViolet(scale int) ApplyProp {
 func BorderRightPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -1517,7 +1517,7 @@ func BorderRightPurple(scale int) ApplyProp {
 func BorderRightFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -1525,7 +1525,7 @@ func BorderRightFuchsia(scale int) ApplyProp {
 func BorderRightPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -1533,7 +1533,7 @@ func BorderRightPink(scale int) ApplyProp {
 func BorderRightRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -1541,7 +1541,7 @@ func BorderRightRose(scale int) ApplyProp {
 func BorderRightSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -1549,7 +1549,7 @@ func BorderRightSlate(scale int) ApplyProp {
 func BorderRightGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -1557,7 +1557,7 @@ func BorderRightGray(scale int) ApplyProp {
 func BorderRightZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -1565,7 +1565,7 @@ func BorderRightZinc(scale int) ApplyProp {
 func BorderRightNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -1573,7 +1573,7 @@ func BorderRightNeutral(scale int) ApplyProp {
 func BorderRightStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(borderRightColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -1615,7 +1615,7 @@ func BorderBottomTransparent() ApplyProp {
 func BorderBottomBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -1623,7 +1623,7 @@ func BorderBottomBlack() ApplyProp {
 func BorderBottomWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -1631,7 +1631,7 @@ func BorderBottomWhite() ApplyProp {
 func BorderBottomRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -1639,7 +1639,7 @@ func BorderBottomRed(scale int) ApplyProp {
 func BorderBottomOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -1647,7 +1647,7 @@ func BorderBottomOrange(scale int) ApplyProp {
 func BorderBottomAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -1655,7 +1655,7 @@ func BorderBottomAmber(scale int) ApplyProp {
 func BorderBottomYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -1663,7 +1663,7 @@ func BorderBottomYellow(scale int) ApplyProp {
 func BorderBottomLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -1671,7 +1671,7 @@ func BorderBottomLime(scale int) ApplyProp {
 func BorderBottomGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -1679,7 +1679,7 @@ func BorderBottomGreen(scale int) ApplyProp {
 func BorderBottomEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -1687,7 +1687,7 @@ func BorderBottomEmerald(scale int) ApplyProp {
 func BorderBottomTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -1695,7 +1695,7 @@ func BorderBottomTeal(scale int) ApplyProp {
 func BorderBottomCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -1703,7 +1703,7 @@ func BorderBottomCyan(scale int) ApplyProp {
 func BorderBottomSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -1711,7 +1711,7 @@ func BorderBottomSky(scale int) ApplyProp {
 func BorderBottomBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -1719,7 +1719,7 @@ func BorderBottomBlue(scale int) ApplyProp {
 func BorderBottomIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -1727,7 +1727,7 @@ func BorderBottomIndigo(scale int) ApplyProp {
 func BorderBottomViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -1735,7 +1735,7 @@ func BorderBottomViolet(scale int) ApplyProp {
 func BorderBottomPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -1743,7 +1743,7 @@ func BorderBottomPurple(scale int) ApplyProp {
 func BorderBottomFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -1751,7 +1751,7 @@ func BorderBottomFuchsia(scale int) ApplyProp {
 func BorderBottomPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -1759,7 +1759,7 @@ func BorderBottomPink(scale int) ApplyProp {
 func BorderBottomRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -1767,7 +1767,7 @@ func BorderBottomRose(scale int) ApplyProp {
 func BorderBottomSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -1775,7 +1775,7 @@ func BorderBottomSlate(scale int) ApplyProp {
 func BorderBottomGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -1783,7 +1783,7 @@ func BorderBottomGray(scale int) ApplyProp {
 func BorderBottomZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -1791,7 +1791,7 @@ func BorderBottomZinc(scale int) ApplyProp {
 func BorderBottomNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -1799,7 +1799,7 @@ func BorderBottomNeutral(scale int) ApplyProp {
 func BorderBottomStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(borderBottomColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -1841,7 +1841,7 @@ func BorderLeftTransparent() ApplyProp {
 func BorderLeftBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -1849,7 +1849,7 @@ func BorderLeftBlack() ApplyProp {
 func BorderLeftWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -1857,7 +1857,7 @@ func BorderLeftWhite() ApplyProp {
 func BorderLeftRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -1865,7 +1865,7 @@ func BorderLeftRed(scale int) ApplyProp {
 func BorderLeftOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -1873,7 +1873,7 @@ func BorderLeftOrange(scale int) ApplyProp {
 func BorderLeftAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -1881,7 +1881,7 @@ func BorderLeftAmber(scale int) ApplyProp {
 func BorderLeftYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -1889,7 +1889,7 @@ func BorderLeftYellow(scale int) ApplyProp {
 func BorderLeftLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -1897,7 +1897,7 @@ func BorderLeftLime(scale int) ApplyProp {
 func BorderLeftGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -1905,7 +1905,7 @@ func BorderLeftGreen(scale int) ApplyProp {
 func BorderLeftEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -1913,7 +1913,7 @@ func BorderLeftEmerald(scale int) ApplyProp {
 func BorderLeftTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -1921,7 +1921,7 @@ func BorderLeftTeal(scale int) ApplyProp {
 func BorderLeftCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -1929,7 +1929,7 @@ func BorderLeftCyan(scale int) ApplyProp {
 func BorderLeftSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -1937,7 +1937,7 @@ func BorderLeftSky(scale int) ApplyProp {
 func BorderLeftBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -1945,7 +1945,7 @@ func BorderLeftBlue(scale int) ApplyProp {
 func BorderLeftIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -1953,7 +1953,7 @@ func BorderLeftIndigo(scale int) ApplyProp {
 func BorderLeftViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -1961,7 +1961,7 @@ func BorderLeftViolet(scale int) ApplyProp {
 func BorderLeftPurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -1969,7 +1969,7 @@ func BorderLeftPurple(scale int) ApplyProp {
 func BorderLeftFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -1977,7 +1977,7 @@ func BorderLeftFuchsia(scale int) ApplyProp {
 func BorderLeftPink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -1985,7 +1985,7 @@ func BorderLeftPink(scale int) ApplyProp {
 func BorderLeftRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -1993,7 +1993,7 @@ func BorderLeftRose(scale int) ApplyProp {
 func BorderLeftSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -2001,7 +2001,7 @@ func BorderLeftSlate(scale int) ApplyProp {
 func BorderLeftGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -2009,7 +2009,7 @@ func BorderLeftGray(scale int) ApplyProp {
 func BorderLeftZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -2017,7 +2017,7 @@ func BorderLeftZinc(scale int) ApplyProp {
 func BorderLeftNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -2025,7 +2025,7 @@ func BorderLeftNeutral(scale int) ApplyProp {
 func BorderLeftStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			string(borderLeftColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
@@ -2067,7 +2067,7 @@ func DivideTransparent() ApplyProp {
 func DivideBlack() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, "black"),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, "black"),
 		}
 	}
 }
@@ -2075,7 +2075,7 @@ func DivideBlack() ApplyProp {
 func DivideWhite() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, "white"),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, "white"),
 		}
 	}
 }
@@ -2083,7 +2083,7 @@ func DivideWhite() ApplyProp {
 func DivideRed(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("red-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
 		}
 	}
 }
@@ -2091,7 +2091,7 @@ func DivideRed(scale int) ApplyProp {
 func DivideOrange(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("orange-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
 		}
 	}
 }
@@ -2099,7 +2099,7 @@ func DivideOrange(scale int) ApplyProp {
 func DivideAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("amber-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-%d", scale)),
 		}
 	}
 }
@@ -2107,7 +2107,7 @@ func DivideAmber(scale int) ApplyProp {
 func DivideYellow(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("yellow-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
 		}
 	}
 }
@@ -2115,7 +2115,7 @@ func DivideYellow(scale int) ApplyProp {
 func DivideLime(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("lime-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
 		}
 	}
 }
@@ -2123,7 +2123,7 @@ func DivideLime(scale int) ApplyProp {
 func DivideGreen(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("green-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
 		}
 	}
 }
@@ -2131,7 +2131,7 @@ func DivideGreen(scale int) ApplyProp {
 func DivideEmerald(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("emerald-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
 		}
 	}
 }
@@ -2139,7 +2139,7 @@ func DivideEmerald(scale int) ApplyProp {
 func DivideTeal(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("teal-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
 		}
 	}
 }
@@ -2147,7 +2147,7 @@ func DivideTeal(scale int) ApplyProp {
 func DivideCyan(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("cyan-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
 		}
 	}
 }
@@ -2155,7 +2155,7 @@ func DivideCyan(scale int) ApplyProp {
 func DivideSky(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("sky-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
 		}
 	}
 }
@@ -2163,7 +2163,7 @@ func DivideSky(scale int) ApplyProp {
 func DivideBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("blue-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-%d", scale)),
 		}
 	}
 }
@@ -2171,7 +2171,7 @@ func DivideBlue(scale int) ApplyProp {
 func DivideIndigo(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("indigo-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
 		}
 	}
 }
@@ -2179,7 +2179,7 @@ func DivideIndigo(scale int) ApplyProp {
 func DivideViolet(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("violet-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
 		}
 	}
 }
@@ -2187,7 +2187,7 @@ func DivideViolet(scale int) ApplyProp {
 func DividePurple(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("purple-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
 		}
 	}
 }
@@ -2195,7 +2195,7 @@ func DividePurple(scale int) ApplyProp {
 func DivideFuchsia(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
 		}
 	}
 }
@@ -2203,7 +2203,7 @@ func DivideFuchsia(scale int) ApplyProp {
 func DividePink(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("pink-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
 		}
 	}
 }
@@ -2211,7 +2211,7 @@ func DividePink(scale int) ApplyProp {
 func DivideRose(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("rose-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
 		}
 	}
 }
@@ -2219,7 +2219,7 @@ func DivideRose(scale int) ApplyProp {
 func DivideSlate(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("slate-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
 		}
 	}
 }
@@ -2227,7 +2227,7 @@ func DivideSlate(scale int) ApplyProp {
 func DivideGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("gray-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-%d", scale)),
 		}
 	}
 }
@@ -2235,7 +2235,7 @@ func DivideGray(scale int) ApplyProp {
 func DivideZinc(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("zinc-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
 		}
 	}
 }
@@ -2243,7 +2243,7 @@ func DivideZinc(scale int) ApplyProp {
 func DivideNeutral(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("neutral-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
 		}
 	}
 }
@@ -2251,7 +2251,7 @@ func DivideNeutral(scale int) ApplyProp {
 func DivideStone(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): s.theme.UseVarKey(themes.Color, fmt.Sprintf("stone-%d", scale)),
+			notLastChildProp(borderColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
 		}
 	}
 }
