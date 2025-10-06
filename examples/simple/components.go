@@ -69,14 +69,14 @@ func BlogHomePage(page *gomix.Page) isComponent {
 func BlogArticle(fragment *gomix.Fragment) isComponent {
 	permalinkValue := fragment.Request().PathValue("permalink")
 
-	aaLink := a(
-		text("rere " + permalinkValue),
-	).Href("http://aa.com").Target(element.TargetBlank)
+	raitucarpLink := a(
+		text("Raitucarp is " + permalinkValue),
+	).Href("https://raitucarp.xyz").Target(element.TargetBlank)
 
 	return div(
 		text("what is "+permalinkValue),
 		text(" "),
-		aaLink,
+		raitucarpLink,
 	)
 }
 
