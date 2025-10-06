@@ -2,12 +2,14 @@ package element
 
 import (
 	"bytes"
-	"fmt"
+	"crypto/sha256"
+	"encoding/hex"
 	"slices"
 	"strconv"
 	"strings"
 
-	"github.com/iancoleman/strcase"
+	"github.com/raitucarp/gomix/styles"
+	"github.com/raitucarp/gomix/theme"
 	"golang.org/x/net/html"
 )
 
@@ -82,7 +84,10 @@ func Element(el IsElement) *HtmlElement {
 }
 
 type HtmlElement struct {
-	node *html.Node
+	node          *html.Node
+	theme         *theme.Theme
+	style         map[styles.StyleVariant]styles.Props
+	prefClassName string
 }
 
 func (e *HtmlElement) AddAttribute(key string, value string) {
@@ -119,9 +124,19 @@ func (e *HtmlElement) AccessKey(character string) *HtmlElement {
 }
 
 func (e *HtmlElement) Class(classnames ...string) *HtmlElement {
-	e.AddAttribute("class", strings.Join(classnames, " "))
+	existingClassName := []string{}
+	for _, attr := range e.node.Attr {
+		if attr.Key == "class" {
+			existingClassName = append(existingClassName, strings.Split(attr.Val, " ")...)
+			break
+		}
+	}
+
+	existingClassName = append(existingClassName, classnames...)
+	e.AddAttribute("class", strings.Join(existingClassName, " "))
 	return e
 }
+
 func (e *HtmlElement) ContentEditable(editable bool) *HtmlElement {
 	if editable {
 		e.AddAttributeBool("contenteditable")
@@ -181,13 +196,40 @@ func (e *HtmlElement) Spellcheck(check bool) *HtmlElement {
 	e.AddAttribute("spellcheck", strconv.FormatBool(check))
 	return e
 }
-func (e *HtmlElement) Style(styles map[string]any) *HtmlElement {
-	s := []string{}
-	for prop, value := range styles {
-		s = append(s, fmt.Sprintf("%s: %s", strcase.ToDelimited(prop, '-'), value))
+
+func (e *HtmlElement) getClassSha() string {
+	hasher := sha256.New()
+	hasher.Write([]byte(e.Render()))
+	return hex.EncodeToString(hasher.Sum(nil))[0:5]
+}
+
+func (e *HtmlElement) StyleClassName(className string) *HtmlElement {
+	e.prefClassName = className
+	return e
+}
+
+func (e *HtmlElement) getClassName() string {
+	className := e.prefClassName
+
+	if className == "" {
+		className = e.getClassSha()
+	}
+	return className
+}
+
+func (e *HtmlElement) Style(props ...styles.ApplyProp) *HtmlElement {
+	e.style = styles.ApplyStyle(e.theme, props...)
+	styleProps := []string{}
+	for variant, props := range e.style {
+		for prop, value := range props {
+			styleProps = append(styleProps, strings.Join([]string{string(prop), value}, ":"))
+		}
+		e.Data("style-"+variant.Name(), strings.Join(styleProps, ";"))
 	}
 
-	e.AddAttribute("style", strings.Join(s, ";"))
+	className := e.getClassName()
+
+	e.Data("style-classname", className)
 
 	return e
 }

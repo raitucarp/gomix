@@ -2,6 +2,7 @@ package theme
 
 import (
 	"fmt"
+	"strings"
 
 	"github.com/iancoleman/strcase"
 )
@@ -39,17 +40,20 @@ func (u *UtilityClass) Value(class string) string {
 
 type Variables map[Namespace]UtilityClass
 
-func (v *Variables) ToCSSVariables() (vars []string) {
+func (v *Variables) ToCSSVariables() (vars map[string]string) {
+	vars = make(map[string]string)
 	for namespace, class := range *v {
-		for c := range class {
+		for key, value := range class {
 			if namespace == Custom {
-				vars = append(vars, fmt.Sprintf("--%s",
-					strcase.ToDelimited(c, '-'),
-				))
+				varName := fmt.Sprintf("--%s",
+					strcase.ToDelimited(key, '-'),
+				)
+				vars[varName] = value
 			} else {
-				vars = append(vars, fmt.Sprintf("--%s-%s",
-					namespace, strcase.ToDelimited(c, '-'),
-				))
+				varName := fmt.Sprintf("--%s-%s",
+					namespace, strcase.ToDelimited(key, '-'),
+				)
+				vars[varName] = value
 			}
 		}
 	}
@@ -61,6 +65,19 @@ type Theme struct {
 	variables  Variables
 	keyframes  map[string]string
 	properties []customProperty
+}
+
+func (t *Theme) RawCSS() string {
+	rawFormat := `:root {
+		%s
+  }
+	`
+	allVariables := []string{}
+	for key, value := range t.variables.ToCSSVariables() {
+		allVariables = append(allVariables, strings.Join([]string{key, value}, ":"))
+	}
+
+	return fmt.Sprintf(rawFormat, strings.Join(allVariables, ";"))
 }
 
 type customProperty struct {
@@ -97,10 +114,6 @@ func (t *Theme) AddVariable(namespace Namespace, class string, value string) {
 
 func (t *Theme) AddKeyframe(name string, value string) {
 	t.keyframes[name] = value
-}
-
-func (t *Theme) ListVariables() (vars []string) {
-	return t.variables.ToCSSVariables()
 }
 
 type ThemeParam func(t *Theme)

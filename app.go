@@ -8,6 +8,7 @@ import (
 
 	"github.com/raitucarp/gomix/components"
 	"github.com/raitucarp/gomix/element"
+	"github.com/raitucarp/gomix/theme"
 )
 
 type webPage struct {
@@ -16,6 +17,7 @@ type webPage struct {
 	layout      components.IsComponent
 	pages       []*Page
 	fragments   []*Fragment
+	theme       *theme.Theme
 	scripts     []string
 	stylesheets []string
 }
@@ -55,6 +57,7 @@ func App(params ...AppParam) {
 					element.Element(components.Slot()),
 				),
 			),
+			theme: theme.Default,
 		},
 	}
 	for _, param := range params {
@@ -173,6 +176,14 @@ func PageAt(path LocationPath, setup PageSetup) AppParam {
 	}
 }
 
+func Theme(newTheme *theme.Theme) AppParam {
+	return func(app *Application) (Scope, func()) {
+		return WebScope, func() {
+			app.web.theme = newTheme
+		}
+	}
+}
+
 func FragmentAt(path FragmentPath, component FragmentComponent) AppParam {
 	return func(app *Application) (Scope, func()) {
 		return WebScope, func() {
@@ -215,6 +226,9 @@ func (app *Application) flattenPages() (pages []*Page) {
 		p.flattened = true
 		p.AddLayouts(func(page *Page) components.IsComponent { return app.web.layout })
 		p.AddScripts(app.web.scripts...)
+		if p.theme == nil {
+			p.theme = app.web.theme
+		}
 
 		pages = append(pages, p)
 		if len(p.children) > 0 {

@@ -11,7 +11,9 @@ var num = value.Number[float64]
 var cubic_bezier = value.CubicBezier
 var literal = value.Literal
 
-func Default() *Theme {
+var Default = defaultTheme()
+
+func defaultTheme() *Theme {
 	theme := CreateTheme("default",
 		FontSans("ui-sans-serif", "system-ui", "sans-serif", `"Apple Color Emoji"`, `"Segoe UI Emoji"`, `"Segoe UI Symbol"`, `"Noto Color Emoji"`),
 		FontSerif("ui-serif", "Georgia", "Cambria", `"Times New Roman"`, "Times", "serif"),

@@ -26,7 +26,7 @@ func main() {
 		),
 		webpage(
 			layout(
-				MainLayout(),
+				AppLayout(),
 			),
 			web_addons(
 				_htmx("2.0.7"),

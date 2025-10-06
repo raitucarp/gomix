@@ -13,7 +13,7 @@ func (p *properties) StyleProp() {}
 func (p *properties) GetProps() map[string]string {
 	return *p
 }
-func (p *properties) Variant() variant {
+func (p *properties) Variant() StyleVariant {
 	return defaultVar
 }
 func (p *properties) Kind() kind {
@@ -24,7 +24,7 @@ type Props map[Prop]string
 
 type style struct {
 	props   Props
-	variant variant
+	variant StyleVariant
 	theme   *theme.Theme
 }
 
@@ -44,7 +44,7 @@ type styleProp interface {
 	StyleProp()
 	GetProps() map[string]string
 	Kind() kind
-	Variant() variant
+	Variant() StyleVariant
 }
 
 type atRules struct {
@@ -65,20 +65,14 @@ func notLastChildProp(prop Prop) string {
 	return fmt.Sprintf("& > :not(:last-child) | %s", prop)
 }
 
-/*
-styles(
-	aspectRatioVideo(),
-)
-*/
-
-func Style(props ...ApplyProp) map[variant]Props {
+func ApplyStyle(styleTheme *theme.Theme, props ...ApplyProp) map[StyleVariant]Props {
 	defaultStyle := &style{
 		props:   make(Props),
 		variant: defaultVar,
-		// theme:   theme.DefaultTheme(),
+		theme:   styleTheme,
 	}
 
-	allStyles := map[variant]Props{}
+	allStyles := map[StyleVariant]Props{}
 
 	for _, p := range props {
 		if p(defaultStyle).Kind() == kindProps {

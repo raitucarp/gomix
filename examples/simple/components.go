@@ -8,11 +8,23 @@ import (
 	"github.com/raitucarp/gomix/element"
 )
 
-func MainLayout() isComponent {
+func WelcomeText(message string) isComponent {
+	return div(text(message)).
+		Element().
+		Style(
+			font_2xl(),
+		)
+}
+
+func MainLayout(message string) isComponent {
 	return div(
-		text("This is main layout"),
+		WelcomeText(message),
 		slot(),
 	)
+}
+
+func AppLayout() isComponent {
+	return MainLayout("Welcome home")
 }
 
 func HomeLayout(page *gomix.Page) isComponent {

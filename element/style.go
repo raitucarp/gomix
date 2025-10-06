@@ -2,25 +2,25 @@ package element
 
 import "golang.org/x/net/html"
 
-type style struct {
+type styl struct {
 	el *HtmlElement
 }
 
-func (s *style) Media(media_query string) *style {
+func (s *styl) Media(media_query string) *styl {
 	s.el.AddAttribute("media", media_query)
 	return s
 }
 
-func (s *style) Type(styleType string) *style {
+func (s *styl) Type(styleType string) *styl {
 	s.el.AddAttribute("type", styleType)
 	return s
 }
 
-func (s *style) InsideHead()           {}
-func (s *style) Element() *HtmlElement { return s.el }
-func (s *style) Render() string        { return s.el.Render() }
+func (s *styl) InsideHead()           {}
+func (s *styl) Element() *HtmlElement { return s.el }
+func (s *styl) Render() string        { return s.el.Render() }
 
-func Style(text string) *style {
+func Style(text string) *styl {
 	el := &HtmlElement{
 		node: &html.Node{
 			Type: html.ElementNode,
@@ -32,7 +32,7 @@ func Style(text string) *style {
 		},
 	}
 
-	t := &style{el: el}
+	t := &styl{el: el}
 
 	return t
 }

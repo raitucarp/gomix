@@ -6,6 +6,7 @@ import (
 
 	"github.com/raitucarp/gomix/components"
 	"github.com/raitucarp/gomix/element"
+	"github.com/raitucarp/gomix/theme"
 )
 
 type PageComponent func(page *Page) components.IsComponent
@@ -20,6 +21,7 @@ type Page struct {
 
 	scripts     []string
 	stylesheets []string
+	theme       *theme.Theme
 
 	flattened bool
 	request   *http.Request
@@ -57,8 +59,13 @@ func (page *Page) AddScripts(urls ...string) {
 	page.scripts = append(page.scripts, urls...)
 }
 
+func (page *Page) Theme(t *theme.Theme) {
+	page.theme = t
+}
+
 func (page *Page) New(path LocationPath, callback PageSetup) *Page {
 	newPage := NewPage(path, callback)
+	newPage.Theme(page.theme)
 
 	return newPage
 }
@@ -106,6 +113,9 @@ func (page *Page) flattenPages() (pages []*Page) {
 		p.flattened = true
 		p.AddLayouts(page.layouts...)
 		p.AddScripts(page.scripts...)
+		if p.theme == nil {
+			p.theme = page.theme
+		}
 
 		pages = append(pages, p)
 		if len(p.children) > 0 {
@@ -124,10 +134,20 @@ func (page *Page) Children(pages Pages) {
 }
 
 func (page *Page) Render(lang element.LanguageCode) string {
+	theLayout := components.Component(components.Slot())
+	for _, pageLayout := range page.layouts {
+		c := pageLayout(page)
+		theLayout = components.ApplyLayout(theLayout, c)
+	}
+
+	css := components.ExtractCSS(theLayout)
+
 	head := []element.IsHeadElement{
 		element.Meta().CharSet("UTF-8"),
 		element.Meta().Name(element.MetaNameViewport).Content("width=device-width, initial-scale=1.0"),
 		element.Title(page.title),
+		element.Style(page.theme.RawCSS()),
+		element.Style(css),
 	}
 
 	for _, script := range page.scripts {
@@ -138,17 +158,10 @@ func (page *Page) Render(lang element.LanguageCode) string {
 		element.Html(
 			element.Head(head...),
 			element.Body(
-				element.Element(
-					components.Slot(),
-				),
+				theLayout,
 			),
 		).Lang(lang),
 	)
-
-	for _, pageLayout := range page.layouts {
-		c := pageLayout(page)
-		layout = components.ApplyLayout(layout, c)
-	}
 
 	return components.Render(layout)
 }
