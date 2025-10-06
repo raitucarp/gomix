@@ -118,22 +118,6 @@ func DropShadowWhite() ApplyProp {
 	}
 }
 
-func DropShadowRed(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
-		}
-	}
-}
-
-func DropShadowOrange(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
-		}
-	}
-}
-
 func DropShadowAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -141,63 +125,34 @@ func DropShadowAmber(scale int) ApplyProp {
 		}
 	}
 }
-
-func DropShadowYellow(scale int) ApplyProp {
+func DropShadowAmberAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-alpha-%d", scale)),
 		}
 	}
 }
-
-func DropShadowLime(scale int) ApplyProp {
+func DropShadowAmberDark(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-dark-%d", scale)),
 		}
 	}
 }
-
-func DropShadowGreen(scale int) ApplyProp {
+func DropShadowAmberDarkAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-dark-alpha-%d", scale)),
 		}
 	}
 }
-
-func DropShadowEmerald(scale int) ApplyProp {
+func DropShadowBlackAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("black-alpha-%d", scale)),
 		}
 	}
 }
-
-func DropShadowTeal(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
-		}
-	}
-}
-
-func DropShadowCyan(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
-		}
-	}
-}
-
-func DropShadowSky(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
-		}
-	}
-}
-
 func DropShadowBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -205,63 +160,195 @@ func DropShadowBlue(scale int) ApplyProp {
 		}
 	}
 }
-
-func DropShadowIndigo(scale int) ApplyProp {
+func DropShadowBlueAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-alpha-%d", scale)),
 		}
 	}
 }
-
-func DropShadowViolet(scale int) ApplyProp {
+func DropShadowBlueDark(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-dark-%d", scale)),
 		}
 	}
 }
-
-func DropShadowPurple(scale int) ApplyProp {
+func DropShadowBlueDarkAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-dark-alpha-%d", scale)),
 		}
 	}
 }
-
-func DropShadowFuchsia(scale int) ApplyProp {
+func DropShadowBronze(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("bronze-%d", scale)),
 		}
 	}
 }
-
-func DropShadowPink(scale int) ApplyProp {
+func DropShadowBronzeAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("bronze-alpha-%d", scale)),
 		}
 	}
 }
-
-func DropShadowRose(scale int) ApplyProp {
+func DropShadowBronzeDark(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("bronze-dark-%d", scale)),
 		}
 	}
 }
-
-func DropShadowSlate(scale int) ApplyProp {
+func DropShadowBronzeDarkAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("bronze-dark-alpha-%d", scale)),
 		}
 	}
 }
-
+func DropShadowBrown(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("brown-%d", scale)),
+		}
+	}
+}
+func DropShadowBrownAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("brown-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowBrownDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("brown-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowBrownDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("brown-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowCrimson(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("crimson-%d", scale)),
+		}
+	}
+}
+func DropShadowCrimsonAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("crimson-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowCrimsonDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("crimson-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowCrimsonDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("crimson-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowCyan(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
+		}
+	}
+}
+func DropShadowCyanAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowCyanDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowCyanDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowGold(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gold-%d", scale)),
+		}
+	}
+}
+func DropShadowGoldAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gold-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowGoldDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gold-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowGoldDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gold-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowGrass(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("grass-%d", scale)),
+		}
+	}
+}
+func DropShadowGrassAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("grass-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowGrassDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("grass-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowGrassDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("grass-dark-alpha-%d", scale)),
+		}
+	}
+}
 func DropShadowGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -269,27 +356,648 @@ func DropShadowGray(scale int) ApplyProp {
 		}
 	}
 }
-
-func DropShadowZinc(scale int) ApplyProp {
+func DropShadowGrayAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowGrayDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowGrayDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowGreen(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
+		}
+	}
+}
+func DropShadowGreenAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowGreenDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowGreenDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowIndigo(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
+		}
+	}
+}
+func DropShadowIndigoAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowIndigoDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowIndigoDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowIris(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("iris-%d", scale)),
+		}
+	}
+}
+func DropShadowIrisAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("iris-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowIrisDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("iris-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowIrisDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("iris-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowJade(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("jade-%d", scale)),
+		}
+	}
+}
+func DropShadowJadeAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("jade-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowJadeDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("jade-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowJadeDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("jade-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowLime(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
+		}
+	}
+}
+func DropShadowLimeAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowLimeDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowLimeDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowMauve(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mauve-%d", scale)),
+		}
+	}
+}
+func DropShadowMauveAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mauve-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowMauveDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mauve-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowMauveDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mauve-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowMint(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mint-%d", scale)),
+		}
+	}
+}
+func DropShadowMintAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mint-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowMintDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mint-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowMintDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mint-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowOlive(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("olive-%d", scale)),
+		}
+	}
+}
+func DropShadowOliveAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("olive-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowOliveDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("olive-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowOliveDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("olive-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowOrange(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
+		}
+	}
+}
+func DropShadowOrangeAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowOrangeDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowOrangeDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowPink(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
+		}
+	}
+}
+func DropShadowPinkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowPinkDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowPinkDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowPlum(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("plum-%d", scale)),
+		}
+	}
+}
+func DropShadowPlumAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("plum-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowPlumDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("plum-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowPlumDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("plum-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowPurple(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
+		}
+	}
+}
+func DropShadowPurpleAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowPurpleDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowPurpleDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowRed(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
+		}
+	}
+}
+func DropShadowRedAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowRedDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowRedDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowRuby(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("ruby-%d", scale)),
+		}
+	}
+}
+func DropShadowRubyAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("ruby-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowRubyDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("ruby-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowRubyDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("ruby-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowSage(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sage-%d", scale)),
+		}
+	}
+}
+func DropShadowSageAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sage-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowSageDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sage-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowSageDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sage-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowSand(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sand-%d", scale)),
+		}
+	}
+}
+func DropShadowSandAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sand-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowSandDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sand-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowSandDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sand-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowSky(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
+		}
+	}
+}
+func DropShadowSkyAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowSkyDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowSkyDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowSlate(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
+		}
+	}
+}
+func DropShadowSlateAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowSlateDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowSlateDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowTeal(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
+		}
+	}
+}
+func DropShadowTealAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowTealDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowTealDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowTomato(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("tomato-%d", scale)),
+		}
+	}
+}
+func DropShadowTomatoAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("tomato-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowTomatoDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("tomato-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowTomatoDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("tomato-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowViolet(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
+		}
+	}
+}
+func DropShadowVioletAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowVioletDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-dark-%d", scale)),
+		}
+	}
+}
+func DropShadowVioletDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowWhiteAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("white-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowYellow(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
+		}
+	}
+}
+func DropShadowYellowAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-alpha-%d", scale)),
+		}
+	}
+}
+func DropShadowYellowDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-dark-%d", scale)),
 		}
 	}
 }
 
-func DropShadowNeutral(scale int) ApplyProp {
+func DropShadowYellowDarkAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
-		}
-	}
-}
-
-func DropShadowStone(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
+			string(dropShadowColor): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-dark-alpha-%d", scale)),
 		}
 	}
 }

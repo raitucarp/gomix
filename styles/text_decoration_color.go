@@ -46,22 +46,6 @@ func DecorWhite() ApplyProp {
 	}
 }
 
-func DecorRed(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
-		}
-	}
-}
-
-func DecorOrange(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
-		}
-	}
-}
-
 func DecorAmber(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -69,63 +53,34 @@ func DecorAmber(scale int) ApplyProp {
 		}
 	}
 }
-
-func DecorYellow(scale int) ApplyProp {
+func DecorAmberAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-alpha-%d", scale)),
 		}
 	}
 }
-
-func DecorLime(scale int) ApplyProp {
+func DecorAmberDark(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-dark-%d", scale)),
 		}
 	}
 }
-
-func DecorGreen(scale int) ApplyProp {
+func DecorAmberDarkAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("amber-dark-alpha-%d", scale)),
 		}
 	}
 }
-
-func DecorEmerald(scale int) ApplyProp {
+func DecorBlackAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("emerald-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("black-alpha-%d", scale)),
 		}
 	}
 }
-
-func DecorTeal(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
-		}
-	}
-}
-
-func DecorCyan(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
-		}
-	}
-}
-
-func DecorSky(scale int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
-		}
-	}
-}
-
 func DecorBlue(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -133,63 +88,195 @@ func DecorBlue(scale int) ApplyProp {
 		}
 	}
 }
-
-func DecorIndigo(scale int) ApplyProp {
+func DecorBlueAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-alpha-%d", scale)),
 		}
 	}
 }
-
-func DecorViolet(scale int) ApplyProp {
+func DecorBlueDark(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-dark-%d", scale)),
 		}
 	}
 }
-
-func DecorPurple(scale int) ApplyProp {
+func DecorBlueDarkAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("blue-dark-alpha-%d", scale)),
 		}
 	}
 }
-
-func DecorFuchsia(scale int) ApplyProp {
+func DecorBronze(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("fuchsia-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("bronze-%d", scale)),
 		}
 	}
 }
-
-func DecorPink(scale int) ApplyProp {
+func DecorBronzeAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("bronze-alpha-%d", scale)),
 		}
 	}
 }
-
-func DecorRose(scale int) ApplyProp {
+func DecorBronzeDark(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("rose-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("bronze-dark-%d", scale)),
 		}
 	}
 }
-
-func DecorSlate(scale int) ApplyProp {
+func DecorBronzeDarkAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("bronze-dark-alpha-%d", scale)),
 		}
 	}
 }
-
+func DecorBrown(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("brown-%d", scale)),
+		}
+	}
+}
+func DecorBrownAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("brown-alpha-%d", scale)),
+		}
+	}
+}
+func DecorBrownDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("brown-dark-%d", scale)),
+		}
+	}
+}
+func DecorBrownDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("brown-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorCrimson(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("crimson-%d", scale)),
+		}
+	}
+}
+func DecorCrimsonAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("crimson-alpha-%d", scale)),
+		}
+	}
+}
+func DecorCrimsonDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("crimson-dark-%d", scale)),
+		}
+	}
+}
+func DecorCrimsonDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("crimson-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorCyan(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-%d", scale)),
+		}
+	}
+}
+func DecorCyanAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-alpha-%d", scale)),
+		}
+	}
+}
+func DecorCyanDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-dark-%d", scale)),
+		}
+	}
+}
+func DecorCyanDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("cyan-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorGold(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gold-%d", scale)),
+		}
+	}
+}
+func DecorGoldAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gold-alpha-%d", scale)),
+		}
+	}
+}
+func DecorGoldDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gold-dark-%d", scale)),
+		}
+	}
+}
+func DecorGoldDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gold-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorGrass(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("grass-%d", scale)),
+		}
+	}
+}
+func DecorGrassAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("grass-alpha-%d", scale)),
+		}
+	}
+}
+func DecorGrassDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("grass-dark-%d", scale)),
+		}
+	}
+}
+func DecorGrassDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("grass-dark-alpha-%d", scale)),
+		}
+	}
+}
 func DecorGray(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -197,27 +284,647 @@ func DecorGray(scale int) ApplyProp {
 		}
 	}
 }
-
-func DecorZinc(scale int) ApplyProp {
+func DecorGrayAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("zinc-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-alpha-%d", scale)),
 		}
 	}
 }
-
-func DecorNeutral(scale int) ApplyProp {
+func DecorGrayDark(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("neutral-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-dark-%d", scale)),
 		}
 	}
 }
-
-func DecorStone(scale int) ApplyProp {
+func DecorGrayDarkAlpha(scale int) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("stone-%d", scale)),
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("gray-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorGreen(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-%d", scale)),
+		}
+	}
+}
+func DecorGreenAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-alpha-%d", scale)),
+		}
+	}
+}
+func DecorGreenDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-dark-%d", scale)),
+		}
+	}
+}
+func DecorGreenDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("green-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorIndigo(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-%d", scale)),
+		}
+	}
+}
+func DecorIndigoAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-alpha-%d", scale)),
+		}
+	}
+}
+func DecorIndigoDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-dark-%d", scale)),
+		}
+	}
+}
+func DecorIndigoDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("indigo-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorIris(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("iris-%d", scale)),
+		}
+	}
+}
+func DecorIrisAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("iris-alpha-%d", scale)),
+		}
+	}
+}
+func DecorIrisDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("iris-dark-%d", scale)),
+		}
+	}
+}
+func DecorIrisDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("iris-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorJade(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("jade-%d", scale)),
+		}
+	}
+}
+func DecorJadeAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("jade-alpha-%d", scale)),
+		}
+	}
+}
+func DecorJadeDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("jade-dark-%d", scale)),
+		}
+	}
+}
+func DecorJadeDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("jade-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorLime(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-%d", scale)),
+		}
+	}
+}
+func DecorLimeAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-alpha-%d", scale)),
+		}
+	}
+}
+func DecorLimeDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-dark-%d", scale)),
+		}
+	}
+}
+func DecorLimeDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("lime-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorMauve(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mauve-%d", scale)),
+		}
+	}
+}
+func DecorMauveAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mauve-alpha-%d", scale)),
+		}
+	}
+}
+func DecorMauveDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mauve-dark-%d", scale)),
+		}
+	}
+}
+func DecorMauveDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mauve-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorMint(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mint-%d", scale)),
+		}
+	}
+}
+func DecorMintAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mint-alpha-%d", scale)),
+		}
+	}
+}
+func DecorMintDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mint-dark-%d", scale)),
+		}
+	}
+}
+func DecorMintDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("mint-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorOlive(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("olive-%d", scale)),
+		}
+	}
+}
+func DecorOliveAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("olive-alpha-%d", scale)),
+		}
+	}
+}
+func DecorOliveDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("olive-dark-%d", scale)),
+		}
+	}
+}
+func DecorOliveDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("olive-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorOrange(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-%d", scale)),
+		}
+	}
+}
+func DecorOrangeAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-alpha-%d", scale)),
+		}
+	}
+}
+func DecorOrangeDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-dark-%d", scale)),
+		}
+	}
+}
+func DecorOrangeDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("orange-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorPink(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-%d", scale)),
+		}
+	}
+}
+func DecorPinkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-alpha-%d", scale)),
+		}
+	}
+}
+func DecorPinkDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-dark-%d", scale)),
+		}
+	}
+}
+func DecorPinkDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("pink-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorPlum(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("plum-%d", scale)),
+		}
+	}
+}
+func DecorPlumAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("plum-alpha-%d", scale)),
+		}
+	}
+}
+func DecorPlumDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("plum-dark-%d", scale)),
+		}
+	}
+}
+func DecorPlumDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("plum-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorPurple(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-%d", scale)),
+		}
+	}
+}
+func DecorPurpleAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-alpha-%d", scale)),
+		}
+	}
+}
+func DecorPurpleDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-dark-%d", scale)),
+		}
+	}
+}
+func DecorPurpleDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("purple-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorRed(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-%d", scale)),
+		}
+	}
+}
+func DecorRedAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-alpha-%d", scale)),
+		}
+	}
+}
+func DecorRedDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-dark-%d", scale)),
+		}
+	}
+}
+func DecorRedDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("red-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorRuby(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("ruby-%d", scale)),
+		}
+	}
+}
+func DecorRubyAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("ruby-alpha-%d", scale)),
+		}
+	}
+}
+func DecorRubyDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("ruby-dark-%d", scale)),
+		}
+	}
+}
+func DecorRubyDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("ruby-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorSage(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sage-%d", scale)),
+		}
+	}
+}
+func DecorSageAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sage-alpha-%d", scale)),
+		}
+	}
+}
+func DecorSageDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sage-dark-%d", scale)),
+		}
+	}
+}
+func DecorSageDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sage-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorSand(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sand-%d", scale)),
+		}
+	}
+}
+func DecorSandAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sand-alpha-%d", scale)),
+		}
+	}
+}
+func DecorSandDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sand-dark-%d", scale)),
+		}
+	}
+}
+func DecorSandDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sand-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorSky(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-%d", scale)),
+		}
+	}
+}
+func DecorSkyAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-alpha-%d", scale)),
+		}
+	}
+}
+func DecorSkyDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-dark-%d", scale)),
+		}
+	}
+}
+func DecorSkyDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("sky-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorSlate(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-%d", scale)),
+		}
+	}
+}
+func DecorSlateAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-alpha-%d", scale)),
+		}
+	}
+}
+func DecorSlateDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-dark-%d", scale)),
+		}
+	}
+}
+func DecorSlateDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("slate-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorTeal(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-%d", scale)),
+		}
+	}
+}
+func DecorTealAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-alpha-%d", scale)),
+		}
+	}
+}
+func DecorTealDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-dark-%d", scale)),
+		}
+	}
+}
+func DecorTealDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("teal-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorTomato(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("tomato-%d", scale)),
+		}
+	}
+}
+func DecorTomatoAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("tomato-alpha-%d", scale)),
+		}
+	}
+}
+func DecorTomatoDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("tomato-dark-%d", scale)),
+		}
+	}
+}
+func DecorTomatoDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("tomato-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorViolet(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-%d", scale)),
+		}
+	}
+}
+func DecorVioletAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-alpha-%d", scale)),
+		}
+	}
+}
+func DecorVioletDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-dark-%d", scale)),
+		}
+	}
+}
+func DecorVioletDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("violet-dark-alpha-%d", scale)),
+		}
+	}
+}
+func DecorWhiteAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("white-alpha-%d", scale)),
+		}
+	}
+}
+func DecorYellow(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-%d", scale)),
+		}
+	}
+}
+func DecorYellowAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-alpha-%d", scale)),
+		}
+	}
+}
+func DecorYellowDark(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-dark-%d", scale)),
+		}
+	}
+}
+func DecorYellowDarkAlpha(scale int) ApplyProp {
+	return func(s *style) styleProp {
+		return &properties{
+			string(textDecorColorProp): s.theme.UseVarKey(theme.Color, fmt.Sprintf("yellow-dark-alpha-%d", scale)),
 		}
 	}
 }
