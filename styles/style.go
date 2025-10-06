@@ -86,25 +86,29 @@ func ApplyStyle(styleTheme *theme.Theme, props ...ApplyProp) map[StyleVariant]Pr
 	allStyles[defaultVar] = defaultStyle.props
 
 	for _, p := range props {
-		if p(defaultStyle).Kind() == kindVariant {
-			variant := p(defaultStyle).Variant()
-			if allStyles[variant] == nil {
-				allStyles[variant] = make(Props)
-			}
-
-			variantStyle := &style{
-				props:   make(Props),
-				variant: variant,
-				theme:   defaultStyle.theme,
-			}
-
-			props := p(variantStyle).GetProps()
-			for key, value := range props {
-				variantStyle.addProp(Prop(key), value)
-			}
-
-			allStyles[variant] = variantStyle.props
+		if p(defaultStyle).Kind() != kindVariant {
+			continue
 		}
+
+		variant := p(defaultStyle).Variant()
+		if allStyles[variant] == nil {
+			allStyles[variant] = make(Props)
+		}
+
+		variantStyle := &style{
+			props:   make(Props),
+			variant: variant,
+			theme:   defaultStyle.theme,
+		}
+
+		variantProps := p(variantStyle).GetProps()
+
+		for key, value := range variantProps {
+			variantStyle.addProp(Prop(key), value)
+		}
+
+		allStyles[variant] = variantStyle.props
+
 	}
 
 	return allStyles

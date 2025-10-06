@@ -30,7 +30,15 @@ func AppLayout() isComponent {
 func HomeLayout(page *gomix.Page) isComponent {
 	return div(
 		slot(),
-		text("Home layout"),
+		WelcomeText("whoopa").
+			Element().
+			Style(
+				hover(
+					font_3xl(),
+					text_red(500),
+					cursor_pointer(),
+				),
+			),
 	)
 }
 

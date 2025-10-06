@@ -40,4 +40,8 @@ var a = element.A
 
 // style scope
 
+var hover = styles.Hover
 var font_2xl = styles.Text2xl
+var font_3xl = styles.Text3xl
+var text_red = styles.TextRed
+var cursor_pointer = styles.CursorPointer

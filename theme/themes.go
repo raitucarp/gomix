@@ -2,6 +2,7 @@ package theme
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 
 	"github.com/iancoleman/strcase"
@@ -76,6 +77,8 @@ func (t *Theme) RawCSS() string {
 	for key, value := range t.variables.ToCSSVariables() {
 		allVariables = append(allVariables, strings.Join([]string{key, value}, ":"))
 	}
+
+	sort.Strings(allVariables)
 
 	return fmt.Sprintf(rawFormat, strings.Join(allVariables, ";"))
 }

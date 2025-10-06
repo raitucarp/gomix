@@ -92,6 +92,15 @@ type HtmlElement struct {
 
 func (e *HtmlElement) AddAttribute(key string, value string) {
 	e.node.Attr = append(e.node.Attr, html.Attribute{Namespace: "", Key: key, Val: value})
+	slices.SortFunc(e.node.Attr, func(a html.Attribute, b html.Attribute) int {
+		if a.Key < b.Key {
+			return -1
+		}
+		if a.Key > b.Key {
+			return 1
+		}
+		return 0
+	})
 	e.node.Attr = slices.CompactFunc(e.node.Attr, func(attr1 html.Attribute, attr2 html.Attribute) bool {
 		return attr1.Key == attr2.Key
 	})
@@ -219,17 +228,15 @@ func (e *HtmlElement) getClassName() string {
 
 func (e *HtmlElement) Style(props ...styles.ApplyProp) *HtmlElement {
 	e.style = styles.ApplyStyle(e.theme, props...)
+
 	styleProps := []string{}
 	for variant, props := range e.style {
 		for prop, value := range props {
 			styleProps = append(styleProps, strings.Join([]string{string(prop), value}, ":"))
 		}
+
 		e.Data("style-"+variant.Name(), strings.Join(styleProps, ";"))
 	}
-
-	className := e.getClassName()
-
-	e.Data("style-classname", className)
 
 	return e
 }

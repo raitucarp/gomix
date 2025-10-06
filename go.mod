@@ -6,3 +6,5 @@ require (
 	github.com/iancoleman/strcase v0.3.0
 	golang.org/x/net v0.44.0
 )
+
+require github.com/sqids/sqids-go v0.4.1 // indirect
