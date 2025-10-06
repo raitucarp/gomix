@@ -10,9 +10,14 @@ import (
 	"github.com/raitucarp/gomix/element"
 )
 
-type web struct {
+type webPage struct {
 	prefixTitle string
 	suffixTitle string
+	layout      components.IsComponent
+	pages       []*Page
+	fragments   []*Fragment
+	scripts     []string
+	stylesheets []string
 }
 
 type Application struct {
@@ -22,29 +27,41 @@ type Application struct {
 	features []string
 	addons   []string
 
-	layout    components.IsComponent
-	pages     []*Page
-	fragments []*Fragment
+	web *webPage
 
-	scripts      []string
-	stylesheets  []string
 	enableLogger bool
 }
 
+type Scope string
+
+const (
+	AppScope    Scope = "app"
+	WebScope    Scope = "web"
+	RestScope   Scope = "rest"
+	SocketScope Scope = "ws"
+	SSEScope    Scope = "sse"
+	AssetsScope Scope = "assets"
+)
+
 type LocationPath string
-type AppParam func(app *Application)
+type AppParam func(app *Application) (scope Scope, fn func())
 
 func App(params ...AppParam) {
 	app := &Application{
 		port: -1,
-		layout: components.Component(
-			element.Body(
-				element.Element(components.Slot()),
+		web: &webPage{
+			layout: components.Component(
+				element.Body(
+					element.Element(components.Slot()),
+				),
 			),
-		),
+		},
 	}
 	for _, param := range params {
-		param(app)
+		scope, runFn := param(app)
+		if scope == AppScope {
+			runFn()
+		}
 	}
 
 	if app.port > 0 {
@@ -53,88 +70,135 @@ func App(params ...AppParam) {
 }
 
 func Name(name string) AppParam {
-	return func(app *Application) {
-		app.name = name
+	return func(app *Application) (Scope, func()) {
+		return AppScope, func() {
+			app.name = name
+		}
 	}
 }
 
 func Addons(addons ...AppParam) AppParam {
-	return func(app *Application) {
-		for _, addon := range addons {
-			addon(app)
+	return func(app *Application) (Scope, func()) {
+		return AppScope, func() {
+			for _, addon := range addons {
+				scope, runFn := addon(app)
+				if scope == AppScope {
+					runFn()
+				}
+			}
+		}
+	}
+}
+
+func WebAddons(addons ...AppParam) AppParam {
+	return func(app *Application) (Scope, func()) {
+		return WebScope, func() {
+			for _, addon := range addons {
+				scope, runFn := addon(app)
+				if scope == WebScope {
+					runFn()
+				}
+			}
 		}
 	}
 }
 
 func Features(features ...AppParam) AppParam {
-	return func(app *Application) {
-		for _, feature := range features {
-			feature(app)
+	return func(app *Application) (Scope, func()) {
+		return AppScope, func() {
+			for _, feature := range features {
+				scope, runFn := feature(app)
+				if scope == AppScope {
+					runFn()
+				}
+			}
 		}
 	}
 }
 
 func Webpage(features ...AppParam) AppParam {
-	return func(app *Application) {
-		for _, feature := range features {
-			feature(app)
+	return func(app *Application) (Scope, func()) {
+		return AppScope, func() {
+			for _, fn := range features {
+				scope, runFn := fn(app)
+				if scope == WebScope {
+					runFn()
+				}
+			}
 		}
 	}
 }
 
 func Port(port int) AppParam {
-	return func(app *Application) {
-		app.port = port
+	return func(app *Application) (Scope, func()) {
+		return AppScope, func() {
+			app.port = port
+		}
 	}
 }
 
 func Logger() AppParam {
-	return func(app *Application) {
-		app.features = append(app.features, "logger")
+	return func(app *Application) (Scope, func()) {
+		return AppScope, func() {
+			app.features = append(app.features, "logger")
+		}
 	}
 }
 
 func Rest(apis ...AppParam) AppParam {
-	return func(app *Application) {
-		for _, aa := range apis {
-			aa(app)
+	return func(app *Application) (Scope, func()) {
+		return AppScope, func() {
+			for _, aa := range apis {
+				aa(app)
+			}
 		}
 	}
 }
 
 func Scripts(url ...string) AppParam {
-	return func(app *Application) {
-		app.scripts = append(app.scripts, url...)
-		app.scripts = slices.Compact(app.scripts)
+	return func(app *Application) (Scope, func()) {
+		return WebScope, func() {
+			app.web.scripts = append(app.web.scripts, url...)
+			app.web.scripts = slices.Compact(app.web.scripts)
+		}
 	}
 }
 
 func PageAt(path LocationPath, setup PageSetup) AppParam {
-	return func(app *Application) {
-		newPage := NewPage(path, setup)
-		app.pages = append(app.pages, newPage)
+	return func(app *Application) (Scope, func()) {
+		return WebScope, func() {
+			newPage := NewPage(path, setup)
+			app.web.pages = append(app.web.pages, newPage)
+		}
 	}
 }
 
 func FragmentAt(path FragmentPath, component FragmentComponent) AppParam {
-	return func(app *Application) {
-		fragment := NewFragment(path, component)
-		app.fragments = append(app.fragments, fragment)
+	return func(app *Application) (Scope, func()) {
+		return WebScope, func() {
+			fragment := NewFragment(path, component)
+			app.web.fragments = append(app.web.fragments, fragment)
+		}
 	}
 }
 
 func Layout(component components.IsComponent) AppParam {
-	return func(app *Application) {
-		app.layout = components.Component(
-			element.Body(
-				element.Element(component),
-			),
-		)
+	return func(app *Application) (Scope, func()) {
+		return WebScope, func() {
+			app.web.layout = components.Component(
+				element.Body(
+					element.Element(component),
+				),
+			)
+		}
 	}
 }
 
-func (app *Application) Apply(param AppParam) {
-	param(app)
+func (app *Application) Apply(scope Scope, param AppParam) {
+	paramScope, runFn := param(app)
+	if scope == paramScope {
+		runFn()
+	}
 }
 
 func (app *Application) InstallAddon(addonName string) {
@@ -147,10 +211,10 @@ func (app *Application) IsAddonActivated(addonName string) bool {
 }
 
 func (app *Application) flattenPages() (pages []*Page) {
-	for _, p := range app.pages {
+	for _, p := range app.web.pages {
 		p.flattened = true
-		p.AddLayouts(func(page *Page) components.IsComponent { return app.layout })
-		p.AddScripts(app.scripts...)
+		p.AddLayouts(func(page *Page) components.IsComponent { return app.web.layout })
+		p.AddScripts(app.web.scripts...)
 
 		pages = append(pages, p)
 		if len(p.children) > 0 {
@@ -170,7 +234,7 @@ func (app *Application) serve() {
 		mux.HandleFunc(string(page.path), page.handler)
 	}
 
-	for _, fragment := range app.fragments {
+	for _, fragment := range app.web.fragments {
 		mux.HandleFunc(string(fragment.path), fragment.handler)
 	}
 

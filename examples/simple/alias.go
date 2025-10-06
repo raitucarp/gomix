@@ -15,6 +15,7 @@ type fragment_path = gomix.FragmentPath
 var app = gomix.App
 var name = gomix.Name
 var addons = gomix.Addons
+var web_addons = gomix.WebAddons
 var port = gomix.Port
 var features = gomix.Features
 var logger = gomix.Logger

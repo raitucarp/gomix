@@ -1,7 +1,6 @@
 package gomix
 
 import (
-	"fmt"
 	"io"
 	"net/http"
 
@@ -134,8 +133,6 @@ func (page *Page) Render(lang element.LanguageCode) string {
 	for _, script := range page.scripts {
 		head = append(head, element.Script().Src(script))
 	}
-
-	fmt.Println(page.scripts)
 
 	layout := components.Component(
 		element.Html(

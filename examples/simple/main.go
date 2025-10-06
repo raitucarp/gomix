@@ -21,15 +21,16 @@ const (
 func main() {
 	app(
 		name("Simple App"),
-		addons(
-			_htmx("2.0.7"),
-		),
 		features(
 			logger(),
 		),
-		layout(MainLayout()),
 		webpage(
-			// scripts()
+			layout(
+				MainLayout(),
+			),
+			web_addons(
+				_htmx("2.0.7"),
+			),
 			fragment(blogArticleFramentPath, BlogArticle),
 
 			// page

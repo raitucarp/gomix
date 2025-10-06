@@ -10,14 +10,15 @@ import (
 
 const AddonName = "htmx"
 
-func Addon(version string) func(app *gomix.Application) {
-	return func(app *gomix.Application) {
-		app.InstallAddon(AddonName)
-		htmxUrl := fmt.Sprintf("https://cdn.jsdelivr.net/npm/htmx.org@%s/dist/htmx.min.js", version)
+func Addon(version string) gomix.AppParam {
+	scope := gomix.WebScope
+	return func(app *gomix.Application) (gomix.Scope, func()) {
+		return scope, func() {
+			app.InstallAddon(AddonName)
+			htmxUrl := fmt.Sprintf("https://cdn.jsdelivr.net/npm/htmx.org@%s/dist/htmx.min.js", version)
 
-		app.Apply(
-			gomix.Scripts(htmxUrl),
-		)
+			app.Apply(scope, gomix.Scripts(htmxUrl))
+		}
 	}
 }
 
