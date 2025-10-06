@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func AutoColsAuto() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -32,10 +34,10 @@ func AutoColsFr() ApplyProp {
 	}
 }
 
-func AutoColsBy(value customValue) ApplyProp {
+func AutoColsBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridAutoColumnsProp): value.Value(),
+			string(gridAutoColumnsProp): val.Value(),
 		}
 	}
 }

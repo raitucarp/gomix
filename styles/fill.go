@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func FillInherit() ApplyProp {
@@ -929,10 +930,10 @@ func FillYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func Fill(value customValue) ApplyProp {
+func Fill(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fillProp): value.Value(),
+			string(fillProp): val.Value(),
 		}
 	}
 }

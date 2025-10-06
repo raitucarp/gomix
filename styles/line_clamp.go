@@ -2,6 +2,8 @@ package styles
 
 import (
 	"strconv"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func LineClamp(number int) ApplyProp {
@@ -26,13 +28,13 @@ func LineClampNone() ApplyProp {
 	}
 }
 
-func LineClampBy(value customValue) ApplyProp {
+func LineClampBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(overflowProp):        "hidden",
 			string(displayProp):         "-webkit-box",
 			string(webkitBoxOrientProp): "vertical",
-			string(webkitLineClampProp): value.Value(),
+			string(webkitLineClampProp): val.Value(),
 		}
 	}
 }

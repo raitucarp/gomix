@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func TextShadow2xs() ApplyProp {
@@ -70,10 +71,10 @@ func TextShadowNone() ApplyProp {
 	}
 }
 
-func TextShadow(value customValue) ApplyProp {
+func TextShadow(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textShadowProp): value.Value(),
+			string(textShadowProp): val.Value(),
 		}
 	}
 }
@@ -1001,10 +1002,10 @@ func TextShadowYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func TextShadowColor(value customValue) ApplyProp {
+func TextShadowColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textShadowColorProp): value.Value(),
+			string(textShadowColorProp): val.Value(),
 		}
 	}
 }

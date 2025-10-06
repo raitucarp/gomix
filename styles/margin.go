@@ -1,6 +1,10 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/raitucarp/gomix/value"
+)
 
 func M(number int) ApplyProp {
 	return func(s *style) styleProp {
@@ -42,10 +46,10 @@ func NegMPx() ApplyProp {
 	}
 }
 
-func MBy(value customValue) ApplyProp {
+func MBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginProp): value.Value(),
+			string(marginProp): val.Value(),
 		}
 	}
 }
@@ -90,10 +94,10 @@ func NegMxPx() ApplyProp {
 	}
 }
 
-func MxBy(value customValue) ApplyProp {
+func MxBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginInlineProp): value.Value(),
+			string(marginInlineProp): val.Value(),
 		}
 	}
 }
@@ -138,10 +142,10 @@ func NegMyPx() ApplyProp {
 	}
 }
 
-func MyBy(value customValue) ApplyProp {
+func MyBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginBlockProp): value.Value(),
+			string(marginBlockProp): val.Value(),
 		}
 	}
 }
@@ -186,10 +190,10 @@ func NegMsPx() ApplyProp {
 	}
 }
 
-func MsBy(value customValue) ApplyProp {
+func MsBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginInlineStartProp): value.Value(),
+			string(marginInlineStartProp): val.Value(),
 		}
 	}
 }
@@ -234,10 +238,10 @@ func NegMePx() ApplyProp {
 	}
 }
 
-func MeBy(value customValue) ApplyProp {
+func MeBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginInlineEndProp): value.Value(),
+			string(marginInlineEndProp): val.Value(),
 		}
 	}
 }
@@ -282,10 +286,10 @@ func NegMtPx() ApplyProp {
 	}
 }
 
-func MtBy(value customValue) ApplyProp {
+func MtBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginTopProp): value.Value(),
+			string(marginTopProp): val.Value(),
 		}
 	}
 }
@@ -330,10 +334,10 @@ func NegMrPx() ApplyProp {
 	}
 }
 
-func MrBy(value customValue) ApplyProp {
+func MrBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginRightProp): value.Value(),
+			string(marginRightProp): val.Value(),
 		}
 	}
 }
@@ -378,10 +382,10 @@ func NegMbPx() ApplyProp {
 	}
 }
 
-func MbBy(value customValue) ApplyProp {
+func MbBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginBottomProp): value.Value(),
+			string(marginBottomProp): val.Value(),
 		}
 	}
 }
@@ -426,10 +430,10 @@ func NegMlPx() ApplyProp {
 	}
 }
 
-func MlBy(value customValue) ApplyProp {
+func MlBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(marginLeftProp): value.Value(),
+			string(marginLeftProp): val.Value(),
 		}
 	}
 }

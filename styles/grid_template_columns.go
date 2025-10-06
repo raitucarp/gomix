@@ -2,6 +2,8 @@ package styles
 
 import (
 	"fmt"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func GridCols(number int) ApplyProp {
@@ -28,10 +30,10 @@ func GridColsSubgrid() ApplyProp {
 	}
 }
 
-func GridColsBy(value customValue) ApplyProp {
+func GridColsBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridTemplateColumnsProp): value.Value(),
+			string(gridTemplateColumnsProp): val.Value(),
 		}
 	}
 }

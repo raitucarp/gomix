@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func StrokeInherit() ApplyProp {
@@ -929,10 +930,10 @@ func StrokeYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func StrokeColor(value customValue) ApplyProp {
+func StrokeColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(strokeProp): value.Value(),
+			string(strokeProp): val.Value(),
 		}
 	}
 }

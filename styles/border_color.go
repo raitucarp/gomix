@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func BorderInherit() ApplyProp {
@@ -928,10 +929,10 @@ func BorderYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func BorderColor(value customValue) ApplyProp {
+func BorderColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderColorProp): value.Value(),
+			string(borderColorProp): val.Value(),
 		}
 	}
 }
@@ -1860,10 +1861,10 @@ func BorderXYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func BorderXColor(value customValue) ApplyProp {
+func BorderXColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineColorProp): value.Value(),
+			string(borderInlineColorProp): val.Value(),
 		}
 	}
 }
@@ -2792,10 +2793,10 @@ func BorderYYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func BorderYColor(value customValue) ApplyProp {
+func BorderYColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockColorProp): value.Value(),
+			string(borderBlockColorProp): val.Value(),
 		}
 	}
 }
@@ -3724,10 +3725,10 @@ func BorderStartYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func BorderStartColor(value customValue) ApplyProp {
+func BorderStartColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartColorProp): value.Value(),
+			string(borderInlineStartColorProp): val.Value(),
 		}
 	}
 }
@@ -4656,10 +4657,10 @@ func BorderEndYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func BorderEndColor(value customValue) ApplyProp {
+func BorderEndColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndColorProp): value.Value(),
+			string(borderInlineEndColorProp): val.Value(),
 		}
 	}
 }
@@ -5588,10 +5589,10 @@ func BorderTopYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func BorderTopColor(value customValue) ApplyProp {
+func BorderTopColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopColorProp): value.Value(),
+			string(borderTopColorProp): val.Value(),
 		}
 	}
 }
@@ -6521,10 +6522,10 @@ func BorderRightYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func BorderRightColor(value customValue) ApplyProp {
+func BorderRightColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightColorProp): value.Value(),
+			string(borderRightColorProp): val.Value(),
 		}
 	}
 }
@@ -7454,10 +7455,10 @@ func BorderBottomYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func BorderBottomColor(value customValue) ApplyProp {
+func BorderBottomColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomColorProp): value.Value(),
+			string(borderBottomColorProp): val.Value(),
 		}
 	}
 }
@@ -8387,10 +8388,10 @@ func BorderLeftYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func BorderLeftColor(value customValue) ApplyProp {
+func BorderLeftColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftColorProp): value.Value(),
+			string(borderLeftColorProp): val.Value(),
 		}
 	}
 }
@@ -9319,10 +9320,10 @@ func DivideYellowDarkAlpha(scale int) ApplyProp {
 		}
 	}
 }
-func DivideColor(value customValue) ApplyProp {
+func DivideColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			notLastChildProp(borderColorProp): value.Value(),
+			notLastChildProp(borderColorProp): val.Value(),
 		}
 	}
 }

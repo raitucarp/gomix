@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func AccentInherit() ApplyProp {
@@ -928,10 +929,10 @@ func AccentYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func Accent(value customValue) ApplyProp {
+func Accent(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(accentColorProp): value.Value(),
+			string(accentColorProp): val.Value(),
 		}
 	}
 }

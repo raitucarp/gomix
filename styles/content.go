@@ -1,9 +1,11 @@
 package styles
 
-func Content(value customValue) ApplyProp {
+import "github.com/raitucarp/gomix/value"
+
+func Content(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(contentProp): value.Value(),
+			string(contentProp): val.Value(),
 		}
 	}
 }

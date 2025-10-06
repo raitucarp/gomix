@@ -1,6 +1,9 @@
 package styles
 
-import "github.com/raitucarp/gomix/theme"
+import (
+	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
+)
 
 func FontSans() ApplyProp {
 	return func(s *style) styleProp {
@@ -26,10 +29,10 @@ func FontMono() ApplyProp {
 	}
 }
 
-func FontFamilyBy(value customValue) ApplyProp {
+func FontFamilyBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fontFamilyProp): value.Value(),
+			string(fontFamilyProp): val.Value(),
 		}
 	}
 }

@@ -145,3 +145,15 @@ func Cos(angle Value) *function {
 func CubicBezier(x1 Value, y1 Value, x2 Value, y2 Value) *function {
 	return createFunction("cubic-bezier", "%s(%s, %s, %s, %s)", x1, x2, y1, y2)
 }
+
+type url struct {
+	value string
+}
+
+func (u *url) Value() string {
+	return fmt.Sprintf("url(%s)", u.value)
+}
+
+func Url(uri string) *url {
+	return &url{value: uri}
+}

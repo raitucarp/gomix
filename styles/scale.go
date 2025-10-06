@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func ScaleNone() ApplyProp {
@@ -14,11 +15,11 @@ func ScaleNone() ApplyProp {
 	}
 }
 
-func Scale(value any) ApplyProp {
+func Scale(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int:
 			if v < 0 {
 				propValue = fmt.Sprintf("calc(%d%% * -1) calc(%d%% * -1)", v, v)
@@ -27,21 +28,21 @@ func Scale(value any) ApplyProp {
 			}
 		case float32:
 			if v < 0 {
-				propValue = fmt.Sprintf("calc(%.2f%% * -1) calc(%.2f%% * -1)", v, v)
+				propValue = fmt.Sprintf("calc(%#v%% * -1) calc(%#v%% * -1)", v, v)
 			} else {
-				propValue = fmt.Sprintf("%.2f%% %.2f%%", v, v)
+				propValue = fmt.Sprintf("%#v%% %#v%%", v, v)
 			}
 		case float64:
 			if v < 0 {
-				propValue = fmt.Sprintf("calc(%.2f%% * -1) calc(%.2f%% * -1)", v, v)
+				propValue = fmt.Sprintf("calc(%#v%% * -1) calc(%#v%% * -1)", v, v)
 			} else {
-				propValue = fmt.Sprintf("%.2f%% %.2f%%", v, v)
+				propValue = fmt.Sprintf("%#v%% %#v%%", v, v)
 			}
-		case customVariableProp:
+		case value.CustomProperty:
 			propValue = fmt.Sprintf("%s %s", v.Value(), v.Value())
-		case val:
+		case value.LiteralValue:
 			propValue = v.Value()
-		case customValue:
+		case value.Value:
 			propValue = v.Value()
 		}
 
@@ -51,11 +52,11 @@ func Scale(value any) ApplyProp {
 	}
 }
 
-func ScaleX(value any) ApplyProp {
+func ScaleX(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int:
 			if v < 0 {
 				propValue = fmt.Sprintf("calc(%d%% * -1) %s", v, s.theme.UseVarKey(theme.Custom, "scale-y"))
@@ -64,17 +65,17 @@ func ScaleX(value any) ApplyProp {
 			}
 		case float32:
 			if v < 0 {
-				propValue = fmt.Sprintf("calc(%.2f%% * -1) %s", v, s.theme.UseVarKey(theme.Custom, "scale-y"))
+				propValue = fmt.Sprintf("calc(%#v%% * -1) %s", v, s.theme.UseVarKey(theme.Custom, "scale-y"))
 			} else {
-				propValue = fmt.Sprintf("%.2f%% %s", v, s.theme.UseVarKey(theme.Custom, "scale-y"))
+				propValue = fmt.Sprintf("%#v%% %s", v, s.theme.UseVarKey(theme.Custom, "scale-y"))
 			}
 		case float64:
 			if v < 0 {
-				propValue = fmt.Sprintf("calc(%.2f%% * -1) %s", v, s.theme.UseVarKey(theme.Custom, "scale-y"))
+				propValue = fmt.Sprintf("calc(%#v%% * -1) %s", v, s.theme.UseVarKey(theme.Custom, "scale-y"))
 			} else {
-				propValue = fmt.Sprintf("%.2f%% %s", v, s.theme.UseVarKey(theme.Custom, "scale-y"))
+				propValue = fmt.Sprintf("%#v%% %s", v, s.theme.UseVarKey(theme.Custom, "scale-y"))
 			}
-		case customValue:
+		case value.Value:
 			propValue = fmt.Sprintf("%s %s", v.Value(), s.theme.UseVarKey(theme.Custom, "scale-y"))
 		}
 
@@ -84,11 +85,11 @@ func ScaleX(value any) ApplyProp {
 	}
 }
 
-func ScaleY(value any) ApplyProp {
+func ScaleY(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int:
 			if v < 0 {
 				propValue = fmt.Sprintf("%s calc(%d%% * -1)", s.theme.UseVarKey(theme.Custom, "scale-x"), v)
@@ -97,17 +98,17 @@ func ScaleY(value any) ApplyProp {
 			}
 		case float32:
 			if v < 0 {
-				propValue = fmt.Sprintf("%s calc(%.2f%% * -1)", s.theme.UseVarKey(theme.Custom, "scale-x"), v)
+				propValue = fmt.Sprintf("%s calc(%#v%% * -1)", s.theme.UseVarKey(theme.Custom, "scale-x"), v)
 			} else {
-				propValue = fmt.Sprintf("%s %.2f%%", s.theme.UseVarKey(theme.Custom, "scale-x"), v)
+				propValue = fmt.Sprintf("%s %#v%%", s.theme.UseVarKey(theme.Custom, "scale-x"), v)
 			}
 		case float64:
 			if v < 0 {
-				propValue = fmt.Sprintf("%s calc(%.2f%% * -1)", s.theme.UseVarKey(theme.Custom, "scale-x"), v)
+				propValue = fmt.Sprintf("%s calc(%#v%% * -1)", s.theme.UseVarKey(theme.Custom, "scale-x"), v)
 			} else {
-				propValue = fmt.Sprintf("%s %.2f%%", s.theme.UseVarKey(theme.Custom, "scale-x"), v)
+				propValue = fmt.Sprintf("%s %#v%%", s.theme.UseVarKey(theme.Custom, "scale-x"), v)
 			}
-		case customValue:
+		case value.Value:
 			propValue = fmt.Sprintf("%s %s", s.theme.UseVarKey(theme.Custom, "scale-x"), v.Value())
 		}
 
@@ -117,11 +118,11 @@ func ScaleY(value any) ApplyProp {
 	}
 }
 
-func ScaleZ(value any) ApplyProp {
+func ScaleZ(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int:
 			if v < 0 {
 				propValue = fmt.Sprintf("%s %s calc(%d%% * -1)",
@@ -138,13 +139,13 @@ func ScaleZ(value any) ApplyProp {
 			}
 		case float32:
 			if v < 0 {
-				propValue = fmt.Sprintf("%s %s calc(%.2f%% * -1)",
+				propValue = fmt.Sprintf("%s %s calc(%#v%% * -1)",
 					s.theme.UseVarKey(theme.Custom, "scale-x"),
 					s.theme.UseVarKey(theme.Custom, "scale-y"),
 					v,
 				)
 			} else {
-				propValue = fmt.Sprintf("%s %s %.2f%%",
+				propValue = fmt.Sprintf("%s %s %#v%%",
 					s.theme.UseVarKey(theme.Custom, "scale-x"),
 					s.theme.UseVarKey(theme.Custom, "scale-y"),
 					v,
@@ -152,19 +153,19 @@ func ScaleZ(value any) ApplyProp {
 			}
 		case float64:
 			if v < 0 {
-				propValue = fmt.Sprintf("%s %s calc(%.2f%% * -1)",
+				propValue = fmt.Sprintf("%s %s calc(%#v%% * -1)",
 					s.theme.UseVarKey(theme.Custom, "scale-x"),
 					s.theme.UseVarKey(theme.Custom, "scale-y"),
 					v,
 				)
 			} else {
-				propValue = fmt.Sprintf("%s %s %.2f%%",
+				propValue = fmt.Sprintf("%s %s %#v%%",
 					s.theme.UseVarKey(theme.Custom, "scale-x"),
 					s.theme.UseVarKey(theme.Custom, "scale-y"),
 					v,
 				)
 			}
-		case customValue:
+		case value.Value:
 			propValue = fmt.Sprintf("%s %s %s",
 				s.theme.UseVarKey(theme.Custom, "scale-x"),
 				s.theme.UseVarKey(theme.Custom, "scale-y"),

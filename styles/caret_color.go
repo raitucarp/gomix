@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func CaretInherit() ApplyProp {
@@ -929,10 +930,10 @@ func CaretYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func Caret(value customValue) ApplyProp {
+func Caret(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(caretColorProp): value.Value(),
+			string(caretColorProp): val.Value(),
 		}
 	}
 }

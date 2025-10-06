@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func FilterNone() ApplyProp {
@@ -14,10 +15,10 @@ func FilterNone() ApplyProp {
 	}
 }
 
-func Filter(value customValue) ApplyProp {
+func Filter(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): value.Value(),
+			string(filterProp): val.Value(),
 		}
 	}
 }
@@ -80,21 +81,21 @@ func BlurNone() ApplyProp {
 	}
 }
 
-func Blur(value customValue) ApplyProp {
+func Blur(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", value.Value()),
+			string(filterProp): fmt.Sprintf("blur(%s)", val.Value()),
 		}
 	}
 }
 
-func Brightness(value any) ApplyProp {
+func Brightness(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("brightness(%d%%)", v)
-		case customValue:
+		case value.Value:
 			prop = fmt.Sprintf("brightness(%s)", v.Value())
 		}
 
@@ -104,13 +105,13 @@ func Brightness(value any) ApplyProp {
 	}
 }
 
-func Contrast(value any) ApplyProp {
+func Contrast(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("contrast(%d%%)", v)
-		case customValue:
+		case value.Value:
 			prop = fmt.Sprintf("contrast(%s)", v.Value())
 		}
 
@@ -120,17 +121,17 @@ func Contrast(value any) ApplyProp {
 	}
 }
 
-func Grayscale(value ...any) ApplyProp {
+func Grayscale(val ...any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
 
-		if len(value) <= 0 {
+		if len(val) <= 0 {
 			prop = "100%"
 		} else {
-			switch v := value[0].(type) {
+			switch v := val[0].(type) {
 			case int, float32, float64:
 				prop = fmt.Sprintf("grayscale(%d%%)", v)
-			case customValue:
+			case value.Value:
 				prop = fmt.Sprintf("grayscale(%s)", v.Value())
 			}
 		}
@@ -141,10 +142,10 @@ func Grayscale(value ...any) ApplyProp {
 	}
 }
 
-func HueRotate(value any) ApplyProp {
+func HueRotate(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int:
 			if v < 0 {
 				prop = fmt.Sprintf("hue-rotate(calc(%ddeg * -1))", v)
@@ -163,7 +164,7 @@ func HueRotate(value any) ApplyProp {
 			} else {
 				prop = fmt.Sprintf("hue-rotate(%fdeg)", v)
 			}
-		case customValue:
+		case value.Value:
 			prop = fmt.Sprintf("hue-rotate(%s)", v.Value())
 		}
 
@@ -173,17 +174,17 @@ func HueRotate(value any) ApplyProp {
 	}
 }
 
-func Invert(value ...any) ApplyProp {
+func Invert(val ...any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
 
-		if len(value) <= 0 {
+		if len(val) <= 0 {
 			prop = "100%"
 		} else {
-			switch v := value[0].(type) {
+			switch v := val[0].(type) {
 			case int, float32, float64:
 				prop = fmt.Sprintf("invert(%d%%)", v)
-			case customValue:
+			case value.Value:
 				prop = fmt.Sprintf("invert(%s)", v.Value())
 			}
 		}
@@ -194,13 +195,13 @@ func Invert(value ...any) ApplyProp {
 	}
 }
 
-func Saturate(value any) ApplyProp {
+func Saturate(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("saturate(%d%%)", v)
-		case customValue:
+		case value.Value:
 			prop = fmt.Sprintf("saturate(%s)", v.Value())
 		}
 
@@ -210,17 +211,17 @@ func Saturate(value any) ApplyProp {
 	}
 }
 
-func Sepia(value ...any) ApplyProp {
+func Sepia(val ...any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
 
-		if len(value) <= 0 {
+		if len(val) <= 0 {
 			prop = "100%"
 		} else {
-			switch v := value[0].(type) {
+			switch v := val[0].(type) {
 			case int, float32, float64:
 				prop = fmt.Sprintf("sepia(%d%%)", v)
-			case customValue:
+			case value.Value:
 				prop = fmt.Sprintf("sepia(%s)", v.Value())
 			}
 		}

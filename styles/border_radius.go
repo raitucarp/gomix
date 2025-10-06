@@ -1,6 +1,9 @@
 package styles
 
-import "github.com/raitucarp/gomix/theme"
+import (
+	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
+)
 
 func RoundedXs() ApplyProp {
 	return func(s *style) styleProp {
@@ -82,10 +85,10 @@ func RoundedFull() ApplyProp {
 	}
 }
 
-func Rounded(value customValue) ApplyProp {
+func Rounded(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRadiusProp): value.Value(),
+			string(borderRadiusProp): val.Value(),
 		}
 	}
 }
@@ -180,11 +183,12 @@ func RoundedSFull() ApplyProp {
 	}
 }
 
-func RoundedS(value customValue) ApplyProp {
+func RoundedS(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
+		val.Value()
 		return &properties{
-			string(borderStartStartRadiusProp): value.Value(),
-			string(borderEndStartRadiusProp):   value.Value(),
+			string(borderStartStartRadiusProp): val.Value(),
+			string(borderEndStartRadiusProp):   val.Value(),
 		}
 	}
 }
@@ -281,11 +285,11 @@ func RoundedEFull() ApplyProp {
 	}
 }
 
-func RoundedE(value customValue) ApplyProp {
+func RoundedE(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderStartEndRadiusProp): value.Value(),
-			string(borderEndEndRadiusProp):   value.Value(),
+			string(borderStartEndRadiusProp): val.Value(),
+			string(borderEndEndRadiusProp):   val.Value(),
 		}
 	}
 }
@@ -382,11 +386,11 @@ func RoundedTFull() ApplyProp {
 	}
 }
 
-func RoundedT(value customValue) ApplyProp {
+func RoundedT(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopLeftRadiusProp):  value.Value(),
-			string(borderTopRightRadiusProp): value.Value(),
+			string(borderTopLeftRadiusProp):  val.Value(),
+			string(borderTopRightRadiusProp): val.Value(),
 		}
 	}
 }
@@ -483,11 +487,11 @@ func RoundedRFull() ApplyProp {
 	}
 }
 
-func RoundedR(value customValue) ApplyProp {
+func RoundedR(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopRightRadiusProp):    value.Value(),
-			string(borderBottomRightRadiusProp): value.Value(),
+			string(borderTopRightRadiusProp):    val.Value(),
+			string(borderBottomRightRadiusProp): val.Value(),
 		}
 	}
 }
@@ -584,11 +588,11 @@ func RoundedBFull() ApplyProp {
 	}
 }
 
-func RoundedB(value customValue) ApplyProp {
+func RoundedB(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomRightRadiusProp): value.Value(),
-			string(borderBottomLeftRadiusProp):  value.Value(),
+			string(borderBottomRightRadiusProp): val.Value(),
+			string(borderBottomLeftRadiusProp):  val.Value(),
 		}
 	}
 }
@@ -685,11 +689,11 @@ func RoundedLFull() ApplyProp {
 	}
 }
 
-func RoundedL(value customValue) ApplyProp {
+func RoundedL(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopLeftRadiusProp):    value.Value(),
-			string(borderBottomLeftRadiusProp): value.Value(),
+			string(borderTopLeftRadiusProp):    val.Value(),
+			string(borderBottomLeftRadiusProp): val.Value(),
 		}
 	}
 }
@@ -775,10 +779,10 @@ func RoundedSsFull() ApplyProp {
 	}
 }
 
-func RoundedSs(value customValue) ApplyProp {
+func RoundedSs(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderStartStartRadiusProp): value.Value(),
+			string(borderStartStartRadiusProp): val.Value(),
 		}
 	}
 }
@@ -865,10 +869,10 @@ func RoundedSeFull() ApplyProp {
 	}
 }
 
-func RoundedSe(value customValue) ApplyProp {
+func RoundedSe(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderStartEndRadiusProp): value.Value(),
+			string(borderStartEndRadiusProp): val.Value(),
 		}
 	}
 }
@@ -955,10 +959,10 @@ func RoundedEeFull() ApplyProp {
 	}
 }
 
-func RoundedEe(value customValue) ApplyProp {
+func RoundedEe(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderEndEndRadiusProp): value.Value(),
+			string(borderEndEndRadiusProp): val.Value(),
 		}
 	}
 }
@@ -1045,10 +1049,10 @@ func RoundedEsFull() ApplyProp {
 	}
 }
 
-func RoundedEs(value customValue) ApplyProp {
+func RoundedEs(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderEndStartRadiusProp): value.Value(),
+			string(borderEndStartRadiusProp): val.Value(),
 		}
 	}
 }
@@ -1135,10 +1139,10 @@ func RoundedTlFull() ApplyProp {
 	}
 }
 
-func RoundedTl(value customValue) ApplyProp {
+func RoundedTl(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopLeftRadiusProp): value.Value(),
+			string(borderTopLeftRadiusProp): val.Value(),
 		}
 	}
 }
@@ -1225,10 +1229,10 @@ func RoundedTrFull() ApplyProp {
 	}
 }
 
-func RoundedTr(value customValue) ApplyProp {
+func RoundedTr(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopRightRadiusProp): value.Value(),
+			string(borderTopRightRadiusProp): val.Value(),
 		}
 	}
 }
@@ -1315,10 +1319,10 @@ func RoundedBrFull() ApplyProp {
 	}
 }
 
-func RoundedBr(value customValue) ApplyProp {
+func RoundedBr(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomRightRadiusProp): value.Value(),
+			string(borderBottomRightRadiusProp): val.Value(),
 		}
 	}
 }
@@ -1405,10 +1409,10 @@ func RoundedBlFull() ApplyProp {
 	}
 }
 
-func RoundedBl(value customValue) ApplyProp {
+func RoundedBl(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomLeftRadiusProp): value.Value(),
+			string(borderBottomLeftRadiusProp): val.Value(),
 		}
 	}
 }

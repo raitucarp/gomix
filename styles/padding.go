@@ -1,6 +1,10 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/raitucarp/gomix/value"
+)
 
 func P(number int) ApplyProp {
 	return func(s *style) styleProp {
@@ -18,10 +22,10 @@ func PPx(number int) ApplyProp {
 	}
 }
 
-func PBy(value customValue) ApplyProp {
+func PBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingProp): value.Value(),
+			string(paddingProp): val.Value(),
 		}
 	}
 }
@@ -42,10 +46,10 @@ func PxPx(number int) ApplyProp {
 	}
 }
 
-func PxBy(value customValue) ApplyProp {
+func PxBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingInlineProp): value.Value(),
+			string(paddingInlineProp): val.Value(),
 		}
 	}
 }
@@ -66,10 +70,10 @@ func PyPx(number int) ApplyProp {
 	}
 }
 
-func PyBy(value customValue) ApplyProp {
+func PyBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingBlockProp): value.Value(),
+			string(paddingBlockProp): val.Value(),
 		}
 	}
 }
@@ -90,10 +94,10 @@ func PsPx(number int) ApplyProp {
 	}
 }
 
-func PsBy(value customValue) ApplyProp {
+func PsBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingInlineStartProp): value.Value(),
+			string(paddingInlineStartProp): val.Value(),
 		}
 	}
 }
@@ -114,10 +118,10 @@ func PePx(number int) ApplyProp {
 	}
 }
 
-func PeBy(value customValue) ApplyProp {
+func PeBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingInlineEndProp): value.Value(),
+			string(paddingInlineEndProp): val.Value(),
 		}
 	}
 }
@@ -138,10 +142,10 @@ func PtPx(number int) ApplyProp {
 	}
 }
 
-func PtBy(value customValue) ApplyProp {
+func PtBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingTopProp): value.Value(),
+			string(paddingTopProp): val.Value(),
 		}
 	}
 }
@@ -162,10 +166,10 @@ func PrPx(number int) ApplyProp {
 	}
 }
 
-func PrBy(value customValue) ApplyProp {
+func PrBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingRightProp): value.Value(),
+			string(paddingRightProp): val.Value(),
 		}
 	}
 }
@@ -186,10 +190,10 @@ func PbPx(number int) ApplyProp {
 	}
 }
 
-func PbBy(value customValue) ApplyProp {
+func PbBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingBottomProp): value.Value(),
+			string(paddingBottomProp): val.Value(),
 		}
 	}
 }
@@ -210,10 +214,10 @@ func PlPx(number int) ApplyProp {
 	}
 }
 
-func PlBy(value customValue) ApplyProp {
+func PlBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(paddingLeftProp): value.Value(),
+			string(paddingLeftProp): val.Value(),
 		}
 	}
 }

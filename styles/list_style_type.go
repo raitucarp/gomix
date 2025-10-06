@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func ListDisc() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -24,10 +26,10 @@ func ListNone() ApplyProp {
 	}
 }
 
-func List(value customValue) ApplyProp {
+func List(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(listStyleTypeProp): value.Value(),
+			string(listStyleTypeProp): val.Value(),
 		}
 	}
 }

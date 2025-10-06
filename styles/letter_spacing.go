@@ -1,6 +1,9 @@
 package styles
 
-import "github.com/raitucarp/gomix/theme"
+import (
+	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
+)
 
 func TrackingTighter() ApplyProp {
 	return func(s *style) styleProp {
@@ -50,10 +53,10 @@ func TrackingWidest() ApplyProp {
 	}
 }
 
-func TrackingBy(value customValue) ApplyProp {
+func TrackingBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(letterSpacingProp): value.Value(),
+			string(letterSpacingProp): val.Value(),
 		}
 	}
 }

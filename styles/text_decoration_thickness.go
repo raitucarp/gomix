@@ -1,6 +1,10 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/raitucarp/gomix/value"
+)
 
 func Decoration(number int) ApplyProp {
 	return func(s *style) styleProp {
@@ -26,10 +30,10 @@ func DecorationAuto() ApplyProp {
 	}
 }
 
-func DecorationBy(value customValue) ApplyProp {
+func DecorationBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textDecorThicknessProp): value.Value(),
+			string(textDecorThicknessProp): val.Value(),
 		}
 	}
 }

@@ -1,6 +1,10 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/raitucarp/gomix/value"
+)
 
 func UnderlineOffset(number int) ApplyProp {
 	return func(s *style) styleProp {
@@ -26,10 +30,10 @@ func UnderlineOffsetAuto() ApplyProp {
 	}
 }
 
-func UnderlineOffsetBy(value customValue) ApplyProp {
+func UnderlineOffsetBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textUnderlineOffsetProp): value.Value(),
+			string(textUnderlineOffsetProp): val.Value(),
 		}
 	}
 }

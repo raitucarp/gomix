@@ -4,12 +4,13 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
-func Bg(value customValue) ApplyProp {
+func Bg(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundImageProp): value.Value(),
+			string(backgroundImageProp): val.Value(),
 		}
 	}
 }
@@ -86,14 +87,14 @@ func BgLinearToTl() ApplyProp {
 	}
 }
 
-func BgLinear(value customValue) ApplyProp {
+func BgLinear(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		gradient := ""
-		switch v := value.(type) {
-		case *angle:
+		switch v := val.(type) {
+		case *value.Angle:
 			gradient = fmt.Sprintf("linear-gradient(%s in oklab, %s)", v.Value(), s.theme.UseVarKey(theme.Custom, "gradient-stops"))
-		case *val, *customVariableProp:
-			gradient = fmt.Sprintf("linear-gradient(%s, %s))", s.theme.UseVarKey(theme.Custom, "gradient-stops"), value.Value())
+		case value.Value, *value.CustomProperty:
+			gradient = fmt.Sprintf("linear-gradient(%s, %s))", s.theme.UseVarKey(theme.Custom, "gradient-stops"), val.Value())
 		}
 		return &properties{
 			string(backgroundImageProp): gradient,
@@ -101,14 +102,15 @@ func BgLinear(value customValue) ApplyProp {
 	}
 }
 
-func BgRadial(value customValue) ApplyProp {
+func BgRadial(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		gradient := ""
-		switch v := value.(type) {
-		case *angle:
+		switch v := val.(type) {
+		case *value.Angle:
 			gradient = fmt.Sprintf("radial-gradient(%s in oklab, %s)", v.Value(), s.theme.UseVarKey(theme.Custom, "gradient-stops"))
-		case *val, *customVariableProp:
-			gradient = fmt.Sprintf("radial-gradient(%s, %s))", s.theme.UseVarKey(theme.Custom, "gradient-stops"), value.Value())
+		case value.Value, *value.CustomProperty:
+			val.Value()
+			gradient = fmt.Sprintf("radial-gradient(%s, %s))", s.theme.UseVarKey(theme.Custom, "gradient-stops"), val.Value())
 		}
 		return &properties{
 			string(backgroundImageProp): gradient,
@@ -116,13 +118,13 @@ func BgRadial(value customValue) ApplyProp {
 	}
 }
 
-func BgConic(value customValue) ApplyProp {
+func BgConic(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		gradient := ""
-		switch v := value.(type) {
-		case *angle:
+		switch v := val.(type) {
+		case *value.Angle:
 			gradient = fmt.Sprintf("conic-gradient(from %s in oklab, %s)", v.Value(), s.theme.UseVarKey(theme.Custom, "gradient-stops"))
-		case *val, *customVariableProp:
+		case value.Value, *value.CustomProperty:
 			gradient = v.Value()
 		}
 		return &properties{
@@ -131,16 +133,16 @@ func BgConic(value customValue) ApplyProp {
 	}
 }
 
-func From(value customValue) ApplyProp {
+func From(val value.Value) ApplyProp {
 	propValue := ""
 	propName := gradientFrom
-	switch v := value.(type) {
-	case *mColor, *rgba, *hexcolor, *hsla:
+	switch v := val.(type) {
+	case *value.RgbaColor, *value.Hexcolor, *value.HslaColor:
 		propValue = v.Value()
-	case *percentage:
+	case *value.PercentageValue:
 		propValue = v.Value()
 		propName = gradientFromPosition
-	case *val, *customVariableProp:
+	case value.Value, *value.CustomProperty:
 		propValue = v.Value()
 	}
 
@@ -151,16 +153,16 @@ func From(value customValue) ApplyProp {
 	}
 }
 
-func Via(value customValue) ApplyProp {
+func Via(val value.Value) ApplyProp {
 	propValue := ""
 	propName := gradientVia
-	switch v := value.(type) {
-	case *mColor, *rgba, *hexcolor, *hsla:
+	switch v := val.(type) {
+	case *value.RgbaColor, *value.Hexcolor, *value.HslaColor:
 		propValue = v.Value()
-	case *percentage:
+	case *value.PercentageValue:
 		propValue = v.Value()
 		propName = gradientViaPosition
-	case *val, *customVariableProp:
+	case value.Value, *value.CustomProperty:
 		propValue = v.Value()
 	}
 
@@ -171,16 +173,16 @@ func Via(value customValue) ApplyProp {
 	}
 }
 
-func To(value customValue) ApplyProp {
+func To(val value.Value) ApplyProp {
 	propValue := ""
 	propName := gradientTo
-	switch v := value.(type) {
-	case *mColor, *rgba, *hexcolor, *hsla:
+	switch v := val.(type) {
+	case *value.RgbaColor, *value.Hexcolor, *value.HslaColor:
 		propValue = v.Value()
-	case *percentage:
+	case *value.PercentageValue:
 		propValue = v.Value()
 		propName = gradientToPosition
-	case *val, *customVariableProp:
+	case value.Value, *value.CustomProperty:
 		propValue = v.Value()
 	}
 

@@ -4,12 +4,13 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
-func Transform(value customValue) ApplyProp {
+func Transform(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(transformProp): value.Value(),
+			string(transformProp): val.Value(),
 		}
 	}
 }

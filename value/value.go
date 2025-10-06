@@ -22,11 +22,11 @@ func (n *number[T]) Value() string {
 	return fmt.Sprintf("%#v", n.value)
 }
 
-type literal struct {
+type LiteralValue struct {
 	value string
 }
 
-func (l *literal) Value() string {
+func (l *LiteralValue) Value() string {
 	return l.value
 }
 
@@ -34,18 +34,18 @@ func Number[T valConstraint](val T) *number[T] {
 	return &number[T]{value: val}
 }
 
-func Literal(v string) *literal {
-	return &literal{value: v}
+func Literal(v string) *LiteralValue {
+	return &LiteralValue{value: v}
 }
 
-type variable struct {
+type CustomProperty struct {
 	name string
 }
 
-func (v *variable) Value() string {
-	return fmt.Sprintf("var(--%s)", v.name)
+func (p *CustomProperty) Value() string {
+	return fmt.Sprintf("var(--%s)", p.name)
 }
 
-func Var(name string) *variable {
-	return &variable{name: name}
+func Property(name string) *CustomProperty {
+	return &CustomProperty{name: name}
 }

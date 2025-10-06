@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func AutoRowsAuto() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -32,10 +34,10 @@ func AutoRowsFr() ApplyProp {
 	}
 }
 
-func AutoRowsBy(value customValue) ApplyProp {
+func AutoRowsBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridAutoRowsProp): value.Value(),
+			string(gridAutoRowsProp): val.Value(),
 		}
 	}
 }

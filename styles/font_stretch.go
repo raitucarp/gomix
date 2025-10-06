@@ -1,6 +1,10 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/raitucarp/gomix/value"
+)
 
 func FontStretchUltraCondensed() ApplyProp {
 	return func(s *style) styleProp {
@@ -82,10 +86,10 @@ func FontStretchPercentage(percentage int) ApplyProp {
 	}
 }
 
-func FontStretchBy(value customValue) ApplyProp {
+func FontStretchBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fontStretchProp): value.Value(),
+			string(fontStretchProp): val.Value(),
 		}
 	}
 }

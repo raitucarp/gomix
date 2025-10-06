@@ -1,18 +1,22 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
 
-func Stroke(value any) ApplyProp {
+	"github.com/raitucarp/gomix/value"
+)
+
+func Stroke(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("%v", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{
-			string(positionProp): prop,
+			string(strokeWidthProp): prop,
 		}
 	}
 }

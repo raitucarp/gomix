@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func CursorAuto() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -288,10 +290,10 @@ func CursorZoomOut() ApplyProp {
 
 	}
 }
-func Cursor(value customValue) ApplyProp {
+func Cursor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(cursorProp): value.Value(),
+			string(cursorProp): val.Value(),
 		}
 
 	}

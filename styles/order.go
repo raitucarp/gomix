@@ -3,6 +3,8 @@ package styles
 import (
 	"fmt"
 	"strconv"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func Order(number int) ApplyProp {
@@ -37,10 +39,10 @@ func OrderLast() ApplyProp {
 	}
 }
 
-func OrderBy(value customValue) ApplyProp {
+func OrderBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(orderProp): value.Value(),
+			string(orderProp): val.Value(),
 		}
 	}
 }

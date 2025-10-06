@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func Shadow2xs() ApplyProp {
@@ -70,10 +71,10 @@ func ShadowNone() ApplyProp {
 	}
 }
 
-func Shadow(value customValue) ApplyProp {
+func Shadow(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): value.Value(),
+			string(boxShadowProp): val.Value(),
 		}
 	}
 }
@@ -1001,10 +1002,10 @@ func ShadowYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func ShadowColor(value customValue) ApplyProp {
+func ShadowColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(shadowColorProp): value.Value(),
+			string(shadowColorProp): val.Value(),
 		}
 	}
 }
@@ -1075,10 +1076,10 @@ func InsetShadowNone() ApplyProp {
 	}
 }
 
-func InsetShadow(value customValue) ApplyProp {
+func InsetShadow(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(boxShadowProp): value.Value(),
+			string(boxShadowProp): val.Value(),
 		}
 	}
 }
@@ -2006,31 +2007,29 @@ func InsetShadowYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func InsetShadowColor(value customValue) ApplyProp {
+func InsetShadowColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetShadowColorProp): value.Value(),
+			string(insetShadowColorProp): val.Value(),
 		}
 	}
 }
 
 // --
 
-func Ring(value ...customValue) ApplyProp {
+func Ring(val ...value.Value) ApplyProp {
 	propValue := ""
-	if len(value) == 0 {
+	if len(val) == 0 {
 		propValue = "0 0 0 1px"
 	} else {
 
-		switch v := value[0].(type) {
-		case *val:
-			switch n := v.value.(type) {
-			case int:
-				propValue = fmt.Sprintf("0 0 0 %dpx", n)
-			default:
-				propValue = fmt.Sprintf("0 0 0 %s", v.Value())
-			}
-		case *customVariableProp:
+		switch v := val[0].(type) {
+		case *value.Unit[int], *value.Unit[float32], *value.Unit[float64]:
+			propValue = fmt.Sprintf("0 0 0 %#vpx", v.Value())
+		case *value.LiteralValue:
+			propValue = fmt.Sprintf("0 0 0 %s", v.Value())
+
+		case *value.CustomProperty:
 			propValue = fmt.Sprintf("0 0 0 %s", v.Value())
 		}
 	}
@@ -2966,31 +2965,26 @@ func RingYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func RingColor(value customValue) ApplyProp {
+func RingColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(ringColorProp): value.Value(),
+			string(ringColorProp): val.Value(),
 		}
 	}
 }
 
 //--
 
-func InsetRing(value ...customValue) ApplyProp {
+func InsetRing(val ...value.Value) ApplyProp {
 	propValue := ""
-	if len(value) == 0 {
+	if len(val) == 0 {
 		propValue = "0 0 0 1px"
 	} else {
 
-		switch v := value[0].(type) {
-		case *val:
-			switch n := v.value.(type) {
-			case int:
-				propValue = fmt.Sprintf("0 0 0 %dpx", n)
-			default:
-				propValue = fmt.Sprintf("0 0 0 %s", v.Value())
-			}
-		case *customVariableProp:
+		switch v := val[0].(type) {
+		case *value.Unit[int], *value.Unit[float32], *value.Unit[float64]:
+			propValue = fmt.Sprintf("0 0 0 %#vpx", v.Value())
+		case *value.CustomProperty, *value.LiteralValue:
 			propValue = fmt.Sprintf("0 0 0 %s", v.Value())
 		}
 	}
@@ -3925,10 +3919,10 @@ func InsetRingYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func InsetRingColor(value customValue) ApplyProp {
+func InsetRingColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetRingColorProp): value.Value(),
+			string(insetRingColorProp): val.Value(),
 		}
 	}
 }

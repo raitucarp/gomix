@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func AlignBaseline() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -65,10 +67,10 @@ func AlignSuper() ApplyProp {
 	}
 }
 
-func AlignBy(value customValue) ApplyProp {
+func AlignBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(verticalAlignProp): value.Value(),
+			string(verticalAlignProp): val.Value(),
 		}
 	}
 }

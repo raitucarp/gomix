@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func BgAuto() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -24,10 +26,10 @@ func BgContain() ApplyProp {
 	}
 }
 
-func BgSize(value customValue) ApplyProp {
+func BgSize(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundSizeProp): value.Value(),
+			string(backgroundSizeProp): val.Value(),
 		}
 	}
 }

@@ -1,29 +1,31 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
 
-func opacityValue(value customValue) string {
+	"github.com/raitucarp/gomix/value"
+)
+
+func opacityValue(val value.Value) string {
 	propValue := ""
-	switch v := value.(type) {
-	case *val:
-		switch n := v.value.(type) {
-		case int:
-			propValue = fmt.Sprintf("%d%%", n)
-		default:
-			propValue = v.Value()
-		}
-	case *customVariableProp:
+	switch v := val.(type) {
+	case *value.LiteralValue:
+		propValue = v.Value()
+	case *value.Unit[int], *value.Unit[float32], *value.Unit[float64]:
+		propValue = fmt.Sprintf("%#v%%", v)
+
+	case *value.CustomProperty:
 		propValue = v.Value()
 	}
 
 	return propValue
 }
 
-func Opacity(value customValue) ApplyProp {
+func Opacity(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 
 		return &properties{
-			string(opacityProp): opacityValue(value),
+			string(opacityProp): opacityValue(val),
 		}
 	}
 }

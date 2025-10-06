@@ -3,6 +3,8 @@ package styles
 import (
 	"fmt"
 	"strconv"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func ColSpan(number int) ApplyProp {
@@ -21,10 +23,10 @@ func ColSpanFull() ApplyProp {
 	}
 }
 
-func ColSpanBy(value customValue) ApplyProp {
+func ColSpanBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnProp): fmt.Sprintf("span %v / span %v", value.Value(), value.Value()),
+			string(gridColumnProp): fmt.Sprintf("span %v / span %v", val.Value(), val.Value()),
 		}
 	}
 }
@@ -53,10 +55,10 @@ func ColStartAuto() ApplyProp {
 	}
 }
 
-func ColStartBy(value customValue) ApplyProp {
+func ColStartBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnStartProp): value.Value(),
+			string(gridColumnStartProp): val.Value(),
 		}
 	}
 }
@@ -85,10 +87,10 @@ func ColEndAuto() ApplyProp {
 	}
 }
 
-func ColEndBy(value customValue) ApplyProp {
+func ColEndBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnEndProp): value.Value(),
+			string(gridColumnEndProp): val.Value(),
 		}
 	}
 }
@@ -117,10 +119,10 @@ func NegCol(number int) ApplyProp {
 	}
 }
 
-func ColBy(value customValue) ApplyProp {
+func ColBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridColumnProp): value.Value(),
+			string(gridColumnProp): val.Value(),
 		}
 	}
 }

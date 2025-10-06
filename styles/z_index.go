@@ -2,6 +2,8 @@ package styles
 
 import (
 	"strconv"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func Z(index int) ApplyProp {
@@ -20,10 +22,10 @@ func ZAuto() ApplyProp {
 	}
 }
 
-func ZBy(value customValue) ApplyProp {
+func ZBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(zIndexProp): value.Value(),
+			string(zIndexProp): val.Value(),
 		}
 	}
 }

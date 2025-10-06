@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func OriginCenter() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -72,10 +74,10 @@ func OriginTopLeft() ApplyProp {
 	}
 }
 
-func Origin(value customValue) ApplyProp {
+func Origin(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(transformOriginProp): value.Value(),
+			string(transformOriginProp): val.Value(),
 		}
 	}
 }

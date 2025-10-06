@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func W(number int) ApplyProp {
@@ -17,7 +18,7 @@ func W(number int) ApplyProp {
 func WFraction(fraction float32) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(widthProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(widthProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -230,10 +231,10 @@ func WFit() ApplyProp {
 	}
 }
 
-func WBy(value customValue) ApplyProp {
+func WBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(widthProp): value.Value(),
+			string(widthProp): val.Value(),
 		}
 	}
 }
@@ -250,8 +251,8 @@ func Size(number int) ApplyProp {
 func SizeFraction(fraction float32) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(widthProp):  fmt.Sprintf("calc(var(--spacing) * %.2f)", fraction),
-			string(heightProp): fmt.Sprintf("calc(var(--spacing) * %.2f)", fraction),
+			string(widthProp):  fmt.Sprintf("calc(var(--spacing) * %#v)", fraction),
+			string(heightProp): fmt.Sprintf("calc(var(--spacing) * %#v)", fraction),
 		}
 	}
 }
@@ -355,11 +356,11 @@ func SizeFit() ApplyProp {
 	}
 }
 
-func SizeBy(value customValue) ApplyProp {
+func SizeBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(widthProp):  value.Value(),
-			string(heightProp): value.Value(),
+			string(widthProp):  val.Value(),
+			string(heightProp): val.Value(),
 		}
 	}
 }

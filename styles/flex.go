@@ -2,12 +2,14 @@ package styles
 
 import (
 	"fmt"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func FlexFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(flexProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -36,10 +38,10 @@ func FlexNone() ApplyProp {
 	}
 }
 
-func FlexBy(value customValue) ApplyProp {
+func FlexBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexProp): value.Value(),
+			string(flexProp): val.Value(),
 		}
 	}
 }

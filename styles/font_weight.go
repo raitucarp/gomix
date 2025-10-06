@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func FontThin() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -72,10 +74,10 @@ func FontBlack() ApplyProp {
 	}
 }
 
-func FontWeightBy(value customValue) ApplyProp {
+func FontWeightBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(fontWeightProp): value.Value(),
+			string(fontWeightProp): val.Value(),
 		}
 	}
 }

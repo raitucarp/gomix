@@ -3,6 +3,8 @@ package styles
 import (
 	"fmt"
 	"strconv"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func RowSpan(number int) ApplyProp {
@@ -21,10 +23,10 @@ func RowSpanFull() ApplyProp {
 	}
 }
 
-func RowSpanBy(value customValue) ApplyProp {
+func RowSpanBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridRowProp): fmt.Sprintf("span %v / span %v", value.Value(), value.Value()),
+			string(gridRowProp): fmt.Sprintf("span %v / span %v", val.Value(), val.Value()),
 		}
 	}
 }
@@ -53,10 +55,10 @@ func RowStartAuto() ApplyProp {
 	}
 }
 
-func RowStartBy(value customValue) ApplyProp {
+func RowStartBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridRowStartProp): value.Value(),
+			string(gridRowStartProp): val.Value(),
 		}
 	}
 }
@@ -85,10 +87,10 @@ func RowEndAuto() ApplyProp {
 	}
 }
 
-func RowEndBy(value customValue) ApplyProp {
+func RowEndBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridRowEndProp): value.Value(),
+			string(gridRowEndProp): val.Value(),
 		}
 	}
 }
@@ -117,10 +119,10 @@ func NegRow(number int) ApplyProp {
 	}
 }
 
-func RowBy(value customValue) ApplyProp {
+func RowBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gridRowProp): value.Value(),
+			string(gridRowProp): val.Value(),
 		}
 	}
 }

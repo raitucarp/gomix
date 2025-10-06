@@ -2,6 +2,8 @@ package styles
 
 import (
 	"fmt"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func MaxH(number int) ApplyProp {
@@ -15,7 +17,7 @@ func MaxH(number int) ApplyProp {
 func MaxHFraction(fraction float32) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxHeightProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(maxHeightProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -132,10 +134,10 @@ func MaxHLh() ApplyProp {
 	}
 }
 
-func MaxHBy(value customValue) ApplyProp {
+func MaxHBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxHeightProp): value.Value(),
+			string(maxHeightProp): val.Value(),
 		}
 	}
 }

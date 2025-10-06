@@ -1,6 +1,9 @@
 package styles
 
-import "github.com/raitucarp/gomix/theme"
+import (
+	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
+)
 
 func AnimateSpin() ApplyProp {
 	return func(s *style) styleProp {
@@ -77,10 +80,10 @@ func AnimateNone() ApplyProp {
 	}
 }
 
-func Animate(value customValue) ApplyProp {
+func Animate(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(animationProp): value.Value(),
+			string(animationProp): val.Value(),
 		}
 	}
 }

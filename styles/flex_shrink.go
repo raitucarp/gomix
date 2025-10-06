@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func Shrink() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -8,10 +10,10 @@ func Shrink() ApplyProp {
 	}
 }
 
-func ShrinkBy(value customValue) ApplyProp {
+func ShrinkBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexShrinkProp): value.Value(),
+			string(flexShrinkProp): val.Value(),
 		}
 	}
 }

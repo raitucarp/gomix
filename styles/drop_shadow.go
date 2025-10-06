@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func DropShadow2xs() ApplyProp {
@@ -70,10 +71,10 @@ func DropShadowNone() ApplyProp {
 	}
 }
 
-func DropShadow(value customValue) ApplyProp {
+func DropShadow(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(filterProp): fmt.Sprintf("drop-shadow(%s)", value.Value()),
+			string(filterProp): fmt.Sprintf("drop-shadow(%s)", val.Value()),
 		}
 	}
 }
@@ -1002,10 +1003,10 @@ func DropShadowYellowDarkAlpha(scale int) ApplyProp {
 	}
 }
 
-func DropShadowColor(value customValue) ApplyProp {
+func DropShadowColor(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(dropShadowColor): value.Value(),
+			string(dropShadowColor): val.Value(),
 		}
 	}
 }

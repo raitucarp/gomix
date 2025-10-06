@@ -1,8 +1,11 @@
 package styles
 
-import "github.com/raitucarp/gomix/theme"
+import (
+	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
+)
 
-func Aspect(ratio customValue) ApplyProp {
+func Aspect(ratio value.Value) ApplyProp {
 	return func(s *style) styleProp {
 
 		return &properties{

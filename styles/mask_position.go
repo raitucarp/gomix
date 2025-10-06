@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func MaskTopLeft() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -73,10 +75,10 @@ func MaskBottomRight() ApplyProp {
 	}
 }
 
-func MaskPosition(value customValue) ApplyProp {
+func MaskPosition(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maskPositionProp): value.Value(),
+			string(maskPositionProp): val.Value(),
 		}
 	}
 }

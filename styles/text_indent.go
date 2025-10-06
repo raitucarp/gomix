@@ -1,6 +1,10 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/raitucarp/gomix/value"
+)
 
 func Indent(number int) ApplyProp {
 	return func(s *style) styleProp {
@@ -34,10 +38,10 @@ func NegIndentPx() ApplyProp {
 	}
 }
 
-func IndentBy(value customValue) ApplyProp {
+func IndentBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(textIndentProp): value.Value(),
+			string(textIndentProp): val.Value(),
 		}
 	}
 }

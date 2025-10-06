@@ -1,9 +1,11 @@
 package styles
 
-func ListImage(value customValue) ApplyProp {
+import "github.com/raitucarp/gomix/value"
+
+func ListImage(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(listStyleImageProp): value.Value(),
+			string(listStyleImageProp): val.Value(),
 		}
 	}
 }

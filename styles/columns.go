@@ -1,8 +1,11 @@
 package styles
 
-import "github.com/raitucarp/gomix/theme"
+import (
+	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
+)
 
-func Columns(cols customValue) ApplyProp {
+func Columns(cols value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(columnsProp): cols.Value(),

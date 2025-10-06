@@ -2,6 +2,8 @@ package styles
 
 import (
 	"fmt"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func MinH(number int) ApplyProp {
@@ -15,7 +17,7 @@ func MinH(number int) ApplyProp {
 func MinHFraction(fraction float32) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(minHeightProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(minHeightProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -132,10 +134,10 @@ func MinHLh() ApplyProp {
 	}
 }
 
-func MinHBy(value customValue) ApplyProp {
+func MinHBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(minHeightProp): value.Value(),
+			string(minHeightProp): val.Value(),
 		}
 	}
 }

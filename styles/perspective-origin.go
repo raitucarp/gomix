@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func PerspectiveOriginCenter() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -72,10 +74,10 @@ func PerspectiveOriginTopLeft() ApplyProp {
 	}
 }
 
-func PerspectiveOrigin(value customValue) ApplyProp {
+func PerspectiveOrigin(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(perspectiveOriginProp): value.Value(),
+			string(perspectiveOriginProp): val.Value(),
 		}
 	}
 }

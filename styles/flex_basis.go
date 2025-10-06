@@ -4,12 +4,13 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
-func Basis(value customValue) ApplyProp {
+func Basis(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexBasisProp): value.Value(),
+			string(flexBasisProp): val.Value(),
 		}
 	}
 }
@@ -17,7 +18,7 @@ func Basis(value customValue) ApplyProp {
 func BasisFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexBasisProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(flexBasisProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }

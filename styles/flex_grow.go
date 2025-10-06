@@ -2,6 +2,8 @@ package styles
 
 import (
 	"strconv"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func Grow() ApplyProp {
@@ -20,10 +22,10 @@ func GrowNumber(number int) ApplyProp {
 	}
 }
 
-func GrowValue(value customValue) ApplyProp {
+func GrowValue(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(flexGrowProp): value.Value(),
+			string(flexGrowProp): val.Value(),
 		}
 	}
 }

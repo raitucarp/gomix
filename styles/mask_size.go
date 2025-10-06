@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func MaskAuto() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -24,10 +26,10 @@ func MaskContain() ApplyProp {
 	}
 }
 
-func MaskSize(value customValue) ApplyProp {
+func MaskSize(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maskSizeProp): value.Value(),
+			string(maskSizeProp): val.Value(),
 		}
 	}
 }

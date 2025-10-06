@@ -1,10 +1,12 @@
 package styles
 
-func Outline(value ...customValue) ApplyProp {
+import "github.com/raitucarp/gomix/value"
+
+func Outline(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 
 		return &properties{
-			string(outlineWidthProp): propWidthValue(value...),
+			string(outlineWidthProp): propWidthValue(val...),
 		}
 	}
 }

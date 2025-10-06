@@ -1,27 +1,27 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
 
-func outlineOffsetValue(value ...customValue) string {
+	"github.com/raitucarp/gomix/value"
+)
+
+func outlineOffsetValue(val ...value.Value) string {
 	propValue := ""
-	if len(value) == 0 {
+	if len(val) == 0 {
 		propValue = "1px"
 	} else {
 
-		switch v := value[0].(type) {
-		case *val:
-			switch n := v.value.(type) {
-			case int:
-				if n <= 0 {
-
-					propValue = fmt.Sprintf("%dpx", n)
-				} else {
-					propValue = fmt.Sprintf("calc(%dpx * -1)", n)
-				}
-			default:
-				propValue = v.Value()
+		switch v := val[0].(type) {
+		case *value.Unit[int]:
+			if v.LiteralValue() <= 0 {
+				propValue = fmt.Sprintf("%spx", v.Value())
+			} else {
+				propValue = fmt.Sprintf("calc(%spx * -1)", v.Value())
 			}
-		case *customVariableProp:
+		case *value.LiteralValue:
+			propValue = v.Value()
+		case *value.CustomProperty:
 			propValue = v.Value()
 		}
 	}
@@ -29,11 +29,11 @@ func outlineOffsetValue(value ...customValue) string {
 	return propValue
 }
 
-func OutlineOffset(value ...customValue) ApplyProp {
+func OutlineOffset(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 
 		return &properties{
-			string(outlineOffsetProp): outlineOffsetValue(value...),
+			string(outlineOffsetProp): outlineOffsetValue(val...),
 		}
 	}
 }

@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func WillChangeAuto() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -32,10 +34,10 @@ func WillChangeTransform() ApplyProp {
 	}
 }
 
-func WillChange(value customValue) ApplyProp {
+func WillChange(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(willChangeProp): value.Value(),
+			string(willChangeProp): val.Value(),
 		}
 	}
 }

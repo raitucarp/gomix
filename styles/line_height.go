@@ -1,6 +1,10 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/raitucarp/gomix/value"
+)
 
 func LeadingNone() ApplyProp {
 	return func(s *style) styleProp {
@@ -18,10 +22,10 @@ func Leading(number int) ApplyProp {
 	}
 }
 
-func LeadingBy(value customValue) ApplyProp {
+func LeadingBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(lineHeightProp): value.Value(),
+			string(lineHeightProp): val.Value(),
 		}
 	}
 }

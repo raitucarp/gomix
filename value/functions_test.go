@@ -20,7 +20,7 @@ func TestCalc(t *testing.T) {
 	t.Run("var and number", func(t *testing.T) {
 		actual := Calc(
 			Add(
-				Var("hue"),
+				Property("hue"),
 				Number(180),
 			),
 		).Value()

@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func TranslateNone() ApplyProp {
@@ -14,16 +15,16 @@ func TranslateNone() ApplyProp {
 	}
 }
 
-func Translate(value any) ApplyProp {
+func Translate(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("calc(var(--spacing) * %d) calc(var(--spacing) * %d)", v, v)
-		case ratio:
+		case value.RatioValue:
 			propValue = fmt.Sprintf("calc(%s * 100%%) calc(%s * 100%%)", v.Value(), v.Value())
-		case customValue:
+		case value.Value:
 			propValue = fmt.Sprintf("%s %s", v, v)
 		}
 
@@ -33,14 +34,14 @@ func Translate(value any) ApplyProp {
 	}
 }
 
-func NegTranslate(value any) ApplyProp {
+func NegTranslate(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("calc(var(--spacing) * -%d) calc(var(--spacing) * -%d)", v, v)
-		case ratio:
+		case value.RatioValue:
 			propValue = fmt.Sprintf("calc(%s * -100%%) calc(%s * -100%%)", v.Value(), v.Value())
 		}
 
@@ -82,19 +83,19 @@ func NegTranslatePx() ApplyProp {
 	}
 }
 
-func TranslateX(value any) ApplyProp {
+func TranslateX(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("calc(var(--spacing) * %d) %s",
 				v,
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			)
-		case ratio:
+		case value.RatioValue:
 			propValue = fmt.Sprintf("calc(%s * 100%%) %s", v.Value(), s.theme.UseVarKey(theme.Custom, "translate-y"))
-		case customValue:
+		case value.Value:
 			propValue = fmt.Sprintf("%s %s", v, s.theme.UseVarKey(theme.Custom, "translate-y"))
 		}
 
@@ -104,17 +105,17 @@ func TranslateX(value any) ApplyProp {
 	}
 }
 
-func NegTranslateX(value any) ApplyProp {
+func NegTranslateX(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("calc(var(--spacing) * -%d) %s",
 				v,
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			)
-		case ratio:
+		case value.RatioValue:
 			propValue = fmt.Sprintf("calc(%s * -100%%) %s", v.Value(), s.theme.UseVarKey(theme.Custom, "translate-y"))
 		}
 
@@ -164,22 +165,22 @@ func NegTranslateXPx() ApplyProp {
 	}
 }
 
-func TranslateY(value any) ApplyProp {
+func TranslateY(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("%s calc(var(--spacing) * %d)",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				v,
 			)
-		case ratio:
+		case value.RatioValue:
 			propValue = fmt.Sprintf("%s calc(%s * 100%%)",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				v.Value(),
 			)
-		case customValue:
+		case value.Value:
 			propValue = fmt.Sprintf("%s %s",
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
 				v,
@@ -192,17 +193,17 @@ func TranslateY(value any) ApplyProp {
 	}
 }
 
-func NegTranslateY(value any) ApplyProp {
+func NegTranslateY(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("%s calc(var(--spacing) * -%d)",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				v,
 			)
-		case ratio:
+		case value.RatioValue:
 			propValue = fmt.Sprintf("%s calc(%s * -100%%)",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				v.Value(),
@@ -255,24 +256,24 @@ func NegTranslateYPx() ApplyProp {
 	}
 }
 
-func TranslateZ(value any) ApplyProp {
+func TranslateZ(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("%s %s calc(var(--spacing) * %d)",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
 				v,
 			)
-		case ratio:
+		case value.RatioValue:
 			propValue = fmt.Sprintf("%s %s calc(%s * 100%%)",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
 				v.Value(),
 			)
-		case customValue:
+		case value.Value:
 			propValue = fmt.Sprintf("%s %s %s",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
@@ -286,18 +287,18 @@ func TranslateZ(value any) ApplyProp {
 	}
 }
 
-func NegTranslateZ(value any) ApplyProp {
+func NegTranslateZ(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("%s %s calc(var(--spacing) * -%d)",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
 				v,
 			)
-		case ratio:
+		case value.RatioValue:
 			propValue = fmt.Sprintf("%s %s calc(%s * -100%%)",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				s.theme.UseVarKey(theme.Custom, "translate-y"),

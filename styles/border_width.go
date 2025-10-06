@@ -1,121 +1,125 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
 
-func propWidthValue(value ...customValue) string {
+	"github.com/raitucarp/gomix/value"
+)
+
+func propWidthValue(val ...value.Value) string {
 	propValue := ""
-	if len(value) == 0 {
+	if len(val) == 0 {
 		propValue = "1px"
 	} else {
 
-		switch v := value[0].(type) {
-		case *val:
-			switch n := v.value.(type) {
-			case int:
-				propValue = fmt.Sprintf("%dpx", n)
-			default:
-				propValue = v.Value()
-			}
-		case *customVariableProp:
+		switch v := val[0].(type) {
+		case *value.Unit[int]:
+			propValue = fmt.Sprintf("%spx", v.Value())
+
+		case *value.CustomProperty:
 			propValue = v.Value()
+
+		default:
+			propValue = v.Value()
+
 		}
 	}
 
 	return propValue
 }
 
-func Border(value ...customValue) ApplyProp {
+func Border(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 
 		return &properties{
-			string(borderWidthProp): propWidthValue(value...),
+			string(borderWidthProp): propWidthValue(val...),
 		}
 	}
 }
 
-func BorderX(value ...customValue) ApplyProp {
+func BorderX(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineWidthProp): propWidthValue(value...),
+			string(borderInlineWidthProp): propWidthValue(val...),
 		}
 	}
 }
 
-func BorderY(value ...customValue) ApplyProp {
+func BorderY(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBlockWidthProp): propWidthValue(value...),
+			string(borderBlockWidthProp): propWidthValue(val...),
 		}
 	}
 }
 
-func BorderS(value ...customValue) ApplyProp {
+func BorderS(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineStartWidthProp): propWidthValue(value...),
+			string(borderInlineStartWidthProp): propWidthValue(val...),
 		}
 	}
 }
 
-func BorderE(value ...customValue) ApplyProp {
+func BorderE(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderInlineEndWidthProp): propWidthValue(value...),
+			string(borderInlineEndWidthProp): propWidthValue(val...),
 		}
 	}
 }
 
-func BorderT(value ...customValue) ApplyProp {
+func BorderT(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderTopWidthProp): propWidthValue(value...),
+			string(borderTopWidthProp): propWidthValue(val...),
 		}
 	}
 }
 
-func BorderR(value ...customValue) ApplyProp {
+func BorderR(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderRightWidthProp): propWidthValue(value...),
+			string(borderRightWidthProp): propWidthValue(val...),
 		}
 	}
 }
 
-func BorderB(value ...customValue) ApplyProp {
+func BorderB(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderBottomWidthProp): propWidthValue(value...),
+			string(borderBottomWidthProp): propWidthValue(val...),
 		}
 	}
 }
 
-func BorderL(value ...customValue) ApplyProp {
+func BorderL(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(borderLeftWidthProp): propWidthValue(value...),
+			string(borderLeftWidthProp): propWidthValue(val...),
 		}
 	}
 }
 
-func DivideX(value ...customValue) ApplyProp {
+func DivideX(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			notLastChildProp(borderInlineStartWidthProp): "0px",
-			notLastChildProp(borderInlineEndWidthProp):   propWidthValue(value...),
+			notLastChildProp(borderInlineEndWidthProp):   propWidthValue(val...),
 		}
 	}
 }
 
-func DivideY(value ...customValue) ApplyProp {
+func DivideY(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			notLastChildProp(borderTopWidthProp):    "0px",
-			notLastChildProp(borderBottomWidthProp): propWidthValue(value...),
+			notLastChildProp(borderBottomWidthProp): propWidthValue(val...),
 		}
 	}
 }
 
-func DivideXReverse(value ...customValue) ApplyProp {
+func DivideXReverse(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(divideXReverseProp): "1",
@@ -123,7 +127,7 @@ func DivideXReverse(value ...customValue) ApplyProp {
 	}
 }
 
-func DivideYReverse(value ...customValue) ApplyProp {
+func DivideYReverse(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
 			string(divideYReverseProp): "1",

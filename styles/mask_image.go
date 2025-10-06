@@ -4,12 +4,13 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
-func Mask(value customValue) ApplyProp {
+func Mask(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maskImageProp): value.Value(),
+			string(maskImageProp): val.Value(),
 		}
 	}
 }
@@ -42,31 +43,31 @@ func MaskLinear(degree int) ApplyProp {
 	}
 }
 
-func MaskLinearFrom(value any) ApplyProp {
+func MaskLinearFrom(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(%s, black calc(var(--spacing) * %d), transparent %s)",
 				s.theme.UseVarKey(theme.Custom, "mask-linear-position"), v,
 				s.theme.UseVarKey(theme.Custom, "mask-linear-to"),
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(%s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-linear-position"), vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-linear-to"),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("linear-gradient(%s, %s %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-linear-position"), vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-linear-from"),
 					s.theme.UseVarKey(theme.Custom, "mask-linear-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(%s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-linear-position"), vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-linear-to"),
@@ -79,11 +80,11 @@ func MaskLinearFrom(value any) ApplyProp {
 	}
 }
 
-func MaskLinearTo(value any) ApplyProp {
+func MaskLinearTo(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(%s, black %s, transparent calc(var(--spacing) * %d))",
 				s.theme.UseVarKey(theme.Custom, "mask-linear-position"),
@@ -91,22 +92,22 @@ func MaskLinearTo(value any) ApplyProp {
 				v,
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(%s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-linear-position"),
 					s.theme.UseVarKey(theme.Custom, "mask-linear-from"),
 					vv.Value(),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("linear-gradient(%s, black %s, %s %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-linear-position"),
 					s.theme.UseVarKey(theme.Custom, "mask-linear-from"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-linear-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(%s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-linear-position"),
 					s.theme.UseVarKey(theme.Custom, "mask-linear-from"),
@@ -120,31 +121,31 @@ func MaskLinearTo(value any) ApplyProp {
 	}
 }
 
-func MaskTopFrom(value any) ApplyProp {
+func MaskTopFrom(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to top, black calc(var(--spacing) * %d), transparent %s)",
 				v,
 				s.theme.UseVarKey(theme.Custom, "mask-top-to"),
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to top, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-top-to"),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("linear-gradient(to top, %s %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-top-from"),
 					s.theme.UseVarKey(theme.Custom, "mask-top-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to top, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-top-to"),
@@ -157,32 +158,32 @@ func MaskTopFrom(value any) ApplyProp {
 	}
 }
 
-func MaskTopTo(value any) ApplyProp {
+func MaskTopTo(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to top, black %s, transparent calc(var(--spacing) * %d))",
 				s.theme.UseVarKey(theme.Custom, "mask-top-from"),
 				v,
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to top, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-top-from"),
 					vv.Value(),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 
 				propValue = fmt.Sprintf("linear-gradient(to top, black %s, %s %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-top-from"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-top-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to top, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-top-from"),
 					vv.Value(),
@@ -195,31 +196,31 @@ func MaskTopTo(value any) ApplyProp {
 	}
 }
 
-func MaskRightFrom(value any) ApplyProp {
+func MaskRightFrom(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to right, black calc(var(--spacing) * %d), transparent %s)",
 				v,
 				s.theme.UseVarKey(theme.Custom, "mask-right-to"),
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to right, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-right-to"),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("linear-gradient(to right, %s %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-right-from"),
 					s.theme.UseVarKey(theme.Custom, "mask-right-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to right, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-right-to"),
@@ -232,32 +233,32 @@ func MaskRightFrom(value any) ApplyProp {
 	}
 }
 
-func MaskRightTo(value any) ApplyProp {
+func MaskRightTo(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to right, black %s, transparent calc(var(--spacing) * %d))",
 				s.theme.UseVarKey(theme.Custom, "mask-right-from"),
 				v,
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to right, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-right-from"),
 					vv.Value(),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 
 				propValue = fmt.Sprintf("linear-gradient(to right, black %s, %s %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-right-from"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-right-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to right, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-right-from"),
 					vv.Value(),
@@ -270,31 +271,31 @@ func MaskRightTo(value any) ApplyProp {
 	}
 }
 
-func MaskBottomFrom(value any) ApplyProp {
+func MaskBottomFrom(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to bottom, black calc(var(--spacing) * %d), transparent %s)",
 				v,
 				s.theme.UseVarKey(theme.Custom, "mask-bottom-to"),
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to bottom, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-to"),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("linear-gradient(to bottom, %s %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-from"),
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to bottom, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-to"),
@@ -307,32 +308,32 @@ func MaskBottomFrom(value any) ApplyProp {
 	}
 }
 
-func MaskBottomTo(value any) ApplyProp {
+func MaskBottomTo(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to bottom, black %s, transparent calc(var(--spacing) * %d))",
 				s.theme.UseVarKey(theme.Custom, "mask-bottom-from"),
 				v,
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to bottom, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-from"),
 					vv.Value(),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 
 				propValue = fmt.Sprintf("linear-gradient(to bottom, black %s, %s %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-from"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to bottom, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-from"),
 					vv.Value(),
@@ -345,31 +346,31 @@ func MaskBottomTo(value any) ApplyProp {
 	}
 }
 
-func MaskLeftFrom(value any) ApplyProp {
+func MaskLeftFrom(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to left, black calc(var(--spacing) * %d), transparent %s)",
 				v,
 				s.theme.UseVarKey(theme.Custom, "mask-left-to"),
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to left, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-left-to"),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("linear-gradient(to left, %s %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-left-from"),
 					s.theme.UseVarKey(theme.Custom, "mask-left-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to left, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-left-to"),
@@ -382,32 +383,32 @@ func MaskLeftFrom(value any) ApplyProp {
 	}
 }
 
-func MaskLeftTo(value any) ApplyProp {
+func MaskLeftTo(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to left, black %s, transparent calc(var(--spacing) * %d))",
 				s.theme.UseVarKey(theme.Custom, "mask-left-from"),
 				v,
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to left, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-left-from"),
 					vv.Value(),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 
 				propValue = fmt.Sprintf("linear-gradient(to left, black %s, %s %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-left-from"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-left-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to left, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-left-from"),
 					vv.Value(),
@@ -420,11 +421,11 @@ func MaskLeftTo(value any) ApplyProp {
 	}
 }
 
-func MaskYFrom(value any) ApplyProp {
+func MaskYFrom(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to top, black calc(var(--spacing) * %d), transparent %s), linear-gradient(to bottom, black calc(var(--spacing) * %d), transparent %s)",
 				v,
@@ -433,16 +434,16 @@ func MaskYFrom(value any) ApplyProp {
 				s.theme.UseVarKey(theme.Custom, "mask-bottom-to"),
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to top, black %s, transparent %s), linear-gradient(to bottom, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-top-to"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-to"),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("linear-gradient(to top, %s %s, transparent %s), linear-gradient(to bottom, %s %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-top-from"),
@@ -451,7 +452,7 @@ func MaskYFrom(value any) ApplyProp {
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-from"),
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to top, black %s, transparent %s), linear-gradient(to bottom, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-top-to"),
@@ -467,11 +468,11 @@ func MaskYFrom(value any) ApplyProp {
 	}
 }
 
-func MaskYTo(value any) ApplyProp {
+func MaskYTo(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to top, %s, transparent calc(var(--spacing) * %d)), linear-gradient(to bottom, black %s, transparent calc(var(--spacing) * %d))",
 				s.theme.UseVarKey(theme.Custom, "mask-top-from"),
@@ -480,16 +481,16 @@ func MaskYTo(value any) ApplyProp {
 				v,
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to bottom, black %s, transparent %s), linear-gradient(to bottom, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-top-from"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-from"),
 					vv.Value(),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 
 				propValue = fmt.Sprintf("linear-gradient(to bottom, black %s, %s %s), linear-gradient(to bottom, black %s, %s %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-top-from"),
@@ -499,7 +500,7 @@ func MaskYTo(value any) ApplyProp {
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-bottom-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to top, black %s, transparent %s),linear-gradient(to bottom, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-top-from"),
 					vv.Value(),
@@ -515,11 +516,11 @@ func MaskYTo(value any) ApplyProp {
 	}
 }
 
-func MaskXFrom(value any) ApplyProp {
+func MaskXFrom(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to right, black calc(var(--spacing) * %d), transparent %s), linear-gradient(to left, black calc(var(--spacing) * %d), transparent %s)",
 				v,
@@ -528,16 +529,16 @@ func MaskXFrom(value any) ApplyProp {
 				s.theme.UseVarKey(theme.Custom, "mask-left-to"),
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to right, black %s, transparent %s), linear-gradient(to left, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-right-to"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-left-to"),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("linear-gradient(to right, %s %s, transparent %s), linear-gradient(to left, %s %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-right-from"),
@@ -546,7 +547,7 @@ func MaskXFrom(value any) ApplyProp {
 					s.theme.UseVarKey(theme.Custom, "mask-left-from"),
 					s.theme.UseVarKey(theme.Custom, "mask-left-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to right, black %s, transparent %s), linear-gradient(to left, black %s, transparent %s)",
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-right-to"),
@@ -562,11 +563,11 @@ func MaskXFrom(value any) ApplyProp {
 	}
 }
 
-func MaskXTo(value any) ApplyProp {
+func MaskXTo(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("linear-gradient(to right, black %s, transparent calc(var(--spacing) * %d)), linear-gradient(to left, black %s, transparent calc(var(--spacing) * %d))",
 				s.theme.UseVarKey(theme.Custom, "mask-right-from"),
@@ -575,16 +576,16 @@ func MaskXTo(value any) ApplyProp {
 				v,
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("linear-gradient(to left, black %s, transparent %s), linear-gradient(to left, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-right-from"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-left-from"),
 					vv.Value(),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("linear-gradient(to left, black %s, %s %s), linear-gradient(to left, black %s, %s %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-right-from"),
 					vv.Value(),
@@ -593,7 +594,7 @@ func MaskXTo(value any) ApplyProp {
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-left-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("linear-gradient(to right, black %s, transparent %s),linear-gradient(to left, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-right-from"),
 					vv.Value(),
@@ -609,20 +610,22 @@ func MaskXTo(value any) ApplyProp {
 	}
 }
 
-func MaskRadial(value ...any) ApplyProp {
+func MaskRadial(val ...any) ApplyProp {
 	return func(s *style) styleProp {
 
 		propValue := ""
 		propKey := maskImageProp
-		if len(value) >= 2 {
+		if len(val) >= 2 {
 			propKey = maskRadialSizeProp
-			propValue = fmt.Sprintf("%s %s", value[0].(customValue).Value(), value[1].(customValue).Value())
+			propValue = fmt.Sprintf("%s %s", val[0].(value.Value).Value(), val[1].(value.Value).Value())
 		} else {
-			switch v := value[0].(type) {
-			case *percentage, int, float32, float64:
+			switch v := val[0].(type) {
+			case int, float32, float64:
 				propKey = maskRadialSizeProp
-				propValue = v.(customValue).Value()
-			case *val:
+				propValue = v.(value.Value).Value()
+			case *value.LiteralValue:
+				propValue = v.Value()
+			case *value.CustomProperty:
 				propValue = v.Value()
 			}
 		}
@@ -633,11 +636,11 @@ func MaskRadial(value ...any) ApplyProp {
 	}
 }
 
-func MaskRadialFrom(value any) ApplyProp {
+func MaskRadialFrom(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("radial-gradient(%s %s at %s, black calc(var(--spacing) * %d), transparent %s)",
 				s.theme.UseVarKey(theme.Custom, "mask-radial-shape"),
@@ -647,9 +650,9 @@ func MaskRadialFrom(value any) ApplyProp {
 				s.theme.UseVarKey(theme.Custom, "mask-radial-to"),
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("radial-gradient(%s %s at %s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-radial-shape"),
 					s.theme.UseVarKey(theme.Custom, "mask-radial-size"),
@@ -657,7 +660,7 @@ func MaskRadialFrom(value any) ApplyProp {
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-radial-to"),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("radial-gradient(%s %s at %s, %s %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-radial-shape"),
 					s.theme.UseVarKey(theme.Custom, "mask-radial-size"),
@@ -666,7 +669,7 @@ func MaskRadialFrom(value any) ApplyProp {
 					s.theme.UseVarKey(theme.Custom, "mask-radial-from"),
 					s.theme.UseVarKey(theme.Custom, "mask-radial-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("radial-gradient(%s %s at %s, black %s), transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-radial-shape"),
 					s.theme.UseVarKey(theme.Custom, "mask-radial-size"),
@@ -682,11 +685,11 @@ func MaskRadialFrom(value any) ApplyProp {
 	}
 }
 
-func MaskRadialTo(value any) ApplyProp {
+func MaskRadialTo(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("radial-gradient(%s %s at %s, black %s, transparent calc(var(--spacing) * %d))",
 				s.theme.UseVarKey(theme.Custom, "mask-radial-shape"),
@@ -696,9 +699,9 @@ func MaskRadialTo(value any) ApplyProp {
 				v,
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("radial-gradient(%s %s at %s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-radial-shape"),
 					s.theme.UseVarKey(theme.Custom, "mask-radial-size"),
@@ -706,7 +709,7 @@ func MaskRadialTo(value any) ApplyProp {
 					s.theme.UseVarKey(theme.Custom, "mask-radial-from"),
 					vv.Value(),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("radial-gradient(%s %s at %s, black %s, %s %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-radial-shape"),
 					s.theme.UseVarKey(theme.Custom, "mask-radial-size"),
@@ -715,7 +718,7 @@ func MaskRadialTo(value any) ApplyProp {
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-radial-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("radial-gradient(%s %s at %s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-radial-shape"),
 					s.theme.UseVarKey(theme.Custom, "mask-radial-size"),
@@ -841,13 +844,13 @@ func MaskConic(number float64) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
 		if number < 0 {
-			prop = fmt.Sprintf("conic-gradient(from calc(%.2fdeg * -1), black %s, transparent %s)",
+			prop = fmt.Sprintf("conic-gradient(from calc(%#vdeg * -1), black %s, transparent %s)",
 				number,
 				s.theme.UseVarKey(theme.Custom, "mask-conic-from"),
 				s.theme.UseVarKey(theme.Custom, "mask-conic-to"),
 			)
 		} else {
-			prop = fmt.Sprintf("conic-gradient(from %.2fdeg, black %s, transparent %s)",
+			prop = fmt.Sprintf("conic-gradient(from %#vdeg, black %s, transparent %s)",
 				number,
 				s.theme.UseVarKey(theme.Custom, "mask-conic-from"),
 				s.theme.UseVarKey(theme.Custom, "mask-conic-to"),
@@ -862,11 +865,11 @@ func MaskConic(number float64) ApplyProp {
 
 //--
 
-func MaskConicFrom(value any) ApplyProp {
+func MaskConicFrom(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("conic-gradient(from %s, black calc(var(--spacing) * %d), transparent %s)",
 				s.theme.UseVarKey(theme.Custom, "mask-conic-position"),
@@ -874,22 +877,22 @@ func MaskConicFrom(value any) ApplyProp {
 				s.theme.UseVarKey(theme.Custom, "mask-conic-to"),
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("conic-gradient(from %s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-conic-position"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-conic-to"),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("conic-gradient(from %s, %s %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-conic-position"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-conic-from"),
 					s.theme.UseVarKey(theme.Custom, "mask-conic-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("conic-gradient(from %s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-conic-position"),
 					vv.Value(),
@@ -903,11 +906,11 @@ func MaskConicFrom(value any) ApplyProp {
 	}
 }
 
-func MaskConicTo(value any) ApplyProp {
+func MaskConicTo(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var propValue string
 
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("conic-gradient(from %s, black %s, transparent calc(var(--spacing) * %d))",
 				s.theme.UseVarKey(theme.Custom, "mask-conic-position"),
@@ -915,22 +918,22 @@ func MaskConicTo(value any) ApplyProp {
 				v,
 			)
 
-		case customValue:
+		case value.Value:
 			switch vv := v.(type) {
-			case *percentage:
+			case *value.PercentageValue:
 				propValue = fmt.Sprintf("conic-gradient(from %s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-conic-position"),
 					s.theme.UseVarKey(theme.Custom, "mask-conic-from"),
 					vv.Value(),
 				)
-			case *rgba, *hsla, *hexcolor:
+			case *value.RgbaColor, *value.HslaColor, *value.Hexcolor:
 				propValue = fmt.Sprintf("conic-gradient(from %s, black %s, %s %s",
 					s.theme.UseVarKey(theme.Custom, "mask-conic-position"),
 					s.theme.UseVarKey(theme.Custom, "mask-conic-from"),
 					vv.Value(),
 					s.theme.UseVarKey(theme.Custom, "mask-conic-to"),
 				)
-			case *customVariableProp, *val:
+			case *value.CustomProperty, *value.LiteralValue:
 				propValue = fmt.Sprintf("conic-gradient(from %s, black %s, transparent %s)",
 					s.theme.UseVarKey(theme.Custom, "mask-conic-position"),
 					s.theme.UseVarKey(theme.Custom, "mask-conic-from"),

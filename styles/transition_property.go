@@ -4,13 +4,14 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
-func Transition(value ...customValue) ApplyProp {
+func Transition(val ...value.Value) ApplyProp {
 	return func(s *style) styleProp {
-		if len(value) == 1 {
+		if len(val) == 1 {
 			return &properties{
-				string(transitionPropertyProp): value[0].Value(),
+				string(transitionPropertyProp): val[0].Value(),
 				string(transitionTimingProp):   s.theme.UseVarKey(theme.Custom, "default-transition-timing-function"),
 				string(transitionDurationProp): s.theme.UseVarKey(theme.Custom, "default-transition-duration"),
 			}

@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func BackdropFilterNone() ApplyProp {
@@ -14,10 +15,10 @@ func BackdropFilterNone() ApplyProp {
 	}
 }
 
-func BackdropFilter(value customValue) ApplyProp {
+func BackdropFilter(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backdropFilterProp): value.Value(),
+			string(backdropFilterProp): val.Value(),
 		}
 	}
 }
@@ -80,21 +81,21 @@ func BackdropBlurNone() ApplyProp {
 	}
 }
 
-func BackdropBlur(value customValue) ApplyProp {
+func BackdropBlur(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", value.Value()),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", val.Value()),
 		}
 	}
 }
 
-func BackdropBrightness(value any) ApplyProp {
+func BackdropBrightness(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("brightness(%d%%)", v)
-		case customValue:
+		case value.Value:
 			prop = fmt.Sprintf("brightness(%s)", v.Value())
 		}
 
@@ -104,13 +105,13 @@ func BackdropBrightness(value any) ApplyProp {
 	}
 }
 
-func BackdropContrast(value any) ApplyProp {
+func BackdropContrast(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("contrast(%d%%)", v)
-		case customValue:
+		case value.Value:
 			prop = fmt.Sprintf("contrast(%s)", v.Value())
 		}
 
@@ -120,17 +121,17 @@ func BackdropContrast(value any) ApplyProp {
 	}
 }
 
-func BackdropGrayscale(value ...any) ApplyProp {
+func BackdropGrayscale(val ...any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
 
-		if len(value) <= 0 {
+		if len(val) <= 0 {
 			prop = "100%"
 		} else {
-			switch v := value[0].(type) {
+			switch v := val[0].(type) {
 			case int, float32, float64:
 				prop = fmt.Sprintf("grayscale(%d%%)", v)
-			case customValue:
+			case value.Value:
 				prop = fmt.Sprintf("grayscale(%s)", v.Value())
 			}
 		}
@@ -141,10 +142,10 @@ func BackdropGrayscale(value ...any) ApplyProp {
 	}
 }
 
-func BackdropHueRotate(value any) ApplyProp {
+func BackdropHueRotate(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int:
 			if v < 0 {
 				prop = fmt.Sprintf("hue-rotate(calc(%ddeg * -1))", v)
@@ -163,7 +164,7 @@ func BackdropHueRotate(value any) ApplyProp {
 			} else {
 				prop = fmt.Sprintf("hue-rotate(%fdeg)", v)
 			}
-		case customValue:
+		case value.Value:
 			prop = fmt.Sprintf("hue-rotate(%s)", v.Value())
 		}
 
@@ -173,17 +174,17 @@ func BackdropHueRotate(value any) ApplyProp {
 	}
 }
 
-func BackdropInvert(value ...any) ApplyProp {
+func BackdropInvert(val ...any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
 
-		if len(value) <= 0 {
+		if len(val) <= 0 {
 			prop = "100%"
 		} else {
-			switch v := value[0].(type) {
+			switch v := val[0].(type) {
 			case int, float32, float64:
 				prop = fmt.Sprintf("invert(%d%%)", v)
-			case customValue:
+			case value.Value:
 				prop = fmt.Sprintf("invert(%s)", v.Value())
 			}
 		}
@@ -194,13 +195,13 @@ func BackdropInvert(value ...any) ApplyProp {
 	}
 }
 
-func BackdropSaturate(value any) ApplyProp {
+func BackdropSaturate(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("saturate(%d%%)", v)
-		case customValue:
+		case value.Value:
 			prop = fmt.Sprintf("saturate(%s)", v.Value())
 		}
 
@@ -210,17 +211,17 @@ func BackdropSaturate(value any) ApplyProp {
 	}
 }
 
-func BackdropSepia(value ...any) ApplyProp {
+func BackdropSepia(val ...any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
 
-		if len(value) <= 0 {
+		if len(val) <= 0 {
 			prop = "100%"
 		} else {
-			switch v := value[0].(type) {
+			switch v := val[0].(type) {
 			case int, float32, float64:
 				prop = fmt.Sprintf("sepia(%d%%)", v)
-			case customValue:
+			case value.Value:
 				prop = fmt.Sprintf("sepia(%s)", v.Value())
 			}
 		}

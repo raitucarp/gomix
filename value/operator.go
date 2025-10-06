@@ -21,9 +21,23 @@ func Mul(x1 Value, x2 Value) *operator {
 	return op
 }
 
-func Fraction(x1 Value, x2 Value) *operator {
-	op := &operator{format: "%s / %s", values: []Value{x1, x2}}
-	return op
+type RatioValue struct {
+	left  Value
+	right Value
+}
+
+func (v *RatioValue) Value() string {
+	return fmt.Sprintf("%s / %s", v.left.Value(), v.right.Value())
+}
+
+func Fraction(x1 Value, x2 Value) *RatioValue {
+	v := &RatioValue{left: x1, right: x2}
+	return v
+}
+
+func Ratio(x1 Value, x2 Value) *RatioValue {
+	v := &RatioValue{left: x1, right: x2}
+	return v
 }
 
 func Add(x1 Value, x2 Value) *operator {

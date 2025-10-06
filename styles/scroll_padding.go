@@ -1,14 +1,18 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
 
-func ScrollP(value any) ApplyProp {
+	"github.com/raitucarp/gomix/value"
+)
+
+func ScrollP(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("calc(var(--spacing) * %v)", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{
@@ -17,13 +21,13 @@ func ScrollP(value any) ApplyProp {
 	}
 }
 
-func ScrollPx(value any) ApplyProp {
+func ScrollPx(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("calc(var(--spacing) * %v)", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{
@@ -32,13 +36,13 @@ func ScrollPx(value any) ApplyProp {
 	}
 }
 
-func ScrollPy(value any) ApplyProp {
+func ScrollPy(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("calc(var(--spacing) * %v)", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{
@@ -47,13 +51,13 @@ func ScrollPy(value any) ApplyProp {
 	}
 }
 
-func ScrollPs(value any) ApplyProp {
+func ScrollPs(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("calc(var(--spacing) * %v)", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{
@@ -62,13 +66,13 @@ func ScrollPs(value any) ApplyProp {
 	}
 }
 
-func ScrollPe(value any) ApplyProp {
+func ScrollPe(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("calc(var(--spacing) * %v)", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{
@@ -77,13 +81,13 @@ func ScrollPe(value any) ApplyProp {
 	}
 }
 
-func ScrollPt(value any) ApplyProp {
+func ScrollPt(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("calc(var(--spacing) * %v)", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{
@@ -92,13 +96,13 @@ func ScrollPt(value any) ApplyProp {
 	}
 }
 
-func ScrollPr(value any) ApplyProp {
+func ScrollPr(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("calc(var(--spacing) * %v)", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{
@@ -107,13 +111,13 @@ func ScrollPr(value any) ApplyProp {
 	}
 }
 
-func ScrollPb(value any) ApplyProp {
+func ScrollPb(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("calc(var(--spacing) * %v)", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{
@@ -122,13 +126,13 @@ func ScrollPb(value any) ApplyProp {
 	}
 }
 
-func ScrollPl(value any) ApplyProp {
+func ScrollPl(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("calc(var(--spacing) * %v)", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{

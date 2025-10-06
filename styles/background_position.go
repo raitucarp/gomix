@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func BgTopLeft() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -72,10 +74,10 @@ func BgBottomRight() ApplyProp {
 	}
 }
 
-func BgPosition(value customValue) ApplyProp {
+func BgPosition(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(backgroundPositionProp): value.Value(),
+			string(backgroundPositionProp): val.Value(),
 		}
 	}
 }

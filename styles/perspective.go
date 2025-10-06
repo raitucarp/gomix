@@ -1,6 +1,9 @@
 package styles
 
-import "github.com/raitucarp/gomix/theme"
+import (
+	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
+)
 
 func PerspectiveDramatic() ApplyProp {
 	return func(s *style) styleProp {
@@ -50,10 +53,10 @@ func PerspectiveNone() ApplyProp {
 	}
 }
 
-func Perspective(value customValue) ApplyProp {
+func Perspective(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(perspectiveProp): value.Value(),
+			string(perspectiveProp): val.Value(),
 		}
 	}
 }

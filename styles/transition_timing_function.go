@@ -1,6 +1,9 @@
 package styles
 
-import "github.com/raitucarp/gomix/theme"
+import (
+	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
+)
 
 func EaseLinear() ApplyProp {
 	return func(s *style) styleProp {
@@ -42,10 +45,10 @@ func EaseInitial() ApplyProp {
 	}
 }
 
-func Ease(value customValue) ApplyProp {
+func Ease(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(transitionTimingProp): value.Value(),
+			string(transitionTimingProp): val.Value(),
 		}
 	}
 }

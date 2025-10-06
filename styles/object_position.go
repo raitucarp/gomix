@@ -1,5 +1,7 @@
 package styles
 
+import "github.com/raitucarp/gomix/value"
+
 func ObjectTopLeft() ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
@@ -72,10 +74,10 @@ func ObjectBottomRight() ApplyProp {
 	}
 }
 
-func ObjectBy(value customValue) ApplyProp {
+func ObjectBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(objectPositionProp): value.Value(),
+			string(objectPositionProp): val.Value(),
 		}
 	}
 }

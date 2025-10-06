@@ -1,14 +1,18 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
 
-func Duration(value any) ApplyProp {
+	"github.com/raitucarp/gomix/value"
+)
+
+func Duration(val any) ApplyProp {
 	return func(s *style) styleProp {
 		var prop string
-		switch v := value.(type) {
+		switch v := val.(type) {
 		case int, float32, float64:
 			prop = fmt.Sprintf("%dms", v)
-		case customValue:
+		case value.Value:
 			prop = v.Value()
 		}
 		return &properties{

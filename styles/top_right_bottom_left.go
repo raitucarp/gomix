@@ -2,6 +2,8 @@ package styles
 
 import (
 	"fmt"
+
+	"github.com/raitucarp/gomix/value"
 )
 
 func Inset(number int) ApplyProp {
@@ -23,7 +25,7 @@ func NegInset(number int) ApplyProp {
 func InsetFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(insetProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -31,7 +33,7 @@ func InsetFraction(fraction float64) ApplyProp {
 func NegInsetFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetProp): fmt.Sprintf("calc(%.2f * -100%%)", fraction),
+			string(insetProp): fmt.Sprintf("calc(%#v * -100%%)", fraction),
 		}
 	}
 }
@@ -76,10 +78,10 @@ func InsetAuto() ApplyProp {
 	}
 }
 
-func InsetBy(value customValue) ApplyProp {
+func InsetBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetProp): value.Value(),
+			string(insetProp): val.Value(),
 		}
 	}
 }
@@ -105,7 +107,7 @@ func NegInsetX(number int) ApplyProp {
 func InsetXFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetInlineProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(insetInlineProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -113,7 +115,7 @@ func InsetXFraction(fraction float64) ApplyProp {
 func NegInsetXFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetInlineProp): fmt.Sprintf("calc(%.2f * -100%%)", fraction),
+			string(insetInlineProp): fmt.Sprintf("calc(%#v * -100%%)", fraction),
 		}
 	}
 }
@@ -158,10 +160,10 @@ func InsetXAuto() ApplyProp {
 	}
 }
 
-func InsetXBy(value customValue) ApplyProp {
+func InsetXBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetInlineProp): value.Value(),
+			string(insetInlineProp): val.Value(),
 		}
 	}
 }
@@ -187,7 +189,7 @@ func NegInsetY(number int) ApplyProp {
 func InsetYFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetBlockProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(insetBlockProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -195,7 +197,7 @@ func InsetYFraction(fraction float64) ApplyProp {
 func NegInsetYFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetBlockProp): fmt.Sprintf("calc(%.2f * -100%%)", fraction),
+			string(insetBlockProp): fmt.Sprintf("calc(%#v * -100%%)", fraction),
 		}
 	}
 }
@@ -240,10 +242,10 @@ func InsetYAuto() ApplyProp {
 	}
 }
 
-func InsetYBy(value customValue) ApplyProp {
+func InsetYBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetBlockProp): value.Value(),
+			string(insetBlockProp): val.Value(),
 		}
 	}
 }
@@ -269,7 +271,7 @@ func NegStart(number int) ApplyProp {
 func StartFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetStartProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(insetStartProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -277,7 +279,7 @@ func StartFraction(fraction float64) ApplyProp {
 func NegStartFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetStartProp): fmt.Sprintf("calc(%.2f * -100%%)", fraction),
+			string(insetStartProp): fmt.Sprintf("calc(%#v * -100%%)", fraction),
 		}
 	}
 }
@@ -322,10 +324,10 @@ func StartAuto() ApplyProp {
 	}
 }
 
-func StartBy(value customValue) ApplyProp {
+func StartBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetStartProp): value.Value(),
+			string(insetStartProp): val.Value(),
 		}
 	}
 }
@@ -351,7 +353,7 @@ func NegEnd(number int) ApplyProp {
 func EndFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetEndProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(insetEndProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -359,7 +361,7 @@ func EndFraction(fraction float64) ApplyProp {
 func NegEndFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetEndProp): fmt.Sprintf("calc(%.2f * -100%%)", fraction),
+			string(insetEndProp): fmt.Sprintf("calc(%#v * -100%%)", fraction),
 		}
 	}
 }
@@ -404,10 +406,10 @@ func EndAuto() ApplyProp {
 	}
 }
 
-func EndBy(value customValue) ApplyProp {
+func EndBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(insetEndProp): value.Value(),
+			string(insetEndProp): val.Value(),
 		}
 	}
 }
@@ -433,7 +435,7 @@ func NegTop(number int) ApplyProp {
 func TopFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(topProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(topProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -441,7 +443,7 @@ func TopFraction(fraction float64) ApplyProp {
 func NegTopFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(topProp): fmt.Sprintf("calc(%.2f * -100%%)", fraction),
+			string(topProp): fmt.Sprintf("calc(%#v * -100%%)", fraction),
 		}
 	}
 }
@@ -486,10 +488,10 @@ func TopAuto() ApplyProp {
 	}
 }
 
-func TopBy(value customValue) ApplyProp {
+func TopBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(topProp): value.Value(),
+			string(topProp): val.Value(),
 		}
 	}
 }
@@ -515,7 +517,7 @@ func NegRight(number int) ApplyProp {
 func RightFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(rightProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(rightProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -523,7 +525,7 @@ func RightFraction(fraction float64) ApplyProp {
 func NegRightFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(rightProp): fmt.Sprintf("calc(%.2f * -100%%)", fraction),
+			string(rightProp): fmt.Sprintf("calc(%#v * -100%%)", fraction),
 		}
 	}
 }
@@ -568,10 +570,10 @@ func RightAuto() ApplyProp {
 	}
 }
 
-func RightBy(value customValue) ApplyProp {
+func RightBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(rightProp): value.Value(),
+			string(rightProp): val.Value(),
 		}
 	}
 }
@@ -597,7 +599,7 @@ func NegBottom(number int) ApplyProp {
 func BottomFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(bottomProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(bottomProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -605,7 +607,7 @@ func BottomFraction(fraction float64) ApplyProp {
 func NegBottomFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(bottomProp): fmt.Sprintf("calc(%.2f * -100%%)", fraction),
+			string(bottomProp): fmt.Sprintf("calc(%#v * -100%%)", fraction),
 		}
 	}
 }
@@ -650,10 +652,10 @@ func BottomAuto() ApplyProp {
 	}
 }
 
-func BottomBy(value customValue) ApplyProp {
+func BottomBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(bottomProp): value.Value(),
+			string(bottomProp): val.Value(),
 		}
 	}
 }
@@ -679,7 +681,7 @@ func NegLeft(number int) ApplyProp {
 func LeftFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(leftProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(leftProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -687,7 +689,7 @@ func LeftFraction(fraction float64) ApplyProp {
 func NegLeftFraction(fraction float64) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(leftProp): fmt.Sprintf("calc(%.2f * -100%%)", fraction),
+			string(leftProp): fmt.Sprintf("calc(%#v * -100%%)", fraction),
 		}
 	}
 }
@@ -732,10 +734,10 @@ func LeftAuto() ApplyProp {
 	}
 }
 
-func LeftBy(value customValue) ApplyProp {
+func LeftBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(leftProp): value.Value(),
+			string(leftProp): val.Value(),
 		}
 	}
 }

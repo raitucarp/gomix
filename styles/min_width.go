@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func MinW(number int) ApplyProp {
@@ -17,7 +18,7 @@ func MinW(number int) ApplyProp {
 func MinWFraction(fraction float32) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(minWidthProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(minWidthProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -230,10 +231,10 @@ func MinWFit() ApplyProp {
 	}
 }
 
-func MinWBy(value customValue) ApplyProp {
+func MinWBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(minWidthProp): value.Value(),
+			string(minWidthProp): val.Value(),
 		}
 	}
 }

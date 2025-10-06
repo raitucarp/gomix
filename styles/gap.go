@@ -1,6 +1,10 @@
 package styles
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/raitucarp/gomix/value"
+)
 
 func Gap(number int) ApplyProp {
 	return func(s *style) styleProp {
@@ -10,10 +14,10 @@ func Gap(number int) ApplyProp {
 	}
 }
 
-func GapBy(value customValue) ApplyProp {
+func GapBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gapProp): value.Value(),
+			string(gapProp): val.Value(),
 		}
 	}
 }
@@ -26,10 +30,10 @@ func GapX(number int) ApplyProp {
 	}
 }
 
-func GapXBy(value customValue) ApplyProp {
+func GapXBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gapXProp): value.Value(),
+			string(gapXProp): val.Value(),
 		}
 	}
 }
@@ -42,10 +46,10 @@ func GapY(number int) ApplyProp {
 	}
 }
 
-func GapYBy(value customValue) ApplyProp {
+func GapYBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(gapYProp): value.Value(),
+			string(gapYProp): val.Value(),
 		}
 	}
 }

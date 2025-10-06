@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/raitucarp/gomix/theme"
+	"github.com/raitucarp/gomix/value"
 )
 
 func MaxW(number int) ApplyProp {
@@ -17,7 +18,7 @@ func MaxW(number int) ApplyProp {
 func MaxWFraction(fraction float32) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): fmt.Sprintf("calc(%.2f * 100%%)", fraction),
+			string(maxWidthProp): fmt.Sprintf("calc(%#v * 100%%)", fraction),
 		}
 	}
 }
@@ -243,10 +244,10 @@ func Container() ApplyProp {
 	}
 }
 
-func MaxWBy(value customValue) ApplyProp {
+func MaxWBy(val value.Value) ApplyProp {
 	return func(s *style) styleProp {
 		return &properties{
-			string(maxWidthProp): value.Value(),
+			string(maxWidthProp): val.Value(),
 		}
 	}
 }
