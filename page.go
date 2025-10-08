@@ -1,12 +1,16 @@
 package gomix
 
 import (
+	"fmt"
 	"io"
 	"net/http"
 
 	"github.com/raitucarp/gomix/components"
 	"github.com/raitucarp/gomix/element"
 	"github.com/raitucarp/gomix/theme"
+	"github.com/tdewolff/minify/v2"
+	"github.com/tdewolff/minify/v2/css"
+	"github.com/tdewolff/minify/v2/html"
 )
 
 type PageComponent func(page *Page) components.IsComponent
@@ -41,7 +45,6 @@ func NewPage(path LocationPath, setup PageSetup) *Page {
 	newPage.handler = func(w http.ResponseWriter, req *http.Request) {
 		newPage.setReq(req)
 		newPage.setResp(w)
-
 		setup(newPage)
 		newPage.Write()
 	}
@@ -134,20 +137,26 @@ func (page *Page) Children(pages Pages) {
 }
 
 func (page *Page) Render(lang element.LanguageCode) string {
+	m := minify.New()
+	m.AddFunc("text/css", css.Minify)
+	m.AddFunc("text/html", html.Minify)
+
 	theLayout := components.Component(components.Slot())
 	for _, pageLayout := range page.layouts {
-		c := pageLayout(page)
-		theLayout = components.ApplyLayout(theLayout, c)
+		appliedLayout := pageLayout(page)
+		theLayout = components.ApplyLayout(theLayout, appliedLayout)
 	}
 
-	css := components.ExtractCSS(theLayout)
+	allCss := components.ExtractCSS(theLayout)
+	allCss, _ = m.String("text/css", allCss)
+	themeVars, _ := m.String("text/css", page.theme.RawCSS())
 
 	head := []element.IsHeadElement{
 		element.Meta().CharSet("UTF-8"),
 		element.Meta().Name(element.MetaNameViewport).Content("width=device-width, initial-scale=1.0"),
 		element.Title(page.title),
-		element.Style(page.theme.RawCSS()),
-		element.Style(css),
+		element.Style(themeVars),
+		element.Style(allCss),
 	}
 
 	for _, script := range page.scripts {
@@ -163,5 +172,8 @@ func (page *Page) Render(lang element.LanguageCode) string {
 		).Lang(lang),
 	)
 
-	return components.Render(layout)
+	finalHtml, _ := m.String("text/html", components.Render(layout))
+	finalHtml = fmt.Sprintf("<!DOCTYPE html>%s", finalHtml)
+
+	return finalHtml
 }

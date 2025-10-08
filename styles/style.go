@@ -2,6 +2,7 @@ package styles
 
 import (
 	"fmt"
+	"maps"
 	"strings"
 
 	"github.com/raitucarp/gomix/theme"
@@ -35,8 +36,9 @@ func (s *style) addProp(prop Prop, value string) {
 type kind string
 
 const (
-	kindProps   kind = "props"
-	kindVariant kind = "variant"
+	kindProps          kind = "props"
+	kindVariant        kind = "variant"
+	kindSelectorParams kind = "selector-params"
 )
 
 type ApplyProp func(s *style) styleProp
@@ -86,11 +88,12 @@ func ApplyStyle(styleTheme *theme.Theme, props ...ApplyProp) map[StyleVariant]Pr
 	allStyles[defaultVar] = defaultStyle.props
 
 	for _, p := range props {
-		if p(defaultStyle).Kind() != kindVariant {
+		prop := p(defaultStyle)
+		if prop.Kind() != kindVariant {
 			continue
 		}
 
-		variant := p(defaultStyle).Variant()
+		variant := prop.Variant()
 		if allStyles[variant] == nil {
 			allStyles[variant] = make(Props)
 		}
@@ -108,7 +111,12 @@ func ApplyStyle(styleTheme *theme.Theme, props ...ApplyProp) map[StyleVariant]Pr
 		}
 
 		allStyles[variant] = variantStyle.props
-
+		if vChild, ok := prop.(*variantOf); ok {
+			if len(vChild.children) > 0 {
+				cv := combinedVariants(vChild)
+				maps.Copy(allStyles, cv)
+			}
+		}
 	}
 
 	return allStyles

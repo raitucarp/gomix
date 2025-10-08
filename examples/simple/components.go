@@ -8,17 +8,24 @@ import (
 	"github.com/raitucarp/gomix/element"
 )
 
-func WelcomeText(message string) isComponent {
+func StyledText(message string) isComponent {
 	return div(text(message)).
 		Element().
 		Style(
-			font_2xl(),
+			text_2xl(),
 		)
 }
 
 func MainLayout(message string) isComponent {
 	return div(
-		WelcomeText(message),
+		StyledText(message).
+			Element().
+			Style(
+				text_blue(600),
+				dark(
+					text_red(400),
+				),
+			),
 		slot(),
 	)
 }
@@ -30,15 +37,7 @@ func AppLayout() isComponent {
 func HomeLayout(page *gomix.Page) isComponent {
 	return div(
 		slot(),
-		WelcomeText("whoopa").
-			Element().
-			Style(
-				hover(
-					font_3xl(),
-					text_red(500),
-					cursor_pointer(),
-				),
-			),
+		text("home layout"),
 	)
 }
 
@@ -63,6 +62,28 @@ func BlogHomePage(page *gomix.Page) isComponent {
 		Htmx(
 			button(text("testa")).Autofocus().Element().Id("button-good"),
 		).Get("/blog/doyouwant").Target("#response-div"),
+		StyledText("whoopa").
+			Element().
+			PreferredClassName("thanks").
+			Style(
+				text_red(900),
+				text_2xl(),
+
+				dark(
+					text_green(900),
+					text_3xl(),
+
+					hover(
+						text_blue(900),
+					),
+				),
+
+				hover(
+					text_7xl(),
+					text_orange(900),
+					cursor_pointer(),
+				),
+			),
 	)
 }
 

@@ -10,7 +10,6 @@ import (
 
 	"github.com/raitucarp/gomix/element"
 	"github.com/raitucarp/gomix/styles"
-	"github.com/sqids/sqids-go"
 	"golang.org/x/net/html"
 )
 
@@ -87,13 +86,17 @@ func (e component) Element() *element.HtmlElement {
 }
 
 var styleAttrPattern = regexp.MustCompile(`data-style-`)
+var ruleBracketsPattern = regexp.MustCompile(`\{(.*)\}`)
+var hasAtPattern = regexp.MustCompile(`@(.*)\((.*)\)`)
+var ruleCssPattern = regexp.MustCompile(`(?P<Rule>&(.*?)})`)
 
 func ExtractCSS(c IsComponent) string {
-	// classMap := make(map[string]map[string]string)
 	el := c.Element()
 	css := []string{}
-
 	props := []string{}
+	// s, _ := sqids.New(sqids.Options{
+	// 	Alphabet: "abcdefghijklmnopqrstuvwxyz",
+	// })
 
 	for desc := range el.GetNode().Descendants() {
 		if desc.Type == html.ElementNode {
@@ -101,91 +104,117 @@ func ExtractCSS(c IsComponent) string {
 				if !styleAttrPattern.MatchString(attr.Key) {
 					continue
 				}
-
 				props = append(props, strings.Split(attr.Val, ";")...)
 			}
 		}
 	}
 
-	sort.Strings(props)
+	slices.Sort(props)
 	props = slices.Compact(props)
 
-	s, _ := sqids.New(sqids.Options{
-		Alphabet: "abcdefghijklmnopqrstuvwxyz",
-	})
-
+	variantClassMap := map[string][]string{}
+	variantPropsMap := map[string]map[string]string{}
 	for desc := range el.GetNode().Descendants() {
 		if desc.Type == html.ElementNode {
-			// numbers := []uint64{}
-			for attrIndex, attr := range desc.Attr {
+			classnameAttrIndex := slices.IndexFunc(desc.Attr, func(attr html.Attribute) bool { return attr.Key == "data-classname" })
+			if classnameAttrIndex == -1 {
+				continue
+			}
+			className := desc.Attr[classnameAttrIndex].Val
+
+			for _, attr := range desc.Attr {
 				if !styleAttrPattern.MatchString(attr.Key) {
 					continue
 				}
 
-				elProps := strings.Split(attr.Val, ";")
-				propNumbers := []uint64{}
-				for _, p := range elProps {
-					index := slices.IndexFunc(props, func(prop string) bool { return prop == p })
-					propNumbers = append(propNumbers, uint64(index))
-				}
-				slices.Sort(propNumbers)
-				propNumbers = slices.Compact(propNumbers)
+				variantStyleName := strings.Join(strings.Split(attr.Key, "-")[2:], "-")
 
-				className, _ := s.Encode(propNumbers)
-				desc.Attr[attrIndex].Val = className
+				if variantPropsMap[variantStyleName] == nil {
+					variantPropsMap[variantStyleName] = make(map[string]string)
+				}
+				variantPropsMap[variantStyleName][className] = attr.Val
+				// desc.Attr[attrIndex].Val = strings.Trim(string(s), "[]")
+				variantClassMap[variantStyleName] = append(
+					variantClassMap[variantStyleName], className,
+				)
 			}
 		}
 	}
 
-	classes := map[string]string{}
-	for desc := range el.GetNode().Descendants() {
-		if desc.Type == html.ElementNode {
-			for _, attr := range desc.Attr {
+	for variantName, classNames := range variantClassMap {
+		splittedVariant := strings.Split(variantName, ":")
 
-				if !styleAttrPattern.MatchString(attr.Key) {
-					continue
+		var computedClassName string
+		var placeholder string = "& { %s }"
+		if len(splittedVariant) > 1 {
+			scope := []string{}
+			for _, v := range splittedVariant {
+				val := string(styles.VariantNameOfAttr(v))
+				submatch := ruleCssPattern.FindAllStringSubmatch(val, -1)
+				if len(submatch) > 0 {
+					placeholder = submatch[0][0]
 				}
-
-				key := strings.Join(strings.Split(attr.Key, "-")[2:], "-")
-				className := attr.Val
-				propIndexes := s.Decode(className)
-
-				properties := []string{}
-				for _, propIndex := range propIndexes {
-					properties = append(properties, props[propIndex])
-				}
-
-				computedClassName := string(styles.VariantNameOfAttr(key))
-				computedClassName = strings.ReplaceAll(computedClassName, "&", "."+className)
-				classes[computedClassName] = strings.Join(properties, ";")
-
-				existingClass := slices.IndexFunc(desc.Attr, func(a html.Attribute) bool { return a.Key == "class" })
-
-				if existingClass != -1 {
-					classes := strings.Split(desc.Attr[existingClass].Val, " ")
-					classes = append(classes, className)
-					desc.Attr[existingClass].Val = strings.Join(classes, " ")
-				} else {
-					desc.Attr = append(desc.Attr, html.Attribute{Key: "class", Val: className})
-				}
+				scope = append(scope, ruleBracketsPattern.ReplaceAllString(val, ""))
+			}
+			computedClassName = strings.Join(scope, " and ")
+			computedClassName = strings.ReplaceAll(computedClassName, " and @media", "and ")
+		} else {
+			val := string(styles.VariantNameOfAttr(variantName))
+			submatch := ruleCssPattern.FindAllStringSubmatch(val, -1)
+			if len(submatch) > 0 {
+				placeholder = submatch[0][0]
 			}
 
+			computedClassName = ruleBracketsPattern.ReplaceAllString(string(styles.VariantNameOfAttr(variantName)), "")
+		}
+
+		var classPlaceHolder []string
+		for _, className := range classNames {
+			p := strings.ReplaceAll(placeholder, "&", "."+className)
+			p = fmt.Sprintf(p, variantPropsMap[variantName][className])
+			classPlaceHolder = append(classPlaceHolder, p)
+		}
+
+		var cssText string
+		if hasAtPattern.MatchString(computedClassName) {
+			cssText = fmt.Sprintf(`
+				%s {
+					%s
+				}
+			`, computedClassName, strings.Join(classPlaceHolder, "\n"))
+		} else {
+			cssText = strings.Join(classPlaceHolder, "\n")
+		}
+
+		css = append(css, cssText)
+	}
+
+	// classes := map[string]string{}
+
+	for desc := range el.GetNode().Descendants() {
+		if desc.Type == html.ElementNode {
 			newAttr := []html.Attribute{}
+			className := ""
 			for _, attr := range desc.Attr {
-				if !styleAttrPattern.MatchString(attr.Key) {
+				if attr.Key == "class" {
+					className = attr.Val
+				}
+
+				if attr.Key == "data-classname" {
+					className = className + " " + attr.Val
+				}
+				if !styleAttrPattern.MatchString(attr.Key) &&
+					attr.Key != "data-classname" && attr.Key == "class" {
 					newAttr = append(newAttr, attr)
 					continue
 				}
 			}
+			newAttr = append(newAttr, html.Attribute{Key: "class", Val: className})
 			desc.Attr = newAttr
 		}
 	}
 
-	for className, properties := range classes {
-		css = append(css, fmt.Sprintf(className, properties))
-	}
-
-	sort.Strings(css)
+	sort.Sort(sort.Reverse(sort.StringSlice(css)))
 
 	return strings.Join(css, "\n")
 }

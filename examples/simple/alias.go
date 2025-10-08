@@ -41,7 +41,13 @@ var a = element.A
 // style scope
 
 var hover = styles.Hover
-var font_2xl = styles.Text2xl
-var font_3xl = styles.Text3xl
+var dark = styles.Dark
+var md = styles.Md
+var text_2xl = styles.Text2xl
+var text_3xl = styles.Text3xl
+var text_7xl = styles.Text7xl
 var text_red = styles.TextRed
+var text_orange = styles.TextOrange
+var text_blue = styles.TextBlue
+var text_green = styles.TextGreen
 var cursor_pointer = styles.CursorPointer

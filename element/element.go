@@ -91,26 +91,39 @@ type HtmlElement struct {
 }
 
 func (e *HtmlElement) AddAttribute(key string, value string) {
-	e.node.Attr = append(e.node.Attr, html.Attribute{Namespace: "", Key: key, Val: value})
-	slices.SortFunc(e.node.Attr, func(a html.Attribute, b html.Attribute) int {
-		if a.Key < b.Key {
-			return -1
-		}
-		if a.Key > b.Key {
-			return 1
-		}
-		return 0
+	currentAttrIndex := slices.IndexFunc(e.node.Attr, func(attr html.Attribute) bool {
+		return key == attr.Key
 	})
-	e.node.Attr = slices.CompactFunc(e.node.Attr, func(attr1 html.Attribute, attr2 html.Attribute) bool {
-		return attr1.Key == attr2.Key
-	})
+
+	if currentAttrIndex > -1 {
+		e.node.Attr[currentAttrIndex].Val = value
+	} else {
+		e.node.Attr = append(e.node.Attr, html.Attribute{Namespace: "", Key: key, Val: value})
+	}
 }
 
 func (e *HtmlElement) AddAttributeBool(key string) {
-	e.node.Attr = append(e.node.Attr, html.Attribute{Namespace: "", Key: key})
-	e.node.Attr = slices.CompactFunc(e.node.Attr, func(attr1 html.Attribute, attr2 html.Attribute) bool {
-		return attr1.Key == attr2.Key
+	currentAttrIndex := slices.IndexFunc(e.node.Attr, func(attr html.Attribute) bool {
+		return key == attr.Key
 	})
+
+	if currentAttrIndex < 0 {
+		e.node.Attr = append(e.node.Attr, html.Attribute{Namespace: "", Key: key})
+	}
+}
+
+func (e *HtmlElement) GetAttribute(key string) string {
+	for _, attr := range e.node.Attr {
+		if attr.Key == key {
+			return attr.Val
+		}
+	}
+
+	return ""
+}
+
+func (e *HtmlElement) GetData(key string) string {
+	return e.GetAttribute("data-" + key)
 }
 
 func (e *HtmlElement) Children(children ...IsElement) *HtmlElement {
@@ -209,15 +222,16 @@ func (e *HtmlElement) Spellcheck(check bool) *HtmlElement {
 func (e *HtmlElement) getClassSha() string {
 	hasher := sha256.New()
 	hasher.Write([]byte(e.Render()))
-	return hex.EncodeToString(hasher.Sum(nil))[0:5]
+
+	return "c" + hex.EncodeToString(hasher.Sum(nil))[0:5]
 }
 
-func (e *HtmlElement) StyleClassName(className string) *HtmlElement {
+func (e *HtmlElement) PreferredClassName(className string) *HtmlElement {
 	e.prefClassName = className
 	return e
 }
 
-func (e *HtmlElement) getClassName() string {
+func (e *HtmlElement) ClassName() string {
 	className := e.prefClassName
 
 	if className == "" {
@@ -229,14 +243,23 @@ func (e *HtmlElement) getClassName() string {
 func (e *HtmlElement) Style(props ...styles.ApplyProp) *HtmlElement {
 	e.style = styles.ApplyStyle(e.theme, props...)
 
-	styleProps := []string{}
 	for variant, props := range e.style {
+		styleProps := []string{}
 		for prop, value := range props {
 			styleProps = append(styleProps, strings.Join([]string{string(prop), value}, ":"))
 		}
 
-		e.Data("style-"+variant.Name(), strings.Join(styleProps, ";"))
+		styleKey := "style-" + variant.Name()
+		styleValue := strings.Join(styleProps, ";")
+		currentValue := e.GetData(styleKey)
+		if currentValue != "" {
+			styleValue = currentValue + ";" + styleValue
+		}
+
+		e.Data(styleKey, styleValue)
 	}
+
+	e.Data("classname", e.ClassName())
 
 	return e
 }
