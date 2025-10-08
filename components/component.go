@@ -203,13 +203,19 @@ func ExtractCSS(c IsComponent) string {
 				if attr.Key == "data-classname" {
 					className = className + " " + attr.Val
 				}
-				if !styleAttrPattern.MatchString(attr.Key) &&
-					attr.Key != "data-classname" && attr.Key == "class" {
+
+				if !styleAttrPattern.MatchString(attr.Key) && attr.Key != "data-classname" {
 					newAttr = append(newAttr, attr)
 					continue
 				}
 			}
-			newAttr = append(newAttr, html.Attribute{Key: "class", Val: className})
+
+			classIndex := slices.IndexFunc(desc.Attr, func(a html.Attribute) bool { return a.Key == "class" })
+			if classIndex > -1 {
+				desc.Attr[classIndex].Val = className
+			} else {
+				newAttr = append(newAttr, html.Attribute{Key: "class", Val: className})
+			}
 			desc.Attr = newAttr
 		}
 	}
