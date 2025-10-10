@@ -3,6 +3,8 @@ package styles
 import (
 	"fmt"
 	"maps"
+	"regexp"
+	"sort"
 	"strings"
 
 	"github.com/raitucarp/gomix/theme"
@@ -120,4 +122,64 @@ func ApplyStyle(styleTheme *theme.Theme, props ...ApplyProp) map[StyleVariant]Pr
 	}
 
 	return allStyles
+}
+
+var ruleBracketsPattern = regexp.MustCompile(`\{(.*)\}`)
+var hasAtPattern = regexp.MustCompile(`@(.*)\((.*)\)`)
+var ruleCssPattern = regexp.MustCompile(`(?P<Rule>&(.*?)})`)
+
+func ExtractCSSFromStyle(variantClassMap map[string][]string, variantPropsMap map[string]map[string]string) []string {
+	css := []string{}
+
+	for variantName, classNames := range variantClassMap {
+		splittedVariant := strings.Split(variantName, ":")
+
+		var computedClassName string
+		var placeholder string = "& { %s }"
+		if len(splittedVariant) > 1 {
+			scope := []string{}
+			for _, v := range splittedVariant {
+				val := string(VariantNameOfAttr(v))
+				submatch := ruleCssPattern.FindAllStringSubmatch(val, -1)
+				if len(submatch) > 0 {
+					placeholder = submatch[0][0]
+				}
+				scope = append(scope, ruleBracketsPattern.ReplaceAllString(val, ""))
+			}
+			computedClassName = strings.Join(scope, " and ")
+			computedClassName = strings.ReplaceAll(computedClassName, " and @media", "and ")
+		} else {
+			val := string(VariantNameOfAttr(variantName))
+			submatch := ruleCssPattern.FindAllStringSubmatch(val, -1)
+			if len(submatch) > 0 {
+				placeholder = submatch[0][0]
+			}
+
+			computedClassName = ruleBracketsPattern.ReplaceAllString(string(VariantNameOfAttr(variantName)), "")
+		}
+
+		var classPlaceHolder []string
+		for _, className := range classNames {
+			p := strings.ReplaceAll(placeholder, "&", className)
+			p = fmt.Sprintf(p, variantPropsMap[variantName][className])
+			classPlaceHolder = append(classPlaceHolder, p)
+		}
+
+		var cssText string
+		if hasAtPattern.MatchString(computedClassName) {
+			cssText = fmt.Sprintf(`
+				%s {
+					%s
+				}
+			`, computedClassName, strings.Join(classPlaceHolder, "\n"))
+		} else {
+			cssText = strings.Join(classPlaceHolder, "\n")
+		}
+
+		css = append(css, cssText)
+	}
+
+	sort.Sort(sort.Reverse(sort.StringSlice(css)))
+
+	return css
 }

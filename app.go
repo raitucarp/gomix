@@ -148,6 +148,7 @@ func (app *Application) flattenPages() (pages []*Page) {
 		p.flattened = true
 		p.addLayouts(app.defaultLayout(), p.component)
 		p.addScripts(app.web.scripts...)
+		p.css = app.web.css + p.css
 		if p.theme == nil {
 			p.theme = app.web.theme
 		}

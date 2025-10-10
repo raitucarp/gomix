@@ -32,6 +32,7 @@ type Page struct {
 
 	scripts     []string
 	stylesheets []string
+	css         string
 	theme       *theme.Theme
 
 	flattened bool
@@ -112,6 +113,7 @@ func (page *Page) flattenPages() (pages []*Page) {
 		p.addLayouts(page.layouts...)
 		p.addLayouts(p.component)
 		p.addScripts(page.scripts...)
+		p.css = page.css + p.css
 		if p.theme == nil {
 			p.theme = page.theme
 		}
@@ -144,8 +146,6 @@ func (page *Page) Render(lang element.LanguageCode) string {
 		theLayout = components.ApplyLayout(theLayout, appliedLayout)
 	}
 
-	allCss := components.ExtractCSS(theLayout)
-	allCss, _ = m.String("text/css", allCss)
 	themeVars, _ := m.String("text/css", page.theme.RawCSS())
 
 	head := []element.IsHeadElement{
@@ -153,7 +153,17 @@ func (page *Page) Render(lang element.LanguageCode) string {
 		element.Meta().Name(element.MetaNameViewport).Content("width=device-width, initial-scale=1.0"),
 		element.Title(page.title),
 		element.Style(themeVars),
-		element.Style(allCss),
+	}
+
+	if len(page.css) > 0 {
+		globalCss, _ := m.String("text/css", page.css)
+		head = append(head, element.Style(globalCss))
+	}
+
+	allCss := components.ExtractCSS(theLayout)
+	if allCss != "" {
+		allCss, _ = m.String("text/css", allCss)
+		head = append(head, element.Style(allCss))
 	}
 
 	for _, script := range page.scripts {

@@ -2,7 +2,6 @@ package components
 
 import (
 	"bytes"
-	"fmt"
 	"regexp"
 	"slices"
 	"sort"
@@ -114,13 +113,15 @@ func ExtractCSS(c IsComponent) string {
 
 	variantClassMap := map[string][]string{}
 	variantPropsMap := map[string]map[string]string{}
+	// variantNames := []string{}
+	// classNameProps := map[string]string{}
 	for desc := range el.GetNode().Descendants() {
 		if desc.Type == html.ElementNode {
 			classnameAttrIndex := slices.IndexFunc(desc.Attr, func(attr html.Attribute) bool { return attr.Key == "data-classname" })
 			if classnameAttrIndex == -1 {
 				continue
 			}
-			className := desc.Attr[classnameAttrIndex].Val
+			className := "." + desc.Attr[classnameAttrIndex].Val
 
 			for _, attr := range desc.Attr {
 				if !styleAttrPattern.MatchString(attr.Key) {
@@ -133,7 +134,6 @@ func ExtractCSS(c IsComponent) string {
 					variantPropsMap[variantStyleName] = make(map[string]string)
 				}
 				variantPropsMap[variantStyleName][className] = attr.Val
-				// desc.Attr[attrIndex].Val = strings.Trim(string(s), "[]")
 				variantClassMap[variantStyleName] = append(
 					variantClassMap[variantStyleName], className,
 				)
@@ -141,55 +141,7 @@ func ExtractCSS(c IsComponent) string {
 		}
 	}
 
-	for variantName, classNames := range variantClassMap {
-		splittedVariant := strings.Split(variantName, ":")
-
-		var computedClassName string
-		var placeholder string = "& { %s }"
-		if len(splittedVariant) > 1 {
-			scope := []string{}
-			for _, v := range splittedVariant {
-				val := string(styles.VariantNameOfAttr(v))
-				submatch := ruleCssPattern.FindAllStringSubmatch(val, -1)
-				if len(submatch) > 0 {
-					placeholder = submatch[0][0]
-				}
-				scope = append(scope, ruleBracketsPattern.ReplaceAllString(val, ""))
-			}
-			computedClassName = strings.Join(scope, " and ")
-			computedClassName = strings.ReplaceAll(computedClassName, " and @media", "and ")
-		} else {
-			val := string(styles.VariantNameOfAttr(variantName))
-			submatch := ruleCssPattern.FindAllStringSubmatch(val, -1)
-			if len(submatch) > 0 {
-				placeholder = submatch[0][0]
-			}
-
-			computedClassName = ruleBracketsPattern.ReplaceAllString(string(styles.VariantNameOfAttr(variantName)), "")
-		}
-
-		var classPlaceHolder []string
-		for _, className := range classNames {
-			p := strings.ReplaceAll(placeholder, "&", "."+className)
-			p = fmt.Sprintf(p, variantPropsMap[variantName][className])
-			classPlaceHolder = append(classPlaceHolder, p)
-		}
-
-		var cssText string
-		if hasAtPattern.MatchString(computedClassName) {
-			cssText = fmt.Sprintf(`
-				%s {
-					%s
-				}
-			`, computedClassName, strings.Join(classPlaceHolder, "\n"))
-		} else {
-			cssText = strings.Join(classPlaceHolder, "\n")
-		}
-
-		css = append(css, cssText)
-	}
-
-	// classes := map[string]string{}
+	css = styles.ExtractCSSFromStyle(variantClassMap, variantPropsMap)
 
 	for desc := range el.GetNode().Descendants() {
 		if desc.Type == html.ElementNode {

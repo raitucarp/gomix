@@ -36,6 +36,23 @@ func main() {
 				fragment(BlogArticleFragment),
 			),
 
+			style_global(css{
+				"html": style(
+					bg_slate(900),
+					dark(
+						bg_slate(200),
+					),
+				),
+				"div": style(
+					dark(
+						text_red(400),
+						hover(
+							text_blue(400),
+						),
+					),
+				),
+			}),
+
 			// page
 			page_at(homePath,
 				title_("Home Page"),

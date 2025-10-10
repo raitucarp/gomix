@@ -11,6 +11,7 @@ import (
 type isComponent = components.IsComponent
 type page_path = gomix.LocationPath
 type fragment_path = gomix.FragmentPath
+type css = gomix.CSS
 
 // app scope alias
 var app = gomix.App
@@ -25,6 +26,8 @@ var web = gomix.Web
 var scripts = gomix.Scripts
 var page_at = gomix.PageAt
 var fragment_at = gomix.FragmentAt
+var style_global = gomix.StyleGlobal
+var style = gomix.Style
 
 // fragment scope
 var fragment = gomix.FragmentComponent
@@ -59,3 +62,4 @@ var text_orange = styles.TextOrange
 var text_blue = styles.TextBlue
 var text_green = styles.TextGreen
 var cursor_pointer = styles.CursorPointer
+var bg_slate = styles.BgSlate
