@@ -11,17 +11,6 @@ import (
 	"github.com/raitucarp/gomix/theme"
 )
 
-type webPage struct {
-	prefixTitle string
-	suffixTitle string
-	layout      components.IsComponent
-	pages       []*Page
-	fragments   []*Fragment
-	theme       *theme.Theme
-	scripts     []string
-	stylesheets []string
-}
-
 type Application struct {
 	name string
 	port int
@@ -34,19 +23,8 @@ type Application struct {
 	enableLogger bool
 }
 
-type Scope string
-
-const (
-	AppScope    Scope = "app"
-	WebScope    Scope = "web"
-	RestScope   Scope = "rest"
-	SocketScope Scope = "ws"
-	SSEScope    Scope = "sse"
-	AssetsScope Scope = "assets"
-)
-
 type LocationPath string
-type AppParam func(app *Application) (scope Scope, fn func())
+type AppParam func(app *Application) (scope Scope, fn func(params ...any))
 
 func App(params ...AppParam) {
 	app := &Application{
@@ -73,16 +51,16 @@ func App(params ...AppParam) {
 }
 
 func Name(name string) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return AppScope, func() {
+	return func(app *Application) (Scope, func(params ...any)) {
+		return AppScope, func(params ...any) {
 			app.name = name
 		}
 	}
 }
 
 func Addons(addons ...AppParam) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return AppScope, func() {
+	return func(app *Application) (Scope, func(params ...any)) {
+		return AppScope, func(params ...any) {
 			for _, addon := range addons {
 				scope, runFn := addon(app)
 				if scope == AppScope {
@@ -93,22 +71,9 @@ func Addons(addons ...AppParam) AppParam {
 	}
 }
 
-func WebAddons(addons ...AppParam) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return WebScope, func() {
-			for _, addon := range addons {
-				scope, runFn := addon(app)
-				if scope == WebScope {
-					runFn()
-				}
-			}
-		}
-	}
-}
-
 func Features(features ...AppParam) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return AppScope, func() {
+	return func(app *Application) (Scope, func(params ...any)) {
+		return AppScope, func(params ...any) {
 			for _, feature := range features {
 				scope, runFn := feature(app)
 				if scope == AppScope {
@@ -119,9 +84,9 @@ func Features(features ...AppParam) AppParam {
 	}
 }
 
-func Webpage(features ...AppParam) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return AppScope, func() {
+func Web(features ...AppParam) AppParam {
+	return func(app *Application) (Scope, func(params ...any)) {
+		return AppScope, func(params ...any) {
 			for _, fn := range features {
 				scope, runFn := fn(app)
 				if scope == WebScope {
@@ -133,74 +98,27 @@ func Webpage(features ...AppParam) AppParam {
 }
 
 func Port(port int) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return AppScope, func() {
+	return func(app *Application) (Scope, func(params ...any)) {
+		return AppScope, func(params ...any) {
 			app.port = port
 		}
 	}
 }
 
 func Logger() AppParam {
-	return func(app *Application) (Scope, func()) {
-		return AppScope, func() {
+	return func(app *Application) (Scope, func(params ...any)) {
+		return AppScope, func(params ...any) {
 			app.features = append(app.features, "logger")
 		}
 	}
 }
 
 func Rest(apis ...AppParam) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return AppScope, func() {
+	return func(app *Application) (Scope, func(params ...any)) {
+		return AppScope, func(params ...any) {
 			for _, aa := range apis {
 				aa(app)
 			}
-		}
-	}
-}
-
-func Scripts(url ...string) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return WebScope, func() {
-			app.web.scripts = append(app.web.scripts, url...)
-			app.web.scripts = slices.Compact(app.web.scripts)
-		}
-	}
-}
-
-func PageAt(path LocationPath, setup PageSetup) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return WebScope, func() {
-			newPage := NewPage(path, setup)
-			app.web.pages = append(app.web.pages, newPage)
-		}
-	}
-}
-
-func Theme(newTheme *theme.Theme) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return WebScope, func() {
-			app.web.theme = newTheme
-		}
-	}
-}
-
-func FragmentAt(path FragmentPath, component FragmentComponent) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return WebScope, func() {
-			fragment := NewFragment(path, component)
-			app.web.fragments = append(app.web.fragments, fragment)
-		}
-	}
-}
-
-func Layout(component components.IsComponent) AppParam {
-	return func(app *Application) (Scope, func()) {
-		return WebScope, func() {
-			app.web.layout = components.Component(
-				element.Body(
-					element.Element(component),
-				),
-			)
 		}
 	}
 }
@@ -221,11 +139,15 @@ func (app *Application) IsAddonActivated(addonName string) bool {
 	return slices.Contains(app.addons, addonName)
 }
 
+func (app *Application) defaultLayout() pageComponent {
+	return func(page *Page) components.IsComponent { return app.web.layout }
+}
+
 func (app *Application) flattenPages() (pages []*Page) {
 	for _, p := range app.web.pages {
 		p.flattened = true
-		p.AddLayouts(func(page *Page) components.IsComponent { return app.web.layout })
-		p.AddScripts(app.web.scripts...)
+		p.addLayouts(app.defaultLayout(), p.component)
+		p.addScripts(app.web.scripts...)
 		if p.theme == nil {
 			p.theme = app.web.theme
 		}
@@ -234,9 +156,17 @@ func (app *Application) flattenPages() (pages []*Page) {
 		if len(p.children) > 0 {
 			pages = append(pages, p.flattenPages()...)
 		}
-
 	}
 	return
+}
+
+func (app *Application) findPageByPath(path LocationPath) *Page {
+	for _, page := range app.web.pages {
+		if page.path == path {
+			return page
+		}
+	}
+	return nil
 }
 
 func (app *Application) serve() {
@@ -244,6 +174,7 @@ func (app *Application) serve() {
 	portString := fmt.Sprintf(":%d", app.port)
 
 	allPages := app.flattenPages()
+
 	for _, page := range allPages {
 		mux.HandleFunc(string(page.path), page.handler)
 	}

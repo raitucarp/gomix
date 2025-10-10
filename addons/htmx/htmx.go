@@ -11,9 +11,8 @@ import (
 const AddonName = "htmx"
 
 func Addon(version string) gomix.AppParam {
-	scope := gomix.WebScope
-	return func(app *gomix.Application) (gomix.Scope, func()) {
-		return scope, func() {
+	return func(app *gomix.Application) (scope gomix.Scope, fn func(params ...any)) {
+		return gomix.WebScope, func(params ...any) {
 			app.InstallAddon(AddonName)
 			htmxUrl := fmt.Sprintf("https://cdn.jsdelivr.net/npm/htmx.org@%s/dist/htmx.min.js", version)
 

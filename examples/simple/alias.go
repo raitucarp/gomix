@@ -21,10 +21,18 @@ var port = gomix.Port
 var features = gomix.Features
 var logger = gomix.Logger
 var layout = gomix.Layout
-var webpage = gomix.Webpage
+var web = gomix.Web
 var scripts = gomix.Scripts
-var at = gomix.PageAt
-var fragment = gomix.FragmentAt
+var page_at = gomix.PageAt
+var fragment_at = gomix.FragmentAt
+
+// fragment scope
+var fragment = gomix.FragmentComponent
+
+// page scope
+var title_ = gomix.PageTitle
+var component = gomix.PageComponent
+var fragment_component = gomix.FragmentComponent
 
 // addons scope alias
 var _htmx = htmx.Addon

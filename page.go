@@ -13,15 +13,22 @@ import (
 	"github.com/tdewolff/minify/v2/html"
 )
 
-type PageComponent func(page *Page) components.IsComponent
+// type PageComponent func(page *Page) components.IsComponent
 type PageSetup func(page *Page)
+type PageParam func(page *Page)
+type pageComponent func(page *Page) components.IsComponent
+type PageParams []PageParam
+
+type metadataField string
 
 type Page struct {
 	path      LocationPath
 	title     string
-	component PageComponent
-	layouts   []PageComponent
+	component pageComponent
+	fragment  pageComponent
+	layouts   []pageComponent
 	children  []*Page
+	metadata  map[metadataField]any
 
 	scripts     []string
 	stylesheets []string
@@ -33,32 +40,30 @@ type Page struct {
 	handler   func(w http.ResponseWriter, req *http.Request)
 }
 
-func NewPage(path LocationPath, setup PageSetup) *Page {
+func newPage(path LocationPath) *Page {
 	newPage := &Page{path: path,
-
 		component: func(page *Page) components.IsComponent {
 			return element.Element(element.Text(""))
 		},
-		request: &http.Request{},
+		request:  &http.Request{},
+		metadata: map[metadataField]any{},
 	}
 
 	newPage.handler = func(w http.ResponseWriter, req *http.Request) {
 		newPage.setReq(req)
 		newPage.setResp(w)
-		setup(newPage)
-		newPage.Write()
+		// setup(newPage)
+		newPage.write()
 	}
-
-	setup(newPage)
 
 	return newPage
 }
 
-func (page *Page) AddLayouts(layout ...PageComponent) {
+func (page *Page) addLayouts(layout ...pageComponent) {
 	page.layouts = append(page.layouts, layout...)
 }
 
-func (page *Page) AddScripts(urls ...string) {
+func (page *Page) addScripts(urls ...string) {
 	page.scripts = append(page.scripts, urls...)
 }
 
@@ -66,22 +71,14 @@ func (page *Page) Theme(t *theme.Theme) {
 	page.theme = t
 }
 
-func (page *Page) New(path LocationPath, callback PageSetup) *Page {
-	newPage := NewPage(path, callback)
+func (page *Page) Inherit(path LocationPath, params ...PageParam) *Page {
+	newPage := newPage(path)
 	newPage.Theme(page.theme)
 
 	return newPage
 }
 
 type Pages []*Page
-
-func (page *Page) Title(title string) {
-	page.title = title
-}
-
-func (page *Page) Component(component PageComponent) {
-	page.component = component
-}
 
 func (page *Page) setReq(req *http.Request) {
 	page.request = req
@@ -104,18 +101,17 @@ func (page *Page) Response() http.ResponseWriter {
 	return page.response
 }
 
-func (page *Page) Write() {
+func (page *Page) write() {
 	io.WriteString(page.response, page.Render("en"))
 }
 
 func (page *Page) flattenPages() (pages []*Page) {
 
-	page.AddLayouts(page.component)
-
 	for _, p := range page.children {
 		p.flattened = true
-		p.AddLayouts(page.layouts...)
-		p.AddScripts(page.scripts...)
+		p.addLayouts(page.layouts...)
+		p.addLayouts(p.component)
+		p.addScripts(page.scripts...)
 		if p.theme == nil {
 			p.theme = page.theme
 		}
@@ -144,6 +140,7 @@ func (page *Page) Render(lang element.LanguageCode) string {
 	theLayout := components.Component(components.Slot())
 	for _, pageLayout := range page.layouts {
 		appliedLayout := pageLayout(page)
+
 		theLayout = components.ApplyLayout(theLayout, appliedLayout)
 	}
 
@@ -176,4 +173,51 @@ func (page *Page) Render(lang element.LanguageCode) string {
 	finalHtml = fmt.Sprintf("<!DOCTYPE html>%s", finalHtml)
 
 	return finalHtml
+}
+
+func PageTitle(title string) AppParam {
+	return func(app *Application) (scope Scope, fn func(params ...any)) {
+		return PageScope, func(params ...any) {
+			if len(params) > 0 {
+				if page, ok := params[0].(*Page); ok {
+					page.title = title
+				}
+			}
+
+		}
+	}
+}
+
+func Metadata(metaParams ...AppParam) AppParam {
+	return func(app *Application) (scope Scope, fn func(params ...any)) {
+		return PageScope, func(params ...any) {
+
+		}
+	}
+}
+
+func PageComponent(component pageComponent) AppParam {
+	return func(app *Application) (scope Scope, fn func(params ...any)) {
+		return PageScope, func(params ...any) {
+			if len(params) > 0 {
+				if page, ok := params[0].(*Page); ok {
+					page.component = component
+				}
+			}
+
+		}
+	}
+}
+
+func PageFragmentComponent(component pageComponent) AppParam {
+	return func(app *Application) (scope Scope, fn func(params ...any)) {
+		return PageScope, func(params ...any) {
+			if len(params) > 0 {
+				if page, ok := params[0].(*Page); ok {
+					page.fragment = component
+				}
+			}
+
+		}
+	}
 }

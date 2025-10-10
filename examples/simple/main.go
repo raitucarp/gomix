@@ -24,18 +24,37 @@ func main() {
 		features(
 			logger(),
 		),
-		webpage(
+		web(
 			layout(
 				AppLayout(),
 			),
 			web_addons(
 				_htmx("2.0.7"),
 			),
-			fragment(blogArticleFramentPath, BlogArticle),
+
+			fragment_at(blogArticleFramentPath,
+				fragment(BlogArticleFragment),
+			),
 
 			// page
-			at(homePath, HomePage),
-			at(shopPath, ShopPage),
+			page_at(homePath,
+				title_("Home Page"),
+				component(HomeLayout),
+
+				page_at(blogPath,
+					title_("The New Blog"),
+					component(BlogHomePage),
+
+					page_at(blogAboutPath,
+						title_("Blog About"),
+						component(BlogAboutPage),
+					),
+				),
+			),
+			page_at(shopPath,
+				title_("Shop Page"),
+				component(ShopLayout),
+			),
 		),
 		port(8080),
 	)

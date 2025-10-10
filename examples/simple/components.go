@@ -53,7 +53,6 @@ func BlogHomePage(page *gomix.Page) isComponent {
 	})
 
 	return div(
-		slot(),
 		div(
 			text("this is response div"),
 			div(text("inner div")),
@@ -62,6 +61,7 @@ func BlogHomePage(page *gomix.Page) isComponent {
 		Htmx(
 			button(text("testa")).Autofocus().Element().Id("button-good"),
 		).Get("/blog/doyouwant").Target("#response-div"),
+		slot(),
 		StyledText("whoopa").
 			Element().
 			PreferredClassName("thanks").
@@ -87,7 +87,13 @@ func BlogHomePage(page *gomix.Page) isComponent {
 	)
 }
 
-func BlogArticle(fragment *gomix.Fragment) isComponent {
+func BlogAboutPage(page *gomix.Page) isComponent {
+	name := page.Request().PathValue("name")
+
+	return div(text(name)).Element().Style(text_green(300))
+}
+
+func BlogArticleFragment(fragment *gomix.Fragment) isComponent {
 	permalinkValue := fragment.Request().PathValue("permalink")
 
 	raitucarpLink := a(

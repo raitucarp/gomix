@@ -14,35 +14,34 @@ type FragmentPath string
 
 type Fragment struct {
 	path      FragmentPath
-	component FragmentComponent
+	component fragmentComponent
 
 	request  *http.Request
 	response http.ResponseWriter
 	handler  func(w http.ResponseWriter, req *http.Request)
 }
 
-type FragmentComponent func(fragment *Fragment) components.IsComponent
+type FragmentParam func(fragment *Fragment)
+type fragmentComponent func(fragment *Fragment) components.IsComponent
 
 // func (fragment *Fragment) Write() {
 // 	io.WriteString(fragment.response, fragment.Render())
 // }
 
 func (fragment *Fragment) Render() {
-	component := fragment.component(fragment)
-
-	html.Render(fragment.response, component.Element().GetNode())
+	html.Render(fragment.response, fragment.component(fragment).Element().GetNode())
 }
 
 func (fragment *Fragment) Request() *http.Request {
 	return fragment.request
 }
 
-func NewFragment(path FragmentPath, component FragmentComponent) *Fragment {
-	fragment := &Fragment{path: path, component: component}
+func newFragment(path FragmentPath) *Fragment {
+	fragment := &Fragment{path: path}
 	fragment.handler = func(w http.ResponseWriter, req *http.Request) {
 		if req.Header.Get("HX-Request") != "true" {
 			w.WriteHeader(http.StatusNotFound)
-			io.WriteString(w, "no fragment")
+			io.WriteString(w, "fragment can only requested by hx-request")
 			return
 		}
 
@@ -59,4 +58,17 @@ func NewFragment(path FragmentPath, component FragmentComponent) *Fragment {
 	}
 
 	return fragment
+}
+
+func FragmentComponent(component fragmentComponent) AppParam {
+	return func(app *Application) (scope Scope, fn func(params ...any)) {
+		return FragmentScope, func(params ...any) {
+			if len(params) > 0 {
+				if fragment, ok := params[0].(*Fragment); ok {
+					fragment.component = component
+				}
+			}
+
+		}
+	}
 }
