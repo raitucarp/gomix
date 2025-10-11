@@ -70,7 +70,7 @@ func (page *Page) addScripts(urls ...string) {
 }
 
 func (page *Page) addStylesheets(urls ...string) {
-	page.scripts = append(page.stylesheets, urls...)
+	page.stylesheets = append(page.stylesheets, urls...)
 }
 
 func (page *Page) Theme(t *theme.Theme) {
