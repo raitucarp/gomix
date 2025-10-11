@@ -30,6 +30,7 @@ func main() {
 			),
 			web_addons(
 				_htmx("2.0.7"),
+				_modern_normalize(),
 			),
 
 			fragment_at(blogArticleFramentPath,

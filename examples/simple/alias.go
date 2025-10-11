@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/raitucarp/gomix"
 	"github.com/raitucarp/gomix/addons/htmx"
+	modern_normalize "github.com/raitucarp/gomix/addons/modern-normalize"
 	"github.com/raitucarp/gomix/components"
 	"github.com/raitucarp/gomix/element"
 	"github.com/raitucarp/gomix/styles"
@@ -39,15 +40,16 @@ var fragment_component = gomix.FragmentComponent
 
 // addons scope alias
 var _htmx = htmx.Addon
+var _modern_normalize = modern_normalize.Addon
 
 // element scope
 var div = element.Div
 var text = element.Text
 var slot = components.Slot
 var el = element.Element
-var Htmx = htmx.Htmx
 var button = element.Button
 var a = element.A
+var Htmx = htmx.Htmx
 
 // style scope
 
