@@ -69,6 +69,10 @@ func (page *Page) addScripts(urls ...string) {
 	page.scripts = append(page.scripts, urls...)
 }
 
+func (page *Page) addStylesheets(urls ...string) {
+	page.scripts = append(page.stylesheets, urls...)
+}
+
 func (page *Page) Theme(t *theme.Theme) {
 	page.theme = t
 }
@@ -113,6 +117,7 @@ func (page *Page) flattenPages() (pages []*Page) {
 		p.flattened = true
 		p.addLayouts(page.layouts...)
 		p.addLayouts(p.component)
+		p.addStylesheets(page.stylesheets...)
 		p.addScripts(page.scripts...)
 		p.css = page.css + p.css
 		if p.theme == nil {
