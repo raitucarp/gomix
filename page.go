@@ -152,6 +152,10 @@ func (page *Page) Render(lang element.LanguageCode) string {
 		element.Title(page.title),
 	}
 
+	for _, stylesheet := range page.stylesheets {
+		head = append(head, element.Link().Href(stylesheet).Rel("stylesheet"))
+	}
+
 	allStylesheet := []string{}
 	themeVars, err := m.String("text/css", page.theme.RawCSS())
 	if err == nil {

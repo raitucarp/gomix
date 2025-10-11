@@ -35,6 +35,16 @@ func WebAddons(addons ...AppParam) AppParam {
 	}
 }
 
+func Stylesheets(url ...string) AppParam {
+	return func(app *Application) (Scope, func(params ...any)) {
+		return WebScope, func(params ...any) {
+			app.web.stylesheets = append(app.web.stylesheets, url...)
+			slices.Sort(app.web.stylesheets)
+			app.web.stylesheets = slices.Compact(app.web.stylesheets)
+		}
+	}
+}
+
 func Scripts(url ...string) AppParam {
 	return func(app *Application) (Scope, func(params ...any)) {
 		return WebScope, func(params ...any) {
