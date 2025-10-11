@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"strings"
 
 	"github.com/raitucarp/gomix/components"
 	"github.com/raitucarp/gomix/element"
@@ -142,29 +143,32 @@ func (page *Page) Render(lang element.LanguageCode) string {
 	theLayout := components.Component(components.Slot())
 	for _, pageLayout := range page.layouts {
 		appliedLayout := pageLayout(page)
-
 		theLayout = components.ApplyLayout(theLayout, appliedLayout)
 	}
-
-	themeVars, _ := m.String("text/css", page.theme.RawCSS())
 
 	head := []element.IsHeadElement{
 		element.Meta().CharSet("UTF-8"),
 		element.Meta().Name(element.MetaNameViewport).Content("width=device-width, initial-scale=1.0"),
 		element.Title(page.title),
-		element.Style(themeVars),
 	}
 
-	if len(page.css) > 0 {
-		globalCss, _ := m.String("text/css", page.css)
-		head = append(head, element.Style(globalCss))
+	allStylesheet := []string{}
+	themeVars, err := m.String("text/css", page.theme.RawCSS())
+	if err == nil {
+		allStylesheet = append(allStylesheet, themeVars)
 	}
 
-	allCss := components.ExtractCSS(theLayout)
-	if allCss != "" {
-		allCss, _ = m.String("text/css", allCss)
-		head = append(head, element.Style(allCss))
+	globalCss, err := m.String("text/css", page.css)
+	if err == nil {
+		allStylesheet = append(allStylesheet, globalCss)
 	}
+
+	pageElementStyles := components.ExtractCSS(theLayout)
+	pageElementStyles, err = m.String("text/css", pageElementStyles)
+	if err == nil {
+		allStylesheet = append(allStylesheet, pageElementStyles)
+	}
+	head = append(head, element.Style(strings.Join(allStylesheet, "\n")))
 
 	for _, script := range page.scripts {
 		head = append(head, element.Script().Src(script))

@@ -39,6 +39,7 @@ func Scripts(url ...string) AppParam {
 	return func(app *Application) (Scope, func(params ...any)) {
 		return WebScope, func(params ...any) {
 			app.web.scripts = append(app.web.scripts, url...)
+			slices.Sort(app.web.scripts)
 			app.web.scripts = slices.Compact(app.web.scripts)
 		}
 	}
