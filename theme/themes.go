@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"sort"
 	"strings"
-
-	"github.com/iancoleman/strcase"
 )
 
 type Namespace string
@@ -47,12 +45,12 @@ func (v *Variables) ToCSSVariables() (vars map[string]string) {
 		for key, value := range class {
 			if namespace == Custom {
 				varName := fmt.Sprintf("--%s",
-					strcase.ToDelimited(key, '-'),
+					key,
 				)
 				vars[varName] = value
 			} else {
 				varName := fmt.Sprintf("--%s-%s",
-					namespace, strcase.ToDelimited(key, '-'),
+					namespace, key,
 				)
 				vars[varName] = value
 			}
@@ -97,12 +95,12 @@ func (t *Theme) UseVarKey(namespace Namespace, class string) string {
 func (t *Theme) VarKey(namespace Namespace, class string) string {
 	if namespace == Custom {
 		return fmt.Sprintf("--%s",
-			strcase.ToDelimited(class, '-'),
+			class,
 		)
 	}
 
 	return fmt.Sprintf("--%s-%s",
-		namespace, strcase.ToDelimited(class, '-'),
+		namespace, class,
 	)
 }
 
