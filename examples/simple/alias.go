@@ -49,6 +49,7 @@ var slot = components.Slot
 var el = element.Element
 var button = element.Button
 var a = element.A
+var span = element.Span
 var Htmx = htmx.Htmx
 
 // style scope
@@ -65,3 +66,6 @@ var text_blue = styles.TextBlue
 var text_green = styles.TextGreen
 var cursor_pointer = styles.CursorPointer
 var bg_slate = styles.BgSlate
+
+// components
+var Hstack = components.HStack

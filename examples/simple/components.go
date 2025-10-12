@@ -38,6 +38,13 @@ func HomeLayout(page *gomix.Page) isComponent {
 	return div(
 		slot(),
 		text("home layout"),
+		Hstack(
+			span(text("test")),
+			span(text("testa")),
+		).
+			Component().
+			WFull().
+			JustifyCenter(),
 	)
 }
 
