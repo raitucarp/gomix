@@ -40,7 +40,10 @@ func HomeLayout(page *gomix.Page) isComponent {
 		text("home layout"),
 		Hstack(
 			span(text("test")),
-			span(text("testa")),
+			div(
+				Icon(fa_brand_android()).Size2Xl().Component().FillRed(300),
+				span(text("testa")),
+			).Element().Style(flex_1),
 		).
 			Component().
 			WFull().
@@ -97,7 +100,7 @@ func BlogHomePage(page *gomix.Page) isComponent {
 func BlogAboutPage(page *gomix.Page) isComponent {
 	name := page.Request().PathValue("name")
 
-	return div(text(name)).Element().Style(text_green(300))
+	return div(text(name)).Element().Style(text_green(900))
 }
 
 func BlogArticleFragment(fragment *gomix.Fragment) isComponent {

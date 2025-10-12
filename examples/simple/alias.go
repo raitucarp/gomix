@@ -6,7 +6,9 @@ import (
 	modern_normalize "github.com/raitucarp/gomix/addons/modern-normalize"
 	"github.com/raitucarp/gomix/components"
 	"github.com/raitucarp/gomix/element"
+	fa5 "github.com/raitucarp/gomix/icons/fontawesome5"
 	"github.com/raitucarp/gomix/styles"
+	"github.com/raitucarp/gomix/value"
 )
 
 type isComponent = components.IsComponent
@@ -66,6 +68,15 @@ var text_blue = styles.TextBlue
 var text_green = styles.TextGreen
 var cursor_pointer = styles.CursorPointer
 var bg_slate = styles.BgSlate
+var inline = styles.Inline
+var width_by = styles.WBy
+var px = value.Px[float64]
+var flex_1 = styles.FlexBy(value.Number(1))
+var fill_red = styles.FillRed
 
 // components
 var Hstack = components.HStack
+var Icon = components.Icon
+
+// font awesome
+var fa_brand_android = fa5.FaBrandAndroid
