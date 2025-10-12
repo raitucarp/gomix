@@ -19,7 +19,6 @@ type IsComponent interface {
 
 type component struct {
 	el *element.HtmlElement
-	// styles *styles.Styles
 
 	// stylesheets []string
 	// scripts     []string
@@ -72,10 +71,9 @@ func ApplyLayout(layout IsComponent, e IsComponent) IsComponent {
 	return n
 }
 
-func (e *component) Children(components ...*component) *component {
+func (e *component) Children(components ...IsComponent) *component {
 	for _, comp := range components {
-		e.el.Children(comp.el)
-		// e.node.AppendChild(comp.node)
+		e.el.Children(comp.Element())
 	}
 	return e
 }
@@ -91,11 +89,7 @@ var ruleCssPattern = regexp.MustCompile(`(?P<Rule>&(.*?)})`)
 
 func ExtractCSS(c IsComponent) string {
 	el := c.Element()
-	css := []string{}
 	props := []string{}
-	// s, _ := sqids.New(sqids.Options{
-	// 	Alphabet: "abcdefghijklmnopqrstuvwxyz",
-	// })
 
 	for desc := range el.GetNode().Descendants() {
 		if desc.Type == html.ElementNode {
@@ -141,7 +135,7 @@ func ExtractCSS(c IsComponent) string {
 		}
 	}
 
-	css = styles.ExtractCSSFromStyle(variantClassMap, variantPropsMap)
+	css := styles.ExtractCSSFromStyle(variantClassMap, variantPropsMap)
 
 	for desc := range el.GetNode().Descendants() {
 		if desc.Type == html.ElementNode {
