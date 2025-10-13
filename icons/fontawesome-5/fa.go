@@ -10,28 +10,25 @@ import (
 //go:embed svgs/*
 var svgs embed.FS
 
-func readSvg(path string) (string, error) {
-	f, err := svgs.ReadFile("svgs/" + path + ".svg")
-	if err != nil {
-		return "", err
-	}
-
-	return string(f), err
-}
+const (
+	svgPath     = "svgs"
+	name        = "font-awesome-5"
+	fontBrands  = "brands"
+	fontSolid   = "solid"
+	fontRegular = "regular"
+)
 
 type fontAwesomeIcon struct {
 	el *element.HtmlElement
 }
 
-func (f *fontAwesomeIcon) IsIcon() {}
-func (f *fontAwesomeIcon) Element() *element.HtmlElement {
-	return f.el
-}
-
-func createIconSvg(path string) icons.IsIcon {
-	f, _ := readSvg(path)
-	svgEl, _ := element.SvgString(f)
-	return &fontAwesomeIcon{
-		el: svgEl.Element(),
-	}
+func (i *fontAwesomeIcon) IsIcon()                       {}
+func (i *fontAwesomeIcon) Name() string                  { return name }
+func (i *fontAwesomeIcon) Element() *element.HtmlElement { return i.el }
+func newIcon(paths ...string) icons.IsIcon {
+	finalPath := []string{svgPath}
+	finalPath = append(finalPath, paths...)
+	el := icons.CreateSvgElementByFs(svgs, finalPath...)
+	icon := &fontAwesomeIcon{el}
+	return icon
 }

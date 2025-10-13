@@ -2,16 +2,16 @@ package fa5
 
 import (
 	"testing"
+
+	"github.com/raitucarp/gomix/icons"
 )
 
 func TestFaBrand500px(t *testing.T) {
 	actual := FaBrand500px()
-	expected, err := readSvg("brands/500px.svg")
-	if err != nil {
-		t.Error(err)
-	}
+	svgEl := icons.CreateSvgElementByFs(svgs, svgPath, "brands", "500px")
+	expected := svgEl
 
-	if actual.Element().Render() != expected {
-		t.Errorf("%s %s", actual.Element().Render(), expected)
+	if actual.Element().Render() != expected.Element().Render() {
+		t.Errorf("%s %s", actual.Element().Render(), expected.Element().Render())
 	}
 }

@@ -2,1015 +2,1015 @@ package fa5
 
 import "github.com/raitucarp/gomix/icons"
 
-func FaSolidAd() icons.IsIcon           { return createIconSvg("solid/ad") }
-func FaSolidAddressBook() icons.IsIcon  { return createIconSvg("solid/address-book") }
-func FaSolidAddressCard() icons.IsIcon  { return createIconSvg("solid/address-card") }
-func FaSolidAdjust() icons.IsIcon       { return createIconSvg("solid/adjust") }
-func FaSolidAirFreshener() icons.IsIcon { return createIconSvg("solid/air-freshener") }
-func FaSolidAlignCenter() icons.IsIcon  { return createIconSvg("solid/align-center") }
-func FaSolidAlignJustify() icons.IsIcon { return createIconSvg("solid/align-justify") }
-func FaSolidAlignLeft() icons.IsIcon    { return createIconSvg("solid/align-left") }
-func FaSolidAlignRight() icons.IsIcon   { return createIconSvg("solid/align-right") }
-func FaSolidAllergies() icons.IsIcon    { return createIconSvg("solid/allergies") }
-func FaSolidAmbulance() icons.IsIcon    { return createIconSvg("solid/ambulance") }
+func FaSolidAd() icons.IsIcon           { return newIcon(fontSolid, "ad") }
+func FaSolidAddressBook() icons.IsIcon  { return newIcon(fontSolid, "address-book") }
+func FaSolidAddressCard() icons.IsIcon  { return newIcon(fontSolid, "address-card") }
+func FaSolidAdjust() icons.IsIcon       { return newIcon(fontSolid, "adjust") }
+func FaSolidAirFreshener() icons.IsIcon { return newIcon(fontSolid, "air-freshener") }
+func FaSolidAlignCenter() icons.IsIcon  { return newIcon(fontSolid, "align-center") }
+func FaSolidAlignJustify() icons.IsIcon { return newIcon(fontSolid, "align-justify") }
+func FaSolidAlignLeft() icons.IsIcon    { return newIcon(fontSolid, "align-left") }
+func FaSolidAlignRight() icons.IsIcon   { return newIcon(fontSolid, "align-right") }
+func FaSolidAllergies() icons.IsIcon    { return newIcon(fontSolid, "allergies") }
+func FaSolidAmbulance() icons.IsIcon    { return newIcon(fontSolid, "ambulance") }
 func FaSolidAmericanSignLanguageInterpreting() icons.IsIcon {
-	return createIconSvg("solid/american-sign-language-interpreting")
+	return newIcon(fontSolid, "american-sign-language-interpreting")
 }
-func FaSolidAnchor() icons.IsIcon              { return createIconSvg("solid/anchor") }
-func FaSolidAngleDoubleDown() icons.IsIcon     { return createIconSvg("solid/angle-double-down") }
-func FaSolidAngleDoubleLeft() icons.IsIcon     { return createIconSvg("solid/angle-double-left") }
-func FaSolidAngleDoubleRight() icons.IsIcon    { return createIconSvg("solid/angle-double-right") }
-func FaSolidAngleDoubleUp() icons.IsIcon       { return createIconSvg("solid/angle-double-up") }
-func FaSolidAngleDown() icons.IsIcon           { return createIconSvg("solid/angle-down") }
-func FaSolidAngleLeft() icons.IsIcon           { return createIconSvg("solid/angle-left") }
-func FaSolidAngleRight() icons.IsIcon          { return createIconSvg("solid/angle-right") }
-func FaSolidAngleUp() icons.IsIcon             { return createIconSvg("solid/angle-up") }
-func FaSolidAngry() icons.IsIcon               { return createIconSvg("solid/angry") }
-func FaSolidAnkh() icons.IsIcon                { return createIconSvg("solid/ankh") }
-func FaSolidAppleAlt() icons.IsIcon            { return createIconSvg("solid/apple-alt") }
-func FaSolidArchive() icons.IsIcon             { return createIconSvg("solid/archive") }
-func FaSolidArchway() icons.IsIcon             { return createIconSvg("solid/archway") }
-func FaSolidArrowAltCircleDown() icons.IsIcon  { return createIconSvg("solid/arrow-alt-circle-down") }
-func FaSolidArrowAltCircleLeft() icons.IsIcon  { return createIconSvg("solid/arrow-alt-circle-left") }
-func FaSolidArrowAltCircleRight() icons.IsIcon { return createIconSvg("solid/arrow-alt-circle-right") }
-func FaSolidArrowAltCircleUp() icons.IsIcon    { return createIconSvg("solid/arrow-alt-circle-up") }
-func FaSolidArrowCircleDown() icons.IsIcon     { return createIconSvg("solid/arrow-circle-down") }
-func FaSolidArrowCircleLeft() icons.IsIcon     { return createIconSvg("solid/arrow-circle-left") }
-func FaSolidArrowCircleRight() icons.IsIcon    { return createIconSvg("solid/arrow-circle-right") }
-func FaSolidArrowCircleUp() icons.IsIcon       { return createIconSvg("solid/arrow-circle-up") }
-func FaSolidArrowDown() icons.IsIcon           { return createIconSvg("solid/arrow-down") }
-func FaSolidArrowLeft() icons.IsIcon           { return createIconSvg("solid/arrow-left") }
-func FaSolidArrowRight() icons.IsIcon          { return createIconSvg("solid/arrow-right") }
-func FaSolidArrowUp() icons.IsIcon             { return createIconSvg("solid/arrow-up") }
-func FaSolidArrowsAltH() icons.IsIcon          { return createIconSvg("solid/arrows-alt-h") }
-func FaSolidArrowsAltV() icons.IsIcon          { return createIconSvg("solid/arrows-alt-v") }
-func FaSolidArrowsAlt() icons.IsIcon           { return createIconSvg("solid/arrows-alt") }
+func FaSolidAnchor() icons.IsIcon              { return newIcon(fontSolid, "anchor") }
+func FaSolidAngleDoubleDown() icons.IsIcon     { return newIcon(fontSolid, "angle-double-down") }
+func FaSolidAngleDoubleLeft() icons.IsIcon     { return newIcon(fontSolid, "angle-double-left") }
+func FaSolidAngleDoubleRight() icons.IsIcon    { return newIcon(fontSolid, "angle-double-right") }
+func FaSolidAngleDoubleUp() icons.IsIcon       { return newIcon(fontSolid, "angle-double-up") }
+func FaSolidAngleDown() icons.IsIcon           { return newIcon(fontSolid, "angle-down") }
+func FaSolidAngleLeft() icons.IsIcon           { return newIcon(fontSolid, "angle-left") }
+func FaSolidAngleRight() icons.IsIcon          { return newIcon(fontSolid, "angle-right") }
+func FaSolidAngleUp() icons.IsIcon             { return newIcon(fontSolid, "angle-up") }
+func FaSolidAngry() icons.IsIcon               { return newIcon(fontSolid, "angry") }
+func FaSolidAnkh() icons.IsIcon                { return newIcon(fontSolid, "ankh") }
+func FaSolidAppleAlt() icons.IsIcon            { return newIcon(fontSolid, "apple-alt") }
+func FaSolidArchive() icons.IsIcon             { return newIcon(fontSolid, "archive") }
+func FaSolidArchway() icons.IsIcon             { return newIcon(fontSolid, "archway") }
+func FaSolidArrowAltCircleDown() icons.IsIcon  { return newIcon(fontSolid, "arrow-alt-circle-down") }
+func FaSolidArrowAltCircleLeft() icons.IsIcon  { return newIcon(fontSolid, "arrow-alt-circle-left") }
+func FaSolidArrowAltCircleRight() icons.IsIcon { return newIcon(fontSolid, "arrow-alt-circle-right") }
+func FaSolidArrowAltCircleUp() icons.IsIcon    { return newIcon(fontSolid, "arrow-alt-circle-up") }
+func FaSolidArrowCircleDown() icons.IsIcon     { return newIcon(fontSolid, "arrow-circle-down") }
+func FaSolidArrowCircleLeft() icons.IsIcon     { return newIcon(fontSolid, "arrow-circle-left") }
+func FaSolidArrowCircleRight() icons.IsIcon    { return newIcon(fontSolid, "arrow-circle-right") }
+func FaSolidArrowCircleUp() icons.IsIcon       { return newIcon(fontSolid, "arrow-circle-up") }
+func FaSolidArrowDown() icons.IsIcon           { return newIcon(fontSolid, "arrow-down") }
+func FaSolidArrowLeft() icons.IsIcon           { return newIcon(fontSolid, "arrow-left") }
+func FaSolidArrowRight() icons.IsIcon          { return newIcon(fontSolid, "arrow-right") }
+func FaSolidArrowUp() icons.IsIcon             { return newIcon(fontSolid, "arrow-up") }
+func FaSolidArrowsAltH() icons.IsIcon          { return newIcon(fontSolid, "arrows-alt-h") }
+func FaSolidArrowsAltV() icons.IsIcon          { return newIcon(fontSolid, "arrows-alt-v") }
+func FaSolidArrowsAlt() icons.IsIcon           { return newIcon(fontSolid, "arrows-alt") }
 func FaSolidAssistiveListeningSystems() icons.IsIcon {
-	return createIconSvg("solid/assistive-listening-systems")
+	return newIcon(fontSolid, "assistive-listening-systems")
 }
-func FaSolidAsterisk() icons.IsIcon             { return createIconSvg("solid/asterisk") }
-func FaSolidAt() icons.IsIcon                   { return createIconSvg("solid/at") }
-func FaSolidAtlas() icons.IsIcon                { return createIconSvg("solid/atlas") }
-func FaSolidAtom() icons.IsIcon                 { return createIconSvg("solid/atom") }
-func FaSolidAudioDescription() icons.IsIcon     { return createIconSvg("solid/audio-description") }
-func FaSolidAward() icons.IsIcon                { return createIconSvg("solid/award") }
-func FaSolidBabyCarriage() icons.IsIcon         { return createIconSvg("solid/baby-carriage") }
-func FaSolidBaby() icons.IsIcon                 { return createIconSvg("solid/baby") }
-func FaSolidBackspace() icons.IsIcon            { return createIconSvg("solid/backspace") }
-func FaSolidBackward() icons.IsIcon             { return createIconSvg("solid/backward") }
-func FaSolidBacon() icons.IsIcon                { return createIconSvg("solid/bacon") }
-func FaSolidBacteria() icons.IsIcon             { return createIconSvg("solid/bacteria") }
-func FaSolidBacterium() icons.IsIcon            { return createIconSvg("solid/bacterium") }
-func FaSolidBahai() icons.IsIcon                { return createIconSvg("solid/bahai") }
-func FaSolidBalanceScaleLeft() icons.IsIcon     { return createIconSvg("solid/balance-scale-left") }
-func FaSolidBalanceScaleRight() icons.IsIcon    { return createIconSvg("solid/balance-scale-right") }
-func FaSolidBalanceScale() icons.IsIcon         { return createIconSvg("solid/balance-scale") }
-func FaSolidBan() icons.IsIcon                  { return createIconSvg("solid/ban") }
-func FaSolidBandAid() icons.IsIcon              { return createIconSvg("solid/band-aid") }
-func FaSolidBarcode() icons.IsIcon              { return createIconSvg("solid/barcode") }
-func FaSolidBars() icons.IsIcon                 { return createIconSvg("solid/bars") }
-func FaSolidBaseballBall() icons.IsIcon         { return createIconSvg("solid/baseball-ball") }
-func FaSolidBasketballBall() icons.IsIcon       { return createIconSvg("solid/basketball-ball") }
-func FaSolidBath() icons.IsIcon                 { return createIconSvg("solid/bath") }
-func FaSolidBatteryEmpty() icons.IsIcon         { return createIconSvg("solid/battery-empty") }
-func FaSolidBatteryFull() icons.IsIcon          { return createIconSvg("solid/battery-full") }
-func FaSolidBatteryHalf() icons.IsIcon          { return createIconSvg("solid/battery-half") }
-func FaSolidBatteryQuarter() icons.IsIcon       { return createIconSvg("solid/battery-quarter") }
-func FaSolidBatteryThreeQuarters() icons.IsIcon { return createIconSvg("solid/battery-three-quarters") }
-func FaSolidBed() icons.IsIcon                  { return createIconSvg("solid/bed") }
-func FaSolidBeer() icons.IsIcon                 { return createIconSvg("solid/beer") }
-func FaSolidBellSlash() icons.IsIcon            { return createIconSvg("solid/bell-slash") }
-func FaSolidBell() icons.IsIcon                 { return createIconSvg("solid/bell") }
-func FaSolidBezierCurve() icons.IsIcon          { return createIconSvg("solid/bezier-curve") }
-func FaSolidBible() icons.IsIcon                { return createIconSvg("solid/bible") }
-func FaSolidBicycle() icons.IsIcon              { return createIconSvg("solid/bicycle") }
-func FaSolidBiking() icons.IsIcon               { return createIconSvg("solid/biking") }
-func FaSolidBinoculars() icons.IsIcon           { return createIconSvg("solid/binoculars") }
-func FaSolidBiohazard() icons.IsIcon            { return createIconSvg("solid/biohazard") }
-func FaSolidBirthdayCake() icons.IsIcon         { return createIconSvg("solid/birthday-cake") }
-func FaSolidBlenderPhone() icons.IsIcon         { return createIconSvg("solid/blender-phone") }
-func FaSolidBlender() icons.IsIcon              { return createIconSvg("solid/blender") }
-func FaSolidBlind() icons.IsIcon                { return createIconSvg("solid/blind") }
-func FaSolidBlog() icons.IsIcon                 { return createIconSvg("solid/blog") }
-func FaSolidBold() icons.IsIcon                 { return createIconSvg("solid/bold") }
-func FaSolidBolt() icons.IsIcon                 { return createIconSvg("solid/bolt") }
-func FaSolidBomb() icons.IsIcon                 { return createIconSvg("solid/bomb") }
-func FaSolidBone() icons.IsIcon                 { return createIconSvg("solid/bone") }
-func FaSolidBong() icons.IsIcon                 { return createIconSvg("solid/bong") }
-func FaSolidBookDead() icons.IsIcon             { return createIconSvg("solid/book-dead") }
-func FaSolidBookMedical() icons.IsIcon          { return createIconSvg("solid/book-medical") }
-func FaSolidBookOpen() icons.IsIcon             { return createIconSvg("solid/book-open") }
-func FaSolidBookReader() icons.IsIcon           { return createIconSvg("solid/book-reader") }
-func FaSolidBook() icons.IsIcon                 { return createIconSvg("solid/book") }
-func FaSolidBookmark() icons.IsIcon             { return createIconSvg("solid/bookmark") }
-func FaSolidBorderAll() icons.IsIcon            { return createIconSvg("solid/border-all") }
-func FaSolidBorderNone() icons.IsIcon           { return createIconSvg("solid/border-none") }
-func FaSolidBorderStyle() icons.IsIcon          { return createIconSvg("solid/border-style") }
-func FaSolidBowlingBall() icons.IsIcon          { return createIconSvg("solid/bowling-ball") }
-func FaSolidBoxOpen() icons.IsIcon              { return createIconSvg("solid/box-open") }
-func FaSolidBoxTissue() icons.IsIcon            { return createIconSvg("solid/box-tissue") }
-func FaSolidBox() icons.IsIcon                  { return createIconSvg("solid/box") }
-func FaSolidBoxes() icons.IsIcon                { return createIconSvg("solid/boxes") }
-func FaSolidBraille() icons.IsIcon              { return createIconSvg("solid/braille") }
-func FaSolidBrain() icons.IsIcon                { return createIconSvg("solid/brain") }
-func FaSolidBreadSlice() icons.IsIcon           { return createIconSvg("solid/bread-slice") }
-func FaSolidBriefcaseMedical() icons.IsIcon     { return createIconSvg("solid/briefcase-medical") }
-func FaSolidBriefcase() icons.IsIcon            { return createIconSvg("solid/briefcase") }
-func FaSolidBroadcastTower() icons.IsIcon       { return createIconSvg("solid/broadcast-tower") }
-func FaSolidBroom() icons.IsIcon                { return createIconSvg("solid/broom") }
-func FaSolidBrush() icons.IsIcon                { return createIconSvg("solid/brush") }
-func FaSolidBug() icons.IsIcon                  { return createIconSvg("solid/bug") }
-func FaSolidBuilding() icons.IsIcon             { return createIconSvg("solid/building") }
-func FaSolidBullhorn() icons.IsIcon             { return createIconSvg("solid/bullhorn") }
-func FaSolidBullseye() icons.IsIcon             { return createIconSvg("solid/bullseye") }
-func FaSolidBurn() icons.IsIcon                 { return createIconSvg("solid/burn") }
-func FaSolidBusAlt() icons.IsIcon               { return createIconSvg("solid/bus-alt") }
-func FaSolidBus() icons.IsIcon                  { return createIconSvg("solid/bus") }
-func FaSolidBusinessTime() icons.IsIcon         { return createIconSvg("solid/business-time") }
-func FaSolidCalculator() icons.IsIcon           { return createIconSvg("solid/calculator") }
-func FaSolidCalendarAlt() icons.IsIcon          { return createIconSvg("solid/calendar-alt") }
-func FaSolidCalendarCheck() icons.IsIcon        { return createIconSvg("solid/calendar-check") }
-func FaSolidCalendarDay() icons.IsIcon          { return createIconSvg("solid/calendar-day") }
-func FaSolidCalendarMinus() icons.IsIcon        { return createIconSvg("solid/calendar-minus") }
-func FaSolidCalendarPlus() icons.IsIcon         { return createIconSvg("solid/calendar-plus") }
-func FaSolidCalendarTimes() icons.IsIcon        { return createIconSvg("solid/calendar-times") }
-func FaSolidCalendarWeek() icons.IsIcon         { return createIconSvg("solid/calendar-week") }
-func FaSolidCalendar() icons.IsIcon             { return createIconSvg("solid/calendar") }
-func FaSolidCameraRetro() icons.IsIcon          { return createIconSvg("solid/camera-retro") }
-func FaSolidCamera() icons.IsIcon               { return createIconSvg("solid/camera") }
-func FaSolidCampground() icons.IsIcon           { return createIconSvg("solid/campground") }
-func FaSolidCandyCane() icons.IsIcon            { return createIconSvg("solid/candy-cane") }
-func FaSolidCannabis() icons.IsIcon             { return createIconSvg("solid/cannabis") }
-func FaSolidCapsules() icons.IsIcon             { return createIconSvg("solid/capsules") }
-func FaSolidCarAlt() icons.IsIcon               { return createIconSvg("solid/car-alt") }
-func FaSolidCarBattery() icons.IsIcon           { return createIconSvg("solid/car-battery") }
-func FaSolidCarCrash() icons.IsIcon             { return createIconSvg("solid/car-crash") }
-func FaSolidCarSide() icons.IsIcon              { return createIconSvg("solid/car-side") }
-func FaSolidCar() icons.IsIcon                  { return createIconSvg("solid/car") }
-func FaSolidCaravan() icons.IsIcon              { return createIconSvg("solid/caravan") }
-func FaSolidCaretDown() icons.IsIcon            { return createIconSvg("solid/caret-down") }
-func FaSolidCaretLeft() icons.IsIcon            { return createIconSvg("solid/caret-left") }
-func FaSolidCaretRight() icons.IsIcon           { return createIconSvg("solid/caret-right") }
-func FaSolidCaretSquareDown() icons.IsIcon      { return createIconSvg("solid/caret-square-down") }
-func FaSolidCaretSquareLeft() icons.IsIcon      { return createIconSvg("solid/caret-square-left") }
-func FaSolidCaretSquareRight() icons.IsIcon     { return createIconSvg("solid/caret-square-right") }
-func FaSolidCaretSquareUp() icons.IsIcon        { return createIconSvg("solid/caret-square-up") }
-func FaSolidCaretUp() icons.IsIcon              { return createIconSvg("solid/caret-up") }
-func FaSolidCarrot() icons.IsIcon               { return createIconSvg("solid/carrot") }
-func FaSolidCartArrowDown() icons.IsIcon        { return createIconSvg("solid/cart-arrow-down") }
-func FaSolidCartPlus() icons.IsIcon             { return createIconSvg("solid/cart-plus") }
-func FaSolidCashRegister() icons.IsIcon         { return createIconSvg("solid/cash-register") }
-func FaSolidCat() icons.IsIcon                  { return createIconSvg("solid/cat") }
-func FaSolidCertificate() icons.IsIcon          { return createIconSvg("solid/certificate") }
-func FaSolidChair() icons.IsIcon                { return createIconSvg("solid/chair") }
-func FaSolidChalkboardTeacher() icons.IsIcon    { return createIconSvg("solid/chalkboard-teacher") }
-func FaSolidChalkboard() icons.IsIcon           { return createIconSvg("solid/chalkboard") }
-func FaSolidChargingStation() icons.IsIcon      { return createIconSvg("solid/charging-station") }
-func FaSolidChartArea() icons.IsIcon            { return createIconSvg("solid/chart-area") }
-func FaSolidChartBar() icons.IsIcon             { return createIconSvg("solid/chart-bar") }
-func FaSolidChartLine() icons.IsIcon            { return createIconSvg("solid/chart-line") }
-func FaSolidChartPie() icons.IsIcon             { return createIconSvg("solid/chart-pie") }
-func FaSolidCheckCircle() icons.IsIcon          { return createIconSvg("solid/check-circle") }
-func FaSolidCheckDouble() icons.IsIcon          { return createIconSvg("solid/check-double") }
-func FaSolidCheckSquare() icons.IsIcon          { return createIconSvg("solid/check-square") }
-func FaSolidCheck() icons.IsIcon                { return createIconSvg("solid/check") }
-func FaSolidCheese() icons.IsIcon               { return createIconSvg("solid/cheese") }
-func FaSolidChessBishop() icons.IsIcon          { return createIconSvg("solid/chess-bishop") }
-func FaSolidChessBoard() icons.IsIcon           { return createIconSvg("solid/chess-board") }
-func FaSolidChessKing() icons.IsIcon            { return createIconSvg("solid/chess-king") }
-func FaSolidChessKnight() icons.IsIcon          { return createIconSvg("solid/chess-knight") }
-func FaSolidChessPawn() icons.IsIcon            { return createIconSvg("solid/chess-pawn") }
-func FaSolidChessQueen() icons.IsIcon           { return createIconSvg("solid/chess-queen") }
-func FaSolidChessRook() icons.IsIcon            { return createIconSvg("solid/chess-rook") }
-func FaSolidChess() icons.IsIcon                { return createIconSvg("solid/chess") }
-func FaSolidChevronCircleDown() icons.IsIcon    { return createIconSvg("solid/chevron-circle-down") }
-func FaSolidChevronCircleLeft() icons.IsIcon    { return createIconSvg("solid/chevron-circle-left") }
-func FaSolidChevronCircleRight() icons.IsIcon   { return createIconSvg("solid/chevron-circle-right") }
-func FaSolidChevronCircleUp() icons.IsIcon      { return createIconSvg("solid/chevron-circle-up") }
-func FaSolidChevronDown() icons.IsIcon          { return createIconSvg("solid/chevron-down") }
-func FaSolidChevronLeft() icons.IsIcon          { return createIconSvg("solid/chevron-left") }
-func FaSolidChevronRight() icons.IsIcon         { return createIconSvg("solid/chevron-right") }
-func FaSolidChevronUp() icons.IsIcon            { return createIconSvg("solid/chevron-up") }
-func FaSolidChild() icons.IsIcon                { return createIconSvg("solid/child") }
-func FaSolidChurch() icons.IsIcon               { return createIconSvg("solid/church") }
-func FaSolidCircleNotch() icons.IsIcon          { return createIconSvg("solid/circle-notch") }
-func FaSolidCircle() icons.IsIcon               { return createIconSvg("solid/circle") }
-func FaSolidCity() icons.IsIcon                 { return createIconSvg("solid/city") }
-func FaSolidClinicMedical() icons.IsIcon        { return createIconSvg("solid/clinic-medical") }
-func FaSolidClipboardCheck() icons.IsIcon       { return createIconSvg("solid/clipboard-check") }
-func FaSolidClipboardList() icons.IsIcon        { return createIconSvg("solid/clipboard-list") }
-func FaSolidClipboard() icons.IsIcon            { return createIconSvg("solid/clipboard") }
-func FaSolidClock() icons.IsIcon                { return createIconSvg("solid/clock") }
-func FaSolidClone() icons.IsIcon                { return createIconSvg("solid/clone") }
-func FaSolidClosedCaptioning() icons.IsIcon     { return createIconSvg("solid/closed-captioning") }
-func FaSolidCloudDownloadAlt() icons.IsIcon     { return createIconSvg("solid/cloud-download-alt") }
-func FaSolidCloudMeatball() icons.IsIcon        { return createIconSvg("solid/cloud-meatball") }
-func FaSolidCloudMoonRain() icons.IsIcon        { return createIconSvg("solid/cloud-moon-rain") }
-func FaSolidCloudMoon() icons.IsIcon            { return createIconSvg("solid/cloud-moon") }
-func FaSolidCloudRain() icons.IsIcon            { return createIconSvg("solid/cloud-rain") }
-func FaSolidCloudShowersHeavy() icons.IsIcon    { return createIconSvg("solid/cloud-showers-heavy") }
-func FaSolidCloudSunRain() icons.IsIcon         { return createIconSvg("solid/cloud-sun-rain") }
-func FaSolidCloudSun() icons.IsIcon             { return createIconSvg("solid/cloud-sun") }
-func FaSolidCloudUploadAlt() icons.IsIcon       { return createIconSvg("solid/cloud-upload-alt") }
-func FaSolidCloud() icons.IsIcon                { return createIconSvg("solid/cloud") }
-func FaSolidCocktail() icons.IsIcon             { return createIconSvg("solid/cocktail") }
-func FaSolidCodeBranch() icons.IsIcon           { return createIconSvg("solid/code-branch") }
-func FaSolidCode() icons.IsIcon                 { return createIconSvg("solid/code") }
-func FaSolidCoffee() icons.IsIcon               { return createIconSvg("solid/coffee") }
-func FaSolidCog() icons.IsIcon                  { return createIconSvg("solid/cog") }
-func FaSolidCogs() icons.IsIcon                 { return createIconSvg("solid/cogs") }
-func FaSolidCoins() icons.IsIcon                { return createIconSvg("solid/coins") }
-func FaSolidColumns() icons.IsIcon              { return createIconSvg("solid/columns") }
-func FaSolidCommentAlt() icons.IsIcon           { return createIconSvg("solid/comment-alt") }
-func FaSolidCommentDollar() icons.IsIcon        { return createIconSvg("solid/comment-dollar") }
-func FaSolidCommentDots() icons.IsIcon          { return createIconSvg("solid/comment-dots") }
-func FaSolidCommentMedical() icons.IsIcon       { return createIconSvg("solid/comment-medical") }
-func FaSolidCommentSlash() icons.IsIcon         { return createIconSvg("solid/comment-slash") }
-func FaSolidComment() icons.IsIcon              { return createIconSvg("solid/comment") }
-func FaSolidCommentsDollar() icons.IsIcon       { return createIconSvg("solid/comments-dollar") }
-func FaSolidComments() icons.IsIcon             { return createIconSvg("solid/comments") }
-func FaSolidCompactDisc() icons.IsIcon          { return createIconSvg("solid/compact-disc") }
-func FaSolidCompass() icons.IsIcon              { return createIconSvg("solid/compass") }
-func FaSolidCompressAlt() icons.IsIcon          { return createIconSvg("solid/compress-alt") }
-func FaSolidCompressArrowsAlt() icons.IsIcon    { return createIconSvg("solid/compress-arrows-alt") }
-func FaSolidCompress() icons.IsIcon             { return createIconSvg("solid/compress") }
-func FaSolidConciergeBell() icons.IsIcon        { return createIconSvg("solid/concierge-bell") }
-func FaSolidCookieBite() icons.IsIcon           { return createIconSvg("solid/cookie-bite") }
-func FaSolidCookie() icons.IsIcon               { return createIconSvg("solid/cookie") }
-func FaSolidCopy() icons.IsIcon                 { return createIconSvg("solid/copy") }
-func FaSolidCopyright() icons.IsIcon            { return createIconSvg("solid/copyright") }
-func FaSolidCouch() icons.IsIcon                { return createIconSvg("solid/couch") }
-func FaSolidCreditCard() icons.IsIcon           { return createIconSvg("solid/credit-card") }
-func FaSolidCropAlt() icons.IsIcon              { return createIconSvg("solid/crop-alt") }
-func FaSolidCrop() icons.IsIcon                 { return createIconSvg("solid/crop") }
-func FaSolidCross() icons.IsIcon                { return createIconSvg("solid/cross") }
-func FaSolidCrosshairs() icons.IsIcon           { return createIconSvg("solid/crosshairs") }
-func FaSolidCrow() icons.IsIcon                 { return createIconSvg("solid/crow") }
-func FaSolidCrown() icons.IsIcon                { return createIconSvg("solid/crown") }
-func FaSolidCrutch() icons.IsIcon               { return createIconSvg("solid/crutch") }
-func FaSolidCube() icons.IsIcon                 { return createIconSvg("solid/cube") }
-func FaSolidCubes() icons.IsIcon                { return createIconSvg("solid/cubes") }
-func FaSolidCut() icons.IsIcon                  { return createIconSvg("solid/cut") }
-func FaSolidDatabase() icons.IsIcon             { return createIconSvg("solid/database") }
-func FaSolidDeaf() icons.IsIcon                 { return createIconSvg("solid/deaf") }
-func FaSolidDemocrat() icons.IsIcon             { return createIconSvg("solid/democrat") }
-func FaSolidDesktop() icons.IsIcon              { return createIconSvg("solid/desktop") }
-func FaSolidDharmachakra() icons.IsIcon         { return createIconSvg("solid/dharmachakra") }
-func FaSolidDiagnoses() icons.IsIcon            { return createIconSvg("solid/diagnoses") }
-func FaSolidDiceD20() icons.IsIcon              { return createIconSvg("solid/dice-d20") }
-func FaSolidDiceD6() icons.IsIcon               { return createIconSvg("solid/dice-d6") }
-func FaSolidDiceFive() icons.IsIcon             { return createIconSvg("solid/dice-five") }
-func FaSolidDiceFour() icons.IsIcon             { return createIconSvg("solid/dice-four") }
-func FaSolidDiceOne() icons.IsIcon              { return createIconSvg("solid/dice-one") }
-func FaSolidDiceSix() icons.IsIcon              { return createIconSvg("solid/dice-six") }
-func FaSolidDiceThree() icons.IsIcon            { return createIconSvg("solid/dice-three") }
-func FaSolidDiceTwo() icons.IsIcon              { return createIconSvg("solid/dice-two") }
-func FaSolidDice() icons.IsIcon                 { return createIconSvg("solid/dice") }
-func FaSolidDigitalTachograph() icons.IsIcon    { return createIconSvg("solid/digital-tachograph") }
-func FaSolidDirections() icons.IsIcon           { return createIconSvg("solid/directions") }
-func FaSolidDisease() icons.IsIcon              { return createIconSvg("solid/disease") }
-func FaSolidDivide() icons.IsIcon               { return createIconSvg("solid/divide") }
-func FaSolidDizzy() icons.IsIcon                { return createIconSvg("solid/dizzy") }
-func FaSolidDna() icons.IsIcon                  { return createIconSvg("solid/dna") }
-func FaSolidDog() icons.IsIcon                  { return createIconSvg("solid/dog") }
-func FaSolidDollarSign() icons.IsIcon           { return createIconSvg("solid/dollar-sign") }
-func FaSolidDollyFlatbed() icons.IsIcon         { return createIconSvg("solid/dolly-flatbed") }
-func FaSolidDolly() icons.IsIcon                { return createIconSvg("solid/dolly") }
-func FaSolidDonate() icons.IsIcon               { return createIconSvg("solid/donate") }
-func FaSolidDoorClosed() icons.IsIcon           { return createIconSvg("solid/door-closed") }
-func FaSolidDoorOpen() icons.IsIcon             { return createIconSvg("solid/door-open") }
-func FaSolidDotCircle() icons.IsIcon            { return createIconSvg("solid/dot-circle") }
-func FaSolidDove() icons.IsIcon                 { return createIconSvg("solid/dove") }
-func FaSolidDownload() icons.IsIcon             { return createIconSvg("solid/download") }
-func FaSolidDraftingCompass() icons.IsIcon      { return createIconSvg("solid/drafting-compass") }
-func FaSolidDragon() icons.IsIcon               { return createIconSvg("solid/dragon") }
-func FaSolidDrawPolygon() icons.IsIcon          { return createIconSvg("solid/draw-polygon") }
-func FaSolidDrumSteelpan() icons.IsIcon         { return createIconSvg("solid/drum-steelpan") }
-func FaSolidDrum() icons.IsIcon                 { return createIconSvg("solid/drum") }
-func FaSolidDrumstickBite() icons.IsIcon        { return createIconSvg("solid/drumstick-bite") }
-func FaSolidDumbbell() icons.IsIcon             { return createIconSvg("solid/dumbbell") }
-func FaSolidDumpsterFire() icons.IsIcon         { return createIconSvg("solid/dumpster-fire") }
-func FaSolidDumpster() icons.IsIcon             { return createIconSvg("solid/dumpster") }
-func FaSolidDungeon() icons.IsIcon              { return createIconSvg("solid/dungeon") }
-func FaSolidEdit() icons.IsIcon                 { return createIconSvg("solid/edit") }
-func FaSolidEgg() icons.IsIcon                  { return createIconSvg("solid/egg") }
-func FaSolidEject() icons.IsIcon                { return createIconSvg("solid/eject") }
-func FaSolidEllipsisH() icons.IsIcon            { return createIconSvg("solid/ellipsis-h") }
-func FaSolidEllipsisV() icons.IsIcon            { return createIconSvg("solid/ellipsis-v") }
-func FaSolidEnvelopeOpenText() icons.IsIcon     { return createIconSvg("solid/envelope-open-text") }
-func FaSolidEnvelopeOpen() icons.IsIcon         { return createIconSvg("solid/envelope-open") }
-func FaSolidEnvelopeSquare() icons.IsIcon       { return createIconSvg("solid/envelope-square") }
-func FaSolidEnvelope() icons.IsIcon             { return createIconSvg("solid/envelope") }
-func FaSolidEquals() icons.IsIcon               { return createIconSvg("solid/equals") }
-func FaSolidEraser() icons.IsIcon               { return createIconSvg("solid/eraser") }
-func FaSolidEthernet() icons.IsIcon             { return createIconSvg("solid/ethernet") }
-func FaSolidEuroSign() icons.IsIcon             { return createIconSvg("solid/euro-sign") }
-func FaSolidExchangeAlt() icons.IsIcon          { return createIconSvg("solid/exchange-alt") }
-func FaSolidExclamationCircle() icons.IsIcon    { return createIconSvg("solid/exclamation-circle") }
-func FaSolidExclamationTriangle() icons.IsIcon  { return createIconSvg("solid/exclamation-triangle") }
-func FaSolidExclamation() icons.IsIcon          { return createIconSvg("solid/exclamation") }
-func FaSolidExpandAlt() icons.IsIcon            { return createIconSvg("solid/expand-alt") }
-func FaSolidExpandArrowsAlt() icons.IsIcon      { return createIconSvg("solid/expand-arrows-alt") }
-func FaSolidExpand() icons.IsIcon               { return createIconSvg("solid/expand") }
-func FaSolidExternalLinkAlt() icons.IsIcon      { return createIconSvg("solid/external-link-alt") }
+func FaSolidAsterisk() icons.IsIcon             { return newIcon(fontSolid, "asterisk") }
+func FaSolidAt() icons.IsIcon                   { return newIcon(fontSolid, "at") }
+func FaSolidAtlas() icons.IsIcon                { return newIcon(fontSolid, "atlas") }
+func FaSolidAtom() icons.IsIcon                 { return newIcon(fontSolid, "atom") }
+func FaSolidAudioDescription() icons.IsIcon     { return newIcon(fontSolid, "audio-description") }
+func FaSolidAward() icons.IsIcon                { return newIcon(fontSolid, "award") }
+func FaSolidBabyCarriage() icons.IsIcon         { return newIcon(fontSolid, "baby-carriage") }
+func FaSolidBaby() icons.IsIcon                 { return newIcon(fontSolid, "baby") }
+func FaSolidBackspace() icons.IsIcon            { return newIcon(fontSolid, "backspace") }
+func FaSolidBackward() icons.IsIcon             { return newIcon(fontSolid, "backward") }
+func FaSolidBacon() icons.IsIcon                { return newIcon(fontSolid, "bacon") }
+func FaSolidBacteria() icons.IsIcon             { return newIcon(fontSolid, "bacteria") }
+func FaSolidBacterium() icons.IsIcon            { return newIcon(fontSolid, "bacterium") }
+func FaSolidBahai() icons.IsIcon                { return newIcon(fontSolid, "bahai") }
+func FaSolidBalanceScaleLeft() icons.IsIcon     { return newIcon(fontSolid, "balance-scale-left") }
+func FaSolidBalanceScaleRight() icons.IsIcon    { return newIcon(fontSolid, "balance-scale-right") }
+func FaSolidBalanceScale() icons.IsIcon         { return newIcon(fontSolid, "balance-scale") }
+func FaSolidBan() icons.IsIcon                  { return newIcon(fontSolid, "ban") }
+func FaSolidBandAid() icons.IsIcon              { return newIcon(fontSolid, "band-aid") }
+func FaSolidBarcode() icons.IsIcon              { return newIcon(fontSolid, "barcode") }
+func FaSolidBars() icons.IsIcon                 { return newIcon(fontSolid, "bars") }
+func FaSolidBaseballBall() icons.IsIcon         { return newIcon(fontSolid, "baseball-ball") }
+func FaSolidBasketballBall() icons.IsIcon       { return newIcon(fontSolid, "basketball-ball") }
+func FaSolidBath() icons.IsIcon                 { return newIcon(fontSolid, "bath") }
+func FaSolidBatteryEmpty() icons.IsIcon         { return newIcon(fontSolid, "battery-empty") }
+func FaSolidBatteryFull() icons.IsIcon          { return newIcon(fontSolid, "battery-full") }
+func FaSolidBatteryHalf() icons.IsIcon          { return newIcon(fontSolid, "battery-half") }
+func FaSolidBatteryQuarter() icons.IsIcon       { return newIcon(fontSolid, "battery-quarter") }
+func FaSolidBatteryThreeQuarters() icons.IsIcon { return newIcon(fontSolid, "battery-three-quarters") }
+func FaSolidBed() icons.IsIcon                  { return newIcon(fontSolid, "bed") }
+func FaSolidBeer() icons.IsIcon                 { return newIcon(fontSolid, "beer") }
+func FaSolidBellSlash() icons.IsIcon            { return newIcon(fontSolid, "bell-slash") }
+func FaSolidBell() icons.IsIcon                 { return newIcon(fontSolid, "bell") }
+func FaSolidBezierCurve() icons.IsIcon          { return newIcon(fontSolid, "bezier-curve") }
+func FaSolidBible() icons.IsIcon                { return newIcon(fontSolid, "bible") }
+func FaSolidBicycle() icons.IsIcon              { return newIcon(fontSolid, "bicycle") }
+func FaSolidBiking() icons.IsIcon               { return newIcon(fontSolid, "biking") }
+func FaSolidBinoculars() icons.IsIcon           { return newIcon(fontSolid, "binoculars") }
+func FaSolidBiohazard() icons.IsIcon            { return newIcon(fontSolid, "biohazard") }
+func FaSolidBirthdayCake() icons.IsIcon         { return newIcon(fontSolid, "birthday-cake") }
+func FaSolidBlenderPhone() icons.IsIcon         { return newIcon(fontSolid, "blender-phone") }
+func FaSolidBlender() icons.IsIcon              { return newIcon(fontSolid, "blender") }
+func FaSolidBlind() icons.IsIcon                { return newIcon(fontSolid, "blind") }
+func FaSolidBlog() icons.IsIcon                 { return newIcon(fontSolid, "blog") }
+func FaSolidBold() icons.IsIcon                 { return newIcon(fontSolid, "bold") }
+func FaSolidBolt() icons.IsIcon                 { return newIcon(fontSolid, "bolt") }
+func FaSolidBomb() icons.IsIcon                 { return newIcon(fontSolid, "bomb") }
+func FaSolidBone() icons.IsIcon                 { return newIcon(fontSolid, "bone") }
+func FaSolidBong() icons.IsIcon                 { return newIcon(fontSolid, "bong") }
+func FaSolidBookDead() icons.IsIcon             { return newIcon(fontSolid, "book-dead") }
+func FaSolidBookMedical() icons.IsIcon          { return newIcon(fontSolid, "book-medical") }
+func FaSolidBookOpen() icons.IsIcon             { return newIcon(fontSolid, "book-open") }
+func FaSolidBookReader() icons.IsIcon           { return newIcon(fontSolid, "book-reader") }
+func FaSolidBook() icons.IsIcon                 { return newIcon(fontSolid, "book") }
+func FaSolidBookmark() icons.IsIcon             { return newIcon(fontSolid, "bookmark") }
+func FaSolidBorderAll() icons.IsIcon            { return newIcon(fontSolid, "border-all") }
+func FaSolidBorderNone() icons.IsIcon           { return newIcon(fontSolid, "border-none") }
+func FaSolidBorderStyle() icons.IsIcon          { return newIcon(fontSolid, "border-style") }
+func FaSolidBowlingBall() icons.IsIcon          { return newIcon(fontSolid, "bowling-ball") }
+func FaSolidBoxOpen() icons.IsIcon              { return newIcon(fontSolid, "box-open") }
+func FaSolidBoxTissue() icons.IsIcon            { return newIcon(fontSolid, "box-tissue") }
+func FaSolidBox() icons.IsIcon                  { return newIcon(fontSolid, "box") }
+func FaSolidBoxes() icons.IsIcon                { return newIcon(fontSolid, "boxes") }
+func FaSolidBraille() icons.IsIcon              { return newIcon(fontSolid, "braille") }
+func FaSolidBrain() icons.IsIcon                { return newIcon(fontSolid, "brain") }
+func FaSolidBreadSlice() icons.IsIcon           { return newIcon(fontSolid, "bread-slice") }
+func FaSolidBriefcaseMedical() icons.IsIcon     { return newIcon(fontSolid, "briefcase-medical") }
+func FaSolidBriefcase() icons.IsIcon            { return newIcon(fontSolid, "briefcase") }
+func FaSolidBroadcastTower() icons.IsIcon       { return newIcon(fontSolid, "broadcast-tower") }
+func FaSolidBroom() icons.IsIcon                { return newIcon(fontSolid, "broom") }
+func FaSolidBrush() icons.IsIcon                { return newIcon(fontSolid, "brush") }
+func FaSolidBug() icons.IsIcon                  { return newIcon(fontSolid, "bug") }
+func FaSolidBuilding() icons.IsIcon             { return newIcon(fontSolid, "building") }
+func FaSolidBullhorn() icons.IsIcon             { return newIcon(fontSolid, "bullhorn") }
+func FaSolidBullseye() icons.IsIcon             { return newIcon(fontSolid, "bullseye") }
+func FaSolidBurn() icons.IsIcon                 { return newIcon(fontSolid, "burn") }
+func FaSolidBusAlt() icons.IsIcon               { return newIcon(fontSolid, "bus-alt") }
+func FaSolidBus() icons.IsIcon                  { return newIcon(fontSolid, "bus") }
+func FaSolidBusinessTime() icons.IsIcon         { return newIcon(fontSolid, "business-time") }
+func FaSolidCalculator() icons.IsIcon           { return newIcon(fontSolid, "calculator") }
+func FaSolidCalendarAlt() icons.IsIcon          { return newIcon(fontSolid, "calendar-alt") }
+func FaSolidCalendarCheck() icons.IsIcon        { return newIcon(fontSolid, "calendar-check") }
+func FaSolidCalendarDay() icons.IsIcon          { return newIcon(fontSolid, "calendar-day") }
+func FaSolidCalendarMinus() icons.IsIcon        { return newIcon(fontSolid, "calendar-minus") }
+func FaSolidCalendarPlus() icons.IsIcon         { return newIcon(fontSolid, "calendar-plus") }
+func FaSolidCalendarTimes() icons.IsIcon        { return newIcon(fontSolid, "calendar-times") }
+func FaSolidCalendarWeek() icons.IsIcon         { return newIcon(fontSolid, "calendar-week") }
+func FaSolidCalendar() icons.IsIcon             { return newIcon(fontSolid, "calendar") }
+func FaSolidCameraRetro() icons.IsIcon          { return newIcon(fontSolid, "camera-retro") }
+func FaSolidCamera() icons.IsIcon               { return newIcon(fontSolid, "camera") }
+func FaSolidCampground() icons.IsIcon           { return newIcon(fontSolid, "campground") }
+func FaSolidCandyCane() icons.IsIcon            { return newIcon(fontSolid, "candy-cane") }
+func FaSolidCannabis() icons.IsIcon             { return newIcon(fontSolid, "cannabis") }
+func FaSolidCapsules() icons.IsIcon             { return newIcon(fontSolid, "capsules") }
+func FaSolidCarAlt() icons.IsIcon               { return newIcon(fontSolid, "car-alt") }
+func FaSolidCarBattery() icons.IsIcon           { return newIcon(fontSolid, "car-battery") }
+func FaSolidCarCrash() icons.IsIcon             { return newIcon(fontSolid, "car-crash") }
+func FaSolidCarSide() icons.IsIcon              { return newIcon(fontSolid, "car-side") }
+func FaSolidCar() icons.IsIcon                  { return newIcon(fontSolid, "car") }
+func FaSolidCaravan() icons.IsIcon              { return newIcon(fontSolid, "caravan") }
+func FaSolidCaretDown() icons.IsIcon            { return newIcon(fontSolid, "caret-down") }
+func FaSolidCaretLeft() icons.IsIcon            { return newIcon(fontSolid, "caret-left") }
+func FaSolidCaretRight() icons.IsIcon           { return newIcon(fontSolid, "caret-right") }
+func FaSolidCaretSquareDown() icons.IsIcon      { return newIcon(fontSolid, "caret-square-down") }
+func FaSolidCaretSquareLeft() icons.IsIcon      { return newIcon(fontSolid, "caret-square-left") }
+func FaSolidCaretSquareRight() icons.IsIcon     { return newIcon(fontSolid, "caret-square-right") }
+func FaSolidCaretSquareUp() icons.IsIcon        { return newIcon(fontSolid, "caret-square-up") }
+func FaSolidCaretUp() icons.IsIcon              { return newIcon(fontSolid, "caret-up") }
+func FaSolidCarrot() icons.IsIcon               { return newIcon(fontSolid, "carrot") }
+func FaSolidCartArrowDown() icons.IsIcon        { return newIcon(fontSolid, "cart-arrow-down") }
+func FaSolidCartPlus() icons.IsIcon             { return newIcon(fontSolid, "cart-plus") }
+func FaSolidCashRegister() icons.IsIcon         { return newIcon(fontSolid, "cash-register") }
+func FaSolidCat() icons.IsIcon                  { return newIcon(fontSolid, "cat") }
+func FaSolidCertificate() icons.IsIcon          { return newIcon(fontSolid, "certificate") }
+func FaSolidChair() icons.IsIcon                { return newIcon(fontSolid, "chair") }
+func FaSolidChalkboardTeacher() icons.IsIcon    { return newIcon(fontSolid, "chalkboard-teacher") }
+func FaSolidChalkboard() icons.IsIcon           { return newIcon(fontSolid, "chalkboard") }
+func FaSolidChargingStation() icons.IsIcon      { return newIcon(fontSolid, "charging-station") }
+func FaSolidChartArea() icons.IsIcon            { return newIcon(fontSolid, "chart-area") }
+func FaSolidChartBar() icons.IsIcon             { return newIcon(fontSolid, "chart-bar") }
+func FaSolidChartLine() icons.IsIcon            { return newIcon(fontSolid, "chart-line") }
+func FaSolidChartPie() icons.IsIcon             { return newIcon(fontSolid, "chart-pie") }
+func FaSolidCheckCircle() icons.IsIcon          { return newIcon(fontSolid, "check-circle") }
+func FaSolidCheckDouble() icons.IsIcon          { return newIcon(fontSolid, "check-double") }
+func FaSolidCheckSquare() icons.IsIcon          { return newIcon(fontSolid, "check-square") }
+func FaSolidCheck() icons.IsIcon                { return newIcon(fontSolid, "check") }
+func FaSolidCheese() icons.IsIcon               { return newIcon(fontSolid, "cheese") }
+func FaSolidChessBishop() icons.IsIcon          { return newIcon(fontSolid, "chess-bishop") }
+func FaSolidChessBoard() icons.IsIcon           { return newIcon(fontSolid, "chess-board") }
+func FaSolidChessKing() icons.IsIcon            { return newIcon(fontSolid, "chess-king") }
+func FaSolidChessKnight() icons.IsIcon          { return newIcon(fontSolid, "chess-knight") }
+func FaSolidChessPawn() icons.IsIcon            { return newIcon(fontSolid, "chess-pawn") }
+func FaSolidChessQueen() icons.IsIcon           { return newIcon(fontSolid, "chess-queen") }
+func FaSolidChessRook() icons.IsIcon            { return newIcon(fontSolid, "chess-rook") }
+func FaSolidChess() icons.IsIcon                { return newIcon(fontSolid, "chess") }
+func FaSolidChevronCircleDown() icons.IsIcon    { return newIcon(fontSolid, "chevron-circle-down") }
+func FaSolidChevronCircleLeft() icons.IsIcon    { return newIcon(fontSolid, "chevron-circle-left") }
+func FaSolidChevronCircleRight() icons.IsIcon   { return newIcon(fontSolid, "chevron-circle-right") }
+func FaSolidChevronCircleUp() icons.IsIcon      { return newIcon(fontSolid, "chevron-circle-up") }
+func FaSolidChevronDown() icons.IsIcon          { return newIcon(fontSolid, "chevron-down") }
+func FaSolidChevronLeft() icons.IsIcon          { return newIcon(fontSolid, "chevron-left") }
+func FaSolidChevronRight() icons.IsIcon         { return newIcon(fontSolid, "chevron-right") }
+func FaSolidChevronUp() icons.IsIcon            { return newIcon(fontSolid, "chevron-up") }
+func FaSolidChild() icons.IsIcon                { return newIcon(fontSolid, "child") }
+func FaSolidChurch() icons.IsIcon               { return newIcon(fontSolid, "church") }
+func FaSolidCircleNotch() icons.IsIcon          { return newIcon(fontSolid, "circle-notch") }
+func FaSolidCircle() icons.IsIcon               { return newIcon(fontSolid, "circle") }
+func FaSolidCity() icons.IsIcon                 { return newIcon(fontSolid, "city") }
+func FaSolidClinicMedical() icons.IsIcon        { return newIcon(fontSolid, "clinic-medical") }
+func FaSolidClipboardCheck() icons.IsIcon       { return newIcon(fontSolid, "clipboard-check") }
+func FaSolidClipboardList() icons.IsIcon        { return newIcon(fontSolid, "clipboard-list") }
+func FaSolidClipboard() icons.IsIcon            { return newIcon(fontSolid, "clipboard") }
+func FaSolidClock() icons.IsIcon                { return newIcon(fontSolid, "clock") }
+func FaSolidClone() icons.IsIcon                { return newIcon(fontSolid, "clone") }
+func FaSolidClosedCaptioning() icons.IsIcon     { return newIcon(fontSolid, "closed-captioning") }
+func FaSolidCloudDownloadAlt() icons.IsIcon     { return newIcon(fontSolid, "cloud-download-alt") }
+func FaSolidCloudMeatball() icons.IsIcon        { return newIcon(fontSolid, "cloud-meatball") }
+func FaSolidCloudMoonRain() icons.IsIcon        { return newIcon(fontSolid, "cloud-moon-rain") }
+func FaSolidCloudMoon() icons.IsIcon            { return newIcon(fontSolid, "cloud-moon") }
+func FaSolidCloudRain() icons.IsIcon            { return newIcon(fontSolid, "cloud-rain") }
+func FaSolidCloudShowersHeavy() icons.IsIcon    { return newIcon(fontSolid, "cloud-showers-heavy") }
+func FaSolidCloudSunRain() icons.IsIcon         { return newIcon(fontSolid, "cloud-sun-rain") }
+func FaSolidCloudSun() icons.IsIcon             { return newIcon(fontSolid, "cloud-sun") }
+func FaSolidCloudUploadAlt() icons.IsIcon       { return newIcon(fontSolid, "cloud-upload-alt") }
+func FaSolidCloud() icons.IsIcon                { return newIcon(fontSolid, "cloud") }
+func FaSolidCocktail() icons.IsIcon             { return newIcon(fontSolid, "cocktail") }
+func FaSolidCodeBranch() icons.IsIcon           { return newIcon(fontSolid, "code-branch") }
+func FaSolidCode() icons.IsIcon                 { return newIcon(fontSolid, "code") }
+func FaSolidCoffee() icons.IsIcon               { return newIcon(fontSolid, "coffee") }
+func FaSolidCog() icons.IsIcon                  { return newIcon(fontSolid, "cog") }
+func FaSolidCogs() icons.IsIcon                 { return newIcon(fontSolid, "cogs") }
+func FaSolidCoins() icons.IsIcon                { return newIcon(fontSolid, "coins") }
+func FaSolidColumns() icons.IsIcon              { return newIcon(fontSolid, "columns") }
+func FaSolidCommentAlt() icons.IsIcon           { return newIcon(fontSolid, "comment-alt") }
+func FaSolidCommentDollar() icons.IsIcon        { return newIcon(fontSolid, "comment-dollar") }
+func FaSolidCommentDots() icons.IsIcon          { return newIcon(fontSolid, "comment-dots") }
+func FaSolidCommentMedical() icons.IsIcon       { return newIcon(fontSolid, "comment-medical") }
+func FaSolidCommentSlash() icons.IsIcon         { return newIcon(fontSolid, "comment-slash") }
+func FaSolidComment() icons.IsIcon              { return newIcon(fontSolid, "comment") }
+func FaSolidCommentsDollar() icons.IsIcon       { return newIcon(fontSolid, "comments-dollar") }
+func FaSolidComments() icons.IsIcon             { return newIcon(fontSolid, "comments") }
+func FaSolidCompactDisc() icons.IsIcon          { return newIcon(fontSolid, "compact-disc") }
+func FaSolidCompass() icons.IsIcon              { return newIcon(fontSolid, "compass") }
+func FaSolidCompressAlt() icons.IsIcon          { return newIcon(fontSolid, "compress-alt") }
+func FaSolidCompressArrowsAlt() icons.IsIcon    { return newIcon(fontSolid, "compress-arrows-alt") }
+func FaSolidCompress() icons.IsIcon             { return newIcon(fontSolid, "compress") }
+func FaSolidConciergeBell() icons.IsIcon        { return newIcon(fontSolid, "concierge-bell") }
+func FaSolidCookieBite() icons.IsIcon           { return newIcon(fontSolid, "cookie-bite") }
+func FaSolidCookie() icons.IsIcon               { return newIcon(fontSolid, "cookie") }
+func FaSolidCopy() icons.IsIcon                 { return newIcon(fontSolid, "copy") }
+func FaSolidCopyright() icons.IsIcon            { return newIcon(fontSolid, "copyright") }
+func FaSolidCouch() icons.IsIcon                { return newIcon(fontSolid, "couch") }
+func FaSolidCreditCard() icons.IsIcon           { return newIcon(fontSolid, "credit-card") }
+func FaSolidCropAlt() icons.IsIcon              { return newIcon(fontSolid, "crop-alt") }
+func FaSolidCrop() icons.IsIcon                 { return newIcon(fontSolid, "crop") }
+func FaSolidCross() icons.IsIcon                { return newIcon(fontSolid, "cross") }
+func FaSolidCrosshairs() icons.IsIcon           { return newIcon(fontSolid, "crosshairs") }
+func FaSolidCrow() icons.IsIcon                 { return newIcon(fontSolid, "crow") }
+func FaSolidCrown() icons.IsIcon                { return newIcon(fontSolid, "crown") }
+func FaSolidCrutch() icons.IsIcon               { return newIcon(fontSolid, "crutch") }
+func FaSolidCube() icons.IsIcon                 { return newIcon(fontSolid, "cube") }
+func FaSolidCubes() icons.IsIcon                { return newIcon(fontSolid, "cubes") }
+func FaSolidCut() icons.IsIcon                  { return newIcon(fontSolid, "cut") }
+func FaSolidDatabase() icons.IsIcon             { return newIcon(fontSolid, "database") }
+func FaSolidDeaf() icons.IsIcon                 { return newIcon(fontSolid, "deaf") }
+func FaSolidDemocrat() icons.IsIcon             { return newIcon(fontSolid, "democrat") }
+func FaSolidDesktop() icons.IsIcon              { return newIcon(fontSolid, "desktop") }
+func FaSolidDharmachakra() icons.IsIcon         { return newIcon(fontSolid, "dharmachakra") }
+func FaSolidDiagnoses() icons.IsIcon            { return newIcon(fontSolid, "diagnoses") }
+func FaSolidDiceD20() icons.IsIcon              { return newIcon(fontSolid, "dice-d20") }
+func FaSolidDiceD6() icons.IsIcon               { return newIcon(fontSolid, "dice-d6") }
+func FaSolidDiceFive() icons.IsIcon             { return newIcon(fontSolid, "dice-five") }
+func FaSolidDiceFour() icons.IsIcon             { return newIcon(fontSolid, "dice-four") }
+func FaSolidDiceOne() icons.IsIcon              { return newIcon(fontSolid, "dice-one") }
+func FaSolidDiceSix() icons.IsIcon              { return newIcon(fontSolid, "dice-six") }
+func FaSolidDiceThree() icons.IsIcon            { return newIcon(fontSolid, "dice-three") }
+func FaSolidDiceTwo() icons.IsIcon              { return newIcon(fontSolid, "dice-two") }
+func FaSolidDice() icons.IsIcon                 { return newIcon(fontSolid, "dice") }
+func FaSolidDigitalTachograph() icons.IsIcon    { return newIcon(fontSolid, "digital-tachograph") }
+func FaSolidDirections() icons.IsIcon           { return newIcon(fontSolid, "directions") }
+func FaSolidDisease() icons.IsIcon              { return newIcon(fontSolid, "disease") }
+func FaSolidDivide() icons.IsIcon               { return newIcon(fontSolid, "divide") }
+func FaSolidDizzy() icons.IsIcon                { return newIcon(fontSolid, "dizzy") }
+func FaSolidDna() icons.IsIcon                  { return newIcon(fontSolid, "dna") }
+func FaSolidDog() icons.IsIcon                  { return newIcon(fontSolid, "dog") }
+func FaSolidDollarSign() icons.IsIcon           { return newIcon(fontSolid, "dollar-sign") }
+func FaSolidDollyFlatbed() icons.IsIcon         { return newIcon(fontSolid, "dolly-flatbed") }
+func FaSolidDolly() icons.IsIcon                { return newIcon(fontSolid, "dolly") }
+func FaSolidDonate() icons.IsIcon               { return newIcon(fontSolid, "donate") }
+func FaSolidDoorClosed() icons.IsIcon           { return newIcon(fontSolid, "door-closed") }
+func FaSolidDoorOpen() icons.IsIcon             { return newIcon(fontSolid, "door-open") }
+func FaSolidDotCircle() icons.IsIcon            { return newIcon(fontSolid, "dot-circle") }
+func FaSolidDove() icons.IsIcon                 { return newIcon(fontSolid, "dove") }
+func FaSolidDownload() icons.IsIcon             { return newIcon(fontSolid, "download") }
+func FaSolidDraftingCompass() icons.IsIcon      { return newIcon(fontSolid, "drafting-compass") }
+func FaSolidDragon() icons.IsIcon               { return newIcon(fontSolid, "dragon") }
+func FaSolidDrawPolygon() icons.IsIcon          { return newIcon(fontSolid, "draw-polygon") }
+func FaSolidDrumSteelpan() icons.IsIcon         { return newIcon(fontSolid, "drum-steelpan") }
+func FaSolidDrum() icons.IsIcon                 { return newIcon(fontSolid, "drum") }
+func FaSolidDrumstickBite() icons.IsIcon        { return newIcon(fontSolid, "drumstick-bite") }
+func FaSolidDumbbell() icons.IsIcon             { return newIcon(fontSolid, "dumbbell") }
+func FaSolidDumpsterFire() icons.IsIcon         { return newIcon(fontSolid, "dumpster-fire") }
+func FaSolidDumpster() icons.IsIcon             { return newIcon(fontSolid, "dumpster") }
+func FaSolidDungeon() icons.IsIcon              { return newIcon(fontSolid, "dungeon") }
+func FaSolidEdit() icons.IsIcon                 { return newIcon(fontSolid, "edit") }
+func FaSolidEgg() icons.IsIcon                  { return newIcon(fontSolid, "egg") }
+func FaSolidEject() icons.IsIcon                { return newIcon(fontSolid, "eject") }
+func FaSolidEllipsisH() icons.IsIcon            { return newIcon(fontSolid, "ellipsis-h") }
+func FaSolidEllipsisV() icons.IsIcon            { return newIcon(fontSolid, "ellipsis-v") }
+func FaSolidEnvelopeOpenText() icons.IsIcon     { return newIcon(fontSolid, "envelope-open-text") }
+func FaSolidEnvelopeOpen() icons.IsIcon         { return newIcon(fontSolid, "envelope-open") }
+func FaSolidEnvelopeSquare() icons.IsIcon       { return newIcon(fontSolid, "envelope-square") }
+func FaSolidEnvelope() icons.IsIcon             { return newIcon(fontSolid, "envelope") }
+func FaSolidEquals() icons.IsIcon               { return newIcon(fontSolid, "equals") }
+func FaSolidEraser() icons.IsIcon               { return newIcon(fontSolid, "eraser") }
+func FaSolidEthernet() icons.IsIcon             { return newIcon(fontSolid, "ethernet") }
+func FaSolidEuroSign() icons.IsIcon             { return newIcon(fontSolid, "euro-sign") }
+func FaSolidExchangeAlt() icons.IsIcon          { return newIcon(fontSolid, "exchange-alt") }
+func FaSolidExclamationCircle() icons.IsIcon    { return newIcon(fontSolid, "exclamation-circle") }
+func FaSolidExclamationTriangle() icons.IsIcon  { return newIcon(fontSolid, "exclamation-triangle") }
+func FaSolidExclamation() icons.IsIcon          { return newIcon(fontSolid, "exclamation") }
+func FaSolidExpandAlt() icons.IsIcon            { return newIcon(fontSolid, "expand-alt") }
+func FaSolidExpandArrowsAlt() icons.IsIcon      { return newIcon(fontSolid, "expand-arrows-alt") }
+func FaSolidExpand() icons.IsIcon               { return newIcon(fontSolid, "expand") }
+func FaSolidExternalLinkAlt() icons.IsIcon      { return newIcon(fontSolid, "external-link-alt") }
 func FaSolidExternalLinkSquareAlt() icons.IsIcon {
-	return createIconSvg("solid/external-link-square-alt")
+	return newIcon(fontSolid, "external-link-square-alt")
 }
-func FaSolidEyeDropper() icons.IsIcon          { return createIconSvg("solid/eye-dropper") }
-func FaSolidEyeSlash() icons.IsIcon            { return createIconSvg("solid/eye-slash") }
-func FaSolidEye() icons.IsIcon                 { return createIconSvg("solid/eye") }
-func FaSolidFan() icons.IsIcon                 { return createIconSvg("solid/fan") }
-func FaSolidFastBackward() icons.IsIcon        { return createIconSvg("solid/fast-backward") }
-func FaSolidFastForward() icons.IsIcon         { return createIconSvg("solid/fast-forward") }
-func FaSolidFaucet() icons.IsIcon              { return createIconSvg("solid/faucet") }
-func FaSolidFax() icons.IsIcon                 { return createIconSvg("solid/fax") }
-func FaSolidFeatherAlt() icons.IsIcon          { return createIconSvg("solid/feather-alt") }
-func FaSolidFeather() icons.IsIcon             { return createIconSvg("solid/feather") }
-func FaSolidFemale() icons.IsIcon              { return createIconSvg("solid/female") }
-func FaSolidFighterJet() icons.IsIcon          { return createIconSvg("solid/fighter-jet") }
-func FaSolidFileAlt() icons.IsIcon             { return createIconSvg("solid/file-alt") }
-func FaSolidFileArchive() icons.IsIcon         { return createIconSvg("solid/file-archive") }
-func FaSolidFileAudio() icons.IsIcon           { return createIconSvg("solid/file-audio") }
-func FaSolidFileCode() icons.IsIcon            { return createIconSvg("solid/file-code") }
-func FaSolidFileContract() icons.IsIcon        { return createIconSvg("solid/file-contract") }
-func FaSolidFileCsv() icons.IsIcon             { return createIconSvg("solid/file-csv") }
-func FaSolidFileDownload() icons.IsIcon        { return createIconSvg("solid/file-download") }
-func FaSolidFileExcel() icons.IsIcon           { return createIconSvg("solid/file-excel") }
-func FaSolidFileExport() icons.IsIcon          { return createIconSvg("solid/file-export") }
-func FaSolidFileImage() icons.IsIcon           { return createIconSvg("solid/file-image") }
-func FaSolidFileImport() icons.IsIcon          { return createIconSvg("solid/file-import") }
-func FaSolidFileInvoiceDollar() icons.IsIcon   { return createIconSvg("solid/file-invoice-dollar") }
-func FaSolidFileInvoice() icons.IsIcon         { return createIconSvg("solid/file-invoice") }
-func FaSolidFileMedicalAlt() icons.IsIcon      { return createIconSvg("solid/file-medical-alt") }
-func FaSolidFileMedical() icons.IsIcon         { return createIconSvg("solid/file-medical") }
-func FaSolidFilePdf() icons.IsIcon             { return createIconSvg("solid/file-pdf") }
-func FaSolidFilePowerpoint() icons.IsIcon      { return createIconSvg("solid/file-powerpoint") }
-func FaSolidFilePrescription() icons.IsIcon    { return createIconSvg("solid/file-prescription") }
-func FaSolidFileSignature() icons.IsIcon       { return createIconSvg("solid/file-signature") }
-func FaSolidFileUpload() icons.IsIcon          { return createIconSvg("solid/file-upload") }
-func FaSolidFileVideo() icons.IsIcon           { return createIconSvg("solid/file-video") }
-func FaSolidFileWord() icons.IsIcon            { return createIconSvg("solid/file-word") }
-func FaSolidFile() icons.IsIcon                { return createIconSvg("solid/file") }
-func FaSolidFillDrip() icons.IsIcon            { return createIconSvg("solid/fill-drip") }
-func FaSolidFill() icons.IsIcon                { return createIconSvg("solid/fill") }
-func FaSolidFilm() icons.IsIcon                { return createIconSvg("solid/film") }
-func FaSolidFilter() icons.IsIcon              { return createIconSvg("solid/filter") }
-func FaSolidFingerprint() icons.IsIcon         { return createIconSvg("solid/fingerprint") }
-func FaSolidFireAlt() icons.IsIcon             { return createIconSvg("solid/fire-alt") }
-func FaSolidFireExtinguisher() icons.IsIcon    { return createIconSvg("solid/fire-extinguisher") }
-func FaSolidFire() icons.IsIcon                { return createIconSvg("solid/fire") }
-func FaSolidFirstAid() icons.IsIcon            { return createIconSvg("solid/first-aid") }
-func FaSolidFish() icons.IsIcon                { return createIconSvg("solid/fish") }
-func FaSolidFistRaised() icons.IsIcon          { return createIconSvg("solid/fist-raised") }
-func FaSolidFlagCheckered() icons.IsIcon       { return createIconSvg("solid/flag-checkered") }
-func FaSolidFlagUsa() icons.IsIcon             { return createIconSvg("solid/flag-usa") }
-func FaSolidFlag() icons.IsIcon                { return createIconSvg("solid/flag") }
-func FaSolidFlask() icons.IsIcon               { return createIconSvg("solid/flask") }
-func FaSolidFlushed() icons.IsIcon             { return createIconSvg("solid/flushed") }
-func FaSolidFolderMinus() icons.IsIcon         { return createIconSvg("solid/folder-minus") }
-func FaSolidFolderOpen() icons.IsIcon          { return createIconSvg("solid/folder-open") }
-func FaSolidFolderPlus() icons.IsIcon          { return createIconSvg("solid/folder-plus") }
-func FaSolidFolder() icons.IsIcon              { return createIconSvg("solid/folder") }
-func FaSolidFontAwesomeLogoFull() icons.IsIcon { return createIconSvg("solid/font-awesome-logo-full") }
-func FaSolidFont() icons.IsIcon                { return createIconSvg("solid/font") }
-func FaSolidFootballBall() icons.IsIcon        { return createIconSvg("solid/football-ball") }
-func FaSolidForward() icons.IsIcon             { return createIconSvg("solid/forward") }
-func FaSolidFrog() icons.IsIcon                { return createIconSvg("solid/frog") }
-func FaSolidFrownOpen() icons.IsIcon           { return createIconSvg("solid/frown-open") }
-func FaSolidFrown() icons.IsIcon               { return createIconSvg("solid/frown") }
-func FaSolidFunnelDollar() icons.IsIcon        { return createIconSvg("solid/funnel-dollar") }
-func FaSolidFutbol() icons.IsIcon              { return createIconSvg("solid/futbol") }
-func FaSolidGamepad() icons.IsIcon             { return createIconSvg("solid/gamepad") }
-func FaSolidGasPump() icons.IsIcon             { return createIconSvg("solid/gas-pump") }
-func FaSolidGavel() icons.IsIcon               { return createIconSvg("solid/gavel") }
-func FaSolidGem() icons.IsIcon                 { return createIconSvg("solid/gem") }
-func FaSolidGenderless() icons.IsIcon          { return createIconSvg("solid/genderless") }
-func FaSolidGhost() icons.IsIcon               { return createIconSvg("solid/ghost") }
-func FaSolidGift() icons.IsIcon                { return createIconSvg("solid/gift") }
-func FaSolidGifts() icons.IsIcon               { return createIconSvg("solid/gifts") }
-func FaSolidGlassCheers() icons.IsIcon         { return createIconSvg("solid/glass-cheers") }
-func FaSolidGlassMartiniAlt() icons.IsIcon     { return createIconSvg("solid/glass-martini-alt") }
-func FaSolidGlassMartini() icons.IsIcon        { return createIconSvg("solid/glass-martini") }
-func FaSolidGlassWhiskey() icons.IsIcon        { return createIconSvg("solid/glass-whiskey") }
-func FaSolidGlasses() icons.IsIcon             { return createIconSvg("solid/glasses") }
-func FaSolidGlobeAfrica() icons.IsIcon         { return createIconSvg("solid/globe-africa") }
-func FaSolidGlobeAmericas() icons.IsIcon       { return createIconSvg("solid/globe-americas") }
-func FaSolidGlobeAsia() icons.IsIcon           { return createIconSvg("solid/globe-asia") }
-func FaSolidGlobeEurope() icons.IsIcon         { return createIconSvg("solid/globe-europe") }
-func FaSolidGlobe() icons.IsIcon               { return createIconSvg("solid/globe") }
-func FaSolidGolfBall() icons.IsIcon            { return createIconSvg("solid/golf-ball") }
-func FaSolidGopuram() icons.IsIcon             { return createIconSvg("solid/gopuram") }
-func FaSolidGraduationCap() icons.IsIcon       { return createIconSvg("solid/graduation-cap") }
-func FaSolidGreaterThanEqual() icons.IsIcon    { return createIconSvg("solid/greater-than-equal") }
-func FaSolidGreaterThan() icons.IsIcon         { return createIconSvg("solid/greater-than") }
-func FaSolidGrimace() icons.IsIcon             { return createIconSvg("solid/grimace") }
-func FaSolidGrinAlt() icons.IsIcon             { return createIconSvg("solid/grin-alt") }
-func FaSolidGrinBeamSweat() icons.IsIcon       { return createIconSvg("solid/grin-beam-sweat") }
-func FaSolidGrinBeam() icons.IsIcon            { return createIconSvg("solid/grin-beam") }
-func FaSolidGrinHearts() icons.IsIcon          { return createIconSvg("solid/grin-hearts") }
-func FaSolidGrinSquintTears() icons.IsIcon     { return createIconSvg("solid/grin-squint-tears") }
-func FaSolidGrinSquint() icons.IsIcon          { return createIconSvg("solid/grin-squint") }
-func FaSolidGrinStars() icons.IsIcon           { return createIconSvg("solid/grin-stars") }
-func FaSolidGrinTears() icons.IsIcon           { return createIconSvg("solid/grin-tears") }
-func FaSolidGrinTongueSquint() icons.IsIcon    { return createIconSvg("solid/grin-tongue-squint") }
-func FaSolidGrinTongueWink() icons.IsIcon      { return createIconSvg("solid/grin-tongue-wink") }
-func FaSolidGrinTongue() icons.IsIcon          { return createIconSvg("solid/grin-tongue") }
-func FaSolidGrinWink() icons.IsIcon            { return createIconSvg("solid/grin-wink") }
-func FaSolidGrin() icons.IsIcon                { return createIconSvg("solid/grin") }
-func FaSolidGripHorizontal() icons.IsIcon      { return createIconSvg("solid/grip-horizontal") }
-func FaSolidGripLinesVertical() icons.IsIcon   { return createIconSvg("solid/grip-lines-vertical") }
-func FaSolidGripLines() icons.IsIcon           { return createIconSvg("solid/grip-lines") }
-func FaSolidGripVertical() icons.IsIcon        { return createIconSvg("solid/grip-vertical") }
-func FaSolidGuitar() icons.IsIcon              { return createIconSvg("solid/guitar") }
-func FaSolidHSquare() icons.IsIcon             { return createIconSvg("solid/h-square") }
-func FaSolidHamburger() icons.IsIcon           { return createIconSvg("solid/hamburger") }
-func FaSolidHammer() icons.IsIcon              { return createIconSvg("solid/hammer") }
-func FaSolidHamsa() icons.IsIcon               { return createIconSvg("solid/hamsa") }
-func FaSolidHandHoldingHeart() icons.IsIcon    { return createIconSvg("solid/hand-holding-heart") }
-func FaSolidHandHoldingMedical() icons.IsIcon  { return createIconSvg("solid/hand-holding-medical") }
-func FaSolidHandHoldingUsd() icons.IsIcon      { return createIconSvg("solid/hand-holding-usd") }
-func FaSolidHandHoldingWater() icons.IsIcon    { return createIconSvg("solid/hand-holding-water") }
-func FaSolidHandHolding() icons.IsIcon         { return createIconSvg("solid/hand-holding") }
-func FaSolidHandLizard() icons.IsIcon          { return createIconSvg("solid/hand-lizard") }
-func FaSolidHandMiddleFinger() icons.IsIcon    { return createIconSvg("solid/hand-middle-finger") }
-func FaSolidHandPaper() icons.IsIcon           { return createIconSvg("solid/hand-paper") }
-func FaSolidHandPeace() icons.IsIcon           { return createIconSvg("solid/hand-peace") }
-func FaSolidHandPointDown() icons.IsIcon       { return createIconSvg("solid/hand-point-down") }
-func FaSolidHandPointLeft() icons.IsIcon       { return createIconSvg("solid/hand-point-left") }
-func FaSolidHandPointRight() icons.IsIcon      { return createIconSvg("solid/hand-point-right") }
-func FaSolidHandPointUp() icons.IsIcon         { return createIconSvg("solid/hand-point-up") }
-func FaSolidHandPointer() icons.IsIcon         { return createIconSvg("solid/hand-pointer") }
-func FaSolidHandRock() icons.IsIcon            { return createIconSvg("solid/hand-rock") }
-func FaSolidHandScissors() icons.IsIcon        { return createIconSvg("solid/hand-scissors") }
-func FaSolidHandSparkles() icons.IsIcon        { return createIconSvg("solid/hand-sparkles") }
-func FaSolidHandSpock() icons.IsIcon           { return createIconSvg("solid/hand-spock") }
-func FaSolidHandsHelping() icons.IsIcon        { return createIconSvg("solid/hands-helping") }
-func FaSolidHandsWash() icons.IsIcon           { return createIconSvg("solid/hands-wash") }
-func FaSolidHands() icons.IsIcon               { return createIconSvg("solid/hands") }
-func FaSolidHandshakeAltSlash() icons.IsIcon   { return createIconSvg("solid/handshake-alt-slash") }
-func FaSolidHandshakeSlash() icons.IsIcon      { return createIconSvg("solid/handshake-slash") }
-func FaSolidHandshake() icons.IsIcon           { return createIconSvg("solid/handshake") }
-func FaSolidHanukiah() icons.IsIcon            { return createIconSvg("solid/hanukiah") }
-func FaSolidHardHat() icons.IsIcon             { return createIconSvg("solid/hard-hat") }
-func FaSolidHashtag() icons.IsIcon             { return createIconSvg("solid/hashtag") }
-func FaSolidHatCowboySide() icons.IsIcon       { return createIconSvg("solid/hat-cowboy-side") }
-func FaSolidHatCowboy() icons.IsIcon           { return createIconSvg("solid/hat-cowboy") }
-func FaSolidHatWizard() icons.IsIcon           { return createIconSvg("solid/hat-wizard") }
-func FaSolidHdd() icons.IsIcon                 { return createIconSvg("solid/hdd") }
-func FaSolidHeadSideCoughSlash() icons.IsIcon  { return createIconSvg("solid/head-side-cough-slash") }
-func FaSolidHeadSideCough() icons.IsIcon       { return createIconSvg("solid/head-side-cough") }
-func FaSolidHeadSideMask() icons.IsIcon        { return createIconSvg("solid/head-side-mask") }
-func FaSolidHeadSideVirus() icons.IsIcon       { return createIconSvg("solid/head-side-virus") }
-func FaSolidHeading() icons.IsIcon             { return createIconSvg("solid/heading") }
-func FaSolidHeadphonesAlt() icons.IsIcon       { return createIconSvg("solid/headphones-alt") }
-func FaSolidHeadphones() icons.IsIcon          { return createIconSvg("solid/headphones") }
-func FaSolidHeadset() icons.IsIcon             { return createIconSvg("solid/headset") }
-func FaSolidHeartBroken() icons.IsIcon         { return createIconSvg("solid/heart-broken") }
-func FaSolidHeart() icons.IsIcon               { return createIconSvg("solid/heart") }
-func FaSolidHeartbeat() icons.IsIcon           { return createIconSvg("solid/heartbeat") }
-func FaSolidHelicopter() icons.IsIcon          { return createIconSvg("solid/helicopter") }
-func FaSolidHighlighter() icons.IsIcon         { return createIconSvg("solid/highlighter") }
-func FaSolidHiking() icons.IsIcon              { return createIconSvg("solid/hiking") }
-func FaSolidHippo() icons.IsIcon               { return createIconSvg("solid/hippo") }
-func FaSolidHistory() icons.IsIcon             { return createIconSvg("solid/history") }
-func FaSolidHockeyPuck() icons.IsIcon          { return createIconSvg("solid/hockey-puck") }
-func FaSolidHollyBerry() icons.IsIcon          { return createIconSvg("solid/holly-berry") }
-func FaSolidHome() icons.IsIcon                { return createIconSvg("solid/home") }
-func FaSolidHorseHead() icons.IsIcon           { return createIconSvg("solid/horse-head") }
-func FaSolidHorse() icons.IsIcon               { return createIconSvg("solid/horse") }
-func FaSolidHospitalAlt() icons.IsIcon         { return createIconSvg("solid/hospital-alt") }
-func FaSolidHospitalSymbol() icons.IsIcon      { return createIconSvg("solid/hospital-symbol") }
-func FaSolidHospitalUser() icons.IsIcon        { return createIconSvg("solid/hospital-user") }
-func FaSolidHospital() icons.IsIcon            { return createIconSvg("solid/hospital") }
-func FaSolidHotTub() icons.IsIcon              { return createIconSvg("solid/hot-tub") }
-func FaSolidHotdog() icons.IsIcon              { return createIconSvg("solid/hotdog") }
-func FaSolidHotel() icons.IsIcon               { return createIconSvg("solid/hotel") }
-func FaSolidHourglassEnd() icons.IsIcon        { return createIconSvg("solid/hourglass-end") }
-func FaSolidHourglassHalf() icons.IsIcon       { return createIconSvg("solid/hourglass-half") }
-func FaSolidHourglassStart() icons.IsIcon      { return createIconSvg("solid/hourglass-start") }
-func FaSolidHourglass() icons.IsIcon           { return createIconSvg("solid/hourglass") }
-func FaSolidHouseDamage() icons.IsIcon         { return createIconSvg("solid/house-damage") }
-func FaSolidHouseUser() icons.IsIcon           { return createIconSvg("solid/house-user") }
-func FaSolidHryvnia() icons.IsIcon             { return createIconSvg("solid/hryvnia") }
-func FaSolidICursor() icons.IsIcon             { return createIconSvg("solid/i-cursor") }
-func FaSolidIceCream() icons.IsIcon            { return createIconSvg("solid/ice-cream") }
-func FaSolidIcicles() icons.IsIcon             { return createIconSvg("solid/icicles") }
-func FaSolidIcons() icons.IsIcon               { return createIconSvg("solid/icons") }
-func FaSolidIdBadge() icons.IsIcon             { return createIconSvg("solid/id-badge") }
-func FaSolidIdCardAlt() icons.IsIcon           { return createIconSvg("solid/id-card-alt") }
-func FaSolidIdCard() icons.IsIcon              { return createIconSvg("solid/id-card") }
-func FaSolidIgloo() icons.IsIcon               { return createIconSvg("solid/igloo") }
-func FaSolidImage() icons.IsIcon               { return createIconSvg("solid/image") }
-func FaSolidImages() icons.IsIcon              { return createIconSvg("solid/images") }
-func FaSolidInbox() icons.IsIcon               { return createIconSvg("solid/inbox") }
-func FaSolidIndent() icons.IsIcon              { return createIconSvg("solid/indent") }
-func FaSolidIndustry() icons.IsIcon            { return createIconSvg("solid/industry") }
-func FaSolidInfinity() icons.IsIcon            { return createIconSvg("solid/infinity") }
-func FaSolidInfoCircle() icons.IsIcon          { return createIconSvg("solid/info-circle") }
-func FaSolidInfo() icons.IsIcon                { return createIconSvg("solid/info") }
-func FaSolidItalic() icons.IsIcon              { return createIconSvg("solid/italic") }
-func FaSolidJedi() icons.IsIcon                { return createIconSvg("solid/jedi") }
-func FaSolidJoint() icons.IsIcon               { return createIconSvg("solid/joint") }
-func FaSolidJournalWhills() icons.IsIcon       { return createIconSvg("solid/journal-whills") }
-func FaSolidKaaba() icons.IsIcon               { return createIconSvg("solid/kaaba") }
-func FaSolidKey() icons.IsIcon                 { return createIconSvg("solid/key") }
-func FaSolidKeyboard() icons.IsIcon            { return createIconSvg("solid/keyboard") }
-func FaSolidKhanda() icons.IsIcon              { return createIconSvg("solid/khanda") }
-func FaSolidKissBeam() icons.IsIcon            { return createIconSvg("solid/kiss-beam") }
-func FaSolidKissWinkHeart() icons.IsIcon       { return createIconSvg("solid/kiss-wink-heart") }
-func FaSolidKiss() icons.IsIcon                { return createIconSvg("solid/kiss") }
-func FaSolidKiwiBird() icons.IsIcon            { return createIconSvg("solid/kiwi-bird") }
-func FaSolidLandmark() icons.IsIcon            { return createIconSvg("solid/landmark") }
-func FaSolidLanguage() icons.IsIcon            { return createIconSvg("solid/language") }
-func FaSolidLaptopCode() icons.IsIcon          { return createIconSvg("solid/laptop-code") }
-func FaSolidLaptopHouse() icons.IsIcon         { return createIconSvg("solid/laptop-house") }
-func FaSolidLaptopMedical() icons.IsIcon       { return createIconSvg("solid/laptop-medical") }
-func FaSolidLaptop() icons.IsIcon              { return createIconSvg("solid/laptop") }
-func FaSolidLaughBeam() icons.IsIcon           { return createIconSvg("solid/laugh-beam") }
-func FaSolidLaughSquint() icons.IsIcon         { return createIconSvg("solid/laugh-squint") }
-func FaSolidLaughWink() icons.IsIcon           { return createIconSvg("solid/laugh-wink") }
-func FaSolidLaugh() icons.IsIcon               { return createIconSvg("solid/laugh") }
-func FaSolidLayerGroup() icons.IsIcon          { return createIconSvg("solid/layer-group") }
-func FaSolidLeaf() icons.IsIcon                { return createIconSvg("solid/leaf") }
-func FaSolidLemon() icons.IsIcon               { return createIconSvg("solid/lemon") }
-func FaSolidLessThanEqual() icons.IsIcon       { return createIconSvg("solid/less-than-equal") }
-func FaSolidLessThan() icons.IsIcon            { return createIconSvg("solid/less-than") }
-func FaSolidLevelDownAlt() icons.IsIcon        { return createIconSvg("solid/level-down-alt") }
-func FaSolidLevelUpAlt() icons.IsIcon          { return createIconSvg("solid/level-up-alt") }
-func FaSolidLifeRing() icons.IsIcon            { return createIconSvg("solid/life-ring") }
-func FaSolidLightbulb() icons.IsIcon           { return createIconSvg("solid/lightbulb") }
-func FaSolidLink() icons.IsIcon                { return createIconSvg("solid/link") }
-func FaSolidLiraSign() icons.IsIcon            { return createIconSvg("solid/lira-sign") }
-func FaSolidListAlt() icons.IsIcon             { return createIconSvg("solid/list-alt") }
-func FaSolidListOl() icons.IsIcon              { return createIconSvg("solid/list-ol") }
-func FaSolidListUl() icons.IsIcon              { return createIconSvg("solid/list-ul") }
-func FaSolidList() icons.IsIcon                { return createIconSvg("solid/list") }
-func FaSolidLocationArrow() icons.IsIcon       { return createIconSvg("solid/location-arrow") }
-func FaSolidLockOpen() icons.IsIcon            { return createIconSvg("solid/lock-open") }
-func FaSolidLock() icons.IsIcon                { return createIconSvg("solid/lock") }
-func FaSolidLongArrowAltDown() icons.IsIcon    { return createIconSvg("solid/long-arrow-alt-down") }
-func FaSolidLongArrowAltLeft() icons.IsIcon    { return createIconSvg("solid/long-arrow-alt-left") }
-func FaSolidLongArrowAltRight() icons.IsIcon   { return createIconSvg("solid/long-arrow-alt-right") }
-func FaSolidLongArrowAltUp() icons.IsIcon      { return createIconSvg("solid/long-arrow-alt-up") }
-func FaSolidLowVision() icons.IsIcon           { return createIconSvg("solid/low-vision") }
-func FaSolidLuggageCart() icons.IsIcon         { return createIconSvg("solid/luggage-cart") }
-func FaSolidLungsVirus() icons.IsIcon          { return createIconSvg("solid/lungs-virus") }
-func FaSolidLungs() icons.IsIcon               { return createIconSvg("solid/lungs") }
-func FaSolidMagic() icons.IsIcon               { return createIconSvg("solid/magic") }
-func FaSolidMagnet() icons.IsIcon              { return createIconSvg("solid/magnet") }
-func FaSolidMailBulk() icons.IsIcon            { return createIconSvg("solid/mail-bulk") }
-func FaSolidMale() icons.IsIcon                { return createIconSvg("solid/male") }
-func FaSolidMapMarkedAlt() icons.IsIcon        { return createIconSvg("solid/map-marked-alt") }
-func FaSolidMapMarked() icons.IsIcon           { return createIconSvg("solid/map-marked") }
-func FaSolidMapMarkerAlt() icons.IsIcon        { return createIconSvg("solid/map-marker-alt") }
-func FaSolidMapMarker() icons.IsIcon           { return createIconSvg("solid/map-marker") }
-func FaSolidMapPin() icons.IsIcon              { return createIconSvg("solid/map-pin") }
-func FaSolidMapSigns() icons.IsIcon            { return createIconSvg("solid/map-signs") }
-func FaSolidMap() icons.IsIcon                 { return createIconSvg("solid/map") }
-func FaSolidMarker() icons.IsIcon              { return createIconSvg("solid/marker") }
-func FaSolidMarsDouble() icons.IsIcon          { return createIconSvg("solid/mars-double") }
-func FaSolidMarsStrokeH() icons.IsIcon         { return createIconSvg("solid/mars-stroke-h") }
-func FaSolidMarsStrokeV() icons.IsIcon         { return createIconSvg("solid/mars-stroke-v") }
-func FaSolidMarsStroke() icons.IsIcon          { return createIconSvg("solid/mars-stroke") }
-func FaSolidMars() icons.IsIcon                { return createIconSvg("solid/mars") }
-func FaSolidMask() icons.IsIcon                { return createIconSvg("solid/mask") }
-func FaSolidMedal() icons.IsIcon               { return createIconSvg("solid/medal") }
-func FaSolidMedkit() icons.IsIcon              { return createIconSvg("solid/medkit") }
-func FaSolidMehBlank() icons.IsIcon            { return createIconSvg("solid/meh-blank") }
-func FaSolidMehRollingEyes() icons.IsIcon      { return createIconSvg("solid/meh-rolling-eyes") }
-func FaSolidMeh() icons.IsIcon                 { return createIconSvg("solid/meh") }
-func FaSolidMemory() icons.IsIcon              { return createIconSvg("solid/memory") }
-func FaSolidMenorah() icons.IsIcon             { return createIconSvg("solid/menorah") }
-func FaSolidMercury() icons.IsIcon             { return createIconSvg("solid/mercury") }
-func FaSolidMeteor() icons.IsIcon              { return createIconSvg("solid/meteor") }
-func FaSolidMicrochip() icons.IsIcon           { return createIconSvg("solid/microchip") }
-func FaSolidMicrophoneAltSlash() icons.IsIcon  { return createIconSvg("solid/microphone-alt-slash") }
-func FaSolidMicrophoneAlt() icons.IsIcon       { return createIconSvg("solid/microphone-alt") }
-func FaSolidMicrophoneSlash() icons.IsIcon     { return createIconSvg("solid/microphone-slash") }
-func FaSolidMicrophone() icons.IsIcon          { return createIconSvg("solid/microphone") }
-func FaSolidMicroscope() icons.IsIcon          { return createIconSvg("solid/microscope") }
-func FaSolidMinusCircle() icons.IsIcon         { return createIconSvg("solid/minus-circle") }
-func FaSolidMinusSquare() icons.IsIcon         { return createIconSvg("solid/minus-square") }
-func FaSolidMinus() icons.IsIcon               { return createIconSvg("solid/minus") }
-func FaSolidMitten() icons.IsIcon              { return createIconSvg("solid/mitten") }
-func FaSolidMobileAlt() icons.IsIcon           { return createIconSvg("solid/mobile-alt") }
-func FaSolidMobile() icons.IsIcon              { return createIconSvg("solid/mobile") }
-func FaSolidMoneyBillAlt() icons.IsIcon        { return createIconSvg("solid/money-bill-alt") }
-func FaSolidMoneyBillWaveAlt() icons.IsIcon    { return createIconSvg("solid/money-bill-wave-alt") }
-func FaSolidMoneyBillWave() icons.IsIcon       { return createIconSvg("solid/money-bill-wave") }
-func FaSolidMoneyBill() icons.IsIcon           { return createIconSvg("solid/money-bill") }
-func FaSolidMoneyCheckAlt() icons.IsIcon       { return createIconSvg("solid/money-check-alt") }
-func FaSolidMoneyCheck() icons.IsIcon          { return createIconSvg("solid/money-check") }
-func FaSolidMonument() icons.IsIcon            { return createIconSvg("solid/monument") }
-func FaSolidMoon() icons.IsIcon                { return createIconSvg("solid/moon") }
-func FaSolidMortarPestle() icons.IsIcon        { return createIconSvg("solid/mortar-pestle") }
-func FaSolidMosque() icons.IsIcon              { return createIconSvg("solid/mosque") }
-func FaSolidMotorcycle() icons.IsIcon          { return createIconSvg("solid/motorcycle") }
-func FaSolidMountain() icons.IsIcon            { return createIconSvg("solid/mountain") }
-func FaSolidMousePointer() icons.IsIcon        { return createIconSvg("solid/mouse-pointer") }
-func FaSolidMouse() icons.IsIcon               { return createIconSvg("solid/mouse") }
-func FaSolidMugHot() icons.IsIcon              { return createIconSvg("solid/mug-hot") }
-func FaSolidMusic() icons.IsIcon               { return createIconSvg("solid/music") }
-func FaSolidNetworkWired() icons.IsIcon        { return createIconSvg("solid/network-wired") }
-func FaSolidNeuter() icons.IsIcon              { return createIconSvg("solid/neuter") }
-func FaSolidNewspaper() icons.IsIcon           { return createIconSvg("solid/newspaper") }
-func FaSolidNotEqual() icons.IsIcon            { return createIconSvg("solid/not-equal") }
-func FaSolidNotesMedical() icons.IsIcon        { return createIconSvg("solid/notes-medical") }
-func FaSolidObjectGroup() icons.IsIcon         { return createIconSvg("solid/object-group") }
-func FaSolidObjectUngroup() icons.IsIcon       { return createIconSvg("solid/object-ungroup") }
-func FaSolidOilCan() icons.IsIcon              { return createIconSvg("solid/oil-can") }
-func FaSolidOm() icons.IsIcon                  { return createIconSvg("solid/om") }
-func FaSolidOtter() icons.IsIcon               { return createIconSvg("solid/otter") }
-func FaSolidOutdent() icons.IsIcon             { return createIconSvg("solid/outdent") }
-func FaSolidPager() icons.IsIcon               { return createIconSvg("solid/pager") }
-func FaSolidPaintBrush() icons.IsIcon          { return createIconSvg("solid/paint-brush") }
-func FaSolidPaintRoller() icons.IsIcon         { return createIconSvg("solid/paint-roller") }
-func FaSolidPalette() icons.IsIcon             { return createIconSvg("solid/palette") }
-func FaSolidPallet() icons.IsIcon              { return createIconSvg("solid/pallet") }
-func FaSolidPaperPlane() icons.IsIcon          { return createIconSvg("solid/paper-plane") }
-func FaSolidPaperclip() icons.IsIcon           { return createIconSvg("solid/paperclip") }
-func FaSolidParachuteBox() icons.IsIcon        { return createIconSvg("solid/parachute-box") }
-func FaSolidParagraph() icons.IsIcon           { return createIconSvg("solid/paragraph") }
-func FaSolidParking() icons.IsIcon             { return createIconSvg("solid/parking") }
-func FaSolidPassport() icons.IsIcon            { return createIconSvg("solid/passport") }
-func FaSolidPastafarianism() icons.IsIcon      { return createIconSvg("solid/pastafarianism") }
-func FaSolidPaste() icons.IsIcon               { return createIconSvg("solid/paste") }
-func FaSolidPauseCircle() icons.IsIcon         { return createIconSvg("solid/pause-circle") }
-func FaSolidPause() icons.IsIcon               { return createIconSvg("solid/pause") }
-func FaSolidPaw() icons.IsIcon                 { return createIconSvg("solid/paw") }
-func FaSolidPeace() icons.IsIcon               { return createIconSvg("solid/peace") }
-func FaSolidPenAlt() icons.IsIcon              { return createIconSvg("solid/pen-alt") }
-func FaSolidPenFancy() icons.IsIcon            { return createIconSvg("solid/pen-fancy") }
-func FaSolidPenNib() icons.IsIcon              { return createIconSvg("solid/pen-nib") }
-func FaSolidPenSquare() icons.IsIcon           { return createIconSvg("solid/pen-square") }
-func FaSolidPen() icons.IsIcon                 { return createIconSvg("solid/pen") }
-func FaSolidPencilAlt() icons.IsIcon           { return createIconSvg("solid/pencil-alt") }
-func FaSolidPencilRuler() icons.IsIcon         { return createIconSvg("solid/pencil-ruler") }
-func FaSolidPeopleArrows() icons.IsIcon        { return createIconSvg("solid/people-arrows") }
-func FaSolidPeopleCarry() icons.IsIcon         { return createIconSvg("solid/people-carry") }
-func FaSolidPepperHot() icons.IsIcon           { return createIconSvg("solid/pepper-hot") }
-func FaSolidPercent() icons.IsIcon             { return createIconSvg("solid/percent") }
-func FaSolidPercentage() icons.IsIcon          { return createIconSvg("solid/percentage") }
-func FaSolidPersonBooth() icons.IsIcon         { return createIconSvg("solid/person-booth") }
-func FaSolidPhoneAlt() icons.IsIcon            { return createIconSvg("solid/phone-alt") }
-func FaSolidPhoneSlash() icons.IsIcon          { return createIconSvg("solid/phone-slash") }
-func FaSolidPhoneSquareAlt() icons.IsIcon      { return createIconSvg("solid/phone-square-alt") }
-func FaSolidPhoneSquare() icons.IsIcon         { return createIconSvg("solid/phone-square") }
-func FaSolidPhoneVolume() icons.IsIcon         { return createIconSvg("solid/phone-volume") }
-func FaSolidPhone() icons.IsIcon               { return createIconSvg("solid/phone") }
-func FaSolidPhotoVideo() icons.IsIcon          { return createIconSvg("solid/photo-video") }
-func FaSolidPiggyBank() icons.IsIcon           { return createIconSvg("solid/piggy-bank") }
-func FaSolidPills() icons.IsIcon               { return createIconSvg("solid/pills") }
-func FaSolidPizzaSlice() icons.IsIcon          { return createIconSvg("solid/pizza-slice") }
-func FaSolidPlaceOfWorship() icons.IsIcon      { return createIconSvg("solid/place-of-worship") }
-func FaSolidPlaneArrival() icons.IsIcon        { return createIconSvg("solid/plane-arrival") }
-func FaSolidPlaneDeparture() icons.IsIcon      { return createIconSvg("solid/plane-departure") }
-func FaSolidPlaneSlash() icons.IsIcon          { return createIconSvg("solid/plane-slash") }
-func FaSolidPlane() icons.IsIcon               { return createIconSvg("solid/plane") }
-func FaSolidPlayCircle() icons.IsIcon          { return createIconSvg("solid/play-circle") }
-func FaSolidPlay() icons.IsIcon                { return createIconSvg("solid/play") }
-func FaSolidPlug() icons.IsIcon                { return createIconSvg("solid/plug") }
-func FaSolidPlusCircle() icons.IsIcon          { return createIconSvg("solid/plus-circle") }
-func FaSolidPlusSquare() icons.IsIcon          { return createIconSvg("solid/plus-square") }
-func FaSolidPlus() icons.IsIcon                { return createIconSvg("solid/plus") }
-func FaSolidPodcast() icons.IsIcon             { return createIconSvg("solid/podcast") }
-func FaSolidPollH() icons.IsIcon               { return createIconSvg("solid/poll-h") }
-func FaSolidPoll() icons.IsIcon                { return createIconSvg("solid/poll") }
-func FaSolidPooStorm() icons.IsIcon            { return createIconSvg("solid/poo-storm") }
-func FaSolidPoo() icons.IsIcon                 { return createIconSvg("solid/poo") }
-func FaSolidPoop() icons.IsIcon                { return createIconSvg("solid/poop") }
-func FaSolidPortrait() icons.IsIcon            { return createIconSvg("solid/portrait") }
-func FaSolidPoundSign() icons.IsIcon           { return createIconSvg("solid/pound-sign") }
-func FaSolidPowerOff() icons.IsIcon            { return createIconSvg("solid/power-off") }
-func FaSolidPray() icons.IsIcon                { return createIconSvg("solid/pray") }
-func FaSolidPrayingHands() icons.IsIcon        { return createIconSvg("solid/praying-hands") }
+func FaSolidEyeDropper() icons.IsIcon          { return newIcon(fontSolid, "eye-dropper") }
+func FaSolidEyeSlash() icons.IsIcon            { return newIcon(fontSolid, "eye-slash") }
+func FaSolidEye() icons.IsIcon                 { return newIcon(fontSolid, "eye") }
+func FaSolidFan() icons.IsIcon                 { return newIcon(fontSolid, "fan") }
+func FaSolidFastBackward() icons.IsIcon        { return newIcon(fontSolid, "fast-backward") }
+func FaSolidFastForward() icons.IsIcon         { return newIcon(fontSolid, "fast-forward") }
+func FaSolidFaucet() icons.IsIcon              { return newIcon(fontSolid, "faucet") }
+func FaSolidFax() icons.IsIcon                 { return newIcon(fontSolid, "fax") }
+func FaSolidFeatherAlt() icons.IsIcon          { return newIcon(fontSolid, "feather-alt") }
+func FaSolidFeather() icons.IsIcon             { return newIcon(fontSolid, "feather") }
+func FaSolidFemale() icons.IsIcon              { return newIcon(fontSolid, "female") }
+func FaSolidFighterJet() icons.IsIcon          { return newIcon(fontSolid, "fighter-jet") }
+func FaSolidFileAlt() icons.IsIcon             { return newIcon(fontSolid, "file-alt") }
+func FaSolidFileArchive() icons.IsIcon         { return newIcon(fontSolid, "file-archive") }
+func FaSolidFileAudio() icons.IsIcon           { return newIcon(fontSolid, "file-audio") }
+func FaSolidFileCode() icons.IsIcon            { return newIcon(fontSolid, "file-code") }
+func FaSolidFileContract() icons.IsIcon        { return newIcon(fontSolid, "file-contract") }
+func FaSolidFileCsv() icons.IsIcon             { return newIcon(fontSolid, "file-csv") }
+func FaSolidFileDownload() icons.IsIcon        { return newIcon(fontSolid, "file-download") }
+func FaSolidFileExcel() icons.IsIcon           { return newIcon(fontSolid, "file-excel") }
+func FaSolidFileExport() icons.IsIcon          { return newIcon(fontSolid, "file-export") }
+func FaSolidFileImage() icons.IsIcon           { return newIcon(fontSolid, "file-image") }
+func FaSolidFileImport() icons.IsIcon          { return newIcon(fontSolid, "file-import") }
+func FaSolidFileInvoiceDollar() icons.IsIcon   { return newIcon(fontSolid, "file-invoice-dollar") }
+func FaSolidFileInvoice() icons.IsIcon         { return newIcon(fontSolid, "file-invoice") }
+func FaSolidFileMedicalAlt() icons.IsIcon      { return newIcon(fontSolid, "file-medical-alt") }
+func FaSolidFileMedical() icons.IsIcon         { return newIcon(fontSolid, "file-medical") }
+func FaSolidFilePdf() icons.IsIcon             { return newIcon(fontSolid, "file-pdf") }
+func FaSolidFilePowerpoint() icons.IsIcon      { return newIcon(fontSolid, "file-powerpoint") }
+func FaSolidFilePrescription() icons.IsIcon    { return newIcon(fontSolid, "file-prescription") }
+func FaSolidFileSignature() icons.IsIcon       { return newIcon(fontSolid, "file-signature") }
+func FaSolidFileUpload() icons.IsIcon          { return newIcon(fontSolid, "file-upload") }
+func FaSolidFileVideo() icons.IsIcon           { return newIcon(fontSolid, "file-video") }
+func FaSolidFileWord() icons.IsIcon            { return newIcon(fontSolid, "file-word") }
+func FaSolidFile() icons.IsIcon                { return newIcon(fontSolid, "file") }
+func FaSolidFillDrip() icons.IsIcon            { return newIcon(fontSolid, "fill-drip") }
+func FaSolidFill() icons.IsIcon                { return newIcon(fontSolid, "fill") }
+func FaSolidFilm() icons.IsIcon                { return newIcon(fontSolid, "film") }
+func FaSolidFilter() icons.IsIcon              { return newIcon(fontSolid, "filter") }
+func FaSolidFingerprint() icons.IsIcon         { return newIcon(fontSolid, "fingerprint") }
+func FaSolidFireAlt() icons.IsIcon             { return newIcon(fontSolid, "fire-alt") }
+func FaSolidFireExtinguisher() icons.IsIcon    { return newIcon(fontSolid, "fire-extinguisher") }
+func FaSolidFire() icons.IsIcon                { return newIcon(fontSolid, "fire") }
+func FaSolidFirstAid() icons.IsIcon            { return newIcon(fontSolid, "first-aid") }
+func FaSolidFish() icons.IsIcon                { return newIcon(fontSolid, "fish") }
+func FaSolidFistRaised() icons.IsIcon          { return newIcon(fontSolid, "fist-raised") }
+func FaSolidFlagCheckered() icons.IsIcon       { return newIcon(fontSolid, "flag-checkered") }
+func FaSolidFlagUsa() icons.IsIcon             { return newIcon(fontSolid, "flag-usa") }
+func FaSolidFlag() icons.IsIcon                { return newIcon(fontSolid, "flag") }
+func FaSolidFlask() icons.IsIcon               { return newIcon(fontSolid, "flask") }
+func FaSolidFlushed() icons.IsIcon             { return newIcon(fontSolid, "flushed") }
+func FaSolidFolderMinus() icons.IsIcon         { return newIcon(fontSolid, "folder-minus") }
+func FaSolidFolderOpen() icons.IsIcon          { return newIcon(fontSolid, "folder-open") }
+func FaSolidFolderPlus() icons.IsIcon          { return newIcon(fontSolid, "folder-plus") }
+func FaSolidFolder() icons.IsIcon              { return newIcon(fontSolid, "folder") }
+func FaSolidFontAwesomeLogoFull() icons.IsIcon { return newIcon(fontSolid, "font-awesome-logo-full") }
+func FaSolidFont() icons.IsIcon                { return newIcon(fontSolid, "font") }
+func FaSolidFootballBall() icons.IsIcon        { return newIcon(fontSolid, "football-ball") }
+func FaSolidForward() icons.IsIcon             { return newIcon(fontSolid, "forward") }
+func FaSolidFrog() icons.IsIcon                { return newIcon(fontSolid, "frog") }
+func FaSolidFrownOpen() icons.IsIcon           { return newIcon(fontSolid, "frown-open") }
+func FaSolidFrown() icons.IsIcon               { return newIcon(fontSolid, "frown") }
+func FaSolidFunnelDollar() icons.IsIcon        { return newIcon(fontSolid, "funnel-dollar") }
+func FaSolidFutbol() icons.IsIcon              { return newIcon(fontSolid, "futbol") }
+func FaSolidGamepad() icons.IsIcon             { return newIcon(fontSolid, "gamepad") }
+func FaSolidGasPump() icons.IsIcon             { return newIcon(fontSolid, "gas-pump") }
+func FaSolidGavel() icons.IsIcon               { return newIcon(fontSolid, "gavel") }
+func FaSolidGem() icons.IsIcon                 { return newIcon(fontSolid, "gem") }
+func FaSolidGenderless() icons.IsIcon          { return newIcon(fontSolid, "genderless") }
+func FaSolidGhost() icons.IsIcon               { return newIcon(fontSolid, "ghost") }
+func FaSolidGift() icons.IsIcon                { return newIcon(fontSolid, "gift") }
+func FaSolidGifts() icons.IsIcon               { return newIcon(fontSolid, "gifts") }
+func FaSolidGlassCheers() icons.IsIcon         { return newIcon(fontSolid, "glass-cheers") }
+func FaSolidGlassMartiniAlt() icons.IsIcon     { return newIcon(fontSolid, "glass-martini-alt") }
+func FaSolidGlassMartini() icons.IsIcon        { return newIcon(fontSolid, "glass-martini") }
+func FaSolidGlassWhiskey() icons.IsIcon        { return newIcon(fontSolid, "glass-whiskey") }
+func FaSolidGlasses() icons.IsIcon             { return newIcon(fontSolid, "glasses") }
+func FaSolidGlobeAfrica() icons.IsIcon         { return newIcon(fontSolid, "globe-africa") }
+func FaSolidGlobeAmericas() icons.IsIcon       { return newIcon(fontSolid, "globe-americas") }
+func FaSolidGlobeAsia() icons.IsIcon           { return newIcon(fontSolid, "globe-asia") }
+func FaSolidGlobeEurope() icons.IsIcon         { return newIcon(fontSolid, "globe-europe") }
+func FaSolidGlobe() icons.IsIcon               { return newIcon(fontSolid, "globe") }
+func FaSolidGolfBall() icons.IsIcon            { return newIcon(fontSolid, "golf-ball") }
+func FaSolidGopuram() icons.IsIcon             { return newIcon(fontSolid, "gopuram") }
+func FaSolidGraduationCap() icons.IsIcon       { return newIcon(fontSolid, "graduation-cap") }
+func FaSolidGreaterThanEqual() icons.IsIcon    { return newIcon(fontSolid, "greater-than-equal") }
+func FaSolidGreaterThan() icons.IsIcon         { return newIcon(fontSolid, "greater-than") }
+func FaSolidGrimace() icons.IsIcon             { return newIcon(fontSolid, "grimace") }
+func FaSolidGrinAlt() icons.IsIcon             { return newIcon(fontSolid, "grin-alt") }
+func FaSolidGrinBeamSweat() icons.IsIcon       { return newIcon(fontSolid, "grin-beam-sweat") }
+func FaSolidGrinBeam() icons.IsIcon            { return newIcon(fontSolid, "grin-beam") }
+func FaSolidGrinHearts() icons.IsIcon          { return newIcon(fontSolid, "grin-hearts") }
+func FaSolidGrinSquintTears() icons.IsIcon     { return newIcon(fontSolid, "grin-squint-tears") }
+func FaSolidGrinSquint() icons.IsIcon          { return newIcon(fontSolid, "grin-squint") }
+func FaSolidGrinStars() icons.IsIcon           { return newIcon(fontSolid, "grin-stars") }
+func FaSolidGrinTears() icons.IsIcon           { return newIcon(fontSolid, "grin-tears") }
+func FaSolidGrinTongueSquint() icons.IsIcon    { return newIcon(fontSolid, "grin-tongue-squint") }
+func FaSolidGrinTongueWink() icons.IsIcon      { return newIcon(fontSolid, "grin-tongue-wink") }
+func FaSolidGrinTongue() icons.IsIcon          { return newIcon(fontSolid, "grin-tongue") }
+func FaSolidGrinWink() icons.IsIcon            { return newIcon(fontSolid, "grin-wink") }
+func FaSolidGrin() icons.IsIcon                { return newIcon(fontSolid, "grin") }
+func FaSolidGripHorizontal() icons.IsIcon      { return newIcon(fontSolid, "grip-horizontal") }
+func FaSolidGripLinesVertical() icons.IsIcon   { return newIcon(fontSolid, "grip-lines-vertical") }
+func FaSolidGripLines() icons.IsIcon           { return newIcon(fontSolid, "grip-lines") }
+func FaSolidGripVertical() icons.IsIcon        { return newIcon(fontSolid, "grip-vertical") }
+func FaSolidGuitar() icons.IsIcon              { return newIcon(fontSolid, "guitar") }
+func FaSolidHSquare() icons.IsIcon             { return newIcon(fontSolid, "h-square") }
+func FaSolidHamburger() icons.IsIcon           { return newIcon(fontSolid, "hamburger") }
+func FaSolidHammer() icons.IsIcon              { return newIcon(fontSolid, "hammer") }
+func FaSolidHamsa() icons.IsIcon               { return newIcon(fontSolid, "hamsa") }
+func FaSolidHandHoldingHeart() icons.IsIcon    { return newIcon(fontSolid, "hand-holding-heart") }
+func FaSolidHandHoldingMedical() icons.IsIcon  { return newIcon(fontSolid, "hand-holding-medical") }
+func FaSolidHandHoldingUsd() icons.IsIcon      { return newIcon(fontSolid, "hand-holding-usd") }
+func FaSolidHandHoldingWater() icons.IsIcon    { return newIcon(fontSolid, "hand-holding-water") }
+func FaSolidHandHolding() icons.IsIcon         { return newIcon(fontSolid, "hand-holding") }
+func FaSolidHandLizard() icons.IsIcon          { return newIcon(fontSolid, "hand-lizard") }
+func FaSolidHandMiddleFinger() icons.IsIcon    { return newIcon(fontSolid, "hand-middle-finger") }
+func FaSolidHandPaper() icons.IsIcon           { return newIcon(fontSolid, "hand-paper") }
+func FaSolidHandPeace() icons.IsIcon           { return newIcon(fontSolid, "hand-peace") }
+func FaSolidHandPointDown() icons.IsIcon       { return newIcon(fontSolid, "hand-point-down") }
+func FaSolidHandPointLeft() icons.IsIcon       { return newIcon(fontSolid, "hand-point-left") }
+func FaSolidHandPointRight() icons.IsIcon      { return newIcon(fontSolid, "hand-point-right") }
+func FaSolidHandPointUp() icons.IsIcon         { return newIcon(fontSolid, "hand-point-up") }
+func FaSolidHandPointer() icons.IsIcon         { return newIcon(fontSolid, "hand-pointer") }
+func FaSolidHandRock() icons.IsIcon            { return newIcon(fontSolid, "hand-rock") }
+func FaSolidHandScissors() icons.IsIcon        { return newIcon(fontSolid, "hand-scissors") }
+func FaSolidHandSparkles() icons.IsIcon        { return newIcon(fontSolid, "hand-sparkles") }
+func FaSolidHandSpock() icons.IsIcon           { return newIcon(fontSolid, "hand-spock") }
+func FaSolidHandsHelping() icons.IsIcon        { return newIcon(fontSolid, "hands-helping") }
+func FaSolidHandsWash() icons.IsIcon           { return newIcon(fontSolid, "hands-wash") }
+func FaSolidHands() icons.IsIcon               { return newIcon(fontSolid, "hands") }
+func FaSolidHandshakeAltSlash() icons.IsIcon   { return newIcon(fontSolid, "handshake-alt-slash") }
+func FaSolidHandshakeSlash() icons.IsIcon      { return newIcon(fontSolid, "handshake-slash") }
+func FaSolidHandshake() icons.IsIcon           { return newIcon(fontSolid, "handshake") }
+func FaSolidHanukiah() icons.IsIcon            { return newIcon(fontSolid, "hanukiah") }
+func FaSolidHardHat() icons.IsIcon             { return newIcon(fontSolid, "hard-hat") }
+func FaSolidHashtag() icons.IsIcon             { return newIcon(fontSolid, "hashtag") }
+func FaSolidHatCowboySide() icons.IsIcon       { return newIcon(fontSolid, "hat-cowboy-side") }
+func FaSolidHatCowboy() icons.IsIcon           { return newIcon(fontSolid, "hat-cowboy") }
+func FaSolidHatWizard() icons.IsIcon           { return newIcon(fontSolid, "hat-wizard") }
+func FaSolidHdd() icons.IsIcon                 { return newIcon(fontSolid, "hdd") }
+func FaSolidHeadSideCoughSlash() icons.IsIcon  { return newIcon(fontSolid, "head-side-cough-slash") }
+func FaSolidHeadSideCough() icons.IsIcon       { return newIcon(fontSolid, "head-side-cough") }
+func FaSolidHeadSideMask() icons.IsIcon        { return newIcon(fontSolid, "head-side-mask") }
+func FaSolidHeadSideVirus() icons.IsIcon       { return newIcon(fontSolid, "head-side-virus") }
+func FaSolidHeading() icons.IsIcon             { return newIcon(fontSolid, "heading") }
+func FaSolidHeadphonesAlt() icons.IsIcon       { return newIcon(fontSolid, "headphones-alt") }
+func FaSolidHeadphones() icons.IsIcon          { return newIcon(fontSolid, "headphones") }
+func FaSolidHeadset() icons.IsIcon             { return newIcon(fontSolid, "headset") }
+func FaSolidHeartBroken() icons.IsIcon         { return newIcon(fontSolid, "heart-broken") }
+func FaSolidHeart() icons.IsIcon               { return newIcon(fontSolid, "heart") }
+func FaSolidHeartbeat() icons.IsIcon           { return newIcon(fontSolid, "heartbeat") }
+func FaSolidHelicopter() icons.IsIcon          { return newIcon(fontSolid, "helicopter") }
+func FaSolidHighlighter() icons.IsIcon         { return newIcon(fontSolid, "highlighter") }
+func FaSolidHiking() icons.IsIcon              { return newIcon(fontSolid, "hiking") }
+func FaSolidHippo() icons.IsIcon               { return newIcon(fontSolid, "hippo") }
+func FaSolidHistory() icons.IsIcon             { return newIcon(fontSolid, "history") }
+func FaSolidHockeyPuck() icons.IsIcon          { return newIcon(fontSolid, "hockey-puck") }
+func FaSolidHollyBerry() icons.IsIcon          { return newIcon(fontSolid, "holly-berry") }
+func FaSolidHome() icons.IsIcon                { return newIcon(fontSolid, "home") }
+func FaSolidHorseHead() icons.IsIcon           { return newIcon(fontSolid, "horse-head") }
+func FaSolidHorse() icons.IsIcon               { return newIcon(fontSolid, "horse") }
+func FaSolidHospitalAlt() icons.IsIcon         { return newIcon(fontSolid, "hospital-alt") }
+func FaSolidHospitalSymbol() icons.IsIcon      { return newIcon(fontSolid, "hospital-symbol") }
+func FaSolidHospitalUser() icons.IsIcon        { return newIcon(fontSolid, "hospital-user") }
+func FaSolidHospital() icons.IsIcon            { return newIcon(fontSolid, "hospital") }
+func FaSolidHotTub() icons.IsIcon              { return newIcon(fontSolid, "hot-tub") }
+func FaSolidHotdog() icons.IsIcon              { return newIcon(fontSolid, "hotdog") }
+func FaSolidHotel() icons.IsIcon               { return newIcon(fontSolid, "hotel") }
+func FaSolidHourglassEnd() icons.IsIcon        { return newIcon(fontSolid, "hourglass-end") }
+func FaSolidHourglassHalf() icons.IsIcon       { return newIcon(fontSolid, "hourglass-half") }
+func FaSolidHourglassStart() icons.IsIcon      { return newIcon(fontSolid, "hourglass-start") }
+func FaSolidHourglass() icons.IsIcon           { return newIcon(fontSolid, "hourglass") }
+func FaSolidHouseDamage() icons.IsIcon         { return newIcon(fontSolid, "house-damage") }
+func FaSolidHouseUser() icons.IsIcon           { return newIcon(fontSolid, "house-user") }
+func FaSolidHryvnia() icons.IsIcon             { return newIcon(fontSolid, "hryvnia") }
+func FaSolidICursor() icons.IsIcon             { return newIcon(fontSolid, "i-cursor") }
+func FaSolidIceCream() icons.IsIcon            { return newIcon(fontSolid, "ice-cream") }
+func FaSolidIcicles() icons.IsIcon             { return newIcon(fontSolid, "icicles") }
+func FaSolidIcons() icons.IsIcon               { return newIcon(fontSolid, "icons") }
+func FaSolidIdBadge() icons.IsIcon             { return newIcon(fontSolid, "id-badge") }
+func FaSolidIdCardAlt() icons.IsIcon           { return newIcon(fontSolid, "id-card-alt") }
+func FaSolidIdCard() icons.IsIcon              { return newIcon(fontSolid, "id-card") }
+func FaSolidIgloo() icons.IsIcon               { return newIcon(fontSolid, "igloo") }
+func FaSolidImage() icons.IsIcon               { return newIcon(fontSolid, "image") }
+func FaSolidImages() icons.IsIcon              { return newIcon(fontSolid, "images") }
+func FaSolidInbox() icons.IsIcon               { return newIcon(fontSolid, "inbox") }
+func FaSolidIndent() icons.IsIcon              { return newIcon(fontSolid, "indent") }
+func FaSolidIndustry() icons.IsIcon            { return newIcon(fontSolid, "industry") }
+func FaSolidInfinity() icons.IsIcon            { return newIcon(fontSolid, "infinity") }
+func FaSolidInfoCircle() icons.IsIcon          { return newIcon(fontSolid, "info-circle") }
+func FaSolidInfo() icons.IsIcon                { return newIcon(fontSolid, "info") }
+func FaSolidItalic() icons.IsIcon              { return newIcon(fontSolid, "italic") }
+func FaSolidJedi() icons.IsIcon                { return newIcon(fontSolid, "jedi") }
+func FaSolidJoint() icons.IsIcon               { return newIcon(fontSolid, "joint") }
+func FaSolidJournalWhills() icons.IsIcon       { return newIcon(fontSolid, "journal-whills") }
+func FaSolidKaaba() icons.IsIcon               { return newIcon(fontSolid, "kaaba") }
+func FaSolidKey() icons.IsIcon                 { return newIcon(fontSolid, "key") }
+func FaSolidKeyboard() icons.IsIcon            { return newIcon(fontSolid, "keyboard") }
+func FaSolidKhanda() icons.IsIcon              { return newIcon(fontSolid, "khanda") }
+func FaSolidKissBeam() icons.IsIcon            { return newIcon(fontSolid, "kiss-beam") }
+func FaSolidKissWinkHeart() icons.IsIcon       { return newIcon(fontSolid, "kiss-wink-heart") }
+func FaSolidKiss() icons.IsIcon                { return newIcon(fontSolid, "kiss") }
+func FaSolidKiwiBird() icons.IsIcon            { return newIcon(fontSolid, "kiwi-bird") }
+func FaSolidLandmark() icons.IsIcon            { return newIcon(fontSolid, "landmark") }
+func FaSolidLanguage() icons.IsIcon            { return newIcon(fontSolid, "language") }
+func FaSolidLaptopCode() icons.IsIcon          { return newIcon(fontSolid, "laptop-code") }
+func FaSolidLaptopHouse() icons.IsIcon         { return newIcon(fontSolid, "laptop-house") }
+func FaSolidLaptopMedical() icons.IsIcon       { return newIcon(fontSolid, "laptop-medical") }
+func FaSolidLaptop() icons.IsIcon              { return newIcon(fontSolid, "laptop") }
+func FaSolidLaughBeam() icons.IsIcon           { return newIcon(fontSolid, "laugh-beam") }
+func FaSolidLaughSquint() icons.IsIcon         { return newIcon(fontSolid, "laugh-squint") }
+func FaSolidLaughWink() icons.IsIcon           { return newIcon(fontSolid, "laugh-wink") }
+func FaSolidLaugh() icons.IsIcon               { return newIcon(fontSolid, "laugh") }
+func FaSolidLayerGroup() icons.IsIcon          { return newIcon(fontSolid, "layer-group") }
+func FaSolidLeaf() icons.IsIcon                { return newIcon(fontSolid, "leaf") }
+func FaSolidLemon() icons.IsIcon               { return newIcon(fontSolid, "lemon") }
+func FaSolidLessThanEqual() icons.IsIcon       { return newIcon(fontSolid, "less-than-equal") }
+func FaSolidLessThan() icons.IsIcon            { return newIcon(fontSolid, "less-than") }
+func FaSolidLevelDownAlt() icons.IsIcon        { return newIcon(fontSolid, "level-down-alt") }
+func FaSolidLevelUpAlt() icons.IsIcon          { return newIcon(fontSolid, "level-up-alt") }
+func FaSolidLifeRing() icons.IsIcon            { return newIcon(fontSolid, "life-ring") }
+func FaSolidLightbulb() icons.IsIcon           { return newIcon(fontSolid, "lightbulb") }
+func FaSolidLink() icons.IsIcon                { return newIcon(fontSolid, "link") }
+func FaSolidLiraSign() icons.IsIcon            { return newIcon(fontSolid, "lira-sign") }
+func FaSolidListAlt() icons.IsIcon             { return newIcon(fontSolid, "list-alt") }
+func FaSolidListOl() icons.IsIcon              { return newIcon(fontSolid, "list-ol") }
+func FaSolidListUl() icons.IsIcon              { return newIcon(fontSolid, "list-ul") }
+func FaSolidList() icons.IsIcon                { return newIcon(fontSolid, "list") }
+func FaSolidLocationArrow() icons.IsIcon       { return newIcon(fontSolid, "location-arrow") }
+func FaSolidLockOpen() icons.IsIcon            { return newIcon(fontSolid, "lock-open") }
+func FaSolidLock() icons.IsIcon                { return newIcon(fontSolid, "lock") }
+func FaSolidLongArrowAltDown() icons.IsIcon    { return newIcon(fontSolid, "long-arrow-alt-down") }
+func FaSolidLongArrowAltLeft() icons.IsIcon    { return newIcon(fontSolid, "long-arrow-alt-left") }
+func FaSolidLongArrowAltRight() icons.IsIcon   { return newIcon(fontSolid, "long-arrow-alt-right") }
+func FaSolidLongArrowAltUp() icons.IsIcon      { return newIcon(fontSolid, "long-arrow-alt-up") }
+func FaSolidLowVision() icons.IsIcon           { return newIcon(fontSolid, "low-vision") }
+func FaSolidLuggageCart() icons.IsIcon         { return newIcon(fontSolid, "luggage-cart") }
+func FaSolidLungsVirus() icons.IsIcon          { return newIcon(fontSolid, "lungs-virus") }
+func FaSolidLungs() icons.IsIcon               { return newIcon(fontSolid, "lungs") }
+func FaSolidMagic() icons.IsIcon               { return newIcon(fontSolid, "magic") }
+func FaSolidMagnet() icons.IsIcon              { return newIcon(fontSolid, "magnet") }
+func FaSolidMailBulk() icons.IsIcon            { return newIcon(fontSolid, "mail-bulk") }
+func FaSolidMale() icons.IsIcon                { return newIcon(fontSolid, "male") }
+func FaSolidMapMarkedAlt() icons.IsIcon        { return newIcon(fontSolid, "map-marked-alt") }
+func FaSolidMapMarked() icons.IsIcon           { return newIcon(fontSolid, "map-marked") }
+func FaSolidMapMarkerAlt() icons.IsIcon        { return newIcon(fontSolid, "map-marker-alt") }
+func FaSolidMapMarker() icons.IsIcon           { return newIcon(fontSolid, "map-marker") }
+func FaSolidMapPin() icons.IsIcon              { return newIcon(fontSolid, "map-pin") }
+func FaSolidMapSigns() icons.IsIcon            { return newIcon(fontSolid, "map-signs") }
+func FaSolidMap() icons.IsIcon                 { return newIcon(fontSolid, "map") }
+func FaSolidMarker() icons.IsIcon              { return newIcon(fontSolid, "marker") }
+func FaSolidMarsDouble() icons.IsIcon          { return newIcon(fontSolid, "mars-double") }
+func FaSolidMarsStrokeH() icons.IsIcon         { return newIcon(fontSolid, "mars-stroke-h") }
+func FaSolidMarsStrokeV() icons.IsIcon         { return newIcon(fontSolid, "mars-stroke-v") }
+func FaSolidMarsStroke() icons.IsIcon          { return newIcon(fontSolid, "mars-stroke") }
+func FaSolidMars() icons.IsIcon                { return newIcon(fontSolid, "mars") }
+func FaSolidMask() icons.IsIcon                { return newIcon(fontSolid, "mask") }
+func FaSolidMedal() icons.IsIcon               { return newIcon(fontSolid, "medal") }
+func FaSolidMedkit() icons.IsIcon              { return newIcon(fontSolid, "medkit") }
+func FaSolidMehBlank() icons.IsIcon            { return newIcon(fontSolid, "meh-blank") }
+func FaSolidMehRollingEyes() icons.IsIcon      { return newIcon(fontSolid, "meh-rolling-eyes") }
+func FaSolidMeh() icons.IsIcon                 { return newIcon(fontSolid, "meh") }
+func FaSolidMemory() icons.IsIcon              { return newIcon(fontSolid, "memory") }
+func FaSolidMenorah() icons.IsIcon             { return newIcon(fontSolid, "menorah") }
+func FaSolidMercury() icons.IsIcon             { return newIcon(fontSolid, "mercury") }
+func FaSolidMeteor() icons.IsIcon              { return newIcon(fontSolid, "meteor") }
+func FaSolidMicrochip() icons.IsIcon           { return newIcon(fontSolid, "microchip") }
+func FaSolidMicrophoneAltSlash() icons.IsIcon  { return newIcon(fontSolid, "microphone-alt-slash") }
+func FaSolidMicrophoneAlt() icons.IsIcon       { return newIcon(fontSolid, "microphone-alt") }
+func FaSolidMicrophoneSlash() icons.IsIcon     { return newIcon(fontSolid, "microphone-slash") }
+func FaSolidMicrophone() icons.IsIcon          { return newIcon(fontSolid, "microphone") }
+func FaSolidMicroscope() icons.IsIcon          { return newIcon(fontSolid, "microscope") }
+func FaSolidMinusCircle() icons.IsIcon         { return newIcon(fontSolid, "minus-circle") }
+func FaSolidMinusSquare() icons.IsIcon         { return newIcon(fontSolid, "minus-square") }
+func FaSolidMinus() icons.IsIcon               { return newIcon(fontSolid, "minus") }
+func FaSolidMitten() icons.IsIcon              { return newIcon(fontSolid, "mitten") }
+func FaSolidMobileAlt() icons.IsIcon           { return newIcon(fontSolid, "mobile-alt") }
+func FaSolidMobile() icons.IsIcon              { return newIcon(fontSolid, "mobile") }
+func FaSolidMoneyBillAlt() icons.IsIcon        { return newIcon(fontSolid, "money-bill-alt") }
+func FaSolidMoneyBillWaveAlt() icons.IsIcon    { return newIcon(fontSolid, "money-bill-wave-alt") }
+func FaSolidMoneyBillWave() icons.IsIcon       { return newIcon(fontSolid, "money-bill-wave") }
+func FaSolidMoneyBill() icons.IsIcon           { return newIcon(fontSolid, "money-bill") }
+func FaSolidMoneyCheckAlt() icons.IsIcon       { return newIcon(fontSolid, "money-check-alt") }
+func FaSolidMoneyCheck() icons.IsIcon          { return newIcon(fontSolid, "money-check") }
+func FaSolidMonument() icons.IsIcon            { return newIcon(fontSolid, "monument") }
+func FaSolidMoon() icons.IsIcon                { return newIcon(fontSolid, "moon") }
+func FaSolidMortarPestle() icons.IsIcon        { return newIcon(fontSolid, "mortar-pestle") }
+func FaSolidMosque() icons.IsIcon              { return newIcon(fontSolid, "mosque") }
+func FaSolidMotorcycle() icons.IsIcon          { return newIcon(fontSolid, "motorcycle") }
+func FaSolidMountain() icons.IsIcon            { return newIcon(fontSolid, "mountain") }
+func FaSolidMousePointer() icons.IsIcon        { return newIcon(fontSolid, "mouse-pointer") }
+func FaSolidMouse() icons.IsIcon               { return newIcon(fontSolid, "mouse") }
+func FaSolidMugHot() icons.IsIcon              { return newIcon(fontSolid, "mug-hot") }
+func FaSolidMusic() icons.IsIcon               { return newIcon(fontSolid, "music") }
+func FaSolidNetworkWired() icons.IsIcon        { return newIcon(fontSolid, "network-wired") }
+func FaSolidNeuter() icons.IsIcon              { return newIcon(fontSolid, "neuter") }
+func FaSolidNewspaper() icons.IsIcon           { return newIcon(fontSolid, "newspaper") }
+func FaSolidNotEqual() icons.IsIcon            { return newIcon(fontSolid, "not-equal") }
+func FaSolidNotesMedical() icons.IsIcon        { return newIcon(fontSolid, "notes-medical") }
+func FaSolidObjectGroup() icons.IsIcon         { return newIcon(fontSolid, "object-group") }
+func FaSolidObjectUngroup() icons.IsIcon       { return newIcon(fontSolid, "object-ungroup") }
+func FaSolidOilCan() icons.IsIcon              { return newIcon(fontSolid, "oil-can") }
+func FaSolidOm() icons.IsIcon                  { return newIcon(fontSolid, "om") }
+func FaSolidOtter() icons.IsIcon               { return newIcon(fontSolid, "otter") }
+func FaSolidOutdent() icons.IsIcon             { return newIcon(fontSolid, "outdent") }
+func FaSolidPager() icons.IsIcon               { return newIcon(fontSolid, "pager") }
+func FaSolidPaintBrush() icons.IsIcon          { return newIcon(fontSolid, "paint-brush") }
+func FaSolidPaintRoller() icons.IsIcon         { return newIcon(fontSolid, "paint-roller") }
+func FaSolidPalette() icons.IsIcon             { return newIcon(fontSolid, "palette") }
+func FaSolidPallet() icons.IsIcon              { return newIcon(fontSolid, "pallet") }
+func FaSolidPaperPlane() icons.IsIcon          { return newIcon(fontSolid, "paper-plane") }
+func FaSolidPaperclip() icons.IsIcon           { return newIcon(fontSolid, "paperclip") }
+func FaSolidParachuteBox() icons.IsIcon        { return newIcon(fontSolid, "parachute-box") }
+func FaSolidParagraph() icons.IsIcon           { return newIcon(fontSolid, "paragraph") }
+func FaSolidParking() icons.IsIcon             { return newIcon(fontSolid, "parking") }
+func FaSolidPassport() icons.IsIcon            { return newIcon(fontSolid, "passport") }
+func FaSolidPastafarianism() icons.IsIcon      { return newIcon(fontSolid, "pastafarianism") }
+func FaSolidPaste() icons.IsIcon               { return newIcon(fontSolid, "paste") }
+func FaSolidPauseCircle() icons.IsIcon         { return newIcon(fontSolid, "pause-circle") }
+func FaSolidPause() icons.IsIcon               { return newIcon(fontSolid, "pause") }
+func FaSolidPaw() icons.IsIcon                 { return newIcon(fontSolid, "paw") }
+func FaSolidPeace() icons.IsIcon               { return newIcon(fontSolid, "peace") }
+func FaSolidPenAlt() icons.IsIcon              { return newIcon(fontSolid, "pen-alt") }
+func FaSolidPenFancy() icons.IsIcon            { return newIcon(fontSolid, "pen-fancy") }
+func FaSolidPenNib() icons.IsIcon              { return newIcon(fontSolid, "pen-nib") }
+func FaSolidPenSquare() icons.IsIcon           { return newIcon(fontSolid, "pen-square") }
+func FaSolidPen() icons.IsIcon                 { return newIcon(fontSolid, "pen") }
+func FaSolidPencilAlt() icons.IsIcon           { return newIcon(fontSolid, "pencil-alt") }
+func FaSolidPencilRuler() icons.IsIcon         { return newIcon(fontSolid, "pencil-ruler") }
+func FaSolidPeopleArrows() icons.IsIcon        { return newIcon(fontSolid, "people-arrows") }
+func FaSolidPeopleCarry() icons.IsIcon         { return newIcon(fontSolid, "people-carry") }
+func FaSolidPepperHot() icons.IsIcon           { return newIcon(fontSolid, "pepper-hot") }
+func FaSolidPercent() icons.IsIcon             { return newIcon(fontSolid, "percent") }
+func FaSolidPercentage() icons.IsIcon          { return newIcon(fontSolid, "percentage") }
+func FaSolidPersonBooth() icons.IsIcon         { return newIcon(fontSolid, "person-booth") }
+func FaSolidPhoneAlt() icons.IsIcon            { return newIcon(fontSolid, "phone-alt") }
+func FaSolidPhoneSlash() icons.IsIcon          { return newIcon(fontSolid, "phone-slash") }
+func FaSolidPhoneSquareAlt() icons.IsIcon      { return newIcon(fontSolid, "phone-square-alt") }
+func FaSolidPhoneSquare() icons.IsIcon         { return newIcon(fontSolid, "phone-square") }
+func FaSolidPhoneVolume() icons.IsIcon         { return newIcon(fontSolid, "phone-volume") }
+func FaSolidPhone() icons.IsIcon               { return newIcon(fontSolid, "phone") }
+func FaSolidPhotoVideo() icons.IsIcon          { return newIcon(fontSolid, "photo-video") }
+func FaSolidPiggyBank() icons.IsIcon           { return newIcon(fontSolid, "piggy-bank") }
+func FaSolidPills() icons.IsIcon               { return newIcon(fontSolid, "pills") }
+func FaSolidPizzaSlice() icons.IsIcon          { return newIcon(fontSolid, "pizza-slice") }
+func FaSolidPlaceOfWorship() icons.IsIcon      { return newIcon(fontSolid, "place-of-worship") }
+func FaSolidPlaneArrival() icons.IsIcon        { return newIcon(fontSolid, "plane-arrival") }
+func FaSolidPlaneDeparture() icons.IsIcon      { return newIcon(fontSolid, "plane-departure") }
+func FaSolidPlaneSlash() icons.IsIcon          { return newIcon(fontSolid, "plane-slash") }
+func FaSolidPlane() icons.IsIcon               { return newIcon(fontSolid, "plane") }
+func FaSolidPlayCircle() icons.IsIcon          { return newIcon(fontSolid, "play-circle") }
+func FaSolidPlay() icons.IsIcon                { return newIcon(fontSolid, "play") }
+func FaSolidPlug() icons.IsIcon                { return newIcon(fontSolid, "plug") }
+func FaSolidPlusCircle() icons.IsIcon          { return newIcon(fontSolid, "plus-circle") }
+func FaSolidPlusSquare() icons.IsIcon          { return newIcon(fontSolid, "plus-square") }
+func FaSolidPlus() icons.IsIcon                { return newIcon(fontSolid, "plus") }
+func FaSolidPodcast() icons.IsIcon             { return newIcon(fontSolid, "podcast") }
+func FaSolidPollH() icons.IsIcon               { return newIcon(fontSolid, "poll-h") }
+func FaSolidPoll() icons.IsIcon                { return newIcon(fontSolid, "poll") }
+func FaSolidPooStorm() icons.IsIcon            { return newIcon(fontSolid, "poo-storm") }
+func FaSolidPoo() icons.IsIcon                 { return newIcon(fontSolid, "poo") }
+func FaSolidPoop() icons.IsIcon                { return newIcon(fontSolid, "poop") }
+func FaSolidPortrait() icons.IsIcon            { return newIcon(fontSolid, "portrait") }
+func FaSolidPoundSign() icons.IsIcon           { return newIcon(fontSolid, "pound-sign") }
+func FaSolidPowerOff() icons.IsIcon            { return newIcon(fontSolid, "power-off") }
+func FaSolidPray() icons.IsIcon                { return newIcon(fontSolid, "pray") }
+func FaSolidPrayingHands() icons.IsIcon        { return newIcon(fontSolid, "praying-hands") }
 func FaSolidPrescriptionBottleAlt() icons.IsIcon {
-	return createIconSvg("solid/prescription-bottle-alt")
+	return newIcon(fontSolid, "prescription-bottle-alt")
 }
-func FaSolidPrescriptionBottle() icons.IsIcon { return createIconSvg("solid/prescription-bottle") }
-func FaSolidPrescription() icons.IsIcon       { return createIconSvg("solid/prescription") }
-func FaSolidPrint() icons.IsIcon              { return createIconSvg("solid/print") }
-func FaSolidProcedures() icons.IsIcon         { return createIconSvg("solid/procedures") }
-func FaSolidProjectDiagram() icons.IsIcon     { return createIconSvg("solid/project-diagram") }
-func FaSolidPumpMedical() icons.IsIcon        { return createIconSvg("solid/pump-medical") }
-func FaSolidPumpSoap() icons.IsIcon           { return createIconSvg("solid/pump-soap") }
-func FaSolidPuzzlePiece() icons.IsIcon        { return createIconSvg("solid/puzzle-piece") }
-func FaSolidQrcode() icons.IsIcon             { return createIconSvg("solid/qrcode") }
-func FaSolidQuestionCircle() icons.IsIcon     { return createIconSvg("solid/question-circle") }
-func FaSolidQuestion() icons.IsIcon           { return createIconSvg("solid/question") }
-func FaSolidQuidditch() icons.IsIcon          { return createIconSvg("solid/quidditch") }
-func FaSolidQuoteLeft() icons.IsIcon          { return createIconSvg("solid/quote-left") }
-func FaSolidQuoteRight() icons.IsIcon         { return createIconSvg("solid/quote-right") }
-func FaSolidQuran() icons.IsIcon              { return createIconSvg("solid/quran") }
-func FaSolidRadiationAlt() icons.IsIcon       { return createIconSvg("solid/radiation-alt") }
-func FaSolidRadiation() icons.IsIcon          { return createIconSvg("solid/radiation") }
-func FaSolidRainbow() icons.IsIcon            { return createIconSvg("solid/rainbow") }
-func FaSolidRandom() icons.IsIcon             { return createIconSvg("solid/random") }
-func FaSolidReceipt() icons.IsIcon            { return createIconSvg("solid/receipt") }
-func FaSolidRecordVinyl() icons.IsIcon        { return createIconSvg("solid/record-vinyl") }
-func FaSolidRecycle() icons.IsIcon            { return createIconSvg("solid/recycle") }
-func FaSolidRedoAlt() icons.IsIcon            { return createIconSvg("solid/redo-alt") }
-func FaSolidRedo() icons.IsIcon               { return createIconSvg("solid/redo") }
-func FaSolidRegistered() icons.IsIcon         { return createIconSvg("solid/registered") }
-func FaSolidRemoveFormat() icons.IsIcon       { return createIconSvg("solid/remove-format") }
-func FaSolidReplyAll() icons.IsIcon           { return createIconSvg("solid/reply-all") }
-func FaSolidReply() icons.IsIcon              { return createIconSvg("solid/reply") }
-func FaSolidRepublican() icons.IsIcon         { return createIconSvg("solid/republican") }
-func FaSolidRestroom() icons.IsIcon           { return createIconSvg("solid/restroom") }
-func FaSolidRetweet() icons.IsIcon            { return createIconSvg("solid/retweet") }
-func FaSolidRibbon() icons.IsIcon             { return createIconSvg("solid/ribbon") }
-func FaSolidRing() icons.IsIcon               { return createIconSvg("solid/ring") }
-func FaSolidRoad() icons.IsIcon               { return createIconSvg("solid/road") }
-func FaSolidRobot() icons.IsIcon              { return createIconSvg("solid/robot") }
-func FaSolidRocket() icons.IsIcon             { return createIconSvg("solid/rocket") }
-func FaSolidRoute() icons.IsIcon              { return createIconSvg("solid/route") }
-func FaSolidRssSquare() icons.IsIcon          { return createIconSvg("solid/rss-square") }
-func FaSolidRss() icons.IsIcon                { return createIconSvg("solid/rss") }
-func FaSolidRubleSign() icons.IsIcon          { return createIconSvg("solid/ruble-sign") }
-func FaSolidRulerCombined() icons.IsIcon      { return createIconSvg("solid/ruler-combined") }
-func FaSolidRulerHorizontal() icons.IsIcon    { return createIconSvg("solid/ruler-horizontal") }
-func FaSolidRulerVertical() icons.IsIcon      { return createIconSvg("solid/ruler-vertical") }
-func FaSolidRuler() icons.IsIcon              { return createIconSvg("solid/ruler") }
-func FaSolidRunning() icons.IsIcon            { return createIconSvg("solid/running") }
-func FaSolidRupeeSign() icons.IsIcon          { return createIconSvg("solid/rupee-sign") }
-func FaSolidSadCry() icons.IsIcon             { return createIconSvg("solid/sad-cry") }
-func FaSolidSadTear() icons.IsIcon            { return createIconSvg("solid/sad-tear") }
-func FaSolidSatelliteDish() icons.IsIcon      { return createIconSvg("solid/satellite-dish") }
-func FaSolidSatellite() icons.IsIcon          { return createIconSvg("solid/satellite") }
-func FaSolidSave() icons.IsIcon               { return createIconSvg("solid/save") }
-func FaSolidSchool() icons.IsIcon             { return createIconSvg("solid/school") }
-func FaSolidScrewdriver() icons.IsIcon        { return createIconSvg("solid/screwdriver") }
-func FaSolidScroll() icons.IsIcon             { return createIconSvg("solid/scroll") }
-func FaSolidSdCard() icons.IsIcon             { return createIconSvg("solid/sd-card") }
-func FaSolidSearchDollar() icons.IsIcon       { return createIconSvg("solid/search-dollar") }
-func FaSolidSearchLocation() icons.IsIcon     { return createIconSvg("solid/search-location") }
-func FaSolidSearchMinus() icons.IsIcon        { return createIconSvg("solid/search-minus") }
-func FaSolidSearchPlus() icons.IsIcon         { return createIconSvg("solid/search-plus") }
-func FaSolidSearch() icons.IsIcon             { return createIconSvg("solid/search") }
-func FaSolidSeedling() icons.IsIcon           { return createIconSvg("solid/seedling") }
-func FaSolidServer() icons.IsIcon             { return createIconSvg("solid/server") }
-func FaSolidShapes() icons.IsIcon             { return createIconSvg("solid/shapes") }
-func FaSolidShareAltSquare() icons.IsIcon     { return createIconSvg("solid/share-alt-square") }
-func FaSolidShareAlt() icons.IsIcon           { return createIconSvg("solid/share-alt") }
-func FaSolidShareSquare() icons.IsIcon        { return createIconSvg("solid/share-square") }
-func FaSolidShare() icons.IsIcon              { return createIconSvg("solid/share") }
-func FaSolidShekelSign() icons.IsIcon         { return createIconSvg("solid/shekel-sign") }
-func FaSolidShieldAlt() icons.IsIcon          { return createIconSvg("solid/shield-alt") }
-func FaSolidShieldVirus() icons.IsIcon        { return createIconSvg("solid/shield-virus") }
-func FaSolidShip() icons.IsIcon               { return createIconSvg("solid/ship") }
-func FaSolidShippingFast() icons.IsIcon       { return createIconSvg("solid/shipping-fast") }
-func FaSolidShoePrints() icons.IsIcon         { return createIconSvg("solid/shoe-prints") }
-func FaSolidShoppingBag() icons.IsIcon        { return createIconSvg("solid/shopping-bag") }
-func FaSolidShoppingBasket() icons.IsIcon     { return createIconSvg("solid/shopping-basket") }
-func FaSolidShoppingCart() icons.IsIcon       { return createIconSvg("solid/shopping-cart") }
-func FaSolidShower() icons.IsIcon             { return createIconSvg("solid/shower") }
-func FaSolidShuttleVan() icons.IsIcon         { return createIconSvg("solid/shuttle-van") }
-func FaSolidSignInAlt() icons.IsIcon          { return createIconSvg("solid/sign-in-alt") }
-func FaSolidSignLanguage() icons.IsIcon       { return createIconSvg("solid/sign-language") }
-func FaSolidSignOutAlt() icons.IsIcon         { return createIconSvg("solid/sign-out-alt") }
-func FaSolidSign() icons.IsIcon               { return createIconSvg("solid/sign") }
-func FaSolidSignal() icons.IsIcon             { return createIconSvg("solid/signal") }
-func FaSolidSignature() icons.IsIcon          { return createIconSvg("solid/signature") }
-func FaSolidSimCard() icons.IsIcon            { return createIconSvg("solid/sim-card") }
-func FaSolidSink() icons.IsIcon               { return createIconSvg("solid/sink") }
-func FaSolidSitemap() icons.IsIcon            { return createIconSvg("solid/sitemap") }
-func FaSolidSkating() icons.IsIcon            { return createIconSvg("solid/skating") }
-func FaSolidSkiingNordic() icons.IsIcon       { return createIconSvg("solid/skiing-nordic") }
-func FaSolidSkiing() icons.IsIcon             { return createIconSvg("solid/skiing") }
-func FaSolidSkullCrossbones() icons.IsIcon    { return createIconSvg("solid/skull-crossbones") }
-func FaSolidSkull() icons.IsIcon              { return createIconSvg("solid/skull") }
-func FaSolidSlash() icons.IsIcon              { return createIconSvg("solid/slash") }
-func FaSolidSleigh() icons.IsIcon             { return createIconSvg("solid/sleigh") }
-func FaSolidSlidersH() icons.IsIcon           { return createIconSvg("solid/sliders-h") }
-func FaSolidSmileBeam() icons.IsIcon          { return createIconSvg("solid/smile-beam") }
-func FaSolidSmileWink() icons.IsIcon          { return createIconSvg("solid/smile-wink") }
-func FaSolidSmile() icons.IsIcon              { return createIconSvg("solid/smile") }
-func FaSolidSmog() icons.IsIcon               { return createIconSvg("solid/smog") }
-func FaSolidSmokingBan() icons.IsIcon         { return createIconSvg("solid/smoking-ban") }
-func FaSolidSmoking() icons.IsIcon            { return createIconSvg("solid/smoking") }
-func FaSolidSms() icons.IsIcon                { return createIconSvg("solid/sms") }
-func FaSolidSnowboarding() icons.IsIcon       { return createIconSvg("solid/snowboarding") }
-func FaSolidSnowflake() icons.IsIcon          { return createIconSvg("solid/snowflake") }
-func FaSolidSnowman() icons.IsIcon            { return createIconSvg("solid/snowman") }
-func FaSolidSnowplow() icons.IsIcon           { return createIconSvg("solid/snowplow") }
-func FaSolidSoap() icons.IsIcon               { return createIconSvg("solid/soap") }
-func FaSolidSocks() icons.IsIcon              { return createIconSvg("solid/socks") }
-func FaSolidSolarPanel() icons.IsIcon         { return createIconSvg("solid/solar-panel") }
-func FaSolidSortAlphaDownAlt() icons.IsIcon   { return createIconSvg("solid/sort-alpha-down-alt") }
-func FaSolidSortAlphaDown() icons.IsIcon      { return createIconSvg("solid/sort-alpha-down") }
-func FaSolidSortAlphaUpAlt() icons.IsIcon     { return createIconSvg("solid/sort-alpha-up-alt") }
-func FaSolidSortAlphaUp() icons.IsIcon        { return createIconSvg("solid/sort-alpha-up") }
-func FaSolidSortAmountDownAlt() icons.IsIcon  { return createIconSvg("solid/sort-amount-down-alt") }
-func FaSolidSortAmountDown() icons.IsIcon     { return createIconSvg("solid/sort-amount-down") }
-func FaSolidSortAmountUpAlt() icons.IsIcon    { return createIconSvg("solid/sort-amount-up-alt") }
-func FaSolidSortAmountUp() icons.IsIcon       { return createIconSvg("solid/sort-amount-up") }
-func FaSolidSortDown() icons.IsIcon           { return createIconSvg("solid/sort-down") }
-func FaSolidSortNumericDownAlt() icons.IsIcon { return createIconSvg("solid/sort-numeric-down-alt") }
-func FaSolidSortNumericDown() icons.IsIcon    { return createIconSvg("solid/sort-numeric-down") }
-func FaSolidSortNumericUpAlt() icons.IsIcon   { return createIconSvg("solid/sort-numeric-up-alt") }
-func FaSolidSortNumericUp() icons.IsIcon      { return createIconSvg("solid/sort-numeric-up") }
-func FaSolidSortUp() icons.IsIcon             { return createIconSvg("solid/sort-up") }
-func FaSolidSort() icons.IsIcon               { return createIconSvg("solid/sort") }
-func FaSolidSpa() icons.IsIcon                { return createIconSvg("solid/spa") }
-func FaSolidSpaceShuttle() icons.IsIcon       { return createIconSvg("solid/space-shuttle") }
-func FaSolidSpellCheck() icons.IsIcon         { return createIconSvg("solid/spell-check") }
-func FaSolidSpider() icons.IsIcon             { return createIconSvg("solid/spider") }
-func FaSolidSpinner() icons.IsIcon            { return createIconSvg("solid/spinner") }
-func FaSolidSplotch() icons.IsIcon            { return createIconSvg("solid/splotch") }
-func FaSolidSprayCan() icons.IsIcon           { return createIconSvg("solid/spray-can") }
-func FaSolidSquareFull() icons.IsIcon         { return createIconSvg("solid/square-full") }
-func FaSolidSquareRootAlt() icons.IsIcon      { return createIconSvg("solid/square-root-alt") }
-func FaSolidSquare() icons.IsIcon             { return createIconSvg("solid/square") }
-func FaSolidStamp() icons.IsIcon              { return createIconSvg("solid/stamp") }
-func FaSolidStarAndCrescent() icons.IsIcon    { return createIconSvg("solid/star-and-crescent") }
-func FaSolidStarHalfAlt() icons.IsIcon        { return createIconSvg("solid/star-half-alt") }
-func FaSolidStarHalf() icons.IsIcon           { return createIconSvg("solid/star-half") }
-func FaSolidStarOfDavid() icons.IsIcon        { return createIconSvg("solid/star-of-david") }
-func FaSolidStarOfLife() icons.IsIcon         { return createIconSvg("solid/star-of-life") }
-func FaSolidStar() icons.IsIcon               { return createIconSvg("solid/star") }
-func FaSolidStepBackward() icons.IsIcon       { return createIconSvg("solid/step-backward") }
-func FaSolidStepForward() icons.IsIcon        { return createIconSvg("solid/step-forward") }
-func FaSolidStethoscope() icons.IsIcon        { return createIconSvg("solid/stethoscope") }
-func FaSolidStickyNote() icons.IsIcon         { return createIconSvg("solid/sticky-note") }
-func FaSolidStopCircle() icons.IsIcon         { return createIconSvg("solid/stop-circle") }
-func FaSolidStop() icons.IsIcon               { return createIconSvg("solid/stop") }
-func FaSolidStopwatch20() icons.IsIcon        { return createIconSvg("solid/stopwatch-20") }
-func FaSolidStopwatch() icons.IsIcon          { return createIconSvg("solid/stopwatch") }
-func FaSolidStoreAltSlash() icons.IsIcon      { return createIconSvg("solid/store-alt-slash") }
-func FaSolidStoreAlt() icons.IsIcon           { return createIconSvg("solid/store-alt") }
-func FaSolidStoreSlash() icons.IsIcon         { return createIconSvg("solid/store-slash") }
-func FaSolidStore() icons.IsIcon              { return createIconSvg("solid/store") }
-func FaSolidStream() icons.IsIcon             { return createIconSvg("solid/stream") }
-func FaSolidStreetView() icons.IsIcon         { return createIconSvg("solid/street-view") }
-func FaSolidStrikethrough() icons.IsIcon      { return createIconSvg("solid/strikethrough") }
-func FaSolidStroopwafel() icons.IsIcon        { return createIconSvg("solid/stroopwafel") }
-func FaSolidSubscript() icons.IsIcon          { return createIconSvg("solid/subscript") }
-func FaSolidSubway() icons.IsIcon             { return createIconSvg("solid/subway") }
-func FaSolidSuitcaseRolling() icons.IsIcon    { return createIconSvg("solid/suitcase-rolling") }
-func FaSolidSuitcase() icons.IsIcon           { return createIconSvg("solid/suitcase") }
-func FaSolidSun() icons.IsIcon                { return createIconSvg("solid/sun") }
-func FaSolidSuperscript() icons.IsIcon        { return createIconSvg("solid/superscript") }
-func FaSolidSurprise() icons.IsIcon           { return createIconSvg("solid/surprise") }
-func FaSolidSwatchbook() icons.IsIcon         { return createIconSvg("solid/swatchbook") }
-func FaSolidSwimmer() icons.IsIcon            { return createIconSvg("solid/swimmer") }
-func FaSolidSwimmingPool() icons.IsIcon       { return createIconSvg("solid/swimming-pool") }
-func FaSolidSynagogue() icons.IsIcon          { return createIconSvg("solid/synagogue") }
-func FaSolidSyncAlt() icons.IsIcon            { return createIconSvg("solid/sync-alt") }
-func FaSolidSync() icons.IsIcon               { return createIconSvg("solid/sync") }
-func FaSolidSyringe() icons.IsIcon            { return createIconSvg("solid/syringe") }
-func FaSolidTableTennis() icons.IsIcon        { return createIconSvg("solid/table-tennis") }
-func FaSolidTable() icons.IsIcon              { return createIconSvg("solid/table") }
-func FaSolidTabletAlt() icons.IsIcon          { return createIconSvg("solid/tablet-alt") }
-func FaSolidTablet() icons.IsIcon             { return createIconSvg("solid/tablet") }
-func FaSolidTablets() icons.IsIcon            { return createIconSvg("solid/tablets") }
-func FaSolidTachometerAlt() icons.IsIcon      { return createIconSvg("solid/tachometer-alt") }
-func FaSolidTag() icons.IsIcon                { return createIconSvg("solid/tag") }
-func FaSolidTags() icons.IsIcon               { return createIconSvg("solid/tags") }
-func FaSolidTape() icons.IsIcon               { return createIconSvg("solid/tape") }
-func FaSolidTasks() icons.IsIcon              { return createIconSvg("solid/tasks") }
-func FaSolidTaxi() icons.IsIcon               { return createIconSvg("solid/taxi") }
-func FaSolidTeethOpen() icons.IsIcon          { return createIconSvg("solid/teeth-open") }
-func FaSolidTeeth() icons.IsIcon              { return createIconSvg("solid/teeth") }
-func FaSolidTemperatureHigh() icons.IsIcon    { return createIconSvg("solid/temperature-high") }
-func FaSolidTemperatureLow() icons.IsIcon     { return createIconSvg("solid/temperature-low") }
-func FaSolidTenge() icons.IsIcon              { return createIconSvg("solid/tenge") }
-func FaSolidTerminal() icons.IsIcon           { return createIconSvg("solid/terminal") }
-func FaSolidTextHeight() icons.IsIcon         { return createIconSvg("solid/text-height") }
-func FaSolidTextWidth() icons.IsIcon          { return createIconSvg("solid/text-width") }
-func FaSolidThLarge() icons.IsIcon            { return createIconSvg("solid/th-large") }
-func FaSolidThList() icons.IsIcon             { return createIconSvg("solid/th-list") }
-func FaSolidTh() icons.IsIcon                 { return createIconSvg("solid/th") }
-func FaSolidTheaterMasks() icons.IsIcon       { return createIconSvg("solid/theater-masks") }
-func FaSolidThermometerEmpty() icons.IsIcon   { return createIconSvg("solid/thermometer-empty") }
-func FaSolidThermometerFull() icons.IsIcon    { return createIconSvg("solid/thermometer-full") }
-func FaSolidThermometerHalf() icons.IsIcon    { return createIconSvg("solid/thermometer-half") }
-func FaSolidThermometerQuarter() icons.IsIcon { return createIconSvg("solid/thermometer-quarter") }
+func FaSolidPrescriptionBottle() icons.IsIcon { return newIcon(fontSolid, "prescription-bottle") }
+func FaSolidPrescription() icons.IsIcon       { return newIcon(fontSolid, "prescription") }
+func FaSolidPrint() icons.IsIcon              { return newIcon(fontSolid, "print") }
+func FaSolidProcedures() icons.IsIcon         { return newIcon(fontSolid, "procedures") }
+func FaSolidProjectDiagram() icons.IsIcon     { return newIcon(fontSolid, "project-diagram") }
+func FaSolidPumpMedical() icons.IsIcon        { return newIcon(fontSolid, "pump-medical") }
+func FaSolidPumpSoap() icons.IsIcon           { return newIcon(fontSolid, "pump-soap") }
+func FaSolidPuzzlePiece() icons.IsIcon        { return newIcon(fontSolid, "puzzle-piece") }
+func FaSolidQrcode() icons.IsIcon             { return newIcon(fontSolid, "qrcode") }
+func FaSolidQuestionCircle() icons.IsIcon     { return newIcon(fontSolid, "question-circle") }
+func FaSolidQuestion() icons.IsIcon           { return newIcon(fontSolid, "question") }
+func FaSolidQuidditch() icons.IsIcon          { return newIcon(fontSolid, "quidditch") }
+func FaSolidQuoteLeft() icons.IsIcon          { return newIcon(fontSolid, "quote-left") }
+func FaSolidQuoteRight() icons.IsIcon         { return newIcon(fontSolid, "quote-right") }
+func FaSolidQuran() icons.IsIcon              { return newIcon(fontSolid, "quran") }
+func FaSolidRadiationAlt() icons.IsIcon       { return newIcon(fontSolid, "radiation-alt") }
+func FaSolidRadiation() icons.IsIcon          { return newIcon(fontSolid, "radiation") }
+func FaSolidRainbow() icons.IsIcon            { return newIcon(fontSolid, "rainbow") }
+func FaSolidRandom() icons.IsIcon             { return newIcon(fontSolid, "random") }
+func FaSolidReceipt() icons.IsIcon            { return newIcon(fontSolid, "receipt") }
+func FaSolidRecordVinyl() icons.IsIcon        { return newIcon(fontSolid, "record-vinyl") }
+func FaSolidRecycle() icons.IsIcon            { return newIcon(fontSolid, "recycle") }
+func FaSolidRedoAlt() icons.IsIcon            { return newIcon(fontSolid, "redo-alt") }
+func FaSolidRedo() icons.IsIcon               { return newIcon(fontSolid, "redo") }
+func FaSolidRegistered() icons.IsIcon         { return newIcon(fontSolid, "registered") }
+func FaSolidRemoveFormat() icons.IsIcon       { return newIcon(fontSolid, "remove-format") }
+func FaSolidReplyAll() icons.IsIcon           { return newIcon(fontSolid, "reply-all") }
+func FaSolidReply() icons.IsIcon              { return newIcon(fontSolid, "reply") }
+func FaSolidRepublican() icons.IsIcon         { return newIcon(fontSolid, "republican") }
+func FaSolidRestroom() icons.IsIcon           { return newIcon(fontSolid, "restroom") }
+func FaSolidRetweet() icons.IsIcon            { return newIcon(fontSolid, "retweet") }
+func FaSolidRibbon() icons.IsIcon             { return newIcon(fontSolid, "ribbon") }
+func FaSolidRing() icons.IsIcon               { return newIcon(fontSolid, "ring") }
+func FaSolidRoad() icons.IsIcon               { return newIcon(fontSolid, "road") }
+func FaSolidRobot() icons.IsIcon              { return newIcon(fontSolid, "robot") }
+func FaSolidRocket() icons.IsIcon             { return newIcon(fontSolid, "rocket") }
+func FaSolidRoute() icons.IsIcon              { return newIcon(fontSolid, "route") }
+func FaSolidRssSquare() icons.IsIcon          { return newIcon(fontSolid, "rss-square") }
+func FaSolidRss() icons.IsIcon                { return newIcon(fontSolid, "rss") }
+func FaSolidRubleSign() icons.IsIcon          { return newIcon(fontSolid, "ruble-sign") }
+func FaSolidRulerCombined() icons.IsIcon      { return newIcon(fontSolid, "ruler-combined") }
+func FaSolidRulerHorizontal() icons.IsIcon    { return newIcon(fontSolid, "ruler-horizontal") }
+func FaSolidRulerVertical() icons.IsIcon      { return newIcon(fontSolid, "ruler-vertical") }
+func FaSolidRuler() icons.IsIcon              { return newIcon(fontSolid, "ruler") }
+func FaSolidRunning() icons.IsIcon            { return newIcon(fontSolid, "running") }
+func FaSolidRupeeSign() icons.IsIcon          { return newIcon(fontSolid, "rupee-sign") }
+func FaSolidSadCry() icons.IsIcon             { return newIcon(fontSolid, "sad-cry") }
+func FaSolidSadTear() icons.IsIcon            { return newIcon(fontSolid, "sad-tear") }
+func FaSolidSatelliteDish() icons.IsIcon      { return newIcon(fontSolid, "satellite-dish") }
+func FaSolidSatellite() icons.IsIcon          { return newIcon(fontSolid, "satellite") }
+func FaSolidSave() icons.IsIcon               { return newIcon(fontSolid, "save") }
+func FaSolidSchool() icons.IsIcon             { return newIcon(fontSolid, "school") }
+func FaSolidScrewdriver() icons.IsIcon        { return newIcon(fontSolid, "screwdriver") }
+func FaSolidScroll() icons.IsIcon             { return newIcon(fontSolid, "scroll") }
+func FaSolidSdCard() icons.IsIcon             { return newIcon(fontSolid, "sd-card") }
+func FaSolidSearchDollar() icons.IsIcon       { return newIcon(fontSolid, "search-dollar") }
+func FaSolidSearchLocation() icons.IsIcon     { return newIcon(fontSolid, "search-location") }
+func FaSolidSearchMinus() icons.IsIcon        { return newIcon(fontSolid, "search-minus") }
+func FaSolidSearchPlus() icons.IsIcon         { return newIcon(fontSolid, "search-plus") }
+func FaSolidSearch() icons.IsIcon             { return newIcon(fontSolid, "search") }
+func FaSolidSeedling() icons.IsIcon           { return newIcon(fontSolid, "seedling") }
+func FaSolidServer() icons.IsIcon             { return newIcon(fontSolid, "server") }
+func FaSolidShapes() icons.IsIcon             { return newIcon(fontSolid, "shapes") }
+func FaSolidShareAltSquare() icons.IsIcon     { return newIcon(fontSolid, "share-alt-square") }
+func FaSolidShareAlt() icons.IsIcon           { return newIcon(fontSolid, "share-alt") }
+func FaSolidShareSquare() icons.IsIcon        { return newIcon(fontSolid, "share-square") }
+func FaSolidShare() icons.IsIcon              { return newIcon(fontSolid, "share") }
+func FaSolidShekelSign() icons.IsIcon         { return newIcon(fontSolid, "shekel-sign") }
+func FaSolidShieldAlt() icons.IsIcon          { return newIcon(fontSolid, "shield-alt") }
+func FaSolidShieldVirus() icons.IsIcon        { return newIcon(fontSolid, "shield-virus") }
+func FaSolidShip() icons.IsIcon               { return newIcon(fontSolid, "ship") }
+func FaSolidShippingFast() icons.IsIcon       { return newIcon(fontSolid, "shipping-fast") }
+func FaSolidShoePrints() icons.IsIcon         { return newIcon(fontSolid, "shoe-prints") }
+func FaSolidShoppingBag() icons.IsIcon        { return newIcon(fontSolid, "shopping-bag") }
+func FaSolidShoppingBasket() icons.IsIcon     { return newIcon(fontSolid, "shopping-basket") }
+func FaSolidShoppingCart() icons.IsIcon       { return newIcon(fontSolid, "shopping-cart") }
+func FaSolidShower() icons.IsIcon             { return newIcon(fontSolid, "shower") }
+func FaSolidShuttleVan() icons.IsIcon         { return newIcon(fontSolid, "shuttle-van") }
+func FaSolidSignInAlt() icons.IsIcon          { return newIcon(fontSolid, "sign-in-alt") }
+func FaSolidSignLanguage() icons.IsIcon       { return newIcon(fontSolid, "sign-language") }
+func FaSolidSignOutAlt() icons.IsIcon         { return newIcon(fontSolid, "sign-out-alt") }
+func FaSolidSign() icons.IsIcon               { return newIcon(fontSolid, "sign") }
+func FaSolidSignal() icons.IsIcon             { return newIcon(fontSolid, "signal") }
+func FaSolidSignature() icons.IsIcon          { return newIcon(fontSolid, "signature") }
+func FaSolidSimCard() icons.IsIcon            { return newIcon(fontSolid, "sim-card") }
+func FaSolidSink() icons.IsIcon               { return newIcon(fontSolid, "sink") }
+func FaSolidSitemap() icons.IsIcon            { return newIcon(fontSolid, "sitemap") }
+func FaSolidSkating() icons.IsIcon            { return newIcon(fontSolid, "skating") }
+func FaSolidSkiingNordic() icons.IsIcon       { return newIcon(fontSolid, "skiing-nordic") }
+func FaSolidSkiing() icons.IsIcon             { return newIcon(fontSolid, "skiing") }
+func FaSolidSkullCrossbones() icons.IsIcon    { return newIcon(fontSolid, "skull-crossbones") }
+func FaSolidSkull() icons.IsIcon              { return newIcon(fontSolid, "skull") }
+func FaSolidSlash() icons.IsIcon              { return newIcon(fontSolid, "slash") }
+func FaSolidSleigh() icons.IsIcon             { return newIcon(fontSolid, "sleigh") }
+func FaSolidSlidersH() icons.IsIcon           { return newIcon(fontSolid, "sliders-h") }
+func FaSolidSmileBeam() icons.IsIcon          { return newIcon(fontSolid, "smile-beam") }
+func FaSolidSmileWink() icons.IsIcon          { return newIcon(fontSolid, "smile-wink") }
+func FaSolidSmile() icons.IsIcon              { return newIcon(fontSolid, "smile") }
+func FaSolidSmog() icons.IsIcon               { return newIcon(fontSolid, "smog") }
+func FaSolidSmokingBan() icons.IsIcon         { return newIcon(fontSolid, "smoking-ban") }
+func FaSolidSmoking() icons.IsIcon            { return newIcon(fontSolid, "smoking") }
+func FaSolidSms() icons.IsIcon                { return newIcon(fontSolid, "sms") }
+func FaSolidSnowboarding() icons.IsIcon       { return newIcon(fontSolid, "snowboarding") }
+func FaSolidSnowflake() icons.IsIcon          { return newIcon(fontSolid, "snowflake") }
+func FaSolidSnowman() icons.IsIcon            { return newIcon(fontSolid, "snowman") }
+func FaSolidSnowplow() icons.IsIcon           { return newIcon(fontSolid, "snowplow") }
+func FaSolidSoap() icons.IsIcon               { return newIcon(fontSolid, "soap") }
+func FaSolidSocks() icons.IsIcon              { return newIcon(fontSolid, "socks") }
+func FaSolidSolarPanel() icons.IsIcon         { return newIcon(fontSolid, "solar-panel") }
+func FaSolidSortAlphaDownAlt() icons.IsIcon   { return newIcon(fontSolid, "sort-alpha-down-alt") }
+func FaSolidSortAlphaDown() icons.IsIcon      { return newIcon(fontSolid, "sort-alpha-down") }
+func FaSolidSortAlphaUpAlt() icons.IsIcon     { return newIcon(fontSolid, "sort-alpha-up-alt") }
+func FaSolidSortAlphaUp() icons.IsIcon        { return newIcon(fontSolid, "sort-alpha-up") }
+func FaSolidSortAmountDownAlt() icons.IsIcon  { return newIcon(fontSolid, "sort-amount-down-alt") }
+func FaSolidSortAmountDown() icons.IsIcon     { return newIcon(fontSolid, "sort-amount-down") }
+func FaSolidSortAmountUpAlt() icons.IsIcon    { return newIcon(fontSolid, "sort-amount-up-alt") }
+func FaSolidSortAmountUp() icons.IsIcon       { return newIcon(fontSolid, "sort-amount-up") }
+func FaSolidSortDown() icons.IsIcon           { return newIcon(fontSolid, "sort-down") }
+func FaSolidSortNumericDownAlt() icons.IsIcon { return newIcon(fontSolid, "sort-numeric-down-alt") }
+func FaSolidSortNumericDown() icons.IsIcon    { return newIcon(fontSolid, "sort-numeric-down") }
+func FaSolidSortNumericUpAlt() icons.IsIcon   { return newIcon(fontSolid, "sort-numeric-up-alt") }
+func FaSolidSortNumericUp() icons.IsIcon      { return newIcon(fontSolid, "sort-numeric-up") }
+func FaSolidSortUp() icons.IsIcon             { return newIcon(fontSolid, "sort-up") }
+func FaSolidSort() icons.IsIcon               { return newIcon(fontSolid, "sort") }
+func FaSolidSpa() icons.IsIcon                { return newIcon(fontSolid, "spa") }
+func FaSolidSpaceShuttle() icons.IsIcon       { return newIcon(fontSolid, "space-shuttle") }
+func FaSolidSpellCheck() icons.IsIcon         { return newIcon(fontSolid, "spell-check") }
+func FaSolidSpider() icons.IsIcon             { return newIcon(fontSolid, "spider") }
+func FaSolidSpinner() icons.IsIcon            { return newIcon(fontSolid, "spinner") }
+func FaSolidSplotch() icons.IsIcon            { return newIcon(fontSolid, "splotch") }
+func FaSolidSprayCan() icons.IsIcon           { return newIcon(fontSolid, "spray-can") }
+func FaSolidSquareFull() icons.IsIcon         { return newIcon(fontSolid, "square-full") }
+func FaSolidSquareRootAlt() icons.IsIcon      { return newIcon(fontSolid, "square-root-alt") }
+func FaSolidSquare() icons.IsIcon             { return newIcon(fontSolid, "square") }
+func FaSolidStamp() icons.IsIcon              { return newIcon(fontSolid, "stamp") }
+func FaSolidStarAndCrescent() icons.IsIcon    { return newIcon(fontSolid, "star-and-crescent") }
+func FaSolidStarHalfAlt() icons.IsIcon        { return newIcon(fontSolid, "star-half-alt") }
+func FaSolidStarHalf() icons.IsIcon           { return newIcon(fontSolid, "star-half") }
+func FaSolidStarOfDavid() icons.IsIcon        { return newIcon(fontSolid, "star-of-david") }
+func FaSolidStarOfLife() icons.IsIcon         { return newIcon(fontSolid, "star-of-life") }
+func FaSolidStar() icons.IsIcon               { return newIcon(fontSolid, "star") }
+func FaSolidStepBackward() icons.IsIcon       { return newIcon(fontSolid, "step-backward") }
+func FaSolidStepForward() icons.IsIcon        { return newIcon(fontSolid, "step-forward") }
+func FaSolidStethoscope() icons.IsIcon        { return newIcon(fontSolid, "stethoscope") }
+func FaSolidStickyNote() icons.IsIcon         { return newIcon(fontSolid, "sticky-note") }
+func FaSolidStopCircle() icons.IsIcon         { return newIcon(fontSolid, "stop-circle") }
+func FaSolidStop() icons.IsIcon               { return newIcon(fontSolid, "stop") }
+func FaSolidStopwatch20() icons.IsIcon        { return newIcon(fontSolid, "stopwatch-20") }
+func FaSolidStopwatch() icons.IsIcon          { return newIcon(fontSolid, "stopwatch") }
+func FaSolidStoreAltSlash() icons.IsIcon      { return newIcon(fontSolid, "store-alt-slash") }
+func FaSolidStoreAlt() icons.IsIcon           { return newIcon(fontSolid, "store-alt") }
+func FaSolidStoreSlash() icons.IsIcon         { return newIcon(fontSolid, "store-slash") }
+func FaSolidStore() icons.IsIcon              { return newIcon(fontSolid, "store") }
+func FaSolidStream() icons.IsIcon             { return newIcon(fontSolid, "stream") }
+func FaSolidStreetView() icons.IsIcon         { return newIcon(fontSolid, "street-view") }
+func FaSolidStrikethrough() icons.IsIcon      { return newIcon(fontSolid, "strikethrough") }
+func FaSolidStroopwafel() icons.IsIcon        { return newIcon(fontSolid, "stroopwafel") }
+func FaSolidSubscript() icons.IsIcon          { return newIcon(fontSolid, "subscript") }
+func FaSolidSubway() icons.IsIcon             { return newIcon(fontSolid, "subway") }
+func FaSolidSuitcaseRolling() icons.IsIcon    { return newIcon(fontSolid, "suitcase-rolling") }
+func FaSolidSuitcase() icons.IsIcon           { return newIcon(fontSolid, "suitcase") }
+func FaSolidSun() icons.IsIcon                { return newIcon(fontSolid, "sun") }
+func FaSolidSuperscript() icons.IsIcon        { return newIcon(fontSolid, "superscript") }
+func FaSolidSurprise() icons.IsIcon           { return newIcon(fontSolid, "surprise") }
+func FaSolidSwatchbook() icons.IsIcon         { return newIcon(fontSolid, "swatchbook") }
+func FaSolidSwimmer() icons.IsIcon            { return newIcon(fontSolid, "swimmer") }
+func FaSolidSwimmingPool() icons.IsIcon       { return newIcon(fontSolid, "swimming-pool") }
+func FaSolidSynagogue() icons.IsIcon          { return newIcon(fontSolid, "synagogue") }
+func FaSolidSyncAlt() icons.IsIcon            { return newIcon(fontSolid, "sync-alt") }
+func FaSolidSync() icons.IsIcon               { return newIcon(fontSolid, "sync") }
+func FaSolidSyringe() icons.IsIcon            { return newIcon(fontSolid, "syringe") }
+func FaSolidTableTennis() icons.IsIcon        { return newIcon(fontSolid, "table-tennis") }
+func FaSolidTable() icons.IsIcon              { return newIcon(fontSolid, "table") }
+func FaSolidTabletAlt() icons.IsIcon          { return newIcon(fontSolid, "tablet-alt") }
+func FaSolidTablet() icons.IsIcon             { return newIcon(fontSolid, "tablet") }
+func FaSolidTablets() icons.IsIcon            { return newIcon(fontSolid, "tablets") }
+func FaSolidTachometerAlt() icons.IsIcon      { return newIcon(fontSolid, "tachometer-alt") }
+func FaSolidTag() icons.IsIcon                { return newIcon(fontSolid, "tag") }
+func FaSolidTags() icons.IsIcon               { return newIcon(fontSolid, "tags") }
+func FaSolidTape() icons.IsIcon               { return newIcon(fontSolid, "tape") }
+func FaSolidTasks() icons.IsIcon              { return newIcon(fontSolid, "tasks") }
+func FaSolidTaxi() icons.IsIcon               { return newIcon(fontSolid, "taxi") }
+func FaSolidTeethOpen() icons.IsIcon          { return newIcon(fontSolid, "teeth-open") }
+func FaSolidTeeth() icons.IsIcon              { return newIcon(fontSolid, "teeth") }
+func FaSolidTemperatureHigh() icons.IsIcon    { return newIcon(fontSolid, "temperature-high") }
+func FaSolidTemperatureLow() icons.IsIcon     { return newIcon(fontSolid, "temperature-low") }
+func FaSolidTenge() icons.IsIcon              { return newIcon(fontSolid, "tenge") }
+func FaSolidTerminal() icons.IsIcon           { return newIcon(fontSolid, "terminal") }
+func FaSolidTextHeight() icons.IsIcon         { return newIcon(fontSolid, "text-height") }
+func FaSolidTextWidth() icons.IsIcon          { return newIcon(fontSolid, "text-width") }
+func FaSolidThLarge() icons.IsIcon            { return newIcon(fontSolid, "th-large") }
+func FaSolidThList() icons.IsIcon             { return newIcon(fontSolid, "th-list") }
+func FaSolidTh() icons.IsIcon                 { return newIcon(fontSolid, "th") }
+func FaSolidTheaterMasks() icons.IsIcon       { return newIcon(fontSolid, "theater-masks") }
+func FaSolidThermometerEmpty() icons.IsIcon   { return newIcon(fontSolid, "thermometer-empty") }
+func FaSolidThermometerFull() icons.IsIcon    { return newIcon(fontSolid, "thermometer-full") }
+func FaSolidThermometerHalf() icons.IsIcon    { return newIcon(fontSolid, "thermometer-half") }
+func FaSolidThermometerQuarter() icons.IsIcon { return newIcon(fontSolid, "thermometer-quarter") }
 func FaSolidThermometerThreeQuarters() icons.IsIcon {
-	return createIconSvg("solid/thermometer-three-quarters")
+	return newIcon(fontSolid, "thermometer-three-quarters")
 }
-func FaSolidThermometer() icons.IsIcon      { return createIconSvg("solid/thermometer") }
-func FaSolidThumbsDown() icons.IsIcon       { return createIconSvg("solid/thumbs-down") }
-func FaSolidThumbsUp() icons.IsIcon         { return createIconSvg("solid/thumbs-up") }
-func FaSolidThumbtack() icons.IsIcon        { return createIconSvg("solid/thumbtack") }
-func FaSolidTicketAlt() icons.IsIcon        { return createIconSvg("solid/ticket-alt") }
-func FaSolidTimesCircle() icons.IsIcon      { return createIconSvg("solid/times-circle") }
-func FaSolidTimes() icons.IsIcon            { return createIconSvg("solid/times") }
-func FaSolidTintSlash() icons.IsIcon        { return createIconSvg("solid/tint-slash") }
-func FaSolidTint() icons.IsIcon             { return createIconSvg("solid/tint") }
-func FaSolidTired() icons.IsIcon            { return createIconSvg("solid/tired") }
-func FaSolidToggleOff() icons.IsIcon        { return createIconSvg("solid/toggle-off") }
-func FaSolidToggleOn() icons.IsIcon         { return createIconSvg("solid/toggle-on") }
-func FaSolidToiletPaperSlash() icons.IsIcon { return createIconSvg("solid/toilet-paper-slash") }
-func FaSolidToiletPaper() icons.IsIcon      { return createIconSvg("solid/toilet-paper") }
-func FaSolidToilet() icons.IsIcon           { return createIconSvg("solid/toilet") }
-func FaSolidToolbox() icons.IsIcon          { return createIconSvg("solid/toolbox") }
-func FaSolidTools() icons.IsIcon            { return createIconSvg("solid/tools") }
-func FaSolidTooth() icons.IsIcon            { return createIconSvg("solid/tooth") }
-func FaSolidTorah() icons.IsIcon            { return createIconSvg("solid/torah") }
-func FaSolidToriiGate() icons.IsIcon        { return createIconSvg("solid/torii-gate") }
-func FaSolidTractor() icons.IsIcon          { return createIconSvg("solid/tractor") }
-func FaSolidTrademark() icons.IsIcon        { return createIconSvg("solid/trademark") }
-func FaSolidTrafficLight() icons.IsIcon     { return createIconSvg("solid/traffic-light") }
-func FaSolidTrailer() icons.IsIcon          { return createIconSvg("solid/trailer") }
-func FaSolidTrain() icons.IsIcon            { return createIconSvg("solid/train") }
-func FaSolidTram() icons.IsIcon             { return createIconSvg("solid/tram") }
-func FaSolidTransgenderAlt() icons.IsIcon   { return createIconSvg("solid/transgender-alt") }
-func FaSolidTransgender() icons.IsIcon      { return createIconSvg("solid/transgender") }
-func FaSolidTrashAlt() icons.IsIcon         { return createIconSvg("solid/trash-alt") }
-func FaSolidTrashRestoreAlt() icons.IsIcon  { return createIconSvg("solid/trash-restore-alt") }
-func FaSolidTrashRestore() icons.IsIcon     { return createIconSvg("solid/trash-restore") }
-func FaSolidTrash() icons.IsIcon            { return createIconSvg("solid/trash") }
-func FaSolidTree() icons.IsIcon             { return createIconSvg("solid/tree") }
-func FaSolidTrophy() icons.IsIcon           { return createIconSvg("solid/trophy") }
-func FaSolidTruckLoading() icons.IsIcon     { return createIconSvg("solid/truck-loading") }
-func FaSolidTruckMonster() icons.IsIcon     { return createIconSvg("solid/truck-monster") }
-func FaSolidTruckMoving() icons.IsIcon      { return createIconSvg("solid/truck-moving") }
-func FaSolidTruckPickup() icons.IsIcon      { return createIconSvg("solid/truck-pickup") }
-func FaSolidTruck() icons.IsIcon            { return createIconSvg("solid/truck") }
-func FaSolidTshirt() icons.IsIcon           { return createIconSvg("solid/tshirt") }
-func FaSolidTty() icons.IsIcon              { return createIconSvg("solid/tty") }
-func FaSolidTv() icons.IsIcon               { return createIconSvg("solid/tv") }
-func FaSolidUmbrellaBeach() icons.IsIcon    { return createIconSvg("solid/umbrella-beach") }
-func FaSolidUmbrella() icons.IsIcon         { return createIconSvg("solid/umbrella") }
-func FaSolidUnderline() icons.IsIcon        { return createIconSvg("solid/underline") }
-func FaSolidUndoAlt() icons.IsIcon          { return createIconSvg("solid/undo-alt") }
-func FaSolidUndo() icons.IsIcon             { return createIconSvg("solid/undo") }
-func FaSolidUniversalAccess() icons.IsIcon  { return createIconSvg("solid/universal-access") }
-func FaSolidUniversity() icons.IsIcon       { return createIconSvg("solid/university") }
-func FaSolidUnlink() icons.IsIcon           { return createIconSvg("solid/unlink") }
-func FaSolidUnlockAlt() icons.IsIcon        { return createIconSvg("solid/unlock-alt") }
-func FaSolidUnlock() icons.IsIcon           { return createIconSvg("solid/unlock") }
-func FaSolidUpload() icons.IsIcon           { return createIconSvg("solid/upload") }
-func FaSolidUserAltSlash() icons.IsIcon     { return createIconSvg("solid/user-alt-slash") }
-func FaSolidUserAlt() icons.IsIcon          { return createIconSvg("solid/user-alt") }
-func FaSolidUserAstronaut() icons.IsIcon    { return createIconSvg("solid/user-astronaut") }
-func FaSolidUserCheck() icons.IsIcon        { return createIconSvg("solid/user-check") }
-func FaSolidUserCircle() icons.IsIcon       { return createIconSvg("solid/user-circle") }
-func FaSolidUserClock() icons.IsIcon        { return createIconSvg("solid/user-clock") }
-func FaSolidUserCog() icons.IsIcon          { return createIconSvg("solid/user-cog") }
-func FaSolidUserEdit() icons.IsIcon         { return createIconSvg("solid/user-edit") }
-func FaSolidUserFriends() icons.IsIcon      { return createIconSvg("solid/user-friends") }
-func FaSolidUserGraduate() icons.IsIcon     { return createIconSvg("solid/user-graduate") }
-func FaSolidUserInjured() icons.IsIcon      { return createIconSvg("solid/user-injured") }
-func FaSolidUserLock() icons.IsIcon         { return createIconSvg("solid/user-lock") }
-func FaSolidUserMd() icons.IsIcon           { return createIconSvg("solid/user-md") }
-func FaSolidUserMinus() icons.IsIcon        { return createIconSvg("solid/user-minus") }
-func FaSolidUserNinja() icons.IsIcon        { return createIconSvg("solid/user-ninja") }
-func FaSolidUserNurse() icons.IsIcon        { return createIconSvg("solid/user-nurse") }
-func FaSolidUserPlus() icons.IsIcon         { return createIconSvg("solid/user-plus") }
-func FaSolidUserSecret() icons.IsIcon       { return createIconSvg("solid/user-secret") }
-func FaSolidUserShield() icons.IsIcon       { return createIconSvg("solid/user-shield") }
-func FaSolidUserSlash() icons.IsIcon        { return createIconSvg("solid/user-slash") }
-func FaSolidUserTag() icons.IsIcon          { return createIconSvg("solid/user-tag") }
-func FaSolidUserTie() icons.IsIcon          { return createIconSvg("solid/user-tie") }
-func FaSolidUserTimes() icons.IsIcon        { return createIconSvg("solid/user-times") }
-func FaSolidUser() icons.IsIcon             { return createIconSvg("solid/user") }
-func FaSolidUsersCog() icons.IsIcon         { return createIconSvg("solid/users-cog") }
-func FaSolidUsersSlash() icons.IsIcon       { return createIconSvg("solid/users-slash") }
-func FaSolidUsers() icons.IsIcon            { return createIconSvg("solid/users") }
-func FaSolidUtensilSpoon() icons.IsIcon     { return createIconSvg("solid/utensil-spoon") }
-func FaSolidUtensils() icons.IsIcon         { return createIconSvg("solid/utensils") }
-func FaSolidVectorSquare() icons.IsIcon     { return createIconSvg("solid/vector-square") }
-func FaSolidVenusDouble() icons.IsIcon      { return createIconSvg("solid/venus-double") }
-func FaSolidVenusMars() icons.IsIcon        { return createIconSvg("solid/venus-mars") }
-func FaSolidVenus() icons.IsIcon            { return createIconSvg("solid/venus") }
-func FaSolidVestPatches() icons.IsIcon      { return createIconSvg("solid/vest-patches") }
-func FaSolidVest() icons.IsIcon             { return createIconSvg("solid/vest") }
-func FaSolidVial() icons.IsIcon             { return createIconSvg("solid/vial") }
-func FaSolidVials() icons.IsIcon            { return createIconSvg("solid/vials") }
-func FaSolidVideoSlash() icons.IsIcon       { return createIconSvg("solid/video-slash") }
-func FaSolidVideo() icons.IsIcon            { return createIconSvg("solid/video") }
-func FaSolidVihara() icons.IsIcon           { return createIconSvg("solid/vihara") }
-func FaSolidVirusSlash() icons.IsIcon       { return createIconSvg("solid/virus-slash") }
-func FaSolidVirus() icons.IsIcon            { return createIconSvg("solid/virus") }
-func FaSolidViruses() icons.IsIcon          { return createIconSvg("solid/viruses") }
-func FaSolidVoicemail() icons.IsIcon        { return createIconSvg("solid/voicemail") }
-func FaSolidVolleyballBall() icons.IsIcon   { return createIconSvg("solid/volleyball-ball") }
-func FaSolidVolumeDown() icons.IsIcon       { return createIconSvg("solid/volume-down") }
-func FaSolidVolumeMute() icons.IsIcon       { return createIconSvg("solid/volume-mute") }
-func FaSolidVolumeOff() icons.IsIcon        { return createIconSvg("solid/volume-off") }
-func FaSolidVolumeUp() icons.IsIcon         { return createIconSvg("solid/volume-up") }
-func FaSolidVoteYea() icons.IsIcon          { return createIconSvg("solid/vote-yea") }
-func FaSolidVrCardboard() icons.IsIcon      { return createIconSvg("solid/vr-cardboard") }
-func FaSolidWalking() icons.IsIcon          { return createIconSvg("solid/walking") }
-func FaSolidWallet() icons.IsIcon           { return createIconSvg("solid/wallet") }
-func FaSolidWarehouse() icons.IsIcon        { return createIconSvg("solid/warehouse") }
-func FaSolidWater() icons.IsIcon            { return createIconSvg("solid/water") }
-func FaSolidWaveSquare() icons.IsIcon       { return createIconSvg("solid/wave-square") }
-func FaSolidWeightHanging() icons.IsIcon    { return createIconSvg("solid/weight-hanging") }
-func FaSolidWeight() icons.IsIcon           { return createIconSvg("solid/weight") }
-func FaSolidWheelchair() icons.IsIcon       { return createIconSvg("solid/wheelchair") }
-func FaSolidWifi() icons.IsIcon             { return createIconSvg("solid/wifi") }
-func FaSolidWind() icons.IsIcon             { return createIconSvg("solid/wind") }
-func FaSolidWindowClose() icons.IsIcon      { return createIconSvg("solid/window-close") }
-func FaSolidWindowMaximize() icons.IsIcon   { return createIconSvg("solid/window-maximize") }
-func FaSolidWindowMinimize() icons.IsIcon   { return createIconSvg("solid/window-minimize") }
-func FaSolidWindowRestore() icons.IsIcon    { return createIconSvg("solid/window-restore") }
-func FaSolidWineBottle() icons.IsIcon       { return createIconSvg("solid/wine-bottle") }
-func FaSolidWineGlassAlt() icons.IsIcon     { return createIconSvg("solid/wine-glass-alt") }
-func FaSolidWineGlass() icons.IsIcon        { return createIconSvg("solid/wine-glass") }
-func FaSolidWonSign() icons.IsIcon          { return createIconSvg("solid/won-sign") }
-func FaSolidWrench() icons.IsIcon           { return createIconSvg("solid/wrench") }
-func FaSolidXRay() icons.IsIcon             { return createIconSvg("solid/x-ray") }
-func FaSolidYenSign() icons.IsIcon          { return createIconSvg("solid/yen-sign") }
-func FaSolidYinYang() icons.IsIcon          { return createIconSvg("solid/yin-yang") }
+func FaSolidThermometer() icons.IsIcon      { return newIcon(fontSolid, "thermometer") }
+func FaSolidThumbsDown() icons.IsIcon       { return newIcon(fontSolid, "thumbs-down") }
+func FaSolidThumbsUp() icons.IsIcon         { return newIcon(fontSolid, "thumbs-up") }
+func FaSolidThumbtack() icons.IsIcon        { return newIcon(fontSolid, "thumbtack") }
+func FaSolidTicketAlt() icons.IsIcon        { return newIcon(fontSolid, "ticket-alt") }
+func FaSolidTimesCircle() icons.IsIcon      { return newIcon(fontSolid, "times-circle") }
+func FaSolidTimes() icons.IsIcon            { return newIcon(fontSolid, "times") }
+func FaSolidTintSlash() icons.IsIcon        { return newIcon(fontSolid, "tint-slash") }
+func FaSolidTint() icons.IsIcon             { return newIcon(fontSolid, "tint") }
+func FaSolidTired() icons.IsIcon            { return newIcon(fontSolid, "tired") }
+func FaSolidToggleOff() icons.IsIcon        { return newIcon(fontSolid, "toggle-off") }
+func FaSolidToggleOn() icons.IsIcon         { return newIcon(fontSolid, "toggle-on") }
+func FaSolidToiletPaperSlash() icons.IsIcon { return newIcon(fontSolid, "toilet-paper-slash") }
+func FaSolidToiletPaper() icons.IsIcon      { return newIcon(fontSolid, "toilet-paper") }
+func FaSolidToilet() icons.IsIcon           { return newIcon(fontSolid, "toilet") }
+func FaSolidToolbox() icons.IsIcon          { return newIcon(fontSolid, "toolbox") }
+func FaSolidTools() icons.IsIcon            { return newIcon(fontSolid, "tools") }
+func FaSolidTooth() icons.IsIcon            { return newIcon(fontSolid, "tooth") }
+func FaSolidTorah() icons.IsIcon            { return newIcon(fontSolid, "torah") }
+func FaSolidToriiGate() icons.IsIcon        { return newIcon(fontSolid, "torii-gate") }
+func FaSolidTractor() icons.IsIcon          { return newIcon(fontSolid, "tractor") }
+func FaSolidTrademark() icons.IsIcon        { return newIcon(fontSolid, "trademark") }
+func FaSolidTrafficLight() icons.IsIcon     { return newIcon(fontSolid, "traffic-light") }
+func FaSolidTrailer() icons.IsIcon          { return newIcon(fontSolid, "trailer") }
+func FaSolidTrain() icons.IsIcon            { return newIcon(fontSolid, "train") }
+func FaSolidTram() icons.IsIcon             { return newIcon(fontSolid, "tram") }
+func FaSolidTransgenderAlt() icons.IsIcon   { return newIcon(fontSolid, "transgender-alt") }
+func FaSolidTransgender() icons.IsIcon      { return newIcon(fontSolid, "transgender") }
+func FaSolidTrashAlt() icons.IsIcon         { return newIcon(fontSolid, "trash-alt") }
+func FaSolidTrashRestoreAlt() icons.IsIcon  { return newIcon(fontSolid, "trash-restore-alt") }
+func FaSolidTrashRestore() icons.IsIcon     { return newIcon(fontSolid, "trash-restore") }
+func FaSolidTrash() icons.IsIcon            { return newIcon(fontSolid, "trash") }
+func FaSolidTree() icons.IsIcon             { return newIcon(fontSolid, "tree") }
+func FaSolidTrophy() icons.IsIcon           { return newIcon(fontSolid, "trophy") }
+func FaSolidTruckLoading() icons.IsIcon     { return newIcon(fontSolid, "truck-loading") }
+func FaSolidTruckMonster() icons.IsIcon     { return newIcon(fontSolid, "truck-monster") }
+func FaSolidTruckMoving() icons.IsIcon      { return newIcon(fontSolid, "truck-moving") }
+func FaSolidTruckPickup() icons.IsIcon      { return newIcon(fontSolid, "truck-pickup") }
+func FaSolidTruck() icons.IsIcon            { return newIcon(fontSolid, "truck") }
+func FaSolidTshirt() icons.IsIcon           { return newIcon(fontSolid, "tshirt") }
+func FaSolidTty() icons.IsIcon              { return newIcon(fontSolid, "tty") }
+func FaSolidTv() icons.IsIcon               { return newIcon(fontSolid, "tv") }
+func FaSolidUmbrellaBeach() icons.IsIcon    { return newIcon(fontSolid, "umbrella-beach") }
+func FaSolidUmbrella() icons.IsIcon         { return newIcon(fontSolid, "umbrella") }
+func FaSolidUnderline() icons.IsIcon        { return newIcon(fontSolid, "underline") }
+func FaSolidUndoAlt() icons.IsIcon          { return newIcon(fontSolid, "undo-alt") }
+func FaSolidUndo() icons.IsIcon             { return newIcon(fontSolid, "undo") }
+func FaSolidUniversalAccess() icons.IsIcon  { return newIcon(fontSolid, "universal-access") }
+func FaSolidUniversity() icons.IsIcon       { return newIcon(fontSolid, "university") }
+func FaSolidUnlink() icons.IsIcon           { return newIcon(fontSolid, "unlink") }
+func FaSolidUnlockAlt() icons.IsIcon        { return newIcon(fontSolid, "unlock-alt") }
+func FaSolidUnlock() icons.IsIcon           { return newIcon(fontSolid, "unlock") }
+func FaSolidUpload() icons.IsIcon           { return newIcon(fontSolid, "upload") }
+func FaSolidUserAltSlash() icons.IsIcon     { return newIcon(fontSolid, "user-alt-slash") }
+func FaSolidUserAlt() icons.IsIcon          { return newIcon(fontSolid, "user-alt") }
+func FaSolidUserAstronaut() icons.IsIcon    { return newIcon(fontSolid, "user-astronaut") }
+func FaSolidUserCheck() icons.IsIcon        { return newIcon(fontSolid, "user-check") }
+func FaSolidUserCircle() icons.IsIcon       { return newIcon(fontSolid, "user-circle") }
+func FaSolidUserClock() icons.IsIcon        { return newIcon(fontSolid, "user-clock") }
+func FaSolidUserCog() icons.IsIcon          { return newIcon(fontSolid, "user-cog") }
+func FaSolidUserEdit() icons.IsIcon         { return newIcon(fontSolid, "user-edit") }
+func FaSolidUserFriends() icons.IsIcon      { return newIcon(fontSolid, "user-friends") }
+func FaSolidUserGraduate() icons.IsIcon     { return newIcon(fontSolid, "user-graduate") }
+func FaSolidUserInjured() icons.IsIcon      { return newIcon(fontSolid, "user-injured") }
+func FaSolidUserLock() icons.IsIcon         { return newIcon(fontSolid, "user-lock") }
+func FaSolidUserMd() icons.IsIcon           { return newIcon(fontSolid, "user-md") }
+func FaSolidUserMinus() icons.IsIcon        { return newIcon(fontSolid, "user-minus") }
+func FaSolidUserNinja() icons.IsIcon        { return newIcon(fontSolid, "user-ninja") }
+func FaSolidUserNurse() icons.IsIcon        { return newIcon(fontSolid, "user-nurse") }
+func FaSolidUserPlus() icons.IsIcon         { return newIcon(fontSolid, "user-plus") }
+func FaSolidUserSecret() icons.IsIcon       { return newIcon(fontSolid, "user-secret") }
+func FaSolidUserShield() icons.IsIcon       { return newIcon(fontSolid, "user-shield") }
+func FaSolidUserSlash() icons.IsIcon        { return newIcon(fontSolid, "user-slash") }
+func FaSolidUserTag() icons.IsIcon          { return newIcon(fontSolid, "user-tag") }
+func FaSolidUserTie() icons.IsIcon          { return newIcon(fontSolid, "user-tie") }
+func FaSolidUserTimes() icons.IsIcon        { return newIcon(fontSolid, "user-times") }
+func FaSolidUser() icons.IsIcon             { return newIcon(fontSolid, "user") }
+func FaSolidUsersCog() icons.IsIcon         { return newIcon(fontSolid, "users-cog") }
+func FaSolidUsersSlash() icons.IsIcon       { return newIcon(fontSolid, "users-slash") }
+func FaSolidUsers() icons.IsIcon            { return newIcon(fontSolid, "users") }
+func FaSolidUtensilSpoon() icons.IsIcon     { return newIcon(fontSolid, "utensil-spoon") }
+func FaSolidUtensils() icons.IsIcon         { return newIcon(fontSolid, "utensils") }
+func FaSolidVectorSquare() icons.IsIcon     { return newIcon(fontSolid, "vector-square") }
+func FaSolidVenusDouble() icons.IsIcon      { return newIcon(fontSolid, "venus-double") }
+func FaSolidVenusMars() icons.IsIcon        { return newIcon(fontSolid, "venus-mars") }
+func FaSolidVenus() icons.IsIcon            { return newIcon(fontSolid, "venus") }
+func FaSolidVestPatches() icons.IsIcon      { return newIcon(fontSolid, "vest-patches") }
+func FaSolidVest() icons.IsIcon             { return newIcon(fontSolid, "vest") }
+func FaSolidVial() icons.IsIcon             { return newIcon(fontSolid, "vial") }
+func FaSolidVials() icons.IsIcon            { return newIcon(fontSolid, "vials") }
+func FaSolidVideoSlash() icons.IsIcon       { return newIcon(fontSolid, "video-slash") }
+func FaSolidVideo() icons.IsIcon            { return newIcon(fontSolid, "video") }
+func FaSolidVihara() icons.IsIcon           { return newIcon(fontSolid, "vihara") }
+func FaSolidVirusSlash() icons.IsIcon       { return newIcon(fontSolid, "virus-slash") }
+func FaSolidVirus() icons.IsIcon            { return newIcon(fontSolid, "virus") }
+func FaSolidViruses() icons.IsIcon          { return newIcon(fontSolid, "viruses") }
+func FaSolidVoicemail() icons.IsIcon        { return newIcon(fontSolid, "voicemail") }
+func FaSolidVolleyballBall() icons.IsIcon   { return newIcon(fontSolid, "volleyball-ball") }
+func FaSolidVolumeDown() icons.IsIcon       { return newIcon(fontSolid, "volume-down") }
+func FaSolidVolumeMute() icons.IsIcon       { return newIcon(fontSolid, "volume-mute") }
+func FaSolidVolumeOff() icons.IsIcon        { return newIcon(fontSolid, "volume-off") }
+func FaSolidVolumeUp() icons.IsIcon         { return newIcon(fontSolid, "volume-up") }
+func FaSolidVoteYea() icons.IsIcon          { return newIcon(fontSolid, "vote-yea") }
+func FaSolidVrCardboard() icons.IsIcon      { return newIcon(fontSolid, "vr-cardboard") }
+func FaSolidWalking() icons.IsIcon          { return newIcon(fontSolid, "walking") }
+func FaSolidWallet() icons.IsIcon           { return newIcon(fontSolid, "wallet") }
+func FaSolidWarehouse() icons.IsIcon        { return newIcon(fontSolid, "warehouse") }
+func FaSolidWater() icons.IsIcon            { return newIcon(fontSolid, "water") }
+func FaSolidWaveSquare() icons.IsIcon       { return newIcon(fontSolid, "wave-square") }
+func FaSolidWeightHanging() icons.IsIcon    { return newIcon(fontSolid, "weight-hanging") }
+func FaSolidWeight() icons.IsIcon           { return newIcon(fontSolid, "weight") }
+func FaSolidWheelchair() icons.IsIcon       { return newIcon(fontSolid, "wheelchair") }
+func FaSolidWifi() icons.IsIcon             { return newIcon(fontSolid, "wifi") }
+func FaSolidWind() icons.IsIcon             { return newIcon(fontSolid, "wind") }
+func FaSolidWindowClose() icons.IsIcon      { return newIcon(fontSolid, "window-close") }
+func FaSolidWindowMaximize() icons.IsIcon   { return newIcon(fontSolid, "window-maximize") }
+func FaSolidWindowMinimize() icons.IsIcon   { return newIcon(fontSolid, "window-minimize") }
+func FaSolidWindowRestore() icons.IsIcon    { return newIcon(fontSolid, "window-restore") }
+func FaSolidWineBottle() icons.IsIcon       { return newIcon(fontSolid, "wine-bottle") }
+func FaSolidWineGlassAlt() icons.IsIcon     { return newIcon(fontSolid, "wine-glass-alt") }
+func FaSolidWineGlass() icons.IsIcon        { return newIcon(fontSolid, "wine-glass") }
+func FaSolidWonSign() icons.IsIcon          { return newIcon(fontSolid, "won-sign") }
+func FaSolidWrench() icons.IsIcon           { return newIcon(fontSolid, "wrench") }
+func FaSolidXRay() icons.IsIcon             { return newIcon(fontSolid, "x-ray") }
+func FaSolidYenSign() icons.IsIcon          { return newIcon(fontSolid, "yen-sign") }
+func FaSolidYinYang() icons.IsIcon          { return newIcon(fontSolid, "yin-yang") }
