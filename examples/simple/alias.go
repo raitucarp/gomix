@@ -6,7 +6,9 @@ import (
 	modern_normalize "github.com/raitucarp/gomix/addons/modern-normalize"
 	"github.com/raitucarp/gomix/components"
 	"github.com/raitucarp/gomix/element"
-	fa5 "github.com/raitucarp/gomix/icons/fontawesome5"
+	fa5 "github.com/raitucarp/gomix/icons/fontawesome-5"
+	ai "github.com/raitucarp/gomix/icons/ant-design-icons"
+	
 	"github.com/raitucarp/gomix/styles"
 	"github.com/raitucarp/gomix/value"
 )
@@ -80,3 +82,4 @@ var Icon = components.Icon
 
 // font awesome
 var fa_brand_android = fa5.FaBrandAndroid
+var ai_account_book = ai.AiFillAccountBook

@@ -42,7 +42,11 @@ func HomeLayout(page *gomix.Page) isComponent {
 			span(text("test")),
 			div(
 				Icon(fa_brand_android()).Size2Xl().Component().FillRed(300),
-				span(text("testa")),
+				span(text("Font Awesome Brand Android")),
+			).Element().Style(flex_1),
+			div(
+				span(text("ai acount book")),
+				Icon(ai_account_book()).Size3Xl().Component().FillPurple(900),
 			).Element().Style(flex_1),
 		).
 			Component().
