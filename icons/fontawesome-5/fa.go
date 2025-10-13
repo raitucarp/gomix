@@ -13,9 +13,9 @@ var svgs embed.FS
 const (
 	svgPath     = "svgs"
 	name        = "font-awesome-5"
-	fontBrands  = "brands"
-	fontSolid   = "solid"
-	fontRegular = "regular"
+	brandsIcon  = "brands"
+	solidIcon   = "solid"
+	regularIcon = "regular"
 )
 
 type fontAwesomeIcon struct {

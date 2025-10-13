@@ -2,702 +2,702 @@ package fa5
 
 import "github.com/raitucarp/gomix/icons"
 
-func FaBrand500px() icons.IsIcon { return newIcon(fontBrands, "500px") }
+func FaBrand500px() icons.IsIcon { return newIcon(brandsIcon, "500px") }
 func FaBrandAccessibleIcon() icons.IsIcon {
-	return newIcon(fontBrands, "accessible-icon")
+	return newIcon(brandsIcon, "accessible-icon")
 }
-func FaBrandAccusoft() icons.IsIcon { return newIcon(fontBrands, "accusoft") }
+func FaBrandAccusoft() icons.IsIcon { return newIcon(brandsIcon, "accusoft") }
 func FaBrandAcquisitionsIncorporated() icons.IsIcon {
-	return newIcon(fontBrands, "acquisitions-incorporated")
+	return newIcon(brandsIcon, "acquisitions-incorporated")
 }
-func FaBrandAdn() icons.IsIcon      { return newIcon(fontBrands, "adn") }
-func FaBrandAdversal() icons.IsIcon { return newIcon(fontBrands, "adversal") }
+func FaBrandAdn() icons.IsIcon      { return newIcon(brandsIcon, "adn") }
+func FaBrandAdversal() icons.IsIcon { return newIcon(brandsIcon, "adversal") }
 func FaBrandAffiliatetheme() icons.IsIcon {
-	return newIcon(fontBrands, "affiliatetheme")
+	return newIcon(brandsIcon, "affiliatetheme")
 }
-func FaBrandAirbnb() icons.IsIcon    { return newIcon(fontBrands, "airbnb") }
-func FaBrandAlgolia() icons.IsIcon   { return newIcon(fontBrands, "algolia") }
-func FaBrandAlipay() icons.IsIcon    { return newIcon(fontBrands, "alipay") }
-func FaBrandAmazonPay() icons.IsIcon { return newIcon(fontBrands, "amazon-pay") }
-func FaBrandAmazon() icons.IsIcon    { return newIcon(fontBrands, "amazon") }
-func FaBrandAmilia() icons.IsIcon    { return newIcon(fontBrands, "amilia") }
-func FaBrandAndroid() icons.IsIcon   { return newIcon(fontBrands, "android") }
-func FaBrandAngellist() icons.IsIcon { return newIcon(fontBrands, "angellist") }
+func FaBrandAirbnb() icons.IsIcon    { return newIcon(brandsIcon, "airbnb") }
+func FaBrandAlgolia() icons.IsIcon   { return newIcon(brandsIcon, "algolia") }
+func FaBrandAlipay() icons.IsIcon    { return newIcon(brandsIcon, "alipay") }
+func FaBrandAmazonPay() icons.IsIcon { return newIcon(brandsIcon, "amazon-pay") }
+func FaBrandAmazon() icons.IsIcon    { return newIcon(brandsIcon, "amazon") }
+func FaBrandAmilia() icons.IsIcon    { return newIcon(brandsIcon, "amilia") }
+func FaBrandAndroid() icons.IsIcon   { return newIcon(brandsIcon, "android") }
+func FaBrandAngellist() icons.IsIcon { return newIcon(brandsIcon, "angellist") }
 func FaBrandAngrycreative() icons.IsIcon {
-	return newIcon(fontBrands, "angrycreative")
+	return newIcon(brandsIcon, "angrycreative")
 }
-func FaBrandAngular() icons.IsIcon { return newIcon(fontBrands, "angular") }
+func FaBrandAngular() icons.IsIcon { return newIcon(brandsIcon, "angular") }
 func FaBrandAppStoreIos() icons.IsIcon {
-	return newIcon(fontBrands, "app-store-ios")
+	return newIcon(brandsIcon, "app-store-ios")
 }
-func FaBrandAppStore() icons.IsIcon   { return newIcon(fontBrands, "app-store") }
-func FaBrandApper() icons.IsIcon      { return newIcon(fontBrands, "apper") }
-func FaBrandApplePay() icons.IsIcon   { return newIcon(fontBrands, "apple-pay") }
-func FaBrandApple() icons.IsIcon      { return newIcon(fontBrands, "apple") }
-func FaBrandArtstation() icons.IsIcon { return newIcon(fontBrands, "artstation") }
-func FaBrandAsymmetrik() icons.IsIcon { return newIcon(fontBrands, "asymmetrik") }
-func FaBrandAtlassian() icons.IsIcon  { return newIcon(fontBrands, "atlassian") }
-func FaBrandAudible() icons.IsIcon    { return newIcon(fontBrands, "audible") }
+func FaBrandAppStore() icons.IsIcon   { return newIcon(brandsIcon, "app-store") }
+func FaBrandApper() icons.IsIcon      { return newIcon(brandsIcon, "apper") }
+func FaBrandApplePay() icons.IsIcon   { return newIcon(brandsIcon, "apple-pay") }
+func FaBrandApple() icons.IsIcon      { return newIcon(brandsIcon, "apple") }
+func FaBrandArtstation() icons.IsIcon { return newIcon(brandsIcon, "artstation") }
+func FaBrandAsymmetrik() icons.IsIcon { return newIcon(brandsIcon, "asymmetrik") }
+func FaBrandAtlassian() icons.IsIcon  { return newIcon(brandsIcon, "atlassian") }
+func FaBrandAudible() icons.IsIcon    { return newIcon(brandsIcon, "audible") }
 func FaBrandAutoprefixer() icons.IsIcon {
-	return newIcon(fontBrands, "autoprefixer")
+	return newIcon(brandsIcon, "autoprefixer")
 }
-func FaBrandAvianex() icons.IsIcon   { return newIcon(fontBrands, "avianex") }
-func FaBrandAviato() icons.IsIcon    { return newIcon(fontBrands, "aviato") }
-func FaBrandAws() icons.IsIcon       { return newIcon(fontBrands, "aws") }
-func FaBrandBandcamp() icons.IsIcon  { return newIcon(fontBrands, "bandcamp") }
-func FaBrandBattleNet() icons.IsIcon { return newIcon(fontBrands, "battle-net") }
+func FaBrandAvianex() icons.IsIcon   { return newIcon(brandsIcon, "avianex") }
+func FaBrandAviato() icons.IsIcon    { return newIcon(brandsIcon, "aviato") }
+func FaBrandAws() icons.IsIcon       { return newIcon(brandsIcon, "aws") }
+func FaBrandBandcamp() icons.IsIcon  { return newIcon(brandsIcon, "bandcamp") }
+func FaBrandBattleNet() icons.IsIcon { return newIcon(brandsIcon, "battle-net") }
 func FaBrandBehanceSquare() icons.IsIcon {
-	return newIcon(fontBrands, "behance-square")
+	return newIcon(brandsIcon, "behance-square")
 }
-func FaBrandBehance() icons.IsIcon    { return newIcon(fontBrands, "behance") }
-func FaBrandBimobject() icons.IsIcon  { return newIcon(fontBrands, "bimobject") }
-func FaBrandBitbucket() icons.IsIcon  { return newIcon(fontBrands, "bitbucket") }
-func FaBrandBitcoin() icons.IsIcon    { return newIcon(fontBrands, "bitcoin") }
-func FaBrandBity() icons.IsIcon       { return newIcon(fontBrands, "bity") }
-func FaBrandBlackTie() icons.IsIcon   { return newIcon(fontBrands, "black-tie") }
-func FaBrandBlackberry() icons.IsIcon { return newIcon(fontBrands, "blackberry") }
-func FaBrandBloggerB() icons.IsIcon   { return newIcon(fontBrands, "blogger-b") }
-func FaBrandBlogger() icons.IsIcon    { return newIcon(fontBrands, "blogger") }
-func FaBrandBluetoothB() icons.IsIcon { return newIcon(fontBrands, "bluetooth-b") }
-func FaBrandBluetooth() icons.IsIcon  { return newIcon(fontBrands, "bluetooth") }
-func FaBrandBootstrap() icons.IsIcon  { return newIcon(fontBrands, "bootstrap") }
-func FaBrandBtc() icons.IsIcon        { return newIcon(fontBrands, "btc") }
-func FaBrandBuffer() icons.IsIcon     { return newIcon(fontBrands, "buffer") }
+func FaBrandBehance() icons.IsIcon    { return newIcon(brandsIcon, "behance") }
+func FaBrandBimobject() icons.IsIcon  { return newIcon(brandsIcon, "bimobject") }
+func FaBrandBitbucket() icons.IsIcon  { return newIcon(brandsIcon, "bitbucket") }
+func FaBrandBitcoin() icons.IsIcon    { return newIcon(brandsIcon, "bitcoin") }
+func FaBrandBity() icons.IsIcon       { return newIcon(brandsIcon, "bity") }
+func FaBrandBlackTie() icons.IsIcon   { return newIcon(brandsIcon, "black-tie") }
+func FaBrandBlackberry() icons.IsIcon { return newIcon(brandsIcon, "blackberry") }
+func FaBrandBloggerB() icons.IsIcon   { return newIcon(brandsIcon, "blogger-b") }
+func FaBrandBlogger() icons.IsIcon    { return newIcon(brandsIcon, "blogger") }
+func FaBrandBluetoothB() icons.IsIcon { return newIcon(brandsIcon, "bluetooth-b") }
+func FaBrandBluetooth() icons.IsIcon  { return newIcon(brandsIcon, "bluetooth") }
+func FaBrandBootstrap() icons.IsIcon  { return newIcon(brandsIcon, "bootstrap") }
+func FaBrandBtc() icons.IsIcon        { return newIcon(brandsIcon, "btc") }
+func FaBrandBuffer() icons.IsIcon     { return newIcon(brandsIcon, "buffer") }
 func FaBrandBuromobelexperte() icons.IsIcon {
-	return newIcon(fontBrands, "buromobelexperte")
+	return newIcon(brandsIcon, "buromobelexperte")
 }
-func FaBrandBuyNLarge() icons.IsIcon  { return newIcon(fontBrands, "buy-n-large") }
-func FaBrandBuysellads() icons.IsIcon { return newIcon(fontBrands, "buysellads") }
+func FaBrandBuyNLarge() icons.IsIcon  { return newIcon(brandsIcon, "buy-n-large") }
+func FaBrandBuysellads() icons.IsIcon { return newIcon(brandsIcon, "buysellads") }
 func FaBrandCanadianMapleLeaf() icons.IsIcon {
-	return newIcon(fontBrands, "canadian-maple-leaf")
+	return newIcon(brandsIcon, "canadian-maple-leaf")
 }
 func FaBrandCcAmazonPay() icons.IsIcon {
-	return newIcon(fontBrands, "cc-amazon-pay")
+	return newIcon(brandsIcon, "cc-amazon-pay")
 }
-func FaBrandCcAmex() icons.IsIcon { return newIcon(fontBrands, "cc-amex") }
+func FaBrandCcAmex() icons.IsIcon { return newIcon(brandsIcon, "cc-amex") }
 func FaBrandCcApplePay() icons.IsIcon {
-	return newIcon(fontBrands, "cc-apple-pay")
+	return newIcon(brandsIcon, "cc-apple-pay")
 }
 func FaBrandCcDinersClub() icons.IsIcon {
-	return newIcon(fontBrands, "cc-diners-club")
+	return newIcon(brandsIcon, "cc-diners-club")
 }
-func FaBrandCcDiscover() icons.IsIcon { return newIcon(fontBrands, "cc-discover") }
-func FaBrandCcJcb() icons.IsIcon      { return newIcon(fontBrands, "cc-jcb") }
+func FaBrandCcDiscover() icons.IsIcon { return newIcon(brandsIcon, "cc-discover") }
+func FaBrandCcJcb() icons.IsIcon      { return newIcon(brandsIcon, "cc-jcb") }
 func FaBrandCcMastercard() icons.IsIcon {
-	return newIcon(fontBrands, "cc-mastercard")
+	return newIcon(brandsIcon, "cc-mastercard")
 }
-func FaBrandCcPaypal() icons.IsIcon   { return newIcon(fontBrands, "cc-paypal") }
-func FaBrandCcStripe() icons.IsIcon   { return newIcon(fontBrands, "cc-stripe") }
-func FaBrandCcVisa() icons.IsIcon     { return newIcon(fontBrands, "cc-visa") }
-func FaBrandCentercode() icons.IsIcon { return newIcon(fontBrands, "centercode") }
-func FaBrandCentos() icons.IsIcon     { return newIcon(fontBrands, "centos") }
-func FaBrandChrome() icons.IsIcon     { return newIcon(fontBrands, "chrome") }
-func FaBrandChromecast() icons.IsIcon { return newIcon(fontBrands, "chromecast") }
-func FaBrandCloudflare() icons.IsIcon { return newIcon(fontBrands, "cloudflare") }
-func FaBrandCloudscale() icons.IsIcon { return newIcon(fontBrands, "cloudscale") }
-func FaBrandCloudsmith() icons.IsIcon { return newIcon(fontBrands, "cloudsmith") }
+func FaBrandCcPaypal() icons.IsIcon   { return newIcon(brandsIcon, "cc-paypal") }
+func FaBrandCcStripe() icons.IsIcon   { return newIcon(brandsIcon, "cc-stripe") }
+func FaBrandCcVisa() icons.IsIcon     { return newIcon(brandsIcon, "cc-visa") }
+func FaBrandCentercode() icons.IsIcon { return newIcon(brandsIcon, "centercode") }
+func FaBrandCentos() icons.IsIcon     { return newIcon(brandsIcon, "centos") }
+func FaBrandChrome() icons.IsIcon     { return newIcon(brandsIcon, "chrome") }
+func FaBrandChromecast() icons.IsIcon { return newIcon(brandsIcon, "chromecast") }
+func FaBrandCloudflare() icons.IsIcon { return newIcon(brandsIcon, "cloudflare") }
+func FaBrandCloudscale() icons.IsIcon { return newIcon(brandsIcon, "cloudscale") }
+func FaBrandCloudsmith() icons.IsIcon { return newIcon(brandsIcon, "cloudsmith") }
 func FaBrandCloudversify() icons.IsIcon {
-	return newIcon(fontBrands, "cloudversify")
+	return newIcon(brandsIcon, "cloudversify")
 }
-func FaBrandCodepen() icons.IsIcon    { return newIcon(fontBrands, "codepen") }
-func FaBrandCodiepie() icons.IsIcon   { return newIcon(fontBrands, "codiepie") }
-func FaBrandConfluence() icons.IsIcon { return newIcon(fontBrands, "confluence") }
+func FaBrandCodepen() icons.IsIcon    { return newIcon(brandsIcon, "codepen") }
+func FaBrandCodiepie() icons.IsIcon   { return newIcon(brandsIcon, "codiepie") }
+func FaBrandConfluence() icons.IsIcon { return newIcon(brandsIcon, "confluence") }
 func FaBrandConnectdevelop() icons.IsIcon {
-	return newIcon(fontBrands, "connectdevelop")
+	return newIcon(brandsIcon, "connectdevelop")
 }
-func FaBrandContao() icons.IsIcon { return newIcon(fontBrands, "contao") }
+func FaBrandContao() icons.IsIcon { return newIcon(brandsIcon, "contao") }
 func FaBrandCottonBureau() icons.IsIcon {
-	return newIcon(fontBrands, "cotton-bureau")
+	return newIcon(brandsIcon, "cotton-bureau")
 }
-func FaBrandCpanel() icons.IsIcon { return newIcon(fontBrands, "cpanel") }
+func FaBrandCpanel() icons.IsIcon { return newIcon(brandsIcon, "cpanel") }
 func FaBrandCreativeCommonsBy() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-by")
+	return newIcon(brandsIcon, "creative-commons-by")
 }
 func FaBrandCreativeCommonsNcEu() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-nc-eu")
+	return newIcon(brandsIcon, "creative-commons-nc-eu")
 }
 func FaBrandCreativeCommonsNcJp() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-nc-jp")
+	return newIcon(brandsIcon, "creative-commons-nc-jp")
 }
 func FaBrandCreativeCommonsNc() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-nc")
+	return newIcon(brandsIcon, "creative-commons-nc")
 }
 func FaBrandCreativeCommonsNd() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-nd")
+	return newIcon(brandsIcon, "creative-commons-nd")
 }
 func FaBrandCreativeCommonsPdAlt() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-pd-alt")
+	return newIcon(brandsIcon, "creative-commons-pd-alt")
 }
 func FaBrandCreativeCommonsPd() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-pd")
+	return newIcon(brandsIcon, "creative-commons-pd")
 }
 func FaBrandCreativeCommonsRemix() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-remix")
+	return newIcon(brandsIcon, "creative-commons-remix")
 }
 func FaBrandCreativeCommonsSa() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-sa")
+	return newIcon(brandsIcon, "creative-commons-sa")
 }
 func FaBrandCreativeCommonsSamplingPlus() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-sampling-plus")
+	return newIcon(brandsIcon, "creative-commons-sampling-plus")
 }
 func FaBrandCreativeCommonsSampling() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-sampling")
+	return newIcon(brandsIcon, "creative-commons-sampling")
 }
 func FaBrandCreativeCommonsShare() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-share")
+	return newIcon(brandsIcon, "creative-commons-share")
 }
 func FaBrandCreativeCommonsZero() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons-zero")
+	return newIcon(brandsIcon, "creative-commons-zero")
 }
 func FaBrandCreativeCommons() icons.IsIcon {
-	return newIcon(fontBrands, "creative-commons")
+	return newIcon(brandsIcon, "creative-commons")
 }
 func FaBrandCriticalRole() icons.IsIcon {
-	return newIcon(fontBrands, "critical-role")
+	return newIcon(brandsIcon, "critical-role")
 }
-func FaBrandCss3Alt() icons.IsIcon    { return newIcon(fontBrands, "css3-alt") }
-func FaBrandCss3() icons.IsIcon       { return newIcon(fontBrands, "css3") }
-func FaBrandCuttlefish() icons.IsIcon { return newIcon(fontBrands, "cuttlefish") }
+func FaBrandCss3Alt() icons.IsIcon    { return newIcon(brandsIcon, "css3-alt") }
+func FaBrandCss3() icons.IsIcon       { return newIcon(brandsIcon, "css3") }
+func FaBrandCuttlefish() icons.IsIcon { return newIcon(brandsIcon, "cuttlefish") }
 func FaBrandDAndDBeyond() icons.IsIcon {
-	return newIcon(fontBrands, "d-and-d-beyond")
+	return newIcon(brandsIcon, "d-and-d-beyond")
 }
-func FaBrandDAndD() icons.IsIcon { return newIcon(fontBrands, "d-and-d") }
+func FaBrandDAndD() icons.IsIcon { return newIcon(brandsIcon, "d-and-d") }
 func FaBrandDailymotion() icons.IsIcon {
-	return newIcon(fontBrands, "dailymotion")
+	return newIcon(brandsIcon, "dailymotion")
 }
-func FaBrandDashcube() icons.IsIcon   { return newIcon(fontBrands, "dashcube") }
-func FaBrandDeezer() icons.IsIcon     { return newIcon(fontBrands, "deezer") }
-func FaBrandDelicious() icons.IsIcon  { return newIcon(fontBrands, "delicious") }
-func FaBrandDeploydog() icons.IsIcon  { return newIcon(fontBrands, "deploydog") }
-func FaBrandDeskpro() icons.IsIcon    { return newIcon(fontBrands, "deskpro") }
-func FaBrandDev() icons.IsIcon        { return newIcon(fontBrands, "dev") }
-func FaBrandDeviantart() icons.IsIcon { return newIcon(fontBrands, "deviantart") }
-func FaBrandDhl() icons.IsIcon        { return newIcon(fontBrands, "dhl") }
-func FaBrandDiaspora() icons.IsIcon   { return newIcon(fontBrands, "diaspora") }
-func FaBrandDigg() icons.IsIcon       { return newIcon(fontBrands, "digg") }
+func FaBrandDashcube() icons.IsIcon   { return newIcon(brandsIcon, "dashcube") }
+func FaBrandDeezer() icons.IsIcon     { return newIcon(brandsIcon, "deezer") }
+func FaBrandDelicious() icons.IsIcon  { return newIcon(brandsIcon, "delicious") }
+func FaBrandDeploydog() icons.IsIcon  { return newIcon(brandsIcon, "deploydog") }
+func FaBrandDeskpro() icons.IsIcon    { return newIcon(brandsIcon, "deskpro") }
+func FaBrandDev() icons.IsIcon        { return newIcon(brandsIcon, "dev") }
+func FaBrandDeviantart() icons.IsIcon { return newIcon(brandsIcon, "deviantart") }
+func FaBrandDhl() icons.IsIcon        { return newIcon(brandsIcon, "dhl") }
+func FaBrandDiaspora() icons.IsIcon   { return newIcon(brandsIcon, "diaspora") }
+func FaBrandDigg() icons.IsIcon       { return newIcon(brandsIcon, "digg") }
 func FaBrandDigitalOcean() icons.IsIcon {
-	return newIcon(fontBrands, "digital-ocean")
+	return newIcon(brandsIcon, "digital-ocean")
 }
-func FaBrandDiscord() icons.IsIcon   { return newIcon(fontBrands, "discord") }
-func FaBrandDiscourse() icons.IsIcon { return newIcon(fontBrands, "discourse") }
-func FaBrandDochub() icons.IsIcon    { return newIcon(fontBrands, "dochub") }
-func FaBrandDocker() icons.IsIcon    { return newIcon(fontBrands, "docker") }
+func FaBrandDiscord() icons.IsIcon   { return newIcon(brandsIcon, "discord") }
+func FaBrandDiscourse() icons.IsIcon { return newIcon(brandsIcon, "discourse") }
+func FaBrandDochub() icons.IsIcon    { return newIcon(brandsIcon, "dochub") }
+func FaBrandDocker() icons.IsIcon    { return newIcon(brandsIcon, "docker") }
 func FaBrandDraft2digital() icons.IsIcon {
-	return newIcon(fontBrands, "draft2digital")
+	return newIcon(brandsIcon, "draft2digital")
 }
 func FaBrandDribbbleSquare() icons.IsIcon {
-	return newIcon(fontBrands, "dribbble-square")
+	return newIcon(brandsIcon, "dribbble-square")
 }
-func FaBrandDribbble() icons.IsIcon   { return newIcon(fontBrands, "dribbble") }
-func FaBrandDropbox() icons.IsIcon    { return newIcon(fontBrands, "dropbox") }
-func FaBrandDrupal() icons.IsIcon     { return newIcon(fontBrands, "drupal") }
-func FaBrandDyalog() icons.IsIcon     { return newIcon(fontBrands, "dyalog") }
-func FaBrandEarlybirds() icons.IsIcon { return newIcon(fontBrands, "earlybirds") }
-func FaBrandEbay() icons.IsIcon       { return newIcon(fontBrands, "ebay") }
-func FaBrandEdgeLegacy() icons.IsIcon { return newIcon(fontBrands, "edge-legacy") }
-func FaBrandEdge() icons.IsIcon       { return newIcon(fontBrands, "edge") }
-func FaBrandElementor() icons.IsIcon  { return newIcon(fontBrands, "elementor") }
-func FaBrandEllo() icons.IsIcon       { return newIcon(fontBrands, "ello") }
-func FaBrandEmber() icons.IsIcon      { return newIcon(fontBrands, "ember") }
-func FaBrandEmpire() icons.IsIcon     { return newIcon(fontBrands, "empire") }
-func FaBrandEnvira() icons.IsIcon     { return newIcon(fontBrands, "envira") }
-func FaBrandErlang() icons.IsIcon     { return newIcon(fontBrands, "erlang") }
-func FaBrandEthereum() icons.IsIcon   { return newIcon(fontBrands, "ethereum") }
-func FaBrandEtsy() icons.IsIcon       { return newIcon(fontBrands, "etsy") }
-func FaBrandEvernote() icons.IsIcon   { return newIcon(fontBrands, "evernote") }
+func FaBrandDribbble() icons.IsIcon   { return newIcon(brandsIcon, "dribbble") }
+func FaBrandDropbox() icons.IsIcon    { return newIcon(brandsIcon, "dropbox") }
+func FaBrandDrupal() icons.IsIcon     { return newIcon(brandsIcon, "drupal") }
+func FaBrandDyalog() icons.IsIcon     { return newIcon(brandsIcon, "dyalog") }
+func FaBrandEarlybirds() icons.IsIcon { return newIcon(brandsIcon, "earlybirds") }
+func FaBrandEbay() icons.IsIcon       { return newIcon(brandsIcon, "ebay") }
+func FaBrandEdgeLegacy() icons.IsIcon { return newIcon(brandsIcon, "edge-legacy") }
+func FaBrandEdge() icons.IsIcon       { return newIcon(brandsIcon, "edge") }
+func FaBrandElementor() icons.IsIcon  { return newIcon(brandsIcon, "elementor") }
+func FaBrandEllo() icons.IsIcon       { return newIcon(brandsIcon, "ello") }
+func FaBrandEmber() icons.IsIcon      { return newIcon(brandsIcon, "ember") }
+func FaBrandEmpire() icons.IsIcon     { return newIcon(brandsIcon, "empire") }
+func FaBrandEnvira() icons.IsIcon     { return newIcon(brandsIcon, "envira") }
+func FaBrandErlang() icons.IsIcon     { return newIcon(brandsIcon, "erlang") }
+func FaBrandEthereum() icons.IsIcon   { return newIcon(brandsIcon, "ethereum") }
+func FaBrandEtsy() icons.IsIcon       { return newIcon(brandsIcon, "etsy") }
+func FaBrandEvernote() icons.IsIcon   { return newIcon(brandsIcon, "evernote") }
 func FaBrandExpeditedssl() icons.IsIcon {
-	return newIcon(fontBrands, "expeditedssl")
+	return newIcon(brandsIcon, "expeditedssl")
 }
-func FaBrandFacebookF() icons.IsIcon { return newIcon(fontBrands, "facebook-f") }
+func FaBrandFacebookF() icons.IsIcon { return newIcon(brandsIcon, "facebook-f") }
 func FaBrandFacebookMessenger() icons.IsIcon {
-	return newIcon(fontBrands, "facebook-messenger")
+	return newIcon(brandsIcon, "facebook-messenger")
 }
 func FaBrandFacebookSquare() icons.IsIcon {
-	return newIcon(fontBrands, "facebook-square")
+	return newIcon(brandsIcon, "facebook-square")
 }
-func FaBrandFacebook() icons.IsIcon { return newIcon(fontBrands, "facebook") }
+func FaBrandFacebook() icons.IsIcon { return newIcon(brandsIcon, "facebook") }
 func FaBrandFantasyFlightGames() icons.IsIcon {
-	return newIcon(fontBrands, "fantasy-flight-games")
+	return newIcon(brandsIcon, "fantasy-flight-games")
 }
-func FaBrandFedex() icons.IsIcon  { return newIcon(fontBrands, "fedex") }
-func FaBrandFedora() icons.IsIcon { return newIcon(fontBrands, "fedora") }
-func FaBrandFigma() icons.IsIcon  { return newIcon(fontBrands, "figma") }
+func FaBrandFedex() icons.IsIcon  { return newIcon(brandsIcon, "fedex") }
+func FaBrandFedora() icons.IsIcon { return newIcon(brandsIcon, "fedora") }
+func FaBrandFigma() icons.IsIcon  { return newIcon(brandsIcon, "figma") }
 func FaBrandFirefoxBrowser() icons.IsIcon {
-	return newIcon(fontBrands, "firefox-browser")
+	return newIcon(brandsIcon, "firefox-browser")
 }
-func FaBrandFirefox() icons.IsIcon { return newIcon(fontBrands, "firefox") }
+func FaBrandFirefox() icons.IsIcon { return newIcon(brandsIcon, "firefox") }
 func FaBrandFirstOrderAlt() icons.IsIcon {
-	return newIcon(fontBrands, "first-order-alt")
+	return newIcon(brandsIcon, "first-order-alt")
 }
-func FaBrandFirstOrder() icons.IsIcon { return newIcon(fontBrands, "first-order") }
-func FaBrandFirstdraft() icons.IsIcon { return newIcon(fontBrands, "firstdraft") }
-func FaBrandFlickr() icons.IsIcon     { return newIcon(fontBrands, "flickr") }
-func FaBrandFlipboard() icons.IsIcon  { return newIcon(fontBrands, "flipboard") }
-func FaBrandFly() icons.IsIcon        { return newIcon(fontBrands, "fly") }
+func FaBrandFirstOrder() icons.IsIcon { return newIcon(brandsIcon, "first-order") }
+func FaBrandFirstdraft() icons.IsIcon { return newIcon(brandsIcon, "firstdraft") }
+func FaBrandFlickr() icons.IsIcon     { return newIcon(brandsIcon, "flickr") }
+func FaBrandFlipboard() icons.IsIcon  { return newIcon(brandsIcon, "flipboard") }
+func FaBrandFly() icons.IsIcon        { return newIcon(brandsIcon, "fly") }
 func FaBrandFontAwesomeAlt() icons.IsIcon {
-	return newIcon(fontBrands, "font-awesome-alt")
+	return newIcon(brandsIcon, "font-awesome-alt")
 }
 func FaBrandFontAwesomeFlag() icons.IsIcon {
-	return newIcon(fontBrands, "font-awesome-flag")
+	return newIcon(brandsIcon, "font-awesome-flag")
 }
 func FaBrandFontAwesomeLogoFull() icons.IsIcon {
-	return newIcon(fontBrands, "font-awesome-logo-full")
+	return newIcon(brandsIcon, "font-awesome-logo-full")
 }
 func FaBrandFontAwesome() icons.IsIcon {
-	return newIcon(fontBrands, "font-awesome")
+	return newIcon(brandsIcon, "font-awesome")
 }
 func FaBrandFonticonsFi() icons.IsIcon {
-	return newIcon(fontBrands, "fonticons-fi")
+	return newIcon(brandsIcon, "fonticons-fi")
 }
-func FaBrandFonticons() icons.IsIcon { return newIcon(fontBrands, "fonticons") }
+func FaBrandFonticons() icons.IsIcon { return newIcon(brandsIcon, "fonticons") }
 func FaBrandFortAwesomeAlt() icons.IsIcon {
-	return newIcon(fontBrands, "fort-awesome-alt")
+	return newIcon(brandsIcon, "fort-awesome-alt")
 }
 func FaBrandFortAwesome() icons.IsIcon {
-	return newIcon(fontBrands, "fort-awesome")
+	return newIcon(brandsIcon, "fort-awesome")
 }
-func FaBrandForumbee() icons.IsIcon   { return newIcon(fontBrands, "forumbee") }
-func FaBrandFoursquare() icons.IsIcon { return newIcon(fontBrands, "foursquare") }
+func FaBrandForumbee() icons.IsIcon   { return newIcon(brandsIcon, "forumbee") }
+func FaBrandFoursquare() icons.IsIcon { return newIcon(brandsIcon, "foursquare") }
 func FaBrandFreeCodeCamp() icons.IsIcon {
-	return newIcon(fontBrands, "free-code-camp")
+	return newIcon(brandsIcon, "free-code-camp")
 }
-func FaBrandFreebsd() icons.IsIcon { return newIcon(fontBrands, "freebsd") }
-func FaBrandFulcrum() icons.IsIcon { return newIcon(fontBrands, "fulcrum") }
+func FaBrandFreebsd() icons.IsIcon { return newIcon(brandsIcon, "freebsd") }
+func FaBrandFulcrum() icons.IsIcon { return newIcon(brandsIcon, "fulcrum") }
 func FaBrandGalacticRepublic() icons.IsIcon {
-	return newIcon(fontBrands, "galactic-republic")
+	return newIcon(brandsIcon, "galactic-republic")
 }
 func FaBrandGalacticSenate() icons.IsIcon {
-	return newIcon(fontBrands, "galactic-senate")
+	return newIcon(brandsIcon, "galactic-senate")
 }
-func FaBrandGetPocket() icons.IsIcon { return newIcon(fontBrands, "get-pocket") }
-func FaBrandGgCircle() icons.IsIcon  { return newIcon(fontBrands, "gg-circle") }
-func FaBrandGg() icons.IsIcon        { return newIcon(fontBrands, "gg") }
-func FaBrandGitAlt() icons.IsIcon    { return newIcon(fontBrands, "git-alt") }
-func FaBrandGitSquare() icons.IsIcon { return newIcon(fontBrands, "git-square") }
-func FaBrandGit() icons.IsIcon       { return newIcon(fontBrands, "git") }
-func FaBrandGithubAlt() icons.IsIcon { return newIcon(fontBrands, "github-alt") }
+func FaBrandGetPocket() icons.IsIcon { return newIcon(brandsIcon, "get-pocket") }
+func FaBrandGgCircle() icons.IsIcon  { return newIcon(brandsIcon, "gg-circle") }
+func FaBrandGg() icons.IsIcon        { return newIcon(brandsIcon, "gg") }
+func FaBrandGitAlt() icons.IsIcon    { return newIcon(brandsIcon, "git-alt") }
+func FaBrandGitSquare() icons.IsIcon { return newIcon(brandsIcon, "git-square") }
+func FaBrandGit() icons.IsIcon       { return newIcon(brandsIcon, "git") }
+func FaBrandGithubAlt() icons.IsIcon { return newIcon(brandsIcon, "github-alt") }
 func FaBrandGithubSquare() icons.IsIcon {
-	return newIcon(fontBrands, "github-square")
+	return newIcon(brandsIcon, "github-square")
 }
-func FaBrandGithub() icons.IsIcon     { return newIcon(fontBrands, "github") }
-func FaBrandGitkraken() icons.IsIcon  { return newIcon(fontBrands, "gitkraken") }
-func FaBrandGitlab() icons.IsIcon     { return newIcon(fontBrands, "gitlab") }
-func FaBrandGitter() icons.IsIcon     { return newIcon(fontBrands, "gitter") }
-func FaBrandGlideG() icons.IsIcon     { return newIcon(fontBrands, "glide-g") }
-func FaBrandGlide() icons.IsIcon      { return newIcon(fontBrands, "glide") }
-func FaBrandGofore() icons.IsIcon     { return newIcon(fontBrands, "gofore") }
-func FaBrandGoodreadsG() icons.IsIcon { return newIcon(fontBrands, "goodreads-g") }
-func FaBrandGoodreads() icons.IsIcon  { return newIcon(fontBrands, "goodreads") }
+func FaBrandGithub() icons.IsIcon     { return newIcon(brandsIcon, "github") }
+func FaBrandGitkraken() icons.IsIcon  { return newIcon(brandsIcon, "gitkraken") }
+func FaBrandGitlab() icons.IsIcon     { return newIcon(brandsIcon, "gitlab") }
+func FaBrandGitter() icons.IsIcon     { return newIcon(brandsIcon, "gitter") }
+func FaBrandGlideG() icons.IsIcon     { return newIcon(brandsIcon, "glide-g") }
+func FaBrandGlide() icons.IsIcon      { return newIcon(brandsIcon, "glide") }
+func FaBrandGofore() icons.IsIcon     { return newIcon(brandsIcon, "gofore") }
+func FaBrandGoodreadsG() icons.IsIcon { return newIcon(brandsIcon, "goodreads-g") }
+func FaBrandGoodreads() icons.IsIcon  { return newIcon(brandsIcon, "goodreads") }
 func FaBrandGoogleDrive() icons.IsIcon {
-	return newIcon(fontBrands, "google-drive")
+	return newIcon(brandsIcon, "google-drive")
 }
-func FaBrandGooglePay() icons.IsIcon  { return newIcon(fontBrands, "google-pay") }
-func FaBrandGooglePlay() icons.IsIcon { return newIcon(fontBrands, "google-play") }
+func FaBrandGooglePay() icons.IsIcon  { return newIcon(brandsIcon, "google-pay") }
+func FaBrandGooglePlay() icons.IsIcon { return newIcon(brandsIcon, "google-play") }
 func FaBrandGooglePlusG() icons.IsIcon {
-	return newIcon(fontBrands, "google-plus-g")
+	return newIcon(brandsIcon, "google-plus-g")
 }
 func FaBrandGooglePlusSquare() icons.IsIcon {
-	return newIcon(fontBrands, "google-plus-square")
+	return newIcon(brandsIcon, "google-plus-square")
 }
-func FaBrandGooglePlus() icons.IsIcon { return newIcon(fontBrands, "google-plus") }
+func FaBrandGooglePlus() icons.IsIcon { return newIcon(brandsIcon, "google-plus") }
 func FaBrandGoogleWallet() icons.IsIcon {
-	return newIcon(fontBrands, "google-wallet")
+	return newIcon(brandsIcon, "google-wallet")
 }
-func FaBrandGoogle() icons.IsIcon   { return newIcon(fontBrands, "google") }
-func FaBrandGratipay() icons.IsIcon { return newIcon(fontBrands, "gratipay") }
-func FaBrandGrav() icons.IsIcon     { return newIcon(fontBrands, "grav") }
-func FaBrandGripfire() icons.IsIcon { return newIcon(fontBrands, "gripfire") }
-func FaBrandGrunt() icons.IsIcon    { return newIcon(fontBrands, "grunt") }
-func FaBrandGuilded() icons.IsIcon  { return newIcon(fontBrands, "guilded") }
-func FaBrandGulp() icons.IsIcon     { return newIcon(fontBrands, "gulp") }
+func FaBrandGoogle() icons.IsIcon   { return newIcon(brandsIcon, "google") }
+func FaBrandGratipay() icons.IsIcon { return newIcon(brandsIcon, "gratipay") }
+func FaBrandGrav() icons.IsIcon     { return newIcon(brandsIcon, "grav") }
+func FaBrandGripfire() icons.IsIcon { return newIcon(brandsIcon, "gripfire") }
+func FaBrandGrunt() icons.IsIcon    { return newIcon(brandsIcon, "grunt") }
+func FaBrandGuilded() icons.IsIcon  { return newIcon(brandsIcon, "guilded") }
+func FaBrandGulp() icons.IsIcon     { return newIcon(brandsIcon, "gulp") }
 func FaBrandHackerNewsSquare() icons.IsIcon {
-	return newIcon(fontBrands, "hacker-news-square")
+	return newIcon(brandsIcon, "hacker-news-square")
 }
-func FaBrandHackerNews() icons.IsIcon { return newIcon(fontBrands, "hacker-news") }
-func FaBrandHackerrank() icons.IsIcon { return newIcon(fontBrands, "hackerrank") }
-func FaBrandHips() icons.IsIcon       { return newIcon(fontBrands, "hips") }
+func FaBrandHackerNews() icons.IsIcon { return newIcon(brandsIcon, "hacker-news") }
+func FaBrandHackerrank() icons.IsIcon { return newIcon(brandsIcon, "hackerrank") }
+func FaBrandHips() icons.IsIcon       { return newIcon(brandsIcon, "hips") }
 func FaBrandHireAHelper() icons.IsIcon {
-	return newIcon(fontBrands, "hire-a-helper")
+	return newIcon(brandsIcon, "hire-a-helper")
 }
-func FaBrandHive() icons.IsIcon     { return newIcon(fontBrands, "hive") }
-func FaBrandHooli() icons.IsIcon    { return newIcon(fontBrands, "hooli") }
-func FaBrandHornbill() icons.IsIcon { return newIcon(fontBrands, "hornbill") }
-func FaBrandHotjar() icons.IsIcon   { return newIcon(fontBrands, "hotjar") }
-func FaBrandHouzz() icons.IsIcon    { return newIcon(fontBrands, "houzz") }
-func FaBrandHtml5() icons.IsIcon    { return newIcon(fontBrands, "html5") }
-func FaBrandHubspot() icons.IsIcon  { return newIcon(fontBrands, "hubspot") }
-func FaBrandIdeal() icons.IsIcon    { return newIcon(fontBrands, "ideal") }
-func FaBrandImdb() icons.IsIcon     { return newIcon(fontBrands, "imdb") }
-func FaBrandInnosoft() icons.IsIcon { return newIcon(fontBrands, "innosoft") }
+func FaBrandHive() icons.IsIcon     { return newIcon(brandsIcon, "hive") }
+func FaBrandHooli() icons.IsIcon    { return newIcon(brandsIcon, "hooli") }
+func FaBrandHornbill() icons.IsIcon { return newIcon(brandsIcon, "hornbill") }
+func FaBrandHotjar() icons.IsIcon   { return newIcon(brandsIcon, "hotjar") }
+func FaBrandHouzz() icons.IsIcon    { return newIcon(brandsIcon, "houzz") }
+func FaBrandHtml5() icons.IsIcon    { return newIcon(brandsIcon, "html5") }
+func FaBrandHubspot() icons.IsIcon  { return newIcon(brandsIcon, "hubspot") }
+func FaBrandIdeal() icons.IsIcon    { return newIcon(brandsIcon, "ideal") }
+func FaBrandImdb() icons.IsIcon     { return newIcon(brandsIcon, "imdb") }
+func FaBrandInnosoft() icons.IsIcon { return newIcon(brandsIcon, "innosoft") }
 func FaBrandInstagramSquare() icons.IsIcon {
-	return newIcon(fontBrands, "instagram-square")
+	return newIcon(brandsIcon, "instagram-square")
 }
-func FaBrandInstagram() icons.IsIcon { return newIcon(fontBrands, "instagram") }
-func FaBrandInstalod() icons.IsIcon  { return newIcon(fontBrands, "instalod") }
-func FaBrandIntercom() icons.IsIcon  { return newIcon(fontBrands, "intercom") }
+func FaBrandInstagram() icons.IsIcon { return newIcon(brandsIcon, "instagram") }
+func FaBrandInstalod() icons.IsIcon  { return newIcon(brandsIcon, "instalod") }
+func FaBrandIntercom() icons.IsIcon  { return newIcon(brandsIcon, "intercom") }
 func FaBrandInternetExplorer() icons.IsIcon {
-	return newIcon(fontBrands, "internet-explorer")
+	return newIcon(brandsIcon, "internet-explorer")
 }
-func FaBrandInvision() icons.IsIcon   { return newIcon(fontBrands, "invision") }
-func FaBrandIoxhost() icons.IsIcon    { return newIcon(fontBrands, "ioxhost") }
-func FaBrandItchIo() icons.IsIcon     { return newIcon(fontBrands, "itch-io") }
-func FaBrandItunesNote() icons.IsIcon { return newIcon(fontBrands, "itunes-note") }
-func FaBrandItunes() icons.IsIcon     { return newIcon(fontBrands, "itunes") }
-func FaBrandJava() icons.IsIcon       { return newIcon(fontBrands, "java") }
-func FaBrandJediOrder() icons.IsIcon  { return newIcon(fontBrands, "jedi-order") }
-func FaBrandJenkins() icons.IsIcon    { return newIcon(fontBrands, "jenkins") }
-func FaBrandJira() icons.IsIcon       { return newIcon(fontBrands, "jira") }
-func FaBrandJoget() icons.IsIcon      { return newIcon(fontBrands, "joget") }
-func FaBrandJoomla() icons.IsIcon     { return newIcon(fontBrands, "joomla") }
-func FaBrandJsSquare() icons.IsIcon   { return newIcon(fontBrands, "js-square") }
-func FaBrandJs() icons.IsIcon         { return newIcon(fontBrands, "js") }
-func FaBrandJsfiddle() icons.IsIcon   { return newIcon(fontBrands, "jsfiddle") }
-func FaBrandKaggle() icons.IsIcon     { return newIcon(fontBrands, "kaggle") }
-func FaBrandKeybase() icons.IsIcon    { return newIcon(fontBrands, "keybase") }
-func FaBrandKeycdn() icons.IsIcon     { return newIcon(fontBrands, "keycdn") }
+func FaBrandInvision() icons.IsIcon   { return newIcon(brandsIcon, "invision") }
+func FaBrandIoxhost() icons.IsIcon    { return newIcon(brandsIcon, "ioxhost") }
+func FaBrandItchIo() icons.IsIcon     { return newIcon(brandsIcon, "itch-io") }
+func FaBrandItunesNote() icons.IsIcon { return newIcon(brandsIcon, "itunes-note") }
+func FaBrandItunes() icons.IsIcon     { return newIcon(brandsIcon, "itunes") }
+func FaBrandJava() icons.IsIcon       { return newIcon(brandsIcon, "java") }
+func FaBrandJediOrder() icons.IsIcon  { return newIcon(brandsIcon, "jedi-order") }
+func FaBrandJenkins() icons.IsIcon    { return newIcon(brandsIcon, "jenkins") }
+func FaBrandJira() icons.IsIcon       { return newIcon(brandsIcon, "jira") }
+func FaBrandJoget() icons.IsIcon      { return newIcon(brandsIcon, "joget") }
+func FaBrandJoomla() icons.IsIcon     { return newIcon(brandsIcon, "joomla") }
+func FaBrandJsSquare() icons.IsIcon   { return newIcon(brandsIcon, "js-square") }
+func FaBrandJs() icons.IsIcon         { return newIcon(brandsIcon, "js") }
+func FaBrandJsfiddle() icons.IsIcon   { return newIcon(brandsIcon, "jsfiddle") }
+func FaBrandKaggle() icons.IsIcon     { return newIcon(brandsIcon, "kaggle") }
+func FaBrandKeybase() icons.IsIcon    { return newIcon(brandsIcon, "keybase") }
+func FaBrandKeycdn() icons.IsIcon     { return newIcon(brandsIcon, "keycdn") }
 func FaBrandKickstarterK() icons.IsIcon {
-	return newIcon(fontBrands, "kickstarter-k")
+	return newIcon(brandsIcon, "kickstarter-k")
 }
 func FaBrandKickstarter() icons.IsIcon {
-	return newIcon(fontBrands, "kickstarter")
+	return newIcon(brandsIcon, "kickstarter")
 }
-func FaBrandKorvue() icons.IsIcon  { return newIcon(fontBrands, "korvue") }
-func FaBrandLaravel() icons.IsIcon { return newIcon(fontBrands, "laravel") }
+func FaBrandKorvue() icons.IsIcon  { return newIcon(brandsIcon, "korvue") }
+func FaBrandLaravel() icons.IsIcon { return newIcon(brandsIcon, "laravel") }
 func FaBrandLastfmSquare() icons.IsIcon {
-	return newIcon(fontBrands, "lastfm-square")
+	return newIcon(brandsIcon, "lastfm-square")
 }
-func FaBrandLastfm() icons.IsIcon     { return newIcon(fontBrands, "lastfm") }
-func FaBrandLeanpub() icons.IsIcon    { return newIcon(fontBrands, "leanpub") }
-func FaBrandLess() icons.IsIcon       { return newIcon(fontBrands, "less") }
-func FaBrandLine() icons.IsIcon       { return newIcon(fontBrands, "line") }
-func FaBrandLinkedinIn() icons.IsIcon { return newIcon(fontBrands, "linkedin-in") }
-func FaBrandLinkedin() icons.IsIcon   { return newIcon(fontBrands, "linkedin") }
-func FaBrandLinode() icons.IsIcon     { return newIcon(fontBrands, "linode") }
-func FaBrandLinux() icons.IsIcon      { return newIcon(fontBrands, "linux") }
-func FaBrandLyft() icons.IsIcon       { return newIcon(fontBrands, "lyft") }
-func FaBrandMagento() icons.IsIcon    { return newIcon(fontBrands, "magento") }
-func FaBrandMailchimp() icons.IsIcon  { return newIcon(fontBrands, "mailchimp") }
+func FaBrandLastfm() icons.IsIcon     { return newIcon(brandsIcon, "lastfm") }
+func FaBrandLeanpub() icons.IsIcon    { return newIcon(brandsIcon, "leanpub") }
+func FaBrandLess() icons.IsIcon       { return newIcon(brandsIcon, "less") }
+func FaBrandLine() icons.IsIcon       { return newIcon(brandsIcon, "line") }
+func FaBrandLinkedinIn() icons.IsIcon { return newIcon(brandsIcon, "linkedin-in") }
+func FaBrandLinkedin() icons.IsIcon   { return newIcon(brandsIcon, "linkedin") }
+func FaBrandLinode() icons.IsIcon     { return newIcon(brandsIcon, "linode") }
+func FaBrandLinux() icons.IsIcon      { return newIcon(brandsIcon, "linux") }
+func FaBrandLyft() icons.IsIcon       { return newIcon(brandsIcon, "lyft") }
+func FaBrandMagento() icons.IsIcon    { return newIcon(brandsIcon, "magento") }
+func FaBrandMailchimp() icons.IsIcon  { return newIcon(brandsIcon, "mailchimp") }
 func FaBrandMandalorian() icons.IsIcon {
-	return newIcon(fontBrands, "mandalorian")
+	return newIcon(brandsIcon, "mandalorian")
 }
-func FaBrandMarkdown() icons.IsIcon  { return newIcon(fontBrands, "markdown") }
-func FaBrandMastodon() icons.IsIcon  { return newIcon(fontBrands, "mastodon") }
-func FaBrandMaxcdn() icons.IsIcon    { return newIcon(fontBrands, "maxcdn") }
-func FaBrandMdb() icons.IsIcon       { return newIcon(fontBrands, "mdb") }
-func FaBrandMedapps() icons.IsIcon   { return newIcon(fontBrands, "medapps") }
-func FaBrandMediumM() icons.IsIcon   { return newIcon(fontBrands, "medium-m") }
-func FaBrandMedium() icons.IsIcon    { return newIcon(fontBrands, "medium") }
-func FaBrandMedrt() icons.IsIcon     { return newIcon(fontBrands, "medrt") }
-func FaBrandMeetup() icons.IsIcon    { return newIcon(fontBrands, "meetup") }
-func FaBrandMegaport() icons.IsIcon  { return newIcon(fontBrands, "megaport") }
-func FaBrandMendeley() icons.IsIcon  { return newIcon(fontBrands, "mendeley") }
-func FaBrandMicroblog() icons.IsIcon { return newIcon(fontBrands, "microblog") }
-func FaBrandMicrosoft() icons.IsIcon { return newIcon(fontBrands, "microsoft") }
-func FaBrandMix() icons.IsIcon       { return newIcon(fontBrands, "mix") }
-func FaBrandMixcloud() icons.IsIcon  { return newIcon(fontBrands, "mixcloud") }
-func FaBrandMixer() icons.IsIcon     { return newIcon(fontBrands, "mixer") }
-func FaBrandMizuni() icons.IsIcon    { return newIcon(fontBrands, "mizuni") }
-func FaBrandModx() icons.IsIcon      { return newIcon(fontBrands, "modx") }
-func FaBrandMonero() icons.IsIcon    { return newIcon(fontBrands, "monero") }
-func FaBrandNapster() icons.IsIcon   { return newIcon(fontBrands, "napster") }
-func FaBrandNeos() icons.IsIcon      { return newIcon(fontBrands, "neos") }
-func FaBrandNimblr() icons.IsIcon    { return newIcon(fontBrands, "nimblr") }
-func FaBrandNodeJs() icons.IsIcon    { return newIcon(fontBrands, "node-js") }
-func FaBrandNode() icons.IsIcon      { return newIcon(fontBrands, "node") }
-func FaBrandNpm() icons.IsIcon       { return newIcon(fontBrands, "npm") }
-func FaBrandNs8() icons.IsIcon       { return newIcon(fontBrands, "ns8") }
+func FaBrandMarkdown() icons.IsIcon  { return newIcon(brandsIcon, "markdown") }
+func FaBrandMastodon() icons.IsIcon  { return newIcon(brandsIcon, "mastodon") }
+func FaBrandMaxcdn() icons.IsIcon    { return newIcon(brandsIcon, "maxcdn") }
+func FaBrandMdb() icons.IsIcon       { return newIcon(brandsIcon, "mdb") }
+func FaBrandMedapps() icons.IsIcon   { return newIcon(brandsIcon, "medapps") }
+func FaBrandMediumM() icons.IsIcon   { return newIcon(brandsIcon, "medium-m") }
+func FaBrandMedium() icons.IsIcon    { return newIcon(brandsIcon, "medium") }
+func FaBrandMedrt() icons.IsIcon     { return newIcon(brandsIcon, "medrt") }
+func FaBrandMeetup() icons.IsIcon    { return newIcon(brandsIcon, "meetup") }
+func FaBrandMegaport() icons.IsIcon  { return newIcon(brandsIcon, "megaport") }
+func FaBrandMendeley() icons.IsIcon  { return newIcon(brandsIcon, "mendeley") }
+func FaBrandMicroblog() icons.IsIcon { return newIcon(brandsIcon, "microblog") }
+func FaBrandMicrosoft() icons.IsIcon { return newIcon(brandsIcon, "microsoft") }
+func FaBrandMix() icons.IsIcon       { return newIcon(brandsIcon, "mix") }
+func FaBrandMixcloud() icons.IsIcon  { return newIcon(brandsIcon, "mixcloud") }
+func FaBrandMixer() icons.IsIcon     { return newIcon(brandsIcon, "mixer") }
+func FaBrandMizuni() icons.IsIcon    { return newIcon(brandsIcon, "mizuni") }
+func FaBrandModx() icons.IsIcon      { return newIcon(brandsIcon, "modx") }
+func FaBrandMonero() icons.IsIcon    { return newIcon(brandsIcon, "monero") }
+func FaBrandNapster() icons.IsIcon   { return newIcon(brandsIcon, "napster") }
+func FaBrandNeos() icons.IsIcon      { return newIcon(brandsIcon, "neos") }
+func FaBrandNimblr() icons.IsIcon    { return newIcon(brandsIcon, "nimblr") }
+func FaBrandNodeJs() icons.IsIcon    { return newIcon(brandsIcon, "node-js") }
+func FaBrandNode() icons.IsIcon      { return newIcon(brandsIcon, "node") }
+func FaBrandNpm() icons.IsIcon       { return newIcon(brandsIcon, "npm") }
+func FaBrandNs8() icons.IsIcon       { return newIcon(brandsIcon, "ns8") }
 func FaBrandNutritionix() icons.IsIcon {
-	return newIcon(fontBrands, "nutritionix")
+	return newIcon(brandsIcon, "nutritionix")
 }
 func FaBrandOctopusDeploy() icons.IsIcon {
-	return newIcon(fontBrands, "octopus-deploy")
+	return newIcon(brandsIcon, "octopus-deploy")
 }
 func FaBrandOdnoklassnikiSquare() icons.IsIcon {
-	return newIcon(fontBrands, "odnoklassniki-square")
+	return newIcon(brandsIcon, "odnoklassniki-square")
 }
 func FaBrandOdnoklassniki() icons.IsIcon {
-	return newIcon(fontBrands, "odnoklassniki")
+	return newIcon(brandsIcon, "odnoklassniki")
 }
 func FaBrandOldRepublic() icons.IsIcon {
-	return newIcon(fontBrands, "old-republic")
+	return newIcon(brandsIcon, "old-republic")
 }
-func FaBrandOpencart() icons.IsIcon { return newIcon(fontBrands, "opencart") }
-func FaBrandOpenid() icons.IsIcon   { return newIcon(fontBrands, "openid") }
-func FaBrandOpera() icons.IsIcon    { return newIcon(fontBrands, "opera") }
+func FaBrandOpencart() icons.IsIcon { return newIcon(brandsIcon, "opencart") }
+func FaBrandOpenid() icons.IsIcon   { return newIcon(brandsIcon, "openid") }
+func FaBrandOpera() icons.IsIcon    { return newIcon(brandsIcon, "opera") }
 func FaBrandOptinMonster() icons.IsIcon {
-	return newIcon(fontBrands, "optin-monster")
+	return newIcon(brandsIcon, "optin-monster")
 }
-func FaBrandOrcid() icons.IsIcon     { return newIcon(fontBrands, "orcid") }
-func FaBrandOsi() icons.IsIcon       { return newIcon(fontBrands, "osi") }
-func FaBrandPage4() icons.IsIcon     { return newIcon(fontBrands, "page4") }
-func FaBrandPagelines() icons.IsIcon { return newIcon(fontBrands, "pagelines") }
-func FaBrandPalfed() icons.IsIcon    { return newIcon(fontBrands, "palfed") }
-func FaBrandPatreon() icons.IsIcon   { return newIcon(fontBrands, "patreon") }
-func FaBrandPaypal() icons.IsIcon    { return newIcon(fontBrands, "paypal") }
+func FaBrandOrcid() icons.IsIcon     { return newIcon(brandsIcon, "orcid") }
+func FaBrandOsi() icons.IsIcon       { return newIcon(brandsIcon, "osi") }
+func FaBrandPage4() icons.IsIcon     { return newIcon(brandsIcon, "page4") }
+func FaBrandPagelines() icons.IsIcon { return newIcon(brandsIcon, "pagelines") }
+func FaBrandPalfed() icons.IsIcon    { return newIcon(brandsIcon, "palfed") }
+func FaBrandPatreon() icons.IsIcon   { return newIcon(brandsIcon, "patreon") }
+func FaBrandPaypal() icons.IsIcon    { return newIcon(brandsIcon, "paypal") }
 func FaBrandPennyArcade() icons.IsIcon {
-	return newIcon(fontBrands, "penny-arcade")
+	return newIcon(brandsIcon, "penny-arcade")
 }
-func FaBrandPerbyte() icons.IsIcon   { return newIcon(fontBrands, "perbyte") }
-func FaBrandPeriscope() icons.IsIcon { return newIcon(fontBrands, "periscope") }
+func FaBrandPerbyte() icons.IsIcon   { return newIcon(brandsIcon, "perbyte") }
+func FaBrandPeriscope() icons.IsIcon { return newIcon(brandsIcon, "periscope") }
 func FaBrandPhabricator() icons.IsIcon {
-	return newIcon(fontBrands, "phabricator")
+	return newIcon(brandsIcon, "phabricator")
 }
 func FaBrandPhoenixFramework() icons.IsIcon {
-	return newIcon(fontBrands, "phoenix-framework")
+	return newIcon(brandsIcon, "phoenix-framework")
 }
 func FaBrandPhoenixSquadron() icons.IsIcon {
-	return newIcon(fontBrands, "phoenix-squadron")
+	return newIcon(brandsIcon, "phoenix-squadron")
 }
-func FaBrandPhp() icons.IsIcon { return newIcon(fontBrands, "php") }
+func FaBrandPhp() icons.IsIcon { return newIcon(brandsIcon, "php") }
 func FaBrandPiedPiperAlt() icons.IsIcon {
-	return newIcon(fontBrands, "pied-piper-alt")
+	return newIcon(brandsIcon, "pied-piper-alt")
 }
 func FaBrandPiedPiperHat() icons.IsIcon {
-	return newIcon(fontBrands, "pied-piper-hat")
+	return newIcon(brandsIcon, "pied-piper-hat")
 }
 func FaBrandPiedPiperPp() icons.IsIcon {
-	return newIcon(fontBrands, "pied-piper-pp")
+	return newIcon(brandsIcon, "pied-piper-pp")
 }
 func FaBrandPiedPiperSquare() icons.IsIcon {
-	return newIcon(fontBrands, "pied-piper-square")
+	return newIcon(brandsIcon, "pied-piper-square")
 }
-func FaBrandPiedPiper() icons.IsIcon  { return newIcon(fontBrands, "pied-piper") }
-func FaBrandPinterestP() icons.IsIcon { return newIcon(fontBrands, "pinterest-p") }
+func FaBrandPiedPiper() icons.IsIcon  { return newIcon(brandsIcon, "pied-piper") }
+func FaBrandPinterestP() icons.IsIcon { return newIcon(brandsIcon, "pinterest-p") }
 func FaBrandPinterestSquare() icons.IsIcon {
-	return newIcon(fontBrands, "pinterest-square")
+	return newIcon(brandsIcon, "pinterest-square")
 }
-func FaBrandPinterest() icons.IsIcon { return newIcon(fontBrands, "pinterest") }
+func FaBrandPinterest() icons.IsIcon { return newIcon(brandsIcon, "pinterest") }
 func FaBrandPlaystation() icons.IsIcon {
-	return newIcon(fontBrands, "playstation")
+	return newIcon(brandsIcon, "playstation")
 }
 func FaBrandProductHunt() icons.IsIcon {
-	return newIcon(fontBrands, "product-hunt")
+	return newIcon(brandsIcon, "product-hunt")
 }
-func FaBrandPushed() icons.IsIcon    { return newIcon(fontBrands, "pushed") }
-func FaBrandPython() icons.IsIcon    { return newIcon(fontBrands, "python") }
-func FaBrandQq() icons.IsIcon        { return newIcon(fontBrands, "qq") }
-func FaBrandQuinscape() icons.IsIcon { return newIcon(fontBrands, "quinscape") }
-func FaBrandQuora() icons.IsIcon     { return newIcon(fontBrands, "quora") }
-func FaBrandRProject() icons.IsIcon  { return newIcon(fontBrands, "r-project") }
+func FaBrandPushed() icons.IsIcon    { return newIcon(brandsIcon, "pushed") }
+func FaBrandPython() icons.IsIcon    { return newIcon(brandsIcon, "python") }
+func FaBrandQq() icons.IsIcon        { return newIcon(brandsIcon, "qq") }
+func FaBrandQuinscape() icons.IsIcon { return newIcon(brandsIcon, "quinscape") }
+func FaBrandQuora() icons.IsIcon     { return newIcon(brandsIcon, "quora") }
+func FaBrandRProject() icons.IsIcon  { return newIcon(brandsIcon, "r-project") }
 func FaBrandRaspberryPi() icons.IsIcon {
-	return newIcon(fontBrands, "raspberry-pi")
+	return newIcon(brandsIcon, "raspberry-pi")
 }
-func FaBrandRavelry() icons.IsIcon { return newIcon(fontBrands, "ravelry") }
-func FaBrandReact() icons.IsIcon   { return newIcon(fontBrands, "react") }
+func FaBrandRavelry() icons.IsIcon { return newIcon(brandsIcon, "ravelry") }
+func FaBrandReact() icons.IsIcon   { return newIcon(brandsIcon, "react") }
 func FaBrandReacteurope() icons.IsIcon {
-	return newIcon(fontBrands, "reacteurope")
+	return newIcon(brandsIcon, "reacteurope")
 }
-func FaBrandReadme() icons.IsIcon   { return newIcon(fontBrands, "readme") }
-func FaBrandRebel() icons.IsIcon    { return newIcon(fontBrands, "rebel") }
-func FaBrandRedRiver() icons.IsIcon { return newIcon(fontBrands, "red-river") }
+func FaBrandReadme() icons.IsIcon   { return newIcon(brandsIcon, "readme") }
+func FaBrandRebel() icons.IsIcon    { return newIcon(brandsIcon, "rebel") }
+func FaBrandRedRiver() icons.IsIcon { return newIcon(brandsIcon, "red-river") }
 func FaBrandRedditAlien() icons.IsIcon {
-	return newIcon(fontBrands, "reddit-alien")
+	return newIcon(brandsIcon, "reddit-alien")
 }
 func FaBrandRedditSquare() icons.IsIcon {
-	return newIcon(fontBrands, "reddit-square")
+	return newIcon(brandsIcon, "reddit-square")
 }
-func FaBrandReddit() icons.IsIcon { return newIcon(fontBrands, "reddit") }
-func FaBrandRedhat() icons.IsIcon { return newIcon(fontBrands, "redhat") }
-func FaBrandRenren() icons.IsIcon { return newIcon(fontBrands, "renren") }
-func FaBrandReplyd() icons.IsIcon { return newIcon(fontBrands, "replyd") }
+func FaBrandReddit() icons.IsIcon { return newIcon(brandsIcon, "reddit") }
+func FaBrandRedhat() icons.IsIcon { return newIcon(brandsIcon, "redhat") }
+func FaBrandRenren() icons.IsIcon { return newIcon(brandsIcon, "renren") }
+func FaBrandReplyd() icons.IsIcon { return newIcon(brandsIcon, "replyd") }
 func FaBrandResearchgate() icons.IsIcon {
-	return newIcon(fontBrands, "researchgate")
+	return newIcon(brandsIcon, "researchgate")
 }
-func FaBrandResolving() icons.IsIcon  { return newIcon(fontBrands, "resolving") }
-func FaBrandRev() icons.IsIcon        { return newIcon(fontBrands, "rev") }
-func FaBrandRocketchat() icons.IsIcon { return newIcon(fontBrands, "rocketchat") }
-func FaBrandRockrms() icons.IsIcon    { return newIcon(fontBrands, "rockrms") }
-func FaBrandRust() icons.IsIcon       { return newIcon(fontBrands, "rust") }
-func FaBrandSafari() icons.IsIcon     { return newIcon(fontBrands, "safari") }
-func FaBrandSalesforce() icons.IsIcon { return newIcon(fontBrands, "salesforce") }
-func FaBrandSass() icons.IsIcon       { return newIcon(fontBrands, "sass") }
-func FaBrandSchlix() icons.IsIcon     { return newIcon(fontBrands, "schlix") }
-func FaBrandScribd() icons.IsIcon     { return newIcon(fontBrands, "scribd") }
+func FaBrandResolving() icons.IsIcon  { return newIcon(brandsIcon, "resolving") }
+func FaBrandRev() icons.IsIcon        { return newIcon(brandsIcon, "rev") }
+func FaBrandRocketchat() icons.IsIcon { return newIcon(brandsIcon, "rocketchat") }
+func FaBrandRockrms() icons.IsIcon    { return newIcon(brandsIcon, "rockrms") }
+func FaBrandRust() icons.IsIcon       { return newIcon(brandsIcon, "rust") }
+func FaBrandSafari() icons.IsIcon     { return newIcon(brandsIcon, "safari") }
+func FaBrandSalesforce() icons.IsIcon { return newIcon(brandsIcon, "salesforce") }
+func FaBrandSass() icons.IsIcon       { return newIcon(brandsIcon, "sass") }
+func FaBrandSchlix() icons.IsIcon     { return newIcon(brandsIcon, "schlix") }
+func FaBrandScribd() icons.IsIcon     { return newIcon(brandsIcon, "scribd") }
 func FaBrandSearchengin() icons.IsIcon {
-	return newIcon(fontBrands, "searchengin")
+	return newIcon(brandsIcon, "searchengin")
 }
-func FaBrandSellcast() icons.IsIcon { return newIcon(fontBrands, "sellcast") }
-func FaBrandSellsy() icons.IsIcon   { return newIcon(fontBrands, "sellsy") }
+func FaBrandSellcast() icons.IsIcon { return newIcon(brandsIcon, "sellcast") }
+func FaBrandSellsy() icons.IsIcon   { return newIcon(brandsIcon, "sellsy") }
 func FaBrandServicestack() icons.IsIcon {
-	return newIcon(fontBrands, "servicestack")
+	return newIcon(brandsIcon, "servicestack")
 }
 func FaBrandShirtsinbulk() icons.IsIcon {
-	return newIcon(fontBrands, "shirtsinbulk")
+	return newIcon(brandsIcon, "shirtsinbulk")
 }
-func FaBrandShopify() icons.IsIcon  { return newIcon(fontBrands, "shopify") }
-func FaBrandShopware() icons.IsIcon { return newIcon(fontBrands, "shopware") }
+func FaBrandShopify() icons.IsIcon  { return newIcon(brandsIcon, "shopify") }
+func FaBrandShopware() icons.IsIcon { return newIcon(brandsIcon, "shopware") }
 func FaBrandSimplybuilt() icons.IsIcon {
-	return newIcon(fontBrands, "simplybuilt")
+	return newIcon(brandsIcon, "simplybuilt")
 }
-func FaBrandSistrix() icons.IsIcon    { return newIcon(fontBrands, "sistrix") }
-func FaBrandSith() icons.IsIcon       { return newIcon(fontBrands, "sith") }
-func FaBrandSketch() icons.IsIcon     { return newIcon(fontBrands, "sketch") }
-func FaBrandSkyatlas() icons.IsIcon   { return newIcon(fontBrands, "skyatlas") }
-func FaBrandSkype() icons.IsIcon      { return newIcon(fontBrands, "skype") }
-func FaBrandSlackHash() icons.IsIcon  { return newIcon(fontBrands, "slack-hash") }
-func FaBrandSlack() icons.IsIcon      { return newIcon(fontBrands, "slack") }
-func FaBrandSlideshare() icons.IsIcon { return newIcon(fontBrands, "slideshare") }
+func FaBrandSistrix() icons.IsIcon    { return newIcon(brandsIcon, "sistrix") }
+func FaBrandSith() icons.IsIcon       { return newIcon(brandsIcon, "sith") }
+func FaBrandSketch() icons.IsIcon     { return newIcon(brandsIcon, "sketch") }
+func FaBrandSkyatlas() icons.IsIcon   { return newIcon(brandsIcon, "skyatlas") }
+func FaBrandSkype() icons.IsIcon      { return newIcon(brandsIcon, "skype") }
+func FaBrandSlackHash() icons.IsIcon  { return newIcon(brandsIcon, "slack-hash") }
+func FaBrandSlack() icons.IsIcon      { return newIcon(brandsIcon, "slack") }
+func FaBrandSlideshare() icons.IsIcon { return newIcon(brandsIcon, "slideshare") }
 func FaBrandSnapchatGhost() icons.IsIcon {
-	return newIcon(fontBrands, "snapchat-ghost")
+	return newIcon(brandsIcon, "snapchat-ghost")
 }
 func FaBrandSnapchatSquare() icons.IsIcon {
-	return newIcon(fontBrands, "snapchat-square")
+	return newIcon(brandsIcon, "snapchat-square")
 }
-func FaBrandSnapchat() icons.IsIcon   { return newIcon(fontBrands, "snapchat") }
-func FaBrandSoundcloud() icons.IsIcon { return newIcon(fontBrands, "soundcloud") }
-func FaBrandSourcetree() icons.IsIcon { return newIcon(fontBrands, "sourcetree") }
-func FaBrandSpeakap() icons.IsIcon    { return newIcon(fontBrands, "speakap") }
+func FaBrandSnapchat() icons.IsIcon   { return newIcon(brandsIcon, "snapchat") }
+func FaBrandSoundcloud() icons.IsIcon { return newIcon(brandsIcon, "soundcloud") }
+func FaBrandSourcetree() icons.IsIcon { return newIcon(brandsIcon, "sourcetree") }
+func FaBrandSpeakap() icons.IsIcon    { return newIcon(brandsIcon, "speakap") }
 func FaBrandSpeakerDeck() icons.IsIcon {
-	return newIcon(fontBrands, "speaker-deck")
+	return newIcon(brandsIcon, "speaker-deck")
 }
-func FaBrandSpotify() icons.IsIcon { return newIcon(fontBrands, "spotify") }
+func FaBrandSpotify() icons.IsIcon { return newIcon(brandsIcon, "spotify") }
 func FaBrandSquarespace() icons.IsIcon {
-	return newIcon(fontBrands, "squarespace")
+	return newIcon(brandsIcon, "squarespace")
 }
 func FaBrandStackExchange() icons.IsIcon {
-	return newIcon(fontBrands, "stack-exchange")
+	return newIcon(brandsIcon, "stack-exchange")
 }
 func FaBrandStackOverflow() icons.IsIcon {
-	return newIcon(fontBrands, "stack-overflow")
+	return newIcon(brandsIcon, "stack-overflow")
 }
-func FaBrandStackpath() icons.IsIcon  { return newIcon(fontBrands, "stackpath") }
-func FaBrandStaylinked() icons.IsIcon { return newIcon(fontBrands, "staylinked") }
+func FaBrandStackpath() icons.IsIcon  { return newIcon(brandsIcon, "stackpath") }
+func FaBrandStaylinked() icons.IsIcon { return newIcon(brandsIcon, "staylinked") }
 func FaBrandSteamSquare() icons.IsIcon {
-	return newIcon(fontBrands, "steam-square")
+	return newIcon(brandsIcon, "steam-square")
 }
 func FaBrandSteamSymbol() icons.IsIcon {
-	return newIcon(fontBrands, "steam-symbol")
+	return newIcon(brandsIcon, "steam-symbol")
 }
-func FaBrandSteam() icons.IsIcon { return newIcon(fontBrands, "steam") }
+func FaBrandSteam() icons.IsIcon { return newIcon(brandsIcon, "steam") }
 func FaBrandStickerMule() icons.IsIcon {
-	return newIcon(fontBrands, "sticker-mule")
+	return newIcon(brandsIcon, "sticker-mule")
 }
-func FaBrandStrava() icons.IsIcon  { return newIcon(fontBrands, "strava") }
-func FaBrandStripeS() icons.IsIcon { return newIcon(fontBrands, "stripe-s") }
-func FaBrandStripe() icons.IsIcon  { return newIcon(fontBrands, "stripe") }
+func FaBrandStrava() icons.IsIcon  { return newIcon(brandsIcon, "strava") }
+func FaBrandStripeS() icons.IsIcon { return newIcon(brandsIcon, "stripe-s") }
+func FaBrandStripe() icons.IsIcon  { return newIcon(brandsIcon, "stripe") }
 func FaBrandStudiovinari() icons.IsIcon {
-	return newIcon(fontBrands, "studiovinari")
+	return newIcon(brandsIcon, "studiovinari")
 }
 func FaBrandStumbleuponCircle() icons.IsIcon {
-	return newIcon(fontBrands, "stumbleupon-circle")
+	return newIcon(brandsIcon, "stumbleupon-circle")
 }
 func FaBrandStumbleupon() icons.IsIcon {
-	return newIcon(fontBrands, "stumbleupon")
+	return newIcon(brandsIcon, "stumbleupon")
 }
 func FaBrandSuperpowers() icons.IsIcon {
-	return newIcon(fontBrands, "superpowers")
+	return newIcon(brandsIcon, "superpowers")
 }
-func FaBrandSupple() icons.IsIcon    { return newIcon(fontBrands, "supple") }
-func FaBrandSuse() icons.IsIcon      { return newIcon(fontBrands, "suse") }
-func FaBrandSwift() icons.IsIcon     { return newIcon(fontBrands, "swift") }
-func FaBrandSymfony() icons.IsIcon   { return newIcon(fontBrands, "symfony") }
-func FaBrandTeamspeak() icons.IsIcon { return newIcon(fontBrands, "teamspeak") }
+func FaBrandSupple() icons.IsIcon    { return newIcon(brandsIcon, "supple") }
+func FaBrandSuse() icons.IsIcon      { return newIcon(brandsIcon, "suse") }
+func FaBrandSwift() icons.IsIcon     { return newIcon(brandsIcon, "swift") }
+func FaBrandSymfony() icons.IsIcon   { return newIcon(brandsIcon, "symfony") }
+func FaBrandTeamspeak() icons.IsIcon { return newIcon(brandsIcon, "teamspeak") }
 func FaBrandTelegramPlane() icons.IsIcon {
-	return newIcon(fontBrands, "telegram-plane")
+	return newIcon(brandsIcon, "telegram-plane")
 }
-func FaBrandTelegram() icons.IsIcon { return newIcon(fontBrands, "telegram") }
+func FaBrandTelegram() icons.IsIcon { return newIcon(brandsIcon, "telegram") }
 func FaBrandTencentWeibo() icons.IsIcon {
-	return newIcon(fontBrands, "tencent-weibo")
+	return newIcon(brandsIcon, "tencent-weibo")
 }
 func FaBrandTheRedYeti() icons.IsIcon {
-	return newIcon(fontBrands, "the-red-yeti")
+	return newIcon(brandsIcon, "the-red-yeti")
 }
-func FaBrandThemeco() icons.IsIcon    { return newIcon(fontBrands, "themeco") }
-func FaBrandThemeisle() icons.IsIcon  { return newIcon(fontBrands, "themeisle") }
-func FaBrandThinkPeaks() icons.IsIcon { return newIcon(fontBrands, "think-peaks") }
-func FaBrandTiktok() icons.IsIcon     { return newIcon(fontBrands, "tiktok") }
+func FaBrandThemeco() icons.IsIcon    { return newIcon(brandsIcon, "themeco") }
+func FaBrandThemeisle() icons.IsIcon  { return newIcon(brandsIcon, "themeisle") }
+func FaBrandThinkPeaks() icons.IsIcon { return newIcon(brandsIcon, "think-peaks") }
+func FaBrandTiktok() icons.IsIcon     { return newIcon(brandsIcon, "tiktok") }
 func FaBrandTradeFederation() icons.IsIcon {
-	return newIcon(fontBrands, "trade-federation")
+	return newIcon(brandsIcon, "trade-federation")
 }
-func FaBrandTrello() icons.IsIcon { return newIcon(fontBrands, "trello") }
+func FaBrandTrello() icons.IsIcon { return newIcon(brandsIcon, "trello") }
 func FaBrandTumblrSquare() icons.IsIcon {
-	return newIcon(fontBrands, "tumblr-square")
+	return newIcon(brandsIcon, "tumblr-square")
 }
-func FaBrandTumblr() icons.IsIcon { return newIcon(fontBrands, "tumblr") }
-func FaBrandTwitch() icons.IsIcon { return newIcon(fontBrands, "twitch") }
+func FaBrandTumblr() icons.IsIcon { return newIcon(brandsIcon, "tumblr") }
+func FaBrandTwitch() icons.IsIcon { return newIcon(brandsIcon, "twitch") }
 func FaBrandTwitterSquare() icons.IsIcon {
-	return newIcon(fontBrands, "twitter-square")
+	return newIcon(brandsIcon, "twitter-square")
 }
-func FaBrandTwitter() icons.IsIcon   { return newIcon(fontBrands, "twitter") }
-func FaBrandTypo3() icons.IsIcon     { return newIcon(fontBrands, "typo3") }
-func FaBrandUber() icons.IsIcon      { return newIcon(fontBrands, "uber") }
-func FaBrandUbuntu() icons.IsIcon    { return newIcon(fontBrands, "ubuntu") }
-func FaBrandUikit() icons.IsIcon     { return newIcon(fontBrands, "uikit") }
-func FaBrandUmbraco() icons.IsIcon   { return newIcon(fontBrands, "umbraco") }
-func FaBrandUncharted() icons.IsIcon { return newIcon(fontBrands, "uncharted") }
+func FaBrandTwitter() icons.IsIcon   { return newIcon(brandsIcon, "twitter") }
+func FaBrandTypo3() icons.IsIcon     { return newIcon(brandsIcon, "typo3") }
+func FaBrandUber() icons.IsIcon      { return newIcon(brandsIcon, "uber") }
+func FaBrandUbuntu() icons.IsIcon    { return newIcon(brandsIcon, "ubuntu") }
+func FaBrandUikit() icons.IsIcon     { return newIcon(brandsIcon, "uikit") }
+func FaBrandUmbraco() icons.IsIcon   { return newIcon(brandsIcon, "umbraco") }
+func FaBrandUncharted() icons.IsIcon { return newIcon(brandsIcon, "uncharted") }
 func FaBrandUniregistry() icons.IsIcon {
-	return newIcon(fontBrands, "uniregistry")
+	return newIcon(brandsIcon, "uniregistry")
 }
-func FaBrandUnity() icons.IsIcon    { return newIcon(fontBrands, "unity") }
-func FaBrandUnsplash() icons.IsIcon { return newIcon(fontBrands, "unsplash") }
-func FaBrandUntappd() icons.IsIcon  { return newIcon(fontBrands, "untappd") }
-func FaBrandUps() icons.IsIcon      { return newIcon(fontBrands, "ups") }
-func FaBrandUsb() icons.IsIcon      { return newIcon(fontBrands, "usb") }
-func FaBrandUsps() icons.IsIcon     { return newIcon(fontBrands, "usps") }
-func FaBrandUssunnah() icons.IsIcon { return newIcon(fontBrands, "ussunnah") }
-func FaBrandVaadin() icons.IsIcon   { return newIcon(fontBrands, "vaadin") }
-func FaBrandViacoin() icons.IsIcon  { return newIcon(fontBrands, "viacoin") }
+func FaBrandUnity() icons.IsIcon    { return newIcon(brandsIcon, "unity") }
+func FaBrandUnsplash() icons.IsIcon { return newIcon(brandsIcon, "unsplash") }
+func FaBrandUntappd() icons.IsIcon  { return newIcon(brandsIcon, "untappd") }
+func FaBrandUps() icons.IsIcon      { return newIcon(brandsIcon, "ups") }
+func FaBrandUsb() icons.IsIcon      { return newIcon(brandsIcon, "usb") }
+func FaBrandUsps() icons.IsIcon     { return newIcon(brandsIcon, "usps") }
+func FaBrandUssunnah() icons.IsIcon { return newIcon(brandsIcon, "ussunnah") }
+func FaBrandVaadin() icons.IsIcon   { return newIcon(brandsIcon, "vaadin") }
+func FaBrandViacoin() icons.IsIcon  { return newIcon(brandsIcon, "viacoin") }
 func FaBrandViadeoSquare() icons.IsIcon {
-	return newIcon(fontBrands, "viadeo-square")
+	return newIcon(brandsIcon, "viadeo-square")
 }
-func FaBrandViadeo() icons.IsIcon { return newIcon(fontBrands, "viadeo") }
-func FaBrandViber() icons.IsIcon  { return newIcon(fontBrands, "viber") }
+func FaBrandViadeo() icons.IsIcon { return newIcon(brandsIcon, "viadeo") }
+func FaBrandViber() icons.IsIcon  { return newIcon(brandsIcon, "viber") }
 func FaBrandVimeoSquare() icons.IsIcon {
-	return newIcon(fontBrands, "vimeo-square")
+	return newIcon(brandsIcon, "vimeo-square")
 }
-func FaBrandVimeoV() icons.IsIcon { return newIcon(fontBrands, "vimeo-v") }
-func FaBrandVimeo() icons.IsIcon  { return newIcon(fontBrands, "vimeo") }
-func FaBrandVine() icons.IsIcon   { return newIcon(fontBrands, "vine") }
-func FaBrandVk() icons.IsIcon     { return newIcon(fontBrands, "vk") }
-func FaBrandVnv() icons.IsIcon    { return newIcon(fontBrands, "vnv") }
-func FaBrandVuejs() icons.IsIcon  { return newIcon(fontBrands, "vuejs") }
+func FaBrandVimeoV() icons.IsIcon { return newIcon(brandsIcon, "vimeo-v") }
+func FaBrandVimeo() icons.IsIcon  { return newIcon(brandsIcon, "vimeo") }
+func FaBrandVine() icons.IsIcon   { return newIcon(brandsIcon, "vine") }
+func FaBrandVk() icons.IsIcon     { return newIcon(brandsIcon, "vk") }
+func FaBrandVnv() icons.IsIcon    { return newIcon(brandsIcon, "vnv") }
+func FaBrandVuejs() icons.IsIcon  { return newIcon(brandsIcon, "vuejs") }
 func FaBrandWatchmanMonitoring() icons.IsIcon {
-	return newIcon(fontBrands, "watchman-monitoring")
+	return newIcon(brandsIcon, "watchman-monitoring")
 }
-func FaBrandWaze() icons.IsIcon   { return newIcon(fontBrands, "waze") }
-func FaBrandWeebly() icons.IsIcon { return newIcon(fontBrands, "weebly") }
-func FaBrandWeibo() icons.IsIcon  { return newIcon(fontBrands, "weibo") }
-func FaBrandWeixin() icons.IsIcon { return newIcon(fontBrands, "weixin") }
+func FaBrandWaze() icons.IsIcon   { return newIcon(brandsIcon, "waze") }
+func FaBrandWeebly() icons.IsIcon { return newIcon(brandsIcon, "weebly") }
+func FaBrandWeibo() icons.IsIcon  { return newIcon(brandsIcon, "weibo") }
+func FaBrandWeixin() icons.IsIcon { return newIcon(brandsIcon, "weixin") }
 func FaBrandWhatsappSquare() icons.IsIcon {
-	return newIcon(fontBrands, "whatsapp-square")
+	return newIcon(brandsIcon, "whatsapp-square")
 }
-func FaBrandWhatsapp() icons.IsIcon   { return newIcon(fontBrands, "whatsapp") }
-func FaBrandWhmcs() icons.IsIcon      { return newIcon(fontBrands, "whmcs") }
-func FaBrandWikipediaW() icons.IsIcon { return newIcon(fontBrands, "wikipedia-w") }
-func FaBrandWindows() icons.IsIcon    { return newIcon(fontBrands, "windows") }
-func FaBrandWix() icons.IsIcon        { return newIcon(fontBrands, "wix") }
+func FaBrandWhatsapp() icons.IsIcon   { return newIcon(brandsIcon, "whatsapp") }
+func FaBrandWhmcs() icons.IsIcon      { return newIcon(brandsIcon, "whmcs") }
+func FaBrandWikipediaW() icons.IsIcon { return newIcon(brandsIcon, "wikipedia-w") }
+func FaBrandWindows() icons.IsIcon    { return newIcon(brandsIcon, "windows") }
+func FaBrandWix() icons.IsIcon        { return newIcon(brandsIcon, "wix") }
 func FaBrandWizardsOfTheCoast() icons.IsIcon {
-	return newIcon(fontBrands, "wizards-of-the-coast")
+	return newIcon(brandsIcon, "wizards-of-the-coast")
 }
-func FaBrandWodu() icons.IsIcon { return newIcon(fontBrands, "wodu") }
+func FaBrandWodu() icons.IsIcon { return newIcon(brandsIcon, "wodu") }
 func FaBrandWolfPackBattalion() icons.IsIcon {
-	return newIcon(fontBrands, "wolf-pack-battalion")
+	return newIcon(brandsIcon, "wolf-pack-battalion")
 }
 func FaBrandWordpressSimple() icons.IsIcon {
-	return newIcon(fontBrands, "wordpress-simple")
+	return newIcon(brandsIcon, "wordpress-simple")
 }
-func FaBrandWordpress() icons.IsIcon  { return newIcon(fontBrands, "wordpress") }
-func FaBrandWpbeginner() icons.IsIcon { return newIcon(fontBrands, "wpbeginner") }
-func FaBrandWpexplorer() icons.IsIcon { return newIcon(fontBrands, "wpexplorer") }
-func FaBrandWpforms() icons.IsIcon    { return newIcon(fontBrands, "wpforms") }
-func FaBrandWpressr() icons.IsIcon    { return newIcon(fontBrands, "wpressr") }
-func FaBrandXbox() icons.IsIcon       { return newIcon(fontBrands, "xbox") }
-func FaBrandXingSquare() icons.IsIcon { return newIcon(fontBrands, "xing-square") }
-func FaBrandXing() icons.IsIcon       { return newIcon(fontBrands, "xing") }
+func FaBrandWordpress() icons.IsIcon  { return newIcon(brandsIcon, "wordpress") }
+func FaBrandWpbeginner() icons.IsIcon { return newIcon(brandsIcon, "wpbeginner") }
+func FaBrandWpexplorer() icons.IsIcon { return newIcon(brandsIcon, "wpexplorer") }
+func FaBrandWpforms() icons.IsIcon    { return newIcon(brandsIcon, "wpforms") }
+func FaBrandWpressr() icons.IsIcon    { return newIcon(brandsIcon, "wpressr") }
+func FaBrandXbox() icons.IsIcon       { return newIcon(brandsIcon, "xbox") }
+func FaBrandXingSquare() icons.IsIcon { return newIcon(brandsIcon, "xing-square") }
+func FaBrandXing() icons.IsIcon       { return newIcon(brandsIcon, "xing") }
 func FaBrandYCombinator() icons.IsIcon {
-	return newIcon(fontBrands, "y-combinator")
+	return newIcon(brandsIcon, "y-combinator")
 }
-func FaBrandYahoo() icons.IsIcon  { return newIcon(fontBrands, "yahoo") }
-func FaBrandYammer() icons.IsIcon { return newIcon(fontBrands, "yammer") }
+func FaBrandYahoo() icons.IsIcon  { return newIcon(brandsIcon, "yahoo") }
+func FaBrandYammer() icons.IsIcon { return newIcon(brandsIcon, "yammer") }
 func FaBrandYandexInternational() icons.IsIcon {
-	return newIcon(fontBrands, "yandex-international")
+	return newIcon(brandsIcon, "yandex-international")
 }
-func FaBrandYandex() icons.IsIcon { return newIcon(fontBrands, "yandex") }
-func FaBrandYarn() icons.IsIcon   { return newIcon(fontBrands, "yarn") }
-func FaBrandYelp() icons.IsIcon   { return newIcon(fontBrands, "yelp") }
-func FaBrandYoast() icons.IsIcon  { return newIcon(fontBrands, "yoast") }
+func FaBrandYandex() icons.IsIcon { return newIcon(brandsIcon, "yandex") }
+func FaBrandYarn() icons.IsIcon   { return newIcon(brandsIcon, "yarn") }
+func FaBrandYelp() icons.IsIcon   { return newIcon(brandsIcon, "yelp") }
+func FaBrandYoast() icons.IsIcon  { return newIcon(brandsIcon, "yoast") }
 func FaBrandYoutubeSquare() icons.IsIcon {
-	return newIcon(fontBrands, "youtube-square")
+	return newIcon(brandsIcon, "youtube-square")
 }
-func FaBrandYoutube() icons.IsIcon { return newIcon(fontBrands, "youtube") }
-func FaBrandZhihu() icons.IsIcon   { return newIcon(fontBrands, "zhihu") }
+func FaBrandYoutube() icons.IsIcon { return newIcon(brandsIcon, "youtube") }
+func FaBrandZhihu() icons.IsIcon   { return newIcon(brandsIcon, "zhihu") }
