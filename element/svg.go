@@ -32,7 +32,22 @@ func SvgString(svgString string) (s *svg, err error) {
 		return
 	}
 
-	s = &svg{el: &HtmlElement{node: el[0]}}
+	svgEl := &html.Node{}
+	for _, e := range el {
+		if e.Data == "svg" {
+			svgEl = e
+		}
+	}
+
+	newAttr := []html.Attribute{}
+	for _, attr := range svgEl.Attr {
+		if attr.Key != "class" {
+			newAttr = append(newAttr, attr)
+		}
+	}
+	svgEl.Attr = newAttr
+
+	s = &svg{el: &HtmlElement{node: svgEl}}
 	return s, nil
 }
 
