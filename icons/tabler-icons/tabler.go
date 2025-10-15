@@ -17,17 +17,17 @@ const (
 	outlineIcons = "outline"
 )
 
-type simpleLineIcon struct {
+type tablerIcon struct {
 	el *element.HtmlElement
 }
 
-func (i *simpleLineIcon) IsIcon()                       {}
-func (i *simpleLineIcon) Name() string                  { return name }
-func (i *simpleLineIcon) Element() *element.HtmlElement { return i.el }
+func (i *tablerIcon) IsIcon()                       {}
+func (i *tablerIcon) Name() string                  { return name }
+func (i *tablerIcon) Element() *element.HtmlElement { return i.el }
 func newIcon(paths ...string) icons.IsIcon {
 	finalPath := []string{svgPath}
 	finalPath = append(finalPath, paths...)
 	el := icons.CreateSvgElementByFs(svgFiles, finalPath...)
-	icon := &simpleLineIcon{el}
+	icon := &tablerIcon{el}
 	return icon
 }
