@@ -1,3 +1,9 @@
+github.com/raitucarp/gomix/icons v0.0.0-20251016061643-d8d8126c0836 h1:lPl+4Wv3MeI8BQpYi6mGMTuHe4b9iLaE+E85JtQcUT4=
+github.com/raitucarp/gomix/icons v0.0.0-20251016061643-d8d8126c0836/go.mod h1:BdOPnbkMREYHAf2X9PcLI1KF93w5rAyRuklKKWinK8g=
+github.com/raitucarp/gomix/icons/ant-design-icons v0.0.0-20251016063651-b6909058c740 h1:rFd/7QAL+/XtuP/spnt7IJlj9eHSDmkhtLuD6bQo8xk=
+github.com/raitucarp/gomix/icons/ant-design-icons v0.0.0-20251016063651-b6909058c740/go.mod h1:p4Gpx4SagEwoo+doEDlU1Tr6y2bqdbZ1mJJ6L/C+s58=
+github.com/raitucarp/gomix/icons/fontawesome-5 v0.0.0-20251016063651-b6909058c740 h1:1D3HI7d57L5HHdg/lUM6ukywsLzHcWKNf0dj9bfH9lA=
+github.com/raitucarp/gomix/icons/fontawesome-5 v0.0.0-20251016063651-b6909058c740/go.mod h1:FTRDfhI4eglqeAEdhpNxTBugwDTB/wxfwioTGa1Lj8Y=
 github.com/tdewolff/minify/v2 v2.24.3 h1:BaKgWSFLKbKDiUskbeRgbe2n5d1Ci1x3cN/eXna8zOA=
 github.com/tdewolff/minify/v2 v2.24.3/go.mod h1:1JrCtoZXaDbqioQZfk3Jdmr0GPJKiU7c1Apmb+7tCeE=
 github.com/tdewolff/parse/v2 v2.8.3 h1:5VbvtJ83cfb289A1HzRA9sf02iT8YyUwN84ezjkdY1I=
