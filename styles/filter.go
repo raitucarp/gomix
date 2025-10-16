@@ -8,89 +8,89 @@ import (
 )
 
 func FilterNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): "none",
 		}
 	}
 }
 
 func Filter(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): val.Value(),
 		}
 	}
 }
 
 func BlurXs() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "xs")),
 		}
 	}
 }
 func BlurSm() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "sm")),
 		}
 	}
 }
 func BlurMd() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "md")),
 		}
 	}
 }
 func BlurLg() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "lg")),
 		}
 	}
 }
 func BlurXl() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "xl")),
 		}
 	}
 }
 func Blur2xl() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "2xl")),
 		}
 	}
 }
 func Blur3xl() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "3xl")),
 		}
 	}
 }
 
 func BlurNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): " ",
 		}
 	}
 }
 
 func Blur(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(filterProp): fmt.Sprintf("blur(%s)", val.Value()),
 		}
 	}
 }
 
 func Brightness(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -99,14 +99,14 @@ func Brightness(val any) ApplyProp {
 			prop = fmt.Sprintf("brightness(%s)", v.Value())
 		}
 
-		return &properties{
+		return &Properties{
 			string(filterProp): prop,
 		}
 	}
 }
 
 func Contrast(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -115,14 +115,14 @@ func Contrast(val any) ApplyProp {
 			prop = fmt.Sprintf("contrast(%s)", v.Value())
 		}
 
-		return &properties{
+		return &Properties{
 			string(filterProp): prop,
 		}
 	}
 }
 
 func Grayscale(val ...any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 
 		if len(val) <= 0 {
@@ -136,14 +136,14 @@ func Grayscale(val ...any) ApplyProp {
 			}
 		}
 
-		return &properties{
+		return &Properties{
 			string(filterProp): prop,
 		}
 	}
 }
 
 func HueRotate(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int:
@@ -168,14 +168,14 @@ func HueRotate(val any) ApplyProp {
 			prop = fmt.Sprintf("hue-rotate(%s)", v.Value())
 		}
 
-		return &properties{
+		return &Properties{
 			string(filterProp): prop,
 		}
 	}
 }
 
 func Invert(val ...any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 
 		if len(val) <= 0 {
@@ -189,14 +189,14 @@ func Invert(val ...any) ApplyProp {
 			}
 		}
 
-		return &properties{
+		return &Properties{
 			string(filterProp): prop,
 		}
 	}
 }
 
 func Saturate(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -205,14 +205,14 @@ func Saturate(val any) ApplyProp {
 			prop = fmt.Sprintf("saturate(%s)", v.Value())
 		}
 
-		return &properties{
+		return &Properties{
 			string(filterProp): prop,
 		}
 	}
 }
 
 func Sepia(val ...any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 
 		if len(val) <= 0 {
@@ -226,7 +226,7 @@ func Sepia(val ...any) ApplyProp {
 			}
 		}
 
-		return &properties{
+		return &Properties{
 			string(filterProp): prop,
 		}
 	}

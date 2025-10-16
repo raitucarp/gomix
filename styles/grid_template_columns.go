@@ -7,32 +7,32 @@ import (
 )
 
 func GridCols(number int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(gridTemplateColumnsProp): fmt.Sprintf("repeat(%d, minmax(0, 1fr))", number),
 		}
 	}
 }
 
 func GridColsNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(gridTemplateColumnsProp): "none",
 		}
 	}
 }
 
 func GridColsSubgrid() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(gridTemplateColumnsProp): "subgrid",
 		}
 	}
 }
 
 func GridColsBy(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(gridTemplateColumnsProp): val.Value(),
 		}
 	}

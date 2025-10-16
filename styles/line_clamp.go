@@ -7,8 +7,8 @@ import (
 )
 
 func LineClamp(number int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(overflowProp):        "hidden",
 			string(displayProp):         "-webkit-box",
 			string(webkitBoxOrientProp): "vertical",
@@ -18,8 +18,8 @@ func LineClamp(number int) ApplyProp {
 }
 
 func LineClampNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(overflowProp):        "visible",
 			string(displayProp):         "block",
 			string(webkitBoxOrientProp): "horizontal",
@@ -29,8 +29,8 @@ func LineClampNone() ApplyProp {
 }
 
 func LineClampBy(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(overflowProp):        "hidden",
 			string(displayProp):         "-webkit-box",
 			string(webkitBoxOrientProp): "vertical",

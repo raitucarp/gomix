@@ -7,7 +7,7 @@ import (
 )
 
 func Skew(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -19,14 +19,14 @@ func Skew(val any) ApplyProp {
 			propValue = fmt.Sprintf("skewX(%s) skewY(%s)", v.Value(), v.Value())
 		}
 
-		return &properties{
+		return &Properties{
 			string(transformProp): propValue,
 		}
 	}
 }
 
 func SkewX(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -37,14 +37,14 @@ func SkewX(val any) ApplyProp {
 			propValue = fmt.Sprintf("skewX(%s)", v.Value())
 		}
 
-		return &properties{
+		return &Properties{
 			string(transformProp): propValue,
 		}
 	}
 }
 
 func SkewY(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -55,7 +55,7 @@ func SkewY(val any) ApplyProp {
 			propValue = fmt.Sprintf("skewY(%s)", v.Value())
 		}
 
-		return &properties{
+		return &Properties{
 			string(transformProp): propValue,
 		}
 	}

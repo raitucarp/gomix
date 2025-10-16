@@ -3,80 +3,80 @@ package styles
 import "github.com/raitucarp/gomix/value"
 
 func FontThin() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontWeightProp): "100",
 		}
 	}
 }
 
 func FontExtraLight() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontWeightProp): "200",
 		}
 	}
 }
 
 func FontLight() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontWeightProp): "300",
 		}
 	}
 }
 
 func FontNormal() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontWeightProp): "400",
 		}
 	}
 }
 
 func FontMedium() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontWeightProp): "500",
 		}
 	}
 }
 
 func FontSemibold() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontWeightProp): "600",
 		}
 	}
 }
 
 func FontBold() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontWeightProp): "700",
 		}
 	}
 }
 
 func FontExtraBold() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontWeightProp): "800",
 		}
 	}
 }
 
 func FontBlack() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontWeightProp): "900",
 		}
 	}
 }
 
 func FontWeightBy(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontWeightProp): val.Value(),
 		}
 	}

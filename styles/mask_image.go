@@ -8,23 +8,23 @@ import (
 )
 
 func Mask(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskImageProp): val.Value(),
 		}
 	}
 }
 
 func MaskNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskImageProp): "none",
 		}
 	}
 }
 
 func MaskLinear(degree int) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 		if degree >= 0 {
 			propValue = fmt.Sprintf("linear-gradient(%ddeg, black %s, transparent %s)", degree,
@@ -37,14 +37,14 @@ func MaskLinear(degree int) ApplyProp {
 				s.theme.UseVarKey(theme.Custom, "mask-linear-to"),
 			)
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskLinearFrom(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -74,14 +74,14 @@ func MaskLinearFrom(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskLinearTo(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -115,14 +115,14 @@ func MaskLinearTo(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskTopFrom(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -152,14 +152,14 @@ func MaskTopFrom(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskTopTo(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -190,14 +190,14 @@ func MaskTopTo(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskRightFrom(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -227,14 +227,14 @@ func MaskRightFrom(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskRightTo(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -265,14 +265,14 @@ func MaskRightTo(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskBottomFrom(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -302,14 +302,14 @@ func MaskBottomFrom(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskBottomTo(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -340,14 +340,14 @@ func MaskBottomTo(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskLeftFrom(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -377,14 +377,14 @@ func MaskLeftFrom(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskLeftTo(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -415,14 +415,14 @@ func MaskLeftTo(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskYFrom(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -461,7 +461,7 @@ func MaskYFrom(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp):     propValue,
 			string(maskCompositeProp): "intersect",
 		}
@@ -469,7 +469,7 @@ func MaskYFrom(val any) ApplyProp {
 }
 
 func MaskYTo(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -509,7 +509,7 @@ func MaskYTo(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp):     propValue,
 			string(maskCompositeProp): "intersect",
 		}
@@ -517,7 +517,7 @@ func MaskYTo(val any) ApplyProp {
 }
 
 func MaskXFrom(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -556,7 +556,7 @@ func MaskXFrom(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp):     propValue,
 			string(maskCompositeProp): "intersect",
 		}
@@ -564,7 +564,7 @@ func MaskXFrom(val any) ApplyProp {
 }
 
 func MaskXTo(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -603,7 +603,7 @@ func MaskXTo(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp):     propValue,
 			string(maskCompositeProp): "intersect",
 		}
@@ -611,7 +611,7 @@ func MaskXTo(val any) ApplyProp {
 }
 
 func MaskRadial(val ...any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 
 		propValue := ""
 		propKey := maskImageProp
@@ -630,14 +630,14 @@ func MaskRadial(val ...any) ApplyProp {
 			}
 		}
 
-		return &properties{
+		return &Properties{
 			string(propKey): propValue,
 		}
 	}
 }
 
 func MaskRadialFrom(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -679,14 +679,14 @@ func MaskRadialFrom(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskRadialTo(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -728,120 +728,120 @@ func MaskRadialTo(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskCircle() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialShapeProp): "circle",
 		}
 	}
 }
 func MaskEllipse() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialShapeProp): "ellipse",
 		}
 	}
 }
 func MaskRadialClosestCorner() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialSizeProp): "closest-corner",
 		}
 	}
 }
 func MaskRadialClosestSide() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialSizeProp): "closest-side",
 		}
 	}
 }
 func MaskRadialFarthestCorner() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialSizeProp): "farthest-corner",
 		}
 	}
 }
 func MaskRadialFarthestSide() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialSizeProp): "farthest-side",
 		}
 	}
 }
 func MaskRadialAtTopLeft() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialPositionProp): "top left",
 		}
 	}
 }
 func MaskRadialAtTop() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialPositionProp): "top",
 		}
 	}
 }
 func MaskRadialAtTopRight() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialPositionProp): "top right",
 		}
 	}
 }
 func MaskRadialAtLeft() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialPositionProp): "left",
 		}
 	}
 }
 func MaskRadialAtCenter() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialPositionProp): "center",
 		}
 	}
 }
 func MaskRadialAtRight() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialPositionProp): "right",
 		}
 	}
 }
 func MaskRadialAtBottomLeft() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialPositionProp): "bottom left",
 		}
 	}
 }
 func MaskRadialAtBottom() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialPositionProp): "bottom",
 		}
 	}
 }
 func MaskRadialAtBottomRight() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(maskRadialPositionProp): "bottom right",
 		}
 	}
 }
 
 func MaskConic(number float64) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		if number < 0 {
 			prop = fmt.Sprintf("conic-gradient(from calc(%#vdeg * -1), black %s, transparent %s)",
@@ -857,7 +857,7 @@ func MaskConic(number float64) ApplyProp {
 			)
 
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): prop,
 		}
 	}
@@ -866,7 +866,7 @@ func MaskConic(number float64) ApplyProp {
 //--
 
 func MaskConicFrom(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -900,14 +900,14 @@ func MaskConicFrom(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}
 }
 
 func MaskConicTo(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -941,7 +941,7 @@ func MaskConicTo(val any) ApplyProp {
 				)
 			}
 		}
-		return &properties{
+		return &Properties{
 			string(maskImageProp): propValue,
 		}
 	}

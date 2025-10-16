@@ -8,15 +8,15 @@ import (
 )
 
 func ScaleNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(scaleProp): "none",
 		}
 	}
 }
 
 func Scale(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -46,14 +46,14 @@ func Scale(val any) ApplyProp {
 			propValue = v.Value()
 		}
 
-		return &properties{
+		return &Properties{
 			string(scaleProp): propValue,
 		}
 	}
 }
 
 func ScaleX(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -79,14 +79,14 @@ func ScaleX(val any) ApplyProp {
 			propValue = fmt.Sprintf("%s %s", v.Value(), s.theme.UseVarKey(theme.Custom, "scale-y"))
 		}
 
-		return &properties{
+		return &Properties{
 			string(scaleProp): propValue,
 		}
 	}
 }
 
 func ScaleY(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -112,14 +112,14 @@ func ScaleY(val any) ApplyProp {
 			propValue = fmt.Sprintf("%s %s", s.theme.UseVarKey(theme.Custom, "scale-x"), v.Value())
 		}
 
-		return &properties{
+		return &Properties{
 			string(scaleProp): propValue,
 		}
 	}
 }
 
 func ScaleZ(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -173,15 +173,15 @@ func ScaleZ(val any) ApplyProp {
 			)
 		}
 
-		return &properties{
+		return &Properties{
 			string(scaleProp): propValue,
 		}
 	}
 }
 
 func Scale3d() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(scaleProp): fmt.Sprintf("%s %s %s",
 				s.theme.UseVarKey(theme.Custom, "scale-x"),
 				s.theme.UseVarKey(theme.Custom, "scale-y"),

@@ -7,7 +7,7 @@ import (
 )
 
 func ScrollM(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -15,14 +15,14 @@ func ScrollM(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(scrollMarginProp): prop,
 		}
 	}
 }
 
 func ScrollMx(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -30,14 +30,14 @@ func ScrollMx(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(scrollMarginInlineProp): prop,
 		}
 	}
 }
 
 func ScrollMy(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -45,14 +45,14 @@ func ScrollMy(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(scrollMarginBlockProp): prop,
 		}
 	}
 }
 
 func ScrollMs(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -60,14 +60,14 @@ func ScrollMs(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(scrollMarginInlineStartProp): prop,
 		}
 	}
 }
 
 func ScrollMe(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -75,14 +75,14 @@ func ScrollMe(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(scrollMarginInlineEndProp): prop,
 		}
 	}
 }
 
 func ScrollMt(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -90,14 +90,14 @@ func ScrollMt(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(scrollMarginTopProp): prop,
 		}
 	}
 }
 
 func ScrollMr(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -105,14 +105,14 @@ func ScrollMr(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(scrollMarginRightProp): prop,
 		}
 	}
 }
 
 func ScrollMb(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -120,14 +120,14 @@ func ScrollMb(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(scrollMarginBottomProp): prop,
 		}
 	}
 }
 
 func ScrollMl(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -135,7 +135,7 @@ func ScrollMl(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(scrollMarginLeftProp): prop,
 		}
 	}

@@ -7,24 +7,24 @@ import (
 )
 
 func LeadingNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(lineHeightProp): "1",
 		}
 	}
 }
 
 func Leading(number int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(lineHeightProp): fmt.Sprintf("calc(var(--spacing) * %d)", number),
 		}
 	}
 }
 
 func LeadingBy(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(lineHeightProp): val.Value(),
 		}
 	}

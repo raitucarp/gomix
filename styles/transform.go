@@ -8,24 +8,24 @@ import (
 )
 
 func Transform(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(transformProp): val.Value(),
 		}
 	}
 }
 
 func TransformNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(transformProp): "none",
 		}
 	}
 }
 
 func TransformGpu() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(transformProp): fmt.Sprintf("translateZ(0) %s %s %s %s %s",
 				s.theme.UseVarKey(theme.Custom, "rotate-x"),
 				s.theme.UseVarKey(theme.Custom, "rotate-y"),
@@ -38,8 +38,8 @@ func TransformGpu() ApplyProp {
 }
 
 func TransformCpu() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(transformProp): fmt.Sprintf("%s %s %s %s %s",
 				s.theme.UseVarKey(theme.Custom, "rotate-x"),
 				s.theme.UseVarKey(theme.Custom, "rotate-y"),

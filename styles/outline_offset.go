@@ -30,9 +30,9 @@ func outlineOffsetValue(val ...value.Value) string {
 }
 
 func OutlineOffset(val ...value.Value) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 
-		return &properties{
+		return &Properties{
 			string(outlineOffsetProp): outlineOffsetValue(val...),
 		}
 	}

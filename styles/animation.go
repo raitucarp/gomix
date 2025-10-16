@@ -6,9 +6,9 @@ import (
 )
 
 func AnimateSpin() ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 
-		return &properties{
+		return &Properties{
 			string(animationProp): s.theme.UseVarKey(theme.Animate, "spin"),
 			string(rawProp): `
 				@keyframes spin {
@@ -22,8 +22,8 @@ func AnimateSpin() ApplyProp {
 }
 
 func AnimatePing() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(animationProp): s.theme.UseVarKey(theme.Animate, "ping"),
 			string(rawProp): `
 				@keyframes ping {
@@ -38,8 +38,8 @@ func AnimatePing() ApplyProp {
 }
 
 func AnimatePulse() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(animationProp): s.theme.UseVarKey(theme.Animate, "pulse"),
 			string(rawProp): `
 				@keyframes pulse {
@@ -53,8 +53,8 @@ func AnimatePulse() ApplyProp {
 }
 
 func AnimateBounce() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(animationProp): s.theme.UseVarKey(theme.Animate, "bounce"),
 			string(rawProp): `
 				@keyframes bounce {
@@ -73,16 +73,16 @@ func AnimateBounce() ApplyProp {
 }
 
 func AnimateNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(animationProp): "none",
 		}
 	}
 }
 
 func Animate(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(animationProp): val.Value(),
 		}
 	}

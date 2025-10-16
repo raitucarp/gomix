@@ -7,32 +7,32 @@ import (
 )
 
 func UnderlineOffset(number int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(textUnderlineOffsetProp): fmt.Sprintf("%dpx", number),
 		}
 	}
 }
 
 func NegUnderlineOffset(number int) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(textUnderlineOffsetProp): fmt.Sprintf("calc(%dpx * -1)", number),
 		}
 	}
 }
 
 func UnderlineOffsetAuto() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(textUnderlineOffsetProp): "auto",
 		}
 	}
 }
 
 func UnderlineOffsetBy(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(textUnderlineOffsetProp): val.Value(),
 		}
 	}

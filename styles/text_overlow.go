@@ -1,8 +1,8 @@
 package styles
 
 func Truncate() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(overflowProp):     "hidden",
 			string(textOverflowProp): "ellipsis",
 			string(whiteSpaceProp):   "nowrap",
@@ -11,16 +11,16 @@ func Truncate() ApplyProp {
 }
 
 func TextEllipsis() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(textOverflowProp): "ellipsis",
 		}
 	}
 }
 
 func TextClip() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(textOverflowProp): "clip",
 		}
 	}

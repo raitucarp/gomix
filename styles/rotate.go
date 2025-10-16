@@ -8,15 +8,15 @@ import (
 )
 
 func RotateNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(rotateProp): "none",
 		}
 	}
 }
 
 func Rotate(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -42,14 +42,14 @@ func Rotate(val any) ApplyProp {
 			propValue = v.Value()
 		}
 
-		return &properties{
+		return &Properties{
 			string(rotateProp): propValue,
 		}
 	}
 }
 
 func RotateX(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -60,14 +60,14 @@ func RotateX(val any) ApplyProp {
 			propValue = fmt.Sprintf("rotateX(%s) %s", v.Value(), s.theme.UseVarKey(theme.Custom, "rotate-y"))
 		}
 
-		return &properties{
+		return &Properties{
 			string(transformProp): propValue,
 		}
 	}
 }
 
 func RotateY(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -79,14 +79,14 @@ func RotateY(val any) ApplyProp {
 
 		}
 
-		return &properties{
+		return &Properties{
 			string(transformProp): propValue,
 		}
 	}
 }
 
 func RotateZ(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -103,7 +103,7 @@ func RotateZ(val any) ApplyProp {
 
 		}
 
-		return &properties{
+		return &Properties{
 			string(transformProp): propValue,
 		}
 	}

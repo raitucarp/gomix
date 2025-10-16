@@ -1,16 +1,16 @@
 package styles
 
 func Italic() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontStyleProp): "italic",
 		}
 	}
 }
 
 func NotItalic() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(fontStyleProp): "normal",
 		}
 	}

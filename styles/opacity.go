@@ -22,9 +22,9 @@ func opacityValue(val value.Value) string {
 }
 
 func Opacity(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 
-		return &properties{
+		return &Properties{
 			string(opacityProp): opacityValue(val),
 		}
 	}

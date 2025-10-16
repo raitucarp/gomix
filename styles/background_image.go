@@ -8,87 +8,87 @@ import (
 )
 
 func Bg(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(backgroundImageProp): val.Value(),
 		}
 	}
 }
 
 func BgNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(backgroundImageProp): "none",
 		}
 	}
 }
 
 func BgLinearToT() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to top, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
 		}
 	}
 }
 
 func BgLinearToTr() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to top right, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
 		}
 	}
 }
 
 func BgLinearToR() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to right, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
 		}
 	}
 }
 
 func BgLinearToBr() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to bottom right, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
 		}
 	}
 }
 
 func BgLinearToB() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to bottom, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
 		}
 	}
 }
 
 func BgLinearToBl() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to bottom left, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
 		}
 	}
 }
 
 func BgLinearToL() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to left, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
 		}
 	}
 }
 
 func BgLinearToTl() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to top left, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
 		}
 	}
 }
 
 func BgLinear(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		gradient := ""
 		switch v := val.(type) {
 		case *value.Angle:
@@ -96,14 +96,14 @@ func BgLinear(val value.Value) ApplyProp {
 		case value.Value, *value.CustomProperty:
 			gradient = fmt.Sprintf("linear-gradient(%s, %s))", s.theme.UseVarKey(theme.Custom, "gradient-stops"), val.Value())
 		}
-		return &properties{
+		return &Properties{
 			string(backgroundImageProp): gradient,
 		}
 	}
 }
 
 func BgRadial(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		gradient := ""
 		switch v := val.(type) {
 		case *value.Angle:
@@ -112,14 +112,14 @@ func BgRadial(val value.Value) ApplyProp {
 			val.Value()
 			gradient = fmt.Sprintf("radial-gradient(%s, %s))", s.theme.UseVarKey(theme.Custom, "gradient-stops"), val.Value())
 		}
-		return &properties{
+		return &Properties{
 			string(backgroundImageProp): gradient,
 		}
 	}
 }
 
 func BgConic(val value.Value) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		gradient := ""
 		switch v := val.(type) {
 		case *value.Angle:
@@ -127,7 +127,7 @@ func BgConic(val value.Value) ApplyProp {
 		case value.Value, *value.CustomProperty:
 			gradient = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(backgroundImageProp): gradient,
 		}
 	}
@@ -146,8 +146,8 @@ func From(val value.Value) ApplyProp {
 		propValue = v.Value()
 	}
 
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(propName): propValue,
 		}
 	}
@@ -166,8 +166,8 @@ func Via(val value.Value) ApplyProp {
 		propValue = v.Value()
 	}
 
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(propName): propValue,
 		}
 	}
@@ -186,8 +186,8 @@ func To(val value.Value) ApplyProp {
 		propValue = v.Value()
 	}
 
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(propName): propValue,
 		}
 	}

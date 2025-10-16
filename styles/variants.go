@@ -356,7 +356,7 @@ func (s *selectorParam) Kind() kind {
 }
 
 func SelectorParam(param string) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		return &selectorParam{
 			value: param,
 		}
@@ -364,7 +364,7 @@ func SelectorParam(param string) ApplyProp {
 }
 
 func (v StyleVariant) makeStyleProp(props ...ApplyProp) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		variantStyle := &variantOf{
 			variant:  v,
 			props:    make(Props),

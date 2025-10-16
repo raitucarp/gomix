@@ -7,7 +7,7 @@ import (
 )
 
 func Duration(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -15,15 +15,15 @@ func Duration(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(transitionDurationProp): prop,
 		}
 	}
 }
 
 func DurationInitial() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(transitionDurationProp): "initial",
 		}
 	}

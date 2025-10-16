@@ -8,7 +8,7 @@ import (
 )
 
 func BorderSpacing(spacing any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := spacing.(type) {
 		case int, float32, float64:
@@ -17,14 +17,14 @@ func BorderSpacing(spacing any) ApplyProp {
 			prop = v.Value()
 		}
 
-		return &properties{
+		return &Properties{
 			string(borderSpacing): prop,
 		}
 	}
 }
 
 func BorderSpacingX(spacing any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := spacing.(type) {
 		case int, float32, float64:
@@ -33,14 +33,14 @@ func BorderSpacingX(spacing any) ApplyProp {
 			prop = fmt.Sprintf("%s %s", v.Value(), s.theme.UseVarKey(theme.Custom, "border-spacing-y"))
 		}
 
-		return &properties{
+		return &Properties{
 			string(borderSpacing): prop,
 		}
 	}
 }
 
 func BorderSpacingY(spacing any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := spacing.(type) {
 		case int, float32, float64:
@@ -49,7 +49,7 @@ func BorderSpacingY(spacing any) ApplyProp {
 			prop = fmt.Sprintf("%s %s", v.Value(), s.theme.UseVarKey(theme.Custom, "border-spacing-x"))
 		}
 
-		return &properties{
+		return &Properties{
 			string(borderSpacing): prop,
 		}
 	}

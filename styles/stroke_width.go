@@ -7,7 +7,7 @@ import (
 )
 
 func Stroke(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var prop string
 		switch v := val.(type) {
 		case int, float32, float64:
@@ -15,7 +15,7 @@ func Stroke(val any) ApplyProp {
 		case value.Value:
 			prop = v.Value()
 		}
-		return &properties{
+		return &Properties{
 			string(strokeWidthProp): prop,
 		}
 	}

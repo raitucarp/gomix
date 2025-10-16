@@ -10,28 +10,28 @@ import (
 	"github.com/raitucarp/gomix/theme"
 )
 
-type properties map[string]string
+type Properties map[string]string
 
-func (p *properties) StyleProp() {}
-func (p *properties) GetProps() map[string]string {
+func (p *Properties) StyleProp() {}
+func (p *Properties) GetProps() map[string]string {
 	return *p
 }
-func (p *properties) Variant() StyleVariant {
+func (p *Properties) Variant() StyleVariant {
 	return defaultVar
 }
-func (p *properties) Kind() kind {
+func (p *Properties) Kind() kind {
 	return kindProps
 }
 
 type Props map[Prop]string
 
-type style struct {
+type Style struct {
 	props   Props
 	variant StyleVariant
 	theme   *theme.Theme
 }
 
-func (s *style) addProp(prop Prop, value string) {
+func (s *Style) addProp(prop Prop, value string) {
 	s.props[prop] = value
 }
 
@@ -43,8 +43,8 @@ const (
 	kindSelectorParams kind = "selector-params"
 )
 
-type ApplyProp func(s *style) styleProp
-type styleProp interface {
+type ApplyProp func(s *Style) StyleProp
+type StyleProp interface {
 	StyleProp()
 	GetProps() map[string]string
 	Kind() kind
@@ -70,7 +70,7 @@ func notLastChildProp(prop Prop) string {
 }
 
 func ApplyStyle(styleTheme *theme.Theme, props ...ApplyProp) map[StyleVariant]Props {
-	defaultStyle := &style{
+	defaultStyle := &Style{
 		props:   make(Props),
 		variant: defaultVar,
 		theme:   styleTheme,
@@ -100,7 +100,7 @@ func ApplyStyle(styleTheme *theme.Theme, props ...ApplyProp) map[StyleVariant]Pr
 			allStyles[variant] = make(Props)
 		}
 
-		variantStyle := &style{
+		variantStyle := &Style{
 			props:   make(Props),
 			variant: variant,
 			theme:   defaultStyle.theme,

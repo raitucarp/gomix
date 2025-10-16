@@ -1,16 +1,16 @@
 package styles
 
 func Isolate() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(isolationProp): "isolation",
 		}
 	}
 }
 
 func IsolationAuto() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(clearProp): "auto",
 		}
 	}

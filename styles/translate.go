@@ -8,15 +8,15 @@ import (
 )
 
 func TranslateNone() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): "none",
 		}
 	}
 }
 
 func Translate(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -28,14 +28,14 @@ func Translate(val any) ApplyProp {
 			propValue = fmt.Sprintf("%s %s", v, v)
 		}
 
-		return &properties{
+		return &Properties{
 			string(translatePropp): propValue,
 		}
 	}
 }
 
 func NegTranslate(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -45,46 +45,46 @@ func NegTranslate(val any) ApplyProp {
 			propValue = fmt.Sprintf("calc(%s * -100%%) calc(%s * -100%%)", v.Value(), v.Value())
 		}
 
-		return &properties{
+		return &Properties{
 			string(translatePropp): propValue,
 		}
 	}
 }
 
 func TranslateFull() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): `100% 100%`,
 		}
 	}
 }
 
 func NegTranslateFull() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): `-100% -100%`,
 		}
 	}
 }
 
 func TranslatePx() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): `1px 1px`,
 		}
 	}
 }
 
 func NegTranslatePx() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): `-1px -1px`,
 		}
 	}
 }
 
 func TranslateX(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -99,14 +99,14 @@ func TranslateX(val any) ApplyProp {
 			propValue = fmt.Sprintf("%s %s", v, s.theme.UseVarKey(theme.Custom, "translate-y"))
 		}
 
-		return &properties{
+		return &Properties{
 			string(translatePropp): propValue,
 		}
 	}
 }
 
 func NegTranslateX(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -119,15 +119,15 @@ func NegTranslateX(val any) ApplyProp {
 			propValue = fmt.Sprintf("calc(%s * -100%%) %s", v.Value(), s.theme.UseVarKey(theme.Custom, "translate-y"))
 		}
 
-		return &properties{
+		return &Properties{
 			string(translatePropp): propValue,
 		}
 	}
 }
 
 func TranslateXFull() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): fmt.Sprintf("100%% %s",
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			),
@@ -136,8 +136,8 @@ func TranslateXFull() ApplyProp {
 }
 
 func NegTranslateXFull() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): fmt.Sprintf("-100%% %s",
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			),
@@ -146,8 +146,8 @@ func NegTranslateXFull() ApplyProp {
 }
 
 func TranslateXPx() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): fmt.Sprintf("1px %s",
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			),
@@ -156,8 +156,8 @@ func TranslateXPx() ApplyProp {
 }
 
 func NegTranslateXPx() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): fmt.Sprintf("-1px %s",
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
 			),
@@ -166,7 +166,7 @@ func NegTranslateXPx() ApplyProp {
 }
 
 func TranslateY(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -187,14 +187,14 @@ func TranslateY(val any) ApplyProp {
 			)
 		}
 
-		return &properties{
+		return &Properties{
 			string(translatePropp): propValue,
 		}
 	}
 }
 
 func NegTranslateY(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -210,15 +210,15 @@ func NegTranslateY(val any) ApplyProp {
 			)
 		}
 
-		return &properties{
+		return &Properties{
 			string(translatePropp): propValue,
 		}
 	}
 }
 
 func TranslateYFull() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): fmt.Sprintf("%s 100%%",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 			),
@@ -227,8 +227,8 @@ func TranslateYFull() ApplyProp {
 }
 
 func NegTranslateYFull() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): fmt.Sprintf("%s -100%%",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 			),
@@ -237,8 +237,8 @@ func NegTranslateYFull() ApplyProp {
 }
 
 func TranslateYPx() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): fmt.Sprintf("%s 1px",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 			),
@@ -247,8 +247,8 @@ func TranslateYPx() ApplyProp {
 }
 
 func NegTranslateYPx() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): fmt.Sprintf("%s -1px",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 			),
@@ -257,7 +257,7 @@ func NegTranslateYPx() ApplyProp {
 }
 
 func TranslateZ(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -281,14 +281,14 @@ func TranslateZ(val any) ApplyProp {
 			)
 		}
 
-		return &properties{
+		return &Properties{
 			string(translatePropp): propValue,
 		}
 	}
 }
 
 func NegTranslateZ(val any) ApplyProp {
-	return func(s *style) styleProp {
+	return func(s *Style) StyleProp {
 		var propValue string
 
 		switch v := val.(type) {
@@ -306,15 +306,15 @@ func NegTranslateZ(val any) ApplyProp {
 			)
 		}
 
-		return &properties{
+		return &Properties{
 			string(translatePropp): propValue,
 		}
 	}
 }
 
 func TranslateZPx() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): fmt.Sprintf("%s %s 1px",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
@@ -324,8 +324,8 @@ func TranslateZPx() ApplyProp {
 }
 
 func NegTranslateZPx() ApplyProp {
-	return func(s *style) styleProp {
-		return &properties{
+	return func(s *Style) StyleProp {
+		return &Properties{
 			string(translatePropp): fmt.Sprintf("%s %s -1px",
 				s.theme.UseVarKey(theme.Custom, "translate-x"),
 				s.theme.UseVarKey(theme.Custom, "translate-y"),
