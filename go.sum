@@ -1,3 +1,5 @@
+github.com/raitucarp/gomix/icons v0.0.0-20251016061643-d8d8126c0836 h1:lPl+4Wv3MeI8BQpYi6mGMTuHe4b9iLaE+E85JtQcUT4=
+github.com/raitucarp/gomix/icons v0.0.0-20251016061643-d8d8126c0836/go.mod h1:BdOPnbkMREYHAf2X9PcLI1KF93w5rAyRuklKKWinK8g=
 github.com/tdewolff/minify/v2 v2.24.3 h1:BaKgWSFLKbKDiUskbeRgbe2n5d1Ci1x3cN/eXna8zOA=
 github.com/tdewolff/minify/v2 v2.24.3/go.mod h1:1JrCtoZXaDbqioQZfk3Jdmr0GPJKiU7c1Apmb+7tCeE=
 github.com/tdewolff/parse/v2 v2.8.3 h1:5VbvtJ83cfb289A1HzRA9sf02iT8YyUwN84ezjkdY1I=

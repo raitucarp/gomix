@@ -1,0 +1,4 @@
+github.com/raitucarp/gomix v0.0.25 h1:iTRYjICfIZ5TI94+ougQPc6quBuyTfTWG8BZ5YXxagQ=
+github.com/raitucarp/gomix v0.0.25/go.mod h1:wMxiv7H2GxPgZ/3/I9Wqb/y37Q24HoB3o2wxP/WB/eE=
+golang.org/x/net v0.44.0 h1:evd8IRDyfNBMBTTY5XRF1vaZlD+EmWx6x8PkhR04H/I=
+golang.org/x/net v0.44.0/go.mod h1:ECOoLqd5U3Lhyeyo/QDCEVQ4sNgYsqvCZ722XogGieY=
