@@ -31,6 +31,7 @@ func main() {
 			web_addons(
 				_htmx("2.0.7"),
 				_modern_normalize(),
+				usePlaywriteDeGrundFont().Install(),
 			),
 
 			fragment_at(blogArticleFramentPath,

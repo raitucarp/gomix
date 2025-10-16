@@ -6,9 +6,10 @@ import (
 	modern_normalize "github.com/raitucarp/gomix/addons/modern-normalize"
 	"github.com/raitucarp/gomix/components"
 	"github.com/raitucarp/gomix/element"
-	fa5 "github.com/raitucarp/gomix/icons/fontawesome-5"
 	ai "github.com/raitucarp/gomix/icons/ant-design-icons"
-	
+	fa5 "github.com/raitucarp/gomix/icons/fontawesome-5"
+
+	googlefonts "github.com/raitucarp/gomix/addons/google-fonts"
 	"github.com/raitucarp/gomix/styles"
 	"github.com/raitucarp/gomix/value"
 )
@@ -45,6 +46,7 @@ var fragment_component = gomix.FragmentComponent
 // addons scope alias
 var _htmx = htmx.Addon
 var _modern_normalize = modern_normalize.Addon
+var usePlaywriteDeGrundFont = googlefonts.UseGoogleFontPlaywriteDeGrund
 
 // element scope
 var div = element.Div

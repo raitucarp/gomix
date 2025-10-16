@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"github.com/raitucarp/gomix"
+	googlefonts "github.com/raitucarp/gomix/addons/google-fonts"
 	"github.com/raitucarp/gomix/element"
 )
 
@@ -39,7 +40,10 @@ func HomeLayout(page *gomix.Page) isComponent {
 		slot(),
 		text("home layout"),
 		Hstack(
-			span(text("test")),
+			span(text("test")).Element().Style(
+				text_3xl(),
+				googlefonts.FontPlaywriteDeGrund(),
+			),
 			div(
 				Icon(fa_brand_android()).Size2Xl().Component().FillRed(300),
 				span(text("Font Awesome Brand Android")),

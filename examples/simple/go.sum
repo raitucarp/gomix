@@ -1,5 +1,7 @@
-github.com/raitucarp/gomix/icons v0.0.0-20251016061643-d8d8126c0836 h1:lPl+4Wv3MeI8BQpYi6mGMTuHe4b9iLaE+E85JtQcUT4=
-github.com/raitucarp/gomix/icons v0.0.0-20251016061643-d8d8126c0836/go.mod h1:BdOPnbkMREYHAf2X9PcLI1KF93w5rAyRuklKKWinK8g=
+github.com/raitucarp/gomix/addons/google-fonts v0.0.0-20251016084232-d0e88ae6cb53 h1:ujt+qKJBgVEwykp6R1yaAS5JXCPE+P5T+zpaugteGbo=
+github.com/raitucarp/gomix/addons/google-fonts v0.0.0-20251016084232-d0e88ae6cb53/go.mod h1:zRtohR3xWRjvF/uwvYfwA0gm8GaUOA4ieoskMCZC5Lo=
+github.com/raitucarp/gomix/icons v0.0.0-20251016064055-aee4464f7e92 h1:7wSKthyuRr4lHPeyHpZ8mCB2+L6wSUD5t+DzcOfEZTo=
+github.com/raitucarp/gomix/icons v0.0.0-20251016064055-aee4464f7e92/go.mod h1:KFMBGlCqAe0Qa+/3BY/4AkxGAmvdrGZ2C7mauVy2/Dg=
 github.com/raitucarp/gomix/icons/ant-design-icons v0.0.0-20251016063651-b6909058c740 h1:rFd/7QAL+/XtuP/spnt7IJlj9eHSDmkhtLuD6bQo8xk=
 github.com/raitucarp/gomix/icons/ant-design-icons v0.0.0-20251016063651-b6909058c740/go.mod h1:p4Gpx4SagEwoo+doEDlU1Tr6y2bqdbZ1mJJ6L/C+s58=
 github.com/raitucarp/gomix/icons/fontawesome-5 v0.0.0-20251016063651-b6909058c740 h1:1D3HI7d57L5HHdg/lUM6ukywsLzHcWKNf0dj9bfH9lA=
@@ -10,5 +12,5 @@ github.com/tdewolff/parse/v2 v2.8.3 h1:5VbvtJ83cfb289A1HzRA9sf02iT8YyUwN84ezjkdY
 github.com/tdewolff/parse/v2 v2.8.3/go.mod h1:Hwlni2tiVNKyzR1o6nUs4FOF07URA+JLBLd6dlIXYqo=
 github.com/tdewolff/test v1.0.11 h1:FdLbwQVHxqG16SlkGveC0JVyrJN62COWTRyUFzfbtBE=
 github.com/tdewolff/test v1.0.11/go.mod h1:XPuWBzvdUzhCuxWO1ojpXsyzsA5bFoS3tO/Q3kFuTG8=
-golang.org/x/net v0.44.0 h1:evd8IRDyfNBMBTTY5XRF1vaZlD+EmWx6x8PkhR04H/I=
-golang.org/x/net v0.44.0/go.mod h1:ECOoLqd5U3Lhyeyo/QDCEVQ4sNgYsqvCZ722XogGieY=
+golang.org/x/net v0.46.0 h1:giFlY12I07fugqwPuWJi68oOnpfqFnJIJzaIIm2JVV4=
+golang.org/x/net v0.46.0/go.mod h1:Q9BGdFy1y4nkUwiLvT5qtyhAnEHgnQ/zd8PfU6nc210=
