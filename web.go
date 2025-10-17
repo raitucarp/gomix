@@ -3,6 +3,7 @@ package gomix
 import (
 	"fmt"
 	"slices"
+	"sort"
 	"strings"
 
 	"github.com/raitucarp/gomix/components"
@@ -11,13 +12,26 @@ import (
 	"github.com/raitucarp/gomix/theme"
 )
 
+type scriptKind string
+
+const (
+	scriptUrl scriptKind = "url"
+	scriptRaw scriptKind = "raw"
+)
+
+type script struct {
+	kind    scriptKind
+	data    string
+	isDefer bool
+}
+
 type webPage struct {
 	title       string
 	layout      components.IsComponent
 	pages       []*Page
 	fragments   []*Fragment
 	theme       *theme.Theme
-	scripts     []string
+	scripts     []script
 	stylesheets []string
 	css         string
 }
@@ -45,14 +59,40 @@ func Stylesheets(url ...string) AppParam {
 	}
 }
 
-func Scripts(url ...string) AppParam {
+func newSripts(scripts ...script) AppParam {
 	return func(app *Application) (Scope, func(params ...any)) {
 		return WebScope, func(params ...any) {
-			app.web.scripts = append(app.web.scripts, url...)
-			slices.Sort(app.web.scripts)
+			app.web.scripts = append(app.web.scripts, scripts...)
+			sort.Slice(app.web.scripts, func(i, j int) bool {
+				return app.web.scripts[i].data < app.web.scripts[j].data
+			})
 			app.web.scripts = slices.Compact(app.web.scripts)
 		}
 	}
+}
+
+func ScriptsDefer(urls ...string) AppParam {
+	newScript := []script{}
+	for _, u := range urls {
+		newScript = append(newScript, script{kind: scriptUrl, isDefer: true, data: u})
+	}
+	return newSripts(newScript...)
+}
+
+func Scripts(urls ...string) AppParam {
+	newScript := []script{}
+	for _, u := range urls {
+		newScript = append(newScript, script{kind: scriptUrl, data: u})
+	}
+	return newSripts(newScript...)
+}
+
+func JavaScripts(contents ...string) AppParam {
+	newScript := []script{}
+	for _, u := range contents {
+		newScript = append(newScript, script{kind: scriptRaw, data: u})
+	}
+	return newSripts(newScript...)
 }
 
 func PageAt(path LocationPath, params ...AppParam) AppParam {

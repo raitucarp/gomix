@@ -31,7 +31,7 @@ type Page struct {
 	children  []*Page
 	metadata  map[metadataField]any
 
-	scripts     []string
+	scripts     []script
 	stylesheets []string
 	css         string
 	theme       *theme.Theme
@@ -65,8 +65,8 @@ func (page *Page) addLayouts(layout ...pageComponent) {
 	page.layouts = append(page.layouts, layout...)
 }
 
-func (page *Page) addScripts(urls ...string) {
-	page.scripts = append(page.scripts, urls...)
+func (page *Page) addScripts(scripts ...script) {
+	page.scripts = append(page.scripts, scripts...)
 }
 
 func (page *Page) addStylesheets(urls ...string) {
@@ -179,8 +179,17 @@ func (page *Page) Render(lang element.LanguageCode) string {
 	}
 	head = append(head, element.Style(strings.Join(allStylesheet, "\n")))
 
-	for _, script := range page.scripts {
-		head = append(head, element.Script().Src(script))
+	for _, s := range page.scripts {
+		if s.kind == scriptUrl {
+			if s.isDefer {
+				head = append(head, element.Script().Src(s.data).Defer())
+			} else {
+				head = append(head, element.Script().Src(s.data))
+			}
+		} else {
+			head = append(head, element.Script().Content(s.data))
+		}
+
 	}
 
 	layout := components.Component(
