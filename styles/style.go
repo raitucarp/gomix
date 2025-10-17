@@ -69,6 +69,14 @@ func notLastChildProp(prop Prop) string {
 	return fmt.Sprintf("& > :not(:last-child) | %s", prop)
 }
 
+func CSSProperty(property string, value string) ApplyProp {
+	return func(s *Style) StyleProp {
+		return &Properties{
+			property: value,
+		}
+	}
+}
+
 func ApplyStyle(styleTheme *theme.Theme, props ...ApplyProp) map[StyleVariant]Props {
 	defaultStyle := &Style{
 		props:   make(Props),
