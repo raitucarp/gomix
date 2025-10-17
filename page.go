@@ -186,10 +186,13 @@ func (page *Page) Render(lang element.LanguageCode) string {
 			} else {
 				head = append(head, element.Script().Src(s.data))
 			}
-		} else {
+		}
+	}
+
+	for _, s := range page.scripts {
+		if s.kind == scriptRaw {
 			head = append(head, element.Script().Content(s.data))
 		}
-
 	}
 
 	layout := components.Component(
