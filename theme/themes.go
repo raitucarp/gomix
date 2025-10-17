@@ -49,9 +49,15 @@ func (v *Variables) ToCSSVariables() (vars map[string]string) {
 				)
 				vars[varName] = value
 			} else {
-				varName := fmt.Sprintf("--%s-%s",
-					namespace, key,
-				)
+				varNameParts := []string{string(namespace)}
+				if key != "" {
+					varNameParts = append(varNameParts, key)
+				}
+				varName := strings.Join(varNameParts, "-")
+				if namespace == Spacing {
+					fmt.Println(varName)
+				}
+				varName = fmt.Sprintf("--%s", varName)
 				vars[varName] = value
 			}
 		}
@@ -99,9 +105,9 @@ func (t *Theme) VarKey(namespace Namespace, class string) string {
 		)
 	}
 
-	return fmt.Sprintf("--%s-%s",
-		namespace, class,
-	)
+	varName := strings.Join([]string{string(namespace), class}, "-")
+
+	return fmt.Sprintf("--%s", varName)
 }
 
 func (t *Theme) AddVariable(namespace Namespace, class string, value string) {
