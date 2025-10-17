@@ -826,6 +826,7 @@ func defaultTheme() *Theme {
 		ColorOrangeAlpha(900, "#cc4e00"),
 		ColorOrangeAlpha(950, "#431200e2"),
 
+		ColorWhite(),
 		ColorWhiteAlpha(25, "rgba(255, 255, 255, 0.05)"),
 		ColorWhiteAlpha(50, "rgba(255, 255, 255, 0.1)"),
 		ColorWhiteAlpha(100, "rgba(255, 255, 255, 0.15)"),
@@ -839,6 +840,7 @@ func defaultTheme() *Theme {
 		ColorWhiteAlpha(900, "rgba(255, 255, 255, 0.9)"),
 		ColorWhiteAlpha(950, "rgba(255, 255, 255, 0.95)"),
 
+		ColorBlack(),
 		ColorBlackAlpha(25, "rgba(0, 0, 0, 0.05)"),
 		ColorBlackAlpha(50, "rgba(0, 0, 0, 0.1)"),
 		ColorBlackAlpha(100, "rgba(0, 0, 0, 0.15)"),

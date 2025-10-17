@@ -632,6 +632,18 @@ func ColorWhiteAlpha(scale int, value string) ThemeParam {
 		t.AddVariable(Color, fmt.Sprintf("white-alpha-%d", scale), value)
 	}
 }
+
+func ColorBlack() ThemeParam {
+	return func(t *Theme) {
+		t.AddVariable(Color, "black", "#000")
+	}
+}
+func ColorWhite() ThemeParam {
+	return func(t *Theme) {
+		t.AddVariable(Color, "white", "#fff")
+	}
+}
+
 func ColorVar(name string, scale int, value string) ThemeParam {
 	return func(t *Theme) {
 		t.AddVariable(Color, fmt.Sprintf("%s-%d", name, scale), value)
