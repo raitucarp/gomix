@@ -17,11 +17,6 @@ func (s *stack) Children(components ...IsComponent) *stack {
 	return s
 }
 
-func (s *stack) JustifyStart() *stack {
-	s.component.JustifyStart()
-	return s
-}
-
 func Stack(components ...IsComponent) *stack {
 	s := &stack{
 		component: &component{
