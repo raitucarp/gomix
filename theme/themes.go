@@ -54,9 +54,6 @@ func (v *Variables) ToCSSVariables() (vars map[string]string) {
 					varNameParts = append(varNameParts, key)
 				}
 				varName := strings.Join(varNameParts, "-")
-				if namespace == Spacing {
-					fmt.Println(varName)
-				}
 				varName = fmt.Sprintf("--%s", varName)
 				vars[varName] = value
 			}
