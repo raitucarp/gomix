@@ -219,6 +219,11 @@ func (e *HtmlElement) Spellcheck(check bool) *HtmlElement {
 	return e
 }
 
+func (e *HtmlElement) Role(role string) *HtmlElement {
+	e.AddAttribute("role", role)
+	return e
+}
+
 func (e *HtmlElement) getClassSha() string {
 	hasher := sha256.New()
 	hasher.Write([]byte(e.Render()))
@@ -268,6 +273,11 @@ func (e *HtmlElement) TabIndex(number int) *HtmlElement {
 	return e
 }
 
+func (e *HtmlElement) CSSProperty(key string, value string) *HtmlElement {
+	e.Style(styles.CSSProperty(key, value))
+	return e
+}
+
 func (e *HtmlElement) Title(text string) *HtmlElement {
 	e.AddAttribute("title", text)
 	return e
@@ -284,6 +294,11 @@ func (e *HtmlElement) Aria(aria string, value string) *HtmlElement {
 }
 
 func (e *HtmlElement) GetNode() *html.Node {
+	return e.node
+}
+
+func (e *HtmlElement) ChangeTagName(tagName string) *html.Node {
+	e.node.Data = tagName
 	return e.node
 }
 
