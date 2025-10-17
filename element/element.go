@@ -88,6 +88,7 @@ type HtmlElement struct {
 	theme         *theme.Theme
 	style         map[styles.StyleVariant]styles.Props
 	prefClassName string
+	prefixCss     string
 }
 
 func (e *HtmlElement) AddAttribute(key string, value string) {
@@ -227,12 +228,25 @@ func (e *HtmlElement) Role(role string) *HtmlElement {
 func (e *HtmlElement) getClassSha() string {
 	hasher := sha256.New()
 	hasher.Write([]byte(e.Render()))
+	hexClassName := hex.EncodeToString(hasher.Sum(nil))[0:5]
 
-	return "c" + hex.EncodeToString(hasher.Sum(nil))[0:5]
+	prefix := "css"
+	if e.prefixCss != "" {
+		prefix = e.prefixCss
+	}
+
+	finalClassName := strings.Join([]string{prefix, hexClassName}, "-")
+
+	return finalClassName
 }
 
 func (e *HtmlElement) PreferredClassName(className string) *HtmlElement {
 	e.prefClassName = className
+	return e
+}
+
+func (e *HtmlElement) PrefixCss(prefixCss string) *HtmlElement {
+	e.prefixCss = prefixCss
 	return e
 }
 
