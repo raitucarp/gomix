@@ -15,8 +15,10 @@ func check(err error) {
 }
 
 const (
-	homePath      = page_path("/")
-	tutorialsPath = page_path("/tutorials")
+	homePath          = page_path("/")
+	componentListPath = page_path("/components/")
+	componentsPath    = page_path("/components/{component}")
+	tutorialsPath     = page_path("/tutorials")
 )
 
 //go:embed alpine
@@ -24,7 +26,7 @@ var alpineGlobal embed.FS
 
 func webSetup() gomix.AppParam {
 	return web(
-		layout(
+		app_layout(
 			AppLayout(),
 		),
 		web_addons(
@@ -49,14 +51,31 @@ func webSetup() gomix.AppParam {
 		// 	fragment(BlogArticleFragment),
 		// ),
 
+		title_template("{title} | gomix Documentation"),
+
 		// page
 		page_at(homePath,
-			title_("gomix Documentation"),
+			title_("Getting Started"),
 			component(HomeLayout),
+		),
+		page_at(componentListPath,
+			title_("Components Gallery"),
+			layout(ComponentsLayout),
+			component(ComponentsGallery),
+
+			page_at(componentsPath,
+				title_("{component} Component"),
+				component(ComponentContent),
+			),
 		),
 		page_at(tutorialsPath,
 			title_("Tutorials"),
 			component(TutorialPage),
+		),
+
+		not_found_page(
+			title_("404 Not Found"),
+			component(NotFoundPage),
 		),
 	)
 

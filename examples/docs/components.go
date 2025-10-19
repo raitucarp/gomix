@@ -13,25 +13,33 @@ type DropdownData struct {
 	Open bool `json:"open"`
 }
 
-func Content() isComponent {
+func ComponentContent(page *gomix.Page) isComponent {
 	return alpine(
 		div(
-			alpine(button(text("Toggle Dropdown"))).On("click", "open = ! open"),
-			alpine(div(text("Dropdown Contents..."))).Show("open"),
+			alpine(
+				button(text("Toggle Dropdown")),
+			).On("click", "open = ! open"),
+
+			alpine(
+				div(text("Dropdown Contents...")),
+			).Show("open"),
 		),
 	).Data(&DropdownData{Open: false})
 
 }
 
-func HomeLayout(page *gomix.Page) isComponent {
+func ComponentsGallery(page *gomix.Page) isComponent {
+	return div(text("Component Gallery"))
+}
+
+func ComponentsLayout(page *gomix.Page) isComponent {
 	return Hstack(
 		Sidebar(),
 		div(
-			Content(),
-		).Element().Style(flex_1),
-		div(
-			text("ai acount book"),
-		).Element().Style(flex_1),
+			slot(),
+		).
+			Element().
+			Style(flex_1),
 	).
 		Component().
 		PBy(value.Rem(.8)).
@@ -41,8 +49,18 @@ func HomeLayout(page *gomix.Page) isComponent {
 		JustifyCenter()
 }
 
+func HomeLayout(page *gomix.Page) isComponent {
+	return div(slot())
+}
+
 func TutorialPage(page *gomix.Page) isComponent {
 	return div(
 		text("tutorial"),
+	)
+}
+
+func NotFoundPage(page *gomix.Page) isComponent {
+	return div(
+		text("Custom 404 Page Not Found"),
 	)
 }

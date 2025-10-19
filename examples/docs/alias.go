@@ -27,13 +27,16 @@ var web_addons = gomix.WebAddons
 var port = gomix.Port
 var features = gomix.Features
 var logger = gomix.Logger
-var layout = gomix.Layout
+var app_layout = gomix.Layout
 var web = gomix.Web
 var scripts = gomix.Scripts
 var page_at = gomix.PageAt
 var fragment_at = gomix.FragmentAt
 var style_global = gomix.StyleGlobal
 var style = gomix.Style
+var not_found_page = gomix.NotFoundPage
+var layout = gomix.PageLayout
+var title_template = gomix.TitleTemplate
 
 // fragment scope
 var fragment = gomix.FragmentComponent
