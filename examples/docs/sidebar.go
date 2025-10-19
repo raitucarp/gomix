@@ -6,18 +6,21 @@ func SidebarLink(textContent string) isComponent {
 	return ListItem(text(textContent)).Component().StyleHover(bg_slate(500))
 }
 
-func Links() []isComponent {
-	return []isComponent{
-		SidebarLink("test 1"),
-		SidebarLink("test 3"),
-	}
+var componentList = []string{
+	"stack",
+	"accordion",
+	"list",
+}
+
+func Links(item string, index int) isComponent {
+	return SidebarLink(item)
 }
 
 func Sidebar() isComponent {
 	return Vstack(
 		List().
 			Ordered(
-				Links()...,
+				ForEachComponentLink(componentList...).Map(Links),
 			).
 			TypeUpperAlpha().
 			Unstyled().

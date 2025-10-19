@@ -18,3 +18,5 @@ require (
 	github.com/valyala/fasttemplate v1.2.2 // indirect
 	golang.org/x/net v0.46.0 // indirect
 )
+
+replace github.com/raitucarp/gomix v0.0.33 => ../../

@@ -90,6 +90,7 @@ var Vstack = components.VStack
 var Icon = components.Icon
 var List = components.List
 var ListItem = components.ListItem
+var ForEachComponentLink = components.ForEach[string]
 
 // font awesome
 var fa_brand_android = fa5.FaBrandAndroid

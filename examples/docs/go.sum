@@ -1,13 +1,7 @@
 github.com/gorilla/mux v1.8.1 h1:TuBL49tXwgrFYWhqrNgrUNEY92u81SPhu7sTdzQEiWY=
 github.com/gorilla/mux v1.8.1/go.mod h1:AKf9I4AEqPTmMytcMc0KkNouC66V3BtZ4qD5fmWSiMQ=
-github.com/raitucarp/gomix v0.0.32 h1:aN243EtaisOzLkRfSi9FvRxcKmK8MDqUWnWe4SfbN2E=
-github.com/raitucarp/gomix v0.0.32/go.mod h1:UbC/6SXjGrGT3glt1NsIM0dnn0dCya0QB5juNXgqq/8=
-github.com/raitucarp/gomix v0.0.33 h1:UwpI4R5xrA5mVl2ev2cYLZeEq1/aUfpqu1xUvjS1UOw=
-github.com/raitucarp/gomix v0.0.33/go.mod h1:c2ajhKd4Ugm4cmkr3a8fu8hd1XNyPRf56E89Tgi9/j4=
 github.com/raitucarp/gomix/addons/alpinejs v0.1.0 h1:4KIP7yrtNUGv2Po20m1jd27V1IkGNYbCC8Gb4wnfMrM=
 github.com/raitucarp/gomix/addons/alpinejs v0.1.0/go.mod h1:X/kr0v3w13QQYlHPgA9aUZi/4tYVph+A79c0iPkuAvI=
-github.com/raitucarp/gomix/addons/google-fonts v0.0.0-20251017164506-13d4ae24fc74 h1:5LG6Z9xSBuFI2EVjcGgLCYnqefgHkeaO89jFtuFGoH8=
-github.com/raitucarp/gomix/addons/google-fonts v0.0.0-20251017164506-13d4ae24fc74/go.mod h1:zRtohR3xWRjvF/uwvYfwA0gm8GaUOA4ieoskMCZC5Lo=
 github.com/raitucarp/gomix/addons/google-fonts v0.1.0 h1:RhWxF75brNWOGH/7j5Gz8vYPK1P7rqs8tqWtW0q7qPk=
 github.com/raitucarp/gomix/addons/google-fonts v0.1.0/go.mod h1:zRtohR3xWRjvF/uwvYfwA0gm8GaUOA4ieoskMCZC5Lo=
 github.com/raitucarp/gomix/icons v0.1.0 h1:oHWthnx00pOqVnJW//7tTTiaOO6gJv3ZfHMdFuxpqxw=
