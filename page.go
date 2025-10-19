@@ -6,12 +6,14 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/gorilla/mux"
 	"github.com/raitucarp/gomix/components"
 	"github.com/raitucarp/gomix/element"
 	"github.com/raitucarp/gomix/theme"
 	"github.com/tdewolff/minify/v2"
 	"github.com/tdewolff/minify/v2/css"
 	"github.com/tdewolff/minify/v2/html"
+	"github.com/valyala/fasttemplate"
 )
 
 // type PageComponent func(page *Page) components.IsComponent
@@ -22,14 +24,25 @@ type PageParams []PageParam
 
 type metadataField string
 
+type pageKind string
+
+const (
+	pageNormal   pageKind = "normal"
+	pageNotFound pageKind = "not_found"
+	pageError    pageKind = "error"
+)
+
 type Page struct {
-	path      LocationPath
-	title     string
-	component pageComponent
-	fragment  pageComponent
-	layouts   []pageComponent
-	children  []*Page
-	metadata  map[metadataField]any
+	path          LocationPath
+	title         string
+	titleTemplate string
+	component     pageComponent
+	fragment      pageComponent
+	layouts       []pageComponent
+	layout        pageComponent
+	children      []*Page
+	metadata      map[metadataField]any
+	kind          pageKind
 
 	scripts     []script
 	stylesheets []string
@@ -39,7 +52,7 @@ type Page struct {
 	flattened bool
 	request   *http.Request
 	response  http.ResponseWriter
-	handler   func(w http.ResponseWriter, req *http.Request)
+	params    map[string]any
 }
 
 func newPage(path LocationPath) *Page {
@@ -49,16 +62,27 @@ func newPage(path LocationPath) *Page {
 		},
 		request:  &http.Request{},
 		metadata: map[metadataField]any{},
-	}
-
-	newPage.handler = func(w http.ResponseWriter, req *http.Request) {
-		newPage.setReq(req)
-		newPage.setResp(w)
-		// setup(newPage)
-		newPage.write()
+		kind:     pageNormal,
+		params:   map[string]any{},
 	}
 
 	return newPage
+}
+
+func notFoundPageComponent(page *Page) components.IsComponent {
+	return components.VStack(components.Text("Not Found")).Component().
+		WScreen().
+		HScreen().
+		JustifyCenter().ItemsCenter()
+}
+
+func (page *Page) handler(w http.ResponseWriter, req *http.Request) {
+	page.setReq(req)
+	for key, value := range mux.Vars(req) {
+		page.params[key] = value
+	}
+	page.setResp(w)
+	page.write()
 }
 
 func (page *Page) addLayouts(layout ...pageComponent) {
@@ -94,8 +118,18 @@ func (page *Page) setResp(res http.ResponseWriter) {
 	page.response = res
 }
 
-func (page *Page) setup() {
+func (page *Page) applyTitle(defaultTitle string, titleTemplate string) {
+	if page.title == "" {
+		page.title = defaultTitle
+	}
 
+	if titleTemplate != "" {
+		t := fasttemplate.New(titleTemplate, "{", "}")
+		page.title = t.ExecuteString(map[string]any{
+			"title": page.title,
+		})
+	}
+	page.titleTemplate = titleTemplate
 }
 
 func (page *Page) Request() *http.Request {
@@ -115,8 +149,22 @@ func (page *Page) flattenPages() (pages []*Page) {
 
 	for _, p := range page.children {
 		p.flattened = true
-		p.addLayouts(page.layouts...)
-		p.addLayouts(p.component)
+
+		p.applyTitle(page.title, page.titleTemplate)
+
+		layouts := []pageComponent{}
+		if page.layout != nil && page.component != nil {
+			layouts = append(layouts, page.layouts[:len(page.layouts)-1]...)
+		} else {
+			layouts = append(layouts, page.layouts...)
+		}
+
+		if p.layout != nil {
+			layouts = append(layouts, p.layout)
+		}
+		layouts = append(layouts, p.component)
+
+		p.addLayouts(layouts...)
 		p.addStylesheets(page.stylesheets...)
 		p.addScripts(page.scripts...)
 		p.css = page.css + p.css
@@ -154,7 +202,9 @@ func (page *Page) Render(lang element.LanguageCode) string {
 	head := []element.IsHeadElement{
 		element.Meta().CharSet("UTF-8"),
 		element.Meta().Name(element.MetaNameViewport).Content("width=device-width, initial-scale=1.0"),
-		element.Title(page.title),
+		element.Title(
+			fasttemplate.New(page.title, "{", "}").ExecuteString(page.params),
+		),
 	}
 
 	for _, stylesheet := range page.stylesheets {
@@ -237,6 +287,19 @@ func PageComponent(component pageComponent) AppParam {
 			if len(params) > 0 {
 				if page, ok := params[0].(*Page); ok {
 					page.component = component
+				}
+			}
+
+		}
+	}
+}
+
+func PageLayout(layout pageComponent) AppParam {
+	return func(app *Application) (scope Scope, fn func(params ...any)) {
+		return PageScope, func(params ...any) {
+			if len(params) > 0 {
+				if page, ok := params[0].(*Page); ok {
+					page.layout = layout
 				}
 			}
 

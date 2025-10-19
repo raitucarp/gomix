@@ -5,7 +5,9 @@ import (
 	"log"
 	"net/http"
 	"slices"
+	"time"
 
+	"github.com/gorilla/mux"
 	"github.com/raitucarp/gomix/components"
 	"github.com/raitucarp/gomix/element"
 	"github.com/raitucarp/gomix/theme"
@@ -14,6 +16,7 @@ import (
 type Application struct {
 	name string
 	port int
+	host string
 
 	features []string
 	addons   []string
@@ -28,7 +31,8 @@ type AppParam func(app *Application) (scope Scope, fn func(params ...any))
 
 func App(params ...AppParam) {
 	app := &Application{
-		port: -1,
+		host: "0.0.0.0",
+		port: 3000,
 		web: &webPage{
 			layout: components.Component(
 				element.Body(
@@ -36,8 +40,12 @@ func App(params ...AppParam) {
 				),
 			),
 			theme: theme.Default,
+			pages: []*Page{},
 		},
 	}
+
+	app.web.pages = append(app.web.pages, app.notFoundPage())
+
 	for _, param := range params {
 		scope, runFn := param(app)
 		if scope == AppScope {
@@ -146,7 +154,17 @@ func (app *Application) defaultLayout() pageComponent {
 func (app *Application) flattenPages() (pages []*Page) {
 	for _, p := range app.web.pages {
 		p.flattened = true
-		p.addLayouts(app.defaultLayout(), p.component)
+
+		p.applyTitle(app.web.title, app.web.titleTemplate)
+
+		layouts := []pageComponent{}
+		layouts = append(layouts, app.defaultLayout())
+		if p.layout != nil {
+			layouts = append(layouts, p.layout)
+		}
+		layouts = append(layouts, p.component)
+
+		p.addLayouts(layouts...)
 		p.addStylesheets(app.web.stylesheets...)
 		p.addScripts(app.web.scripts...)
 		p.css = app.web.css + p.css
@@ -162,37 +180,54 @@ func (app *Application) flattenPages() (pages []*Page) {
 	return
 }
 
-func (app *Application) findPageByPath(path LocationPath) *Page {
-	for _, page := range app.web.pages {
-		if page.path == path {
-			return page
-		}
-	}
-	return nil
+func (app *Application) notFoundPage() *Page {
+	notFoundPage := newPage("/404")
+	notFoundPage.kind = pageNotFound
+	notFoundPage.title = "404 Page Not Found"
+	notFoundPage.component = notFoundPageComponent
+	return notFoundPage
+}
+
+func (app *Application) favicon(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "image/x-icon")
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte{})
 }
 
 func (app *Application) serve() {
-	mux := http.NewServeMux()
-	portString := fmt.Sprintf(":%d", app.port)
+	r := mux.NewRouter()
 
 	allPages := app.flattenPages()
 
 	for _, page := range allPages {
-		mux.HandleFunc(string(page.path), page.handler)
+		switch page.kind {
+		case pageNotFound:
+			r.NotFoundHandler = http.HandlerFunc(page.handler)
+			continue
+		case pageError:
+			r.NotFoundHandler = http.HandlerFunc(page.handler)
+			continue
+		case pageNormal:
+			r.HandleFunc(string(page.path), page.handler)
+			continue
+		}
 	}
 
 	for _, fragment := range app.web.fragments {
-		mux.HandleFunc(string(fragment.path), fragment.handler)
+		r.HandleFunc(string(fragment.path), fragment.handler)
 	}
 
-	mux.HandleFunc("/favicon.ico", func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Content-Type", "image/x-icon")
-		w.WriteHeader(http.StatusOK)
-		w.Write([]byte{})
-	})
+	r.HandleFunc("/favicon.ico", app.favicon)
 
-	logString := fmt.Sprintf("Server %s listening on %s", app.name, portString)
+	logString := fmt.Sprintf("Server %s listening on %d", app.name, app.port)
+
+	srv := &http.Server{
+		Handler:      r,
+		Addr:         fmt.Sprintf("%s:%d", app.host, app.port),
+		WriteTimeout: 15 * time.Second,
+		ReadTimeout:  15 * time.Second,
+	}
 
 	log.Println(logString)
-	http.ListenAndServe(portString, mux)
+	log.Fatal(srv.ListenAndServe())
 }

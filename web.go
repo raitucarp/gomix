@@ -26,14 +26,15 @@ type script struct {
 }
 
 type webPage struct {
-	title       string
-	layout      components.IsComponent
-	pages       []*Page
-	fragments   []*Fragment
-	theme       *theme.Theme
-	scripts     []script
-	stylesheets []string
-	css         string
+	title         string
+	titleTemplate string
+	layout        components.IsComponent
+	pages         []*Page
+	fragments     []*Fragment
+	theme         *theme.Theme
+	scripts       []script
+	stylesheets   []string
+	css           string
 }
 
 func WebAddons(addons ...AppParam) AppParam {
@@ -93,6 +94,44 @@ func JavaScripts(contents ...string) AppParam {
 		newScript = append(newScript, script{kind: scriptRaw, data: u})
 	}
 	return newSripts(newScript...)
+}
+
+func DefaultTitle(title string) AppParam {
+	return func(app *Application) (scope Scope, fn func(params ...any)) {
+		return WebScope, func(params ...any) {
+			app.web.title = title
+		}
+	}
+}
+
+func TitleTemplate(title string) AppParam {
+	return func(app *Application) (scope Scope, fn func(params ...any)) {
+		return WebScope, func(params ...any) {
+			app.web.titleTemplate = title
+		}
+	}
+}
+
+func NotFoundPage(params ...AppParam) AppParam {
+	return func(app *Application) (Scope, func(params ...any)) {
+		return WebScope, func(p ...any) {
+			notFoundPage := newPage("/404")
+			notFoundPage.kind = pageNotFound
+
+			notFoundPageIndex := slices.IndexFunc(app.web.pages, func(p *Page) bool {
+				return p.kind == pageNotFound
+			})
+
+			for _, param := range params {
+				scope, fn := param(app)
+				if scope == PageScope {
+					fn(notFoundPage)
+				}
+			}
+
+			app.web.pages[notFoundPageIndex] = notFoundPage
+		}
+	}
 }
 
 func PageAt(path LocationPath, params ...AppParam) AppParam {

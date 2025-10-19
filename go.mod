@@ -8,4 +8,9 @@ require (
 	golang.org/x/net v0.44.0
 )
 
-require github.com/tdewolff/parse/v2 v2.8.3 // indirect
+require (
+	github.com/gorilla/mux v1.8.1 // indirect
+	github.com/tdewolff/parse/v2 v2.8.3 // indirect
+	github.com/valyala/bytebufferpool v1.0.0 // indirect
+	github.com/valyala/fasttemplate v1.2.2 // indirect
+)
