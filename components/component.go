@@ -176,6 +176,7 @@ func Render(c IsComponent) string {
 	html.Render(&buffer, c.Element().GetNode())
 
 	node, _ := html.Parse(&buffer)
+	removeFragment(node)
 
 	for desc := range node.Descendants() {
 		if desc.Type == html.ElementNode && desc.Data == "slot" {
