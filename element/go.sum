@@ -1,0 +1,8 @@
+github.com/raitucarp/gomix/styles v0.1.0 h1:GT4jni7wb0TtK+OpLb3qpRp/c5eJhfzbU2z1Ry3z/oA=
+github.com/raitucarp/gomix/styles v0.1.0/go.mod h1:kP7Rrp2Isu2V10TXtJtYBBvxmAjrAN3xhnU7LEtMGhM=
+github.com/raitucarp/gomix/theme v0.1.0 h1:k6tcnbrqPYVkV6IDgwNXaHzMGCO4OeVQS1g9YkxWDtM=
+github.com/raitucarp/gomix/theme v0.1.0/go.mod h1:/5QognIwCzdH9gkSFTxPnsvQkAdTFi76luNwLzANuto=
+github.com/raitucarp/gomix/value v0.1.0 h1:YV2+mbGhcteaUnR6E91W3gM9CLVfQEL4K6A8DLsfl18=
+github.com/raitucarp/gomix/value v0.1.0/go.mod h1:wCKYcdIcHrE67Csdl294zdIjPPhGlw3qQLnlSxqMgGE=
+golang.org/x/net v0.46.0 h1:giFlY12I07fugqwPuWJi68oOnpfqFnJIJzaIIm2JVV4=
+golang.org/x/net v0.46.0/go.mod h1:Q9BGdFy1y4nkUwiLvT5qtyhAnEHgnQ/zd8PfU6nc210=
