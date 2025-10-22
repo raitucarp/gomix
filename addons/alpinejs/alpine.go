@@ -18,14 +18,35 @@ import (
 	"github.com/tdewolff/minify/v2/js"
 )
 
-const AddonName = "Alpine.js"
-const cdnUrl = "https://cdn.jsdelivr.net/npm/alpinejs@%s/dist/cdn.min.js"
+const AddonName = "Alpine.js Core"
+const cdnBaseUrl = "https://cdn.jsdelivr.net/npm"
+const coreUrl = cdnBaseUrl + "/alpinejs@%s/dist/cdn.min.js"
 
-func Addon(version string) gomix.AppParam {
+func installPlugin(name string, version string) gomix.AppParam {
+	return func(app *gomix.Application) (scope gomix.Scope, fn func(params ...any)) {
+		return gomix.WebScope, func(params ...any) {
+			app.InstallAddon(fmt.Sprintf("Alpine.js: %s plugin", name))
+			alpinejsUrl := fmt.Sprintf("%s/@alpinejs/%s@%s/dist/cdn.min.js", cdnBaseUrl, name, version)
+			app.Apply(gomix.WebScope, gomix.ScriptsDefer(alpinejsUrl))
+		}
+	}
+}
+
+func MaskPlugin(version string) gomix.AppParam      { return installPlugin("mask", version) }
+func IntersectPlugin(version string) gomix.AppParam { return installPlugin("intersect", version) }
+func ResizePlugin(version string) gomix.AppParam    { return installPlugin("resize", version) }
+func PersistPlugin(version string) gomix.AppParam   { return installPlugin("persist", version) }
+func FocusPlugin(version string) gomix.AppParam     { return installPlugin("focus", version) }
+func CollapsePlugin(version string) gomix.AppParam  { return installPlugin("collapse", version) }
+func AnchorPlugin(version string) gomix.AppParam    { return installPlugin("anchor", version) }
+func MorphPlugin(version string) gomix.AppParam     { return installPlugin("morph", version) }
+func SortPlugin(version string) gomix.AppParam      { return installPlugin("sort", version) }
+
+func Core(version string) gomix.AppParam {
 	return func(app *gomix.Application) (scope gomix.Scope, fn func(params ...any)) {
 		return gomix.WebScope, func(params ...any) {
 			app.InstallAddon(AddonName)
-			alpinejsUrl := fmt.Sprintf(cdnUrl, version)
+			alpinejsUrl := fmt.Sprintf(coreUrl, version)
 
 			app.Apply(scope, gomix.ScriptsDefer(alpinejsUrl))
 			app.Apply(scope, gomix.StyleGlobal(gomix.CSS{
@@ -145,31 +166,6 @@ func (a *alpine) Model(model string) *alpine {
 
 func (a *alpine) Modelable(model string) *alpine {
 	a.el.AddAttribute("x-modelable", model)
-	return a
-}
-
-func (a *alpine) For(statement string) *alpine {
-	a.el.AddAttribute("x-for", statement)
-	return a
-}
-
-func (a *alpine) Key(key string) *alpine {
-	a.el.AddAttribute(":key", key)
-	return a
-}
-
-func (a *alpine) Transition(modifiers ...string) *alpine {
-	attributeValue := "x-transition"
-
-	for _, v := range modifiers {
-		if strings.HasPrefix(v, ":") {
-			attributeValue += v
-		}
-	}
-
-	transitions := []string{attributeValue}
-	transitions = append(transitions, modifiers...)
-	a.el.AddAttributeBool(strings.Join(transitions, "."))
 	return a
 }
 
