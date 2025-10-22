@@ -91,6 +91,11 @@ type HtmlElement struct {
 	prefixCss     string
 }
 
+func (e *HtmlElement) As(element IsElement) *HtmlElement {
+	e.node.Data = element.Element().node.Data
+	return e
+}
+
 func (e *HtmlElement) AddAttribute(key string, value string) {
 	currentAttrIndex := slices.IndexFunc(e.node.Attr, func(attr html.Attribute) bool {
 		return key == attr.Key
