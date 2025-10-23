@@ -1,12 +1,6 @@
-github.com/raitucarp/gomix/element v0.1.0 h1:MEml8UFInZkVFXOJMeItg8nzsc3h3t7AKsTmWgLrSfU=
-github.com/raitucarp/gomix/element v0.1.0/go.mod h1:pQIzteZEAxtR3QUGoHA/OJnoNg0oU+Meehvuw6q11J4=
-github.com/raitucarp/gomix/icons v0.1.1 h1:XKgiXkgdXTY1WyxmBDmhldJBMeNVzgcy2OL0ELozCNI=
-github.com/raitucarp/gomix/icons v0.1.1/go.mod h1:cu50aDBbbyw8Si7RFj3r4YPtuP9F/F9k3Gi44zLRA+U=
-github.com/raitucarp/gomix/styles v0.1.0 h1:GT4jni7wb0TtK+OpLb3qpRp/c5eJhfzbU2z1Ry3z/oA=
-github.com/raitucarp/gomix/styles v0.1.0/go.mod h1:kP7Rrp2Isu2V10TXtJtYBBvxmAjrAN3xhnU7LEtMGhM=
-github.com/raitucarp/gomix/theme v0.1.0 h1:k6tcnbrqPYVkV6IDgwNXaHzMGCO4OeVQS1g9YkxWDtM=
-github.com/raitucarp/gomix/theme v0.1.0/go.mod h1:/5QognIwCzdH9gkSFTxPnsvQkAdTFi76luNwLzANuto=
-github.com/raitucarp/gomix/value v0.1.0 h1:YV2+mbGhcteaUnR6E91W3gM9CLVfQEL4K6A8DLsfl18=
-github.com/raitucarp/gomix/value v0.1.0/go.mod h1:wCKYcdIcHrE67Csdl294zdIjPPhGlw3qQLnlSxqMgGE=
+github.com/raitucarp/gomix v0.0.36 h1:RU97eqgEeBAJtt2R9FtmLjWaDAcqvdnD3yCS/s/CIpo=
+github.com/raitucarp/gomix v0.0.36/go.mod h1:C6iEySkZqtLYrypbUZu6eS6I0SQKCvFGyWHGT94ZIXA=
+github.com/raitucarp/gomix/icons v0.1.2 h1:4Yh5ZNgNyUQVqYf4eyrGYNTxeKAWdMaLJxVdstB8/4A=
+github.com/raitucarp/gomix/icons v0.1.2/go.mod h1:R/S+5AcVrmOZh/6IWdtTqzLGowyCphdqknWHGLVqxeA=
 golang.org/x/net v0.46.0 h1:giFlY12I07fugqwPuWJi68oOnpfqFnJIJzaIIm2JVV4=
 golang.org/x/net v0.46.0/go.mod h1:Q9BGdFy1y4nkUwiLvT5qtyhAnEHgnQ/zd8PfU6nc210=

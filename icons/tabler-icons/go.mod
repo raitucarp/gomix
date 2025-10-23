@@ -3,8 +3,8 @@ module github.com/raitucarp/gomix/icons/tabler-icons
 go 1.25.3
 
 require (
-	github.com/raitucarp/gomix v0.0.25
-	github.com/raitucarp/gomix/icons v0.0.0-20251016061643-d8d8126c0836
+	github.com/raitucarp/gomix v0.0.36
+	github.com/raitucarp/gomix/icons v0.1.2
 )
 
-require golang.org/x/net v0.44.0 // indirect
+require golang.org/x/net v0.46.0 // indirect
