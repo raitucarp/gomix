@@ -3,6 +3,7 @@ package theme
 import (
 	"fmt"
 	"strings"
+
 )
 
 func FontSans(fonts ...string) ThemeParam {
@@ -82,4 +83,3 @@ func FontBlack(weight int) ThemeParam {
 		t.AddVariable(FontWeight, "black", fmt.Sprintf("%d", weight))
 	}
 }
-

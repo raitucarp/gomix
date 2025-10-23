@@ -3,7 +3,6 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
@@ -26,7 +25,7 @@ func BgNone() ApplyProp {
 func BgLinearToT() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to top, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
+			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to top, %s)", s.theme.UseVarKey(themeCustom, "gradient-stops")),
 		}
 	}
 }
@@ -34,7 +33,7 @@ func BgLinearToT() ApplyProp {
 func BgLinearToTr() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to top right, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
+			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to top right, %s)", s.theme.UseVarKey(themeCustom, "gradient-stops")),
 		}
 	}
 }
@@ -42,7 +41,7 @@ func BgLinearToTr() ApplyProp {
 func BgLinearToR() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to right, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
+			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to right, %s)", s.theme.UseVarKey(themeCustom, "gradient-stops")),
 		}
 	}
 }
@@ -50,7 +49,7 @@ func BgLinearToR() ApplyProp {
 func BgLinearToBr() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to bottom right, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
+			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to bottom right, %s)", s.theme.UseVarKey(themeCustom, "gradient-stops")),
 		}
 	}
 }
@@ -58,7 +57,7 @@ func BgLinearToBr() ApplyProp {
 func BgLinearToB() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to bottom, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
+			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to bottom, %s)", s.theme.UseVarKey(themeCustom, "gradient-stops")),
 		}
 	}
 }
@@ -66,7 +65,7 @@ func BgLinearToB() ApplyProp {
 func BgLinearToBl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to bottom left, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
+			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to bottom left, %s)", s.theme.UseVarKey(themeCustom, "gradient-stops")),
 		}
 	}
 }
@@ -74,7 +73,7 @@ func BgLinearToBl() ApplyProp {
 func BgLinearToL() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to left, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
+			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to left, %s)", s.theme.UseVarKey(themeCustom, "gradient-stops")),
 		}
 	}
 }
@@ -82,7 +81,7 @@ func BgLinearToL() ApplyProp {
 func BgLinearToTl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to top left, %s)", s.theme.UseVarKey(theme.Custom, "gradient-stops")),
+			string(backgroundImageProp): fmt.Sprintf("linear-gradient(to top left, %s)", s.theme.UseVarKey(themeCustom, "gradient-stops")),
 		}
 	}
 }
@@ -92,9 +91,9 @@ func BgLinear(val value.Value) ApplyProp {
 		gradient := ""
 		switch v := val.(type) {
 		case *value.Angle:
-			gradient = fmt.Sprintf("linear-gradient(%s in oklab, %s)", v.Value(), s.theme.UseVarKey(theme.Custom, "gradient-stops"))
+			gradient = fmt.Sprintf("linear-gradient(%s in oklab, %s)", v.Value(), s.theme.UseVarKey(themeCustom, "gradient-stops"))
 		case value.Value, *value.CustomProperty:
-			gradient = fmt.Sprintf("linear-gradient(%s, %s))", s.theme.UseVarKey(theme.Custom, "gradient-stops"), val.Value())
+			gradient = fmt.Sprintf("linear-gradient(%s, %s))", s.theme.UseVarKey(themeCustom, "gradient-stops"), val.Value())
 		}
 		return &Properties{
 			string(backgroundImageProp): gradient,
@@ -107,10 +106,10 @@ func BgRadial(val value.Value) ApplyProp {
 		gradient := ""
 		switch v := val.(type) {
 		case *value.Angle:
-			gradient = fmt.Sprintf("radial-gradient(%s in oklab, %s)", v.Value(), s.theme.UseVarKey(theme.Custom, "gradient-stops"))
+			gradient = fmt.Sprintf("radial-gradient(%s in oklab, %s)", v.Value(), s.theme.UseVarKey(themeCustom, "gradient-stops"))
 		case value.Value, *value.CustomProperty:
 			val.Value()
-			gradient = fmt.Sprintf("radial-gradient(%s, %s))", s.theme.UseVarKey(theme.Custom, "gradient-stops"), val.Value())
+			gradient = fmt.Sprintf("radial-gradient(%s, %s))", s.theme.UseVarKey(themeCustom, "gradient-stops"), val.Value())
 		}
 		return &Properties{
 			string(backgroundImageProp): gradient,
@@ -123,7 +122,7 @@ func BgConic(val value.Value) ApplyProp {
 		gradient := ""
 		switch v := val.(type) {
 		case *value.Angle:
-			gradient = fmt.Sprintf("conic-gradient(from %s in oklab, %s)", v.Value(), s.theme.UseVarKey(theme.Custom, "gradient-stops"))
+			gradient = fmt.Sprintf("conic-gradient(from %s in oklab, %s)", v.Value(), s.theme.UseVarKey(themeCustom, "gradient-stops"))
 		case value.Value, *value.CustomProperty:
 			gradient = v.Value()
 		}

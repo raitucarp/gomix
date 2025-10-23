@@ -3,7 +3,6 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
@@ -26,7 +25,7 @@ func MinWFraction(fraction float32) ApplyProp {
 func MinW3xs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "3xs"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "3xs"),
 		}
 	}
 }
@@ -34,7 +33,7 @@ func MinW3xs() ApplyProp {
 func MinW2xs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "2xs"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "2xs"),
 		}
 	}
 }
@@ -42,7 +41,7 @@ func MinW2xs() ApplyProp {
 func MinWXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "xs"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "xs"),
 		}
 	}
 }
@@ -50,7 +49,7 @@ func MinWXs() ApplyProp {
 func MinWSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "sm"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "sm"),
 		}
 	}
 }
@@ -58,7 +57,7 @@ func MinWSm() ApplyProp {
 func MinWMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "md"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "md"),
 		}
 	}
 }
@@ -66,7 +65,7 @@ func MinWMd() ApplyProp {
 func MinWLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "lg"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "lg"),
 		}
 	}
 }
@@ -74,7 +73,7 @@ func MinWLg() ApplyProp {
 func MinWXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "xl"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "xl"),
 		}
 	}
 }
@@ -82,7 +81,7 @@ func MinWXl() ApplyProp {
 func MinW2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "2xl"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "2xl"),
 		}
 	}
 }
@@ -90,7 +89,7 @@ func MinW2xl() ApplyProp {
 func MinW3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "3xl"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "3xl"),
 		}
 	}
 }
@@ -98,7 +97,7 @@ func MinW3xl() ApplyProp {
 func MinW4xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "4xl"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "4xl"),
 		}
 	}
 }
@@ -106,7 +105,7 @@ func MinW4xl() ApplyProp {
 func MinW5xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "5xl"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "5xl"),
 		}
 	}
 }
@@ -114,7 +113,7 @@ func MinW5xl() ApplyProp {
 func MinW6xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "6xl"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "6xl"),
 		}
 	}
 }
@@ -122,7 +121,7 @@ func MinW6xl() ApplyProp {
 func MinW7xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(minWidthProp): s.theme.UseVarKey(theme.Container, "7xl"),
+			string(minWidthProp): s.theme.UseVarKey(themeContainer, "7xl"),
 		}
 	}
 }

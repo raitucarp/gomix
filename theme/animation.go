@@ -1,6 +1,8 @@
 package theme
 
-import "github.com/raitucarp/gomix/value"
+import (
+	"github.com/raitucarp/gomix/value"
+)
 
 func EaseIn(val value.Value) ThemeParam {
 	return func(t *Theme) {

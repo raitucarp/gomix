@@ -3,7 +3,6 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
@@ -26,7 +25,7 @@ func WFraction(fraction float32) ApplyProp {
 func W3xs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "3xs"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "3xs"),
 		}
 	}
 }
@@ -34,7 +33,7 @@ func W3xs() ApplyProp {
 func W2xs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "2xs"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "2xs"),
 		}
 	}
 }
@@ -42,7 +41,7 @@ func W2xs() ApplyProp {
 func WXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "xs"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "xs"),
 		}
 	}
 }
@@ -50,7 +49,7 @@ func WXs() ApplyProp {
 func WSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "sm"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "sm"),
 		}
 	}
 }
@@ -58,7 +57,7 @@ func WSm() ApplyProp {
 func WMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "md"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "md"),
 		}
 	}
 }
@@ -66,7 +65,7 @@ func WMd() ApplyProp {
 func WLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "lg"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "lg"),
 		}
 	}
 }
@@ -74,7 +73,7 @@ func WLg() ApplyProp {
 func WXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "xl"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "xl"),
 		}
 	}
 }
@@ -82,7 +81,7 @@ func WXl() ApplyProp {
 func W2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "2xl"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "2xl"),
 		}
 	}
 }
@@ -90,7 +89,7 @@ func W2xl() ApplyProp {
 func W3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "3xl"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "3xl"),
 		}
 	}
 }
@@ -98,7 +97,7 @@ func W3xl() ApplyProp {
 func W4xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "4xl"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "4xl"),
 		}
 	}
 }
@@ -106,7 +105,7 @@ func W4xl() ApplyProp {
 func W5xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "5xl"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "5xl"),
 		}
 	}
 }
@@ -114,7 +113,7 @@ func W5xl() ApplyProp {
 func W6xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "6xl"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "6xl"),
 		}
 	}
 }
@@ -122,7 +121,7 @@ func W6xl() ApplyProp {
 func W7xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(widthProp): s.theme.UseVarKey(theme.Container, "7xl"),
+			string(widthProp): s.theme.UseVarKey(themeContainer, "7xl"),
 		}
 	}
 }

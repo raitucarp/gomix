@@ -3,7 +3,6 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
@@ -26,49 +25,49 @@ func BackdropFilter(val value.Value) ApplyProp {
 func BackdropBlurXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "xs")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "xs")),
 		}
 	}
 }
 func BackdropBlurSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "sm")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "sm")),
 		}
 	}
 }
 func BackdropBlurMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "md")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "md")),
 		}
 	}
 }
 func BackdropBlurLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "lg")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "lg")),
 		}
 	}
 }
 func BackdropBlurXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "xl")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "xl")),
 		}
 	}
 }
 func BackdropBlur2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "2xl")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "2xl")),
 		}
 	}
 }
 func BackdropBlur3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "3xl")),
+			string(backdropFilterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "3xl")),
 		}
 	}
 }

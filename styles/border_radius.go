@@ -1,14 +1,13 @@
 package styles
 
 import (
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
 func RoundedXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -16,7 +15,7 @@ func RoundedXs() ApplyProp {
 func RoundedSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -24,7 +23,7 @@ func RoundedSm() ApplyProp {
 func RoundedMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -32,7 +31,7 @@ func RoundedMd() ApplyProp {
 func RoundedLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -40,7 +39,7 @@ func RoundedLg() ApplyProp {
 func RoundedXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -48,7 +47,7 @@ func RoundedXl() ApplyProp {
 func Rounded2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -56,7 +55,7 @@ func Rounded2xl() ApplyProp {
 func Rounded3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -64,7 +63,7 @@ func Rounded3xl() ApplyProp {
 func Rounded4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -96,8 +95,8 @@ func Rounded(val value.Value) ApplyProp {
 func RoundedSXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
-			string(borderEndStartRadiusProp):   s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
+			string(borderEndStartRadiusProp):   s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -105,8 +104,8 @@ func RoundedSXs() ApplyProp {
 func RoundedSSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
-			string(borderEndStartRadiusProp):   s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
+			string(borderEndStartRadiusProp):   s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -114,8 +113,8 @@ func RoundedSSm() ApplyProp {
 func RoundedSMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
-			string(borderEndStartRadiusProp):   s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
+			string(borderEndStartRadiusProp):   s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -123,8 +122,8 @@ func RoundedSMd() ApplyProp {
 func RoundedSLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
-			string(borderEndStartRadiusProp):   s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
+			string(borderEndStartRadiusProp):   s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -132,8 +131,8 @@ func RoundedSLg() ApplyProp {
 func RoundedSXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
-			string(borderEndStartRadiusProp):   s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
+			string(borderEndStartRadiusProp):   s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -141,8 +140,8 @@ func RoundedSXl() ApplyProp {
 func RoundedS2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
-			string(borderEndStartRadiusProp):   s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
+			string(borderEndStartRadiusProp):   s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -150,8 +149,8 @@ func RoundedS2xl() ApplyProp {
 func RoundedS3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
-			string(borderEndStartRadiusProp):   s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
+			string(borderEndStartRadiusProp):   s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -159,8 +158,8 @@ func RoundedS3xl() ApplyProp {
 func RoundedS4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
-			string(borderEndStartRadiusProp):   s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
+			string(borderEndStartRadiusProp):   s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -198,8 +197,8 @@ func RoundedS(val value.Value) ApplyProp {
 func RoundedEXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
-			string(borderEndEndRadiusProp):   s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
+			string(borderEndEndRadiusProp):   s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -207,8 +206,8 @@ func RoundedEXs() ApplyProp {
 func RoundedESm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
-			string(borderEndEndRadiusProp):   s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
+			string(borderEndEndRadiusProp):   s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -216,8 +215,8 @@ func RoundedESm() ApplyProp {
 func RoundedEMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
-			string(borderEndEndRadiusProp):   s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
+			string(borderEndEndRadiusProp):   s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -225,8 +224,8 @@ func RoundedEMd() ApplyProp {
 func RoundedELg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
-			string(borderEndEndRadiusProp):   s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
+			string(borderEndEndRadiusProp):   s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -234,8 +233,8 @@ func RoundedELg() ApplyProp {
 func RoundedEXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
-			string(borderEndEndRadiusProp):   s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
+			string(borderEndEndRadiusProp):   s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -243,8 +242,8 @@ func RoundedEXl() ApplyProp {
 func RoundedE2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
-			string(borderEndEndRadiusProp):   s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
+			string(borderEndEndRadiusProp):   s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -252,8 +251,8 @@ func RoundedE2xl() ApplyProp {
 func RoundedE3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
-			string(borderEndEndRadiusProp):   s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
+			string(borderEndEndRadiusProp):   s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -261,8 +260,8 @@ func RoundedE3xl() ApplyProp {
 func RoundedE4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
-			string(borderEndEndRadiusProp):   s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
+			string(borderEndEndRadiusProp):   s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -299,8 +298,8 @@ func RoundedE(val value.Value) ApplyProp {
 func RoundedTXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "xs"),
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "xs"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -308,8 +307,8 @@ func RoundedTXs() ApplyProp {
 func RoundedTSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "sm"),
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "sm"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -317,8 +316,8 @@ func RoundedTSm() ApplyProp {
 func RoundedTMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "md"),
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "md"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -326,8 +325,8 @@ func RoundedTMd() ApplyProp {
 func RoundedTLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "lg"),
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "lg"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -335,8 +334,8 @@ func RoundedTLg() ApplyProp {
 func RoundedTXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "xl"),
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "xl"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -344,8 +343,8 @@ func RoundedTXl() ApplyProp {
 func RoundedT2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "2xl"),
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "2xl"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -353,8 +352,8 @@ func RoundedT2xl() ApplyProp {
 func RoundedT3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "3xl"),
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "3xl"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -362,8 +361,8 @@ func RoundedT3xl() ApplyProp {
 func RoundedT4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "4xl"),
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderTopLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "4xl"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -400,8 +399,8 @@ func RoundedT(val value.Value) ApplyProp {
 func RoundedRXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp):    s.theme.UseVarKey(theme.Radius, "xs"),
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderTopRightRadiusProp):    s.theme.UseVarKey(themeRadius, "xs"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -409,8 +408,8 @@ func RoundedRXs() ApplyProp {
 func RoundedRSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp):    s.theme.UseVarKey(theme.Radius, "sm"),
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderTopRightRadiusProp):    s.theme.UseVarKey(themeRadius, "sm"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -418,8 +417,8 @@ func RoundedRSm() ApplyProp {
 func RoundedRMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp):    s.theme.UseVarKey(theme.Radius, "md"),
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderTopRightRadiusProp):    s.theme.UseVarKey(themeRadius, "md"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -427,8 +426,8 @@ func RoundedRMd() ApplyProp {
 func RoundedRLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp):    s.theme.UseVarKey(theme.Radius, "lg"),
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderTopRightRadiusProp):    s.theme.UseVarKey(themeRadius, "lg"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -436,8 +435,8 @@ func RoundedRLg() ApplyProp {
 func RoundedRXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp):    s.theme.UseVarKey(theme.Radius, "xl"),
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderTopRightRadiusProp):    s.theme.UseVarKey(themeRadius, "xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -445,8 +444,8 @@ func RoundedRXl() ApplyProp {
 func RoundedR2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp):    s.theme.UseVarKey(theme.Radius, "2xl"),
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderTopRightRadiusProp):    s.theme.UseVarKey(themeRadius, "2xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -454,8 +453,8 @@ func RoundedR2xl() ApplyProp {
 func RoundedR3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp):    s.theme.UseVarKey(theme.Radius, "3xl"),
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderTopRightRadiusProp):    s.theme.UseVarKey(themeRadius, "3xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -463,8 +462,8 @@ func RoundedR3xl() ApplyProp {
 func RoundedR4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp):    s.theme.UseVarKey(theme.Radius, "4xl"),
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderTopRightRadiusProp):    s.theme.UseVarKey(themeRadius, "4xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -501,8 +500,8 @@ func RoundedR(val value.Value) ApplyProp {
 func RoundedBXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
-			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
+			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -510,8 +509,8 @@ func RoundedBXs() ApplyProp {
 func RoundedBSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
-			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
+			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -519,8 +518,8 @@ func RoundedBSm() ApplyProp {
 func RoundedBMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
-			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
+			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -528,8 +527,8 @@ func RoundedBMd() ApplyProp {
 func RoundedBLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
-			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
+			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -537,8 +536,8 @@ func RoundedBLg() ApplyProp {
 func RoundedBXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
-			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
+			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -546,8 +545,8 @@ func RoundedBXl() ApplyProp {
 func RoundedB2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
-			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
+			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -555,8 +554,8 @@ func RoundedB2xl() ApplyProp {
 func RoundedB3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
-			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
+			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -564,8 +563,8 @@ func RoundedB3xl() ApplyProp {
 func RoundedB4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
-			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
+			string(borderBottomLeftRadiusProp):  s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -602,8 +601,8 @@ func RoundedB(val value.Value) ApplyProp {
 func RoundedLXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(theme.Radius, "xs"),
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(themeRadius, "xs"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -611,8 +610,8 @@ func RoundedLXs() ApplyProp {
 func RoundedLSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(theme.Radius, "sm"),
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(themeRadius, "sm"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -620,8 +619,8 @@ func RoundedLSm() ApplyProp {
 func RoundedLMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(theme.Radius, "md"),
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(themeRadius, "md"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -629,8 +628,8 @@ func RoundedLMd() ApplyProp {
 func RoundedLLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(theme.Radius, "lg"),
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(themeRadius, "lg"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -638,8 +637,8 @@ func RoundedLLg() ApplyProp {
 func RoundedLXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(theme.Radius, "xl"),
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(themeRadius, "xl"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -647,8 +646,8 @@ func RoundedLXl() ApplyProp {
 func RoundedL2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(theme.Radius, "2xl"),
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(themeRadius, "2xl"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -656,8 +655,8 @@ func RoundedL2xl() ApplyProp {
 func RoundedL3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(theme.Radius, "3xl"),
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(themeRadius, "3xl"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -665,8 +664,8 @@ func RoundedL3xl() ApplyProp {
 func RoundedL4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(theme.Radius, "4xl"),
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderTopLeftRadiusProp):    s.theme.UseVarKey(themeRadius, "4xl"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -702,7 +701,7 @@ func RoundedL(val value.Value) ApplyProp {
 func RoundedSsXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -710,7 +709,7 @@ func RoundedSsXs() ApplyProp {
 func RoundedSsSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -718,7 +717,7 @@ func RoundedSsSm() ApplyProp {
 func RoundedSsMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -726,7 +725,7 @@ func RoundedSsMd() ApplyProp {
 func RoundedSsLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -734,7 +733,7 @@ func RoundedSsLg() ApplyProp {
 func RoundedSsXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -742,7 +741,7 @@ func RoundedSsXl() ApplyProp {
 func RoundedSs2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -750,7 +749,7 @@ func RoundedSs2xl() ApplyProp {
 func RoundedSs3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -758,7 +757,7 @@ func RoundedSs3xl() ApplyProp {
 func RoundedSs4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartStartRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderStartStartRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -792,7 +791,7 @@ func RoundedSs(val value.Value) ApplyProp {
 func RoundedSeXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -800,7 +799,7 @@ func RoundedSeXs() ApplyProp {
 func RoundedSeSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -808,7 +807,7 @@ func RoundedSeSm() ApplyProp {
 func RoundedSeMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -816,7 +815,7 @@ func RoundedSeMd() ApplyProp {
 func RoundedSeLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -824,7 +823,7 @@ func RoundedSeLg() ApplyProp {
 func RoundedSeXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -832,7 +831,7 @@ func RoundedSeXl() ApplyProp {
 func RoundedSe2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -840,7 +839,7 @@ func RoundedSe2xl() ApplyProp {
 func RoundedSe3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -848,7 +847,7 @@ func RoundedSe3xl() ApplyProp {
 func RoundedSe4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderStartEndRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderStartEndRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -882,7 +881,7 @@ func RoundedSe(val value.Value) ApplyProp {
 func RoundedEeXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndEndRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderEndEndRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -890,7 +889,7 @@ func RoundedEeXs() ApplyProp {
 func RoundedEeSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndEndRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderEndEndRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -898,7 +897,7 @@ func RoundedEeSm() ApplyProp {
 func RoundedEeMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndEndRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderEndEndRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -906,7 +905,7 @@ func RoundedEeMd() ApplyProp {
 func RoundedEeLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndEndRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderEndEndRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -914,7 +913,7 @@ func RoundedEeLg() ApplyProp {
 func RoundedEeXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndEndRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderEndEndRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -922,7 +921,7 @@ func RoundedEeXl() ApplyProp {
 func RoundedEe2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndEndRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderEndEndRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -930,7 +929,7 @@ func RoundedEe2xl() ApplyProp {
 func RoundedEe3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndEndRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderEndEndRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -938,7 +937,7 @@ func RoundedEe3xl() ApplyProp {
 func RoundedEe4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndEndRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderEndEndRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -972,7 +971,7 @@ func RoundedEe(val value.Value) ApplyProp {
 func RoundedEsXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndStartRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderEndStartRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -980,7 +979,7 @@ func RoundedEsXs() ApplyProp {
 func RoundedEsSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndStartRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderEndStartRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -988,7 +987,7 @@ func RoundedEsSm() ApplyProp {
 func RoundedEsMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndStartRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderEndStartRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -996,7 +995,7 @@ func RoundedEsMd() ApplyProp {
 func RoundedEsLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndStartRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderEndStartRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -1004,7 +1003,7 @@ func RoundedEsLg() ApplyProp {
 func RoundedEsXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndStartRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderEndStartRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -1012,7 +1011,7 @@ func RoundedEsXl() ApplyProp {
 func RoundedEs2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndStartRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderEndStartRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -1020,7 +1019,7 @@ func RoundedEs2xl() ApplyProp {
 func RoundedEs3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndStartRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderEndStartRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -1028,7 +1027,7 @@ func RoundedEs3xl() ApplyProp {
 func RoundedEs4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderEndStartRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderEndStartRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -1062,7 +1061,7 @@ func RoundedEs(val value.Value) ApplyProp {
 func RoundedTlXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderTopLeftRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -1070,7 +1069,7 @@ func RoundedTlXs() ApplyProp {
 func RoundedTlSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderTopLeftRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -1078,7 +1077,7 @@ func RoundedTlSm() ApplyProp {
 func RoundedTlMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderTopLeftRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -1086,7 +1085,7 @@ func RoundedTlMd() ApplyProp {
 func RoundedTlLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderTopLeftRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -1094,7 +1093,7 @@ func RoundedTlLg() ApplyProp {
 func RoundedTlXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderTopLeftRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -1102,7 +1101,7 @@ func RoundedTlXl() ApplyProp {
 func RoundedTl2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderTopLeftRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -1110,7 +1109,7 @@ func RoundedTl2xl() ApplyProp {
 func RoundedTl3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderTopLeftRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -1118,7 +1117,7 @@ func RoundedTl3xl() ApplyProp {
 func RoundedTl4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderTopLeftRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -1152,7 +1151,7 @@ func RoundedTl(val value.Value) ApplyProp {
 func RoundedTrXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -1160,7 +1159,7 @@ func RoundedTrXs() ApplyProp {
 func RoundedTrSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -1168,7 +1167,7 @@ func RoundedTrSm() ApplyProp {
 func RoundedTrMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -1176,7 +1175,7 @@ func RoundedTrMd() ApplyProp {
 func RoundedTrLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -1184,7 +1183,7 @@ func RoundedTrLg() ApplyProp {
 func RoundedTrXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -1192,7 +1191,7 @@ func RoundedTrXl() ApplyProp {
 func RoundedTr2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -1200,7 +1199,7 @@ func RoundedTr2xl() ApplyProp {
 func RoundedTr3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -1208,7 +1207,7 @@ func RoundedTr3xl() ApplyProp {
 func RoundedTr4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderTopRightRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderTopRightRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -1242,7 +1241,7 @@ func RoundedTr(val value.Value) ApplyProp {
 func RoundedBrXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -1250,7 +1249,7 @@ func RoundedBrXs() ApplyProp {
 func RoundedBrSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -1258,7 +1257,7 @@ func RoundedBrSm() ApplyProp {
 func RoundedBrMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -1266,7 +1265,7 @@ func RoundedBrMd() ApplyProp {
 func RoundedBrLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -1274,7 +1273,7 @@ func RoundedBrLg() ApplyProp {
 func RoundedBrXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -1282,7 +1281,7 @@ func RoundedBrXl() ApplyProp {
 func RoundedBr2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -1290,7 +1289,7 @@ func RoundedBr2xl() ApplyProp {
 func RoundedBr3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -1298,7 +1297,7 @@ func RoundedBr3xl() ApplyProp {
 func RoundedBr4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomRightRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderBottomRightRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }
@@ -1332,7 +1331,7 @@ func RoundedBr(val value.Value) ApplyProp {
 func RoundedBlXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "xs"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "xs"),
 		}
 	}
 }
@@ -1340,7 +1339,7 @@ func RoundedBlXs() ApplyProp {
 func RoundedBlSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "sm"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "sm"),
 		}
 	}
 }
@@ -1348,7 +1347,7 @@ func RoundedBlSm() ApplyProp {
 func RoundedBlMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "md"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "md"),
 		}
 	}
 }
@@ -1356,7 +1355,7 @@ func RoundedBlMd() ApplyProp {
 func RoundedBlLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "lg"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "lg"),
 		}
 	}
 }
@@ -1364,7 +1363,7 @@ func RoundedBlLg() ApplyProp {
 func RoundedBlXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "xl"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "xl"),
 		}
 	}
 }
@@ -1372,7 +1371,7 @@ func RoundedBlXl() ApplyProp {
 func RoundedBl2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "2xl"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "2xl"),
 		}
 	}
 }
@@ -1380,7 +1379,7 @@ func RoundedBl2xl() ApplyProp {
 func RoundedBl3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "3xl"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "3xl"),
 		}
 	}
 }
@@ -1388,7 +1387,7 @@ func RoundedBl3xl() ApplyProp {
 func RoundedBl4Xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(theme.Radius, "4xl"),
+			string(borderBottomLeftRadiusProp): s.theme.UseVarKey(themeRadius, "4xl"),
 		}
 	}
 }

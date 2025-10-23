@@ -3,7 +3,6 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
@@ -26,49 +25,49 @@ func Filter(val value.Value) ApplyProp {
 func BlurXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "xs")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "xs")),
 		}
 	}
 }
 func BlurSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "sm")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "sm")),
 		}
 	}
 }
 func BlurMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "md")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "md")),
 		}
 	}
 }
 func BlurLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "lg")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "lg")),
 		}
 	}
 }
 func BlurXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "xl")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "xl")),
 		}
 	}
 }
 func Blur2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "2xl")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "2xl")),
 		}
 	}
 }
 func Blur3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(theme.Blur, "3xl")),
+			string(filterProp): fmt.Sprintf("blur(%s)", s.theme.UseVarKey(themeBlur, "3xl")),
 		}
 	}
 }

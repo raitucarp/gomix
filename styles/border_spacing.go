@@ -3,7 +3,6 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
@@ -28,9 +27,9 @@ func BorderSpacingX(spacing any) ApplyProp {
 		var prop string
 		switch v := spacing.(type) {
 		case int, float32, float64:
-			prop = fmt.Sprintf("calc(var(--spacing) * %#v) %s", v, s.theme.UseVarKey(theme.Custom, "border-spacing-y"))
+			prop = fmt.Sprintf("calc(var(--spacing) * %#v) %s", v, s.theme.UseVarKey(themeCustom, "border-spacing-y"))
 		case value.Value:
-			prop = fmt.Sprintf("%s %s", v.Value(), s.theme.UseVarKey(theme.Custom, "border-spacing-y"))
+			prop = fmt.Sprintf("%s %s", v.Value(), s.theme.UseVarKey(themeCustom, "border-spacing-y"))
 		}
 
 		return &Properties{
@@ -44,9 +43,9 @@ func BorderSpacingY(spacing any) ApplyProp {
 		var prop string
 		switch v := spacing.(type) {
 		case int, float32, float64:
-			prop = fmt.Sprintf("calc(var(--spacing) * %#v) %s", v, s.theme.UseVarKey(theme.Custom, "border-spacing-x"))
+			prop = fmt.Sprintf("calc(var(--spacing) * %#v) %s", v, s.theme.UseVarKey(themeCustom, "border-spacing-x"))
 		case value.Value:
-			prop = fmt.Sprintf("%s %s", v.Value(), s.theme.UseVarKey(theme.Custom, "border-spacing-x"))
+			prop = fmt.Sprintf("%s %s", v.Value(), s.theme.UseVarKey(themeCustom, "border-spacing-x"))
 		}
 
 		return &Properties{

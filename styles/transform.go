@@ -3,7 +3,6 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
@@ -27,11 +26,11 @@ func TransformGpu() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
 			string(transformProp): fmt.Sprintf("translateZ(0) %s %s %s %s %s",
-				s.theme.UseVarKey(theme.Custom, "rotate-x"),
-				s.theme.UseVarKey(theme.Custom, "rotate-y"),
-				s.theme.UseVarKey(theme.Custom, "rotate-z"),
-				s.theme.UseVarKey(theme.Custom, "skew-x"),
-				s.theme.UseVarKey(theme.Custom, "skew-y"),
+				s.theme.UseVarKey(themeCustom, "rotate-x"),
+				s.theme.UseVarKey(themeCustom, "rotate-y"),
+				s.theme.UseVarKey(themeCustom, "rotate-z"),
+				s.theme.UseVarKey(themeCustom, "skew-x"),
+				s.theme.UseVarKey(themeCustom, "skew-y"),
 			),
 		}
 	}
@@ -41,11 +40,11 @@ func TransformCpu() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
 			string(transformProp): fmt.Sprintf("%s %s %s %s %s",
-				s.theme.UseVarKey(theme.Custom, "rotate-x"),
-				s.theme.UseVarKey(theme.Custom, "rotate-y"),
-				s.theme.UseVarKey(theme.Custom, "rotate-z"),
-				s.theme.UseVarKey(theme.Custom, "skew-x"),
-				s.theme.UseVarKey(theme.Custom, "skew-y"),
+				s.theme.UseVarKey(themeCustom, "rotate-x"),
+				s.theme.UseVarKey(themeCustom, "rotate-y"),
+				s.theme.UseVarKey(themeCustom, "rotate-z"),
+				s.theme.UseVarKey(themeCustom, "skew-x"),
+				s.theme.UseVarKey(themeCustom, "skew-y"),
 			),
 		}
 	}

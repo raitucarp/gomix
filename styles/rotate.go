@@ -3,7 +3,6 @@ package styles
 import (
 	"fmt"
 
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
@@ -54,10 +53,10 @@ func RotateX(val any) ApplyProp {
 
 		switch v := val.(type) {
 		case int, float32, float64:
-			propValue = fmt.Sprintf("rotateX(%vdeg) %s", v, s.theme.UseVarKey(theme.Custom, "rotate-y"))
+			propValue = fmt.Sprintf("rotateX(%vdeg) %s", v, s.theme.UseVarKey(themeCustom, "rotate-y"))
 
 		case value.Value:
-			propValue = fmt.Sprintf("rotateX(%s) %s", v.Value(), s.theme.UseVarKey(theme.Custom, "rotate-y"))
+			propValue = fmt.Sprintf("rotateX(%s) %s", v.Value(), s.theme.UseVarKey(themeCustom, "rotate-y"))
 		}
 
 		return &Properties{
@@ -72,10 +71,10 @@ func RotateY(val any) ApplyProp {
 
 		switch v := val.(type) {
 		case int, float32, float64:
-			propValue = fmt.Sprintf("%s rotateY(%ddeg)", s.theme.UseVarKey(theme.Custom, "rotate-x"), v)
+			propValue = fmt.Sprintf("%s rotateY(%ddeg)", s.theme.UseVarKey(themeCustom, "rotate-x"), v)
 
 		case value.Value:
-			propValue = fmt.Sprintf("%s rotateY(%s)", s.theme.UseVarKey(theme.Custom, "rotate-x"), v.Value())
+			propValue = fmt.Sprintf("%s rotateY(%s)", s.theme.UseVarKey(themeCustom, "rotate-x"), v.Value())
 
 		}
 
@@ -92,13 +91,13 @@ func RotateZ(val any) ApplyProp {
 		switch v := val.(type) {
 		case int, float32, float64:
 			propValue = fmt.Sprintf("%s %s rotateZ(%ddeg)",
-				s.theme.UseVarKey(theme.Custom, "rotate-x"),
-				s.theme.UseVarKey(theme.Custom, "rotate-y"),
+				s.theme.UseVarKey(themeCustom, "rotate-x"),
+				s.theme.UseVarKey(themeCustom, "rotate-y"),
 				v)
 		case value.Value:
 			propValue = fmt.Sprintf("%s %s rotateZ(%s)",
-				s.theme.UseVarKey(theme.Custom, "rotate-x"),
-				s.theme.UseVarKey(theme.Custom, "rotate-y"),
+				s.theme.UseVarKey(themeCustom, "rotate-x"),
+				s.theme.UseVarKey(themeCustom, "rotate-y"),
 				v.Value())
 
 		}

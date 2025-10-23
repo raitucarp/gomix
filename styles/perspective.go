@@ -1,14 +1,13 @@
 package styles
 
 import (
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
 func PerspectiveDramatic() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(perspectiveProp): s.theme.UseVarKey(theme.Perspective, "dramatic"),
+			string(perspectiveProp): s.theme.UseVarKey(themePerspective, "dramatic"),
 		}
 	}
 }
@@ -16,7 +15,7 @@ func PerspectiveDramatic() ApplyProp {
 func PerspectiveNear() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(perspectiveProp): s.theme.UseVarKey(theme.Perspective, "near"),
+			string(perspectiveProp): s.theme.UseVarKey(themePerspective, "near"),
 		}
 	}
 }
@@ -24,7 +23,7 @@ func PerspectiveNear() ApplyProp {
 func PerspectiveNormal() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(perspectiveProp): s.theme.UseVarKey(theme.Perspective, "normal"),
+			string(perspectiveProp): s.theme.UseVarKey(themePerspective, "normal"),
 		}
 	}
 }
@@ -32,7 +31,7 @@ func PerspectiveNormal() ApplyProp {
 func PerspectiveMidrange() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(perspectiveProp): s.theme.UseVarKey(theme.Perspective, "midrange"),
+			string(perspectiveProp): s.theme.UseVarKey(themePerspective, "midrange"),
 		}
 	}
 }
@@ -40,7 +39,7 @@ func PerspectiveMidrange() ApplyProp {
 func PerspectiveDistant() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(perspectiveProp): s.theme.UseVarKey(theme.Perspective, "distant"),
+			string(perspectiveProp): s.theme.UseVarKey(themePerspective, "distant"),
 		}
 	}
 }

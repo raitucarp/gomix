@@ -1,6 +1,9 @@
 package theme
 
-import "fmt"
+import (
+	"fmt"
+
+)
 
 func ColorGray(scale int, value string) ThemeParam {
 	return func(t *Theme) {

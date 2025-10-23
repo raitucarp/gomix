@@ -7,8 +7,30 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/raitucarp/gomix/constants"
 	"github.com/raitucarp/gomix/theme"
 )
+
+const themeColor = constants.ThemeColor
+const themeFont = constants.ThemeFont
+const themeText = constants.ThemeText
+const themeFontWeight = constants.ThemeFontWeight
+const themeTracking = constants.ThemeTracking
+const themeLeading = constants.ThemeLeading
+const themeBreakpoint = constants.ThemeBreakpoint
+const themeContainer = constants.ThemeContainer
+const themeSpacing = constants.ThemeSpacing
+const themeRadius = constants.ThemeRadius
+const themeShadow = constants.ThemeShadow
+const themeInsetShadow = constants.ThemeInsetShadow
+const themeDropShadow = constants.ThemeDropShadow
+const themeTextShadow = constants.ThemeTextShadow
+const themeBlur = constants.ThemeBlur
+const themePerspective = constants.ThemePerspective
+const themeAspect = constants.ThemeAspect
+const themeEase = constants.ThemeEase
+const themeAnimate = constants.ThemeAnimate
+const themeCustom = constants.ThemeCustom
 
 type Properties map[string]string
 

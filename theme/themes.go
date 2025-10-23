@@ -4,32 +4,32 @@ import (
 	"fmt"
 	"sort"
 	"strings"
+
+	"github.com/raitucarp/gomix/constants"
 )
 
-type Namespace string
+type Namespace = constants.ThemeNamespace
+const Color = constants.ThemeColor
+const Font = constants.ThemeFont
+const Text = constants.ThemeText
+const FontWeight = constants.ThemeFontWeight
+const Tracking = constants.ThemeTracking
+const Leading = constants.ThemeLeading
+const Breakpoint = constants.ThemeBreakpoint
+const Container = constants.ThemeContainer
+const Spacing = constants.ThemeSpacing
+const Radius = constants.ThemeRadius
+const Shadow = constants.ThemeShadow
+const InsetShadow = constants.ThemeInsetShadow
+const DropShadow = constants.ThemeDropShadow
+const TextShadow = constants.ThemeTextShadow
+const Blur = constants.ThemeBlur
+const Perspective = constants.ThemePerspective
+const Aspect = constants.ThemeAspect
+const Ease = constants.ThemeEase
+const Animate = constants.ThemeAnimate
+const Custom = constants.ThemeCustom
 
-const (
-	Color       Namespace = "color"
-	Font        Namespace = "font"
-	Text        Namespace = "text"
-	FontWeight  Namespace = "fontweight"
-	Tracking    Namespace = "tracking"
-	Leading     Namespace = "leading"
-	Breakpoint  Namespace = "breakpoint"
-	Container   Namespace = "container"
-	Spacing     Namespace = "spacing"
-	Radius      Namespace = "radius"
-	Shadow      Namespace = "shadow"
-	InsetShadow Namespace = "inset-shadow"
-	DropShadow  Namespace = "drop-shadow"
-	TextShadow  Namespace = "text-shadow"
-	Blur        Namespace = "blur"
-	Perspective Namespace = "perspective"
-	Aspect      Namespace = "aspect"
-	Ease        Namespace = "ease"
-	Animate     Namespace = "animate"
-	Custom      Namespace = ""
-)
 
 type UtilityClass map[string]string
 

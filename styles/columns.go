@@ -1,7 +1,6 @@
 package styles
 
 import (
-	"github.com/raitucarp/gomix/theme"
 	"github.com/raitucarp/gomix/value"
 )
 
@@ -16,7 +15,7 @@ func Columns(cols value.Value) ApplyProp {
 func Columns3xs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "3xs"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "3xs"),
 		}
 	}
 }
@@ -24,7 +23,7 @@ func Columns3xs() ApplyProp {
 func Columns2xs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "2xs"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "2xs"),
 		}
 	}
 }
@@ -32,7 +31,7 @@ func Columns2xs() ApplyProp {
 func ColumnsXs() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "xs"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "xs"),
 		}
 	}
 }
@@ -40,7 +39,7 @@ func ColumnsXs() ApplyProp {
 func ColumnsSm() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "sm"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "sm"),
 		}
 	}
 }
@@ -48,7 +47,7 @@ func ColumnsSm() ApplyProp {
 func ColumnsMd() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "md"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "md"),
 		}
 	}
 }
@@ -56,7 +55,7 @@ func ColumnsMd() ApplyProp {
 func ColumnsLg() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "lg"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "lg"),
 		}
 	}
 }
@@ -64,7 +63,7 @@ func ColumnsLg() ApplyProp {
 func ColumnsXl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "xl"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "xl"),
 		}
 	}
 }
@@ -72,7 +71,7 @@ func ColumnsXl() ApplyProp {
 func Columns2xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "2xl"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "2xl"),
 		}
 	}
 }
@@ -80,7 +79,7 @@ func Columns2xl() ApplyProp {
 func Columns3xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "3xl"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "3xl"),
 		}
 	}
 }
@@ -88,7 +87,7 @@ func Columns3xl() ApplyProp {
 func Columns4xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "4xl"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "4xl"),
 		}
 	}
 }
@@ -96,7 +95,7 @@ func Columns4xl() ApplyProp {
 func Columns5xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "5xl"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "5xl"),
 		}
 	}
 }
@@ -104,7 +103,7 @@ func Columns5xl() ApplyProp {
 func Columns6xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "6xl"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "6xl"),
 		}
 	}
 }
@@ -112,7 +111,7 @@ func Columns6xl() ApplyProp {
 func Columns7xl() ApplyProp {
 	return func(s *Style) StyleProp {
 		return &Properties{
-			string(columnsProp): s.theme.UseVarKey(theme.Container, "7xl"),
+			string(columnsProp): s.theme.UseVarKey(themeContainer, "7xl"),
 		}
 	}
 }
