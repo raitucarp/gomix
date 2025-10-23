@@ -8,6 +8,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/raitucarp/gomix/components"
+	"github.com/raitucarp/gomix/components/layout"
 	"github.com/raitucarp/gomix/element"
 	"github.com/raitucarp/gomix/theme"
 	"github.com/tdewolff/minify/v2"
@@ -70,7 +71,7 @@ func newPage(path LocationPath) *Page {
 }
 
 func notFoundPageComponent(page *Page) components.IsComponent {
-	return components.VStack(components.Text("Not Found")).Component().
+	return layout.VStack(components.Text("Not Found")).Component().
 		WScreen().
 		HScreen().
 		JustifyCenter().ItemsCenter()
