@@ -14,17 +14,35 @@ type DropdownData struct {
 }
 
 func ComponentContent(page *gomix.Page) isComponent {
-	return alpine(
-		div(
-			alpine(
-				button(text("Toggle Dropdown")),
-			).On("click", "open = ! open"),
+	return div(
 
-			alpine(
-				div(text("Dropdown Contents...")),
-			).Show("open"),
+		alpine(
+			div(
+				alpine(
+					button(text("Toggle Dropdown")),
+				).On("click", "open = ! open"),
+
+				alpine(
+					div(text("Dropdown Contents...")),
+				).Show("open"),
+			),
+		).Data(&DropdownData{Open: false}),
+
+		Accordion(
+			AccordionItem(
+				div(text("baraya")),
+				div(text("Content 1")),
+			),
+			AccordionItem(
+				div(text("baraya2")),
+				div(text("Content 2")),
+			),
+			AccordionItem(
+				div(text("babaa 3")),
+				div(text("Content 3")),
+			),
 		),
-	).Data(&DropdownData{Open: false})
+	)
 
 }
 
@@ -33,9 +51,9 @@ func ComponentsGallery(page *gomix.Page) isComponent {
 }
 
 func ComponentsLayout(page *gomix.Page) isComponent {
-	return Hstack(
+	return HStack(
 		Sidebar(),
-		div(
+		Main(
 			slot(),
 		).
 			Element().

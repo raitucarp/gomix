@@ -6,6 +6,7 @@ import (
 
 	"github.com/raitucarp/gomix"
 	"github.com/raitucarp/gomix/addons/alpinejs"
+	"github.com/raitucarp/gomix/components/disclosure"
 )
 
 func check(err error) {
@@ -32,8 +33,11 @@ func webSetup() gomix.AppParam {
 		web_addons(
 			// _htmx("2.0.7"),
 			_modern_normalize(),
-			_alpine_addon("3.x.x"),
+			alpinejs.CollapsePlugin("3.x.x"),
+			alpinejs.Core("3.x.x"),
 			alpinejs.GlobalsEmbed(alpineGlobal),
+
+			disclosure.UseDisclosureComponents(),
 		),
 
 		style_global(css{

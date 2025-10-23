@@ -1,29 +1,72 @@
 package main
 
-import "github.com/raitucarp/gomix/value"
-
-func SidebarLink(textContent string) isComponent {
-	return ListItem(text(textContent)).Component().StyleHover(bg_slate(500))
+type ComponentGroup struct {
+	label string
+	links []ComponentLink
 }
 
-var componentList = []string{
-	"stack",
-	"accordion",
-	"list",
+type ComponentLink struct {
+	label string
+	url   string
 }
 
-func Links(item string, index int) isComponent {
+var componentsGroup = []ComponentGroup{
+	{
+		label: "Typography",
+		links: []ComponentLink{
+			{label: "List", url: "/components/list"},
+			{label: "Link", url: "/components/link"},
+		},
+	},
+	{
+		label: "Layout",
+		links: []ComponentLink{
+			{label: "Stack", url: "/components/stack"},
+			{label: "Card", url: "/components/card"},
+		},
+	},
+}
+
+func SidebarLink(link ComponentLink) isComponent {
+	return ListItem(
+		Link(text(link.label)).
+			Href(link.url).
+			Component().
+			WFull().
+			Block().
+			StyleHover(bg_slate_alpha(200)).
+			NoUnderline().
+			P(2),
+	)
+}
+
+func ComponentNav(item ComponentLink, index int) isComponent {
 	return SidebarLink(item)
 }
 
-func Sidebar() isComponent {
-	return Vstack(
+func ToComponentGroup(group ComponentGroup, index int) isComponent {
+	return AccordionItem(
+		Text(group.label).Component().FontBold().P(2),
 		List().
 			Ordered(
-				ForEachComponentLink(componentList...).Map(Links),
+				ForEachComponentLink(group.links...).
+					Map(ComponentNav),
 			).
-			TypeUpperAlpha().
-			Unstyled().
-			Outside().Component().MinWBy(value.Rem(13)).MaxWBy(value.Rem(15)),
+			Unstyled(),
 	)
+}
+
+func Sidebar() isComponent {
+	return Accordion(
+		ForComponentGroup(componentsGroup...).
+			Map(ToComponentGroup),
+	).
+		Component().
+		// As(aside()).
+		StyleHover(
+			overflowY_scroll(),
+		).
+		MinWBy(rem(13)).
+		OverflowHidden().
+		HFull()
 }
