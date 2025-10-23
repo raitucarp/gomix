@@ -6,7 +6,7 @@ import (
 )
 
 type aspectRatio struct {
-	component *component
+	component *Comp
 }
 
 func (a *aspectRatio) Ratio(antecedent, consequent int) *aspectRatio {
@@ -14,14 +14,14 @@ func (a *aspectRatio) Ratio(antecedent, consequent int) *aspectRatio {
 	return a
 }
 
-func (a *aspectRatio) Component() *component {
+func (a *aspectRatio) Component() *Comp {
 	return a.component
 }
 
 func AspectRatio() *aspectRatio {
 	c := &aspectRatio{
-		component: &component{
-			el: element.Div().Element(),
+		component: &Comp{
+			El: element.Div().Element(),
 		},
 	}
 

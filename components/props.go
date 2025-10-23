@@ -5,23517 +5,23517 @@ import (
 	"github.com/raitucarp/gomix/value"
 )
 
-func (c *component) StyleHover(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Hover(props...))
+func (c *Comp) StyleHover(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Hover(props...))
 	return c
 }
 
-func (c *component) StyleFocus(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Focus(props...))
+func (c *Comp) StyleFocus(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Focus(props...))
 	return c
 }
 
-func (c *component) StyleFocusWithin(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.FocusWithin(props...))
+func (c *Comp) StyleFocusWithin(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.FocusWithin(props...))
 	return c
 }
 
-func (c *component) StyleFocusVisible(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.FocusVisible(props...))
+func (c *Comp) StyleFocusVisible(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.FocusVisible(props...))
 	return c
 }
 
-func (c *component) StyleActive(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Active(props...))
+func (c *Comp) StyleActive(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Active(props...))
 	return c
 }
 
-func (c *component) StyleVisited(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Visited(props...))
+func (c *Comp) StyleVisited(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Visited(props...))
 	return c
 }
 
-func (c *component) StyleTarget(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Target(props...))
+func (c *Comp) StyleTarget(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Target(props...))
 	return c
 }
 
-func (c *component) StyleDirectChildren(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.DirectChildren(props...))
+func (c *Comp) StyleDirectChildren(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.DirectChildren(props...))
 	return c
 }
 
-func (c *component) StyleAllDescendants(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AllDescendants(props...))
+func (c *Comp) StyleAllDescendants(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AllDescendants(props...))
 	return c
 }
 
-func (c *component) StyleHas(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Has(props...))
+func (c *Comp) StyleHas(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Has(props...))
 	return c
 }
 
-func (c *component) StyleGroup(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Group(props...))
+func (c *Comp) StyleGroup(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Group(props...))
 	return c
 }
 
-func (c *component) StylePeer(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Peer(props...))
+func (c *Comp) StylePeer(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Peer(props...))
 	return c
 }
 
-func (c *component) StyleIn(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.In(props...))
+func (c *Comp) StyleIn(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.In(props...))
 	return c
 }
 
-func (c *component) StyleNot(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Not(props...))
+func (c *Comp) StyleNot(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Not(props...))
 	return c
 }
 
-func (c *component) StyleInert(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Inert(props...))
+func (c *Comp) StyleInert(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Inert(props...))
 	return c
 }
 
-func (c *component) StyleFirst(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.First(props...))
+func (c *Comp) StyleFirst(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.First(props...))
 	return c
 }
 
-func (c *component) StyleLast(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Last(props...))
+func (c *Comp) StyleLast(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Last(props...))
 	return c
 }
 
-func (c *component) StyleOnly(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Only(props...))
+func (c *Comp) StyleOnly(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Only(props...))
 	return c
 }
 
-func (c *component) StyleOdd(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Odd(props...))
+func (c *Comp) StyleOdd(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Odd(props...))
 	return c
 }
 
-func (c *component) StyleEven(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Even(props...))
+func (c *Comp) StyleEven(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Even(props...))
 	return c
 }
 
-func (c *component) StyleFirstOfType(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.FirstOfType(props...))
+func (c *Comp) StyleFirstOfType(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.FirstOfType(props...))
 	return c
 }
 
-func (c *component) StyleLastOfType(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.LastOfType(props...))
+func (c *Comp) StyleLastOfType(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.LastOfType(props...))
 	return c
 }
 
-func (c *component) StyleOnlyOfType(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.OnlyOfType(props...))
+func (c *Comp) StyleOnlyOfType(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.OnlyOfType(props...))
 	return c
 }
 
-func (c *component) StyleNth(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Nth(props...))
+func (c *Comp) StyleNth(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Nth(props...))
 	return c
 }
 
-func (c *component) StyleNthLast(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.NthLast(props...))
+func (c *Comp) StyleNthLast(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.NthLast(props...))
 	return c
 }
 
-func (c *component) StyleNthOfType(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.NthOfType(props...))
+func (c *Comp) StyleNthOfType(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.NthOfType(props...))
 	return c
 }
 
-func (c *component) StyleNthLastOfType(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.NthLastOfType(props...))
+func (c *Comp) StyleNthLastOfType(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.NthLastOfType(props...))
 	return c
 }
 
-func (c *component) StyleEmpty(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Empty(props...))
+func (c *Comp) StyleEmpty(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Empty(props...))
 	return c
 }
 
-func (c *component) StyleDisabled(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Disabled(props...))
+func (c *Comp) StyleDisabled(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Disabled(props...))
 	return c
 }
 
-func (c *component) StyleEnabled(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Enabled(props...))
+func (c *Comp) StyleEnabled(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Enabled(props...))
 	return c
 }
 
-func (c *component) StyleChecked(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Checked(props...))
+func (c *Comp) StyleChecked(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Checked(props...))
 	return c
 }
 
-func (c *component) StyleIndeterminate(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Indeterminate(props...))
+func (c *Comp) StyleIndeterminate(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Indeterminate(props...))
 	return c
 }
 
-func (c *component) StyleDef(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Def(props...))
+func (c *Comp) StyleDef(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Def(props...))
 	return c
 }
 
-func (c *component) StyleOptional(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Optional(props...))
+func (c *Comp) StyleOptional(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Optional(props...))
 	return c
 }
 
-func (c *component) StyleRequired(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Required(props...))
+func (c *Comp) StyleRequired(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Required(props...))
 	return c
 }
 
-func (c *component) StyleValid(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Valid(props...))
+func (c *Comp) StyleValid(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Valid(props...))
 	return c
 }
 
-func (c *component) StyleInvalid(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Invalid(props...))
+func (c *Comp) StyleInvalid(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Invalid(props...))
 	return c
 }
 
-func (c *component) StyleUserValid(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.UserValid(props...))
+func (c *Comp) StyleUserValid(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.UserValid(props...))
 	return c
 }
 
-func (c *component) StyleUserInvalid(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.UserInvalid(props...))
+func (c *Comp) StyleUserInvalid(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.UserInvalid(props...))
 	return c
 }
 
-func (c *component) StyleInRange(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.InRange(props...))
+func (c *Comp) StyleInRange(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.InRange(props...))
 	return c
 }
 
-func (c *component) StyleOutOfRange(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.OutOfRange(props...))
+func (c *Comp) StyleOutOfRange(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.OutOfRange(props...))
 	return c
 }
 
-func (c *component) StylePlaceholderShown(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.PlaceholderShown(props...))
+func (c *Comp) StylePlaceholderShown(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.PlaceholderShown(props...))
 	return c
 }
 
-func (c *component) StyleDetailsContent(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.DetailsContent(props...))
+func (c *Comp) StyleDetailsContent(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.DetailsContent(props...))
 	return c
 }
 
-func (c *component) StyleAutofill(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Autofill(props...))
+func (c *Comp) StyleAutofill(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Autofill(props...))
 	return c
 }
 
-func (c *component) StyleReadOnly(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ReadOnly(props...))
+func (c *Comp) StyleReadOnly(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ReadOnly(props...))
 	return c
 }
 
-func (c *component) StyleBefore(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Before(props...))
+func (c *Comp) StyleBefore(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Before(props...))
 	return c
 }
 
-func (c *component) StyleAfter(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.After(props...))
+func (c *Comp) StyleAfter(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.After(props...))
 	return c
 }
 
-func (c *component) StyleFirstLetter(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.FirstLetter(props...))
+func (c *Comp) StyleFirstLetter(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.FirstLetter(props...))
 	return c
 }
 
-func (c *component) StyleFirstLine(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.FirstLine(props...))
+func (c *Comp) StyleFirstLine(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.FirstLine(props...))
 	return c
 }
 
-func (c *component) StyleMarker(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Marker(props...))
+func (c *Comp) StyleMarker(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Marker(props...))
 	return c
 }
 
-func (c *component) StyleSelection(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Selection(props...))
+func (c *Comp) StyleSelection(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Selection(props...))
 	return c
 }
 
-func (c *component) StyleFile(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.File(props...))
+func (c *Comp) StyleFile(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.File(props...))
 	return c
 }
 
-func (c *component) StyleBackdrop(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Backdrop(props...))
+func (c *Comp) StyleBackdrop(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Backdrop(props...))
 	return c
 }
 
-func (c *component) StylePlaceholder(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Placeholder(props...))
+func (c *Comp) StylePlaceholder(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Placeholder(props...))
 	return c
 }
 
-func (c *component) StyleSm(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Sm(props...))
+func (c *Comp) StyleSm(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Sm(props...))
 	return c
 }
 
-func (c *component) StyleMd(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Md(props...))
+func (c *Comp) StyleMd(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Md(props...))
 	return c
 }
 
-func (c *component) StyleLg(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Lg(props...))
+func (c *Comp) StyleLg(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Lg(props...))
 	return c
 }
 
-func (c *component) StyleXl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Xl(props...))
+func (c *Comp) StyleXl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Xl(props...))
 	return c
 }
 
-func (c *component) StyleTwoXl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.TwoXl(props...))
+func (c *Comp) StyleTwoXl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.TwoXl(props...))
 	return c
 }
 
-func (c *component) StyleMin(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Min(props...))
+func (c *Comp) StyleMin(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Min(props...))
 	return c
 }
 
-func (c *component) StyleMaxSm(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.MaxSm(props...))
+func (c *Comp) StyleMaxSm(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.MaxSm(props...))
 	return c
 }
 
-func (c *component) StyleMaxMd(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.MaxMd(props...))
+func (c *Comp) StyleMaxMd(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.MaxMd(props...))
 	return c
 }
 
-func (c *component) StyleMaxLg(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.MaxLg(props...))
+func (c *Comp) StyleMaxLg(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.MaxLg(props...))
 	return c
 }
 
-func (c *component) StyleMaxXl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.MaxXl(props...))
+func (c *Comp) StyleMaxXl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.MaxXl(props...))
 	return c
 }
 
-func (c *component) StyleMax2xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Max2xl(props...))
+func (c *Comp) StyleMax2xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Max2xl(props...))
 	return c
 }
 
-func (c *component) StyleMax(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Max(props...))
+func (c *Comp) StyleMax(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Max(props...))
 	return c
 }
 
-func (c *component) StyleContainer3xs(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Container3xs(props...))
+func (c *Comp) StyleContainer3xs(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Container3xs(props...))
 	return c
 }
 
-func (c *component) StyleContainer2xs(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Container2xs(props...))
+func (c *Comp) StyleContainer2xs(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Container2xs(props...))
 	return c
 }
 
-func (c *component) StyleContainerXs(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerXs(props...))
+func (c *Comp) StyleContainerXs(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerXs(props...))
 	return c
 }
 
-func (c *component) StyleContainerSm(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerSm(props...))
+func (c *Comp) StyleContainerSm(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerSm(props...))
 	return c
 }
 
-func (c *component) StyleContainerMd(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMd(props...))
+func (c *Comp) StyleContainerMd(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMd(props...))
 	return c
 }
 
-func (c *component) StyleContainerLg(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerLg(props...))
+func (c *Comp) StyleContainerLg(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerLg(props...))
 	return c
 }
 
-func (c *component) StyleContainerXl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerXl(props...))
+func (c *Comp) StyleContainerXl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerXl(props...))
 	return c
 }
 
-func (c *component) StyleContainer2xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Container2xl(props...))
+func (c *Comp) StyleContainer2xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Container2xl(props...))
 	return c
 }
 
-func (c *component) StyleContainer3xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Container3xl(props...))
+func (c *Comp) StyleContainer3xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Container3xl(props...))
 	return c
 }
 
-func (c *component) StyleContainer4xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Container4xl(props...))
+func (c *Comp) StyleContainer4xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Container4xl(props...))
 	return c
 }
 
-func (c *component) StyleContainer5xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Container5xl(props...))
+func (c *Comp) StyleContainer5xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Container5xl(props...))
 	return c
 }
 
-func (c *component) StyleContainer6xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Container6xl(props...))
+func (c *Comp) StyleContainer6xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Container6xl(props...))
 	return c
 }
 
-func (c *component) StyleContainer7xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Container7xl(props...))
+func (c *Comp) StyleContainer7xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Container7xl(props...))
 	return c
 }
 
-func (c *component) StyleContainerMin(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMin(props...))
+func (c *Comp) StyleContainerMin(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMin(props...))
 	return c
 }
 
-func (c *component) StyleContainerMax3xs(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMax3xs(props...))
+func (c *Comp) StyleContainerMax3xs(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMax3xs(props...))
 	return c
 }
 
-func (c *component) StyleContainerMax2xs(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMax2xs(props...))
+func (c *Comp) StyleContainerMax2xs(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMax2xs(props...))
 	return c
 }
 
-func (c *component) StyleContainerMaxXs(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMaxXs(props...))
+func (c *Comp) StyleContainerMaxXs(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMaxXs(props...))
 	return c
 }
 
-func (c *component) StyleContainerMaxSm(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMaxSm(props...))
+func (c *Comp) StyleContainerMaxSm(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMaxSm(props...))
 	return c
 }
 
-func (c *component) StyleContainerMaxMd(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMaxMd(props...))
+func (c *Comp) StyleContainerMaxMd(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMaxMd(props...))
 	return c
 }
 
-func (c *component) StyleContainerMaxLg(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMaxLg(props...))
+func (c *Comp) StyleContainerMaxLg(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMaxLg(props...))
 	return c
 }
 
-func (c *component) StyleContainerMaxXl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMaxXl(props...))
+func (c *Comp) StyleContainerMaxXl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMaxXl(props...))
 	return c
 }
 
-func (c *component) StyleContainerMax2xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMax2xl(props...))
+func (c *Comp) StyleContainerMax2xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMax2xl(props...))
 	return c
 }
 
-func (c *component) StyleContainerMax3xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMax3xl(props...))
+func (c *Comp) StyleContainerMax3xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMax3xl(props...))
 	return c
 }
 
-func (c *component) StyleContainerMax4xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMax4xl(props...))
+func (c *Comp) StyleContainerMax4xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMax4xl(props...))
 	return c
 }
 
-func (c *component) StyleContainerMax5xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMax5xl(props...))
+func (c *Comp) StyleContainerMax5xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMax5xl(props...))
 	return c
 }
 
-func (c *component) StyleContainerMax6xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMax6xl(props...))
+func (c *Comp) StyleContainerMax6xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMax6xl(props...))
 	return c
 }
 
-func (c *component) StyleContainerMax7xl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMax7xl(props...))
+func (c *Comp) StyleContainerMax7xl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMax7xl(props...))
 	return c
 }
 
-func (c *component) StyleContainerMax(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContainerMax(props...))
+func (c *Comp) StyleContainerMax(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContainerMax(props...))
 	return c
 }
 
-func (c *component) StyleDark(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Dark(props...))
+func (c *Comp) StyleDark(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Dark(props...))
 	return c
 }
 
-func (c *component) StyleMotionSafe(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.MotionSafe(props...))
+func (c *Comp) StyleMotionSafe(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.MotionSafe(props...))
 	return c
 }
 
-func (c *component) StyleMotionReduce(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.MotionReduce(props...))
+func (c *Comp) StyleMotionReduce(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.MotionReduce(props...))
 	return c
 }
 
-func (c *component) StyleContrastMore(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContrastMore(props...))
+func (c *Comp) StyleContrastMore(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContrastMore(props...))
 	return c
 }
 
-func (c *component) StyleContrastLess(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ContrastLess(props...))
+func (c *Comp) StyleContrastLess(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ContrastLess(props...))
 	return c
 }
 
-func (c *component) StyleForcedColors(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.ForcedColors(props...))
+func (c *Comp) StyleForcedColors(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.ForcedColors(props...))
 	return c
 }
 
-func (c *component) StyleInvertedColors(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.InvertedColors(props...))
+func (c *Comp) StyleInvertedColors(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.InvertedColors(props...))
 	return c
 }
 
-func (c *component) StylePointerFine(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.PointerFine(props...))
+func (c *Comp) StylePointerFine(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.PointerFine(props...))
 	return c
 }
 
-func (c *component) StylePointerCoarse(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.PointerCoarse(props...))
+func (c *Comp) StylePointerCoarse(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.PointerCoarse(props...))
 	return c
 }
 
-func (c *component) StylePointerNone(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.PointerNone(props...))
+func (c *Comp) StylePointerNone(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.PointerNone(props...))
 	return c
 }
 
-func (c *component) StyleAnyPointerFine(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AnyPointerFine(props...))
+func (c *Comp) StyleAnyPointerFine(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AnyPointerFine(props...))
 	return c
 }
 
-func (c *component) StyleAnyPointerCoarse(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AnyPointerCoarse(props...))
+func (c *Comp) StyleAnyPointerCoarse(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AnyPointerCoarse(props...))
 	return c
 }
 
-func (c *component) StyleAnyPointerNone(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AnyPointerNone(props...))
+func (c *Comp) StyleAnyPointerNone(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AnyPointerNone(props...))
 	return c
 }
 
-func (c *component) StylePortrait(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Portrait(props...))
+func (c *Comp) StylePortrait(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Portrait(props...))
 	return c
 }
 
-func (c *component) StyleLandscape(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Landscape(props...))
+func (c *Comp) StyleLandscape(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Landscape(props...))
 	return c
 }
 
-func (c *component) StyleNoscript(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Noscript(props...))
+func (c *Comp) StyleNoscript(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Noscript(props...))
 	return c
 }
 
-func (c *component) StylePrint(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Print(props...))
+func (c *Comp) StylePrint(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Print(props...))
 	return c
 }
 
-func (c *component) StyleSupports(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Supports(props...))
+func (c *Comp) StyleSupports(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Supports(props...))
 	return c
 }
 
-func (c *component) StyleAriaBusy(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AriaBusy(props...))
+func (c *Comp) StyleAriaBusy(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AriaBusy(props...))
 	return c
 }
 
-func (c *component) StyleAriaChecked(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AriaChecked(props...))
+func (c *Comp) StyleAriaChecked(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AriaChecked(props...))
 	return c
 }
 
-func (c *component) StyleAriaDisabled(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AriaDisabled(props...))
+func (c *Comp) StyleAriaDisabled(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AriaDisabled(props...))
 	return c
 }
 
-func (c *component) StyleAriaExpanded(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AriaExpanded(props...))
+func (c *Comp) StyleAriaExpanded(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AriaExpanded(props...))
 	return c
 }
 
-func (c *component) StyleAriaHidden(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AriaHidden(props...))
+func (c *Comp) StyleAriaHidden(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AriaHidden(props...))
 	return c
 }
 
-func (c *component) StyleAriaPressed(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AriaPressed(props...))
+func (c *Comp) StyleAriaPressed(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AriaPressed(props...))
 	return c
 }
 
-func (c *component) StyleAriaReadonly(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AriaReadonly(props...))
+func (c *Comp) StyleAriaReadonly(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AriaReadonly(props...))
 	return c
 }
 
-func (c *component) StyleAriaRequired(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AriaRequired(props...))
+func (c *Comp) StyleAriaRequired(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AriaRequired(props...))
 	return c
 }
 
-func (c *component) StyleAriaSelected(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.AriaSelected(props...))
+func (c *Comp) StyleAriaSelected(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.AriaSelected(props...))
 	return c
 }
 
-func (c *component) StyleAria(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Aria(props...))
+func (c *Comp) StyleAria(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Aria(props...))
 	return c
 }
 
-func (c *component) StyleData(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Data(props...))
+func (c *Comp) StyleData(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Data(props...))
 	return c
 }
 
-func (c *component) StyleRtl(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Rtl(props...))
+func (c *Comp) StyleRtl(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Rtl(props...))
 	return c
 }
 
-func (c *component) StyleLtr(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Ltr(props...))
+func (c *Comp) StyleLtr(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Ltr(props...))
 	return c
 }
 
-func (c *component) StyleOpen(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Open(props...))
+func (c *Comp) StyleOpen(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Open(props...))
 	return c
 }
 
-func (c *component) StyleStarting(props ...styles.ApplyProp) *component {
-	c.el.Style(styles.Starting(props...))
+func (c *Comp) StyleStarting(props ...styles.ApplyProp) *Comp {
+	c.El.Style(styles.Starting(props...))
 	return c
 }
 
-func (c *component) Absolute() *component {
-	c.el.Style(styles.Absolute())
+func (c *Comp) Absolute() *Comp {
+	c.El.Style(styles.Absolute())
 	return c
 }
 
-func (c *component) Accent(val value.Value) *component {
-	c.el.Style(styles.Accent(val))
+func (c *Comp) Accent(val value.Value) *Comp {
+	c.El.Style(styles.Accent(val))
 	return c
 }
 
-func (c *component) AccentAmber(scale int) *component {
-	c.el.Style(styles.AccentAmber(scale))
+func (c *Comp) AccentAmber(scale int) *Comp {
+	c.El.Style(styles.AccentAmber(scale))
 	return c
 }
 
-func (c *component) AccentAmberAlpha(scale int) *component {
-	c.el.Style(styles.AccentAmberAlpha(scale))
+func (c *Comp) AccentAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentAmberAlpha(scale))
 	return c
 }
 
-func (c *component) AccentAmberDark(scale int) *component {
-	c.el.Style(styles.AccentAmberDark(scale))
+func (c *Comp) AccentAmberDark(scale int) *Comp {
+	c.El.Style(styles.AccentAmberDark(scale))
 	return c
 }
 
-func (c *component) AccentAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentAmberDarkAlpha(scale))
+func (c *Comp) AccentAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentBlack() *component {
-	c.el.Style(styles.AccentBlack())
+func (c *Comp) AccentBlack() *Comp {
+	c.El.Style(styles.AccentBlack())
 	return c
 }
 
-func (c *component) AccentBlackAlpha(scale int) *component {
-	c.el.Style(styles.AccentBlackAlpha(scale))
+func (c *Comp) AccentBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentBlackAlpha(scale))
 	return c
 }
 
-func (c *component) AccentBlue(scale int) *component {
-	c.el.Style(styles.AccentBlue(scale))
+func (c *Comp) AccentBlue(scale int) *Comp {
+	c.El.Style(styles.AccentBlue(scale))
 	return c
 }
 
-func (c *component) AccentBlueAlpha(scale int) *component {
-	c.el.Style(styles.AccentBlueAlpha(scale))
+func (c *Comp) AccentBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentBlueAlpha(scale))
 	return c
 }
 
-func (c *component) AccentBlueDark(scale int) *component {
-	c.el.Style(styles.AccentBlueDark(scale))
+func (c *Comp) AccentBlueDark(scale int) *Comp {
+	c.El.Style(styles.AccentBlueDark(scale))
 	return c
 }
 
-func (c *component) AccentBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentBlueDarkAlpha(scale))
+func (c *Comp) AccentBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentBronze(scale int) *component {
-	c.el.Style(styles.AccentBronze(scale))
+func (c *Comp) AccentBronze(scale int) *Comp {
+	c.El.Style(styles.AccentBronze(scale))
 	return c
 }
 
-func (c *component) AccentBronzeAlpha(scale int) *component {
-	c.el.Style(styles.AccentBronzeAlpha(scale))
+func (c *Comp) AccentBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) AccentBronzeDark(scale int) *component {
-	c.el.Style(styles.AccentBronzeDark(scale))
+func (c *Comp) AccentBronzeDark(scale int) *Comp {
+	c.El.Style(styles.AccentBronzeDark(scale))
 	return c
 }
 
-func (c *component) AccentBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentBronzeDarkAlpha(scale))
+func (c *Comp) AccentBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentBrown(scale int) *component {
-	c.el.Style(styles.AccentBrown(scale))
+func (c *Comp) AccentBrown(scale int) *Comp {
+	c.El.Style(styles.AccentBrown(scale))
 	return c
 }
 
-func (c *component) AccentBrownAlpha(scale int) *component {
-	c.el.Style(styles.AccentBrownAlpha(scale))
+func (c *Comp) AccentBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentBrownAlpha(scale))
 	return c
 }
 
-func (c *component) AccentBrownDark(scale int) *component {
-	c.el.Style(styles.AccentBrownDark(scale))
+func (c *Comp) AccentBrownDark(scale int) *Comp {
+	c.El.Style(styles.AccentBrownDark(scale))
 	return c
 }
 
-func (c *component) AccentBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentBrownDarkAlpha(scale))
+func (c *Comp) AccentBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentCrimson(scale int) *component {
-	c.el.Style(styles.AccentCrimson(scale))
+func (c *Comp) AccentCrimson(scale int) *Comp {
+	c.El.Style(styles.AccentCrimson(scale))
 	return c
 }
 
-func (c *component) AccentCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.AccentCrimsonAlpha(scale))
+func (c *Comp) AccentCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) AccentCrimsonDark(scale int) *component {
-	c.el.Style(styles.AccentCrimsonDark(scale))
+func (c *Comp) AccentCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.AccentCrimsonDark(scale))
 	return c
 }
 
-func (c *component) AccentCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentCrimsonDarkAlpha(scale))
+func (c *Comp) AccentCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentCurrent() *component {
-	c.el.Style(styles.AccentCurrent())
+func (c *Comp) AccentCurrent() *Comp {
+	c.El.Style(styles.AccentCurrent())
 	return c
 }
 
-func (c *component) AccentCyan(scale int) *component {
-	c.el.Style(styles.AccentCyan(scale))
+func (c *Comp) AccentCyan(scale int) *Comp {
+	c.El.Style(styles.AccentCyan(scale))
 	return c
 }
 
-func (c *component) AccentCyanAlpha(scale int) *component {
-	c.el.Style(styles.AccentCyanAlpha(scale))
+func (c *Comp) AccentCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentCyanAlpha(scale))
 	return c
 }
 
-func (c *component) AccentCyanDark(scale int) *component {
-	c.el.Style(styles.AccentCyanDark(scale))
+func (c *Comp) AccentCyanDark(scale int) *Comp {
+	c.El.Style(styles.AccentCyanDark(scale))
 	return c
 }
 
-func (c *component) AccentCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentCyanDarkAlpha(scale))
+func (c *Comp) AccentCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentGold(scale int) *component {
-	c.el.Style(styles.AccentGold(scale))
+func (c *Comp) AccentGold(scale int) *Comp {
+	c.El.Style(styles.AccentGold(scale))
 	return c
 }
 
-func (c *component) AccentGoldAlpha(scale int) *component {
-	c.el.Style(styles.AccentGoldAlpha(scale))
+func (c *Comp) AccentGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentGoldAlpha(scale))
 	return c
 }
 
-func (c *component) AccentGoldDark(scale int) *component {
-	c.el.Style(styles.AccentGoldDark(scale))
+func (c *Comp) AccentGoldDark(scale int) *Comp {
+	c.El.Style(styles.AccentGoldDark(scale))
 	return c
 }
 
-func (c *component) AccentGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentGoldDarkAlpha(scale))
+func (c *Comp) AccentGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentGrass(scale int) *component {
-	c.el.Style(styles.AccentGrass(scale))
+func (c *Comp) AccentGrass(scale int) *Comp {
+	c.El.Style(styles.AccentGrass(scale))
 	return c
 }
 
-func (c *component) AccentGrassAlpha(scale int) *component {
-	c.el.Style(styles.AccentGrassAlpha(scale))
+func (c *Comp) AccentGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentGrassAlpha(scale))
 	return c
 }
 
-func (c *component) AccentGrassDark(scale int) *component {
-	c.el.Style(styles.AccentGrassDark(scale))
+func (c *Comp) AccentGrassDark(scale int) *Comp {
+	c.El.Style(styles.AccentGrassDark(scale))
 	return c
 }
 
-func (c *component) AccentGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentGrassDarkAlpha(scale))
+func (c *Comp) AccentGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentGray(scale int) *component {
-	c.el.Style(styles.AccentGray(scale))
+func (c *Comp) AccentGray(scale int) *Comp {
+	c.El.Style(styles.AccentGray(scale))
 	return c
 }
 
-func (c *component) AccentGrayAlpha(scale int) *component {
-	c.el.Style(styles.AccentGrayAlpha(scale))
+func (c *Comp) AccentGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentGrayAlpha(scale))
 	return c
 }
 
-func (c *component) AccentGrayDark(scale int) *component {
-	c.el.Style(styles.AccentGrayDark(scale))
+func (c *Comp) AccentGrayDark(scale int) *Comp {
+	c.El.Style(styles.AccentGrayDark(scale))
 	return c
 }
 
-func (c *component) AccentGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentGrayDarkAlpha(scale))
+func (c *Comp) AccentGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentGreen(scale int) *component {
-	c.el.Style(styles.AccentGreen(scale))
+func (c *Comp) AccentGreen(scale int) *Comp {
+	c.El.Style(styles.AccentGreen(scale))
 	return c
 }
 
-func (c *component) AccentGreenAlpha(scale int) *component {
-	c.el.Style(styles.AccentGreenAlpha(scale))
+func (c *Comp) AccentGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentGreenAlpha(scale))
 	return c
 }
 
-func (c *component) AccentGreenDark(scale int) *component {
-	c.el.Style(styles.AccentGreenDark(scale))
+func (c *Comp) AccentGreenDark(scale int) *Comp {
+	c.El.Style(styles.AccentGreenDark(scale))
 	return c
 }
 
-func (c *component) AccentGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentGreenDarkAlpha(scale))
+func (c *Comp) AccentGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentIndigo(scale int) *component {
-	c.el.Style(styles.AccentIndigo(scale))
+func (c *Comp) AccentIndigo(scale int) *Comp {
+	c.El.Style(styles.AccentIndigo(scale))
 	return c
 }
 
-func (c *component) AccentIndigoAlpha(scale int) *component {
-	c.el.Style(styles.AccentIndigoAlpha(scale))
+func (c *Comp) AccentIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) AccentIndigoDark(scale int) *component {
-	c.el.Style(styles.AccentIndigoDark(scale))
+func (c *Comp) AccentIndigoDark(scale int) *Comp {
+	c.El.Style(styles.AccentIndigoDark(scale))
 	return c
 }
 
-func (c *component) AccentIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentIndigoDarkAlpha(scale))
+func (c *Comp) AccentIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentInherit() *component {
-	c.el.Style(styles.AccentInherit())
+func (c *Comp) AccentInherit() *Comp {
+	c.El.Style(styles.AccentInherit())
 	return c
 }
 
-func (c *component) AccentIris(scale int) *component {
-	c.el.Style(styles.AccentIris(scale))
+func (c *Comp) AccentIris(scale int) *Comp {
+	c.El.Style(styles.AccentIris(scale))
 	return c
 }
 
-func (c *component) AccentIrisAlpha(scale int) *component {
-	c.el.Style(styles.AccentIrisAlpha(scale))
+func (c *Comp) AccentIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentIrisAlpha(scale))
 	return c
 }
 
-func (c *component) AccentIrisDark(scale int) *component {
-	c.el.Style(styles.AccentIrisDark(scale))
+func (c *Comp) AccentIrisDark(scale int) *Comp {
+	c.El.Style(styles.AccentIrisDark(scale))
 	return c
 }
 
-func (c *component) AccentIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentIrisDarkAlpha(scale))
+func (c *Comp) AccentIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentJade(scale int) *component {
-	c.el.Style(styles.AccentJade(scale))
+func (c *Comp) AccentJade(scale int) *Comp {
+	c.El.Style(styles.AccentJade(scale))
 	return c
 }
 
-func (c *component) AccentJadeAlpha(scale int) *component {
-	c.el.Style(styles.AccentJadeAlpha(scale))
+func (c *Comp) AccentJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentJadeAlpha(scale))
 	return c
 }
 
-func (c *component) AccentJadeDark(scale int) *component {
-	c.el.Style(styles.AccentJadeDark(scale))
+func (c *Comp) AccentJadeDark(scale int) *Comp {
+	c.El.Style(styles.AccentJadeDark(scale))
 	return c
 }
 
-func (c *component) AccentJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentJadeDarkAlpha(scale))
+func (c *Comp) AccentJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentLime(scale int) *component {
-	c.el.Style(styles.AccentLime(scale))
+func (c *Comp) AccentLime(scale int) *Comp {
+	c.El.Style(styles.AccentLime(scale))
 	return c
 }
 
-func (c *component) AccentLimeAlpha(scale int) *component {
-	c.el.Style(styles.AccentLimeAlpha(scale))
+func (c *Comp) AccentLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentLimeAlpha(scale))
 	return c
 }
 
-func (c *component) AccentLimeDark(scale int) *component {
-	c.el.Style(styles.AccentLimeDark(scale))
+func (c *Comp) AccentLimeDark(scale int) *Comp {
+	c.El.Style(styles.AccentLimeDark(scale))
 	return c
 }
 
-func (c *component) AccentLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentLimeDarkAlpha(scale))
+func (c *Comp) AccentLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentMauve(scale int) *component {
-	c.el.Style(styles.AccentMauve(scale))
+func (c *Comp) AccentMauve(scale int) *Comp {
+	c.El.Style(styles.AccentMauve(scale))
 	return c
 }
 
-func (c *component) AccentMauveAlpha(scale int) *component {
-	c.el.Style(styles.AccentMauveAlpha(scale))
+func (c *Comp) AccentMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentMauveAlpha(scale))
 	return c
 }
 
-func (c *component) AccentMauveDark(scale int) *component {
-	c.el.Style(styles.AccentMauveDark(scale))
+func (c *Comp) AccentMauveDark(scale int) *Comp {
+	c.El.Style(styles.AccentMauveDark(scale))
 	return c
 }
 
-func (c *component) AccentMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentMauveDarkAlpha(scale))
+func (c *Comp) AccentMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentMint(scale int) *component {
-	c.el.Style(styles.AccentMint(scale))
+func (c *Comp) AccentMint(scale int) *Comp {
+	c.El.Style(styles.AccentMint(scale))
 	return c
 }
 
-func (c *component) AccentMintAlpha(scale int) *component {
-	c.el.Style(styles.AccentMintAlpha(scale))
+func (c *Comp) AccentMintAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentMintAlpha(scale))
 	return c
 }
 
-func (c *component) AccentMintDark(scale int) *component {
-	c.el.Style(styles.AccentMintDark(scale))
+func (c *Comp) AccentMintDark(scale int) *Comp {
+	c.El.Style(styles.AccentMintDark(scale))
 	return c
 }
 
-func (c *component) AccentMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentMintDarkAlpha(scale))
+func (c *Comp) AccentMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentOlive(scale int) *component {
-	c.el.Style(styles.AccentOlive(scale))
+func (c *Comp) AccentOlive(scale int) *Comp {
+	c.El.Style(styles.AccentOlive(scale))
 	return c
 }
 
-func (c *component) AccentOliveAlpha(scale int) *component {
-	c.el.Style(styles.AccentOliveAlpha(scale))
+func (c *Comp) AccentOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentOliveAlpha(scale))
 	return c
 }
 
-func (c *component) AccentOliveDark(scale int) *component {
-	c.el.Style(styles.AccentOliveDark(scale))
+func (c *Comp) AccentOliveDark(scale int) *Comp {
+	c.El.Style(styles.AccentOliveDark(scale))
 	return c
 }
 
-func (c *component) AccentOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentOliveDarkAlpha(scale))
+func (c *Comp) AccentOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentOrange(scale int) *component {
-	c.el.Style(styles.AccentOrange(scale))
+func (c *Comp) AccentOrange(scale int) *Comp {
+	c.El.Style(styles.AccentOrange(scale))
 	return c
 }
 
-func (c *component) AccentOrangeAlpha(scale int) *component {
-	c.el.Style(styles.AccentOrangeAlpha(scale))
+func (c *Comp) AccentOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) AccentOrangeDark(scale int) *component {
-	c.el.Style(styles.AccentOrangeDark(scale))
+func (c *Comp) AccentOrangeDark(scale int) *Comp {
+	c.El.Style(styles.AccentOrangeDark(scale))
 	return c
 }
 
-func (c *component) AccentOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentOrangeDarkAlpha(scale))
+func (c *Comp) AccentOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentPink(scale int) *component {
-	c.el.Style(styles.AccentPink(scale))
+func (c *Comp) AccentPink(scale int) *Comp {
+	c.El.Style(styles.AccentPink(scale))
 	return c
 }
 
-func (c *component) AccentPinkAlpha(scale int) *component {
-	c.el.Style(styles.AccentPinkAlpha(scale))
+func (c *Comp) AccentPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentPinkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentPinkDark(scale int) *component {
-	c.el.Style(styles.AccentPinkDark(scale))
+func (c *Comp) AccentPinkDark(scale int) *Comp {
+	c.El.Style(styles.AccentPinkDark(scale))
 	return c
 }
 
-func (c *component) AccentPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentPinkDarkAlpha(scale))
+func (c *Comp) AccentPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentPlum(scale int) *component {
-	c.el.Style(styles.AccentPlum(scale))
+func (c *Comp) AccentPlum(scale int) *Comp {
+	c.El.Style(styles.AccentPlum(scale))
 	return c
 }
 
-func (c *component) AccentPlumAlpha(scale int) *component {
-	c.el.Style(styles.AccentPlumAlpha(scale))
+func (c *Comp) AccentPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentPlumAlpha(scale))
 	return c
 }
 
-func (c *component) AccentPlumDark(scale int) *component {
-	c.el.Style(styles.AccentPlumDark(scale))
+func (c *Comp) AccentPlumDark(scale int) *Comp {
+	c.El.Style(styles.AccentPlumDark(scale))
 	return c
 }
 
-func (c *component) AccentPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentPlumDarkAlpha(scale))
+func (c *Comp) AccentPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentPurple(scale int) *component {
-	c.el.Style(styles.AccentPurple(scale))
+func (c *Comp) AccentPurple(scale int) *Comp {
+	c.El.Style(styles.AccentPurple(scale))
 	return c
 }
 
-func (c *component) AccentPurpleAlpha(scale int) *component {
-	c.el.Style(styles.AccentPurpleAlpha(scale))
+func (c *Comp) AccentPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) AccentPurpleDark(scale int) *component {
-	c.el.Style(styles.AccentPurpleDark(scale))
+func (c *Comp) AccentPurpleDark(scale int) *Comp {
+	c.El.Style(styles.AccentPurpleDark(scale))
 	return c
 }
 
-func (c *component) AccentPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentPurpleDarkAlpha(scale))
+func (c *Comp) AccentPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentRed(scale int) *component {
-	c.el.Style(styles.AccentRed(scale))
+func (c *Comp) AccentRed(scale int) *Comp {
+	c.El.Style(styles.AccentRed(scale))
 	return c
 }
 
-func (c *component) AccentRedAlpha(scale int) *component {
-	c.el.Style(styles.AccentRedAlpha(scale))
+func (c *Comp) AccentRedAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentRedAlpha(scale))
 	return c
 }
 
-func (c *component) AccentRedDark(scale int) *component {
-	c.el.Style(styles.AccentRedDark(scale))
+func (c *Comp) AccentRedDark(scale int) *Comp {
+	c.El.Style(styles.AccentRedDark(scale))
 	return c
 }
 
-func (c *component) AccentRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentRedDarkAlpha(scale))
+func (c *Comp) AccentRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentRuby(scale int) *component {
-	c.el.Style(styles.AccentRuby(scale))
+func (c *Comp) AccentRuby(scale int) *Comp {
+	c.El.Style(styles.AccentRuby(scale))
 	return c
 }
 
-func (c *component) AccentRubyAlpha(scale int) *component {
-	c.el.Style(styles.AccentRubyAlpha(scale))
+func (c *Comp) AccentRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentRubyAlpha(scale))
 	return c
 }
 
-func (c *component) AccentRubyDark(scale int) *component {
-	c.el.Style(styles.AccentRubyDark(scale))
+func (c *Comp) AccentRubyDark(scale int) *Comp {
+	c.El.Style(styles.AccentRubyDark(scale))
 	return c
 }
 
-func (c *component) AccentRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentRubyDarkAlpha(scale))
+func (c *Comp) AccentRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentSage(scale int) *component {
-	c.el.Style(styles.AccentSage(scale))
+func (c *Comp) AccentSage(scale int) *Comp {
+	c.El.Style(styles.AccentSage(scale))
 	return c
 }
 
-func (c *component) AccentSageAlpha(scale int) *component {
-	c.el.Style(styles.AccentSageAlpha(scale))
+func (c *Comp) AccentSageAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentSageAlpha(scale))
 	return c
 }
 
-func (c *component) AccentSageDark(scale int) *component {
-	c.el.Style(styles.AccentSageDark(scale))
+func (c *Comp) AccentSageDark(scale int) *Comp {
+	c.El.Style(styles.AccentSageDark(scale))
 	return c
 }
 
-func (c *component) AccentSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentSageDarkAlpha(scale))
+func (c *Comp) AccentSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentSand(scale int) *component {
-	c.el.Style(styles.AccentSand(scale))
+func (c *Comp) AccentSand(scale int) *Comp {
+	c.El.Style(styles.AccentSand(scale))
 	return c
 }
 
-func (c *component) AccentSandAlpha(scale int) *component {
-	c.el.Style(styles.AccentSandAlpha(scale))
+func (c *Comp) AccentSandAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentSandAlpha(scale))
 	return c
 }
 
-func (c *component) AccentSandDark(scale int) *component {
-	c.el.Style(styles.AccentSandDark(scale))
+func (c *Comp) AccentSandDark(scale int) *Comp {
+	c.El.Style(styles.AccentSandDark(scale))
 	return c
 }
 
-func (c *component) AccentSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentSandDarkAlpha(scale))
+func (c *Comp) AccentSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentSky(scale int) *component {
-	c.el.Style(styles.AccentSky(scale))
+func (c *Comp) AccentSky(scale int) *Comp {
+	c.El.Style(styles.AccentSky(scale))
 	return c
 }
 
-func (c *component) AccentSkyAlpha(scale int) *component {
-	c.el.Style(styles.AccentSkyAlpha(scale))
+func (c *Comp) AccentSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentSkyAlpha(scale))
 	return c
 }
 
-func (c *component) AccentSkyDark(scale int) *component {
-	c.el.Style(styles.AccentSkyDark(scale))
+func (c *Comp) AccentSkyDark(scale int) *Comp {
+	c.El.Style(styles.AccentSkyDark(scale))
 	return c
 }
 
-func (c *component) AccentSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentSkyDarkAlpha(scale))
+func (c *Comp) AccentSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentSlate(scale int) *component {
-	c.el.Style(styles.AccentSlate(scale))
+func (c *Comp) AccentSlate(scale int) *Comp {
+	c.El.Style(styles.AccentSlate(scale))
 	return c
 }
 
-func (c *component) AccentSlateAlpha(scale int) *component {
-	c.el.Style(styles.AccentSlateAlpha(scale))
+func (c *Comp) AccentSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentSlateAlpha(scale))
 	return c
 }
 
-func (c *component) AccentSlateDark(scale int) *component {
-	c.el.Style(styles.AccentSlateDark(scale))
+func (c *Comp) AccentSlateDark(scale int) *Comp {
+	c.El.Style(styles.AccentSlateDark(scale))
 	return c
 }
 
-func (c *component) AccentSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentSlateDarkAlpha(scale))
+func (c *Comp) AccentSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentTeal(scale int) *component {
-	c.el.Style(styles.AccentTeal(scale))
+func (c *Comp) AccentTeal(scale int) *Comp {
+	c.El.Style(styles.AccentTeal(scale))
 	return c
 }
 
-func (c *component) AccentTealAlpha(scale int) *component {
-	c.el.Style(styles.AccentTealAlpha(scale))
+func (c *Comp) AccentTealAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentTealAlpha(scale))
 	return c
 }
 
-func (c *component) AccentTealDark(scale int) *component {
-	c.el.Style(styles.AccentTealDark(scale))
+func (c *Comp) AccentTealDark(scale int) *Comp {
+	c.El.Style(styles.AccentTealDark(scale))
 	return c
 }
 
-func (c *component) AccentTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentTealDarkAlpha(scale))
+func (c *Comp) AccentTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentTomato(scale int) *component {
-	c.el.Style(styles.AccentTomato(scale))
+func (c *Comp) AccentTomato(scale int) *Comp {
+	c.El.Style(styles.AccentTomato(scale))
 	return c
 }
 
-func (c *component) AccentTomatoAlpha(scale int) *component {
-	c.el.Style(styles.AccentTomatoAlpha(scale))
+func (c *Comp) AccentTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) AccentTomatoDark(scale int) *component {
-	c.el.Style(styles.AccentTomatoDark(scale))
+func (c *Comp) AccentTomatoDark(scale int) *Comp {
+	c.El.Style(styles.AccentTomatoDark(scale))
 	return c
 }
 
-func (c *component) AccentTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentTomatoDarkAlpha(scale))
+func (c *Comp) AccentTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentTransparent() *component {
-	c.el.Style(styles.AccentTransparent())
+func (c *Comp) AccentTransparent() *Comp {
+	c.El.Style(styles.AccentTransparent())
 	return c
 }
 
-func (c *component) AccentViolet(scale int) *component {
-	c.el.Style(styles.AccentViolet(scale))
+func (c *Comp) AccentViolet(scale int) *Comp {
+	c.El.Style(styles.AccentViolet(scale))
 	return c
 }
 
-func (c *component) AccentVioletAlpha(scale int) *component {
-	c.el.Style(styles.AccentVioletAlpha(scale))
+func (c *Comp) AccentVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentVioletAlpha(scale))
 	return c
 }
 
-func (c *component) AccentVioletDark(scale int) *component {
-	c.el.Style(styles.AccentVioletDark(scale))
+func (c *Comp) AccentVioletDark(scale int) *Comp {
+	c.El.Style(styles.AccentVioletDark(scale))
 	return c
 }
 
-func (c *component) AccentVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentVioletDarkAlpha(scale))
+func (c *Comp) AccentVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AccentWhite() *component {
-	c.el.Style(styles.AccentWhite())
+func (c *Comp) AccentWhite() *Comp {
+	c.El.Style(styles.AccentWhite())
 	return c
 }
 
-func (c *component) AccentWhiteAlpha(scale int) *component {
-	c.el.Style(styles.AccentWhiteAlpha(scale))
+func (c *Comp) AccentWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) AccentYellow(scale int) *component {
-	c.el.Style(styles.AccentYellow(scale))
+func (c *Comp) AccentYellow(scale int) *Comp {
+	c.El.Style(styles.AccentYellow(scale))
 	return c
 }
 
-func (c *component) AccentYellowAlpha(scale int) *component {
-	c.el.Style(styles.AccentYellowAlpha(scale))
+func (c *Comp) AccentYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentYellowAlpha(scale))
 	return c
 }
 
-func (c *component) AccentYellowDark(scale int) *component {
-	c.el.Style(styles.AccentYellowDark(scale))
+func (c *Comp) AccentYellowDark(scale int) *Comp {
+	c.El.Style(styles.AccentYellowDark(scale))
 	return c
 }
 
-func (c *component) AccentYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.AccentYellowDarkAlpha(scale))
+func (c *Comp) AccentYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.AccentYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) AlignBaseline() *component {
-	c.el.Style(styles.AlignBaseline())
+func (c *Comp) AlignBaseline() *Comp {
+	c.El.Style(styles.AlignBaseline())
 	return c
 }
 
-func (c *component) AlignBottom() *component {
-	c.el.Style(styles.AlignBottom())
+func (c *Comp) AlignBottom() *Comp {
+	c.El.Style(styles.AlignBottom())
 	return c
 }
 
-func (c *component) AlignBy(val value.Value) *component {
-	c.el.Style(styles.AlignBy(val))
+func (c *Comp) AlignBy(val value.Value) *Comp {
+	c.El.Style(styles.AlignBy(val))
 	return c
 }
 
-func (c *component) AlignMiddle() *component {
-	c.el.Style(styles.AlignMiddle())
+func (c *Comp) AlignMiddle() *Comp {
+	c.El.Style(styles.AlignMiddle())
 	return c
 }
 
-func (c *component) AlignSub() *component {
-	c.el.Style(styles.AlignSub())
+func (c *Comp) AlignSub() *Comp {
+	c.El.Style(styles.AlignSub())
 	return c
 }
 
-func (c *component) AlignSuper() *component {
-	c.el.Style(styles.AlignSuper())
+func (c *Comp) AlignSuper() *Comp {
+	c.El.Style(styles.AlignSuper())
 	return c
 }
 
-func (c *component) AlignTextBottom() *component {
-	c.el.Style(styles.AlignTextBottom())
+func (c *Comp) AlignTextBottom() *Comp {
+	c.El.Style(styles.AlignTextBottom())
 	return c
 }
 
-func (c *component) AlignTextTop() *component {
-	c.el.Style(styles.AlignTextTop())
+func (c *Comp) AlignTextTop() *Comp {
+	c.El.Style(styles.AlignTextTop())
 	return c
 }
 
-func (c *component) AlignTop() *component {
-	c.el.Style(styles.AlignTop())
+func (c *Comp) AlignTop() *Comp {
+	c.El.Style(styles.AlignTop())
 	return c
 }
 
-func (c *component) Animate(val value.Value) *component {
-	c.el.Style(styles.Animate(val))
+func (c *Comp) Animate(val value.Value) *Comp {
+	c.El.Style(styles.Animate(val))
 	return c
 }
 
-func (c *component) AnimateBounce() *component {
-	c.el.Style(styles.AnimateBounce())
+func (c *Comp) AnimateBounce() *Comp {
+	c.El.Style(styles.AnimateBounce())
 	return c
 }
 
-func (c *component) AnimateNone() *component {
-	c.el.Style(styles.AnimateNone())
+func (c *Comp) AnimateNone() *Comp {
+	c.El.Style(styles.AnimateNone())
 	return c
 }
 
-func (c *component) AnimatePing() *component {
-	c.el.Style(styles.AnimatePing())
+func (c *Comp) AnimatePing() *Comp {
+	c.El.Style(styles.AnimatePing())
 	return c
 }
 
-func (c *component) AnimatePulse() *component {
-	c.el.Style(styles.AnimatePulse())
+func (c *Comp) AnimatePulse() *Comp {
+	c.El.Style(styles.AnimatePulse())
 	return c
 }
 
-func (c *component) AnimateSpin() *component {
-	c.el.Style(styles.AnimateSpin())
+func (c *Comp) AnimateSpin() *Comp {
+	c.El.Style(styles.AnimateSpin())
 	return c
 }
 
-func (c *component) Antialiazed() *component {
-	c.el.Style(styles.Antialiazed())
+func (c *Comp) Antialiazed() *Comp {
+	c.El.Style(styles.Antialiazed())
 	return c
 }
 
-func (c *component) AppearanceAuto() *component {
-	c.el.Style(styles.AppearanceAuto())
+func (c *Comp) AppearanceAuto() *Comp {
+	c.El.Style(styles.AppearanceAuto())
 	return c
 }
 
-func (c *component) AppearanceNone() *component {
-	c.el.Style(styles.AppearanceNone())
+func (c *Comp) AppearanceNone() *Comp {
+	c.El.Style(styles.AppearanceNone())
 	return c
 }
 
-func (c *component) Aspect(ratio value.Value) *component {
-	c.el.Style(styles.Aspect(ratio))
+func (c *Comp) Aspect(ratio value.Value) *Comp {
+	c.El.Style(styles.Aspect(ratio))
 	return c
 }
 
-func (c *component) AspectAuto() *component {
-	c.el.Style(styles.AspectAuto())
+func (c *Comp) AspectAuto() *Comp {
+	c.El.Style(styles.AspectAuto())
 	return c
 }
 
-func (c *component) AspectSquare() *component {
-	c.el.Style(styles.AspectSquare())
+func (c *Comp) AspectSquare() *Comp {
+	c.El.Style(styles.AspectSquare())
 	return c
 }
 
-func (c *component) AspectVideo() *component {
-	c.el.Style(styles.AspectVideo())
+func (c *Comp) AspectVideo() *Comp {
+	c.El.Style(styles.AspectVideo())
 	return c
 }
 
-func (c *component) AutoColsAuto() *component {
-	c.el.Style(styles.AutoColsAuto())
+func (c *Comp) AutoColsAuto() *Comp {
+	c.El.Style(styles.AutoColsAuto())
 	return c
 }
 
-func (c *component) AutoColsBy(val value.Value) *component {
-	c.el.Style(styles.AutoColsBy(val))
+func (c *Comp) AutoColsBy(val value.Value) *Comp {
+	c.El.Style(styles.AutoColsBy(val))
 	return c
 }
 
-func (c *component) AutoColsFr() *component {
-	c.el.Style(styles.AutoColsFr())
+func (c *Comp) AutoColsFr() *Comp {
+	c.El.Style(styles.AutoColsFr())
 	return c
 }
 
-func (c *component) AutoColsMax() *component {
-	c.el.Style(styles.AutoColsMax())
+func (c *Comp) AutoColsMax() *Comp {
+	c.El.Style(styles.AutoColsMax())
 	return c
 }
 
-func (c *component) AutoColsMin() *component {
-	c.el.Style(styles.AutoColsMin())
+func (c *Comp) AutoColsMin() *Comp {
+	c.El.Style(styles.AutoColsMin())
 	return c
 }
 
-func (c *component) AutoRowsAuto() *component {
-	c.el.Style(styles.AutoRowsAuto())
+func (c *Comp) AutoRowsAuto() *Comp {
+	c.El.Style(styles.AutoRowsAuto())
 	return c
 }
 
-func (c *component) AutoRowsBy(val value.Value) *component {
-	c.el.Style(styles.AutoRowsBy(val))
+func (c *Comp) AutoRowsBy(val value.Value) *Comp {
+	c.El.Style(styles.AutoRowsBy(val))
 	return c
 }
 
-func (c *component) AutoRowsFr() *component {
-	c.el.Style(styles.AutoRowsFr())
+func (c *Comp) AutoRowsFr() *Comp {
+	c.El.Style(styles.AutoRowsFr())
 	return c
 }
 
-func (c *component) AutoRowsMax() *component {
-	c.el.Style(styles.AutoRowsMax())
+func (c *Comp) AutoRowsMax() *Comp {
+	c.El.Style(styles.AutoRowsMax())
 	return c
 }
 
-func (c *component) AutoRowsMin() *component {
-	c.el.Style(styles.AutoRowsMin())
+func (c *Comp) AutoRowsMin() *Comp {
+	c.El.Style(styles.AutoRowsMin())
 	return c
 }
 
-func (c *component) BackdropBlur(val value.Value) *component {
-	c.el.Style(styles.BackdropBlur(val))
+func (c *Comp) BackdropBlur(val value.Value) *Comp {
+	c.El.Style(styles.BackdropBlur(val))
 	return c
 }
 
-func (c *component) BackdropBlur2xl() *component {
-	c.el.Style(styles.BackdropBlur2xl())
+func (c *Comp) BackdropBlur2xl() *Comp {
+	c.El.Style(styles.BackdropBlur2xl())
 	return c
 }
 
-func (c *component) BackdropBlur3xl() *component {
-	c.el.Style(styles.BackdropBlur3xl())
+func (c *Comp) BackdropBlur3xl() *Comp {
+	c.El.Style(styles.BackdropBlur3xl())
 	return c
 }
 
-func (c *component) BackdropBlurLg() *component {
-	c.el.Style(styles.BackdropBlurLg())
+func (c *Comp) BackdropBlurLg() *Comp {
+	c.El.Style(styles.BackdropBlurLg())
 	return c
 }
 
-func (c *component) BackdropBlurMd() *component {
-	c.el.Style(styles.BackdropBlurMd())
+func (c *Comp) BackdropBlurMd() *Comp {
+	c.El.Style(styles.BackdropBlurMd())
 	return c
 }
 
-func (c *component) BackdropBlurNone() *component {
-	c.el.Style(styles.BackdropBlurNone())
+func (c *Comp) BackdropBlurNone() *Comp {
+	c.El.Style(styles.BackdropBlurNone())
 	return c
 }
 
-func (c *component) BackdropBlurSm() *component {
-	c.el.Style(styles.BackdropBlurSm())
+func (c *Comp) BackdropBlurSm() *Comp {
+	c.El.Style(styles.BackdropBlurSm())
 	return c
 }
 
-func (c *component) BackdropBlurXl() *component {
-	c.el.Style(styles.BackdropBlurXl())
+func (c *Comp) BackdropBlurXl() *Comp {
+	c.El.Style(styles.BackdropBlurXl())
 	return c
 }
 
-func (c *component) BackdropBlurXs() *component {
-	c.el.Style(styles.BackdropBlurXs())
+func (c *Comp) BackdropBlurXs() *Comp {
+	c.El.Style(styles.BackdropBlurXs())
 	return c
 }
 
-func (c *component) BackdropBrightness(val any) *component {
-	c.el.Style(styles.BackdropBrightness(val))
+func (c *Comp) BackdropBrightness(val any) *Comp {
+	c.El.Style(styles.BackdropBrightness(val))
 	return c
 }
 
-func (c *component) BackdropContrast(val any) *component {
-	c.el.Style(styles.BackdropContrast(val))
+func (c *Comp) BackdropContrast(val any) *Comp {
+	c.El.Style(styles.BackdropContrast(val))
 	return c
 }
 
-func (c *component) BackdropFilter(val value.Value) *component {
-	c.el.Style(styles.BackdropFilter(val))
+func (c *Comp) BackdropFilter(val value.Value) *Comp {
+	c.El.Style(styles.BackdropFilter(val))
 	return c
 }
 
-func (c *component) BackdropFilterNone() *component {
-	c.el.Style(styles.BackdropFilterNone())
+func (c *Comp) BackdropFilterNone() *Comp {
+	c.El.Style(styles.BackdropFilterNone())
 	return c
 }
 
-func (c *component) BackdropGrayscale(val ...any) *component {
-	c.el.Style(styles.BackdropGrayscale(val...))
+func (c *Comp) BackdropGrayscale(val ...any) *Comp {
+	c.El.Style(styles.BackdropGrayscale(val...))
 	return c
 }
 
-func (c *component) BackdropHueRotate(val any) *component {
-	c.el.Style(styles.BackdropHueRotate(val))
+func (c *Comp) BackdropHueRotate(val any) *Comp {
+	c.El.Style(styles.BackdropHueRotate(val))
 	return c
 }
 
-func (c *component) BackdropInvert(val ...any) *component {
-	c.el.Style(styles.BackdropInvert(val...))
+func (c *Comp) BackdropInvert(val ...any) *Comp {
+	c.El.Style(styles.BackdropInvert(val...))
 	return c
 }
 
-func (c *component) BackdropSaturate(val any) *component {
-	c.el.Style(styles.BackdropSaturate(val))
+func (c *Comp) BackdropSaturate(val any) *Comp {
+	c.El.Style(styles.BackdropSaturate(val))
 	return c
 }
 
-func (c *component) BackdropSepia(val ...any) *component {
-	c.el.Style(styles.BackdropSepia(val...))
+func (c *Comp) BackdropSepia(val ...any) *Comp {
+	c.El.Style(styles.BackdropSepia(val...))
 	return c
 }
 
-func (c *component) BackfaceHidden() *component {
-	c.el.Style(styles.BackfaceHidden())
+func (c *Comp) BackfaceHidden() *Comp {
+	c.El.Style(styles.BackfaceHidden())
 	return c
 }
 
-func (c *component) BackfaceVisible() *component {
-	c.el.Style(styles.BackfaceVisible())
+func (c *Comp) BackfaceVisible() *Comp {
+	c.El.Style(styles.BackfaceVisible())
 	return c
 }
 
-func (c *component) Basis(val value.Value) *component {
-	c.el.Style(styles.Basis(val))
+func (c *Comp) Basis(val value.Value) *Comp {
+	c.El.Style(styles.Basis(val))
 	return c
 }
 
-func (c *component) Basis2xl() *component {
-	c.el.Style(styles.Basis2xl())
+func (c *Comp) Basis2xl() *Comp {
+	c.El.Style(styles.Basis2xl())
 	return c
 }
 
-func (c *component) Basis2xs() *component {
-	c.el.Style(styles.Basis2xs())
+func (c *Comp) Basis2xs() *Comp {
+	c.El.Style(styles.Basis2xs())
 	return c
 }
 
-func (c *component) Basis3xl() *component {
-	c.el.Style(styles.Basis3xl())
+func (c *Comp) Basis3xl() *Comp {
+	c.El.Style(styles.Basis3xl())
 	return c
 }
 
-func (c *component) Basis3xs() *component {
-	c.el.Style(styles.Basis3xs())
+func (c *Comp) Basis3xs() *Comp {
+	c.El.Style(styles.Basis3xs())
 	return c
 }
 
-func (c *component) Basis4xl() *component {
-	c.el.Style(styles.Basis4xl())
+func (c *Comp) Basis4xl() *Comp {
+	c.El.Style(styles.Basis4xl())
 	return c
 }
 
-func (c *component) Basis5xl() *component {
-	c.el.Style(styles.Basis5xl())
+func (c *Comp) Basis5xl() *Comp {
+	c.El.Style(styles.Basis5xl())
 	return c
 }
 
-func (c *component) Basis6xl() *component {
-	c.el.Style(styles.Basis6xl())
+func (c *Comp) Basis6xl() *Comp {
+	c.El.Style(styles.Basis6xl())
 	return c
 }
 
-func (c *component) Basis7xl() *component {
-	c.el.Style(styles.Basis7xl())
+func (c *Comp) Basis7xl() *Comp {
+	c.El.Style(styles.Basis7xl())
 	return c
 }
 
-func (c *component) BasisAuto() *component {
-	c.el.Style(styles.BasisAuto())
+func (c *Comp) BasisAuto() *Comp {
+	c.El.Style(styles.BasisAuto())
 	return c
 }
 
-func (c *component) BasisFraction(fraction float64) *component {
-	c.el.Style(styles.BasisFraction(fraction))
+func (c *Comp) BasisFraction(fraction float64) *Comp {
+	c.El.Style(styles.BasisFraction(fraction))
 	return c
 }
 
-func (c *component) BasisFull() *component {
-	c.el.Style(styles.BasisFull())
+func (c *Comp) BasisFull() *Comp {
+	c.El.Style(styles.BasisFull())
 	return c
 }
 
-func (c *component) BasisLg() *component {
-	c.el.Style(styles.BasisLg())
+func (c *Comp) BasisLg() *Comp {
+	c.El.Style(styles.BasisLg())
 	return c
 }
 
-func (c *component) BasisMd() *component {
-	c.el.Style(styles.BasisMd())
+func (c *Comp) BasisMd() *Comp {
+	c.El.Style(styles.BasisMd())
 	return c
 }
 
-func (c *component) BasisSm() *component {
-	c.el.Style(styles.BasisSm())
+func (c *Comp) BasisSm() *Comp {
+	c.El.Style(styles.BasisSm())
 	return c
 }
 
-func (c *component) BasisXl() *component {
-	c.el.Style(styles.BasisXl())
+func (c *Comp) BasisXl() *Comp {
+	c.El.Style(styles.BasisXl())
 	return c
 }
 
-func (c *component) BasisXs() *component {
-	c.el.Style(styles.BasisXs())
+func (c *Comp) BasisXs() *Comp {
+	c.El.Style(styles.BasisXs())
 	return c
 }
 
-func (c *component) Bg(val value.Value) *component {
-	c.el.Style(styles.Bg(val))
+func (c *Comp) Bg(val value.Value) *Comp {
+	c.El.Style(styles.Bg(val))
 	return c
 }
 
-func (c *component) BgAmber(scale int) *component {
-	c.el.Style(styles.BgAmber(scale))
+func (c *Comp) BgAmber(scale int) *Comp {
+	c.El.Style(styles.BgAmber(scale))
 	return c
 }
 
-func (c *component) BgAmberAlpha(scale int) *component {
-	c.el.Style(styles.BgAmberAlpha(scale))
+func (c *Comp) BgAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.BgAmberAlpha(scale))
 	return c
 }
 
-func (c *component) BgAmberDark(scale int) *component {
-	c.el.Style(styles.BgAmberDark(scale))
+func (c *Comp) BgAmberDark(scale int) *Comp {
+	c.El.Style(styles.BgAmberDark(scale))
 	return c
 }
 
-func (c *component) BgAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgAmberDarkAlpha(scale))
+func (c *Comp) BgAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgAuto() *component {
-	c.el.Style(styles.BgAuto())
+func (c *Comp) BgAuto() *Comp {
+	c.El.Style(styles.BgAuto())
 	return c
 }
 
-func (c *component) BgBlack() *component {
-	c.el.Style(styles.BgBlack())
+func (c *Comp) BgBlack() *Comp {
+	c.El.Style(styles.BgBlack())
 	return c
 }
 
-func (c *component) BgBlackAlpha(scale int) *component {
-	c.el.Style(styles.BgBlackAlpha(scale))
+func (c *Comp) BgBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.BgBlackAlpha(scale))
 	return c
 }
 
-func (c *component) BgBlendColor() *component {
-	c.el.Style(styles.BgBlendColor())
+func (c *Comp) BgBlendColor() *Comp {
+	c.El.Style(styles.BgBlendColor())
 	return c
 }
 
-func (c *component) BgBlendColorBurn() *component {
-	c.el.Style(styles.BgBlendColorBurn())
+func (c *Comp) BgBlendColorBurn() *Comp {
+	c.El.Style(styles.BgBlendColorBurn())
 	return c
 }
 
-func (c *component) BgBlendColorDodge() *component {
-	c.el.Style(styles.BgBlendColorDodge())
+func (c *Comp) BgBlendColorDodge() *Comp {
+	c.El.Style(styles.BgBlendColorDodge())
 	return c
 }
 
-func (c *component) BgBlendDarken() *component {
-	c.el.Style(styles.BgBlendDarken())
+func (c *Comp) BgBlendDarken() *Comp {
+	c.El.Style(styles.BgBlendDarken())
 	return c
 }
 
-func (c *component) BgBlendDifference() *component {
-	c.el.Style(styles.BgBlendDifference())
+func (c *Comp) BgBlendDifference() *Comp {
+	c.El.Style(styles.BgBlendDifference())
 	return c
 }
 
-func (c *component) BgBlendExclusion() *component {
-	c.el.Style(styles.BgBlendExclusion())
+func (c *Comp) BgBlendExclusion() *Comp {
+	c.El.Style(styles.BgBlendExclusion())
 	return c
 }
 
-func (c *component) BgBlendHardLight() *component {
-	c.el.Style(styles.BgBlendHardLight())
+func (c *Comp) BgBlendHardLight() *Comp {
+	c.El.Style(styles.BgBlendHardLight())
 	return c
 }
 
-func (c *component) BgBlendHue() *component {
-	c.el.Style(styles.BgBlendHue())
+func (c *Comp) BgBlendHue() *Comp {
+	c.El.Style(styles.BgBlendHue())
 	return c
 }
 
-func (c *component) BgBlendLighten() *component {
-	c.el.Style(styles.BgBlendLighten())
+func (c *Comp) BgBlendLighten() *Comp {
+	c.El.Style(styles.BgBlendLighten())
 	return c
 }
 
-func (c *component) BgBlendLuminosity() *component {
-	c.el.Style(styles.BgBlendLuminosity())
+func (c *Comp) BgBlendLuminosity() *Comp {
+	c.El.Style(styles.BgBlendLuminosity())
 	return c
 }
 
-func (c *component) BgBlendMultiply() *component {
-	c.el.Style(styles.BgBlendMultiply())
+func (c *Comp) BgBlendMultiply() *Comp {
+	c.El.Style(styles.BgBlendMultiply())
 	return c
 }
 
-func (c *component) BgBlendNormal() *component {
-	c.el.Style(styles.BgBlendNormal())
+func (c *Comp) BgBlendNormal() *Comp {
+	c.El.Style(styles.BgBlendNormal())
 	return c
 }
 
-func (c *component) BgBlendOverlay() *component {
-	c.el.Style(styles.BgBlendOverlay())
+func (c *Comp) BgBlendOverlay() *Comp {
+	c.El.Style(styles.BgBlendOverlay())
 	return c
 }
 
-func (c *component) BgBlendSaturation() *component {
-	c.el.Style(styles.BgBlendSaturation())
+func (c *Comp) BgBlendSaturation() *Comp {
+	c.El.Style(styles.BgBlendSaturation())
 	return c
 }
 
-func (c *component) BgBlendScreen() *component {
-	c.el.Style(styles.BgBlendScreen())
+func (c *Comp) BgBlendScreen() *Comp {
+	c.El.Style(styles.BgBlendScreen())
 	return c
 }
 
-func (c *component) BgBlendSoftLight() *component {
-	c.el.Style(styles.BgBlendSoftLight())
+func (c *Comp) BgBlendSoftLight() *Comp {
+	c.El.Style(styles.BgBlendSoftLight())
 	return c
 }
 
-func (c *component) BgBlue(scale int) *component {
-	c.el.Style(styles.BgBlue(scale))
+func (c *Comp) BgBlue(scale int) *Comp {
+	c.El.Style(styles.BgBlue(scale))
 	return c
 }
 
-func (c *component) BgBlueAlpha(scale int) *component {
-	c.el.Style(styles.BgBlueAlpha(scale))
+func (c *Comp) BgBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.BgBlueAlpha(scale))
 	return c
 }
 
-func (c *component) BgBlueDark(scale int) *component {
-	c.el.Style(styles.BgBlueDark(scale))
+func (c *Comp) BgBlueDark(scale int) *Comp {
+	c.El.Style(styles.BgBlueDark(scale))
 	return c
 }
 
-func (c *component) BgBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgBlueDarkAlpha(scale))
+func (c *Comp) BgBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgBottom() *component {
-	c.el.Style(styles.BgBottom())
+func (c *Comp) BgBottom() *Comp {
+	c.El.Style(styles.BgBottom())
 	return c
 }
 
-func (c *component) BgBottomLeft() *component {
-	c.el.Style(styles.BgBottomLeft())
+func (c *Comp) BgBottomLeft() *Comp {
+	c.El.Style(styles.BgBottomLeft())
 	return c
 }
 
-func (c *component) BgBottomRight() *component {
-	c.el.Style(styles.BgBottomRight())
+func (c *Comp) BgBottomRight() *Comp {
+	c.El.Style(styles.BgBottomRight())
 	return c
 }
 
-func (c *component) BgBronze(scale int) *component {
-	c.el.Style(styles.BgBronze(scale))
+func (c *Comp) BgBronze(scale int) *Comp {
+	c.El.Style(styles.BgBronze(scale))
 	return c
 }
 
-func (c *component) BgBronzeAlpha(scale int) *component {
-	c.el.Style(styles.BgBronzeAlpha(scale))
+func (c *Comp) BgBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.BgBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) BgBronzeDark(scale int) *component {
-	c.el.Style(styles.BgBronzeDark(scale))
+func (c *Comp) BgBronzeDark(scale int) *Comp {
+	c.El.Style(styles.BgBronzeDark(scale))
 	return c
 }
 
-func (c *component) BgBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgBronzeDarkAlpha(scale))
+func (c *Comp) BgBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgBrown(scale int) *component {
-	c.el.Style(styles.BgBrown(scale))
+func (c *Comp) BgBrown(scale int) *Comp {
+	c.El.Style(styles.BgBrown(scale))
 	return c
 }
 
-func (c *component) BgBrownAlpha(scale int) *component {
-	c.el.Style(styles.BgBrownAlpha(scale))
+func (c *Comp) BgBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.BgBrownAlpha(scale))
 	return c
 }
 
-func (c *component) BgBrownDark(scale int) *component {
-	c.el.Style(styles.BgBrownDark(scale))
+func (c *Comp) BgBrownDark(scale int) *Comp {
+	c.El.Style(styles.BgBrownDark(scale))
 	return c
 }
 
-func (c *component) BgBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgBrownDarkAlpha(scale))
+func (c *Comp) BgBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgCenter() *component {
-	c.el.Style(styles.BgCenter())
+func (c *Comp) BgCenter() *Comp {
+	c.El.Style(styles.BgCenter())
 	return c
 }
 
-func (c *component) BgClipBorder() *component {
-	c.el.Style(styles.BgClipBorder())
+func (c *Comp) BgClipBorder() *Comp {
+	c.El.Style(styles.BgClipBorder())
 	return c
 }
 
-func (c *component) BgClipContent() *component {
-	c.el.Style(styles.BgClipContent())
+func (c *Comp) BgClipContent() *Comp {
+	c.El.Style(styles.BgClipContent())
 	return c
 }
 
-func (c *component) BgClipPadding() *component {
-	c.el.Style(styles.BgClipPadding())
+func (c *Comp) BgClipPadding() *Comp {
+	c.El.Style(styles.BgClipPadding())
 	return c
 }
 
-func (c *component) BgClipText() *component {
-	c.el.Style(styles.BgClipText())
+func (c *Comp) BgClipText() *Comp {
+	c.El.Style(styles.BgClipText())
 	return c
 }
 
-func (c *component) BgColor(color value.Value) *component {
-	c.el.Style(styles.BgColor(color))
+func (c *Comp) BgColor(color value.Value) *Comp {
+	c.El.Style(styles.BgColor(color))
 	return c
 }
 
-func (c *component) BgConic(val value.Value) *component {
-	c.el.Style(styles.BgConic(val))
+func (c *Comp) BgConic(val value.Value) *Comp {
+	c.El.Style(styles.BgConic(val))
 	return c
 }
 
-func (c *component) BgContain() *component {
-	c.el.Style(styles.BgContain())
+func (c *Comp) BgContain() *Comp {
+	c.El.Style(styles.BgContain())
 	return c
 }
 
-func (c *component) BgCover() *component {
-	c.el.Style(styles.BgCover())
+func (c *Comp) BgCover() *Comp {
+	c.El.Style(styles.BgCover())
 	return c
 }
 
-func (c *component) BgCrimson(scale int) *component {
-	c.el.Style(styles.BgCrimson(scale))
+func (c *Comp) BgCrimson(scale int) *Comp {
+	c.El.Style(styles.BgCrimson(scale))
 	return c
 }
 
-func (c *component) BgCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.BgCrimsonAlpha(scale))
+func (c *Comp) BgCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.BgCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) BgCrimsonDark(scale int) *component {
-	c.el.Style(styles.BgCrimsonDark(scale))
+func (c *Comp) BgCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.BgCrimsonDark(scale))
 	return c
 }
 
-func (c *component) BgCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgCrimsonDarkAlpha(scale))
+func (c *Comp) BgCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgCurrent() *component {
-	c.el.Style(styles.BgCurrent())
+func (c *Comp) BgCurrent() *Comp {
+	c.El.Style(styles.BgCurrent())
 	return c
 }
 
-func (c *component) BgCyan(scale int) *component {
-	c.el.Style(styles.BgCyan(scale))
+func (c *Comp) BgCyan(scale int) *Comp {
+	c.El.Style(styles.BgCyan(scale))
 	return c
 }
 
-func (c *component) BgCyanAlpha(scale int) *component {
-	c.el.Style(styles.BgCyanAlpha(scale))
+func (c *Comp) BgCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.BgCyanAlpha(scale))
 	return c
 }
 
-func (c *component) BgCyanDark(scale int) *component {
-	c.el.Style(styles.BgCyanDark(scale))
+func (c *Comp) BgCyanDark(scale int) *Comp {
+	c.El.Style(styles.BgCyanDark(scale))
 	return c
 }
 
-func (c *component) BgCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgCyanDarkAlpha(scale))
+func (c *Comp) BgCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgFixed() *component {
-	c.el.Style(styles.BgFixed())
+func (c *Comp) BgFixed() *Comp {
+	c.El.Style(styles.BgFixed())
 	return c
 }
 
-func (c *component) BgGold(scale int) *component {
-	c.el.Style(styles.BgGold(scale))
+func (c *Comp) BgGold(scale int) *Comp {
+	c.El.Style(styles.BgGold(scale))
 	return c
 }
 
-func (c *component) BgGoldAlpha(scale int) *component {
-	c.el.Style(styles.BgGoldAlpha(scale))
+func (c *Comp) BgGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.BgGoldAlpha(scale))
 	return c
 }
 
-func (c *component) BgGoldDark(scale int) *component {
-	c.el.Style(styles.BgGoldDark(scale))
+func (c *Comp) BgGoldDark(scale int) *Comp {
+	c.El.Style(styles.BgGoldDark(scale))
 	return c
 }
 
-func (c *component) BgGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgGoldDarkAlpha(scale))
+func (c *Comp) BgGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgGrass(scale int) *component {
-	c.el.Style(styles.BgGrass(scale))
+func (c *Comp) BgGrass(scale int) *Comp {
+	c.El.Style(styles.BgGrass(scale))
 	return c
 }
 
-func (c *component) BgGrassAlpha(scale int) *component {
-	c.el.Style(styles.BgGrassAlpha(scale))
+func (c *Comp) BgGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.BgGrassAlpha(scale))
 	return c
 }
 
-func (c *component) BgGrassDark(scale int) *component {
-	c.el.Style(styles.BgGrassDark(scale))
+func (c *Comp) BgGrassDark(scale int) *Comp {
+	c.El.Style(styles.BgGrassDark(scale))
 	return c
 }
 
-func (c *component) BgGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgGrassDarkAlpha(scale))
+func (c *Comp) BgGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgGray(scale int) *component {
-	c.el.Style(styles.BgGray(scale))
+func (c *Comp) BgGray(scale int) *Comp {
+	c.El.Style(styles.BgGray(scale))
 	return c
 }
 
-func (c *component) BgGrayAlpha(scale int) *component {
-	c.el.Style(styles.BgGrayAlpha(scale))
+func (c *Comp) BgGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.BgGrayAlpha(scale))
 	return c
 }
 
-func (c *component) BgGrayDark(scale int) *component {
-	c.el.Style(styles.BgGrayDark(scale))
+func (c *Comp) BgGrayDark(scale int) *Comp {
+	c.El.Style(styles.BgGrayDark(scale))
 	return c
 }
 
-func (c *component) BgGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgGrayDarkAlpha(scale))
+func (c *Comp) BgGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgGreen(scale int) *component {
-	c.el.Style(styles.BgGreen(scale))
+func (c *Comp) BgGreen(scale int) *Comp {
+	c.El.Style(styles.BgGreen(scale))
 	return c
 }
 
-func (c *component) BgGreenAlpha(scale int) *component {
-	c.el.Style(styles.BgGreenAlpha(scale))
+func (c *Comp) BgGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.BgGreenAlpha(scale))
 	return c
 }
 
-func (c *component) BgGreenDark(scale int) *component {
-	c.el.Style(styles.BgGreenDark(scale))
+func (c *Comp) BgGreenDark(scale int) *Comp {
+	c.El.Style(styles.BgGreenDark(scale))
 	return c
 }
 
-func (c *component) BgGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgGreenDarkAlpha(scale))
+func (c *Comp) BgGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgIndigo(scale int) *component {
-	c.el.Style(styles.BgIndigo(scale))
+func (c *Comp) BgIndigo(scale int) *Comp {
+	c.El.Style(styles.BgIndigo(scale))
 	return c
 }
 
-func (c *component) BgIndigoAlpha(scale int) *component {
-	c.el.Style(styles.BgIndigoAlpha(scale))
+func (c *Comp) BgIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.BgIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) BgIndigoDark(scale int) *component {
-	c.el.Style(styles.BgIndigoDark(scale))
+func (c *Comp) BgIndigoDark(scale int) *Comp {
+	c.El.Style(styles.BgIndigoDark(scale))
 	return c
 }
 
-func (c *component) BgIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgIndigoDarkAlpha(scale))
+func (c *Comp) BgIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgInherit() *component {
-	c.el.Style(styles.BgInherit())
+func (c *Comp) BgInherit() *Comp {
+	c.El.Style(styles.BgInherit())
 	return c
 }
 
-func (c *component) BgIris(scale int) *component {
-	c.el.Style(styles.BgIris(scale))
+func (c *Comp) BgIris(scale int) *Comp {
+	c.El.Style(styles.BgIris(scale))
 	return c
 }
 
-func (c *component) BgIrisAlpha(scale int) *component {
-	c.el.Style(styles.BgIrisAlpha(scale))
+func (c *Comp) BgIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.BgIrisAlpha(scale))
 	return c
 }
 
-func (c *component) BgIrisDark(scale int) *component {
-	c.el.Style(styles.BgIrisDark(scale))
+func (c *Comp) BgIrisDark(scale int) *Comp {
+	c.El.Style(styles.BgIrisDark(scale))
 	return c
 }
 
-func (c *component) BgIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgIrisDarkAlpha(scale))
+func (c *Comp) BgIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgJade(scale int) *component {
-	c.el.Style(styles.BgJade(scale))
+func (c *Comp) BgJade(scale int) *Comp {
+	c.El.Style(styles.BgJade(scale))
 	return c
 }
 
-func (c *component) BgJadeAlpha(scale int) *component {
-	c.el.Style(styles.BgJadeAlpha(scale))
+func (c *Comp) BgJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.BgJadeAlpha(scale))
 	return c
 }
 
-func (c *component) BgJadeDark(scale int) *component {
-	c.el.Style(styles.BgJadeDark(scale))
+func (c *Comp) BgJadeDark(scale int) *Comp {
+	c.El.Style(styles.BgJadeDark(scale))
 	return c
 }
 
-func (c *component) BgJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgJadeDarkAlpha(scale))
+func (c *Comp) BgJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgLeft() *component {
-	c.el.Style(styles.BgLeft())
+func (c *Comp) BgLeft() *Comp {
+	c.El.Style(styles.BgLeft())
 	return c
 }
 
-func (c *component) BgLime(scale int) *component {
-	c.el.Style(styles.BgLime(scale))
+func (c *Comp) BgLime(scale int) *Comp {
+	c.El.Style(styles.BgLime(scale))
 	return c
 }
 
-func (c *component) BgLimeAlpha(scale int) *component {
-	c.el.Style(styles.BgLimeAlpha(scale))
+func (c *Comp) BgLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.BgLimeAlpha(scale))
 	return c
 }
 
-func (c *component) BgLimeDark(scale int) *component {
-	c.el.Style(styles.BgLimeDark(scale))
+func (c *Comp) BgLimeDark(scale int) *Comp {
+	c.El.Style(styles.BgLimeDark(scale))
 	return c
 }
 
-func (c *component) BgLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgLimeDarkAlpha(scale))
+func (c *Comp) BgLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgLinear(val value.Value) *component {
-	c.el.Style(styles.BgLinear(val))
+func (c *Comp) BgLinear(val value.Value) *Comp {
+	c.El.Style(styles.BgLinear(val))
 	return c
 }
 
-func (c *component) BgLinearToB() *component {
-	c.el.Style(styles.BgLinearToB())
+func (c *Comp) BgLinearToB() *Comp {
+	c.El.Style(styles.BgLinearToB())
 	return c
 }
 
-func (c *component) BgLinearToBl() *component {
-	c.el.Style(styles.BgLinearToBl())
+func (c *Comp) BgLinearToBl() *Comp {
+	c.El.Style(styles.BgLinearToBl())
 	return c
 }
 
-func (c *component) BgLinearToBr() *component {
-	c.el.Style(styles.BgLinearToBr())
+func (c *Comp) BgLinearToBr() *Comp {
+	c.El.Style(styles.BgLinearToBr())
 	return c
 }
 
-func (c *component) BgLinearToL() *component {
-	c.el.Style(styles.BgLinearToL())
+func (c *Comp) BgLinearToL() *Comp {
+	c.El.Style(styles.BgLinearToL())
 	return c
 }
 
-func (c *component) BgLinearToR() *component {
-	c.el.Style(styles.BgLinearToR())
+func (c *Comp) BgLinearToR() *Comp {
+	c.El.Style(styles.BgLinearToR())
 	return c
 }
 
-func (c *component) BgLinearToT() *component {
-	c.el.Style(styles.BgLinearToT())
+func (c *Comp) BgLinearToT() *Comp {
+	c.El.Style(styles.BgLinearToT())
 	return c
 }
 
-func (c *component) BgLinearToTl() *component {
-	c.el.Style(styles.BgLinearToTl())
+func (c *Comp) BgLinearToTl() *Comp {
+	c.El.Style(styles.BgLinearToTl())
 	return c
 }
 
-func (c *component) BgLinearToTr() *component {
-	c.el.Style(styles.BgLinearToTr())
+func (c *Comp) BgLinearToTr() *Comp {
+	c.El.Style(styles.BgLinearToTr())
 	return c
 }
 
-func (c *component) BgLocal() *component {
-	c.el.Style(styles.BgLocal())
+func (c *Comp) BgLocal() *Comp {
+	c.El.Style(styles.BgLocal())
 	return c
 }
 
-func (c *component) BgMauve(scale int) *component {
-	c.el.Style(styles.BgMauve(scale))
+func (c *Comp) BgMauve(scale int) *Comp {
+	c.El.Style(styles.BgMauve(scale))
 	return c
 }
 
-func (c *component) BgMauveAlpha(scale int) *component {
-	c.el.Style(styles.BgMauveAlpha(scale))
+func (c *Comp) BgMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.BgMauveAlpha(scale))
 	return c
 }
 
-func (c *component) BgMauveDark(scale int) *component {
-	c.el.Style(styles.BgMauveDark(scale))
+func (c *Comp) BgMauveDark(scale int) *Comp {
+	c.El.Style(styles.BgMauveDark(scale))
 	return c
 }
 
-func (c *component) BgMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgMauveDarkAlpha(scale))
+func (c *Comp) BgMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgMint(scale int) *component {
-	c.el.Style(styles.BgMint(scale))
+func (c *Comp) BgMint(scale int) *Comp {
+	c.El.Style(styles.BgMint(scale))
 	return c
 }
 
-func (c *component) BgMintAlpha(scale int) *component {
-	c.el.Style(styles.BgMintAlpha(scale))
+func (c *Comp) BgMintAlpha(scale int) *Comp {
+	c.El.Style(styles.BgMintAlpha(scale))
 	return c
 }
 
-func (c *component) BgMintDark(scale int) *component {
-	c.el.Style(styles.BgMintDark(scale))
+func (c *Comp) BgMintDark(scale int) *Comp {
+	c.El.Style(styles.BgMintDark(scale))
 	return c
 }
 
-func (c *component) BgMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgMintDarkAlpha(scale))
+func (c *Comp) BgMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgNoRepeat() *component {
-	c.el.Style(styles.BgNoRepeat())
+func (c *Comp) BgNoRepeat() *Comp {
+	c.El.Style(styles.BgNoRepeat())
 	return c
 }
 
-func (c *component) BgNone() *component {
-	c.el.Style(styles.BgNone())
+func (c *Comp) BgNone() *Comp {
+	c.El.Style(styles.BgNone())
 	return c
 }
 
-func (c *component) BgOlive(scale int) *component {
-	c.el.Style(styles.BgOlive(scale))
+func (c *Comp) BgOlive(scale int) *Comp {
+	c.El.Style(styles.BgOlive(scale))
 	return c
 }
 
-func (c *component) BgOliveAlpha(scale int) *component {
-	c.el.Style(styles.BgOliveAlpha(scale))
+func (c *Comp) BgOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.BgOliveAlpha(scale))
 	return c
 }
 
-func (c *component) BgOliveDark(scale int) *component {
-	c.el.Style(styles.BgOliveDark(scale))
+func (c *Comp) BgOliveDark(scale int) *Comp {
+	c.El.Style(styles.BgOliveDark(scale))
 	return c
 }
 
-func (c *component) BgOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgOliveDarkAlpha(scale))
+func (c *Comp) BgOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgOrange(scale int) *component {
-	c.el.Style(styles.BgOrange(scale))
+func (c *Comp) BgOrange(scale int) *Comp {
+	c.El.Style(styles.BgOrange(scale))
 	return c
 }
 
-func (c *component) BgOrangeAlpha(scale int) *component {
-	c.el.Style(styles.BgOrangeAlpha(scale))
+func (c *Comp) BgOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.BgOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) BgOrangeDark(scale int) *component {
-	c.el.Style(styles.BgOrangeDark(scale))
+func (c *Comp) BgOrangeDark(scale int) *Comp {
+	c.El.Style(styles.BgOrangeDark(scale))
 	return c
 }
 
-func (c *component) BgOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgOrangeDarkAlpha(scale))
+func (c *Comp) BgOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgOriginBorder() *component {
-	c.el.Style(styles.BgOriginBorder())
+func (c *Comp) BgOriginBorder() *Comp {
+	c.El.Style(styles.BgOriginBorder())
 	return c
 }
 
-func (c *component) BgOriginContent() *component {
-	c.el.Style(styles.BgOriginContent())
+func (c *Comp) BgOriginContent() *Comp {
+	c.El.Style(styles.BgOriginContent())
 	return c
 }
 
-func (c *component) BgOriginPadding() *component {
-	c.el.Style(styles.BgOriginPadding())
+func (c *Comp) BgOriginPadding() *Comp {
+	c.El.Style(styles.BgOriginPadding())
 	return c
 }
 
-func (c *component) BgPink(scale int) *component {
-	c.el.Style(styles.BgPink(scale))
+func (c *Comp) BgPink(scale int) *Comp {
+	c.El.Style(styles.BgPink(scale))
 	return c
 }
 
-func (c *component) BgPinkAlpha(scale int) *component {
-	c.el.Style(styles.BgPinkAlpha(scale))
+func (c *Comp) BgPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgPinkAlpha(scale))
 	return c
 }
 
-func (c *component) BgPinkDark(scale int) *component {
-	c.el.Style(styles.BgPinkDark(scale))
+func (c *Comp) BgPinkDark(scale int) *Comp {
+	c.El.Style(styles.BgPinkDark(scale))
 	return c
 }
 
-func (c *component) BgPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgPinkDarkAlpha(scale))
+func (c *Comp) BgPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgPlum(scale int) *component {
-	c.el.Style(styles.BgPlum(scale))
+func (c *Comp) BgPlum(scale int) *Comp {
+	c.El.Style(styles.BgPlum(scale))
 	return c
 }
 
-func (c *component) BgPlumAlpha(scale int) *component {
-	c.el.Style(styles.BgPlumAlpha(scale))
+func (c *Comp) BgPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.BgPlumAlpha(scale))
 	return c
 }
 
-func (c *component) BgPlumDark(scale int) *component {
-	c.el.Style(styles.BgPlumDark(scale))
+func (c *Comp) BgPlumDark(scale int) *Comp {
+	c.El.Style(styles.BgPlumDark(scale))
 	return c
 }
 
-func (c *component) BgPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgPlumDarkAlpha(scale))
+func (c *Comp) BgPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgPosition(val value.Value) *component {
-	c.el.Style(styles.BgPosition(val))
+func (c *Comp) BgPosition(val value.Value) *Comp {
+	c.El.Style(styles.BgPosition(val))
 	return c
 }
 
-func (c *component) BgPurple(scale int) *component {
-	c.el.Style(styles.BgPurple(scale))
+func (c *Comp) BgPurple(scale int) *Comp {
+	c.El.Style(styles.BgPurple(scale))
 	return c
 }
 
-func (c *component) BgPurpleAlpha(scale int) *component {
-	c.el.Style(styles.BgPurpleAlpha(scale))
+func (c *Comp) BgPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.BgPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) BgPurpleDark(scale int) *component {
-	c.el.Style(styles.BgPurpleDark(scale))
+func (c *Comp) BgPurpleDark(scale int) *Comp {
+	c.El.Style(styles.BgPurpleDark(scale))
 	return c
 }
 
-func (c *component) BgPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgPurpleDarkAlpha(scale))
+func (c *Comp) BgPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgRadial(val value.Value) *component {
-	c.el.Style(styles.BgRadial(val))
+func (c *Comp) BgRadial(val value.Value) *Comp {
+	c.El.Style(styles.BgRadial(val))
 	return c
 }
 
-func (c *component) BgRed(scale int) *component {
-	c.el.Style(styles.BgRed(scale))
+func (c *Comp) BgRed(scale int) *Comp {
+	c.El.Style(styles.BgRed(scale))
 	return c
 }
 
-func (c *component) BgRedAlpha(scale int) *component {
-	c.el.Style(styles.BgRedAlpha(scale))
+func (c *Comp) BgRedAlpha(scale int) *Comp {
+	c.El.Style(styles.BgRedAlpha(scale))
 	return c
 }
 
-func (c *component) BgRedDark(scale int) *component {
-	c.el.Style(styles.BgRedDark(scale))
+func (c *Comp) BgRedDark(scale int) *Comp {
+	c.El.Style(styles.BgRedDark(scale))
 	return c
 }
 
-func (c *component) BgRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgRedDarkAlpha(scale))
+func (c *Comp) BgRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgRepeat() *component {
-	c.el.Style(styles.BgRepeat())
+func (c *Comp) BgRepeat() *Comp {
+	c.El.Style(styles.BgRepeat())
 	return c
 }
 
-func (c *component) BgRepeatRound() *component {
-	c.el.Style(styles.BgRepeatRound())
+func (c *Comp) BgRepeatRound() *Comp {
+	c.El.Style(styles.BgRepeatRound())
 	return c
 }
 
-func (c *component) BgRepeatSpace() *component {
-	c.el.Style(styles.BgRepeatSpace())
+func (c *Comp) BgRepeatSpace() *Comp {
+	c.El.Style(styles.BgRepeatSpace())
 	return c
 }
 
-func (c *component) BgRepeatX() *component {
-	c.el.Style(styles.BgRepeatX())
+func (c *Comp) BgRepeatX() *Comp {
+	c.El.Style(styles.BgRepeatX())
 	return c
 }
 
-func (c *component) BgRepeatY() *component {
-	c.el.Style(styles.BgRepeatY())
+func (c *Comp) BgRepeatY() *Comp {
+	c.El.Style(styles.BgRepeatY())
 	return c
 }
 
-func (c *component) BgRight() *component {
-	c.el.Style(styles.BgRight())
+func (c *Comp) BgRight() *Comp {
+	c.El.Style(styles.BgRight())
 	return c
 }
 
-func (c *component) BgRuby(scale int) *component {
-	c.el.Style(styles.BgRuby(scale))
+func (c *Comp) BgRuby(scale int) *Comp {
+	c.El.Style(styles.BgRuby(scale))
 	return c
 }
 
-func (c *component) BgRubyAlpha(scale int) *component {
-	c.el.Style(styles.BgRubyAlpha(scale))
+func (c *Comp) BgRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.BgRubyAlpha(scale))
 	return c
 }
 
-func (c *component) BgRubyDark(scale int) *component {
-	c.el.Style(styles.BgRubyDark(scale))
+func (c *Comp) BgRubyDark(scale int) *Comp {
+	c.El.Style(styles.BgRubyDark(scale))
 	return c
 }
 
-func (c *component) BgRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgRubyDarkAlpha(scale))
+func (c *Comp) BgRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgSage(scale int) *component {
-	c.el.Style(styles.BgSage(scale))
+func (c *Comp) BgSage(scale int) *Comp {
+	c.El.Style(styles.BgSage(scale))
 	return c
 }
 
-func (c *component) BgSageAlpha(scale int) *component {
-	c.el.Style(styles.BgSageAlpha(scale))
+func (c *Comp) BgSageAlpha(scale int) *Comp {
+	c.El.Style(styles.BgSageAlpha(scale))
 	return c
 }
 
-func (c *component) BgSageDark(scale int) *component {
-	c.el.Style(styles.BgSageDark(scale))
+func (c *Comp) BgSageDark(scale int) *Comp {
+	c.El.Style(styles.BgSageDark(scale))
 	return c
 }
 
-func (c *component) BgSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgSageDarkAlpha(scale))
+func (c *Comp) BgSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgSand(scale int) *component {
-	c.el.Style(styles.BgSand(scale))
+func (c *Comp) BgSand(scale int) *Comp {
+	c.El.Style(styles.BgSand(scale))
 	return c
 }
 
-func (c *component) BgSandAlpha(scale int) *component {
-	c.el.Style(styles.BgSandAlpha(scale))
+func (c *Comp) BgSandAlpha(scale int) *Comp {
+	c.El.Style(styles.BgSandAlpha(scale))
 	return c
 }
 
-func (c *component) BgSandDark(scale int) *component {
-	c.el.Style(styles.BgSandDark(scale))
+func (c *Comp) BgSandDark(scale int) *Comp {
+	c.El.Style(styles.BgSandDark(scale))
 	return c
 }
 
-func (c *component) BgSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgSandDarkAlpha(scale))
+func (c *Comp) BgSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgScroll() *component {
-	c.el.Style(styles.BgScroll())
+func (c *Comp) BgScroll() *Comp {
+	c.El.Style(styles.BgScroll())
 	return c
 }
 
-func (c *component) BgSize(val value.Value) *component {
-	c.el.Style(styles.BgSize(val))
+func (c *Comp) BgSize(val value.Value) *Comp {
+	c.El.Style(styles.BgSize(val))
 	return c
 }
 
-func (c *component) BgSky(scale int) *component {
-	c.el.Style(styles.BgSky(scale))
+func (c *Comp) BgSky(scale int) *Comp {
+	c.El.Style(styles.BgSky(scale))
 	return c
 }
 
-func (c *component) BgSkyAlpha(scale int) *component {
-	c.el.Style(styles.BgSkyAlpha(scale))
+func (c *Comp) BgSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.BgSkyAlpha(scale))
 	return c
 }
 
-func (c *component) BgSkyDark(scale int) *component {
-	c.el.Style(styles.BgSkyDark(scale))
+func (c *Comp) BgSkyDark(scale int) *Comp {
+	c.El.Style(styles.BgSkyDark(scale))
 	return c
 }
 
-func (c *component) BgSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgSkyDarkAlpha(scale))
+func (c *Comp) BgSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgSlate(scale int) *component {
-	c.el.Style(styles.BgSlate(scale))
+func (c *Comp) BgSlate(scale int) *Comp {
+	c.El.Style(styles.BgSlate(scale))
 	return c
 }
 
-func (c *component) BgSlateAlpha(scale int) *component {
-	c.el.Style(styles.BgSlateAlpha(scale))
+func (c *Comp) BgSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.BgSlateAlpha(scale))
 	return c
 }
 
-func (c *component) BgSlateDark(scale int) *component {
-	c.el.Style(styles.BgSlateDark(scale))
+func (c *Comp) BgSlateDark(scale int) *Comp {
+	c.El.Style(styles.BgSlateDark(scale))
 	return c
 }
 
-func (c *component) BgSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgSlateDarkAlpha(scale))
+func (c *Comp) BgSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgTeal(scale int) *component {
-	c.el.Style(styles.BgTeal(scale))
+func (c *Comp) BgTeal(scale int) *Comp {
+	c.El.Style(styles.BgTeal(scale))
 	return c
 }
 
-func (c *component) BgTealAlpha(scale int) *component {
-	c.el.Style(styles.BgTealAlpha(scale))
+func (c *Comp) BgTealAlpha(scale int) *Comp {
+	c.El.Style(styles.BgTealAlpha(scale))
 	return c
 }
 
-func (c *component) BgTealDark(scale int) *component {
-	c.el.Style(styles.BgTealDark(scale))
+func (c *Comp) BgTealDark(scale int) *Comp {
+	c.El.Style(styles.BgTealDark(scale))
 	return c
 }
 
-func (c *component) BgTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgTealDarkAlpha(scale))
+func (c *Comp) BgTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgTomato(scale int) *component {
-	c.el.Style(styles.BgTomato(scale))
+func (c *Comp) BgTomato(scale int) *Comp {
+	c.El.Style(styles.BgTomato(scale))
 	return c
 }
 
-func (c *component) BgTomatoAlpha(scale int) *component {
-	c.el.Style(styles.BgTomatoAlpha(scale))
+func (c *Comp) BgTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.BgTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) BgTomatoDark(scale int) *component {
-	c.el.Style(styles.BgTomatoDark(scale))
+func (c *Comp) BgTomatoDark(scale int) *Comp {
+	c.El.Style(styles.BgTomatoDark(scale))
 	return c
 }
 
-func (c *component) BgTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgTomatoDarkAlpha(scale))
+func (c *Comp) BgTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgTop() *component {
-	c.el.Style(styles.BgTop())
+func (c *Comp) BgTop() *Comp {
+	c.El.Style(styles.BgTop())
 	return c
 }
 
-func (c *component) BgTopLeft() *component {
-	c.el.Style(styles.BgTopLeft())
+func (c *Comp) BgTopLeft() *Comp {
+	c.El.Style(styles.BgTopLeft())
 	return c
 }
 
-func (c *component) BgTopRight() *component {
-	c.el.Style(styles.BgTopRight())
+func (c *Comp) BgTopRight() *Comp {
+	c.El.Style(styles.BgTopRight())
 	return c
 }
 
-func (c *component) BgTransparent() *component {
-	c.el.Style(styles.BgTransparent())
+func (c *Comp) BgTransparent() *Comp {
+	c.El.Style(styles.BgTransparent())
 	return c
 }
 
-func (c *component) BgViolet(scale int) *component {
-	c.el.Style(styles.BgViolet(scale))
+func (c *Comp) BgViolet(scale int) *Comp {
+	c.El.Style(styles.BgViolet(scale))
 	return c
 }
 
-func (c *component) BgVioletAlpha(scale int) *component {
-	c.el.Style(styles.BgVioletAlpha(scale))
+func (c *Comp) BgVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.BgVioletAlpha(scale))
 	return c
 }
 
-func (c *component) BgVioletDark(scale int) *component {
-	c.el.Style(styles.BgVioletDark(scale))
+func (c *Comp) BgVioletDark(scale int) *Comp {
+	c.El.Style(styles.BgVioletDark(scale))
 	return c
 }
 
-func (c *component) BgVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgVioletDarkAlpha(scale))
+func (c *Comp) BgVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BgWhite() *component {
-	c.el.Style(styles.BgWhite())
+func (c *Comp) BgWhite() *Comp {
+	c.El.Style(styles.BgWhite())
 	return c
 }
 
-func (c *component) BgWhiteAlpha(scale int) *component {
-	c.el.Style(styles.BgWhiteAlpha(scale))
+func (c *Comp) BgWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.BgWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) BgYellow(scale int) *component {
-	c.el.Style(styles.BgYellow(scale))
+func (c *Comp) BgYellow(scale int) *Comp {
+	c.El.Style(styles.BgYellow(scale))
 	return c
 }
 
-func (c *component) BgYellowAlpha(scale int) *component {
-	c.el.Style(styles.BgYellowAlpha(scale))
+func (c *Comp) BgYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.BgYellowAlpha(scale))
 	return c
 }
 
-func (c *component) BgYellowDark(scale int) *component {
-	c.el.Style(styles.BgYellowDark(scale))
+func (c *Comp) BgYellowDark(scale int) *Comp {
+	c.El.Style(styles.BgYellowDark(scale))
 	return c
 }
 
-func (c *component) BgYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.BgYellowDarkAlpha(scale))
+func (c *Comp) BgYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BgYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) Block() *component {
-	c.el.Style(styles.Block())
+func (c *Comp) Block() *Comp {
+	c.El.Style(styles.Block())
 	return c
 }
 
-func (c *component) Blur(val value.Value) *component {
-	c.el.Style(styles.Blur(val))
+func (c *Comp) Blur(val value.Value) *Comp {
+	c.El.Style(styles.Blur(val))
 	return c
 }
 
-func (c *component) Blur2xl() *component {
-	c.el.Style(styles.Blur2xl())
+func (c *Comp) Blur2xl() *Comp {
+	c.El.Style(styles.Blur2xl())
 	return c
 }
 
-func (c *component) Blur3xl() *component {
-	c.el.Style(styles.Blur3xl())
+func (c *Comp) Blur3xl() *Comp {
+	c.El.Style(styles.Blur3xl())
 	return c
 }
 
-func (c *component) BlurLg() *component {
-	c.el.Style(styles.BlurLg())
+func (c *Comp) BlurLg() *Comp {
+	c.El.Style(styles.BlurLg())
 	return c
 }
 
-func (c *component) BlurMd() *component {
-	c.el.Style(styles.BlurMd())
+func (c *Comp) BlurMd() *Comp {
+	c.El.Style(styles.BlurMd())
 	return c
 }
 
-func (c *component) BlurNone() *component {
-	c.el.Style(styles.BlurNone())
+func (c *Comp) BlurNone() *Comp {
+	c.El.Style(styles.BlurNone())
 	return c
 }
 
-func (c *component) BlurSm() *component {
-	c.el.Style(styles.BlurSm())
+func (c *Comp) BlurSm() *Comp {
+	c.El.Style(styles.BlurSm())
 	return c
 }
 
-func (c *component) BlurXl() *component {
-	c.el.Style(styles.BlurXl())
+func (c *Comp) BlurXl() *Comp {
+	c.El.Style(styles.BlurXl())
 	return c
 }
 
-func (c *component) BlurXs() *component {
-	c.el.Style(styles.BlurXs())
+func (c *Comp) BlurXs() *Comp {
+	c.El.Style(styles.BlurXs())
 	return c
 }
 
-func (c *component) Border(val ...value.Value) *component {
-	c.el.Style(styles.Border(val...))
+func (c *Comp) Border(val ...value.Value) *Comp {
+	c.El.Style(styles.Border(val...))
 	return c
 }
 
-func (c *component) BorderAmber(scale int) *component {
-	c.el.Style(styles.BorderAmber(scale))
+func (c *Comp) BorderAmber(scale int) *Comp {
+	c.El.Style(styles.BorderAmber(scale))
 	return c
 }
 
-func (c *component) BorderAmberAlpha(scale int) *component {
-	c.el.Style(styles.BorderAmberAlpha(scale))
+func (c *Comp) BorderAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderAmberAlpha(scale))
 	return c
 }
 
-func (c *component) BorderAmberDark(scale int) *component {
-	c.el.Style(styles.BorderAmberDark(scale))
+func (c *Comp) BorderAmberDark(scale int) *Comp {
+	c.El.Style(styles.BorderAmberDark(scale))
 	return c
 }
 
-func (c *component) BorderAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderAmberDarkAlpha(scale))
+func (c *Comp) BorderAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderB(val ...value.Value) *component {
-	c.el.Style(styles.BorderB(val...))
+func (c *Comp) BorderB(val ...value.Value) *Comp {
+	c.El.Style(styles.BorderB(val...))
 	return c
 }
 
-func (c *component) BorderBlack() *component {
-	c.el.Style(styles.BorderBlack())
+func (c *Comp) BorderBlack() *Comp {
+	c.El.Style(styles.BorderBlack())
 	return c
 }
 
-func (c *component) BorderBlackAlpha(scale int) *component {
-	c.el.Style(styles.BorderBlackAlpha(scale))
+func (c *Comp) BorderBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBlackAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBlue(scale int) *component {
-	c.el.Style(styles.BorderBlue(scale))
+func (c *Comp) BorderBlue(scale int) *Comp {
+	c.El.Style(styles.BorderBlue(scale))
 	return c
 }
 
-func (c *component) BorderBlueAlpha(scale int) *component {
-	c.el.Style(styles.BorderBlueAlpha(scale))
+func (c *Comp) BorderBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBlueAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBlueDark(scale int) *component {
-	c.el.Style(styles.BorderBlueDark(scale))
+func (c *Comp) BorderBlueDark(scale int) *Comp {
+	c.El.Style(styles.BorderBlueDark(scale))
 	return c
 }
 
-func (c *component) BorderBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBlueDarkAlpha(scale))
+func (c *Comp) BorderBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomAmber(scale int) *component {
-	c.el.Style(styles.BorderBottomAmber(scale))
+func (c *Comp) BorderBottomAmber(scale int) *Comp {
+	c.El.Style(styles.BorderBottomAmber(scale))
 	return c
 }
 
-func (c *component) BorderBottomAmberAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomAmberAlpha(scale))
+func (c *Comp) BorderBottomAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomAmberAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomAmberDark(scale int) *component {
-	c.el.Style(styles.BorderBottomAmberDark(scale))
+func (c *Comp) BorderBottomAmberDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomAmberDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomAmberDarkAlpha(scale))
+func (c *Comp) BorderBottomAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomBlack() *component {
-	c.el.Style(styles.BorderBottomBlack())
+func (c *Comp) BorderBottomBlack() *Comp {
+	c.El.Style(styles.BorderBottomBlack())
 	return c
 }
 
-func (c *component) BorderBottomBlackAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomBlackAlpha(scale))
+func (c *Comp) BorderBottomBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBlackAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomBlue(scale int) *component {
-	c.el.Style(styles.BorderBottomBlue(scale))
+func (c *Comp) BorderBottomBlue(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBlue(scale))
 	return c
 }
 
-func (c *component) BorderBottomBlueAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomBlueAlpha(scale))
+func (c *Comp) BorderBottomBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBlueAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomBlueDark(scale int) *component {
-	c.el.Style(styles.BorderBottomBlueDark(scale))
+func (c *Comp) BorderBottomBlueDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBlueDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomBlueDarkAlpha(scale))
+func (c *Comp) BorderBottomBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomBronze(scale int) *component {
-	c.el.Style(styles.BorderBottomBronze(scale))
+func (c *Comp) BorderBottomBronze(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBronze(scale))
 	return c
 }
 
-func (c *component) BorderBottomBronzeAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomBronzeAlpha(scale))
+func (c *Comp) BorderBottomBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomBronzeDark(scale int) *component {
-	c.el.Style(styles.BorderBottomBronzeDark(scale))
+func (c *Comp) BorderBottomBronzeDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBronzeDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomBronzeDarkAlpha(scale))
+func (c *Comp) BorderBottomBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomBrown(scale int) *component {
-	c.el.Style(styles.BorderBottomBrown(scale))
+func (c *Comp) BorderBottomBrown(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBrown(scale))
 	return c
 }
 
-func (c *component) BorderBottomBrownAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomBrownAlpha(scale))
+func (c *Comp) BorderBottomBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBrownAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomBrownDark(scale int) *component {
-	c.el.Style(styles.BorderBottomBrownDark(scale))
+func (c *Comp) BorderBottomBrownDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBrownDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomBrownDarkAlpha(scale))
+func (c *Comp) BorderBottomBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomColor(val value.Value) *component {
-	c.el.Style(styles.BorderBottomColor(val))
+func (c *Comp) BorderBottomColor(val value.Value) *Comp {
+	c.El.Style(styles.BorderBottomColor(val))
 	return c
 }
 
-func (c *component) BorderBottomCrimson(scale int) *component {
-	c.el.Style(styles.BorderBottomCrimson(scale))
+func (c *Comp) BorderBottomCrimson(scale int) *Comp {
+	c.El.Style(styles.BorderBottomCrimson(scale))
 	return c
 }
 
-func (c *component) BorderBottomCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomCrimsonAlpha(scale))
+func (c *Comp) BorderBottomCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomCrimsonDark(scale int) *component {
-	c.el.Style(styles.BorderBottomCrimsonDark(scale))
+func (c *Comp) BorderBottomCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomCrimsonDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomCrimsonDarkAlpha(scale))
+func (c *Comp) BorderBottomCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomCurrent() *component {
-	c.el.Style(styles.BorderBottomCurrent())
+func (c *Comp) BorderBottomCurrent() *Comp {
+	c.El.Style(styles.BorderBottomCurrent())
 	return c
 }
 
-func (c *component) BorderBottomCyan(scale int) *component {
-	c.el.Style(styles.BorderBottomCyan(scale))
+func (c *Comp) BorderBottomCyan(scale int) *Comp {
+	c.El.Style(styles.BorderBottomCyan(scale))
 	return c
 }
 
-func (c *component) BorderBottomCyanAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomCyanAlpha(scale))
+func (c *Comp) BorderBottomCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomCyanAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomCyanDark(scale int) *component {
-	c.el.Style(styles.BorderBottomCyanDark(scale))
+func (c *Comp) BorderBottomCyanDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomCyanDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomCyanDarkAlpha(scale))
+func (c *Comp) BorderBottomCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomGold(scale int) *component {
-	c.el.Style(styles.BorderBottomGold(scale))
+func (c *Comp) BorderBottomGold(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGold(scale))
 	return c
 }
 
-func (c *component) BorderBottomGoldAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomGoldAlpha(scale))
+func (c *Comp) BorderBottomGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGoldAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomGoldDark(scale int) *component {
-	c.el.Style(styles.BorderBottomGoldDark(scale))
+func (c *Comp) BorderBottomGoldDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGoldDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomGoldDarkAlpha(scale))
+func (c *Comp) BorderBottomGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomGrass(scale int) *component {
-	c.el.Style(styles.BorderBottomGrass(scale))
+func (c *Comp) BorderBottomGrass(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGrass(scale))
 	return c
 }
 
-func (c *component) BorderBottomGrassAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomGrassAlpha(scale))
+func (c *Comp) BorderBottomGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGrassAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomGrassDark(scale int) *component {
-	c.el.Style(styles.BorderBottomGrassDark(scale))
+func (c *Comp) BorderBottomGrassDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGrassDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomGrassDarkAlpha(scale))
+func (c *Comp) BorderBottomGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomGray(scale int) *component {
-	c.el.Style(styles.BorderBottomGray(scale))
+func (c *Comp) BorderBottomGray(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGray(scale))
 	return c
 }
 
-func (c *component) BorderBottomGrayAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomGrayAlpha(scale))
+func (c *Comp) BorderBottomGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGrayAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomGrayDark(scale int) *component {
-	c.el.Style(styles.BorderBottomGrayDark(scale))
+func (c *Comp) BorderBottomGrayDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGrayDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomGrayDarkAlpha(scale))
+func (c *Comp) BorderBottomGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomGreen(scale int) *component {
-	c.el.Style(styles.BorderBottomGreen(scale))
+func (c *Comp) BorderBottomGreen(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGreen(scale))
 	return c
 }
 
-func (c *component) BorderBottomGreenAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomGreenAlpha(scale))
+func (c *Comp) BorderBottomGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGreenAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomGreenDark(scale int) *component {
-	c.el.Style(styles.BorderBottomGreenDark(scale))
+func (c *Comp) BorderBottomGreenDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGreenDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomGreenDarkAlpha(scale))
+func (c *Comp) BorderBottomGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomIndigo(scale int) *component {
-	c.el.Style(styles.BorderBottomIndigo(scale))
+func (c *Comp) BorderBottomIndigo(scale int) *Comp {
+	c.El.Style(styles.BorderBottomIndigo(scale))
 	return c
 }
 
-func (c *component) BorderBottomIndigoAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomIndigoAlpha(scale))
+func (c *Comp) BorderBottomIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomIndigoDark(scale int) *component {
-	c.el.Style(styles.BorderBottomIndigoDark(scale))
+func (c *Comp) BorderBottomIndigoDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomIndigoDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomIndigoDarkAlpha(scale))
+func (c *Comp) BorderBottomIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomInherit() *component {
-	c.el.Style(styles.BorderBottomInherit())
+func (c *Comp) BorderBottomInherit() *Comp {
+	c.El.Style(styles.BorderBottomInherit())
 	return c
 }
 
-func (c *component) BorderBottomIris(scale int) *component {
-	c.el.Style(styles.BorderBottomIris(scale))
+func (c *Comp) BorderBottomIris(scale int) *Comp {
+	c.El.Style(styles.BorderBottomIris(scale))
 	return c
 }
 
-func (c *component) BorderBottomIrisAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomIrisAlpha(scale))
+func (c *Comp) BorderBottomIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomIrisAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomIrisDark(scale int) *component {
-	c.el.Style(styles.BorderBottomIrisDark(scale))
+func (c *Comp) BorderBottomIrisDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomIrisDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomIrisDarkAlpha(scale))
+func (c *Comp) BorderBottomIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomJade(scale int) *component {
-	c.el.Style(styles.BorderBottomJade(scale))
+func (c *Comp) BorderBottomJade(scale int) *Comp {
+	c.El.Style(styles.BorderBottomJade(scale))
 	return c
 }
 
-func (c *component) BorderBottomJadeAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomJadeAlpha(scale))
+func (c *Comp) BorderBottomJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomJadeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomJadeDark(scale int) *component {
-	c.el.Style(styles.BorderBottomJadeDark(scale))
+func (c *Comp) BorderBottomJadeDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomJadeDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomJadeDarkAlpha(scale))
+func (c *Comp) BorderBottomJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomLime(scale int) *component {
-	c.el.Style(styles.BorderBottomLime(scale))
+func (c *Comp) BorderBottomLime(scale int) *Comp {
+	c.El.Style(styles.BorderBottomLime(scale))
 	return c
 }
 
-func (c *component) BorderBottomLimeAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomLimeAlpha(scale))
+func (c *Comp) BorderBottomLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomLimeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomLimeDark(scale int) *component {
-	c.el.Style(styles.BorderBottomLimeDark(scale))
+func (c *Comp) BorderBottomLimeDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomLimeDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomLimeDarkAlpha(scale))
+func (c *Comp) BorderBottomLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomMauve(scale int) *component {
-	c.el.Style(styles.BorderBottomMauve(scale))
+func (c *Comp) BorderBottomMauve(scale int) *Comp {
+	c.El.Style(styles.BorderBottomMauve(scale))
 	return c
 }
 
-func (c *component) BorderBottomMauveAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomMauveAlpha(scale))
+func (c *Comp) BorderBottomMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomMauveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomMauveDark(scale int) *component {
-	c.el.Style(styles.BorderBottomMauveDark(scale))
+func (c *Comp) BorderBottomMauveDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomMauveDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomMauveDarkAlpha(scale))
+func (c *Comp) BorderBottomMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomMint(scale int) *component {
-	c.el.Style(styles.BorderBottomMint(scale))
+func (c *Comp) BorderBottomMint(scale int) *Comp {
+	c.El.Style(styles.BorderBottomMint(scale))
 	return c
 }
 
-func (c *component) BorderBottomMintAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomMintAlpha(scale))
+func (c *Comp) BorderBottomMintAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomMintAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomMintDark(scale int) *component {
-	c.el.Style(styles.BorderBottomMintDark(scale))
+func (c *Comp) BorderBottomMintDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomMintDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomMintDarkAlpha(scale))
+func (c *Comp) BorderBottomMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomOlive(scale int) *component {
-	c.el.Style(styles.BorderBottomOlive(scale))
+func (c *Comp) BorderBottomOlive(scale int) *Comp {
+	c.El.Style(styles.BorderBottomOlive(scale))
 	return c
 }
 
-func (c *component) BorderBottomOliveAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomOliveAlpha(scale))
+func (c *Comp) BorderBottomOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomOliveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomOliveDark(scale int) *component {
-	c.el.Style(styles.BorderBottomOliveDark(scale))
+func (c *Comp) BorderBottomOliveDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomOliveDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomOliveDarkAlpha(scale))
+func (c *Comp) BorderBottomOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomOrange(scale int) *component {
-	c.el.Style(styles.BorderBottomOrange(scale))
+func (c *Comp) BorderBottomOrange(scale int) *Comp {
+	c.El.Style(styles.BorderBottomOrange(scale))
 	return c
 }
 
-func (c *component) BorderBottomOrangeAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomOrangeAlpha(scale))
+func (c *Comp) BorderBottomOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomOrangeDark(scale int) *component {
-	c.el.Style(styles.BorderBottomOrangeDark(scale))
+func (c *Comp) BorderBottomOrangeDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomOrangeDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomOrangeDarkAlpha(scale))
+func (c *Comp) BorderBottomOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomPink(scale int) *component {
-	c.el.Style(styles.BorderBottomPink(scale))
+func (c *Comp) BorderBottomPink(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPink(scale))
 	return c
 }
 
-func (c *component) BorderBottomPinkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomPinkAlpha(scale))
+func (c *Comp) BorderBottomPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPinkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomPinkDark(scale int) *component {
-	c.el.Style(styles.BorderBottomPinkDark(scale))
+func (c *Comp) BorderBottomPinkDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPinkDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomPinkDarkAlpha(scale))
+func (c *Comp) BorderBottomPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomPlum(scale int) *component {
-	c.el.Style(styles.BorderBottomPlum(scale))
+func (c *Comp) BorderBottomPlum(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPlum(scale))
 	return c
 }
 
-func (c *component) BorderBottomPlumAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomPlumAlpha(scale))
+func (c *Comp) BorderBottomPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPlumAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomPlumDark(scale int) *component {
-	c.el.Style(styles.BorderBottomPlumDark(scale))
+func (c *Comp) BorderBottomPlumDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPlumDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomPlumDarkAlpha(scale))
+func (c *Comp) BorderBottomPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomPurple(scale int) *component {
-	c.el.Style(styles.BorderBottomPurple(scale))
+func (c *Comp) BorderBottomPurple(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPurple(scale))
 	return c
 }
 
-func (c *component) BorderBottomPurpleAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomPurpleAlpha(scale))
+func (c *Comp) BorderBottomPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomPurpleDark(scale int) *component {
-	c.el.Style(styles.BorderBottomPurpleDark(scale))
+func (c *Comp) BorderBottomPurpleDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPurpleDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomPurpleDarkAlpha(scale))
+func (c *Comp) BorderBottomPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomRed(scale int) *component {
-	c.el.Style(styles.BorderBottomRed(scale))
+func (c *Comp) BorderBottomRed(scale int) *Comp {
+	c.El.Style(styles.BorderBottomRed(scale))
 	return c
 }
 
-func (c *component) BorderBottomRedAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomRedAlpha(scale))
+func (c *Comp) BorderBottomRedAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomRedAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomRedDark(scale int) *component {
-	c.el.Style(styles.BorderBottomRedDark(scale))
+func (c *Comp) BorderBottomRedDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomRedDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomRedDarkAlpha(scale))
+func (c *Comp) BorderBottomRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomRuby(scale int) *component {
-	c.el.Style(styles.BorderBottomRuby(scale))
+func (c *Comp) BorderBottomRuby(scale int) *Comp {
+	c.El.Style(styles.BorderBottomRuby(scale))
 	return c
 }
 
-func (c *component) BorderBottomRubyAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomRubyAlpha(scale))
+func (c *Comp) BorderBottomRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomRubyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomRubyDark(scale int) *component {
-	c.el.Style(styles.BorderBottomRubyDark(scale))
+func (c *Comp) BorderBottomRubyDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomRubyDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomRubyDarkAlpha(scale))
+func (c *Comp) BorderBottomRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomSage(scale int) *component {
-	c.el.Style(styles.BorderBottomSage(scale))
+func (c *Comp) BorderBottomSage(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSage(scale))
 	return c
 }
 
-func (c *component) BorderBottomSageAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomSageAlpha(scale))
+func (c *Comp) BorderBottomSageAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSageAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomSageDark(scale int) *component {
-	c.el.Style(styles.BorderBottomSageDark(scale))
+func (c *Comp) BorderBottomSageDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSageDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomSageDarkAlpha(scale))
+func (c *Comp) BorderBottomSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomSand(scale int) *component {
-	c.el.Style(styles.BorderBottomSand(scale))
+func (c *Comp) BorderBottomSand(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSand(scale))
 	return c
 }
 
-func (c *component) BorderBottomSandAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomSandAlpha(scale))
+func (c *Comp) BorderBottomSandAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSandAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomSandDark(scale int) *component {
-	c.el.Style(styles.BorderBottomSandDark(scale))
+func (c *Comp) BorderBottomSandDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSandDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomSandDarkAlpha(scale))
+func (c *Comp) BorderBottomSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomSky(scale int) *component {
-	c.el.Style(styles.BorderBottomSky(scale))
+func (c *Comp) BorderBottomSky(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSky(scale))
 	return c
 }
 
-func (c *component) BorderBottomSkyAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomSkyAlpha(scale))
+func (c *Comp) BorderBottomSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSkyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomSkyDark(scale int) *component {
-	c.el.Style(styles.BorderBottomSkyDark(scale))
+func (c *Comp) BorderBottomSkyDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSkyDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomSkyDarkAlpha(scale))
+func (c *Comp) BorderBottomSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomSlate(scale int) *component {
-	c.el.Style(styles.BorderBottomSlate(scale))
+func (c *Comp) BorderBottomSlate(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSlate(scale))
 	return c
 }
 
-func (c *component) BorderBottomSlateAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomSlateAlpha(scale))
+func (c *Comp) BorderBottomSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSlateAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomSlateDark(scale int) *component {
-	c.el.Style(styles.BorderBottomSlateDark(scale))
+func (c *Comp) BorderBottomSlateDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSlateDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomSlateDarkAlpha(scale))
+func (c *Comp) BorderBottomSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomTeal(scale int) *component {
-	c.el.Style(styles.BorderBottomTeal(scale))
+func (c *Comp) BorderBottomTeal(scale int) *Comp {
+	c.El.Style(styles.BorderBottomTeal(scale))
 	return c
 }
 
-func (c *component) BorderBottomTealAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomTealAlpha(scale))
+func (c *Comp) BorderBottomTealAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomTealAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomTealDark(scale int) *component {
-	c.el.Style(styles.BorderBottomTealDark(scale))
+func (c *Comp) BorderBottomTealDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomTealDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomTealDarkAlpha(scale))
+func (c *Comp) BorderBottomTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomTomato(scale int) *component {
-	c.el.Style(styles.BorderBottomTomato(scale))
+func (c *Comp) BorderBottomTomato(scale int) *Comp {
+	c.El.Style(styles.BorderBottomTomato(scale))
 	return c
 }
 
-func (c *component) BorderBottomTomatoAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomTomatoAlpha(scale))
+func (c *Comp) BorderBottomTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomTomatoDark(scale int) *component {
-	c.el.Style(styles.BorderBottomTomatoDark(scale))
+func (c *Comp) BorderBottomTomatoDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomTomatoDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomTomatoDarkAlpha(scale))
+func (c *Comp) BorderBottomTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomTransparent() *component {
-	c.el.Style(styles.BorderBottomTransparent())
+func (c *Comp) BorderBottomTransparent() *Comp {
+	c.El.Style(styles.BorderBottomTransparent())
 	return c
 }
 
-func (c *component) BorderBottomViolet(scale int) *component {
-	c.el.Style(styles.BorderBottomViolet(scale))
+func (c *Comp) BorderBottomViolet(scale int) *Comp {
+	c.El.Style(styles.BorderBottomViolet(scale))
 	return c
 }
 
-func (c *component) BorderBottomVioletAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomVioletAlpha(scale))
+func (c *Comp) BorderBottomVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomVioletAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomVioletDark(scale int) *component {
-	c.el.Style(styles.BorderBottomVioletDark(scale))
+func (c *Comp) BorderBottomVioletDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomVioletDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomVioletDarkAlpha(scale))
+func (c *Comp) BorderBottomVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomWhite() *component {
-	c.el.Style(styles.BorderBottomWhite())
+func (c *Comp) BorderBottomWhite() *Comp {
+	c.El.Style(styles.BorderBottomWhite())
 	return c
 }
 
-func (c *component) BorderBottomWhiteAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomWhiteAlpha(scale))
+func (c *Comp) BorderBottomWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomYellow(scale int) *component {
-	c.el.Style(styles.BorderBottomYellow(scale))
+func (c *Comp) BorderBottomYellow(scale int) *Comp {
+	c.El.Style(styles.BorderBottomYellow(scale))
 	return c
 }
 
-func (c *component) BorderBottomYellowAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomYellowAlpha(scale))
+func (c *Comp) BorderBottomYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomYellowAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBottomYellowDark(scale int) *component {
-	c.el.Style(styles.BorderBottomYellowDark(scale))
+func (c *Comp) BorderBottomYellowDark(scale int) *Comp {
+	c.El.Style(styles.BorderBottomYellowDark(scale))
 	return c
 }
 
-func (c *component) BorderBottomYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBottomYellowDarkAlpha(scale))
+func (c *Comp) BorderBottomYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBottomYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBronze(scale int) *component {
-	c.el.Style(styles.BorderBronze(scale))
+func (c *Comp) BorderBronze(scale int) *Comp {
+	c.El.Style(styles.BorderBronze(scale))
 	return c
 }
 
-func (c *component) BorderBronzeAlpha(scale int) *component {
-	c.el.Style(styles.BorderBronzeAlpha(scale))
+func (c *Comp) BorderBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBronzeDark(scale int) *component {
-	c.el.Style(styles.BorderBronzeDark(scale))
+func (c *Comp) BorderBronzeDark(scale int) *Comp {
+	c.El.Style(styles.BorderBronzeDark(scale))
 	return c
 }
 
-func (c *component) BorderBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBronzeDarkAlpha(scale))
+func (c *Comp) BorderBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBrown(scale int) *component {
-	c.el.Style(styles.BorderBrown(scale))
+func (c *Comp) BorderBrown(scale int) *Comp {
+	c.El.Style(styles.BorderBrown(scale))
 	return c
 }
 
-func (c *component) BorderBrownAlpha(scale int) *component {
-	c.el.Style(styles.BorderBrownAlpha(scale))
+func (c *Comp) BorderBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBrownAlpha(scale))
 	return c
 }
 
-func (c *component) BorderBrownDark(scale int) *component {
-	c.el.Style(styles.BorderBrownDark(scale))
+func (c *Comp) BorderBrownDark(scale int) *Comp {
+	c.El.Style(styles.BorderBrownDark(scale))
 	return c
 }
 
-func (c *component) BorderBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderBrownDarkAlpha(scale))
+func (c *Comp) BorderBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderCollapse() *component {
-	c.el.Style(styles.BorderCollapse())
+func (c *Comp) BorderCollapse() *Comp {
+	c.El.Style(styles.BorderCollapse())
 	return c
 }
 
-func (c *component) BorderColor(val value.Value) *component {
-	c.el.Style(styles.BorderColor(val))
+func (c *Comp) BorderColor(val value.Value) *Comp {
+	c.El.Style(styles.BorderColor(val))
 	return c
 }
 
-func (c *component) BorderCrimson(scale int) *component {
-	c.el.Style(styles.BorderCrimson(scale))
+func (c *Comp) BorderCrimson(scale int) *Comp {
+	c.El.Style(styles.BorderCrimson(scale))
 	return c
 }
 
-func (c *component) BorderCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.BorderCrimsonAlpha(scale))
+func (c *Comp) BorderCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) BorderCrimsonDark(scale int) *component {
-	c.el.Style(styles.BorderCrimsonDark(scale))
+func (c *Comp) BorderCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.BorderCrimsonDark(scale))
 	return c
 }
 
-func (c *component) BorderCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderCrimsonDarkAlpha(scale))
+func (c *Comp) BorderCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderCurrent() *component {
-	c.el.Style(styles.BorderCurrent())
+func (c *Comp) BorderCurrent() *Comp {
+	c.El.Style(styles.BorderCurrent())
 	return c
 }
 
-func (c *component) BorderCyan(scale int) *component {
-	c.el.Style(styles.BorderCyan(scale))
+func (c *Comp) BorderCyan(scale int) *Comp {
+	c.El.Style(styles.BorderCyan(scale))
 	return c
 }
 
-func (c *component) BorderCyanAlpha(scale int) *component {
-	c.el.Style(styles.BorderCyanAlpha(scale))
+func (c *Comp) BorderCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderCyanAlpha(scale))
 	return c
 }
 
-func (c *component) BorderCyanDark(scale int) *component {
-	c.el.Style(styles.BorderCyanDark(scale))
+func (c *Comp) BorderCyanDark(scale int) *Comp {
+	c.El.Style(styles.BorderCyanDark(scale))
 	return c
 }
 
-func (c *component) BorderCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderCyanDarkAlpha(scale))
+func (c *Comp) BorderCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderDashed() *component {
-	c.el.Style(styles.BorderDashed())
+func (c *Comp) BorderDashed() *Comp {
+	c.El.Style(styles.BorderDashed())
 	return c
 }
 
-func (c *component) BorderDotted() *component {
-	c.el.Style(styles.BorderDotted())
+func (c *Comp) BorderDotted() *Comp {
+	c.El.Style(styles.BorderDotted())
 	return c
 }
 
-func (c *component) BorderDouble() *component {
-	c.el.Style(styles.BorderDouble())
+func (c *Comp) BorderDouble() *Comp {
+	c.El.Style(styles.BorderDouble())
 	return c
 }
 
-func (c *component) BorderE(val ...value.Value) *component {
-	c.el.Style(styles.BorderE(val...))
+func (c *Comp) BorderE(val ...value.Value) *Comp {
+	c.El.Style(styles.BorderE(val...))
 	return c
 }
 
-func (c *component) BorderEndAmber(scale int) *component {
-	c.el.Style(styles.BorderEndAmber(scale))
+func (c *Comp) BorderEndAmber(scale int) *Comp {
+	c.El.Style(styles.BorderEndAmber(scale))
 	return c
 }
 
-func (c *component) BorderEndAmberAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndAmberAlpha(scale))
+func (c *Comp) BorderEndAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndAmberAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndAmberDark(scale int) *component {
-	c.el.Style(styles.BorderEndAmberDark(scale))
+func (c *Comp) BorderEndAmberDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndAmberDark(scale))
 	return c
 }
 
-func (c *component) BorderEndAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndAmberDarkAlpha(scale))
+func (c *Comp) BorderEndAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndBlack() *component {
-	c.el.Style(styles.BorderEndBlack())
+func (c *Comp) BorderEndBlack() *Comp {
+	c.El.Style(styles.BorderEndBlack())
 	return c
 }
 
-func (c *component) BorderEndBlackAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndBlackAlpha(scale))
+func (c *Comp) BorderEndBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndBlackAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndBlue(scale int) *component {
-	c.el.Style(styles.BorderEndBlue(scale))
+func (c *Comp) BorderEndBlue(scale int) *Comp {
+	c.El.Style(styles.BorderEndBlue(scale))
 	return c
 }
 
-func (c *component) BorderEndBlueAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndBlueAlpha(scale))
+func (c *Comp) BorderEndBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndBlueAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndBlueDark(scale int) *component {
-	c.el.Style(styles.BorderEndBlueDark(scale))
+func (c *Comp) BorderEndBlueDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndBlueDark(scale))
 	return c
 }
 
-func (c *component) BorderEndBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndBlueDarkAlpha(scale))
+func (c *Comp) BorderEndBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndBronze(scale int) *component {
-	c.el.Style(styles.BorderEndBronze(scale))
+func (c *Comp) BorderEndBronze(scale int) *Comp {
+	c.El.Style(styles.BorderEndBronze(scale))
 	return c
 }
 
-func (c *component) BorderEndBronzeAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndBronzeAlpha(scale))
+func (c *Comp) BorderEndBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndBronzeDark(scale int) *component {
-	c.el.Style(styles.BorderEndBronzeDark(scale))
+func (c *Comp) BorderEndBronzeDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndBronzeDark(scale))
 	return c
 }
 
-func (c *component) BorderEndBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndBronzeDarkAlpha(scale))
+func (c *Comp) BorderEndBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndBrown(scale int) *component {
-	c.el.Style(styles.BorderEndBrown(scale))
+func (c *Comp) BorderEndBrown(scale int) *Comp {
+	c.El.Style(styles.BorderEndBrown(scale))
 	return c
 }
 
-func (c *component) BorderEndBrownAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndBrownAlpha(scale))
+func (c *Comp) BorderEndBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndBrownAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndBrownDark(scale int) *component {
-	c.el.Style(styles.BorderEndBrownDark(scale))
+func (c *Comp) BorderEndBrownDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndBrownDark(scale))
 	return c
 }
 
-func (c *component) BorderEndBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndBrownDarkAlpha(scale))
+func (c *Comp) BorderEndBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndColor(val value.Value) *component {
-	c.el.Style(styles.BorderEndColor(val))
+func (c *Comp) BorderEndColor(val value.Value) *Comp {
+	c.El.Style(styles.BorderEndColor(val))
 	return c
 }
 
-func (c *component) BorderEndCrimson(scale int) *component {
-	c.el.Style(styles.BorderEndCrimson(scale))
+func (c *Comp) BorderEndCrimson(scale int) *Comp {
+	c.El.Style(styles.BorderEndCrimson(scale))
 	return c
 }
 
-func (c *component) BorderEndCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndCrimsonAlpha(scale))
+func (c *Comp) BorderEndCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndCrimsonDark(scale int) *component {
-	c.el.Style(styles.BorderEndCrimsonDark(scale))
+func (c *Comp) BorderEndCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndCrimsonDark(scale))
 	return c
 }
 
-func (c *component) BorderEndCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndCrimsonDarkAlpha(scale))
+func (c *Comp) BorderEndCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndCurrent() *component {
-	c.el.Style(styles.BorderEndCurrent())
+func (c *Comp) BorderEndCurrent() *Comp {
+	c.El.Style(styles.BorderEndCurrent())
 	return c
 }
 
-func (c *component) BorderEndCyan(scale int) *component {
-	c.el.Style(styles.BorderEndCyan(scale))
+func (c *Comp) BorderEndCyan(scale int) *Comp {
+	c.El.Style(styles.BorderEndCyan(scale))
 	return c
 }
 
-func (c *component) BorderEndCyanAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndCyanAlpha(scale))
+func (c *Comp) BorderEndCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndCyanAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndCyanDark(scale int) *component {
-	c.el.Style(styles.BorderEndCyanDark(scale))
+func (c *Comp) BorderEndCyanDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndCyanDark(scale))
 	return c
 }
 
-func (c *component) BorderEndCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndCyanDarkAlpha(scale))
+func (c *Comp) BorderEndCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndGold(scale int) *component {
-	c.el.Style(styles.BorderEndGold(scale))
+func (c *Comp) BorderEndGold(scale int) *Comp {
+	c.El.Style(styles.BorderEndGold(scale))
 	return c
 }
 
-func (c *component) BorderEndGoldAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndGoldAlpha(scale))
+func (c *Comp) BorderEndGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndGoldAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndGoldDark(scale int) *component {
-	c.el.Style(styles.BorderEndGoldDark(scale))
+func (c *Comp) BorderEndGoldDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndGoldDark(scale))
 	return c
 }
 
-func (c *component) BorderEndGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndGoldDarkAlpha(scale))
+func (c *Comp) BorderEndGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndGrass(scale int) *component {
-	c.el.Style(styles.BorderEndGrass(scale))
+func (c *Comp) BorderEndGrass(scale int) *Comp {
+	c.El.Style(styles.BorderEndGrass(scale))
 	return c
 }
 
-func (c *component) BorderEndGrassAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndGrassAlpha(scale))
+func (c *Comp) BorderEndGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndGrassAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndGrassDark(scale int) *component {
-	c.el.Style(styles.BorderEndGrassDark(scale))
+func (c *Comp) BorderEndGrassDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndGrassDark(scale))
 	return c
 }
 
-func (c *component) BorderEndGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndGrassDarkAlpha(scale))
+func (c *Comp) BorderEndGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndGray(scale int) *component {
-	c.el.Style(styles.BorderEndGray(scale))
+func (c *Comp) BorderEndGray(scale int) *Comp {
+	c.El.Style(styles.BorderEndGray(scale))
 	return c
 }
 
-func (c *component) BorderEndGrayAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndGrayAlpha(scale))
+func (c *Comp) BorderEndGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndGrayAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndGrayDark(scale int) *component {
-	c.el.Style(styles.BorderEndGrayDark(scale))
+func (c *Comp) BorderEndGrayDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndGrayDark(scale))
 	return c
 }
 
-func (c *component) BorderEndGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndGrayDarkAlpha(scale))
+func (c *Comp) BorderEndGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndGreen(scale int) *component {
-	c.el.Style(styles.BorderEndGreen(scale))
+func (c *Comp) BorderEndGreen(scale int) *Comp {
+	c.El.Style(styles.BorderEndGreen(scale))
 	return c
 }
 
-func (c *component) BorderEndGreenAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndGreenAlpha(scale))
+func (c *Comp) BorderEndGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndGreenAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndGreenDark(scale int) *component {
-	c.el.Style(styles.BorderEndGreenDark(scale))
+func (c *Comp) BorderEndGreenDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndGreenDark(scale))
 	return c
 }
 
-func (c *component) BorderEndGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndGreenDarkAlpha(scale))
+func (c *Comp) BorderEndGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndIndigo(scale int) *component {
-	c.el.Style(styles.BorderEndIndigo(scale))
+func (c *Comp) BorderEndIndigo(scale int) *Comp {
+	c.El.Style(styles.BorderEndIndigo(scale))
 	return c
 }
 
-func (c *component) BorderEndIndigoAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndIndigoAlpha(scale))
+func (c *Comp) BorderEndIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndIndigoDark(scale int) *component {
-	c.el.Style(styles.BorderEndIndigoDark(scale))
+func (c *Comp) BorderEndIndigoDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndIndigoDark(scale))
 	return c
 }
 
-func (c *component) BorderEndIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndIndigoDarkAlpha(scale))
+func (c *Comp) BorderEndIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndInherit() *component {
-	c.el.Style(styles.BorderEndInherit())
+func (c *Comp) BorderEndInherit() *Comp {
+	c.El.Style(styles.BorderEndInherit())
 	return c
 }
 
-func (c *component) BorderEndIris(scale int) *component {
-	c.el.Style(styles.BorderEndIris(scale))
+func (c *Comp) BorderEndIris(scale int) *Comp {
+	c.El.Style(styles.BorderEndIris(scale))
 	return c
 }
 
-func (c *component) BorderEndIrisAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndIrisAlpha(scale))
+func (c *Comp) BorderEndIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndIrisAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndIrisDark(scale int) *component {
-	c.el.Style(styles.BorderEndIrisDark(scale))
+func (c *Comp) BorderEndIrisDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndIrisDark(scale))
 	return c
 }
 
-func (c *component) BorderEndIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndIrisDarkAlpha(scale))
+func (c *Comp) BorderEndIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndJade(scale int) *component {
-	c.el.Style(styles.BorderEndJade(scale))
+func (c *Comp) BorderEndJade(scale int) *Comp {
+	c.El.Style(styles.BorderEndJade(scale))
 	return c
 }
 
-func (c *component) BorderEndJadeAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndJadeAlpha(scale))
+func (c *Comp) BorderEndJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndJadeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndJadeDark(scale int) *component {
-	c.el.Style(styles.BorderEndJadeDark(scale))
+func (c *Comp) BorderEndJadeDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndJadeDark(scale))
 	return c
 }
 
-func (c *component) BorderEndJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndJadeDarkAlpha(scale))
+func (c *Comp) BorderEndJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndLime(scale int) *component {
-	c.el.Style(styles.BorderEndLime(scale))
+func (c *Comp) BorderEndLime(scale int) *Comp {
+	c.El.Style(styles.BorderEndLime(scale))
 	return c
 }
 
-func (c *component) BorderEndLimeAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndLimeAlpha(scale))
+func (c *Comp) BorderEndLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndLimeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndLimeDark(scale int) *component {
-	c.el.Style(styles.BorderEndLimeDark(scale))
+func (c *Comp) BorderEndLimeDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndLimeDark(scale))
 	return c
 }
 
-func (c *component) BorderEndLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndLimeDarkAlpha(scale))
+func (c *Comp) BorderEndLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndMauve(scale int) *component {
-	c.el.Style(styles.BorderEndMauve(scale))
+func (c *Comp) BorderEndMauve(scale int) *Comp {
+	c.El.Style(styles.BorderEndMauve(scale))
 	return c
 }
 
-func (c *component) BorderEndMauveAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndMauveAlpha(scale))
+func (c *Comp) BorderEndMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndMauveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndMauveDark(scale int) *component {
-	c.el.Style(styles.BorderEndMauveDark(scale))
+func (c *Comp) BorderEndMauveDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndMauveDark(scale))
 	return c
 }
 
-func (c *component) BorderEndMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndMauveDarkAlpha(scale))
+func (c *Comp) BorderEndMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndMint(scale int) *component {
-	c.el.Style(styles.BorderEndMint(scale))
+func (c *Comp) BorderEndMint(scale int) *Comp {
+	c.El.Style(styles.BorderEndMint(scale))
 	return c
 }
 
-func (c *component) BorderEndMintAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndMintAlpha(scale))
+func (c *Comp) BorderEndMintAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndMintAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndMintDark(scale int) *component {
-	c.el.Style(styles.BorderEndMintDark(scale))
+func (c *Comp) BorderEndMintDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndMintDark(scale))
 	return c
 }
 
-func (c *component) BorderEndMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndMintDarkAlpha(scale))
+func (c *Comp) BorderEndMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndOlive(scale int) *component {
-	c.el.Style(styles.BorderEndOlive(scale))
+func (c *Comp) BorderEndOlive(scale int) *Comp {
+	c.El.Style(styles.BorderEndOlive(scale))
 	return c
 }
 
-func (c *component) BorderEndOliveAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndOliveAlpha(scale))
+func (c *Comp) BorderEndOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndOliveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndOliveDark(scale int) *component {
-	c.el.Style(styles.BorderEndOliveDark(scale))
+func (c *Comp) BorderEndOliveDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndOliveDark(scale))
 	return c
 }
 
-func (c *component) BorderEndOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndOliveDarkAlpha(scale))
+func (c *Comp) BorderEndOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndOrange(scale int) *component {
-	c.el.Style(styles.BorderEndOrange(scale))
+func (c *Comp) BorderEndOrange(scale int) *Comp {
+	c.El.Style(styles.BorderEndOrange(scale))
 	return c
 }
 
-func (c *component) BorderEndOrangeAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndOrangeAlpha(scale))
+func (c *Comp) BorderEndOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndOrangeDark(scale int) *component {
-	c.el.Style(styles.BorderEndOrangeDark(scale))
+func (c *Comp) BorderEndOrangeDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndOrangeDark(scale))
 	return c
 }
 
-func (c *component) BorderEndOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndOrangeDarkAlpha(scale))
+func (c *Comp) BorderEndOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndPink(scale int) *component {
-	c.el.Style(styles.BorderEndPink(scale))
+func (c *Comp) BorderEndPink(scale int) *Comp {
+	c.El.Style(styles.BorderEndPink(scale))
 	return c
 }
 
-func (c *component) BorderEndPinkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndPinkAlpha(scale))
+func (c *Comp) BorderEndPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndPinkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndPinkDark(scale int) *component {
-	c.el.Style(styles.BorderEndPinkDark(scale))
+func (c *Comp) BorderEndPinkDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndPinkDark(scale))
 	return c
 }
 
-func (c *component) BorderEndPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndPinkDarkAlpha(scale))
+func (c *Comp) BorderEndPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndPlum(scale int) *component {
-	c.el.Style(styles.BorderEndPlum(scale))
+func (c *Comp) BorderEndPlum(scale int) *Comp {
+	c.El.Style(styles.BorderEndPlum(scale))
 	return c
 }
 
-func (c *component) BorderEndPlumAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndPlumAlpha(scale))
+func (c *Comp) BorderEndPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndPlumAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndPlumDark(scale int) *component {
-	c.el.Style(styles.BorderEndPlumDark(scale))
+func (c *Comp) BorderEndPlumDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndPlumDark(scale))
 	return c
 }
 
-func (c *component) BorderEndPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndPlumDarkAlpha(scale))
+func (c *Comp) BorderEndPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndPurple(scale int) *component {
-	c.el.Style(styles.BorderEndPurple(scale))
+func (c *Comp) BorderEndPurple(scale int) *Comp {
+	c.El.Style(styles.BorderEndPurple(scale))
 	return c
 }
 
-func (c *component) BorderEndPurpleAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndPurpleAlpha(scale))
+func (c *Comp) BorderEndPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndPurpleDark(scale int) *component {
-	c.el.Style(styles.BorderEndPurpleDark(scale))
+func (c *Comp) BorderEndPurpleDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndPurpleDark(scale))
 	return c
 }
 
-func (c *component) BorderEndPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndPurpleDarkAlpha(scale))
+func (c *Comp) BorderEndPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndRed(scale int) *component {
-	c.el.Style(styles.BorderEndRed(scale))
+func (c *Comp) BorderEndRed(scale int) *Comp {
+	c.El.Style(styles.BorderEndRed(scale))
 	return c
 }
 
-func (c *component) BorderEndRedAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndRedAlpha(scale))
+func (c *Comp) BorderEndRedAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndRedAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndRedDark(scale int) *component {
-	c.el.Style(styles.BorderEndRedDark(scale))
+func (c *Comp) BorderEndRedDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndRedDark(scale))
 	return c
 }
 
-func (c *component) BorderEndRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndRedDarkAlpha(scale))
+func (c *Comp) BorderEndRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndRuby(scale int) *component {
-	c.el.Style(styles.BorderEndRuby(scale))
+func (c *Comp) BorderEndRuby(scale int) *Comp {
+	c.El.Style(styles.BorderEndRuby(scale))
 	return c
 }
 
-func (c *component) BorderEndRubyAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndRubyAlpha(scale))
+func (c *Comp) BorderEndRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndRubyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndRubyDark(scale int) *component {
-	c.el.Style(styles.BorderEndRubyDark(scale))
+func (c *Comp) BorderEndRubyDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndRubyDark(scale))
 	return c
 }
 
-func (c *component) BorderEndRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndRubyDarkAlpha(scale))
+func (c *Comp) BorderEndRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndSage(scale int) *component {
-	c.el.Style(styles.BorderEndSage(scale))
+func (c *Comp) BorderEndSage(scale int) *Comp {
+	c.El.Style(styles.BorderEndSage(scale))
 	return c
 }
 
-func (c *component) BorderEndSageAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndSageAlpha(scale))
+func (c *Comp) BorderEndSageAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndSageAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndSageDark(scale int) *component {
-	c.el.Style(styles.BorderEndSageDark(scale))
+func (c *Comp) BorderEndSageDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndSageDark(scale))
 	return c
 }
 
-func (c *component) BorderEndSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndSageDarkAlpha(scale))
+func (c *Comp) BorderEndSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndSand(scale int) *component {
-	c.el.Style(styles.BorderEndSand(scale))
+func (c *Comp) BorderEndSand(scale int) *Comp {
+	c.El.Style(styles.BorderEndSand(scale))
 	return c
 }
 
-func (c *component) BorderEndSandAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndSandAlpha(scale))
+func (c *Comp) BorderEndSandAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndSandAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndSandDark(scale int) *component {
-	c.el.Style(styles.BorderEndSandDark(scale))
+func (c *Comp) BorderEndSandDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndSandDark(scale))
 	return c
 }
 
-func (c *component) BorderEndSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndSandDarkAlpha(scale))
+func (c *Comp) BorderEndSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndSky(scale int) *component {
-	c.el.Style(styles.BorderEndSky(scale))
+func (c *Comp) BorderEndSky(scale int) *Comp {
+	c.El.Style(styles.BorderEndSky(scale))
 	return c
 }
 
-func (c *component) BorderEndSkyAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndSkyAlpha(scale))
+func (c *Comp) BorderEndSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndSkyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndSkyDark(scale int) *component {
-	c.el.Style(styles.BorderEndSkyDark(scale))
+func (c *Comp) BorderEndSkyDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndSkyDark(scale))
 	return c
 }
 
-func (c *component) BorderEndSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndSkyDarkAlpha(scale))
+func (c *Comp) BorderEndSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndSlate(scale int) *component {
-	c.el.Style(styles.BorderEndSlate(scale))
+func (c *Comp) BorderEndSlate(scale int) *Comp {
+	c.El.Style(styles.BorderEndSlate(scale))
 	return c
 }
 
-func (c *component) BorderEndSlateAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndSlateAlpha(scale))
+func (c *Comp) BorderEndSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndSlateAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndSlateDark(scale int) *component {
-	c.el.Style(styles.BorderEndSlateDark(scale))
+func (c *Comp) BorderEndSlateDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndSlateDark(scale))
 	return c
 }
 
-func (c *component) BorderEndSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndSlateDarkAlpha(scale))
+func (c *Comp) BorderEndSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndTeal(scale int) *component {
-	c.el.Style(styles.BorderEndTeal(scale))
+func (c *Comp) BorderEndTeal(scale int) *Comp {
+	c.El.Style(styles.BorderEndTeal(scale))
 	return c
 }
 
-func (c *component) BorderEndTealAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndTealAlpha(scale))
+func (c *Comp) BorderEndTealAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndTealAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndTealDark(scale int) *component {
-	c.el.Style(styles.BorderEndTealDark(scale))
+func (c *Comp) BorderEndTealDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndTealDark(scale))
 	return c
 }
 
-func (c *component) BorderEndTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndTealDarkAlpha(scale))
+func (c *Comp) BorderEndTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndTomato(scale int) *component {
-	c.el.Style(styles.BorderEndTomato(scale))
+func (c *Comp) BorderEndTomato(scale int) *Comp {
+	c.El.Style(styles.BorderEndTomato(scale))
 	return c
 }
 
-func (c *component) BorderEndTomatoAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndTomatoAlpha(scale))
+func (c *Comp) BorderEndTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndTomatoDark(scale int) *component {
-	c.el.Style(styles.BorderEndTomatoDark(scale))
+func (c *Comp) BorderEndTomatoDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndTomatoDark(scale))
 	return c
 }
 
-func (c *component) BorderEndTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndTomatoDarkAlpha(scale))
+func (c *Comp) BorderEndTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndTransparent() *component {
-	c.el.Style(styles.BorderEndTransparent())
+func (c *Comp) BorderEndTransparent() *Comp {
+	c.El.Style(styles.BorderEndTransparent())
 	return c
 }
 
-func (c *component) BorderEndViolet(scale int) *component {
-	c.el.Style(styles.BorderEndViolet(scale))
+func (c *Comp) BorderEndViolet(scale int) *Comp {
+	c.El.Style(styles.BorderEndViolet(scale))
 	return c
 }
 
-func (c *component) BorderEndVioletAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndVioletAlpha(scale))
+func (c *Comp) BorderEndVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndVioletAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndVioletDark(scale int) *component {
-	c.el.Style(styles.BorderEndVioletDark(scale))
+func (c *Comp) BorderEndVioletDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndVioletDark(scale))
 	return c
 }
 
-func (c *component) BorderEndVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndVioletDarkAlpha(scale))
+func (c *Comp) BorderEndVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndWhite() *component {
-	c.el.Style(styles.BorderEndWhite())
+func (c *Comp) BorderEndWhite() *Comp {
+	c.El.Style(styles.BorderEndWhite())
 	return c
 }
 
-func (c *component) BorderEndWhiteAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndWhiteAlpha(scale))
+func (c *Comp) BorderEndWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndYellow(scale int) *component {
-	c.el.Style(styles.BorderEndYellow(scale))
+func (c *Comp) BorderEndYellow(scale int) *Comp {
+	c.El.Style(styles.BorderEndYellow(scale))
 	return c
 }
 
-func (c *component) BorderEndYellowAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndYellowAlpha(scale))
+func (c *Comp) BorderEndYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndYellowAlpha(scale))
 	return c
 }
 
-func (c *component) BorderEndYellowDark(scale int) *component {
-	c.el.Style(styles.BorderEndYellowDark(scale))
+func (c *Comp) BorderEndYellowDark(scale int) *Comp {
+	c.El.Style(styles.BorderEndYellowDark(scale))
 	return c
 }
 
-func (c *component) BorderEndYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderEndYellowDarkAlpha(scale))
+func (c *Comp) BorderEndYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderEndYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderGold(scale int) *component {
-	c.el.Style(styles.BorderGold(scale))
+func (c *Comp) BorderGold(scale int) *Comp {
+	c.El.Style(styles.BorderGold(scale))
 	return c
 }
 
-func (c *component) BorderGoldAlpha(scale int) *component {
-	c.el.Style(styles.BorderGoldAlpha(scale))
+func (c *Comp) BorderGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderGoldAlpha(scale))
 	return c
 }
 
-func (c *component) BorderGoldDark(scale int) *component {
-	c.el.Style(styles.BorderGoldDark(scale))
+func (c *Comp) BorderGoldDark(scale int) *Comp {
+	c.El.Style(styles.BorderGoldDark(scale))
 	return c
 }
 
-func (c *component) BorderGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderGoldDarkAlpha(scale))
+func (c *Comp) BorderGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderGrass(scale int) *component {
-	c.el.Style(styles.BorderGrass(scale))
+func (c *Comp) BorderGrass(scale int) *Comp {
+	c.El.Style(styles.BorderGrass(scale))
 	return c
 }
 
-func (c *component) BorderGrassAlpha(scale int) *component {
-	c.el.Style(styles.BorderGrassAlpha(scale))
+func (c *Comp) BorderGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderGrassAlpha(scale))
 	return c
 }
 
-func (c *component) BorderGrassDark(scale int) *component {
-	c.el.Style(styles.BorderGrassDark(scale))
+func (c *Comp) BorderGrassDark(scale int) *Comp {
+	c.El.Style(styles.BorderGrassDark(scale))
 	return c
 }
 
-func (c *component) BorderGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderGrassDarkAlpha(scale))
+func (c *Comp) BorderGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderGray(scale int) *component {
-	c.el.Style(styles.BorderGray(scale))
+func (c *Comp) BorderGray(scale int) *Comp {
+	c.El.Style(styles.BorderGray(scale))
 	return c
 }
 
-func (c *component) BorderGrayAlpha(scale int) *component {
-	c.el.Style(styles.BorderGrayAlpha(scale))
+func (c *Comp) BorderGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderGrayAlpha(scale))
 	return c
 }
 
-func (c *component) BorderGrayDark(scale int) *component {
-	c.el.Style(styles.BorderGrayDark(scale))
+func (c *Comp) BorderGrayDark(scale int) *Comp {
+	c.El.Style(styles.BorderGrayDark(scale))
 	return c
 }
 
-func (c *component) BorderGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderGrayDarkAlpha(scale))
+func (c *Comp) BorderGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderGreen(scale int) *component {
-	c.el.Style(styles.BorderGreen(scale))
+func (c *Comp) BorderGreen(scale int) *Comp {
+	c.El.Style(styles.BorderGreen(scale))
 	return c
 }
 
-func (c *component) BorderGreenAlpha(scale int) *component {
-	c.el.Style(styles.BorderGreenAlpha(scale))
+func (c *Comp) BorderGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderGreenAlpha(scale))
 	return c
 }
 
-func (c *component) BorderGreenDark(scale int) *component {
-	c.el.Style(styles.BorderGreenDark(scale))
+func (c *Comp) BorderGreenDark(scale int) *Comp {
+	c.El.Style(styles.BorderGreenDark(scale))
 	return c
 }
 
-func (c *component) BorderGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderGreenDarkAlpha(scale))
+func (c *Comp) BorderGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderHidden() *component {
-	c.el.Style(styles.BorderHidden())
+func (c *Comp) BorderHidden() *Comp {
+	c.El.Style(styles.BorderHidden())
 	return c
 }
 
-func (c *component) BorderIndigo(scale int) *component {
-	c.el.Style(styles.BorderIndigo(scale))
+func (c *Comp) BorderIndigo(scale int) *Comp {
+	c.El.Style(styles.BorderIndigo(scale))
 	return c
 }
 
-func (c *component) BorderIndigoAlpha(scale int) *component {
-	c.el.Style(styles.BorderIndigoAlpha(scale))
+func (c *Comp) BorderIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderIndigoDark(scale int) *component {
-	c.el.Style(styles.BorderIndigoDark(scale))
+func (c *Comp) BorderIndigoDark(scale int) *Comp {
+	c.El.Style(styles.BorderIndigoDark(scale))
 	return c
 }
 
-func (c *component) BorderIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderIndigoDarkAlpha(scale))
+func (c *Comp) BorderIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderInherit() *component {
-	c.el.Style(styles.BorderInherit())
+func (c *Comp) BorderInherit() *Comp {
+	c.El.Style(styles.BorderInherit())
 	return c
 }
 
-func (c *component) BorderIris(scale int) *component {
-	c.el.Style(styles.BorderIris(scale))
+func (c *Comp) BorderIris(scale int) *Comp {
+	c.El.Style(styles.BorderIris(scale))
 	return c
 }
 
-func (c *component) BorderIrisAlpha(scale int) *component {
-	c.el.Style(styles.BorderIrisAlpha(scale))
+func (c *Comp) BorderIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderIrisAlpha(scale))
 	return c
 }
 
-func (c *component) BorderIrisDark(scale int) *component {
-	c.el.Style(styles.BorderIrisDark(scale))
+func (c *Comp) BorderIrisDark(scale int) *Comp {
+	c.El.Style(styles.BorderIrisDark(scale))
 	return c
 }
 
-func (c *component) BorderIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderIrisDarkAlpha(scale))
+func (c *Comp) BorderIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderJade(scale int) *component {
-	c.el.Style(styles.BorderJade(scale))
+func (c *Comp) BorderJade(scale int) *Comp {
+	c.El.Style(styles.BorderJade(scale))
 	return c
 }
 
-func (c *component) BorderJadeAlpha(scale int) *component {
-	c.el.Style(styles.BorderJadeAlpha(scale))
+func (c *Comp) BorderJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderJadeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderJadeDark(scale int) *component {
-	c.el.Style(styles.BorderJadeDark(scale))
+func (c *Comp) BorderJadeDark(scale int) *Comp {
+	c.El.Style(styles.BorderJadeDark(scale))
 	return c
 }
 
-func (c *component) BorderJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderJadeDarkAlpha(scale))
+func (c *Comp) BorderJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderL(val ...value.Value) *component {
-	c.el.Style(styles.BorderL(val...))
+func (c *Comp) BorderL(val ...value.Value) *Comp {
+	c.El.Style(styles.BorderL(val...))
 	return c
 }
 
-func (c *component) BorderLeftAmber(scale int) *component {
-	c.el.Style(styles.BorderLeftAmber(scale))
+func (c *Comp) BorderLeftAmber(scale int) *Comp {
+	c.El.Style(styles.BorderLeftAmber(scale))
 	return c
 }
 
-func (c *component) BorderLeftAmberAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftAmberAlpha(scale))
+func (c *Comp) BorderLeftAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftAmberAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftAmberDark(scale int) *component {
-	c.el.Style(styles.BorderLeftAmberDark(scale))
+func (c *Comp) BorderLeftAmberDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftAmberDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftAmberDarkAlpha(scale))
+func (c *Comp) BorderLeftAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftBlack() *component {
-	c.el.Style(styles.BorderLeftBlack())
+func (c *Comp) BorderLeftBlack() *Comp {
+	c.El.Style(styles.BorderLeftBlack())
 	return c
 }
 
-func (c *component) BorderLeftBlackAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftBlackAlpha(scale))
+func (c *Comp) BorderLeftBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBlackAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftBlue(scale int) *component {
-	c.el.Style(styles.BorderLeftBlue(scale))
+func (c *Comp) BorderLeftBlue(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBlue(scale))
 	return c
 }
 
-func (c *component) BorderLeftBlueAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftBlueAlpha(scale))
+func (c *Comp) BorderLeftBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBlueAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftBlueDark(scale int) *component {
-	c.el.Style(styles.BorderLeftBlueDark(scale))
+func (c *Comp) BorderLeftBlueDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBlueDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftBlueDarkAlpha(scale))
+func (c *Comp) BorderLeftBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftBronze(scale int) *component {
-	c.el.Style(styles.BorderLeftBronze(scale))
+func (c *Comp) BorderLeftBronze(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBronze(scale))
 	return c
 }
 
-func (c *component) BorderLeftBronzeAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftBronzeAlpha(scale))
+func (c *Comp) BorderLeftBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftBronzeDark(scale int) *component {
-	c.el.Style(styles.BorderLeftBronzeDark(scale))
+func (c *Comp) BorderLeftBronzeDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBronzeDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftBronzeDarkAlpha(scale))
+func (c *Comp) BorderLeftBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftBrown(scale int) *component {
-	c.el.Style(styles.BorderLeftBrown(scale))
+func (c *Comp) BorderLeftBrown(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBrown(scale))
 	return c
 }
 
-func (c *component) BorderLeftBrownAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftBrownAlpha(scale))
+func (c *Comp) BorderLeftBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBrownAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftBrownDark(scale int) *component {
-	c.el.Style(styles.BorderLeftBrownDark(scale))
+func (c *Comp) BorderLeftBrownDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBrownDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftBrownDarkAlpha(scale))
+func (c *Comp) BorderLeftBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftColor(val value.Value) *component {
-	c.el.Style(styles.BorderLeftColor(val))
+func (c *Comp) BorderLeftColor(val value.Value) *Comp {
+	c.El.Style(styles.BorderLeftColor(val))
 	return c
 }
 
-func (c *component) BorderLeftCrimson(scale int) *component {
-	c.el.Style(styles.BorderLeftCrimson(scale))
+func (c *Comp) BorderLeftCrimson(scale int) *Comp {
+	c.El.Style(styles.BorderLeftCrimson(scale))
 	return c
 }
 
-func (c *component) BorderLeftCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftCrimsonAlpha(scale))
+func (c *Comp) BorderLeftCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftCrimsonDark(scale int) *component {
-	c.el.Style(styles.BorderLeftCrimsonDark(scale))
+func (c *Comp) BorderLeftCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftCrimsonDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftCrimsonDarkAlpha(scale))
+func (c *Comp) BorderLeftCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftCurrent() *component {
-	c.el.Style(styles.BorderLeftCurrent())
+func (c *Comp) BorderLeftCurrent() *Comp {
+	c.El.Style(styles.BorderLeftCurrent())
 	return c
 }
 
-func (c *component) BorderLeftCyan(scale int) *component {
-	c.el.Style(styles.BorderLeftCyan(scale))
+func (c *Comp) BorderLeftCyan(scale int) *Comp {
+	c.El.Style(styles.BorderLeftCyan(scale))
 	return c
 }
 
-func (c *component) BorderLeftCyanAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftCyanAlpha(scale))
+func (c *Comp) BorderLeftCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftCyanAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftCyanDark(scale int) *component {
-	c.el.Style(styles.BorderLeftCyanDark(scale))
+func (c *Comp) BorderLeftCyanDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftCyanDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftCyanDarkAlpha(scale))
+func (c *Comp) BorderLeftCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftGold(scale int) *component {
-	c.el.Style(styles.BorderLeftGold(scale))
+func (c *Comp) BorderLeftGold(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGold(scale))
 	return c
 }
 
-func (c *component) BorderLeftGoldAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftGoldAlpha(scale))
+func (c *Comp) BorderLeftGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGoldAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftGoldDark(scale int) *component {
-	c.el.Style(styles.BorderLeftGoldDark(scale))
+func (c *Comp) BorderLeftGoldDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGoldDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftGoldDarkAlpha(scale))
+func (c *Comp) BorderLeftGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftGrass(scale int) *component {
-	c.el.Style(styles.BorderLeftGrass(scale))
+func (c *Comp) BorderLeftGrass(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGrass(scale))
 	return c
 }
 
-func (c *component) BorderLeftGrassAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftGrassAlpha(scale))
+func (c *Comp) BorderLeftGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGrassAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftGrassDark(scale int) *component {
-	c.el.Style(styles.BorderLeftGrassDark(scale))
+func (c *Comp) BorderLeftGrassDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGrassDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftGrassDarkAlpha(scale))
+func (c *Comp) BorderLeftGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftGray(scale int) *component {
-	c.el.Style(styles.BorderLeftGray(scale))
+func (c *Comp) BorderLeftGray(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGray(scale))
 	return c
 }
 
-func (c *component) BorderLeftGrayAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftGrayAlpha(scale))
+func (c *Comp) BorderLeftGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGrayAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftGrayDark(scale int) *component {
-	c.el.Style(styles.BorderLeftGrayDark(scale))
+func (c *Comp) BorderLeftGrayDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGrayDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftGrayDarkAlpha(scale))
+func (c *Comp) BorderLeftGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftGreen(scale int) *component {
-	c.el.Style(styles.BorderLeftGreen(scale))
+func (c *Comp) BorderLeftGreen(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGreen(scale))
 	return c
 }
 
-func (c *component) BorderLeftGreenAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftGreenAlpha(scale))
+func (c *Comp) BorderLeftGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGreenAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftGreenDark(scale int) *component {
-	c.el.Style(styles.BorderLeftGreenDark(scale))
+func (c *Comp) BorderLeftGreenDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGreenDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftGreenDarkAlpha(scale))
+func (c *Comp) BorderLeftGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftIndigo(scale int) *component {
-	c.el.Style(styles.BorderLeftIndigo(scale))
+func (c *Comp) BorderLeftIndigo(scale int) *Comp {
+	c.El.Style(styles.BorderLeftIndigo(scale))
 	return c
 }
 
-func (c *component) BorderLeftIndigoAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftIndigoAlpha(scale))
+func (c *Comp) BorderLeftIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftIndigoDark(scale int) *component {
-	c.el.Style(styles.BorderLeftIndigoDark(scale))
+func (c *Comp) BorderLeftIndigoDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftIndigoDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftIndigoDarkAlpha(scale))
+func (c *Comp) BorderLeftIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftInherit() *component {
-	c.el.Style(styles.BorderLeftInherit())
+func (c *Comp) BorderLeftInherit() *Comp {
+	c.El.Style(styles.BorderLeftInherit())
 	return c
 }
 
-func (c *component) BorderLeftIris(scale int) *component {
-	c.el.Style(styles.BorderLeftIris(scale))
+func (c *Comp) BorderLeftIris(scale int) *Comp {
+	c.El.Style(styles.BorderLeftIris(scale))
 	return c
 }
 
-func (c *component) BorderLeftIrisAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftIrisAlpha(scale))
+func (c *Comp) BorderLeftIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftIrisAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftIrisDark(scale int) *component {
-	c.el.Style(styles.BorderLeftIrisDark(scale))
+func (c *Comp) BorderLeftIrisDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftIrisDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftIrisDarkAlpha(scale))
+func (c *Comp) BorderLeftIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftJade(scale int) *component {
-	c.el.Style(styles.BorderLeftJade(scale))
+func (c *Comp) BorderLeftJade(scale int) *Comp {
+	c.El.Style(styles.BorderLeftJade(scale))
 	return c
 }
 
-func (c *component) BorderLeftJadeAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftJadeAlpha(scale))
+func (c *Comp) BorderLeftJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftJadeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftJadeDark(scale int) *component {
-	c.el.Style(styles.BorderLeftJadeDark(scale))
+func (c *Comp) BorderLeftJadeDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftJadeDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftJadeDarkAlpha(scale))
+func (c *Comp) BorderLeftJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftLime(scale int) *component {
-	c.el.Style(styles.BorderLeftLime(scale))
+func (c *Comp) BorderLeftLime(scale int) *Comp {
+	c.El.Style(styles.BorderLeftLime(scale))
 	return c
 }
 
-func (c *component) BorderLeftLimeAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftLimeAlpha(scale))
+func (c *Comp) BorderLeftLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftLimeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftLimeDark(scale int) *component {
-	c.el.Style(styles.BorderLeftLimeDark(scale))
+func (c *Comp) BorderLeftLimeDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftLimeDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftLimeDarkAlpha(scale))
+func (c *Comp) BorderLeftLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftMauve(scale int) *component {
-	c.el.Style(styles.BorderLeftMauve(scale))
+func (c *Comp) BorderLeftMauve(scale int) *Comp {
+	c.El.Style(styles.BorderLeftMauve(scale))
 	return c
 }
 
-func (c *component) BorderLeftMauveAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftMauveAlpha(scale))
+func (c *Comp) BorderLeftMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftMauveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftMauveDark(scale int) *component {
-	c.el.Style(styles.BorderLeftMauveDark(scale))
+func (c *Comp) BorderLeftMauveDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftMauveDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftMauveDarkAlpha(scale))
+func (c *Comp) BorderLeftMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftMint(scale int) *component {
-	c.el.Style(styles.BorderLeftMint(scale))
+func (c *Comp) BorderLeftMint(scale int) *Comp {
+	c.El.Style(styles.BorderLeftMint(scale))
 	return c
 }
 
-func (c *component) BorderLeftMintAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftMintAlpha(scale))
+func (c *Comp) BorderLeftMintAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftMintAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftMintDark(scale int) *component {
-	c.el.Style(styles.BorderLeftMintDark(scale))
+func (c *Comp) BorderLeftMintDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftMintDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftMintDarkAlpha(scale))
+func (c *Comp) BorderLeftMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftOlive(scale int) *component {
-	c.el.Style(styles.BorderLeftOlive(scale))
+func (c *Comp) BorderLeftOlive(scale int) *Comp {
+	c.El.Style(styles.BorderLeftOlive(scale))
 	return c
 }
 
-func (c *component) BorderLeftOliveAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftOliveAlpha(scale))
+func (c *Comp) BorderLeftOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftOliveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftOliveDark(scale int) *component {
-	c.el.Style(styles.BorderLeftOliveDark(scale))
+func (c *Comp) BorderLeftOliveDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftOliveDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftOliveDarkAlpha(scale))
+func (c *Comp) BorderLeftOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftOrange(scale int) *component {
-	c.el.Style(styles.BorderLeftOrange(scale))
+func (c *Comp) BorderLeftOrange(scale int) *Comp {
+	c.El.Style(styles.BorderLeftOrange(scale))
 	return c
 }
 
-func (c *component) BorderLeftOrangeAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftOrangeAlpha(scale))
+func (c *Comp) BorderLeftOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftOrangeDark(scale int) *component {
-	c.el.Style(styles.BorderLeftOrangeDark(scale))
+func (c *Comp) BorderLeftOrangeDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftOrangeDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftOrangeDarkAlpha(scale))
+func (c *Comp) BorderLeftOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftPink(scale int) *component {
-	c.el.Style(styles.BorderLeftPink(scale))
+func (c *Comp) BorderLeftPink(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPink(scale))
 	return c
 }
 
-func (c *component) BorderLeftPinkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftPinkAlpha(scale))
+func (c *Comp) BorderLeftPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPinkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftPinkDark(scale int) *component {
-	c.el.Style(styles.BorderLeftPinkDark(scale))
+func (c *Comp) BorderLeftPinkDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPinkDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftPinkDarkAlpha(scale))
+func (c *Comp) BorderLeftPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftPlum(scale int) *component {
-	c.el.Style(styles.BorderLeftPlum(scale))
+func (c *Comp) BorderLeftPlum(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPlum(scale))
 	return c
 }
 
-func (c *component) BorderLeftPlumAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftPlumAlpha(scale))
+func (c *Comp) BorderLeftPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPlumAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftPlumDark(scale int) *component {
-	c.el.Style(styles.BorderLeftPlumDark(scale))
+func (c *Comp) BorderLeftPlumDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPlumDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftPlumDarkAlpha(scale))
+func (c *Comp) BorderLeftPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftPurple(scale int) *component {
-	c.el.Style(styles.BorderLeftPurple(scale))
+func (c *Comp) BorderLeftPurple(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPurple(scale))
 	return c
 }
 
-func (c *component) BorderLeftPurpleAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftPurpleAlpha(scale))
+func (c *Comp) BorderLeftPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftPurpleDark(scale int) *component {
-	c.el.Style(styles.BorderLeftPurpleDark(scale))
+func (c *Comp) BorderLeftPurpleDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPurpleDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftPurpleDarkAlpha(scale))
+func (c *Comp) BorderLeftPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftRed(scale int) *component {
-	c.el.Style(styles.BorderLeftRed(scale))
+func (c *Comp) BorderLeftRed(scale int) *Comp {
+	c.El.Style(styles.BorderLeftRed(scale))
 	return c
 }
 
-func (c *component) BorderLeftRedAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftRedAlpha(scale))
+func (c *Comp) BorderLeftRedAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftRedAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftRedDark(scale int) *component {
-	c.el.Style(styles.BorderLeftRedDark(scale))
+func (c *Comp) BorderLeftRedDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftRedDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftRedDarkAlpha(scale))
+func (c *Comp) BorderLeftRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftRuby(scale int) *component {
-	c.el.Style(styles.BorderLeftRuby(scale))
+func (c *Comp) BorderLeftRuby(scale int) *Comp {
+	c.El.Style(styles.BorderLeftRuby(scale))
 	return c
 }
 
-func (c *component) BorderLeftRubyAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftRubyAlpha(scale))
+func (c *Comp) BorderLeftRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftRubyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftRubyDark(scale int) *component {
-	c.el.Style(styles.BorderLeftRubyDark(scale))
+func (c *Comp) BorderLeftRubyDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftRubyDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftRubyDarkAlpha(scale))
+func (c *Comp) BorderLeftRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftSage(scale int) *component {
-	c.el.Style(styles.BorderLeftSage(scale))
+func (c *Comp) BorderLeftSage(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSage(scale))
 	return c
 }
 
-func (c *component) BorderLeftSageAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftSageAlpha(scale))
+func (c *Comp) BorderLeftSageAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSageAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftSageDark(scale int) *component {
-	c.el.Style(styles.BorderLeftSageDark(scale))
+func (c *Comp) BorderLeftSageDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSageDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftSageDarkAlpha(scale))
+func (c *Comp) BorderLeftSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftSand(scale int) *component {
-	c.el.Style(styles.BorderLeftSand(scale))
+func (c *Comp) BorderLeftSand(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSand(scale))
 	return c
 }
 
-func (c *component) BorderLeftSandAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftSandAlpha(scale))
+func (c *Comp) BorderLeftSandAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSandAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftSandDark(scale int) *component {
-	c.el.Style(styles.BorderLeftSandDark(scale))
+func (c *Comp) BorderLeftSandDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSandDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftSandDarkAlpha(scale))
+func (c *Comp) BorderLeftSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftSky(scale int) *component {
-	c.el.Style(styles.BorderLeftSky(scale))
+func (c *Comp) BorderLeftSky(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSky(scale))
 	return c
 }
 
-func (c *component) BorderLeftSkyAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftSkyAlpha(scale))
+func (c *Comp) BorderLeftSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSkyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftSkyDark(scale int) *component {
-	c.el.Style(styles.BorderLeftSkyDark(scale))
+func (c *Comp) BorderLeftSkyDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSkyDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftSkyDarkAlpha(scale))
+func (c *Comp) BorderLeftSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftSlate(scale int) *component {
-	c.el.Style(styles.BorderLeftSlate(scale))
+func (c *Comp) BorderLeftSlate(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSlate(scale))
 	return c
 }
 
-func (c *component) BorderLeftSlateAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftSlateAlpha(scale))
+func (c *Comp) BorderLeftSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSlateAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftSlateDark(scale int) *component {
-	c.el.Style(styles.BorderLeftSlateDark(scale))
+func (c *Comp) BorderLeftSlateDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSlateDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftSlateDarkAlpha(scale))
+func (c *Comp) BorderLeftSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftTeal(scale int) *component {
-	c.el.Style(styles.BorderLeftTeal(scale))
+func (c *Comp) BorderLeftTeal(scale int) *Comp {
+	c.El.Style(styles.BorderLeftTeal(scale))
 	return c
 }
 
-func (c *component) BorderLeftTealAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftTealAlpha(scale))
+func (c *Comp) BorderLeftTealAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftTealAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftTealDark(scale int) *component {
-	c.el.Style(styles.BorderLeftTealDark(scale))
+func (c *Comp) BorderLeftTealDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftTealDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftTealDarkAlpha(scale))
+func (c *Comp) BorderLeftTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftTomato(scale int) *component {
-	c.el.Style(styles.BorderLeftTomato(scale))
+func (c *Comp) BorderLeftTomato(scale int) *Comp {
+	c.El.Style(styles.BorderLeftTomato(scale))
 	return c
 }
 
-func (c *component) BorderLeftTomatoAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftTomatoAlpha(scale))
+func (c *Comp) BorderLeftTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftTomatoDark(scale int) *component {
-	c.el.Style(styles.BorderLeftTomatoDark(scale))
+func (c *Comp) BorderLeftTomatoDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftTomatoDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftTomatoDarkAlpha(scale))
+func (c *Comp) BorderLeftTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftTransparent() *component {
-	c.el.Style(styles.BorderLeftTransparent())
+func (c *Comp) BorderLeftTransparent() *Comp {
+	c.El.Style(styles.BorderLeftTransparent())
 	return c
 }
 
-func (c *component) BorderLeftViolet(scale int) *component {
-	c.el.Style(styles.BorderLeftViolet(scale))
+func (c *Comp) BorderLeftViolet(scale int) *Comp {
+	c.El.Style(styles.BorderLeftViolet(scale))
 	return c
 }
 
-func (c *component) BorderLeftVioletAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftVioletAlpha(scale))
+func (c *Comp) BorderLeftVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftVioletAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftVioletDark(scale int) *component {
-	c.el.Style(styles.BorderLeftVioletDark(scale))
+func (c *Comp) BorderLeftVioletDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftVioletDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftVioletDarkAlpha(scale))
+func (c *Comp) BorderLeftVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftWhite() *component {
-	c.el.Style(styles.BorderLeftWhite())
+func (c *Comp) BorderLeftWhite() *Comp {
+	c.El.Style(styles.BorderLeftWhite())
 	return c
 }
 
-func (c *component) BorderLeftWhiteAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftWhiteAlpha(scale))
+func (c *Comp) BorderLeftWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftYellow(scale int) *component {
-	c.el.Style(styles.BorderLeftYellow(scale))
+func (c *Comp) BorderLeftYellow(scale int) *Comp {
+	c.El.Style(styles.BorderLeftYellow(scale))
 	return c
 }
 
-func (c *component) BorderLeftYellowAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftYellowAlpha(scale))
+func (c *Comp) BorderLeftYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftYellowAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLeftYellowDark(scale int) *component {
-	c.el.Style(styles.BorderLeftYellowDark(scale))
+func (c *Comp) BorderLeftYellowDark(scale int) *Comp {
+	c.El.Style(styles.BorderLeftYellowDark(scale))
 	return c
 }
 
-func (c *component) BorderLeftYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLeftYellowDarkAlpha(scale))
+func (c *Comp) BorderLeftYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLeftYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLime(scale int) *component {
-	c.el.Style(styles.BorderLime(scale))
+func (c *Comp) BorderLime(scale int) *Comp {
+	c.El.Style(styles.BorderLime(scale))
 	return c
 }
 
-func (c *component) BorderLimeAlpha(scale int) *component {
-	c.el.Style(styles.BorderLimeAlpha(scale))
+func (c *Comp) BorderLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLimeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderLimeDark(scale int) *component {
-	c.el.Style(styles.BorderLimeDark(scale))
+func (c *Comp) BorderLimeDark(scale int) *Comp {
+	c.El.Style(styles.BorderLimeDark(scale))
 	return c
 }
 
-func (c *component) BorderLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderLimeDarkAlpha(scale))
+func (c *Comp) BorderLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderMauve(scale int) *component {
-	c.el.Style(styles.BorderMauve(scale))
+func (c *Comp) BorderMauve(scale int) *Comp {
+	c.El.Style(styles.BorderMauve(scale))
 	return c
 }
 
-func (c *component) BorderMauveAlpha(scale int) *component {
-	c.el.Style(styles.BorderMauveAlpha(scale))
+func (c *Comp) BorderMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderMauveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderMauveDark(scale int) *component {
-	c.el.Style(styles.BorderMauveDark(scale))
+func (c *Comp) BorderMauveDark(scale int) *Comp {
+	c.El.Style(styles.BorderMauveDark(scale))
 	return c
 }
 
-func (c *component) BorderMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderMauveDarkAlpha(scale))
+func (c *Comp) BorderMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderMint(scale int) *component {
-	c.el.Style(styles.BorderMint(scale))
+func (c *Comp) BorderMint(scale int) *Comp {
+	c.El.Style(styles.BorderMint(scale))
 	return c
 }
 
-func (c *component) BorderMintAlpha(scale int) *component {
-	c.el.Style(styles.BorderMintAlpha(scale))
+func (c *Comp) BorderMintAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderMintAlpha(scale))
 	return c
 }
 
-func (c *component) BorderMintDark(scale int) *component {
-	c.el.Style(styles.BorderMintDark(scale))
+func (c *Comp) BorderMintDark(scale int) *Comp {
+	c.El.Style(styles.BorderMintDark(scale))
 	return c
 }
 
-func (c *component) BorderMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderMintDarkAlpha(scale))
+func (c *Comp) BorderMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderNone() *component {
-	c.el.Style(styles.BorderNone())
+func (c *Comp) BorderNone() *Comp {
+	c.El.Style(styles.BorderNone())
 	return c
 }
 
-func (c *component) BorderOlive(scale int) *component {
-	c.el.Style(styles.BorderOlive(scale))
+func (c *Comp) BorderOlive(scale int) *Comp {
+	c.El.Style(styles.BorderOlive(scale))
 	return c
 }
 
-func (c *component) BorderOliveAlpha(scale int) *component {
-	c.el.Style(styles.BorderOliveAlpha(scale))
+func (c *Comp) BorderOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderOliveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderOliveDark(scale int) *component {
-	c.el.Style(styles.BorderOliveDark(scale))
+func (c *Comp) BorderOliveDark(scale int) *Comp {
+	c.El.Style(styles.BorderOliveDark(scale))
 	return c
 }
 
-func (c *component) BorderOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderOliveDarkAlpha(scale))
+func (c *Comp) BorderOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderOrange(scale int) *component {
-	c.el.Style(styles.BorderOrange(scale))
+func (c *Comp) BorderOrange(scale int) *Comp {
+	c.El.Style(styles.BorderOrange(scale))
 	return c
 }
 
-func (c *component) BorderOrangeAlpha(scale int) *component {
-	c.el.Style(styles.BorderOrangeAlpha(scale))
+func (c *Comp) BorderOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderOrangeDark(scale int) *component {
-	c.el.Style(styles.BorderOrangeDark(scale))
+func (c *Comp) BorderOrangeDark(scale int) *Comp {
+	c.El.Style(styles.BorderOrangeDark(scale))
 	return c
 }
 
-func (c *component) BorderOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderOrangeDarkAlpha(scale))
+func (c *Comp) BorderOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderPink(scale int) *component {
-	c.el.Style(styles.BorderPink(scale))
+func (c *Comp) BorderPink(scale int) *Comp {
+	c.El.Style(styles.BorderPink(scale))
 	return c
 }
 
-func (c *component) BorderPinkAlpha(scale int) *component {
-	c.el.Style(styles.BorderPinkAlpha(scale))
+func (c *Comp) BorderPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderPinkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderPinkDark(scale int) *component {
-	c.el.Style(styles.BorderPinkDark(scale))
+func (c *Comp) BorderPinkDark(scale int) *Comp {
+	c.El.Style(styles.BorderPinkDark(scale))
 	return c
 }
 
-func (c *component) BorderPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderPinkDarkAlpha(scale))
+func (c *Comp) BorderPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderPlum(scale int) *component {
-	c.el.Style(styles.BorderPlum(scale))
+func (c *Comp) BorderPlum(scale int) *Comp {
+	c.El.Style(styles.BorderPlum(scale))
 	return c
 }
 
-func (c *component) BorderPlumAlpha(scale int) *component {
-	c.el.Style(styles.BorderPlumAlpha(scale))
+func (c *Comp) BorderPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderPlumAlpha(scale))
 	return c
 }
 
-func (c *component) BorderPlumDark(scale int) *component {
-	c.el.Style(styles.BorderPlumDark(scale))
+func (c *Comp) BorderPlumDark(scale int) *Comp {
+	c.El.Style(styles.BorderPlumDark(scale))
 	return c
 }
 
-func (c *component) BorderPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderPlumDarkAlpha(scale))
+func (c *Comp) BorderPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderPurple(scale int) *component {
-	c.el.Style(styles.BorderPurple(scale))
+func (c *Comp) BorderPurple(scale int) *Comp {
+	c.El.Style(styles.BorderPurple(scale))
 	return c
 }
 
-func (c *component) BorderPurpleAlpha(scale int) *component {
-	c.el.Style(styles.BorderPurpleAlpha(scale))
+func (c *Comp) BorderPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) BorderPurpleDark(scale int) *component {
-	c.el.Style(styles.BorderPurpleDark(scale))
+func (c *Comp) BorderPurpleDark(scale int) *Comp {
+	c.El.Style(styles.BorderPurpleDark(scale))
 	return c
 }
 
-func (c *component) BorderPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderPurpleDarkAlpha(scale))
+func (c *Comp) BorderPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderR(val ...value.Value) *component {
-	c.el.Style(styles.BorderR(val...))
+func (c *Comp) BorderR(val ...value.Value) *Comp {
+	c.El.Style(styles.BorderR(val...))
 	return c
 }
 
-func (c *component) BorderRed(scale int) *component {
-	c.el.Style(styles.BorderRed(scale))
+func (c *Comp) BorderRed(scale int) *Comp {
+	c.El.Style(styles.BorderRed(scale))
 	return c
 }
 
-func (c *component) BorderRedAlpha(scale int) *component {
-	c.el.Style(styles.BorderRedAlpha(scale))
+func (c *Comp) BorderRedAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRedAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRedDark(scale int) *component {
-	c.el.Style(styles.BorderRedDark(scale))
+func (c *Comp) BorderRedDark(scale int) *Comp {
+	c.El.Style(styles.BorderRedDark(scale))
 	return c
 }
 
-func (c *component) BorderRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRedDarkAlpha(scale))
+func (c *Comp) BorderRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightAmber(scale int) *component {
-	c.el.Style(styles.BorderRightAmber(scale))
+func (c *Comp) BorderRightAmber(scale int) *Comp {
+	c.El.Style(styles.BorderRightAmber(scale))
 	return c
 }
 
-func (c *component) BorderRightAmberAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightAmberAlpha(scale))
+func (c *Comp) BorderRightAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightAmberAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightAmberDark(scale int) *component {
-	c.el.Style(styles.BorderRightAmberDark(scale))
+func (c *Comp) BorderRightAmberDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightAmberDark(scale))
 	return c
 }
 
-func (c *component) BorderRightAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightAmberDarkAlpha(scale))
+func (c *Comp) BorderRightAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightBlack() *component {
-	c.el.Style(styles.BorderRightBlack())
+func (c *Comp) BorderRightBlack() *Comp {
+	c.El.Style(styles.BorderRightBlack())
 	return c
 }
 
-func (c *component) BorderRightBlackAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightBlackAlpha(scale))
+func (c *Comp) BorderRightBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightBlackAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightBlue(scale int) *component {
-	c.el.Style(styles.BorderRightBlue(scale))
+func (c *Comp) BorderRightBlue(scale int) *Comp {
+	c.El.Style(styles.BorderRightBlue(scale))
 	return c
 }
 
-func (c *component) BorderRightBlueAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightBlueAlpha(scale))
+func (c *Comp) BorderRightBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightBlueAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightBlueDark(scale int) *component {
-	c.el.Style(styles.BorderRightBlueDark(scale))
+func (c *Comp) BorderRightBlueDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightBlueDark(scale))
 	return c
 }
 
-func (c *component) BorderRightBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightBlueDarkAlpha(scale))
+func (c *Comp) BorderRightBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightBronze(scale int) *component {
-	c.el.Style(styles.BorderRightBronze(scale))
+func (c *Comp) BorderRightBronze(scale int) *Comp {
+	c.El.Style(styles.BorderRightBronze(scale))
 	return c
 }
 
-func (c *component) BorderRightBronzeAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightBronzeAlpha(scale))
+func (c *Comp) BorderRightBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightBronzeDark(scale int) *component {
-	c.el.Style(styles.BorderRightBronzeDark(scale))
+func (c *Comp) BorderRightBronzeDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightBronzeDark(scale))
 	return c
 }
 
-func (c *component) BorderRightBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightBronzeDarkAlpha(scale))
+func (c *Comp) BorderRightBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightBrown(scale int) *component {
-	c.el.Style(styles.BorderRightBrown(scale))
+func (c *Comp) BorderRightBrown(scale int) *Comp {
+	c.El.Style(styles.BorderRightBrown(scale))
 	return c
 }
 
-func (c *component) BorderRightBrownAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightBrownAlpha(scale))
+func (c *Comp) BorderRightBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightBrownAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightBrownDark(scale int) *component {
-	c.el.Style(styles.BorderRightBrownDark(scale))
+func (c *Comp) BorderRightBrownDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightBrownDark(scale))
 	return c
 }
 
-func (c *component) BorderRightBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightBrownDarkAlpha(scale))
+func (c *Comp) BorderRightBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightColor(val value.Value) *component {
-	c.el.Style(styles.BorderRightColor(val))
+func (c *Comp) BorderRightColor(val value.Value) *Comp {
+	c.El.Style(styles.BorderRightColor(val))
 	return c
 }
 
-func (c *component) BorderRightCrimson(scale int) *component {
-	c.el.Style(styles.BorderRightCrimson(scale))
+func (c *Comp) BorderRightCrimson(scale int) *Comp {
+	c.El.Style(styles.BorderRightCrimson(scale))
 	return c
 }
 
-func (c *component) BorderRightCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightCrimsonAlpha(scale))
+func (c *Comp) BorderRightCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightCrimsonDark(scale int) *component {
-	c.el.Style(styles.BorderRightCrimsonDark(scale))
+func (c *Comp) BorderRightCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightCrimsonDark(scale))
 	return c
 }
 
-func (c *component) BorderRightCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightCrimsonDarkAlpha(scale))
+func (c *Comp) BorderRightCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightCurrent() *component {
-	c.el.Style(styles.BorderRightCurrent())
+func (c *Comp) BorderRightCurrent() *Comp {
+	c.El.Style(styles.BorderRightCurrent())
 	return c
 }
 
-func (c *component) BorderRightCyan(scale int) *component {
-	c.el.Style(styles.BorderRightCyan(scale))
+func (c *Comp) BorderRightCyan(scale int) *Comp {
+	c.El.Style(styles.BorderRightCyan(scale))
 	return c
 }
 
-func (c *component) BorderRightCyanAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightCyanAlpha(scale))
+func (c *Comp) BorderRightCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightCyanAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightCyanDark(scale int) *component {
-	c.el.Style(styles.BorderRightCyanDark(scale))
+func (c *Comp) BorderRightCyanDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightCyanDark(scale))
 	return c
 }
 
-func (c *component) BorderRightCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightCyanDarkAlpha(scale))
+func (c *Comp) BorderRightCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightGold(scale int) *component {
-	c.el.Style(styles.BorderRightGold(scale))
+func (c *Comp) BorderRightGold(scale int) *Comp {
+	c.El.Style(styles.BorderRightGold(scale))
 	return c
 }
 
-func (c *component) BorderRightGoldAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightGoldAlpha(scale))
+func (c *Comp) BorderRightGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightGoldAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightGoldDark(scale int) *component {
-	c.el.Style(styles.BorderRightGoldDark(scale))
+func (c *Comp) BorderRightGoldDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightGoldDark(scale))
 	return c
 }
 
-func (c *component) BorderRightGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightGoldDarkAlpha(scale))
+func (c *Comp) BorderRightGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightGrass(scale int) *component {
-	c.el.Style(styles.BorderRightGrass(scale))
+func (c *Comp) BorderRightGrass(scale int) *Comp {
+	c.El.Style(styles.BorderRightGrass(scale))
 	return c
 }
 
-func (c *component) BorderRightGrassAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightGrassAlpha(scale))
+func (c *Comp) BorderRightGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightGrassAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightGrassDark(scale int) *component {
-	c.el.Style(styles.BorderRightGrassDark(scale))
+func (c *Comp) BorderRightGrassDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightGrassDark(scale))
 	return c
 }
 
-func (c *component) BorderRightGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightGrassDarkAlpha(scale))
+func (c *Comp) BorderRightGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightGray(scale int) *component {
-	c.el.Style(styles.BorderRightGray(scale))
+func (c *Comp) BorderRightGray(scale int) *Comp {
+	c.El.Style(styles.BorderRightGray(scale))
 	return c
 }
 
-func (c *component) BorderRightGrayAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightGrayAlpha(scale))
+func (c *Comp) BorderRightGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightGrayAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightGrayDark(scale int) *component {
-	c.el.Style(styles.BorderRightGrayDark(scale))
+func (c *Comp) BorderRightGrayDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightGrayDark(scale))
 	return c
 }
 
-func (c *component) BorderRightGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightGrayDarkAlpha(scale))
+func (c *Comp) BorderRightGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightGreen(scale int) *component {
-	c.el.Style(styles.BorderRightGreen(scale))
+func (c *Comp) BorderRightGreen(scale int) *Comp {
+	c.El.Style(styles.BorderRightGreen(scale))
 	return c
 }
 
-func (c *component) BorderRightGreenAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightGreenAlpha(scale))
+func (c *Comp) BorderRightGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightGreenAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightGreenDark(scale int) *component {
-	c.el.Style(styles.BorderRightGreenDark(scale))
+func (c *Comp) BorderRightGreenDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightGreenDark(scale))
 	return c
 }
 
-func (c *component) BorderRightGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightGreenDarkAlpha(scale))
+func (c *Comp) BorderRightGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightIndigo(scale int) *component {
-	c.el.Style(styles.BorderRightIndigo(scale))
+func (c *Comp) BorderRightIndigo(scale int) *Comp {
+	c.El.Style(styles.BorderRightIndigo(scale))
 	return c
 }
 
-func (c *component) BorderRightIndigoAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightIndigoAlpha(scale))
+func (c *Comp) BorderRightIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightIndigoDark(scale int) *component {
-	c.el.Style(styles.BorderRightIndigoDark(scale))
+func (c *Comp) BorderRightIndigoDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightIndigoDark(scale))
 	return c
 }
 
-func (c *component) BorderRightIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightIndigoDarkAlpha(scale))
+func (c *Comp) BorderRightIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightInherit() *component {
-	c.el.Style(styles.BorderRightInherit())
+func (c *Comp) BorderRightInherit() *Comp {
+	c.El.Style(styles.BorderRightInherit())
 	return c
 }
 
-func (c *component) BorderRightIris(scale int) *component {
-	c.el.Style(styles.BorderRightIris(scale))
+func (c *Comp) BorderRightIris(scale int) *Comp {
+	c.El.Style(styles.BorderRightIris(scale))
 	return c
 }
 
-func (c *component) BorderRightIrisAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightIrisAlpha(scale))
+func (c *Comp) BorderRightIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightIrisAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightIrisDark(scale int) *component {
-	c.el.Style(styles.BorderRightIrisDark(scale))
+func (c *Comp) BorderRightIrisDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightIrisDark(scale))
 	return c
 }
 
-func (c *component) BorderRightIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightIrisDarkAlpha(scale))
+func (c *Comp) BorderRightIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightJade(scale int) *component {
-	c.el.Style(styles.BorderRightJade(scale))
+func (c *Comp) BorderRightJade(scale int) *Comp {
+	c.El.Style(styles.BorderRightJade(scale))
 	return c
 }
 
-func (c *component) BorderRightJadeAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightJadeAlpha(scale))
+func (c *Comp) BorderRightJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightJadeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightJadeDark(scale int) *component {
-	c.el.Style(styles.BorderRightJadeDark(scale))
+func (c *Comp) BorderRightJadeDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightJadeDark(scale))
 	return c
 }
 
-func (c *component) BorderRightJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightJadeDarkAlpha(scale))
+func (c *Comp) BorderRightJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightLime(scale int) *component {
-	c.el.Style(styles.BorderRightLime(scale))
+func (c *Comp) BorderRightLime(scale int) *Comp {
+	c.El.Style(styles.BorderRightLime(scale))
 	return c
 }
 
-func (c *component) BorderRightLimeAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightLimeAlpha(scale))
+func (c *Comp) BorderRightLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightLimeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightLimeDark(scale int) *component {
-	c.el.Style(styles.BorderRightLimeDark(scale))
+func (c *Comp) BorderRightLimeDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightLimeDark(scale))
 	return c
 }
 
-func (c *component) BorderRightLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightLimeDarkAlpha(scale))
+func (c *Comp) BorderRightLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightMauve(scale int) *component {
-	c.el.Style(styles.BorderRightMauve(scale))
+func (c *Comp) BorderRightMauve(scale int) *Comp {
+	c.El.Style(styles.BorderRightMauve(scale))
 	return c
 }
 
-func (c *component) BorderRightMauveAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightMauveAlpha(scale))
+func (c *Comp) BorderRightMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightMauveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightMauveDark(scale int) *component {
-	c.el.Style(styles.BorderRightMauveDark(scale))
+func (c *Comp) BorderRightMauveDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightMauveDark(scale))
 	return c
 }
 
-func (c *component) BorderRightMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightMauveDarkAlpha(scale))
+func (c *Comp) BorderRightMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightMint(scale int) *component {
-	c.el.Style(styles.BorderRightMint(scale))
+func (c *Comp) BorderRightMint(scale int) *Comp {
+	c.El.Style(styles.BorderRightMint(scale))
 	return c
 }
 
-func (c *component) BorderRightMintAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightMintAlpha(scale))
+func (c *Comp) BorderRightMintAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightMintAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightMintDark(scale int) *component {
-	c.el.Style(styles.BorderRightMintDark(scale))
+func (c *Comp) BorderRightMintDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightMintDark(scale))
 	return c
 }
 
-func (c *component) BorderRightMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightMintDarkAlpha(scale))
+func (c *Comp) BorderRightMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightOlive(scale int) *component {
-	c.el.Style(styles.BorderRightOlive(scale))
+func (c *Comp) BorderRightOlive(scale int) *Comp {
+	c.El.Style(styles.BorderRightOlive(scale))
 	return c
 }
 
-func (c *component) BorderRightOliveAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightOliveAlpha(scale))
+func (c *Comp) BorderRightOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightOliveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightOliveDark(scale int) *component {
-	c.el.Style(styles.BorderRightOliveDark(scale))
+func (c *Comp) BorderRightOliveDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightOliveDark(scale))
 	return c
 }
 
-func (c *component) BorderRightOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightOliveDarkAlpha(scale))
+func (c *Comp) BorderRightOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightOrange(scale int) *component {
-	c.el.Style(styles.BorderRightOrange(scale))
+func (c *Comp) BorderRightOrange(scale int) *Comp {
+	c.El.Style(styles.BorderRightOrange(scale))
 	return c
 }
 
-func (c *component) BorderRightOrangeAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightOrangeAlpha(scale))
+func (c *Comp) BorderRightOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightOrangeDark(scale int) *component {
-	c.el.Style(styles.BorderRightOrangeDark(scale))
+func (c *Comp) BorderRightOrangeDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightOrangeDark(scale))
 	return c
 }
 
-func (c *component) BorderRightOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightOrangeDarkAlpha(scale))
+func (c *Comp) BorderRightOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightPink(scale int) *component {
-	c.el.Style(styles.BorderRightPink(scale))
+func (c *Comp) BorderRightPink(scale int) *Comp {
+	c.El.Style(styles.BorderRightPink(scale))
 	return c
 }
 
-func (c *component) BorderRightPinkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightPinkAlpha(scale))
+func (c *Comp) BorderRightPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightPinkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightPinkDark(scale int) *component {
-	c.el.Style(styles.BorderRightPinkDark(scale))
+func (c *Comp) BorderRightPinkDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightPinkDark(scale))
 	return c
 }
 
-func (c *component) BorderRightPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightPinkDarkAlpha(scale))
+func (c *Comp) BorderRightPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightPlum(scale int) *component {
-	c.el.Style(styles.BorderRightPlum(scale))
+func (c *Comp) BorderRightPlum(scale int) *Comp {
+	c.El.Style(styles.BorderRightPlum(scale))
 	return c
 }
 
-func (c *component) BorderRightPlumAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightPlumAlpha(scale))
+func (c *Comp) BorderRightPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightPlumAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightPlumDark(scale int) *component {
-	c.el.Style(styles.BorderRightPlumDark(scale))
+func (c *Comp) BorderRightPlumDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightPlumDark(scale))
 	return c
 }
 
-func (c *component) BorderRightPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightPlumDarkAlpha(scale))
+func (c *Comp) BorderRightPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightPurple(scale int) *component {
-	c.el.Style(styles.BorderRightPurple(scale))
+func (c *Comp) BorderRightPurple(scale int) *Comp {
+	c.El.Style(styles.BorderRightPurple(scale))
 	return c
 }
 
-func (c *component) BorderRightPurpleAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightPurpleAlpha(scale))
+func (c *Comp) BorderRightPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightPurpleDark(scale int) *component {
-	c.el.Style(styles.BorderRightPurpleDark(scale))
+func (c *Comp) BorderRightPurpleDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightPurpleDark(scale))
 	return c
 }
 
-func (c *component) BorderRightPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightPurpleDarkAlpha(scale))
+func (c *Comp) BorderRightPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightRed(scale int) *component {
-	c.el.Style(styles.BorderRightRed(scale))
+func (c *Comp) BorderRightRed(scale int) *Comp {
+	c.El.Style(styles.BorderRightRed(scale))
 	return c
 }
 
-func (c *component) BorderRightRedAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightRedAlpha(scale))
+func (c *Comp) BorderRightRedAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightRedAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightRedDark(scale int) *component {
-	c.el.Style(styles.BorderRightRedDark(scale))
+func (c *Comp) BorderRightRedDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightRedDark(scale))
 	return c
 }
 
-func (c *component) BorderRightRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightRedDarkAlpha(scale))
+func (c *Comp) BorderRightRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightRuby(scale int) *component {
-	c.el.Style(styles.BorderRightRuby(scale))
+func (c *Comp) BorderRightRuby(scale int) *Comp {
+	c.El.Style(styles.BorderRightRuby(scale))
 	return c
 }
 
-func (c *component) BorderRightRubyAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightRubyAlpha(scale))
+func (c *Comp) BorderRightRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightRubyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightRubyDark(scale int) *component {
-	c.el.Style(styles.BorderRightRubyDark(scale))
+func (c *Comp) BorderRightRubyDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightRubyDark(scale))
 	return c
 }
 
-func (c *component) BorderRightRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightRubyDarkAlpha(scale))
+func (c *Comp) BorderRightRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightSage(scale int) *component {
-	c.el.Style(styles.BorderRightSage(scale))
+func (c *Comp) BorderRightSage(scale int) *Comp {
+	c.El.Style(styles.BorderRightSage(scale))
 	return c
 }
 
-func (c *component) BorderRightSageAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightSageAlpha(scale))
+func (c *Comp) BorderRightSageAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightSageAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightSageDark(scale int) *component {
-	c.el.Style(styles.BorderRightSageDark(scale))
+func (c *Comp) BorderRightSageDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightSageDark(scale))
 	return c
 }
 
-func (c *component) BorderRightSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightSageDarkAlpha(scale))
+func (c *Comp) BorderRightSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightSand(scale int) *component {
-	c.el.Style(styles.BorderRightSand(scale))
+func (c *Comp) BorderRightSand(scale int) *Comp {
+	c.El.Style(styles.BorderRightSand(scale))
 	return c
 }
 
-func (c *component) BorderRightSandAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightSandAlpha(scale))
+func (c *Comp) BorderRightSandAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightSandAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightSandDark(scale int) *component {
-	c.el.Style(styles.BorderRightSandDark(scale))
+func (c *Comp) BorderRightSandDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightSandDark(scale))
 	return c
 }
 
-func (c *component) BorderRightSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightSandDarkAlpha(scale))
+func (c *Comp) BorderRightSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightSky(scale int) *component {
-	c.el.Style(styles.BorderRightSky(scale))
+func (c *Comp) BorderRightSky(scale int) *Comp {
+	c.El.Style(styles.BorderRightSky(scale))
 	return c
 }
 
-func (c *component) BorderRightSkyAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightSkyAlpha(scale))
+func (c *Comp) BorderRightSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightSkyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightSkyDark(scale int) *component {
-	c.el.Style(styles.BorderRightSkyDark(scale))
+func (c *Comp) BorderRightSkyDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightSkyDark(scale))
 	return c
 }
 
-func (c *component) BorderRightSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightSkyDarkAlpha(scale))
+func (c *Comp) BorderRightSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightSlate(scale int) *component {
-	c.el.Style(styles.BorderRightSlate(scale))
+func (c *Comp) BorderRightSlate(scale int) *Comp {
+	c.El.Style(styles.BorderRightSlate(scale))
 	return c
 }
 
-func (c *component) BorderRightSlateAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightSlateAlpha(scale))
+func (c *Comp) BorderRightSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightSlateAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightSlateDark(scale int) *component {
-	c.el.Style(styles.BorderRightSlateDark(scale))
+func (c *Comp) BorderRightSlateDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightSlateDark(scale))
 	return c
 }
 
-func (c *component) BorderRightSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightSlateDarkAlpha(scale))
+func (c *Comp) BorderRightSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightTeal(scale int) *component {
-	c.el.Style(styles.BorderRightTeal(scale))
+func (c *Comp) BorderRightTeal(scale int) *Comp {
+	c.El.Style(styles.BorderRightTeal(scale))
 	return c
 }
 
-func (c *component) BorderRightTealAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightTealAlpha(scale))
+func (c *Comp) BorderRightTealAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightTealAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightTealDark(scale int) *component {
-	c.el.Style(styles.BorderRightTealDark(scale))
+func (c *Comp) BorderRightTealDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightTealDark(scale))
 	return c
 }
 
-func (c *component) BorderRightTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightTealDarkAlpha(scale))
+func (c *Comp) BorderRightTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightTomato(scale int) *component {
-	c.el.Style(styles.BorderRightTomato(scale))
+func (c *Comp) BorderRightTomato(scale int) *Comp {
+	c.El.Style(styles.BorderRightTomato(scale))
 	return c
 }
 
-func (c *component) BorderRightTomatoAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightTomatoAlpha(scale))
+func (c *Comp) BorderRightTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightTomatoDark(scale int) *component {
-	c.el.Style(styles.BorderRightTomatoDark(scale))
+func (c *Comp) BorderRightTomatoDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightTomatoDark(scale))
 	return c
 }
 
-func (c *component) BorderRightTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightTomatoDarkAlpha(scale))
+func (c *Comp) BorderRightTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightTransparent() *component {
-	c.el.Style(styles.BorderRightTransparent())
+func (c *Comp) BorderRightTransparent() *Comp {
+	c.El.Style(styles.BorderRightTransparent())
 	return c
 }
 
-func (c *component) BorderRightViolet(scale int) *component {
-	c.el.Style(styles.BorderRightViolet(scale))
+func (c *Comp) BorderRightViolet(scale int) *Comp {
+	c.El.Style(styles.BorderRightViolet(scale))
 	return c
 }
 
-func (c *component) BorderRightVioletAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightVioletAlpha(scale))
+func (c *Comp) BorderRightVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightVioletAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightVioletDark(scale int) *component {
-	c.el.Style(styles.BorderRightVioletDark(scale))
+func (c *Comp) BorderRightVioletDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightVioletDark(scale))
 	return c
 }
 
-func (c *component) BorderRightVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightVioletDarkAlpha(scale))
+func (c *Comp) BorderRightVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightWhite() *component {
-	c.el.Style(styles.BorderRightWhite())
+func (c *Comp) BorderRightWhite() *Comp {
+	c.El.Style(styles.BorderRightWhite())
 	return c
 }
 
-func (c *component) BorderRightWhiteAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightWhiteAlpha(scale))
+func (c *Comp) BorderRightWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightYellow(scale int) *component {
-	c.el.Style(styles.BorderRightYellow(scale))
+func (c *Comp) BorderRightYellow(scale int) *Comp {
+	c.El.Style(styles.BorderRightYellow(scale))
 	return c
 }
 
-func (c *component) BorderRightYellowAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightYellowAlpha(scale))
+func (c *Comp) BorderRightYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightYellowAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRightYellowDark(scale int) *component {
-	c.el.Style(styles.BorderRightYellowDark(scale))
+func (c *Comp) BorderRightYellowDark(scale int) *Comp {
+	c.El.Style(styles.BorderRightYellowDark(scale))
 	return c
 }
 
-func (c *component) BorderRightYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRightYellowDarkAlpha(scale))
+func (c *Comp) BorderRightYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRightYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRuby(scale int) *component {
-	c.el.Style(styles.BorderRuby(scale))
+func (c *Comp) BorderRuby(scale int) *Comp {
+	c.El.Style(styles.BorderRuby(scale))
 	return c
 }
 
-func (c *component) BorderRubyAlpha(scale int) *component {
-	c.el.Style(styles.BorderRubyAlpha(scale))
+func (c *Comp) BorderRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRubyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderRubyDark(scale int) *component {
-	c.el.Style(styles.BorderRubyDark(scale))
+func (c *Comp) BorderRubyDark(scale int) *Comp {
+	c.El.Style(styles.BorderRubyDark(scale))
 	return c
 }
 
-func (c *component) BorderRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderRubyDarkAlpha(scale))
+func (c *Comp) BorderRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderS(val ...value.Value) *component {
-	c.el.Style(styles.BorderS(val...))
+func (c *Comp) BorderS(val ...value.Value) *Comp {
+	c.El.Style(styles.BorderS(val...))
 	return c
 }
 
-func (c *component) BorderSage(scale int) *component {
-	c.el.Style(styles.BorderSage(scale))
+func (c *Comp) BorderSage(scale int) *Comp {
+	c.El.Style(styles.BorderSage(scale))
 	return c
 }
 
-func (c *component) BorderSageAlpha(scale int) *component {
-	c.el.Style(styles.BorderSageAlpha(scale))
+func (c *Comp) BorderSageAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderSageAlpha(scale))
 	return c
 }
 
-func (c *component) BorderSageDark(scale int) *component {
-	c.el.Style(styles.BorderSageDark(scale))
+func (c *Comp) BorderSageDark(scale int) *Comp {
+	c.El.Style(styles.BorderSageDark(scale))
 	return c
 }
 
-func (c *component) BorderSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderSageDarkAlpha(scale))
+func (c *Comp) BorderSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderSand(scale int) *component {
-	c.el.Style(styles.BorderSand(scale))
+func (c *Comp) BorderSand(scale int) *Comp {
+	c.El.Style(styles.BorderSand(scale))
 	return c
 }
 
-func (c *component) BorderSandAlpha(scale int) *component {
-	c.el.Style(styles.BorderSandAlpha(scale))
+func (c *Comp) BorderSandAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderSandAlpha(scale))
 	return c
 }
 
-func (c *component) BorderSandDark(scale int) *component {
-	c.el.Style(styles.BorderSandDark(scale))
+func (c *Comp) BorderSandDark(scale int) *Comp {
+	c.El.Style(styles.BorderSandDark(scale))
 	return c
 }
 
-func (c *component) BorderSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderSandDarkAlpha(scale))
+func (c *Comp) BorderSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderSeparate() *component {
-	c.el.Style(styles.BorderSeparate())
+func (c *Comp) BorderSeparate() *Comp {
+	c.El.Style(styles.BorderSeparate())
 	return c
 }
 
-func (c *component) BorderSky(scale int) *component {
-	c.el.Style(styles.BorderSky(scale))
+func (c *Comp) BorderSky(scale int) *Comp {
+	c.El.Style(styles.BorderSky(scale))
 	return c
 }
 
-func (c *component) BorderSkyAlpha(scale int) *component {
-	c.el.Style(styles.BorderSkyAlpha(scale))
+func (c *Comp) BorderSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderSkyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderSkyDark(scale int) *component {
-	c.el.Style(styles.BorderSkyDark(scale))
+func (c *Comp) BorderSkyDark(scale int) *Comp {
+	c.El.Style(styles.BorderSkyDark(scale))
 	return c
 }
 
-func (c *component) BorderSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderSkyDarkAlpha(scale))
+func (c *Comp) BorderSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderSlate(scale int) *component {
-	c.el.Style(styles.BorderSlate(scale))
+func (c *Comp) BorderSlate(scale int) *Comp {
+	c.El.Style(styles.BorderSlate(scale))
 	return c
 }
 
-func (c *component) BorderSlateAlpha(scale int) *component {
-	c.el.Style(styles.BorderSlateAlpha(scale))
+func (c *Comp) BorderSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderSlateAlpha(scale))
 	return c
 }
 
-func (c *component) BorderSlateDark(scale int) *component {
-	c.el.Style(styles.BorderSlateDark(scale))
+func (c *Comp) BorderSlateDark(scale int) *Comp {
+	c.El.Style(styles.BorderSlateDark(scale))
 	return c
 }
 
-func (c *component) BorderSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderSlateDarkAlpha(scale))
+func (c *Comp) BorderSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderSolid() *component {
-	c.el.Style(styles.BorderSolid())
+func (c *Comp) BorderSolid() *Comp {
+	c.El.Style(styles.BorderSolid())
 	return c
 }
 
-func (c *component) BorderSpacing(spacing any) *component {
-	c.el.Style(styles.BorderSpacing(spacing))
+func (c *Comp) BorderSpacing(spacing any) *Comp {
+	c.El.Style(styles.BorderSpacing(spacing))
 	return c
 }
 
-func (c *component) BorderSpacingX(spacing any) *component {
-	c.el.Style(styles.BorderSpacingX(spacing))
+func (c *Comp) BorderSpacingX(spacing any) *Comp {
+	c.El.Style(styles.BorderSpacingX(spacing))
 	return c
 }
 
-func (c *component) BorderSpacingY(spacing any) *component {
-	c.el.Style(styles.BorderSpacingY(spacing))
+func (c *Comp) BorderSpacingY(spacing any) *Comp {
+	c.El.Style(styles.BorderSpacingY(spacing))
 	return c
 }
 
-func (c *component) BorderStartAmber(scale int) *component {
-	c.el.Style(styles.BorderStartAmber(scale))
+func (c *Comp) BorderStartAmber(scale int) *Comp {
+	c.El.Style(styles.BorderStartAmber(scale))
 	return c
 }
 
-func (c *component) BorderStartAmberAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartAmberAlpha(scale))
+func (c *Comp) BorderStartAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartAmberAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartAmberDark(scale int) *component {
-	c.el.Style(styles.BorderStartAmberDark(scale))
+func (c *Comp) BorderStartAmberDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartAmberDark(scale))
 	return c
 }
 
-func (c *component) BorderStartAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartAmberDarkAlpha(scale))
+func (c *Comp) BorderStartAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartBlack() *component {
-	c.el.Style(styles.BorderStartBlack())
+func (c *Comp) BorderStartBlack() *Comp {
+	c.El.Style(styles.BorderStartBlack())
 	return c
 }
 
-func (c *component) BorderStartBlackAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartBlackAlpha(scale))
+func (c *Comp) BorderStartBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartBlackAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartBlue(scale int) *component {
-	c.el.Style(styles.BorderStartBlue(scale))
+func (c *Comp) BorderStartBlue(scale int) *Comp {
+	c.El.Style(styles.BorderStartBlue(scale))
 	return c
 }
 
-func (c *component) BorderStartBlueAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartBlueAlpha(scale))
+func (c *Comp) BorderStartBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartBlueAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartBlueDark(scale int) *component {
-	c.el.Style(styles.BorderStartBlueDark(scale))
+func (c *Comp) BorderStartBlueDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartBlueDark(scale))
 	return c
 }
 
-func (c *component) BorderStartBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartBlueDarkAlpha(scale))
+func (c *Comp) BorderStartBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartBronze(scale int) *component {
-	c.el.Style(styles.BorderStartBronze(scale))
+func (c *Comp) BorderStartBronze(scale int) *Comp {
+	c.El.Style(styles.BorderStartBronze(scale))
 	return c
 }
 
-func (c *component) BorderStartBronzeAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartBronzeAlpha(scale))
+func (c *Comp) BorderStartBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartBronzeDark(scale int) *component {
-	c.el.Style(styles.BorderStartBronzeDark(scale))
+func (c *Comp) BorderStartBronzeDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartBronzeDark(scale))
 	return c
 }
 
-func (c *component) BorderStartBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartBronzeDarkAlpha(scale))
+func (c *Comp) BorderStartBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartBrown(scale int) *component {
-	c.el.Style(styles.BorderStartBrown(scale))
+func (c *Comp) BorderStartBrown(scale int) *Comp {
+	c.El.Style(styles.BorderStartBrown(scale))
 	return c
 }
 
-func (c *component) BorderStartBrownAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartBrownAlpha(scale))
+func (c *Comp) BorderStartBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartBrownAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartBrownDark(scale int) *component {
-	c.el.Style(styles.BorderStartBrownDark(scale))
+func (c *Comp) BorderStartBrownDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartBrownDark(scale))
 	return c
 }
 
-func (c *component) BorderStartBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartBrownDarkAlpha(scale))
+func (c *Comp) BorderStartBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartColor(val value.Value) *component {
-	c.el.Style(styles.BorderStartColor(val))
+func (c *Comp) BorderStartColor(val value.Value) *Comp {
+	c.El.Style(styles.BorderStartColor(val))
 	return c
 }
 
-func (c *component) BorderStartCrimson(scale int) *component {
-	c.el.Style(styles.BorderStartCrimson(scale))
+func (c *Comp) BorderStartCrimson(scale int) *Comp {
+	c.El.Style(styles.BorderStartCrimson(scale))
 	return c
 }
 
-func (c *component) BorderStartCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartCrimsonAlpha(scale))
+func (c *Comp) BorderStartCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartCrimsonDark(scale int) *component {
-	c.el.Style(styles.BorderStartCrimsonDark(scale))
+func (c *Comp) BorderStartCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartCrimsonDark(scale))
 	return c
 }
 
-func (c *component) BorderStartCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartCrimsonDarkAlpha(scale))
+func (c *Comp) BorderStartCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartCurrent() *component {
-	c.el.Style(styles.BorderStartCurrent())
+func (c *Comp) BorderStartCurrent() *Comp {
+	c.El.Style(styles.BorderStartCurrent())
 	return c
 }
 
-func (c *component) BorderStartCyan(scale int) *component {
-	c.el.Style(styles.BorderStartCyan(scale))
+func (c *Comp) BorderStartCyan(scale int) *Comp {
+	c.El.Style(styles.BorderStartCyan(scale))
 	return c
 }
 
-func (c *component) BorderStartCyanAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartCyanAlpha(scale))
+func (c *Comp) BorderStartCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartCyanAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartCyanDark(scale int) *component {
-	c.el.Style(styles.BorderStartCyanDark(scale))
+func (c *Comp) BorderStartCyanDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartCyanDark(scale))
 	return c
 }
 
-func (c *component) BorderStartCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartCyanDarkAlpha(scale))
+func (c *Comp) BorderStartCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartGold(scale int) *component {
-	c.el.Style(styles.BorderStartGold(scale))
+func (c *Comp) BorderStartGold(scale int) *Comp {
+	c.El.Style(styles.BorderStartGold(scale))
 	return c
 }
 
-func (c *component) BorderStartGoldAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartGoldAlpha(scale))
+func (c *Comp) BorderStartGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartGoldAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartGoldDark(scale int) *component {
-	c.el.Style(styles.BorderStartGoldDark(scale))
+func (c *Comp) BorderStartGoldDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartGoldDark(scale))
 	return c
 }
 
-func (c *component) BorderStartGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartGoldDarkAlpha(scale))
+func (c *Comp) BorderStartGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartGrass(scale int) *component {
-	c.el.Style(styles.BorderStartGrass(scale))
+func (c *Comp) BorderStartGrass(scale int) *Comp {
+	c.El.Style(styles.BorderStartGrass(scale))
 	return c
 }
 
-func (c *component) BorderStartGrassAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartGrassAlpha(scale))
+func (c *Comp) BorderStartGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartGrassAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartGrassDark(scale int) *component {
-	c.el.Style(styles.BorderStartGrassDark(scale))
+func (c *Comp) BorderStartGrassDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartGrassDark(scale))
 	return c
 }
 
-func (c *component) BorderStartGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartGrassDarkAlpha(scale))
+func (c *Comp) BorderStartGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartGray(scale int) *component {
-	c.el.Style(styles.BorderStartGray(scale))
+func (c *Comp) BorderStartGray(scale int) *Comp {
+	c.El.Style(styles.BorderStartGray(scale))
 	return c
 }
 
-func (c *component) BorderStartGrayAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartGrayAlpha(scale))
+func (c *Comp) BorderStartGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartGrayAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartGrayDark(scale int) *component {
-	c.el.Style(styles.BorderStartGrayDark(scale))
+func (c *Comp) BorderStartGrayDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartGrayDark(scale))
 	return c
 }
 
-func (c *component) BorderStartGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartGrayDarkAlpha(scale))
+func (c *Comp) BorderStartGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartGreen(scale int) *component {
-	c.el.Style(styles.BorderStartGreen(scale))
+func (c *Comp) BorderStartGreen(scale int) *Comp {
+	c.El.Style(styles.BorderStartGreen(scale))
 	return c
 }
 
-func (c *component) BorderStartGreenAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartGreenAlpha(scale))
+func (c *Comp) BorderStartGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartGreenAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartGreenDark(scale int) *component {
-	c.el.Style(styles.BorderStartGreenDark(scale))
+func (c *Comp) BorderStartGreenDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartGreenDark(scale))
 	return c
 }
 
-func (c *component) BorderStartGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartGreenDarkAlpha(scale))
+func (c *Comp) BorderStartGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartIndigo(scale int) *component {
-	c.el.Style(styles.BorderStartIndigo(scale))
+func (c *Comp) BorderStartIndigo(scale int) *Comp {
+	c.El.Style(styles.BorderStartIndigo(scale))
 	return c
 }
 
-func (c *component) BorderStartIndigoAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartIndigoAlpha(scale))
+func (c *Comp) BorderStartIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartIndigoDark(scale int) *component {
-	c.el.Style(styles.BorderStartIndigoDark(scale))
+func (c *Comp) BorderStartIndigoDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartIndigoDark(scale))
 	return c
 }
 
-func (c *component) BorderStartIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartIndigoDarkAlpha(scale))
+func (c *Comp) BorderStartIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartInherit() *component {
-	c.el.Style(styles.BorderStartInherit())
+func (c *Comp) BorderStartInherit() *Comp {
+	c.El.Style(styles.BorderStartInherit())
 	return c
 }
 
-func (c *component) BorderStartIris(scale int) *component {
-	c.el.Style(styles.BorderStartIris(scale))
+func (c *Comp) BorderStartIris(scale int) *Comp {
+	c.El.Style(styles.BorderStartIris(scale))
 	return c
 }
 
-func (c *component) BorderStartIrisAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartIrisAlpha(scale))
+func (c *Comp) BorderStartIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartIrisAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartIrisDark(scale int) *component {
-	c.el.Style(styles.BorderStartIrisDark(scale))
+func (c *Comp) BorderStartIrisDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartIrisDark(scale))
 	return c
 }
 
-func (c *component) BorderStartIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartIrisDarkAlpha(scale))
+func (c *Comp) BorderStartIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartJade(scale int) *component {
-	c.el.Style(styles.BorderStartJade(scale))
+func (c *Comp) BorderStartJade(scale int) *Comp {
+	c.El.Style(styles.BorderStartJade(scale))
 	return c
 }
 
-func (c *component) BorderStartJadeAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartJadeAlpha(scale))
+func (c *Comp) BorderStartJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartJadeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartJadeDark(scale int) *component {
-	c.el.Style(styles.BorderStartJadeDark(scale))
+func (c *Comp) BorderStartJadeDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartJadeDark(scale))
 	return c
 }
 
-func (c *component) BorderStartJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartJadeDarkAlpha(scale))
+func (c *Comp) BorderStartJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartLime(scale int) *component {
-	c.el.Style(styles.BorderStartLime(scale))
+func (c *Comp) BorderStartLime(scale int) *Comp {
+	c.El.Style(styles.BorderStartLime(scale))
 	return c
 }
 
-func (c *component) BorderStartLimeAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartLimeAlpha(scale))
+func (c *Comp) BorderStartLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartLimeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartLimeDark(scale int) *component {
-	c.el.Style(styles.BorderStartLimeDark(scale))
+func (c *Comp) BorderStartLimeDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartLimeDark(scale))
 	return c
 }
 
-func (c *component) BorderStartLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartLimeDarkAlpha(scale))
+func (c *Comp) BorderStartLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartMauve(scale int) *component {
-	c.el.Style(styles.BorderStartMauve(scale))
+func (c *Comp) BorderStartMauve(scale int) *Comp {
+	c.El.Style(styles.BorderStartMauve(scale))
 	return c
 }
 
-func (c *component) BorderStartMauveAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartMauveAlpha(scale))
+func (c *Comp) BorderStartMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartMauveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartMauveDark(scale int) *component {
-	c.el.Style(styles.BorderStartMauveDark(scale))
+func (c *Comp) BorderStartMauveDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartMauveDark(scale))
 	return c
 }
 
-func (c *component) BorderStartMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartMauveDarkAlpha(scale))
+func (c *Comp) BorderStartMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartMint(scale int) *component {
-	c.el.Style(styles.BorderStartMint(scale))
+func (c *Comp) BorderStartMint(scale int) *Comp {
+	c.El.Style(styles.BorderStartMint(scale))
 	return c
 }
 
-func (c *component) BorderStartMintAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartMintAlpha(scale))
+func (c *Comp) BorderStartMintAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartMintAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartMintDark(scale int) *component {
-	c.el.Style(styles.BorderStartMintDark(scale))
+func (c *Comp) BorderStartMintDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartMintDark(scale))
 	return c
 }
 
-func (c *component) BorderStartMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartMintDarkAlpha(scale))
+func (c *Comp) BorderStartMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartOlive(scale int) *component {
-	c.el.Style(styles.BorderStartOlive(scale))
+func (c *Comp) BorderStartOlive(scale int) *Comp {
+	c.El.Style(styles.BorderStartOlive(scale))
 	return c
 }
 
-func (c *component) BorderStartOliveAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartOliveAlpha(scale))
+func (c *Comp) BorderStartOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartOliveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartOliveDark(scale int) *component {
-	c.el.Style(styles.BorderStartOliveDark(scale))
+func (c *Comp) BorderStartOliveDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartOliveDark(scale))
 	return c
 }
 
-func (c *component) BorderStartOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartOliveDarkAlpha(scale))
+func (c *Comp) BorderStartOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartOrange(scale int) *component {
-	c.el.Style(styles.BorderStartOrange(scale))
+func (c *Comp) BorderStartOrange(scale int) *Comp {
+	c.El.Style(styles.BorderStartOrange(scale))
 	return c
 }
 
-func (c *component) BorderStartOrangeAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartOrangeAlpha(scale))
+func (c *Comp) BorderStartOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartOrangeDark(scale int) *component {
-	c.el.Style(styles.BorderStartOrangeDark(scale))
+func (c *Comp) BorderStartOrangeDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartOrangeDark(scale))
 	return c
 }
 
-func (c *component) BorderStartOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartOrangeDarkAlpha(scale))
+func (c *Comp) BorderStartOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartPink(scale int) *component {
-	c.el.Style(styles.BorderStartPink(scale))
+func (c *Comp) BorderStartPink(scale int) *Comp {
+	c.El.Style(styles.BorderStartPink(scale))
 	return c
 }
 
-func (c *component) BorderStartPinkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartPinkAlpha(scale))
+func (c *Comp) BorderStartPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartPinkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartPinkDark(scale int) *component {
-	c.el.Style(styles.BorderStartPinkDark(scale))
+func (c *Comp) BorderStartPinkDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartPinkDark(scale))
 	return c
 }
 
-func (c *component) BorderStartPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartPinkDarkAlpha(scale))
+func (c *Comp) BorderStartPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartPlum(scale int) *component {
-	c.el.Style(styles.BorderStartPlum(scale))
+func (c *Comp) BorderStartPlum(scale int) *Comp {
+	c.El.Style(styles.BorderStartPlum(scale))
 	return c
 }
 
-func (c *component) BorderStartPlumAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartPlumAlpha(scale))
+func (c *Comp) BorderStartPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartPlumAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartPlumDark(scale int) *component {
-	c.el.Style(styles.BorderStartPlumDark(scale))
+func (c *Comp) BorderStartPlumDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartPlumDark(scale))
 	return c
 }
 
-func (c *component) BorderStartPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartPlumDarkAlpha(scale))
+func (c *Comp) BorderStartPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartPurple(scale int) *component {
-	c.el.Style(styles.BorderStartPurple(scale))
+func (c *Comp) BorderStartPurple(scale int) *Comp {
+	c.El.Style(styles.BorderStartPurple(scale))
 	return c
 }
 
-func (c *component) BorderStartPurpleAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartPurpleAlpha(scale))
+func (c *Comp) BorderStartPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartPurpleDark(scale int) *component {
-	c.el.Style(styles.BorderStartPurpleDark(scale))
+func (c *Comp) BorderStartPurpleDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartPurpleDark(scale))
 	return c
 }
 
-func (c *component) BorderStartPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartPurpleDarkAlpha(scale))
+func (c *Comp) BorderStartPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartRed(scale int) *component {
-	c.el.Style(styles.BorderStartRed(scale))
+func (c *Comp) BorderStartRed(scale int) *Comp {
+	c.El.Style(styles.BorderStartRed(scale))
 	return c
 }
 
-func (c *component) BorderStartRedAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartRedAlpha(scale))
+func (c *Comp) BorderStartRedAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartRedAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartRedDark(scale int) *component {
-	c.el.Style(styles.BorderStartRedDark(scale))
+func (c *Comp) BorderStartRedDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartRedDark(scale))
 	return c
 }
 
-func (c *component) BorderStartRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartRedDarkAlpha(scale))
+func (c *Comp) BorderStartRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartRuby(scale int) *component {
-	c.el.Style(styles.BorderStartRuby(scale))
+func (c *Comp) BorderStartRuby(scale int) *Comp {
+	c.El.Style(styles.BorderStartRuby(scale))
 	return c
 }
 
-func (c *component) BorderStartRubyAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartRubyAlpha(scale))
+func (c *Comp) BorderStartRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartRubyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartRubyDark(scale int) *component {
-	c.el.Style(styles.BorderStartRubyDark(scale))
+func (c *Comp) BorderStartRubyDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartRubyDark(scale))
 	return c
 }
 
-func (c *component) BorderStartRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartRubyDarkAlpha(scale))
+func (c *Comp) BorderStartRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartSage(scale int) *component {
-	c.el.Style(styles.BorderStartSage(scale))
+func (c *Comp) BorderStartSage(scale int) *Comp {
+	c.El.Style(styles.BorderStartSage(scale))
 	return c
 }
 
-func (c *component) BorderStartSageAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartSageAlpha(scale))
+func (c *Comp) BorderStartSageAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartSageAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartSageDark(scale int) *component {
-	c.el.Style(styles.BorderStartSageDark(scale))
+func (c *Comp) BorderStartSageDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartSageDark(scale))
 	return c
 }
 
-func (c *component) BorderStartSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartSageDarkAlpha(scale))
+func (c *Comp) BorderStartSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartSand(scale int) *component {
-	c.el.Style(styles.BorderStartSand(scale))
+func (c *Comp) BorderStartSand(scale int) *Comp {
+	c.El.Style(styles.BorderStartSand(scale))
 	return c
 }
 
-func (c *component) BorderStartSandAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartSandAlpha(scale))
+func (c *Comp) BorderStartSandAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartSandAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartSandDark(scale int) *component {
-	c.el.Style(styles.BorderStartSandDark(scale))
+func (c *Comp) BorderStartSandDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartSandDark(scale))
 	return c
 }
 
-func (c *component) BorderStartSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartSandDarkAlpha(scale))
+func (c *Comp) BorderStartSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartSky(scale int) *component {
-	c.el.Style(styles.BorderStartSky(scale))
+func (c *Comp) BorderStartSky(scale int) *Comp {
+	c.El.Style(styles.BorderStartSky(scale))
 	return c
 }
 
-func (c *component) BorderStartSkyAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartSkyAlpha(scale))
+func (c *Comp) BorderStartSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartSkyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartSkyDark(scale int) *component {
-	c.el.Style(styles.BorderStartSkyDark(scale))
+func (c *Comp) BorderStartSkyDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartSkyDark(scale))
 	return c
 }
 
-func (c *component) BorderStartSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartSkyDarkAlpha(scale))
+func (c *Comp) BorderStartSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartSlate(scale int) *component {
-	c.el.Style(styles.BorderStartSlate(scale))
+func (c *Comp) BorderStartSlate(scale int) *Comp {
+	c.El.Style(styles.BorderStartSlate(scale))
 	return c
 }
 
-func (c *component) BorderStartSlateAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartSlateAlpha(scale))
+func (c *Comp) BorderStartSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartSlateAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartSlateDark(scale int) *component {
-	c.el.Style(styles.BorderStartSlateDark(scale))
+func (c *Comp) BorderStartSlateDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartSlateDark(scale))
 	return c
 }
 
-func (c *component) BorderStartSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartSlateDarkAlpha(scale))
+func (c *Comp) BorderStartSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartTeal(scale int) *component {
-	c.el.Style(styles.BorderStartTeal(scale))
+func (c *Comp) BorderStartTeal(scale int) *Comp {
+	c.El.Style(styles.BorderStartTeal(scale))
 	return c
 }
 
-func (c *component) BorderStartTealAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartTealAlpha(scale))
+func (c *Comp) BorderStartTealAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartTealAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartTealDark(scale int) *component {
-	c.el.Style(styles.BorderStartTealDark(scale))
+func (c *Comp) BorderStartTealDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartTealDark(scale))
 	return c
 }
 
-func (c *component) BorderStartTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartTealDarkAlpha(scale))
+func (c *Comp) BorderStartTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartTomato(scale int) *component {
-	c.el.Style(styles.BorderStartTomato(scale))
+func (c *Comp) BorderStartTomato(scale int) *Comp {
+	c.El.Style(styles.BorderStartTomato(scale))
 	return c
 }
 
-func (c *component) BorderStartTomatoAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartTomatoAlpha(scale))
+func (c *Comp) BorderStartTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartTomatoDark(scale int) *component {
-	c.el.Style(styles.BorderStartTomatoDark(scale))
+func (c *Comp) BorderStartTomatoDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartTomatoDark(scale))
 	return c
 }
 
-func (c *component) BorderStartTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartTomatoDarkAlpha(scale))
+func (c *Comp) BorderStartTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartTransparent() *component {
-	c.el.Style(styles.BorderStartTransparent())
+func (c *Comp) BorderStartTransparent() *Comp {
+	c.El.Style(styles.BorderStartTransparent())
 	return c
 }
 
-func (c *component) BorderStartViolet(scale int) *component {
-	c.el.Style(styles.BorderStartViolet(scale))
+func (c *Comp) BorderStartViolet(scale int) *Comp {
+	c.El.Style(styles.BorderStartViolet(scale))
 	return c
 }
 
-func (c *component) BorderStartVioletAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartVioletAlpha(scale))
+func (c *Comp) BorderStartVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartVioletAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartVioletDark(scale int) *component {
-	c.el.Style(styles.BorderStartVioletDark(scale))
+func (c *Comp) BorderStartVioletDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartVioletDark(scale))
 	return c
 }
 
-func (c *component) BorderStartVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartVioletDarkAlpha(scale))
+func (c *Comp) BorderStartVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartWhite() *component {
-	c.el.Style(styles.BorderStartWhite())
+func (c *Comp) BorderStartWhite() *Comp {
+	c.El.Style(styles.BorderStartWhite())
 	return c
 }
 
-func (c *component) BorderStartWhiteAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartWhiteAlpha(scale))
+func (c *Comp) BorderStartWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartYellow(scale int) *component {
-	c.el.Style(styles.BorderStartYellow(scale))
+func (c *Comp) BorderStartYellow(scale int) *Comp {
+	c.El.Style(styles.BorderStartYellow(scale))
 	return c
 }
 
-func (c *component) BorderStartYellowAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartYellowAlpha(scale))
+func (c *Comp) BorderStartYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartYellowAlpha(scale))
 	return c
 }
 
-func (c *component) BorderStartYellowDark(scale int) *component {
-	c.el.Style(styles.BorderStartYellowDark(scale))
+func (c *Comp) BorderStartYellowDark(scale int) *Comp {
+	c.El.Style(styles.BorderStartYellowDark(scale))
 	return c
 }
 
-func (c *component) BorderStartYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderStartYellowDarkAlpha(scale))
+func (c *Comp) BorderStartYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderStartYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderT(val ...value.Value) *component {
-	c.el.Style(styles.BorderT(val...))
+func (c *Comp) BorderT(val ...value.Value) *Comp {
+	c.El.Style(styles.BorderT(val...))
 	return c
 }
 
-func (c *component) BorderTeal(scale int) *component {
-	c.el.Style(styles.BorderTeal(scale))
+func (c *Comp) BorderTeal(scale int) *Comp {
+	c.El.Style(styles.BorderTeal(scale))
 	return c
 }
 
-func (c *component) BorderTealAlpha(scale int) *component {
-	c.el.Style(styles.BorderTealAlpha(scale))
+func (c *Comp) BorderTealAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTealAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTealDark(scale int) *component {
-	c.el.Style(styles.BorderTealDark(scale))
+func (c *Comp) BorderTealDark(scale int) *Comp {
+	c.El.Style(styles.BorderTealDark(scale))
 	return c
 }
 
-func (c *component) BorderTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTealDarkAlpha(scale))
+func (c *Comp) BorderTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTomato(scale int) *component {
-	c.el.Style(styles.BorderTomato(scale))
+func (c *Comp) BorderTomato(scale int) *Comp {
+	c.El.Style(styles.BorderTomato(scale))
 	return c
 }
 
-func (c *component) BorderTomatoAlpha(scale int) *component {
-	c.el.Style(styles.BorderTomatoAlpha(scale))
+func (c *Comp) BorderTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTomatoDark(scale int) *component {
-	c.el.Style(styles.BorderTomatoDark(scale))
+func (c *Comp) BorderTomatoDark(scale int) *Comp {
+	c.El.Style(styles.BorderTomatoDark(scale))
 	return c
 }
 
-func (c *component) BorderTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTomatoDarkAlpha(scale))
+func (c *Comp) BorderTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopAmber(scale int) *component {
-	c.el.Style(styles.BorderTopAmber(scale))
+func (c *Comp) BorderTopAmber(scale int) *Comp {
+	c.El.Style(styles.BorderTopAmber(scale))
 	return c
 }
 
-func (c *component) BorderTopAmberAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopAmberAlpha(scale))
+func (c *Comp) BorderTopAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopAmberAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopAmberDark(scale int) *component {
-	c.el.Style(styles.BorderTopAmberDark(scale))
+func (c *Comp) BorderTopAmberDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopAmberDark(scale))
 	return c
 }
 
-func (c *component) BorderTopAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopAmberDarkAlpha(scale))
+func (c *Comp) BorderTopAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopBlack() *component {
-	c.el.Style(styles.BorderTopBlack())
+func (c *Comp) BorderTopBlack() *Comp {
+	c.El.Style(styles.BorderTopBlack())
 	return c
 }
 
-func (c *component) BorderTopBlackAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopBlackAlpha(scale))
+func (c *Comp) BorderTopBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopBlackAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopBlue(scale int) *component {
-	c.el.Style(styles.BorderTopBlue(scale))
+func (c *Comp) BorderTopBlue(scale int) *Comp {
+	c.El.Style(styles.BorderTopBlue(scale))
 	return c
 }
 
-func (c *component) BorderTopBlueAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopBlueAlpha(scale))
+func (c *Comp) BorderTopBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopBlueAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopBlueDark(scale int) *component {
-	c.el.Style(styles.BorderTopBlueDark(scale))
+func (c *Comp) BorderTopBlueDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopBlueDark(scale))
 	return c
 }
 
-func (c *component) BorderTopBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopBlueDarkAlpha(scale))
+func (c *Comp) BorderTopBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopBronze(scale int) *component {
-	c.el.Style(styles.BorderTopBronze(scale))
+func (c *Comp) BorderTopBronze(scale int) *Comp {
+	c.El.Style(styles.BorderTopBronze(scale))
 	return c
 }
 
-func (c *component) BorderTopBronzeAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopBronzeAlpha(scale))
+func (c *Comp) BorderTopBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopBronzeDark(scale int) *component {
-	c.el.Style(styles.BorderTopBronzeDark(scale))
+func (c *Comp) BorderTopBronzeDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopBronzeDark(scale))
 	return c
 }
 
-func (c *component) BorderTopBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopBronzeDarkAlpha(scale))
+func (c *Comp) BorderTopBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopBrown(scale int) *component {
-	c.el.Style(styles.BorderTopBrown(scale))
+func (c *Comp) BorderTopBrown(scale int) *Comp {
+	c.El.Style(styles.BorderTopBrown(scale))
 	return c
 }
 
-func (c *component) BorderTopBrownAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopBrownAlpha(scale))
+func (c *Comp) BorderTopBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopBrownAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopBrownDark(scale int) *component {
-	c.el.Style(styles.BorderTopBrownDark(scale))
+func (c *Comp) BorderTopBrownDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopBrownDark(scale))
 	return c
 }
 
-func (c *component) BorderTopBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopBrownDarkAlpha(scale))
+func (c *Comp) BorderTopBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopColor(val value.Value) *component {
-	c.el.Style(styles.BorderTopColor(val))
+func (c *Comp) BorderTopColor(val value.Value) *Comp {
+	c.El.Style(styles.BorderTopColor(val))
 	return c
 }
 
-func (c *component) BorderTopCrimson(scale int) *component {
-	c.el.Style(styles.BorderTopCrimson(scale))
+func (c *Comp) BorderTopCrimson(scale int) *Comp {
+	c.El.Style(styles.BorderTopCrimson(scale))
 	return c
 }
 
-func (c *component) BorderTopCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopCrimsonAlpha(scale))
+func (c *Comp) BorderTopCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopCrimsonDark(scale int) *component {
-	c.el.Style(styles.BorderTopCrimsonDark(scale))
+func (c *Comp) BorderTopCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopCrimsonDark(scale))
 	return c
 }
 
-func (c *component) BorderTopCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopCrimsonDarkAlpha(scale))
+func (c *Comp) BorderTopCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopCurrent() *component {
-	c.el.Style(styles.BorderTopCurrent())
+func (c *Comp) BorderTopCurrent() *Comp {
+	c.El.Style(styles.BorderTopCurrent())
 	return c
 }
 
-func (c *component) BorderTopCyan(scale int) *component {
-	c.el.Style(styles.BorderTopCyan(scale))
+func (c *Comp) BorderTopCyan(scale int) *Comp {
+	c.El.Style(styles.BorderTopCyan(scale))
 	return c
 }
 
-func (c *component) BorderTopCyanAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopCyanAlpha(scale))
+func (c *Comp) BorderTopCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopCyanAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopCyanDark(scale int) *component {
-	c.el.Style(styles.BorderTopCyanDark(scale))
+func (c *Comp) BorderTopCyanDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopCyanDark(scale))
 	return c
 }
 
-func (c *component) BorderTopCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopCyanDarkAlpha(scale))
+func (c *Comp) BorderTopCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopGold(scale int) *component {
-	c.el.Style(styles.BorderTopGold(scale))
+func (c *Comp) BorderTopGold(scale int) *Comp {
+	c.El.Style(styles.BorderTopGold(scale))
 	return c
 }
 
-func (c *component) BorderTopGoldAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopGoldAlpha(scale))
+func (c *Comp) BorderTopGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopGoldAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopGoldDark(scale int) *component {
-	c.el.Style(styles.BorderTopGoldDark(scale))
+func (c *Comp) BorderTopGoldDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopGoldDark(scale))
 	return c
 }
 
-func (c *component) BorderTopGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopGoldDarkAlpha(scale))
+func (c *Comp) BorderTopGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopGrass(scale int) *component {
-	c.el.Style(styles.BorderTopGrass(scale))
+func (c *Comp) BorderTopGrass(scale int) *Comp {
+	c.El.Style(styles.BorderTopGrass(scale))
 	return c
 }
 
-func (c *component) BorderTopGrassAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopGrassAlpha(scale))
+func (c *Comp) BorderTopGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopGrassAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopGrassDark(scale int) *component {
-	c.el.Style(styles.BorderTopGrassDark(scale))
+func (c *Comp) BorderTopGrassDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopGrassDark(scale))
 	return c
 }
 
-func (c *component) BorderTopGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopGrassDarkAlpha(scale))
+func (c *Comp) BorderTopGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopGray(scale int) *component {
-	c.el.Style(styles.BorderTopGray(scale))
+func (c *Comp) BorderTopGray(scale int) *Comp {
+	c.El.Style(styles.BorderTopGray(scale))
 	return c
 }
 
-func (c *component) BorderTopGrayAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopGrayAlpha(scale))
+func (c *Comp) BorderTopGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopGrayAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopGrayDark(scale int) *component {
-	c.el.Style(styles.BorderTopGrayDark(scale))
+func (c *Comp) BorderTopGrayDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopGrayDark(scale))
 	return c
 }
 
-func (c *component) BorderTopGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopGrayDarkAlpha(scale))
+func (c *Comp) BorderTopGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopGreen(scale int) *component {
-	c.el.Style(styles.BorderTopGreen(scale))
+func (c *Comp) BorderTopGreen(scale int) *Comp {
+	c.El.Style(styles.BorderTopGreen(scale))
 	return c
 }
 
-func (c *component) BorderTopGreenAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopGreenAlpha(scale))
+func (c *Comp) BorderTopGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopGreenAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopGreenDark(scale int) *component {
-	c.el.Style(styles.BorderTopGreenDark(scale))
+func (c *Comp) BorderTopGreenDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopGreenDark(scale))
 	return c
 }
 
-func (c *component) BorderTopGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopGreenDarkAlpha(scale))
+func (c *Comp) BorderTopGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopIndigo(scale int) *component {
-	c.el.Style(styles.BorderTopIndigo(scale))
+func (c *Comp) BorderTopIndigo(scale int) *Comp {
+	c.El.Style(styles.BorderTopIndigo(scale))
 	return c
 }
 
-func (c *component) BorderTopIndigoAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopIndigoAlpha(scale))
+func (c *Comp) BorderTopIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopIndigoDark(scale int) *component {
-	c.el.Style(styles.BorderTopIndigoDark(scale))
+func (c *Comp) BorderTopIndigoDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopIndigoDark(scale))
 	return c
 }
 
-func (c *component) BorderTopIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopIndigoDarkAlpha(scale))
+func (c *Comp) BorderTopIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopInherit() *component {
-	c.el.Style(styles.BorderTopInherit())
+func (c *Comp) BorderTopInherit() *Comp {
+	c.El.Style(styles.BorderTopInherit())
 	return c
 }
 
-func (c *component) BorderTopIris(scale int) *component {
-	c.el.Style(styles.BorderTopIris(scale))
+func (c *Comp) BorderTopIris(scale int) *Comp {
+	c.El.Style(styles.BorderTopIris(scale))
 	return c
 }
 
-func (c *component) BorderTopIrisAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopIrisAlpha(scale))
+func (c *Comp) BorderTopIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopIrisAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopIrisDark(scale int) *component {
-	c.el.Style(styles.BorderTopIrisDark(scale))
+func (c *Comp) BorderTopIrisDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopIrisDark(scale))
 	return c
 }
 
-func (c *component) BorderTopIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopIrisDarkAlpha(scale))
+func (c *Comp) BorderTopIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopJade(scale int) *component {
-	c.el.Style(styles.BorderTopJade(scale))
+func (c *Comp) BorderTopJade(scale int) *Comp {
+	c.El.Style(styles.BorderTopJade(scale))
 	return c
 }
 
-func (c *component) BorderTopJadeAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopJadeAlpha(scale))
+func (c *Comp) BorderTopJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopJadeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopJadeDark(scale int) *component {
-	c.el.Style(styles.BorderTopJadeDark(scale))
+func (c *Comp) BorderTopJadeDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopJadeDark(scale))
 	return c
 }
 
-func (c *component) BorderTopJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopJadeDarkAlpha(scale))
+func (c *Comp) BorderTopJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopLime(scale int) *component {
-	c.el.Style(styles.BorderTopLime(scale))
+func (c *Comp) BorderTopLime(scale int) *Comp {
+	c.El.Style(styles.BorderTopLime(scale))
 	return c
 }
 
-func (c *component) BorderTopLimeAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopLimeAlpha(scale))
+func (c *Comp) BorderTopLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopLimeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopLimeDark(scale int) *component {
-	c.el.Style(styles.BorderTopLimeDark(scale))
+func (c *Comp) BorderTopLimeDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopLimeDark(scale))
 	return c
 }
 
-func (c *component) BorderTopLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopLimeDarkAlpha(scale))
+func (c *Comp) BorderTopLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopMauve(scale int) *component {
-	c.el.Style(styles.BorderTopMauve(scale))
+func (c *Comp) BorderTopMauve(scale int) *Comp {
+	c.El.Style(styles.BorderTopMauve(scale))
 	return c
 }
 
-func (c *component) BorderTopMauveAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopMauveAlpha(scale))
+func (c *Comp) BorderTopMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopMauveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopMauveDark(scale int) *component {
-	c.el.Style(styles.BorderTopMauveDark(scale))
+func (c *Comp) BorderTopMauveDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopMauveDark(scale))
 	return c
 }
 
-func (c *component) BorderTopMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopMauveDarkAlpha(scale))
+func (c *Comp) BorderTopMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopMint(scale int) *component {
-	c.el.Style(styles.BorderTopMint(scale))
+func (c *Comp) BorderTopMint(scale int) *Comp {
+	c.El.Style(styles.BorderTopMint(scale))
 	return c
 }
 
-func (c *component) BorderTopMintAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopMintAlpha(scale))
+func (c *Comp) BorderTopMintAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopMintAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopMintDark(scale int) *component {
-	c.el.Style(styles.BorderTopMintDark(scale))
+func (c *Comp) BorderTopMintDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopMintDark(scale))
 	return c
 }
 
-func (c *component) BorderTopMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopMintDarkAlpha(scale))
+func (c *Comp) BorderTopMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopOlive(scale int) *component {
-	c.el.Style(styles.BorderTopOlive(scale))
+func (c *Comp) BorderTopOlive(scale int) *Comp {
+	c.El.Style(styles.BorderTopOlive(scale))
 	return c
 }
 
-func (c *component) BorderTopOliveAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopOliveAlpha(scale))
+func (c *Comp) BorderTopOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopOliveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopOliveDark(scale int) *component {
-	c.el.Style(styles.BorderTopOliveDark(scale))
+func (c *Comp) BorderTopOliveDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopOliveDark(scale))
 	return c
 }
 
-func (c *component) BorderTopOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopOliveDarkAlpha(scale))
+func (c *Comp) BorderTopOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopOrange(scale int) *component {
-	c.el.Style(styles.BorderTopOrange(scale))
+func (c *Comp) BorderTopOrange(scale int) *Comp {
+	c.El.Style(styles.BorderTopOrange(scale))
 	return c
 }
 
-func (c *component) BorderTopOrangeAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopOrangeAlpha(scale))
+func (c *Comp) BorderTopOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopOrangeDark(scale int) *component {
-	c.el.Style(styles.BorderTopOrangeDark(scale))
+func (c *Comp) BorderTopOrangeDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopOrangeDark(scale))
 	return c
 }
 
-func (c *component) BorderTopOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopOrangeDarkAlpha(scale))
+func (c *Comp) BorderTopOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopPink(scale int) *component {
-	c.el.Style(styles.BorderTopPink(scale))
+func (c *Comp) BorderTopPink(scale int) *Comp {
+	c.El.Style(styles.BorderTopPink(scale))
 	return c
 }
 
-func (c *component) BorderTopPinkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopPinkAlpha(scale))
+func (c *Comp) BorderTopPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopPinkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopPinkDark(scale int) *component {
-	c.el.Style(styles.BorderTopPinkDark(scale))
+func (c *Comp) BorderTopPinkDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopPinkDark(scale))
 	return c
 }
 
-func (c *component) BorderTopPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopPinkDarkAlpha(scale))
+func (c *Comp) BorderTopPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopPlum(scale int) *component {
-	c.el.Style(styles.BorderTopPlum(scale))
+func (c *Comp) BorderTopPlum(scale int) *Comp {
+	c.El.Style(styles.BorderTopPlum(scale))
 	return c
 }
 
-func (c *component) BorderTopPlumAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopPlumAlpha(scale))
+func (c *Comp) BorderTopPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopPlumAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopPlumDark(scale int) *component {
-	c.el.Style(styles.BorderTopPlumDark(scale))
+func (c *Comp) BorderTopPlumDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopPlumDark(scale))
 	return c
 }
 
-func (c *component) BorderTopPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopPlumDarkAlpha(scale))
+func (c *Comp) BorderTopPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopPurple(scale int) *component {
-	c.el.Style(styles.BorderTopPurple(scale))
+func (c *Comp) BorderTopPurple(scale int) *Comp {
+	c.El.Style(styles.BorderTopPurple(scale))
 	return c
 }
 
-func (c *component) BorderTopPurpleAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopPurpleAlpha(scale))
+func (c *Comp) BorderTopPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopPurpleDark(scale int) *component {
-	c.el.Style(styles.BorderTopPurpleDark(scale))
+func (c *Comp) BorderTopPurpleDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopPurpleDark(scale))
 	return c
 }
 
-func (c *component) BorderTopPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopPurpleDarkAlpha(scale))
+func (c *Comp) BorderTopPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopRed(scale int) *component {
-	c.el.Style(styles.BorderTopRed(scale))
+func (c *Comp) BorderTopRed(scale int) *Comp {
+	c.El.Style(styles.BorderTopRed(scale))
 	return c
 }
 
-func (c *component) BorderTopRedAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopRedAlpha(scale))
+func (c *Comp) BorderTopRedAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopRedAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopRedDark(scale int) *component {
-	c.el.Style(styles.BorderTopRedDark(scale))
+func (c *Comp) BorderTopRedDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopRedDark(scale))
 	return c
 }
 
-func (c *component) BorderTopRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopRedDarkAlpha(scale))
+func (c *Comp) BorderTopRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopRuby(scale int) *component {
-	c.el.Style(styles.BorderTopRuby(scale))
+func (c *Comp) BorderTopRuby(scale int) *Comp {
+	c.El.Style(styles.BorderTopRuby(scale))
 	return c
 }
 
-func (c *component) BorderTopRubyAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopRubyAlpha(scale))
+func (c *Comp) BorderTopRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopRubyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopRubyDark(scale int) *component {
-	c.el.Style(styles.BorderTopRubyDark(scale))
+func (c *Comp) BorderTopRubyDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopRubyDark(scale))
 	return c
 }
 
-func (c *component) BorderTopRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopRubyDarkAlpha(scale))
+func (c *Comp) BorderTopRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopSage(scale int) *component {
-	c.el.Style(styles.BorderTopSage(scale))
+func (c *Comp) BorderTopSage(scale int) *Comp {
+	c.El.Style(styles.BorderTopSage(scale))
 	return c
 }
 
-func (c *component) BorderTopSageAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopSageAlpha(scale))
+func (c *Comp) BorderTopSageAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopSageAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopSageDark(scale int) *component {
-	c.el.Style(styles.BorderTopSageDark(scale))
+func (c *Comp) BorderTopSageDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopSageDark(scale))
 	return c
 }
 
-func (c *component) BorderTopSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopSageDarkAlpha(scale))
+func (c *Comp) BorderTopSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopSand(scale int) *component {
-	c.el.Style(styles.BorderTopSand(scale))
+func (c *Comp) BorderTopSand(scale int) *Comp {
+	c.El.Style(styles.BorderTopSand(scale))
 	return c
 }
 
-func (c *component) BorderTopSandAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopSandAlpha(scale))
+func (c *Comp) BorderTopSandAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopSandAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopSandDark(scale int) *component {
-	c.el.Style(styles.BorderTopSandDark(scale))
+func (c *Comp) BorderTopSandDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopSandDark(scale))
 	return c
 }
 
-func (c *component) BorderTopSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopSandDarkAlpha(scale))
+func (c *Comp) BorderTopSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopSky(scale int) *component {
-	c.el.Style(styles.BorderTopSky(scale))
+func (c *Comp) BorderTopSky(scale int) *Comp {
+	c.El.Style(styles.BorderTopSky(scale))
 	return c
 }
 
-func (c *component) BorderTopSkyAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopSkyAlpha(scale))
+func (c *Comp) BorderTopSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopSkyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopSkyDark(scale int) *component {
-	c.el.Style(styles.BorderTopSkyDark(scale))
+func (c *Comp) BorderTopSkyDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopSkyDark(scale))
 	return c
 }
 
-func (c *component) BorderTopSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopSkyDarkAlpha(scale))
+func (c *Comp) BorderTopSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopSlate(scale int) *component {
-	c.el.Style(styles.BorderTopSlate(scale))
+func (c *Comp) BorderTopSlate(scale int) *Comp {
+	c.El.Style(styles.BorderTopSlate(scale))
 	return c
 }
 
-func (c *component) BorderTopSlateAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopSlateAlpha(scale))
+func (c *Comp) BorderTopSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopSlateAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopSlateDark(scale int) *component {
-	c.el.Style(styles.BorderTopSlateDark(scale))
+func (c *Comp) BorderTopSlateDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopSlateDark(scale))
 	return c
 }
 
-func (c *component) BorderTopSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopSlateDarkAlpha(scale))
+func (c *Comp) BorderTopSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopTeal(scale int) *component {
-	c.el.Style(styles.BorderTopTeal(scale))
+func (c *Comp) BorderTopTeal(scale int) *Comp {
+	c.El.Style(styles.BorderTopTeal(scale))
 	return c
 }
 
-func (c *component) BorderTopTealAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopTealAlpha(scale))
+func (c *Comp) BorderTopTealAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopTealAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopTealDark(scale int) *component {
-	c.el.Style(styles.BorderTopTealDark(scale))
+func (c *Comp) BorderTopTealDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopTealDark(scale))
 	return c
 }
 
-func (c *component) BorderTopTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopTealDarkAlpha(scale))
+func (c *Comp) BorderTopTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopTomato(scale int) *component {
-	c.el.Style(styles.BorderTopTomato(scale))
+func (c *Comp) BorderTopTomato(scale int) *Comp {
+	c.El.Style(styles.BorderTopTomato(scale))
 	return c
 }
 
-func (c *component) BorderTopTomatoAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopTomatoAlpha(scale))
+func (c *Comp) BorderTopTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopTomatoDark(scale int) *component {
-	c.el.Style(styles.BorderTopTomatoDark(scale))
+func (c *Comp) BorderTopTomatoDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopTomatoDark(scale))
 	return c
 }
 
-func (c *component) BorderTopTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopTomatoDarkAlpha(scale))
+func (c *Comp) BorderTopTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopTransparent() *component {
-	c.el.Style(styles.BorderTopTransparent())
+func (c *Comp) BorderTopTransparent() *Comp {
+	c.El.Style(styles.BorderTopTransparent())
 	return c
 }
 
-func (c *component) BorderTopViolet(scale int) *component {
-	c.el.Style(styles.BorderTopViolet(scale))
+func (c *Comp) BorderTopViolet(scale int) *Comp {
+	c.El.Style(styles.BorderTopViolet(scale))
 	return c
 }
 
-func (c *component) BorderTopVioletAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopVioletAlpha(scale))
+func (c *Comp) BorderTopVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopVioletAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopVioletDark(scale int) *component {
-	c.el.Style(styles.BorderTopVioletDark(scale))
+func (c *Comp) BorderTopVioletDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopVioletDark(scale))
 	return c
 }
 
-func (c *component) BorderTopVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopVioletDarkAlpha(scale))
+func (c *Comp) BorderTopVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopWhite() *component {
-	c.el.Style(styles.BorderTopWhite())
+func (c *Comp) BorderTopWhite() *Comp {
+	c.El.Style(styles.BorderTopWhite())
 	return c
 }
 
-func (c *component) BorderTopWhiteAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopWhiteAlpha(scale))
+func (c *Comp) BorderTopWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopYellow(scale int) *component {
-	c.el.Style(styles.BorderTopYellow(scale))
+func (c *Comp) BorderTopYellow(scale int) *Comp {
+	c.El.Style(styles.BorderTopYellow(scale))
 	return c
 }
 
-func (c *component) BorderTopYellowAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopYellowAlpha(scale))
+func (c *Comp) BorderTopYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopYellowAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTopYellowDark(scale int) *component {
-	c.el.Style(styles.BorderTopYellowDark(scale))
+func (c *Comp) BorderTopYellowDark(scale int) *Comp {
+	c.El.Style(styles.BorderTopYellowDark(scale))
 	return c
 }
 
-func (c *component) BorderTopYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderTopYellowDarkAlpha(scale))
+func (c *Comp) BorderTopYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderTopYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderTransparent() *component {
-	c.el.Style(styles.BorderTransparent())
+func (c *Comp) BorderTransparent() *Comp {
+	c.El.Style(styles.BorderTransparent())
 	return c
 }
 
-func (c *component) BorderViolet(scale int) *component {
-	c.el.Style(styles.BorderViolet(scale))
+func (c *Comp) BorderViolet(scale int) *Comp {
+	c.El.Style(styles.BorderViolet(scale))
 	return c
 }
 
-func (c *component) BorderVioletAlpha(scale int) *component {
-	c.el.Style(styles.BorderVioletAlpha(scale))
+func (c *Comp) BorderVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderVioletAlpha(scale))
 	return c
 }
 
-func (c *component) BorderVioletDark(scale int) *component {
-	c.el.Style(styles.BorderVioletDark(scale))
+func (c *Comp) BorderVioletDark(scale int) *Comp {
+	c.El.Style(styles.BorderVioletDark(scale))
 	return c
 }
 
-func (c *component) BorderVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderVioletDarkAlpha(scale))
+func (c *Comp) BorderVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderWhite() *component {
-	c.el.Style(styles.BorderWhite())
+func (c *Comp) BorderWhite() *Comp {
+	c.El.Style(styles.BorderWhite())
 	return c
 }
 
-func (c *component) BorderWhiteAlpha(scale int) *component {
-	c.el.Style(styles.BorderWhiteAlpha(scale))
+func (c *Comp) BorderWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) BorderX(val ...value.Value) *component {
-	c.el.Style(styles.BorderX(val...))
+func (c *Comp) BorderX(val ...value.Value) *Comp {
+	c.El.Style(styles.BorderX(val...))
 	return c
 }
 
-func (c *component) BorderXAmber(scale int) *component {
-	c.el.Style(styles.BorderXAmber(scale))
+func (c *Comp) BorderXAmber(scale int) *Comp {
+	c.El.Style(styles.BorderXAmber(scale))
 	return c
 }
 
-func (c *component) BorderXAmberAlpha(scale int) *component {
-	c.el.Style(styles.BorderXAmberAlpha(scale))
+func (c *Comp) BorderXAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXAmberAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXAmberDark(scale int) *component {
-	c.el.Style(styles.BorderXAmberDark(scale))
+func (c *Comp) BorderXAmberDark(scale int) *Comp {
+	c.El.Style(styles.BorderXAmberDark(scale))
 	return c
 }
 
-func (c *component) BorderXAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXAmberDarkAlpha(scale))
+func (c *Comp) BorderXAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXBlack() *component {
-	c.el.Style(styles.BorderXBlack())
+func (c *Comp) BorderXBlack() *Comp {
+	c.El.Style(styles.BorderXBlack())
 	return c
 }
 
-func (c *component) BorderXBlackAlpha(scale int) *component {
-	c.el.Style(styles.BorderXBlackAlpha(scale))
+func (c *Comp) BorderXBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXBlackAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXBlue(scale int) *component {
-	c.el.Style(styles.BorderXBlue(scale))
+func (c *Comp) BorderXBlue(scale int) *Comp {
+	c.El.Style(styles.BorderXBlue(scale))
 	return c
 }
 
-func (c *component) BorderXBlueAlpha(scale int) *component {
-	c.el.Style(styles.BorderXBlueAlpha(scale))
+func (c *Comp) BorderXBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXBlueAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXBlueDark(scale int) *component {
-	c.el.Style(styles.BorderXBlueDark(scale))
+func (c *Comp) BorderXBlueDark(scale int) *Comp {
+	c.El.Style(styles.BorderXBlueDark(scale))
 	return c
 }
 
-func (c *component) BorderXBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXBlueDarkAlpha(scale))
+func (c *Comp) BorderXBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXBronze(scale int) *component {
-	c.el.Style(styles.BorderXBronze(scale))
+func (c *Comp) BorderXBronze(scale int) *Comp {
+	c.El.Style(styles.BorderXBronze(scale))
 	return c
 }
 
-func (c *component) BorderXBronzeAlpha(scale int) *component {
-	c.el.Style(styles.BorderXBronzeAlpha(scale))
+func (c *Comp) BorderXBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXBronzeDark(scale int) *component {
-	c.el.Style(styles.BorderXBronzeDark(scale))
+func (c *Comp) BorderXBronzeDark(scale int) *Comp {
+	c.El.Style(styles.BorderXBronzeDark(scale))
 	return c
 }
 
-func (c *component) BorderXBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXBronzeDarkAlpha(scale))
+func (c *Comp) BorderXBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXBrown(scale int) *component {
-	c.el.Style(styles.BorderXBrown(scale))
+func (c *Comp) BorderXBrown(scale int) *Comp {
+	c.El.Style(styles.BorderXBrown(scale))
 	return c
 }
 
-func (c *component) BorderXBrownAlpha(scale int) *component {
-	c.el.Style(styles.BorderXBrownAlpha(scale))
+func (c *Comp) BorderXBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXBrownAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXBrownDark(scale int) *component {
-	c.el.Style(styles.BorderXBrownDark(scale))
+func (c *Comp) BorderXBrownDark(scale int) *Comp {
+	c.El.Style(styles.BorderXBrownDark(scale))
 	return c
 }
 
-func (c *component) BorderXBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXBrownDarkAlpha(scale))
+func (c *Comp) BorderXBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXColor(val value.Value) *component {
-	c.el.Style(styles.BorderXColor(val))
+func (c *Comp) BorderXColor(val value.Value) *Comp {
+	c.El.Style(styles.BorderXColor(val))
 	return c
 }
 
-func (c *component) BorderXCrimson(scale int) *component {
-	c.el.Style(styles.BorderXCrimson(scale))
+func (c *Comp) BorderXCrimson(scale int) *Comp {
+	c.El.Style(styles.BorderXCrimson(scale))
 	return c
 }
 
-func (c *component) BorderXCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.BorderXCrimsonAlpha(scale))
+func (c *Comp) BorderXCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXCrimsonDark(scale int) *component {
-	c.el.Style(styles.BorderXCrimsonDark(scale))
+func (c *Comp) BorderXCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.BorderXCrimsonDark(scale))
 	return c
 }
 
-func (c *component) BorderXCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXCrimsonDarkAlpha(scale))
+func (c *Comp) BorderXCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXCurrent() *component {
-	c.el.Style(styles.BorderXCurrent())
+func (c *Comp) BorderXCurrent() *Comp {
+	c.El.Style(styles.BorderXCurrent())
 	return c
 }
 
-func (c *component) BorderXCyan(scale int) *component {
-	c.el.Style(styles.BorderXCyan(scale))
+func (c *Comp) BorderXCyan(scale int) *Comp {
+	c.El.Style(styles.BorderXCyan(scale))
 	return c
 }
 
-func (c *component) BorderXCyanAlpha(scale int) *component {
-	c.el.Style(styles.BorderXCyanAlpha(scale))
+func (c *Comp) BorderXCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXCyanAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXCyanDark(scale int) *component {
-	c.el.Style(styles.BorderXCyanDark(scale))
+func (c *Comp) BorderXCyanDark(scale int) *Comp {
+	c.El.Style(styles.BorderXCyanDark(scale))
 	return c
 }
 
-func (c *component) BorderXCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXCyanDarkAlpha(scale))
+func (c *Comp) BorderXCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXGold(scale int) *component {
-	c.el.Style(styles.BorderXGold(scale))
+func (c *Comp) BorderXGold(scale int) *Comp {
+	c.El.Style(styles.BorderXGold(scale))
 	return c
 }
 
-func (c *component) BorderXGoldAlpha(scale int) *component {
-	c.el.Style(styles.BorderXGoldAlpha(scale))
+func (c *Comp) BorderXGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXGoldAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXGoldDark(scale int) *component {
-	c.el.Style(styles.BorderXGoldDark(scale))
+func (c *Comp) BorderXGoldDark(scale int) *Comp {
+	c.El.Style(styles.BorderXGoldDark(scale))
 	return c
 }
 
-func (c *component) BorderXGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXGoldDarkAlpha(scale))
+func (c *Comp) BorderXGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXGrass(scale int) *component {
-	c.el.Style(styles.BorderXGrass(scale))
+func (c *Comp) BorderXGrass(scale int) *Comp {
+	c.El.Style(styles.BorderXGrass(scale))
 	return c
 }
 
-func (c *component) BorderXGrassAlpha(scale int) *component {
-	c.el.Style(styles.BorderXGrassAlpha(scale))
+func (c *Comp) BorderXGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXGrassAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXGrassDark(scale int) *component {
-	c.el.Style(styles.BorderXGrassDark(scale))
+func (c *Comp) BorderXGrassDark(scale int) *Comp {
+	c.El.Style(styles.BorderXGrassDark(scale))
 	return c
 }
 
-func (c *component) BorderXGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXGrassDarkAlpha(scale))
+func (c *Comp) BorderXGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXGray(scale int) *component {
-	c.el.Style(styles.BorderXGray(scale))
+func (c *Comp) BorderXGray(scale int) *Comp {
+	c.El.Style(styles.BorderXGray(scale))
 	return c
 }
 
-func (c *component) BorderXGrayAlpha(scale int) *component {
-	c.el.Style(styles.BorderXGrayAlpha(scale))
+func (c *Comp) BorderXGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXGrayAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXGrayDark(scale int) *component {
-	c.el.Style(styles.BorderXGrayDark(scale))
+func (c *Comp) BorderXGrayDark(scale int) *Comp {
+	c.El.Style(styles.BorderXGrayDark(scale))
 	return c
 }
 
-func (c *component) BorderXGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXGrayDarkAlpha(scale))
+func (c *Comp) BorderXGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXGreen(scale int) *component {
-	c.el.Style(styles.BorderXGreen(scale))
+func (c *Comp) BorderXGreen(scale int) *Comp {
+	c.El.Style(styles.BorderXGreen(scale))
 	return c
 }
 
-func (c *component) BorderXGreenAlpha(scale int) *component {
-	c.el.Style(styles.BorderXGreenAlpha(scale))
+func (c *Comp) BorderXGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXGreenAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXGreenDark(scale int) *component {
-	c.el.Style(styles.BorderXGreenDark(scale))
+func (c *Comp) BorderXGreenDark(scale int) *Comp {
+	c.El.Style(styles.BorderXGreenDark(scale))
 	return c
 }
 
-func (c *component) BorderXGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXGreenDarkAlpha(scale))
+func (c *Comp) BorderXGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXIndigo(scale int) *component {
-	c.el.Style(styles.BorderXIndigo(scale))
+func (c *Comp) BorderXIndigo(scale int) *Comp {
+	c.El.Style(styles.BorderXIndigo(scale))
 	return c
 }
 
-func (c *component) BorderXIndigoAlpha(scale int) *component {
-	c.el.Style(styles.BorderXIndigoAlpha(scale))
+func (c *Comp) BorderXIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXIndigoDark(scale int) *component {
-	c.el.Style(styles.BorderXIndigoDark(scale))
+func (c *Comp) BorderXIndigoDark(scale int) *Comp {
+	c.El.Style(styles.BorderXIndigoDark(scale))
 	return c
 }
 
-func (c *component) BorderXIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXIndigoDarkAlpha(scale))
+func (c *Comp) BorderXIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXInherit() *component {
-	c.el.Style(styles.BorderXInherit())
+func (c *Comp) BorderXInherit() *Comp {
+	c.El.Style(styles.BorderXInherit())
 	return c
 }
 
-func (c *component) BorderXIris(scale int) *component {
-	c.el.Style(styles.BorderXIris(scale))
+func (c *Comp) BorderXIris(scale int) *Comp {
+	c.El.Style(styles.BorderXIris(scale))
 	return c
 }
 
-func (c *component) BorderXIrisAlpha(scale int) *component {
-	c.el.Style(styles.BorderXIrisAlpha(scale))
+func (c *Comp) BorderXIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXIrisAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXIrisDark(scale int) *component {
-	c.el.Style(styles.BorderXIrisDark(scale))
+func (c *Comp) BorderXIrisDark(scale int) *Comp {
+	c.El.Style(styles.BorderXIrisDark(scale))
 	return c
 }
 
-func (c *component) BorderXIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXIrisDarkAlpha(scale))
+func (c *Comp) BorderXIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXJade(scale int) *component {
-	c.el.Style(styles.BorderXJade(scale))
+func (c *Comp) BorderXJade(scale int) *Comp {
+	c.El.Style(styles.BorderXJade(scale))
 	return c
 }
 
-func (c *component) BorderXJadeAlpha(scale int) *component {
-	c.el.Style(styles.BorderXJadeAlpha(scale))
+func (c *Comp) BorderXJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXJadeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXJadeDark(scale int) *component {
-	c.el.Style(styles.BorderXJadeDark(scale))
+func (c *Comp) BorderXJadeDark(scale int) *Comp {
+	c.El.Style(styles.BorderXJadeDark(scale))
 	return c
 }
 
-func (c *component) BorderXJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXJadeDarkAlpha(scale))
+func (c *Comp) BorderXJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXLime(scale int) *component {
-	c.el.Style(styles.BorderXLime(scale))
+func (c *Comp) BorderXLime(scale int) *Comp {
+	c.El.Style(styles.BorderXLime(scale))
 	return c
 }
 
-func (c *component) BorderXLimeAlpha(scale int) *component {
-	c.el.Style(styles.BorderXLimeAlpha(scale))
+func (c *Comp) BorderXLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXLimeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXLimeDark(scale int) *component {
-	c.el.Style(styles.BorderXLimeDark(scale))
+func (c *Comp) BorderXLimeDark(scale int) *Comp {
+	c.El.Style(styles.BorderXLimeDark(scale))
 	return c
 }
 
-func (c *component) BorderXLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXLimeDarkAlpha(scale))
+func (c *Comp) BorderXLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXMauve(scale int) *component {
-	c.el.Style(styles.BorderXMauve(scale))
+func (c *Comp) BorderXMauve(scale int) *Comp {
+	c.El.Style(styles.BorderXMauve(scale))
 	return c
 }
 
-func (c *component) BorderXMauveAlpha(scale int) *component {
-	c.el.Style(styles.BorderXMauveAlpha(scale))
+func (c *Comp) BorderXMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXMauveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXMauveDark(scale int) *component {
-	c.el.Style(styles.BorderXMauveDark(scale))
+func (c *Comp) BorderXMauveDark(scale int) *Comp {
+	c.El.Style(styles.BorderXMauveDark(scale))
 	return c
 }
 
-func (c *component) BorderXMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXMauveDarkAlpha(scale))
+func (c *Comp) BorderXMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXMint(scale int) *component {
-	c.el.Style(styles.BorderXMint(scale))
+func (c *Comp) BorderXMint(scale int) *Comp {
+	c.El.Style(styles.BorderXMint(scale))
 	return c
 }
 
-func (c *component) BorderXMintAlpha(scale int) *component {
-	c.el.Style(styles.BorderXMintAlpha(scale))
+func (c *Comp) BorderXMintAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXMintAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXMintDark(scale int) *component {
-	c.el.Style(styles.BorderXMintDark(scale))
+func (c *Comp) BorderXMintDark(scale int) *Comp {
+	c.El.Style(styles.BorderXMintDark(scale))
 	return c
 }
 
-func (c *component) BorderXMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXMintDarkAlpha(scale))
+func (c *Comp) BorderXMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXOlive(scale int) *component {
-	c.el.Style(styles.BorderXOlive(scale))
+func (c *Comp) BorderXOlive(scale int) *Comp {
+	c.El.Style(styles.BorderXOlive(scale))
 	return c
 }
 
-func (c *component) BorderXOliveAlpha(scale int) *component {
-	c.el.Style(styles.BorderXOliveAlpha(scale))
+func (c *Comp) BorderXOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXOliveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXOliveDark(scale int) *component {
-	c.el.Style(styles.BorderXOliveDark(scale))
+func (c *Comp) BorderXOliveDark(scale int) *Comp {
+	c.El.Style(styles.BorderXOliveDark(scale))
 	return c
 }
 
-func (c *component) BorderXOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXOliveDarkAlpha(scale))
+func (c *Comp) BorderXOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXOrange(scale int) *component {
-	c.el.Style(styles.BorderXOrange(scale))
+func (c *Comp) BorderXOrange(scale int) *Comp {
+	c.El.Style(styles.BorderXOrange(scale))
 	return c
 }
 
-func (c *component) BorderXOrangeAlpha(scale int) *component {
-	c.el.Style(styles.BorderXOrangeAlpha(scale))
+func (c *Comp) BorderXOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXOrangeDark(scale int) *component {
-	c.el.Style(styles.BorderXOrangeDark(scale))
+func (c *Comp) BorderXOrangeDark(scale int) *Comp {
+	c.El.Style(styles.BorderXOrangeDark(scale))
 	return c
 }
 
-func (c *component) BorderXOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXOrangeDarkAlpha(scale))
+func (c *Comp) BorderXOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXPink(scale int) *component {
-	c.el.Style(styles.BorderXPink(scale))
+func (c *Comp) BorderXPink(scale int) *Comp {
+	c.El.Style(styles.BorderXPink(scale))
 	return c
 }
 
-func (c *component) BorderXPinkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXPinkAlpha(scale))
+func (c *Comp) BorderXPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXPinkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXPinkDark(scale int) *component {
-	c.el.Style(styles.BorderXPinkDark(scale))
+func (c *Comp) BorderXPinkDark(scale int) *Comp {
+	c.El.Style(styles.BorderXPinkDark(scale))
 	return c
 }
 
-func (c *component) BorderXPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXPinkDarkAlpha(scale))
+func (c *Comp) BorderXPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXPlum(scale int) *component {
-	c.el.Style(styles.BorderXPlum(scale))
+func (c *Comp) BorderXPlum(scale int) *Comp {
+	c.El.Style(styles.BorderXPlum(scale))
 	return c
 }
 
-func (c *component) BorderXPlumAlpha(scale int) *component {
-	c.el.Style(styles.BorderXPlumAlpha(scale))
+func (c *Comp) BorderXPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXPlumAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXPlumDark(scale int) *component {
-	c.el.Style(styles.BorderXPlumDark(scale))
+func (c *Comp) BorderXPlumDark(scale int) *Comp {
+	c.El.Style(styles.BorderXPlumDark(scale))
 	return c
 }
 
-func (c *component) BorderXPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXPlumDarkAlpha(scale))
+func (c *Comp) BorderXPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXPurple(scale int) *component {
-	c.el.Style(styles.BorderXPurple(scale))
+func (c *Comp) BorderXPurple(scale int) *Comp {
+	c.El.Style(styles.BorderXPurple(scale))
 	return c
 }
 
-func (c *component) BorderXPurpleAlpha(scale int) *component {
-	c.el.Style(styles.BorderXPurpleAlpha(scale))
+func (c *Comp) BorderXPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXPurpleDark(scale int) *component {
-	c.el.Style(styles.BorderXPurpleDark(scale))
+func (c *Comp) BorderXPurpleDark(scale int) *Comp {
+	c.El.Style(styles.BorderXPurpleDark(scale))
 	return c
 }
 
-func (c *component) BorderXPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXPurpleDarkAlpha(scale))
+func (c *Comp) BorderXPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXRed(scale int) *component {
-	c.el.Style(styles.BorderXRed(scale))
+func (c *Comp) BorderXRed(scale int) *Comp {
+	c.El.Style(styles.BorderXRed(scale))
 	return c
 }
 
-func (c *component) BorderXRedAlpha(scale int) *component {
-	c.el.Style(styles.BorderXRedAlpha(scale))
+func (c *Comp) BorderXRedAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXRedAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXRedDark(scale int) *component {
-	c.el.Style(styles.BorderXRedDark(scale))
+func (c *Comp) BorderXRedDark(scale int) *Comp {
+	c.El.Style(styles.BorderXRedDark(scale))
 	return c
 }
 
-func (c *component) BorderXRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXRedDarkAlpha(scale))
+func (c *Comp) BorderXRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXRuby(scale int) *component {
-	c.el.Style(styles.BorderXRuby(scale))
+func (c *Comp) BorderXRuby(scale int) *Comp {
+	c.El.Style(styles.BorderXRuby(scale))
 	return c
 }
 
-func (c *component) BorderXRubyAlpha(scale int) *component {
-	c.el.Style(styles.BorderXRubyAlpha(scale))
+func (c *Comp) BorderXRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXRubyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXRubyDark(scale int) *component {
-	c.el.Style(styles.BorderXRubyDark(scale))
+func (c *Comp) BorderXRubyDark(scale int) *Comp {
+	c.El.Style(styles.BorderXRubyDark(scale))
 	return c
 }
 
-func (c *component) BorderXRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXRubyDarkAlpha(scale))
+func (c *Comp) BorderXRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXSage(scale int) *component {
-	c.el.Style(styles.BorderXSage(scale))
+func (c *Comp) BorderXSage(scale int) *Comp {
+	c.El.Style(styles.BorderXSage(scale))
 	return c
 }
 
-func (c *component) BorderXSageAlpha(scale int) *component {
-	c.el.Style(styles.BorderXSageAlpha(scale))
+func (c *Comp) BorderXSageAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXSageAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXSageDark(scale int) *component {
-	c.el.Style(styles.BorderXSageDark(scale))
+func (c *Comp) BorderXSageDark(scale int) *Comp {
+	c.El.Style(styles.BorderXSageDark(scale))
 	return c
 }
 
-func (c *component) BorderXSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXSageDarkAlpha(scale))
+func (c *Comp) BorderXSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXSand(scale int) *component {
-	c.el.Style(styles.BorderXSand(scale))
+func (c *Comp) BorderXSand(scale int) *Comp {
+	c.El.Style(styles.BorderXSand(scale))
 	return c
 }
 
-func (c *component) BorderXSandAlpha(scale int) *component {
-	c.el.Style(styles.BorderXSandAlpha(scale))
+func (c *Comp) BorderXSandAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXSandAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXSandDark(scale int) *component {
-	c.el.Style(styles.BorderXSandDark(scale))
+func (c *Comp) BorderXSandDark(scale int) *Comp {
+	c.El.Style(styles.BorderXSandDark(scale))
 	return c
 }
 
-func (c *component) BorderXSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXSandDarkAlpha(scale))
+func (c *Comp) BorderXSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXSky(scale int) *component {
-	c.el.Style(styles.BorderXSky(scale))
+func (c *Comp) BorderXSky(scale int) *Comp {
+	c.El.Style(styles.BorderXSky(scale))
 	return c
 }
 
-func (c *component) BorderXSkyAlpha(scale int) *component {
-	c.el.Style(styles.BorderXSkyAlpha(scale))
+func (c *Comp) BorderXSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXSkyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXSkyDark(scale int) *component {
-	c.el.Style(styles.BorderXSkyDark(scale))
+func (c *Comp) BorderXSkyDark(scale int) *Comp {
+	c.El.Style(styles.BorderXSkyDark(scale))
 	return c
 }
 
-func (c *component) BorderXSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXSkyDarkAlpha(scale))
+func (c *Comp) BorderXSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXSlate(scale int) *component {
-	c.el.Style(styles.BorderXSlate(scale))
+func (c *Comp) BorderXSlate(scale int) *Comp {
+	c.El.Style(styles.BorderXSlate(scale))
 	return c
 }
 
-func (c *component) BorderXSlateAlpha(scale int) *component {
-	c.el.Style(styles.BorderXSlateAlpha(scale))
+func (c *Comp) BorderXSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXSlateAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXSlateDark(scale int) *component {
-	c.el.Style(styles.BorderXSlateDark(scale))
+func (c *Comp) BorderXSlateDark(scale int) *Comp {
+	c.El.Style(styles.BorderXSlateDark(scale))
 	return c
 }
 
-func (c *component) BorderXSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXSlateDarkAlpha(scale))
+func (c *Comp) BorderXSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXTeal(scale int) *component {
-	c.el.Style(styles.BorderXTeal(scale))
+func (c *Comp) BorderXTeal(scale int) *Comp {
+	c.El.Style(styles.BorderXTeal(scale))
 	return c
 }
 
-func (c *component) BorderXTealAlpha(scale int) *component {
-	c.el.Style(styles.BorderXTealAlpha(scale))
+func (c *Comp) BorderXTealAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXTealAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXTealDark(scale int) *component {
-	c.el.Style(styles.BorderXTealDark(scale))
+func (c *Comp) BorderXTealDark(scale int) *Comp {
+	c.El.Style(styles.BorderXTealDark(scale))
 	return c
 }
 
-func (c *component) BorderXTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXTealDarkAlpha(scale))
+func (c *Comp) BorderXTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXTomato(scale int) *component {
-	c.el.Style(styles.BorderXTomato(scale))
+func (c *Comp) BorderXTomato(scale int) *Comp {
+	c.El.Style(styles.BorderXTomato(scale))
 	return c
 }
 
-func (c *component) BorderXTomatoAlpha(scale int) *component {
-	c.el.Style(styles.BorderXTomatoAlpha(scale))
+func (c *Comp) BorderXTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXTomatoDark(scale int) *component {
-	c.el.Style(styles.BorderXTomatoDark(scale))
+func (c *Comp) BorderXTomatoDark(scale int) *Comp {
+	c.El.Style(styles.BorderXTomatoDark(scale))
 	return c
 }
 
-func (c *component) BorderXTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXTomatoDarkAlpha(scale))
+func (c *Comp) BorderXTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXTransparent() *component {
-	c.el.Style(styles.BorderXTransparent())
+func (c *Comp) BorderXTransparent() *Comp {
+	c.El.Style(styles.BorderXTransparent())
 	return c
 }
 
-func (c *component) BorderXViolet(scale int) *component {
-	c.el.Style(styles.BorderXViolet(scale))
+func (c *Comp) BorderXViolet(scale int) *Comp {
+	c.El.Style(styles.BorderXViolet(scale))
 	return c
 }
 
-func (c *component) BorderXVioletAlpha(scale int) *component {
-	c.el.Style(styles.BorderXVioletAlpha(scale))
+func (c *Comp) BorderXVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXVioletAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXVioletDark(scale int) *component {
-	c.el.Style(styles.BorderXVioletDark(scale))
+func (c *Comp) BorderXVioletDark(scale int) *Comp {
+	c.El.Style(styles.BorderXVioletDark(scale))
 	return c
 }
 
-func (c *component) BorderXVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXVioletDarkAlpha(scale))
+func (c *Comp) BorderXVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXWhite() *component {
-	c.el.Style(styles.BorderXWhite())
+func (c *Comp) BorderXWhite() *Comp {
+	c.El.Style(styles.BorderXWhite())
 	return c
 }
 
-func (c *component) BorderXWhiteAlpha(scale int) *component {
-	c.el.Style(styles.BorderXWhiteAlpha(scale))
+func (c *Comp) BorderXWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXYellow(scale int) *component {
-	c.el.Style(styles.BorderXYellow(scale))
+func (c *Comp) BorderXYellow(scale int) *Comp {
+	c.El.Style(styles.BorderXYellow(scale))
 	return c
 }
 
-func (c *component) BorderXYellowAlpha(scale int) *component {
-	c.el.Style(styles.BorderXYellowAlpha(scale))
+func (c *Comp) BorderXYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXYellowAlpha(scale))
 	return c
 }
 
-func (c *component) BorderXYellowDark(scale int) *component {
-	c.el.Style(styles.BorderXYellowDark(scale))
+func (c *Comp) BorderXYellowDark(scale int) *Comp {
+	c.El.Style(styles.BorderXYellowDark(scale))
 	return c
 }
 
-func (c *component) BorderXYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderXYellowDarkAlpha(scale))
+func (c *Comp) BorderXYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderXYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderY(val ...value.Value) *component {
-	c.el.Style(styles.BorderY(val...))
+func (c *Comp) BorderY(val ...value.Value) *Comp {
+	c.El.Style(styles.BorderY(val...))
 	return c
 }
 
-func (c *component) BorderYAmber(scale int) *component {
-	c.el.Style(styles.BorderYAmber(scale))
+func (c *Comp) BorderYAmber(scale int) *Comp {
+	c.El.Style(styles.BorderYAmber(scale))
 	return c
 }
 
-func (c *component) BorderYAmberAlpha(scale int) *component {
-	c.el.Style(styles.BorderYAmberAlpha(scale))
+func (c *Comp) BorderYAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYAmberAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYAmberDark(scale int) *component {
-	c.el.Style(styles.BorderYAmberDark(scale))
+func (c *Comp) BorderYAmberDark(scale int) *Comp {
+	c.El.Style(styles.BorderYAmberDark(scale))
 	return c
 }
 
-func (c *component) BorderYAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYAmberDarkAlpha(scale))
+func (c *Comp) BorderYAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYBlack() *component {
-	c.el.Style(styles.BorderYBlack())
+func (c *Comp) BorderYBlack() *Comp {
+	c.El.Style(styles.BorderYBlack())
 	return c
 }
 
-func (c *component) BorderYBlackAlpha(scale int) *component {
-	c.el.Style(styles.BorderYBlackAlpha(scale))
+func (c *Comp) BorderYBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYBlackAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYBlue(scale int) *component {
-	c.el.Style(styles.BorderYBlue(scale))
+func (c *Comp) BorderYBlue(scale int) *Comp {
+	c.El.Style(styles.BorderYBlue(scale))
 	return c
 }
 
-func (c *component) BorderYBlueAlpha(scale int) *component {
-	c.el.Style(styles.BorderYBlueAlpha(scale))
+func (c *Comp) BorderYBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYBlueAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYBlueDark(scale int) *component {
-	c.el.Style(styles.BorderYBlueDark(scale))
+func (c *Comp) BorderYBlueDark(scale int) *Comp {
+	c.El.Style(styles.BorderYBlueDark(scale))
 	return c
 }
 
-func (c *component) BorderYBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYBlueDarkAlpha(scale))
+func (c *Comp) BorderYBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYBronze(scale int) *component {
-	c.el.Style(styles.BorderYBronze(scale))
+func (c *Comp) BorderYBronze(scale int) *Comp {
+	c.El.Style(styles.BorderYBronze(scale))
 	return c
 }
 
-func (c *component) BorderYBronzeAlpha(scale int) *component {
-	c.el.Style(styles.BorderYBronzeAlpha(scale))
+func (c *Comp) BorderYBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYBronzeDark(scale int) *component {
-	c.el.Style(styles.BorderYBronzeDark(scale))
+func (c *Comp) BorderYBronzeDark(scale int) *Comp {
+	c.El.Style(styles.BorderYBronzeDark(scale))
 	return c
 }
 
-func (c *component) BorderYBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYBronzeDarkAlpha(scale))
+func (c *Comp) BorderYBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYBrown(scale int) *component {
-	c.el.Style(styles.BorderYBrown(scale))
+func (c *Comp) BorderYBrown(scale int) *Comp {
+	c.El.Style(styles.BorderYBrown(scale))
 	return c
 }
 
-func (c *component) BorderYBrownAlpha(scale int) *component {
-	c.el.Style(styles.BorderYBrownAlpha(scale))
+func (c *Comp) BorderYBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYBrownAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYBrownDark(scale int) *component {
-	c.el.Style(styles.BorderYBrownDark(scale))
+func (c *Comp) BorderYBrownDark(scale int) *Comp {
+	c.El.Style(styles.BorderYBrownDark(scale))
 	return c
 }
 
-func (c *component) BorderYBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYBrownDarkAlpha(scale))
+func (c *Comp) BorderYBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYColor(val value.Value) *component {
-	c.el.Style(styles.BorderYColor(val))
+func (c *Comp) BorderYColor(val value.Value) *Comp {
+	c.El.Style(styles.BorderYColor(val))
 	return c
 }
 
-func (c *component) BorderYCrimson(scale int) *component {
-	c.el.Style(styles.BorderYCrimson(scale))
+func (c *Comp) BorderYCrimson(scale int) *Comp {
+	c.El.Style(styles.BorderYCrimson(scale))
 	return c
 }
 
-func (c *component) BorderYCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.BorderYCrimsonAlpha(scale))
+func (c *Comp) BorderYCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYCrimsonDark(scale int) *component {
-	c.el.Style(styles.BorderYCrimsonDark(scale))
+func (c *Comp) BorderYCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.BorderYCrimsonDark(scale))
 	return c
 }
 
-func (c *component) BorderYCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYCrimsonDarkAlpha(scale))
+func (c *Comp) BorderYCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYCurrent() *component {
-	c.el.Style(styles.BorderYCurrent())
+func (c *Comp) BorderYCurrent() *Comp {
+	c.El.Style(styles.BorderYCurrent())
 	return c
 }
 
-func (c *component) BorderYCyan(scale int) *component {
-	c.el.Style(styles.BorderYCyan(scale))
+func (c *Comp) BorderYCyan(scale int) *Comp {
+	c.El.Style(styles.BorderYCyan(scale))
 	return c
 }
 
-func (c *component) BorderYCyanAlpha(scale int) *component {
-	c.el.Style(styles.BorderYCyanAlpha(scale))
+func (c *Comp) BorderYCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYCyanAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYCyanDark(scale int) *component {
-	c.el.Style(styles.BorderYCyanDark(scale))
+func (c *Comp) BorderYCyanDark(scale int) *Comp {
+	c.El.Style(styles.BorderYCyanDark(scale))
 	return c
 }
 
-func (c *component) BorderYCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYCyanDarkAlpha(scale))
+func (c *Comp) BorderYCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYGold(scale int) *component {
-	c.el.Style(styles.BorderYGold(scale))
+func (c *Comp) BorderYGold(scale int) *Comp {
+	c.El.Style(styles.BorderYGold(scale))
 	return c
 }
 
-func (c *component) BorderYGoldAlpha(scale int) *component {
-	c.el.Style(styles.BorderYGoldAlpha(scale))
+func (c *Comp) BorderYGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYGoldAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYGoldDark(scale int) *component {
-	c.el.Style(styles.BorderYGoldDark(scale))
+func (c *Comp) BorderYGoldDark(scale int) *Comp {
+	c.El.Style(styles.BorderYGoldDark(scale))
 	return c
 }
 
-func (c *component) BorderYGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYGoldDarkAlpha(scale))
+func (c *Comp) BorderYGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYGrass(scale int) *component {
-	c.el.Style(styles.BorderYGrass(scale))
+func (c *Comp) BorderYGrass(scale int) *Comp {
+	c.El.Style(styles.BorderYGrass(scale))
 	return c
 }
 
-func (c *component) BorderYGrassAlpha(scale int) *component {
-	c.el.Style(styles.BorderYGrassAlpha(scale))
+func (c *Comp) BorderYGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYGrassAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYGrassDark(scale int) *component {
-	c.el.Style(styles.BorderYGrassDark(scale))
+func (c *Comp) BorderYGrassDark(scale int) *Comp {
+	c.El.Style(styles.BorderYGrassDark(scale))
 	return c
 }
 
-func (c *component) BorderYGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYGrassDarkAlpha(scale))
+func (c *Comp) BorderYGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYGray(scale int) *component {
-	c.el.Style(styles.BorderYGray(scale))
+func (c *Comp) BorderYGray(scale int) *Comp {
+	c.El.Style(styles.BorderYGray(scale))
 	return c
 }
 
-func (c *component) BorderYGrayAlpha(scale int) *component {
-	c.el.Style(styles.BorderYGrayAlpha(scale))
+func (c *Comp) BorderYGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYGrayAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYGrayDark(scale int) *component {
-	c.el.Style(styles.BorderYGrayDark(scale))
+func (c *Comp) BorderYGrayDark(scale int) *Comp {
+	c.El.Style(styles.BorderYGrayDark(scale))
 	return c
 }
 
-func (c *component) BorderYGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYGrayDarkAlpha(scale))
+func (c *Comp) BorderYGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYGreen(scale int) *component {
-	c.el.Style(styles.BorderYGreen(scale))
+func (c *Comp) BorderYGreen(scale int) *Comp {
+	c.El.Style(styles.BorderYGreen(scale))
 	return c
 }
 
-func (c *component) BorderYGreenAlpha(scale int) *component {
-	c.el.Style(styles.BorderYGreenAlpha(scale))
+func (c *Comp) BorderYGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYGreenAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYGreenDark(scale int) *component {
-	c.el.Style(styles.BorderYGreenDark(scale))
+func (c *Comp) BorderYGreenDark(scale int) *Comp {
+	c.El.Style(styles.BorderYGreenDark(scale))
 	return c
 }
 
-func (c *component) BorderYGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYGreenDarkAlpha(scale))
+func (c *Comp) BorderYGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYIndigo(scale int) *component {
-	c.el.Style(styles.BorderYIndigo(scale))
+func (c *Comp) BorderYIndigo(scale int) *Comp {
+	c.El.Style(styles.BorderYIndigo(scale))
 	return c
 }
 
-func (c *component) BorderYIndigoAlpha(scale int) *component {
-	c.el.Style(styles.BorderYIndigoAlpha(scale))
+func (c *Comp) BorderYIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYIndigoDark(scale int) *component {
-	c.el.Style(styles.BorderYIndigoDark(scale))
+func (c *Comp) BorderYIndigoDark(scale int) *Comp {
+	c.El.Style(styles.BorderYIndigoDark(scale))
 	return c
 }
 
-func (c *component) BorderYIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYIndigoDarkAlpha(scale))
+func (c *Comp) BorderYIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYInherit() *component {
-	c.el.Style(styles.BorderYInherit())
+func (c *Comp) BorderYInherit() *Comp {
+	c.El.Style(styles.BorderYInherit())
 	return c
 }
 
-func (c *component) BorderYIris(scale int) *component {
-	c.el.Style(styles.BorderYIris(scale))
+func (c *Comp) BorderYIris(scale int) *Comp {
+	c.El.Style(styles.BorderYIris(scale))
 	return c
 }
 
-func (c *component) BorderYIrisAlpha(scale int) *component {
-	c.el.Style(styles.BorderYIrisAlpha(scale))
+func (c *Comp) BorderYIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYIrisAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYIrisDark(scale int) *component {
-	c.el.Style(styles.BorderYIrisDark(scale))
+func (c *Comp) BorderYIrisDark(scale int) *Comp {
+	c.El.Style(styles.BorderYIrisDark(scale))
 	return c
 }
 
-func (c *component) BorderYIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYIrisDarkAlpha(scale))
+func (c *Comp) BorderYIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYJade(scale int) *component {
-	c.el.Style(styles.BorderYJade(scale))
+func (c *Comp) BorderYJade(scale int) *Comp {
+	c.El.Style(styles.BorderYJade(scale))
 	return c
 }
 
-func (c *component) BorderYJadeAlpha(scale int) *component {
-	c.el.Style(styles.BorderYJadeAlpha(scale))
+func (c *Comp) BorderYJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYJadeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYJadeDark(scale int) *component {
-	c.el.Style(styles.BorderYJadeDark(scale))
+func (c *Comp) BorderYJadeDark(scale int) *Comp {
+	c.El.Style(styles.BorderYJadeDark(scale))
 	return c
 }
 
-func (c *component) BorderYJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYJadeDarkAlpha(scale))
+func (c *Comp) BorderYJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYLime(scale int) *component {
-	c.el.Style(styles.BorderYLime(scale))
+func (c *Comp) BorderYLime(scale int) *Comp {
+	c.El.Style(styles.BorderYLime(scale))
 	return c
 }
 
-func (c *component) BorderYLimeAlpha(scale int) *component {
-	c.el.Style(styles.BorderYLimeAlpha(scale))
+func (c *Comp) BorderYLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYLimeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYLimeDark(scale int) *component {
-	c.el.Style(styles.BorderYLimeDark(scale))
+func (c *Comp) BorderYLimeDark(scale int) *Comp {
+	c.El.Style(styles.BorderYLimeDark(scale))
 	return c
 }
 
-func (c *component) BorderYLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYLimeDarkAlpha(scale))
+func (c *Comp) BorderYLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYMauve(scale int) *component {
-	c.el.Style(styles.BorderYMauve(scale))
+func (c *Comp) BorderYMauve(scale int) *Comp {
+	c.El.Style(styles.BorderYMauve(scale))
 	return c
 }
 
-func (c *component) BorderYMauveAlpha(scale int) *component {
-	c.el.Style(styles.BorderYMauveAlpha(scale))
+func (c *Comp) BorderYMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYMauveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYMauveDark(scale int) *component {
-	c.el.Style(styles.BorderYMauveDark(scale))
+func (c *Comp) BorderYMauveDark(scale int) *Comp {
+	c.El.Style(styles.BorderYMauveDark(scale))
 	return c
 }
 
-func (c *component) BorderYMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYMauveDarkAlpha(scale))
+func (c *Comp) BorderYMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYMint(scale int) *component {
-	c.el.Style(styles.BorderYMint(scale))
+func (c *Comp) BorderYMint(scale int) *Comp {
+	c.El.Style(styles.BorderYMint(scale))
 	return c
 }
 
-func (c *component) BorderYMintAlpha(scale int) *component {
-	c.el.Style(styles.BorderYMintAlpha(scale))
+func (c *Comp) BorderYMintAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYMintAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYMintDark(scale int) *component {
-	c.el.Style(styles.BorderYMintDark(scale))
+func (c *Comp) BorderYMintDark(scale int) *Comp {
+	c.El.Style(styles.BorderYMintDark(scale))
 	return c
 }
 
-func (c *component) BorderYMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYMintDarkAlpha(scale))
+func (c *Comp) BorderYMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYOlive(scale int) *component {
-	c.el.Style(styles.BorderYOlive(scale))
+func (c *Comp) BorderYOlive(scale int) *Comp {
+	c.El.Style(styles.BorderYOlive(scale))
 	return c
 }
 
-func (c *component) BorderYOliveAlpha(scale int) *component {
-	c.el.Style(styles.BorderYOliveAlpha(scale))
+func (c *Comp) BorderYOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYOliveAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYOliveDark(scale int) *component {
-	c.el.Style(styles.BorderYOliveDark(scale))
+func (c *Comp) BorderYOliveDark(scale int) *Comp {
+	c.El.Style(styles.BorderYOliveDark(scale))
 	return c
 }
 
-func (c *component) BorderYOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYOliveDarkAlpha(scale))
+func (c *Comp) BorderYOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYOrange(scale int) *component {
-	c.el.Style(styles.BorderYOrange(scale))
+func (c *Comp) BorderYOrange(scale int) *Comp {
+	c.El.Style(styles.BorderYOrange(scale))
 	return c
 }
 
-func (c *component) BorderYOrangeAlpha(scale int) *component {
-	c.el.Style(styles.BorderYOrangeAlpha(scale))
+func (c *Comp) BorderYOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYOrangeDark(scale int) *component {
-	c.el.Style(styles.BorderYOrangeDark(scale))
+func (c *Comp) BorderYOrangeDark(scale int) *Comp {
+	c.El.Style(styles.BorderYOrangeDark(scale))
 	return c
 }
 
-func (c *component) BorderYOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYOrangeDarkAlpha(scale))
+func (c *Comp) BorderYOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYPink(scale int) *component {
-	c.el.Style(styles.BorderYPink(scale))
+func (c *Comp) BorderYPink(scale int) *Comp {
+	c.El.Style(styles.BorderYPink(scale))
 	return c
 }
 
-func (c *component) BorderYPinkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYPinkAlpha(scale))
+func (c *Comp) BorderYPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYPinkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYPinkDark(scale int) *component {
-	c.el.Style(styles.BorderYPinkDark(scale))
+func (c *Comp) BorderYPinkDark(scale int) *Comp {
+	c.El.Style(styles.BorderYPinkDark(scale))
 	return c
 }
 
-func (c *component) BorderYPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYPinkDarkAlpha(scale))
+func (c *Comp) BorderYPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYPlum(scale int) *component {
-	c.el.Style(styles.BorderYPlum(scale))
+func (c *Comp) BorderYPlum(scale int) *Comp {
+	c.El.Style(styles.BorderYPlum(scale))
 	return c
 }
 
-func (c *component) BorderYPlumAlpha(scale int) *component {
-	c.el.Style(styles.BorderYPlumAlpha(scale))
+func (c *Comp) BorderYPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYPlumAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYPlumDark(scale int) *component {
-	c.el.Style(styles.BorderYPlumDark(scale))
+func (c *Comp) BorderYPlumDark(scale int) *Comp {
+	c.El.Style(styles.BorderYPlumDark(scale))
 	return c
 }
 
-func (c *component) BorderYPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYPlumDarkAlpha(scale))
+func (c *Comp) BorderYPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYPurple(scale int) *component {
-	c.el.Style(styles.BorderYPurple(scale))
+func (c *Comp) BorderYPurple(scale int) *Comp {
+	c.El.Style(styles.BorderYPurple(scale))
 	return c
 }
 
-func (c *component) BorderYPurpleAlpha(scale int) *component {
-	c.el.Style(styles.BorderYPurpleAlpha(scale))
+func (c *Comp) BorderYPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYPurpleDark(scale int) *component {
-	c.el.Style(styles.BorderYPurpleDark(scale))
+func (c *Comp) BorderYPurpleDark(scale int) *Comp {
+	c.El.Style(styles.BorderYPurpleDark(scale))
 	return c
 }
 
-func (c *component) BorderYPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYPurpleDarkAlpha(scale))
+func (c *Comp) BorderYPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYRed(scale int) *component {
-	c.el.Style(styles.BorderYRed(scale))
+func (c *Comp) BorderYRed(scale int) *Comp {
+	c.El.Style(styles.BorderYRed(scale))
 	return c
 }
 
-func (c *component) BorderYRedAlpha(scale int) *component {
-	c.el.Style(styles.BorderYRedAlpha(scale))
+func (c *Comp) BorderYRedAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYRedAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYRedDark(scale int) *component {
-	c.el.Style(styles.BorderYRedDark(scale))
+func (c *Comp) BorderYRedDark(scale int) *Comp {
+	c.El.Style(styles.BorderYRedDark(scale))
 	return c
 }
 
-func (c *component) BorderYRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYRedDarkAlpha(scale))
+func (c *Comp) BorderYRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYRuby(scale int) *component {
-	c.el.Style(styles.BorderYRuby(scale))
+func (c *Comp) BorderYRuby(scale int) *Comp {
+	c.El.Style(styles.BorderYRuby(scale))
 	return c
 }
 
-func (c *component) BorderYRubyAlpha(scale int) *component {
-	c.el.Style(styles.BorderYRubyAlpha(scale))
+func (c *Comp) BorderYRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYRubyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYRubyDark(scale int) *component {
-	c.el.Style(styles.BorderYRubyDark(scale))
+func (c *Comp) BorderYRubyDark(scale int) *Comp {
+	c.El.Style(styles.BorderYRubyDark(scale))
 	return c
 }
 
-func (c *component) BorderYRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYRubyDarkAlpha(scale))
+func (c *Comp) BorderYRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYSage(scale int) *component {
-	c.el.Style(styles.BorderYSage(scale))
+func (c *Comp) BorderYSage(scale int) *Comp {
+	c.El.Style(styles.BorderYSage(scale))
 	return c
 }
 
-func (c *component) BorderYSageAlpha(scale int) *component {
-	c.el.Style(styles.BorderYSageAlpha(scale))
+func (c *Comp) BorderYSageAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYSageAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYSageDark(scale int) *component {
-	c.el.Style(styles.BorderYSageDark(scale))
+func (c *Comp) BorderYSageDark(scale int) *Comp {
+	c.El.Style(styles.BorderYSageDark(scale))
 	return c
 }
 
-func (c *component) BorderYSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYSageDarkAlpha(scale))
+func (c *Comp) BorderYSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYSand(scale int) *component {
-	c.el.Style(styles.BorderYSand(scale))
+func (c *Comp) BorderYSand(scale int) *Comp {
+	c.El.Style(styles.BorderYSand(scale))
 	return c
 }
 
-func (c *component) BorderYSandAlpha(scale int) *component {
-	c.el.Style(styles.BorderYSandAlpha(scale))
+func (c *Comp) BorderYSandAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYSandAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYSandDark(scale int) *component {
-	c.el.Style(styles.BorderYSandDark(scale))
+func (c *Comp) BorderYSandDark(scale int) *Comp {
+	c.El.Style(styles.BorderYSandDark(scale))
 	return c
 }
 
-func (c *component) BorderYSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYSandDarkAlpha(scale))
+func (c *Comp) BorderYSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYSky(scale int) *component {
-	c.el.Style(styles.BorderYSky(scale))
+func (c *Comp) BorderYSky(scale int) *Comp {
+	c.El.Style(styles.BorderYSky(scale))
 	return c
 }
 
-func (c *component) BorderYSkyAlpha(scale int) *component {
-	c.el.Style(styles.BorderYSkyAlpha(scale))
+func (c *Comp) BorderYSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYSkyAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYSkyDark(scale int) *component {
-	c.el.Style(styles.BorderYSkyDark(scale))
+func (c *Comp) BorderYSkyDark(scale int) *Comp {
+	c.El.Style(styles.BorderYSkyDark(scale))
 	return c
 }
 
-func (c *component) BorderYSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYSkyDarkAlpha(scale))
+func (c *Comp) BorderYSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYSlate(scale int) *component {
-	c.el.Style(styles.BorderYSlate(scale))
+func (c *Comp) BorderYSlate(scale int) *Comp {
+	c.El.Style(styles.BorderYSlate(scale))
 	return c
 }
 
-func (c *component) BorderYSlateAlpha(scale int) *component {
-	c.el.Style(styles.BorderYSlateAlpha(scale))
+func (c *Comp) BorderYSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYSlateAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYSlateDark(scale int) *component {
-	c.el.Style(styles.BorderYSlateDark(scale))
+func (c *Comp) BorderYSlateDark(scale int) *Comp {
+	c.El.Style(styles.BorderYSlateDark(scale))
 	return c
 }
 
-func (c *component) BorderYSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYSlateDarkAlpha(scale))
+func (c *Comp) BorderYSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYTeal(scale int) *component {
-	c.el.Style(styles.BorderYTeal(scale))
+func (c *Comp) BorderYTeal(scale int) *Comp {
+	c.El.Style(styles.BorderYTeal(scale))
 	return c
 }
 
-func (c *component) BorderYTealAlpha(scale int) *component {
-	c.el.Style(styles.BorderYTealAlpha(scale))
+func (c *Comp) BorderYTealAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYTealAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYTealDark(scale int) *component {
-	c.el.Style(styles.BorderYTealDark(scale))
+func (c *Comp) BorderYTealDark(scale int) *Comp {
+	c.El.Style(styles.BorderYTealDark(scale))
 	return c
 }
 
-func (c *component) BorderYTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYTealDarkAlpha(scale))
+func (c *Comp) BorderYTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYTomato(scale int) *component {
-	c.el.Style(styles.BorderYTomato(scale))
+func (c *Comp) BorderYTomato(scale int) *Comp {
+	c.El.Style(styles.BorderYTomato(scale))
 	return c
 }
 
-func (c *component) BorderYTomatoAlpha(scale int) *component {
-	c.el.Style(styles.BorderYTomatoAlpha(scale))
+func (c *Comp) BorderYTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYTomatoDark(scale int) *component {
-	c.el.Style(styles.BorderYTomatoDark(scale))
+func (c *Comp) BorderYTomatoDark(scale int) *Comp {
+	c.El.Style(styles.BorderYTomatoDark(scale))
 	return c
 }
 
-func (c *component) BorderYTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYTomatoDarkAlpha(scale))
+func (c *Comp) BorderYTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYTransparent() *component {
-	c.el.Style(styles.BorderYTransparent())
+func (c *Comp) BorderYTransparent() *Comp {
+	c.El.Style(styles.BorderYTransparent())
 	return c
 }
 
-func (c *component) BorderYViolet(scale int) *component {
-	c.el.Style(styles.BorderYViolet(scale))
+func (c *Comp) BorderYViolet(scale int) *Comp {
+	c.El.Style(styles.BorderYViolet(scale))
 	return c
 }
 
-func (c *component) BorderYVioletAlpha(scale int) *component {
-	c.el.Style(styles.BorderYVioletAlpha(scale))
+func (c *Comp) BorderYVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYVioletAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYVioletDark(scale int) *component {
-	c.el.Style(styles.BorderYVioletDark(scale))
+func (c *Comp) BorderYVioletDark(scale int) *Comp {
+	c.El.Style(styles.BorderYVioletDark(scale))
 	return c
 }
 
-func (c *component) BorderYVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYVioletDarkAlpha(scale))
+func (c *Comp) BorderYVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYWhite() *component {
-	c.el.Style(styles.BorderYWhite())
+func (c *Comp) BorderYWhite() *Comp {
+	c.El.Style(styles.BorderYWhite())
 	return c
 }
 
-func (c *component) BorderYWhiteAlpha(scale int) *component {
-	c.el.Style(styles.BorderYWhiteAlpha(scale))
+func (c *Comp) BorderYWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYYellow(scale int) *component {
-	c.el.Style(styles.BorderYYellow(scale))
+func (c *Comp) BorderYYellow(scale int) *Comp {
+	c.El.Style(styles.BorderYYellow(scale))
 	return c
 }
 
-func (c *component) BorderYYellowAlpha(scale int) *component {
-	c.el.Style(styles.BorderYYellowAlpha(scale))
+func (c *Comp) BorderYYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYYellowAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYYellowDark(scale int) *component {
-	c.el.Style(styles.BorderYYellowDark(scale))
+func (c *Comp) BorderYYellowDark(scale int) *Comp {
+	c.El.Style(styles.BorderYYellowDark(scale))
 	return c
 }
 
-func (c *component) BorderYYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYYellowDarkAlpha(scale))
+func (c *Comp) BorderYYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYellow(scale int) *component {
-	c.el.Style(styles.BorderYellow(scale))
+func (c *Comp) BorderYellow(scale int) *Comp {
+	c.El.Style(styles.BorderYellow(scale))
 	return c
 }
 
-func (c *component) BorderYellowAlpha(scale int) *component {
-	c.el.Style(styles.BorderYellowAlpha(scale))
+func (c *Comp) BorderYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYellowAlpha(scale))
 	return c
 }
 
-func (c *component) BorderYellowDark(scale int) *component {
-	c.el.Style(styles.BorderYellowDark(scale))
+func (c *Comp) BorderYellowDark(scale int) *Comp {
+	c.El.Style(styles.BorderYellowDark(scale))
 	return c
 }
 
-func (c *component) BorderYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.BorderYellowDarkAlpha(scale))
+func (c *Comp) BorderYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.BorderYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) Bottom(number int) *component {
-	c.el.Style(styles.Bottom(number))
+func (c *Comp) Bottom(number int) *Comp {
+	c.El.Style(styles.Bottom(number))
 	return c
 }
 
-func (c *component) BottomAuto() *component {
-	c.el.Style(styles.BottomAuto())
+func (c *Comp) BottomAuto() *Comp {
+	c.El.Style(styles.BottomAuto())
 	return c
 }
 
-func (c *component) BottomBy(val value.Value) *component {
-	c.el.Style(styles.BottomBy(val))
+func (c *Comp) BottomBy(val value.Value) *Comp {
+	c.El.Style(styles.BottomBy(val))
 	return c
 }
 
-func (c *component) BottomFraction(fraction float64) *component {
-	c.el.Style(styles.BottomFraction(fraction))
+func (c *Comp) BottomFraction(fraction float64) *Comp {
+	c.El.Style(styles.BottomFraction(fraction))
 	return c
 }
 
-func (c *component) BottomFull() *component {
-	c.el.Style(styles.BottomFull())
+func (c *Comp) BottomFull() *Comp {
+	c.El.Style(styles.BottomFull())
 	return c
 }
 
-func (c *component) BottomPx() *component {
-	c.el.Style(styles.BottomPx())
+func (c *Comp) BottomPx() *Comp {
+	c.El.Style(styles.BottomPx())
 	return c
 }
 
-func (c *component) BoxBorder() *component {
-	c.el.Style(styles.BoxBorder())
+func (c *Comp) BoxBorder() *Comp {
+	c.El.Style(styles.BoxBorder())
 	return c
 }
 
-func (c *component) BoxContent() *component {
-	c.el.Style(styles.BoxContent())
+func (c *Comp) BoxContent() *Comp {
+	c.El.Style(styles.BoxContent())
 	return c
 }
 
-func (c *component) BoxDecorationClone() *component {
-	c.el.Style(styles.BoxDecorationClone())
+func (c *Comp) BoxDecorationClone() *Comp {
+	c.El.Style(styles.BoxDecorationClone())
 	return c
 }
 
-func (c *component) BoxDecorationSlice() *component {
-	c.el.Style(styles.BoxDecorationSlice())
+func (c *Comp) BoxDecorationSlice() *Comp {
+	c.El.Style(styles.BoxDecorationSlice())
 	return c
 }
 
-func (c *component) BreakAfterAll() *component {
-	c.el.Style(styles.BreakAfterAll())
+func (c *Comp) BreakAfterAll() *Comp {
+	c.El.Style(styles.BreakAfterAll())
 	return c
 }
 
-func (c *component) BreakAfterAuto() *component {
-	c.el.Style(styles.BreakAfterAuto())
+func (c *Comp) BreakAfterAuto() *Comp {
+	c.El.Style(styles.BreakAfterAuto())
 	return c
 }
 
-func (c *component) BreakAfterAvoid() *component {
-	c.el.Style(styles.BreakAfterAvoid())
+func (c *Comp) BreakAfterAvoid() *Comp {
+	c.El.Style(styles.BreakAfterAvoid())
 	return c
 }
 
-func (c *component) BreakAfterAvoidPage() *component {
-	c.el.Style(styles.BreakAfterAvoidPage())
+func (c *Comp) BreakAfterAvoidPage() *Comp {
+	c.El.Style(styles.BreakAfterAvoidPage())
 	return c
 }
 
-func (c *component) BreakAfterColumn() *component {
-	c.el.Style(styles.BreakAfterColumn())
+func (c *Comp) BreakAfterColumn() *Comp {
+	c.El.Style(styles.BreakAfterColumn())
 	return c
 }
 
-func (c *component) BreakAfterLeft() *component {
-	c.el.Style(styles.BreakAfterLeft())
+func (c *Comp) BreakAfterLeft() *Comp {
+	c.El.Style(styles.BreakAfterLeft())
 	return c
 }
 
-func (c *component) BreakAfterPage() *component {
-	c.el.Style(styles.BreakAfterPage())
+func (c *Comp) BreakAfterPage() *Comp {
+	c.El.Style(styles.BreakAfterPage())
 	return c
 }
 
-func (c *component) BreakAfterRight() *component {
-	c.el.Style(styles.BreakAfterRight())
+func (c *Comp) BreakAfterRight() *Comp {
+	c.El.Style(styles.BreakAfterRight())
 	return c
 }
 
-func (c *component) BreakAll() *component {
-	c.el.Style(styles.BreakAll())
+func (c *Comp) BreakAll() *Comp {
+	c.El.Style(styles.BreakAll())
 	return c
 }
 
-func (c *component) BreakBeforeAll() *component {
-	c.el.Style(styles.BreakBeforeAll())
+func (c *Comp) BreakBeforeAll() *Comp {
+	c.El.Style(styles.BreakBeforeAll())
 	return c
 }
 
-func (c *component) BreakBeforeAuto() *component {
-	c.el.Style(styles.BreakBeforeAuto())
+func (c *Comp) BreakBeforeAuto() *Comp {
+	c.El.Style(styles.BreakBeforeAuto())
 	return c
 }
 
-func (c *component) BreakBeforeAvoid() *component {
-	c.el.Style(styles.BreakBeforeAvoid())
+func (c *Comp) BreakBeforeAvoid() *Comp {
+	c.El.Style(styles.BreakBeforeAvoid())
 	return c
 }
 
-func (c *component) BreakBeforeAvoidPage() *component {
-	c.el.Style(styles.BreakBeforeAvoidPage())
+func (c *Comp) BreakBeforeAvoidPage() *Comp {
+	c.El.Style(styles.BreakBeforeAvoidPage())
 	return c
 }
 
-func (c *component) BreakBeforeColumn() *component {
-	c.el.Style(styles.BreakBeforeColumn())
+func (c *Comp) BreakBeforeColumn() *Comp {
+	c.El.Style(styles.BreakBeforeColumn())
 	return c
 }
 
-func (c *component) BreakBeforeLeft() *component {
-	c.el.Style(styles.BreakBeforeLeft())
+func (c *Comp) BreakBeforeLeft() *Comp {
+	c.El.Style(styles.BreakBeforeLeft())
 	return c
 }
 
-func (c *component) BreakBeforePage() *component {
-	c.el.Style(styles.BreakBeforePage())
+func (c *Comp) BreakBeforePage() *Comp {
+	c.El.Style(styles.BreakBeforePage())
 	return c
 }
 
-func (c *component) BreakBeforeRight() *component {
-	c.el.Style(styles.BreakBeforeRight())
+func (c *Comp) BreakBeforeRight() *Comp {
+	c.El.Style(styles.BreakBeforeRight())
 	return c
 }
 
-func (c *component) BreakInsideAuto() *component {
-	c.el.Style(styles.BreakInsideAuto())
+func (c *Comp) BreakInsideAuto() *Comp {
+	c.El.Style(styles.BreakInsideAuto())
 	return c
 }
 
-func (c *component) BreakInsideAvoid() *component {
-	c.el.Style(styles.BreakInsideAvoid())
+func (c *Comp) BreakInsideAvoid() *Comp {
+	c.El.Style(styles.BreakInsideAvoid())
 	return c
 }
 
-func (c *component) BreakInsideAvoidColumn() *component {
-	c.el.Style(styles.BreakInsideAvoidColumn())
+func (c *Comp) BreakInsideAvoidColumn() *Comp {
+	c.El.Style(styles.BreakInsideAvoidColumn())
 	return c
 }
 
-func (c *component) BreakInsideAvoidPage() *component {
-	c.el.Style(styles.BreakInsideAvoidPage())
+func (c *Comp) BreakInsideAvoidPage() *Comp {
+	c.El.Style(styles.BreakInsideAvoidPage())
 	return c
 }
 
-func (c *component) BreakKeep() *component {
-	c.el.Style(styles.BreakKeep())
+func (c *Comp) BreakKeep() *Comp {
+	c.El.Style(styles.BreakKeep())
 	return c
 }
 
-func (c *component) BreakNormal() *component {
-	c.el.Style(styles.BreakNormal())
+func (c *Comp) BreakNormal() *Comp {
+	c.El.Style(styles.BreakNormal())
 	return c
 }
 
-func (c *component) Brightness(val any) *component {
-	c.el.Style(styles.Brightness(val))
+func (c *Comp) Brightness(val any) *Comp {
+	c.El.Style(styles.Brightness(val))
 	return c
 }
 
-func (c *component) Capitalize() *component {
-	c.el.Style(styles.Capitalize())
+func (c *Comp) Capitalize() *Comp {
+	c.El.Style(styles.Capitalize())
 	return c
 }
 
-func (c *component) CaptionBottom() *component {
-	c.el.Style(styles.CaptionBottom())
+func (c *Comp) CaptionBottom() *Comp {
+	c.El.Style(styles.CaptionBottom())
 	return c
 }
 
-func (c *component) CaptionTop() *component {
-	c.el.Style(styles.CaptionTop())
+func (c *Comp) CaptionTop() *Comp {
+	c.El.Style(styles.CaptionTop())
 	return c
 }
 
-func (c *component) Caret(val value.Value) *component {
-	c.el.Style(styles.Caret(val))
+func (c *Comp) Caret(val value.Value) *Comp {
+	c.El.Style(styles.Caret(val))
 	return c
 }
 
-func (c *component) CaretAmber(scale int) *component {
-	c.el.Style(styles.CaretAmber(scale))
+func (c *Comp) CaretAmber(scale int) *Comp {
+	c.El.Style(styles.CaretAmber(scale))
 	return c
 }
 
-func (c *component) CaretAmberAlpha(scale int) *component {
-	c.el.Style(styles.CaretAmberAlpha(scale))
+func (c *Comp) CaretAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretAmberAlpha(scale))
 	return c
 }
 
-func (c *component) CaretAmberDark(scale int) *component {
-	c.el.Style(styles.CaretAmberDark(scale))
+func (c *Comp) CaretAmberDark(scale int) *Comp {
+	c.El.Style(styles.CaretAmberDark(scale))
 	return c
 }
 
-func (c *component) CaretAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretAmberDarkAlpha(scale))
+func (c *Comp) CaretAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretBlack() *component {
-	c.el.Style(styles.CaretBlack())
+func (c *Comp) CaretBlack() *Comp {
+	c.El.Style(styles.CaretBlack())
 	return c
 }
 
-func (c *component) CaretBlackAlpha(scale int) *component {
-	c.el.Style(styles.CaretBlackAlpha(scale))
+func (c *Comp) CaretBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretBlackAlpha(scale))
 	return c
 }
 
-func (c *component) CaretBlue(scale int) *component {
-	c.el.Style(styles.CaretBlue(scale))
+func (c *Comp) CaretBlue(scale int) *Comp {
+	c.El.Style(styles.CaretBlue(scale))
 	return c
 }
 
-func (c *component) CaretBlueAlpha(scale int) *component {
-	c.el.Style(styles.CaretBlueAlpha(scale))
+func (c *Comp) CaretBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretBlueAlpha(scale))
 	return c
 }
 
-func (c *component) CaretBlueDark(scale int) *component {
-	c.el.Style(styles.CaretBlueDark(scale))
+func (c *Comp) CaretBlueDark(scale int) *Comp {
+	c.El.Style(styles.CaretBlueDark(scale))
 	return c
 }
 
-func (c *component) CaretBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretBlueDarkAlpha(scale))
+func (c *Comp) CaretBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretBronze(scale int) *component {
-	c.el.Style(styles.CaretBronze(scale))
+func (c *Comp) CaretBronze(scale int) *Comp {
+	c.El.Style(styles.CaretBronze(scale))
 	return c
 }
 
-func (c *component) CaretBronzeAlpha(scale int) *component {
-	c.el.Style(styles.CaretBronzeAlpha(scale))
+func (c *Comp) CaretBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) CaretBronzeDark(scale int) *component {
-	c.el.Style(styles.CaretBronzeDark(scale))
+func (c *Comp) CaretBronzeDark(scale int) *Comp {
+	c.El.Style(styles.CaretBronzeDark(scale))
 	return c
 }
 
-func (c *component) CaretBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretBronzeDarkAlpha(scale))
+func (c *Comp) CaretBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretBrown(scale int) *component {
-	c.el.Style(styles.CaretBrown(scale))
+func (c *Comp) CaretBrown(scale int) *Comp {
+	c.El.Style(styles.CaretBrown(scale))
 	return c
 }
 
-func (c *component) CaretBrownAlpha(scale int) *component {
-	c.el.Style(styles.CaretBrownAlpha(scale))
+func (c *Comp) CaretBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretBrownAlpha(scale))
 	return c
 }
 
-func (c *component) CaretBrownDark(scale int) *component {
-	c.el.Style(styles.CaretBrownDark(scale))
+func (c *Comp) CaretBrownDark(scale int) *Comp {
+	c.El.Style(styles.CaretBrownDark(scale))
 	return c
 }
 
-func (c *component) CaretBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretBrownDarkAlpha(scale))
+func (c *Comp) CaretBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretCrimson(scale int) *component {
-	c.el.Style(styles.CaretCrimson(scale))
+func (c *Comp) CaretCrimson(scale int) *Comp {
+	c.El.Style(styles.CaretCrimson(scale))
 	return c
 }
 
-func (c *component) CaretCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.CaretCrimsonAlpha(scale))
+func (c *Comp) CaretCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) CaretCrimsonDark(scale int) *component {
-	c.el.Style(styles.CaretCrimsonDark(scale))
+func (c *Comp) CaretCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.CaretCrimsonDark(scale))
 	return c
 }
 
-func (c *component) CaretCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretCrimsonDarkAlpha(scale))
+func (c *Comp) CaretCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretCurrent() *component {
-	c.el.Style(styles.CaretCurrent())
+func (c *Comp) CaretCurrent() *Comp {
+	c.El.Style(styles.CaretCurrent())
 	return c
 }
 
-func (c *component) CaretCyan(scale int) *component {
-	c.el.Style(styles.CaretCyan(scale))
+func (c *Comp) CaretCyan(scale int) *Comp {
+	c.El.Style(styles.CaretCyan(scale))
 	return c
 }
 
-func (c *component) CaretCyanAlpha(scale int) *component {
-	c.el.Style(styles.CaretCyanAlpha(scale))
+func (c *Comp) CaretCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretCyanAlpha(scale))
 	return c
 }
 
-func (c *component) CaretCyanDark(scale int) *component {
-	c.el.Style(styles.CaretCyanDark(scale))
+func (c *Comp) CaretCyanDark(scale int) *Comp {
+	c.El.Style(styles.CaretCyanDark(scale))
 	return c
 }
 
-func (c *component) CaretCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretCyanDarkAlpha(scale))
+func (c *Comp) CaretCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretGold(scale int) *component {
-	c.el.Style(styles.CaretGold(scale))
+func (c *Comp) CaretGold(scale int) *Comp {
+	c.El.Style(styles.CaretGold(scale))
 	return c
 }
 
-func (c *component) CaretGoldAlpha(scale int) *component {
-	c.el.Style(styles.CaretGoldAlpha(scale))
+func (c *Comp) CaretGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretGoldAlpha(scale))
 	return c
 }
 
-func (c *component) CaretGoldDark(scale int) *component {
-	c.el.Style(styles.CaretGoldDark(scale))
+func (c *Comp) CaretGoldDark(scale int) *Comp {
+	c.El.Style(styles.CaretGoldDark(scale))
 	return c
 }
 
-func (c *component) CaretGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretGoldDarkAlpha(scale))
+func (c *Comp) CaretGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretGrass(scale int) *component {
-	c.el.Style(styles.CaretGrass(scale))
+func (c *Comp) CaretGrass(scale int) *Comp {
+	c.El.Style(styles.CaretGrass(scale))
 	return c
 }
 
-func (c *component) CaretGrassAlpha(scale int) *component {
-	c.el.Style(styles.CaretGrassAlpha(scale))
+func (c *Comp) CaretGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretGrassAlpha(scale))
 	return c
 }
 
-func (c *component) CaretGrassDark(scale int) *component {
-	c.el.Style(styles.CaretGrassDark(scale))
+func (c *Comp) CaretGrassDark(scale int) *Comp {
+	c.El.Style(styles.CaretGrassDark(scale))
 	return c
 }
 
-func (c *component) CaretGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretGrassDarkAlpha(scale))
+func (c *Comp) CaretGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretGray(scale int) *component {
-	c.el.Style(styles.CaretGray(scale))
+func (c *Comp) CaretGray(scale int) *Comp {
+	c.El.Style(styles.CaretGray(scale))
 	return c
 }
 
-func (c *component) CaretGrayAlpha(scale int) *component {
-	c.el.Style(styles.CaretGrayAlpha(scale))
+func (c *Comp) CaretGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretGrayAlpha(scale))
 	return c
 }
 
-func (c *component) CaretGrayDark(scale int) *component {
-	c.el.Style(styles.CaretGrayDark(scale))
+func (c *Comp) CaretGrayDark(scale int) *Comp {
+	c.El.Style(styles.CaretGrayDark(scale))
 	return c
 }
 
-func (c *component) CaretGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretGrayDarkAlpha(scale))
+func (c *Comp) CaretGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretGreen(scale int) *component {
-	c.el.Style(styles.CaretGreen(scale))
+func (c *Comp) CaretGreen(scale int) *Comp {
+	c.El.Style(styles.CaretGreen(scale))
 	return c
 }
 
-func (c *component) CaretGreenAlpha(scale int) *component {
-	c.el.Style(styles.CaretGreenAlpha(scale))
+func (c *Comp) CaretGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretGreenAlpha(scale))
 	return c
 }
 
-func (c *component) CaretGreenDark(scale int) *component {
-	c.el.Style(styles.CaretGreenDark(scale))
+func (c *Comp) CaretGreenDark(scale int) *Comp {
+	c.El.Style(styles.CaretGreenDark(scale))
 	return c
 }
 
-func (c *component) CaretGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretGreenDarkAlpha(scale))
+func (c *Comp) CaretGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretIndigo(scale int) *component {
-	c.el.Style(styles.CaretIndigo(scale))
+func (c *Comp) CaretIndigo(scale int) *Comp {
+	c.El.Style(styles.CaretIndigo(scale))
 	return c
 }
 
-func (c *component) CaretIndigoAlpha(scale int) *component {
-	c.el.Style(styles.CaretIndigoAlpha(scale))
+func (c *Comp) CaretIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) CaretIndigoDark(scale int) *component {
-	c.el.Style(styles.CaretIndigoDark(scale))
+func (c *Comp) CaretIndigoDark(scale int) *Comp {
+	c.El.Style(styles.CaretIndigoDark(scale))
 	return c
 }
 
-func (c *component) CaretIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretIndigoDarkAlpha(scale))
+func (c *Comp) CaretIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretInherit() *component {
-	c.el.Style(styles.CaretInherit())
+func (c *Comp) CaretInherit() *Comp {
+	c.El.Style(styles.CaretInherit())
 	return c
 }
 
-func (c *component) CaretIris(scale int) *component {
-	c.el.Style(styles.CaretIris(scale))
+func (c *Comp) CaretIris(scale int) *Comp {
+	c.El.Style(styles.CaretIris(scale))
 	return c
 }
 
-func (c *component) CaretIrisAlpha(scale int) *component {
-	c.el.Style(styles.CaretIrisAlpha(scale))
+func (c *Comp) CaretIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretIrisAlpha(scale))
 	return c
 }
 
-func (c *component) CaretIrisDark(scale int) *component {
-	c.el.Style(styles.CaretIrisDark(scale))
+func (c *Comp) CaretIrisDark(scale int) *Comp {
+	c.El.Style(styles.CaretIrisDark(scale))
 	return c
 }
 
-func (c *component) CaretIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretIrisDarkAlpha(scale))
+func (c *Comp) CaretIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretJade(scale int) *component {
-	c.el.Style(styles.CaretJade(scale))
+func (c *Comp) CaretJade(scale int) *Comp {
+	c.El.Style(styles.CaretJade(scale))
 	return c
 }
 
-func (c *component) CaretJadeAlpha(scale int) *component {
-	c.el.Style(styles.CaretJadeAlpha(scale))
+func (c *Comp) CaretJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretJadeAlpha(scale))
 	return c
 }
 
-func (c *component) CaretJadeDark(scale int) *component {
-	c.el.Style(styles.CaretJadeDark(scale))
+func (c *Comp) CaretJadeDark(scale int) *Comp {
+	c.El.Style(styles.CaretJadeDark(scale))
 	return c
 }
 
-func (c *component) CaretJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretJadeDarkAlpha(scale))
+func (c *Comp) CaretJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretLime(scale int) *component {
-	c.el.Style(styles.CaretLime(scale))
+func (c *Comp) CaretLime(scale int) *Comp {
+	c.El.Style(styles.CaretLime(scale))
 	return c
 }
 
-func (c *component) CaretLimeAlpha(scale int) *component {
-	c.el.Style(styles.CaretLimeAlpha(scale))
+func (c *Comp) CaretLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretLimeAlpha(scale))
 	return c
 }
 
-func (c *component) CaretLimeDark(scale int) *component {
-	c.el.Style(styles.CaretLimeDark(scale))
+func (c *Comp) CaretLimeDark(scale int) *Comp {
+	c.El.Style(styles.CaretLimeDark(scale))
 	return c
 }
 
-func (c *component) CaretLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretLimeDarkAlpha(scale))
+func (c *Comp) CaretLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretMauve(scale int) *component {
-	c.el.Style(styles.CaretMauve(scale))
+func (c *Comp) CaretMauve(scale int) *Comp {
+	c.El.Style(styles.CaretMauve(scale))
 	return c
 }
 
-func (c *component) CaretMauveAlpha(scale int) *component {
-	c.el.Style(styles.CaretMauveAlpha(scale))
+func (c *Comp) CaretMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretMauveAlpha(scale))
 	return c
 }
 
-func (c *component) CaretMauveDark(scale int) *component {
-	c.el.Style(styles.CaretMauveDark(scale))
+func (c *Comp) CaretMauveDark(scale int) *Comp {
+	c.El.Style(styles.CaretMauveDark(scale))
 	return c
 }
 
-func (c *component) CaretMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretMauveDarkAlpha(scale))
+func (c *Comp) CaretMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretMint(scale int) *component {
-	c.el.Style(styles.CaretMint(scale))
+func (c *Comp) CaretMint(scale int) *Comp {
+	c.El.Style(styles.CaretMint(scale))
 	return c
 }
 
-func (c *component) CaretMintAlpha(scale int) *component {
-	c.el.Style(styles.CaretMintAlpha(scale))
+func (c *Comp) CaretMintAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretMintAlpha(scale))
 	return c
 }
 
-func (c *component) CaretMintDark(scale int) *component {
-	c.el.Style(styles.CaretMintDark(scale))
+func (c *Comp) CaretMintDark(scale int) *Comp {
+	c.El.Style(styles.CaretMintDark(scale))
 	return c
 }
 
-func (c *component) CaretMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretMintDarkAlpha(scale))
+func (c *Comp) CaretMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretOlive(scale int) *component {
-	c.el.Style(styles.CaretOlive(scale))
+func (c *Comp) CaretOlive(scale int) *Comp {
+	c.El.Style(styles.CaretOlive(scale))
 	return c
 }
 
-func (c *component) CaretOliveAlpha(scale int) *component {
-	c.el.Style(styles.CaretOliveAlpha(scale))
+func (c *Comp) CaretOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretOliveAlpha(scale))
 	return c
 }
 
-func (c *component) CaretOliveDark(scale int) *component {
-	c.el.Style(styles.CaretOliveDark(scale))
+func (c *Comp) CaretOliveDark(scale int) *Comp {
+	c.El.Style(styles.CaretOliveDark(scale))
 	return c
 }
 
-func (c *component) CaretOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretOliveDarkAlpha(scale))
+func (c *Comp) CaretOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretOrange(scale int) *component {
-	c.el.Style(styles.CaretOrange(scale))
+func (c *Comp) CaretOrange(scale int) *Comp {
+	c.El.Style(styles.CaretOrange(scale))
 	return c
 }
 
-func (c *component) CaretOrangeAlpha(scale int) *component {
-	c.el.Style(styles.CaretOrangeAlpha(scale))
+func (c *Comp) CaretOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) CaretOrangeDark(scale int) *component {
-	c.el.Style(styles.CaretOrangeDark(scale))
+func (c *Comp) CaretOrangeDark(scale int) *Comp {
+	c.El.Style(styles.CaretOrangeDark(scale))
 	return c
 }
 
-func (c *component) CaretOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretOrangeDarkAlpha(scale))
+func (c *Comp) CaretOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretPink(scale int) *component {
-	c.el.Style(styles.CaretPink(scale))
+func (c *Comp) CaretPink(scale int) *Comp {
+	c.El.Style(styles.CaretPink(scale))
 	return c
 }
 
-func (c *component) CaretPinkAlpha(scale int) *component {
-	c.el.Style(styles.CaretPinkAlpha(scale))
+func (c *Comp) CaretPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretPinkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretPinkDark(scale int) *component {
-	c.el.Style(styles.CaretPinkDark(scale))
+func (c *Comp) CaretPinkDark(scale int) *Comp {
+	c.El.Style(styles.CaretPinkDark(scale))
 	return c
 }
 
-func (c *component) CaretPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretPinkDarkAlpha(scale))
+func (c *Comp) CaretPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretPlum(scale int) *component {
-	c.el.Style(styles.CaretPlum(scale))
+func (c *Comp) CaretPlum(scale int) *Comp {
+	c.El.Style(styles.CaretPlum(scale))
 	return c
 }
 
-func (c *component) CaretPlumAlpha(scale int) *component {
-	c.el.Style(styles.CaretPlumAlpha(scale))
+func (c *Comp) CaretPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretPlumAlpha(scale))
 	return c
 }
 
-func (c *component) CaretPlumDark(scale int) *component {
-	c.el.Style(styles.CaretPlumDark(scale))
+func (c *Comp) CaretPlumDark(scale int) *Comp {
+	c.El.Style(styles.CaretPlumDark(scale))
 	return c
 }
 
-func (c *component) CaretPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretPlumDarkAlpha(scale))
+func (c *Comp) CaretPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretPurple(scale int) *component {
-	c.el.Style(styles.CaretPurple(scale))
+func (c *Comp) CaretPurple(scale int) *Comp {
+	c.El.Style(styles.CaretPurple(scale))
 	return c
 }
 
-func (c *component) CaretPurpleAlpha(scale int) *component {
-	c.el.Style(styles.CaretPurpleAlpha(scale))
+func (c *Comp) CaretPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) CaretPurpleDark(scale int) *component {
-	c.el.Style(styles.CaretPurpleDark(scale))
+func (c *Comp) CaretPurpleDark(scale int) *Comp {
+	c.El.Style(styles.CaretPurpleDark(scale))
 	return c
 }
 
-func (c *component) CaretPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretPurpleDarkAlpha(scale))
+func (c *Comp) CaretPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretRed(scale int) *component {
-	c.el.Style(styles.CaretRed(scale))
+func (c *Comp) CaretRed(scale int) *Comp {
+	c.El.Style(styles.CaretRed(scale))
 	return c
 }
 
-func (c *component) CaretRedAlpha(scale int) *component {
-	c.el.Style(styles.CaretRedAlpha(scale))
+func (c *Comp) CaretRedAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretRedAlpha(scale))
 	return c
 }
 
-func (c *component) CaretRedDark(scale int) *component {
-	c.el.Style(styles.CaretRedDark(scale))
+func (c *Comp) CaretRedDark(scale int) *Comp {
+	c.El.Style(styles.CaretRedDark(scale))
 	return c
 }
 
-func (c *component) CaretRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretRedDarkAlpha(scale))
+func (c *Comp) CaretRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretRuby(scale int) *component {
-	c.el.Style(styles.CaretRuby(scale))
+func (c *Comp) CaretRuby(scale int) *Comp {
+	c.El.Style(styles.CaretRuby(scale))
 	return c
 }
 
-func (c *component) CaretRubyAlpha(scale int) *component {
-	c.el.Style(styles.CaretRubyAlpha(scale))
+func (c *Comp) CaretRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretRubyAlpha(scale))
 	return c
 }
 
-func (c *component) CaretRubyDark(scale int) *component {
-	c.el.Style(styles.CaretRubyDark(scale))
+func (c *Comp) CaretRubyDark(scale int) *Comp {
+	c.El.Style(styles.CaretRubyDark(scale))
 	return c
 }
 
-func (c *component) CaretRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretRubyDarkAlpha(scale))
+func (c *Comp) CaretRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretSage(scale int) *component {
-	c.el.Style(styles.CaretSage(scale))
+func (c *Comp) CaretSage(scale int) *Comp {
+	c.El.Style(styles.CaretSage(scale))
 	return c
 }
 
-func (c *component) CaretSageAlpha(scale int) *component {
-	c.el.Style(styles.CaretSageAlpha(scale))
+func (c *Comp) CaretSageAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretSageAlpha(scale))
 	return c
 }
 
-func (c *component) CaretSageDark(scale int) *component {
-	c.el.Style(styles.CaretSageDark(scale))
+func (c *Comp) CaretSageDark(scale int) *Comp {
+	c.El.Style(styles.CaretSageDark(scale))
 	return c
 }
 
-func (c *component) CaretSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretSageDarkAlpha(scale))
+func (c *Comp) CaretSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretSand(scale int) *component {
-	c.el.Style(styles.CaretSand(scale))
+func (c *Comp) CaretSand(scale int) *Comp {
+	c.El.Style(styles.CaretSand(scale))
 	return c
 }
 
-func (c *component) CaretSandAlpha(scale int) *component {
-	c.el.Style(styles.CaretSandAlpha(scale))
+func (c *Comp) CaretSandAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretSandAlpha(scale))
 	return c
 }
 
-func (c *component) CaretSandDark(scale int) *component {
-	c.el.Style(styles.CaretSandDark(scale))
+func (c *Comp) CaretSandDark(scale int) *Comp {
+	c.El.Style(styles.CaretSandDark(scale))
 	return c
 }
 
-func (c *component) CaretSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretSandDarkAlpha(scale))
+func (c *Comp) CaretSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretSky(scale int) *component {
-	c.el.Style(styles.CaretSky(scale))
+func (c *Comp) CaretSky(scale int) *Comp {
+	c.El.Style(styles.CaretSky(scale))
 	return c
 }
 
-func (c *component) CaretSkyAlpha(scale int) *component {
-	c.el.Style(styles.CaretSkyAlpha(scale))
+func (c *Comp) CaretSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretSkyAlpha(scale))
 	return c
 }
 
-func (c *component) CaretSkyDark(scale int) *component {
-	c.el.Style(styles.CaretSkyDark(scale))
+func (c *Comp) CaretSkyDark(scale int) *Comp {
+	c.El.Style(styles.CaretSkyDark(scale))
 	return c
 }
 
-func (c *component) CaretSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretSkyDarkAlpha(scale))
+func (c *Comp) CaretSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretSlate(scale int) *component {
-	c.el.Style(styles.CaretSlate(scale))
+func (c *Comp) CaretSlate(scale int) *Comp {
+	c.El.Style(styles.CaretSlate(scale))
 	return c
 }
 
-func (c *component) CaretSlateAlpha(scale int) *component {
-	c.el.Style(styles.CaretSlateAlpha(scale))
+func (c *Comp) CaretSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretSlateAlpha(scale))
 	return c
 }
 
-func (c *component) CaretSlateDark(scale int) *component {
-	c.el.Style(styles.CaretSlateDark(scale))
+func (c *Comp) CaretSlateDark(scale int) *Comp {
+	c.El.Style(styles.CaretSlateDark(scale))
 	return c
 }
 
-func (c *component) CaretSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretSlateDarkAlpha(scale))
+func (c *Comp) CaretSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretTeal(scale int) *component {
-	c.el.Style(styles.CaretTeal(scale))
+func (c *Comp) CaretTeal(scale int) *Comp {
+	c.El.Style(styles.CaretTeal(scale))
 	return c
 }
 
-func (c *component) CaretTealAlpha(scale int) *component {
-	c.el.Style(styles.CaretTealAlpha(scale))
+func (c *Comp) CaretTealAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretTealAlpha(scale))
 	return c
 }
 
-func (c *component) CaretTealDark(scale int) *component {
-	c.el.Style(styles.CaretTealDark(scale))
+func (c *Comp) CaretTealDark(scale int) *Comp {
+	c.El.Style(styles.CaretTealDark(scale))
 	return c
 }
 
-func (c *component) CaretTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretTealDarkAlpha(scale))
+func (c *Comp) CaretTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretTomato(scale int) *component {
-	c.el.Style(styles.CaretTomato(scale))
+func (c *Comp) CaretTomato(scale int) *Comp {
+	c.El.Style(styles.CaretTomato(scale))
 	return c
 }
 
-func (c *component) CaretTomatoAlpha(scale int) *component {
-	c.el.Style(styles.CaretTomatoAlpha(scale))
+func (c *Comp) CaretTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) CaretTomatoDark(scale int) *component {
-	c.el.Style(styles.CaretTomatoDark(scale))
+func (c *Comp) CaretTomatoDark(scale int) *Comp {
+	c.El.Style(styles.CaretTomatoDark(scale))
 	return c
 }
 
-func (c *component) CaretTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretTomatoDarkAlpha(scale))
+func (c *Comp) CaretTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretTransparent() *component {
-	c.el.Style(styles.CaretTransparent())
+func (c *Comp) CaretTransparent() *Comp {
+	c.El.Style(styles.CaretTransparent())
 	return c
 }
 
-func (c *component) CaretViolet(scale int) *component {
-	c.el.Style(styles.CaretViolet(scale))
+func (c *Comp) CaretViolet(scale int) *Comp {
+	c.El.Style(styles.CaretViolet(scale))
 	return c
 }
 
-func (c *component) CaretVioletAlpha(scale int) *component {
-	c.el.Style(styles.CaretVioletAlpha(scale))
+func (c *Comp) CaretVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretVioletAlpha(scale))
 	return c
 }
 
-func (c *component) CaretVioletDark(scale int) *component {
-	c.el.Style(styles.CaretVioletDark(scale))
+func (c *Comp) CaretVioletDark(scale int) *Comp {
+	c.El.Style(styles.CaretVioletDark(scale))
 	return c
 }
 
-func (c *component) CaretVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretVioletDarkAlpha(scale))
+func (c *Comp) CaretVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) CaretWhite() *component {
-	c.el.Style(styles.CaretWhite())
+func (c *Comp) CaretWhite() *Comp {
+	c.El.Style(styles.CaretWhite())
 	return c
 }
 
-func (c *component) CaretWhiteAlpha(scale int) *component {
-	c.el.Style(styles.CaretWhiteAlpha(scale))
+func (c *Comp) CaretWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) CaretYellow(scale int) *component {
-	c.el.Style(styles.CaretYellow(scale))
+func (c *Comp) CaretYellow(scale int) *Comp {
+	c.El.Style(styles.CaretYellow(scale))
 	return c
 }
 
-func (c *component) CaretYellowAlpha(scale int) *component {
-	c.el.Style(styles.CaretYellowAlpha(scale))
+func (c *Comp) CaretYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretYellowAlpha(scale))
 	return c
 }
 
-func (c *component) CaretYellowDark(scale int) *component {
-	c.el.Style(styles.CaretYellowDark(scale))
+func (c *Comp) CaretYellowDark(scale int) *Comp {
+	c.El.Style(styles.CaretYellowDark(scale))
 	return c
 }
 
-func (c *component) CaretYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.CaretYellowDarkAlpha(scale))
+func (c *Comp) CaretYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.CaretYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ClearBoth() *component {
-	c.el.Style(styles.ClearBoth())
+func (c *Comp) ClearBoth() *Comp {
+	c.El.Style(styles.ClearBoth())
 	return c
 }
 
-func (c *component) ClearEnd() *component {
-	c.el.Style(styles.ClearEnd())
+func (c *Comp) ClearEnd() *Comp {
+	c.El.Style(styles.ClearEnd())
 	return c
 }
 
-func (c *component) ClearLeft() *component {
-	c.el.Style(styles.ClearLeft())
+func (c *Comp) ClearLeft() *Comp {
+	c.El.Style(styles.ClearLeft())
 	return c
 }
 
-func (c *component) ClearNone() *component {
-	c.el.Style(styles.ClearNone())
+func (c *Comp) ClearNone() *Comp {
+	c.El.Style(styles.ClearNone())
 	return c
 }
 
-func (c *component) ClearRight() *component {
-	c.el.Style(styles.ClearRight())
+func (c *Comp) ClearRight() *Comp {
+	c.El.Style(styles.ClearRight())
 	return c
 }
 
-func (c *component) ClearStart() *component {
-	c.el.Style(styles.ClearStart())
+func (c *Comp) ClearStart() *Comp {
+	c.El.Style(styles.ClearStart())
 	return c
 }
 
-func (c *component) Col(number int) *component {
-	c.el.Style(styles.Col(number))
+func (c *Comp) Col(number int) *Comp {
+	c.El.Style(styles.Col(number))
 	return c
 }
 
-func (c *component) ColAuto() *component {
-	c.el.Style(styles.ColAuto())
+func (c *Comp) ColAuto() *Comp {
+	c.El.Style(styles.ColAuto())
 	return c
 }
 
-func (c *component) ColBy(val value.Value) *component {
-	c.el.Style(styles.ColBy(val))
+func (c *Comp) ColBy(val value.Value) *Comp {
+	c.El.Style(styles.ColBy(val))
 	return c
 }
 
-func (c *component) ColEnd(number int) *component {
-	c.el.Style(styles.ColEnd(number))
+func (c *Comp) ColEnd(number int) *Comp {
+	c.El.Style(styles.ColEnd(number))
 	return c
 }
 
-func (c *component) ColEndAuto() *component {
-	c.el.Style(styles.ColEndAuto())
+func (c *Comp) ColEndAuto() *Comp {
+	c.El.Style(styles.ColEndAuto())
 	return c
 }
 
-func (c *component) ColEndBy(val value.Value) *component {
-	c.el.Style(styles.ColEndBy(val))
+func (c *Comp) ColEndBy(val value.Value) *Comp {
+	c.El.Style(styles.ColEndBy(val))
 	return c
 }
 
-func (c *component) ColSpan(number int) *component {
-	c.el.Style(styles.ColSpan(number))
+func (c *Comp) ColSpan(number int) *Comp {
+	c.El.Style(styles.ColSpan(number))
 	return c
 }
 
-func (c *component) ColSpanBy(val value.Value) *component {
-	c.el.Style(styles.ColSpanBy(val))
+func (c *Comp) ColSpanBy(val value.Value) *Comp {
+	c.El.Style(styles.ColSpanBy(val))
 	return c
 }
 
-func (c *component) ColSpanFull() *component {
-	c.el.Style(styles.ColSpanFull())
+func (c *Comp) ColSpanFull() *Comp {
+	c.El.Style(styles.ColSpanFull())
 	return c
 }
 
-func (c *component) ColStart(number int) *component {
-	c.el.Style(styles.ColStart(number))
+func (c *Comp) ColStart(number int) *Comp {
+	c.El.Style(styles.ColStart(number))
 	return c
 }
 
-func (c *component) ColStartAuto() *component {
-	c.el.Style(styles.ColStartAuto())
+func (c *Comp) ColStartAuto() *Comp {
+	c.El.Style(styles.ColStartAuto())
 	return c
 }
 
-func (c *component) ColStartBy(val value.Value) *component {
-	c.el.Style(styles.ColStartBy(val))
+func (c *Comp) ColStartBy(val value.Value) *Comp {
+	c.El.Style(styles.ColStartBy(val))
 	return c
 }
 
-func (c *component) Collapse() *component {
-	c.el.Style(styles.Collapse())
+func (c *Comp) Collapse() *Comp {
+	c.El.Style(styles.Collapse())
 	return c
 }
 
-func (c *component) Columns(cols value.Value) *component {
-	c.el.Style(styles.Columns(cols))
+func (c *Comp) Columns(cols value.Value) *Comp {
+	c.El.Style(styles.Columns(cols))
 	return c
 }
 
-func (c *component) Columns2xl() *component {
-	c.el.Style(styles.Columns2xl())
+func (c *Comp) Columns2xl() *Comp {
+	c.El.Style(styles.Columns2xl())
 	return c
 }
 
-func (c *component) Columns2xs() *component {
-	c.el.Style(styles.Columns2xs())
+func (c *Comp) Columns2xs() *Comp {
+	c.El.Style(styles.Columns2xs())
 	return c
 }
 
-func (c *component) Columns3xl() *component {
-	c.el.Style(styles.Columns3xl())
+func (c *Comp) Columns3xl() *Comp {
+	c.El.Style(styles.Columns3xl())
 	return c
 }
 
-func (c *component) Columns3xs() *component {
-	c.el.Style(styles.Columns3xs())
+func (c *Comp) Columns3xs() *Comp {
+	c.El.Style(styles.Columns3xs())
 	return c
 }
 
-func (c *component) Columns4xl() *component {
-	c.el.Style(styles.Columns4xl())
+func (c *Comp) Columns4xl() *Comp {
+	c.El.Style(styles.Columns4xl())
 	return c
 }
 
-func (c *component) Columns5xl() *component {
-	c.el.Style(styles.Columns5xl())
+func (c *Comp) Columns5xl() *Comp {
+	c.El.Style(styles.Columns5xl())
 	return c
 }
 
-func (c *component) Columns6xl() *component {
-	c.el.Style(styles.Columns6xl())
+func (c *Comp) Columns6xl() *Comp {
+	c.El.Style(styles.Columns6xl())
 	return c
 }
 
-func (c *component) Columns7xl() *component {
-	c.el.Style(styles.Columns7xl())
+func (c *Comp) Columns7xl() *Comp {
+	c.El.Style(styles.Columns7xl())
 	return c
 }
 
-func (c *component) ColumnsAuto() *component {
-	c.el.Style(styles.ColumnsAuto())
+func (c *Comp) ColumnsAuto() *Comp {
+	c.El.Style(styles.ColumnsAuto())
 	return c
 }
 
-func (c *component) ColumnsLg() *component {
-	c.el.Style(styles.ColumnsLg())
+func (c *Comp) ColumnsLg() *Comp {
+	c.El.Style(styles.ColumnsLg())
 	return c
 }
 
-func (c *component) ColumnsMd() *component {
-	c.el.Style(styles.ColumnsMd())
+func (c *Comp) ColumnsMd() *Comp {
+	c.El.Style(styles.ColumnsMd())
 	return c
 }
 
-func (c *component) ColumnsSm() *component {
-	c.el.Style(styles.ColumnsSm())
+func (c *Comp) ColumnsSm() *Comp {
+	c.El.Style(styles.ColumnsSm())
 	return c
 }
 
-func (c *component) ColumnsXl() *component {
-	c.el.Style(styles.ColumnsXl())
+func (c *Comp) ColumnsXl() *Comp {
+	c.El.Style(styles.ColumnsXl())
 	return c
 }
 
-func (c *component) ColumnsXs() *component {
-	c.el.Style(styles.ColumnsXs())
+func (c *Comp) ColumnsXs() *Comp {
+	c.El.Style(styles.ColumnsXs())
 	return c
 }
 
-func (c *component) Container() *component {
-	c.el.Style(styles.Container())
+func (c *Comp) Container() *Comp {
+	c.El.Style(styles.Container())
 	return c
 }
 
-func (c *component) Content(val value.Value) *component {
-	c.el.Style(styles.Content(val))
+func (c *Comp) Content(val value.Value) *Comp {
+	c.El.Style(styles.Content(val))
 	return c
 }
 
-func (c *component) ContentAround() *component {
-	c.el.Style(styles.ContentAround())
+func (c *Comp) ContentAround() *Comp {
+	c.El.Style(styles.ContentAround())
 	return c
 }
 
-func (c *component) ContentBaseline() *component {
-	c.el.Style(styles.ContentBaseline())
+func (c *Comp) ContentBaseline() *Comp {
+	c.El.Style(styles.ContentBaseline())
 	return c
 }
 
-func (c *component) ContentBetween() *component {
-	c.el.Style(styles.ContentBetween())
+func (c *Comp) ContentBetween() *Comp {
+	c.El.Style(styles.ContentBetween())
 	return c
 }
 
-func (c *component) ContentCenter() *component {
-	c.el.Style(styles.ContentCenter())
+func (c *Comp) ContentCenter() *Comp {
+	c.El.Style(styles.ContentCenter())
 	return c
 }
 
-func (c *component) ContentEnd() *component {
-	c.el.Style(styles.ContentEnd())
+func (c *Comp) ContentEnd() *Comp {
+	c.El.Style(styles.ContentEnd())
 	return c
 }
 
-func (c *component) ContentEvenly() *component {
-	c.el.Style(styles.ContentEvenly())
+func (c *Comp) ContentEvenly() *Comp {
+	c.El.Style(styles.ContentEvenly())
 	return c
 }
 
-func (c *component) ContentNone() *component {
-	c.el.Style(styles.ContentNone())
+func (c *Comp) ContentNone() *Comp {
+	c.El.Style(styles.ContentNone())
 	return c
 }
 
-func (c *component) ContentNormal() *component {
-	c.el.Style(styles.ContentNormal())
+func (c *Comp) ContentNormal() *Comp {
+	c.El.Style(styles.ContentNormal())
 	return c
 }
 
-func (c *component) ContentStart() *component {
-	c.el.Style(styles.ContentStart())
+func (c *Comp) ContentStart() *Comp {
+	c.El.Style(styles.ContentStart())
 	return c
 }
 
-func (c *component) ContentStretch() *component {
-	c.el.Style(styles.ContentStretch())
+func (c *Comp) ContentStretch() *Comp {
+	c.El.Style(styles.ContentStretch())
 	return c
 }
 
-func (c *component) Contents() *component {
-	c.el.Style(styles.Contents())
+func (c *Comp) Contents() *Comp {
+	c.El.Style(styles.Contents())
 	return c
 }
 
-func (c *component) Contrast(val any) *component {
-	c.el.Style(styles.Contrast(val))
+func (c *Comp) Contrast(val any) *Comp {
+	c.El.Style(styles.Contrast(val))
 	return c
 }
 
-func (c *component) Cursor(val value.Value) *component {
-	c.el.Style(styles.Cursor(val))
+func (c *Comp) Cursor(val value.Value) *Comp {
+	c.El.Style(styles.Cursor(val))
 	return c
 }
 
-func (c *component) CursorAlias() *component {
-	c.el.Style(styles.CursorAlias())
+func (c *Comp) CursorAlias() *Comp {
+	c.El.Style(styles.CursorAlias())
 	return c
 }
 
-func (c *component) CursorAllScroll() *component {
-	c.el.Style(styles.CursorAllScroll())
+func (c *Comp) CursorAllScroll() *Comp {
+	c.El.Style(styles.CursorAllScroll())
 	return c
 }
 
-func (c *component) CursorAuto() *component {
-	c.el.Style(styles.CursorAuto())
+func (c *Comp) CursorAuto() *Comp {
+	c.El.Style(styles.CursorAuto())
 	return c
 }
 
-func (c *component) CursorCell() *component {
-	c.el.Style(styles.CursorCell())
+func (c *Comp) CursorCell() *Comp {
+	c.El.Style(styles.CursorCell())
 	return c
 }
 
-func (c *component) CursorColResize() *component {
-	c.el.Style(styles.CursorColResize())
+func (c *Comp) CursorColResize() *Comp {
+	c.El.Style(styles.CursorColResize())
 	return c
 }
 
-func (c *component) CursorContextMenu() *component {
-	c.el.Style(styles.CursorContextMenu())
+func (c *Comp) CursorContextMenu() *Comp {
+	c.El.Style(styles.CursorContextMenu())
 	return c
 }
 
-func (c *component) CursorCopy() *component {
-	c.el.Style(styles.CursorCopy())
+func (c *Comp) CursorCopy() *Comp {
+	c.El.Style(styles.CursorCopy())
 	return c
 }
 
-func (c *component) CursorCrosshair() *component {
-	c.el.Style(styles.CursorCrosshair())
+func (c *Comp) CursorCrosshair() *Comp {
+	c.El.Style(styles.CursorCrosshair())
 	return c
 }
 
-func (c *component) CursorDefault() *component {
-	c.el.Style(styles.CursorDefault())
+func (c *Comp) CursorDefault() *Comp {
+	c.El.Style(styles.CursorDefault())
 	return c
 }
 
-func (c *component) CursorEResize() *component {
-	c.el.Style(styles.CursorEResize())
+func (c *Comp) CursorEResize() *Comp {
+	c.El.Style(styles.CursorEResize())
 	return c
 }
 
-func (c *component) CursorEwResize() *component {
-	c.el.Style(styles.CursorEwResize())
+func (c *Comp) CursorEwResize() *Comp {
+	c.El.Style(styles.CursorEwResize())
 	return c
 }
 
-func (c *component) CursorGrab() *component {
-	c.el.Style(styles.CursorGrab())
+func (c *Comp) CursorGrab() *Comp {
+	c.El.Style(styles.CursorGrab())
 	return c
 }
 
-func (c *component) CursorGrabbing() *component {
-	c.el.Style(styles.CursorGrabbing())
+func (c *Comp) CursorGrabbing() *Comp {
+	c.El.Style(styles.CursorGrabbing())
 	return c
 }
 
-func (c *component) CursorHelp() *component {
-	c.el.Style(styles.CursorHelp())
+func (c *Comp) CursorHelp() *Comp {
+	c.El.Style(styles.CursorHelp())
 	return c
 }
 
-func (c *component) CursorMove() *component {
-	c.el.Style(styles.CursorMove())
+func (c *Comp) CursorMove() *Comp {
+	c.El.Style(styles.CursorMove())
 	return c
 }
 
-func (c *component) CursorNResize() *component {
-	c.el.Style(styles.CursorNResize())
+func (c *Comp) CursorNResize() *Comp {
+	c.El.Style(styles.CursorNResize())
 	return c
 }
 
-func (c *component) CursorNeResize() *component {
-	c.el.Style(styles.CursorNeResize())
+func (c *Comp) CursorNeResize() *Comp {
+	c.El.Style(styles.CursorNeResize())
 	return c
 }
 
-func (c *component) CursorNeswResize() *component {
-	c.el.Style(styles.CursorNeswResize())
+func (c *Comp) CursorNeswResize() *Comp {
+	c.El.Style(styles.CursorNeswResize())
 	return c
 }
 
-func (c *component) CursorNoDrop() *component {
-	c.el.Style(styles.CursorNoDrop())
+func (c *Comp) CursorNoDrop() *Comp {
+	c.El.Style(styles.CursorNoDrop())
 	return c
 }
 
-func (c *component) CursorNone() *component {
-	c.el.Style(styles.CursorNone())
+func (c *Comp) CursorNone() *Comp {
+	c.El.Style(styles.CursorNone())
 	return c
 }
 
-func (c *component) CursorNotAllowed() *component {
-	c.el.Style(styles.CursorNotAllowed())
+func (c *Comp) CursorNotAllowed() *Comp {
+	c.El.Style(styles.CursorNotAllowed())
 	return c
 }
 
-func (c *component) CursorNsResize() *component {
-	c.el.Style(styles.CursorNsResize())
+func (c *Comp) CursorNsResize() *Comp {
+	c.El.Style(styles.CursorNsResize())
 	return c
 }
 
-func (c *component) CursorNwResize() *component {
-	c.el.Style(styles.CursorNwResize())
+func (c *Comp) CursorNwResize() *Comp {
+	c.El.Style(styles.CursorNwResize())
 	return c
 }
 
-func (c *component) CursorNwseResize() *component {
-	c.el.Style(styles.CursorNwseResize())
+func (c *Comp) CursorNwseResize() *Comp {
+	c.El.Style(styles.CursorNwseResize())
 	return c
 }
 
-func (c *component) CursorPointer() *component {
-	c.el.Style(styles.CursorPointer())
+func (c *Comp) CursorPointer() *Comp {
+	c.El.Style(styles.CursorPointer())
 	return c
 }
 
-func (c *component) CursorProgress() *component {
-	c.el.Style(styles.CursorProgress())
+func (c *Comp) CursorProgress() *Comp {
+	c.El.Style(styles.CursorProgress())
 	return c
 }
 
-func (c *component) CursorRowResize() *component {
-	c.el.Style(styles.CursorRowResize())
+func (c *Comp) CursorRowResize() *Comp {
+	c.El.Style(styles.CursorRowResize())
 	return c
 }
 
-func (c *component) CursorSResize() *component {
-	c.el.Style(styles.CursorSResize())
+func (c *Comp) CursorSResize() *Comp {
+	c.El.Style(styles.CursorSResize())
 	return c
 }
 
-func (c *component) CursorSeResize() *component {
-	c.el.Style(styles.CursorSeResize())
+func (c *Comp) CursorSeResize() *Comp {
+	c.El.Style(styles.CursorSeResize())
 	return c
 }
 
-func (c *component) CursorSwResize() *component {
-	c.el.Style(styles.CursorSwResize())
+func (c *Comp) CursorSwResize() *Comp {
+	c.El.Style(styles.CursorSwResize())
 	return c
 }
 
-func (c *component) CursorText() *component {
-	c.el.Style(styles.CursorText())
+func (c *Comp) CursorText() *Comp {
+	c.El.Style(styles.CursorText())
 	return c
 }
 
-func (c *component) CursorVerticalText() *component {
-	c.el.Style(styles.CursorVerticalText())
+func (c *Comp) CursorVerticalText() *Comp {
+	c.El.Style(styles.CursorVerticalText())
 	return c
 }
 
-func (c *component) CursorWResize() *component {
-	c.el.Style(styles.CursorWResize())
+func (c *Comp) CursorWResize() *Comp {
+	c.El.Style(styles.CursorWResize())
 	return c
 }
 
-func (c *component) CursorWait() *component {
-	c.el.Style(styles.CursorWait())
+func (c *Comp) CursorWait() *Comp {
+	c.El.Style(styles.CursorWait())
 	return c
 }
 
-func (c *component) CursorZoomIn() *component {
-	c.el.Style(styles.CursorZoomIn())
+func (c *Comp) CursorZoomIn() *Comp {
+	c.El.Style(styles.CursorZoomIn())
 	return c
 }
 
-func (c *component) CursorZoomOut() *component {
-	c.el.Style(styles.CursorZoomOut())
+func (c *Comp) CursorZoomOut() *Comp {
+	c.El.Style(styles.CursorZoomOut())
 	return c
 }
 
-func (c *component) DecorAmber(scale int) *component {
-	c.el.Style(styles.DecorAmber(scale))
+func (c *Comp) DecorAmber(scale int) *Comp {
+	c.El.Style(styles.DecorAmber(scale))
 	return c
 }
 
-func (c *component) DecorAmberAlpha(scale int) *component {
-	c.el.Style(styles.DecorAmberAlpha(scale))
+func (c *Comp) DecorAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorAmberAlpha(scale))
 	return c
 }
 
-func (c *component) DecorAmberDark(scale int) *component {
-	c.el.Style(styles.DecorAmberDark(scale))
+func (c *Comp) DecorAmberDark(scale int) *Comp {
+	c.El.Style(styles.DecorAmberDark(scale))
 	return c
 }
 
-func (c *component) DecorAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorAmberDarkAlpha(scale))
+func (c *Comp) DecorAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorBlack() *component {
-	c.el.Style(styles.DecorBlack())
+func (c *Comp) DecorBlack() *Comp {
+	c.El.Style(styles.DecorBlack())
 	return c
 }
 
-func (c *component) DecorBlackAlpha(scale int) *component {
-	c.el.Style(styles.DecorBlackAlpha(scale))
+func (c *Comp) DecorBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorBlackAlpha(scale))
 	return c
 }
 
-func (c *component) DecorBlue(scale int) *component {
-	c.el.Style(styles.DecorBlue(scale))
+func (c *Comp) DecorBlue(scale int) *Comp {
+	c.El.Style(styles.DecorBlue(scale))
 	return c
 }
 
-func (c *component) DecorBlueAlpha(scale int) *component {
-	c.el.Style(styles.DecorBlueAlpha(scale))
+func (c *Comp) DecorBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorBlueAlpha(scale))
 	return c
 }
 
-func (c *component) DecorBlueDark(scale int) *component {
-	c.el.Style(styles.DecorBlueDark(scale))
+func (c *Comp) DecorBlueDark(scale int) *Comp {
+	c.El.Style(styles.DecorBlueDark(scale))
 	return c
 }
 
-func (c *component) DecorBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorBlueDarkAlpha(scale))
+func (c *Comp) DecorBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorBronze(scale int) *component {
-	c.el.Style(styles.DecorBronze(scale))
+func (c *Comp) DecorBronze(scale int) *Comp {
+	c.El.Style(styles.DecorBronze(scale))
 	return c
 }
 
-func (c *component) DecorBronzeAlpha(scale int) *component {
-	c.el.Style(styles.DecorBronzeAlpha(scale))
+func (c *Comp) DecorBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) DecorBronzeDark(scale int) *component {
-	c.el.Style(styles.DecorBronzeDark(scale))
+func (c *Comp) DecorBronzeDark(scale int) *Comp {
+	c.El.Style(styles.DecorBronzeDark(scale))
 	return c
 }
 
-func (c *component) DecorBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorBronzeDarkAlpha(scale))
+func (c *Comp) DecorBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorBrown(scale int) *component {
-	c.el.Style(styles.DecorBrown(scale))
+func (c *Comp) DecorBrown(scale int) *Comp {
+	c.El.Style(styles.DecorBrown(scale))
 	return c
 }
 
-func (c *component) DecorBrownAlpha(scale int) *component {
-	c.el.Style(styles.DecorBrownAlpha(scale))
+func (c *Comp) DecorBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorBrownAlpha(scale))
 	return c
 }
 
-func (c *component) DecorBrownDark(scale int) *component {
-	c.el.Style(styles.DecorBrownDark(scale))
+func (c *Comp) DecorBrownDark(scale int) *Comp {
+	c.El.Style(styles.DecorBrownDark(scale))
 	return c
 }
 
-func (c *component) DecorBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorBrownDarkAlpha(scale))
+func (c *Comp) DecorBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorColorBy(val value.Value) *component {
-	c.el.Style(styles.DecorColorBy(val))
+func (c *Comp) DecorColorBy(val value.Value) *Comp {
+	c.El.Style(styles.DecorColorBy(val))
 	return c
 }
 
-func (c *component) DecorCrimson(scale int) *component {
-	c.el.Style(styles.DecorCrimson(scale))
+func (c *Comp) DecorCrimson(scale int) *Comp {
+	c.El.Style(styles.DecorCrimson(scale))
 	return c
 }
 
-func (c *component) DecorCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.DecorCrimsonAlpha(scale))
+func (c *Comp) DecorCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) DecorCrimsonDark(scale int) *component {
-	c.el.Style(styles.DecorCrimsonDark(scale))
+func (c *Comp) DecorCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.DecorCrimsonDark(scale))
 	return c
 }
 
-func (c *component) DecorCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorCrimsonDarkAlpha(scale))
+func (c *Comp) DecorCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorCurrent() *component {
-	c.el.Style(styles.DecorCurrent())
+func (c *Comp) DecorCurrent() *Comp {
+	c.El.Style(styles.DecorCurrent())
 	return c
 }
 
-func (c *component) DecorCyan(scale int) *component {
-	c.el.Style(styles.DecorCyan(scale))
+func (c *Comp) DecorCyan(scale int) *Comp {
+	c.El.Style(styles.DecorCyan(scale))
 	return c
 }
 
-func (c *component) DecorCyanAlpha(scale int) *component {
-	c.el.Style(styles.DecorCyanAlpha(scale))
+func (c *Comp) DecorCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorCyanAlpha(scale))
 	return c
 }
 
-func (c *component) DecorCyanDark(scale int) *component {
-	c.el.Style(styles.DecorCyanDark(scale))
+func (c *Comp) DecorCyanDark(scale int) *Comp {
+	c.El.Style(styles.DecorCyanDark(scale))
 	return c
 }
 
-func (c *component) DecorCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorCyanDarkAlpha(scale))
+func (c *Comp) DecorCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorGold(scale int) *component {
-	c.el.Style(styles.DecorGold(scale))
+func (c *Comp) DecorGold(scale int) *Comp {
+	c.El.Style(styles.DecorGold(scale))
 	return c
 }
 
-func (c *component) DecorGoldAlpha(scale int) *component {
-	c.el.Style(styles.DecorGoldAlpha(scale))
+func (c *Comp) DecorGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorGoldAlpha(scale))
 	return c
 }
 
-func (c *component) DecorGoldDark(scale int) *component {
-	c.el.Style(styles.DecorGoldDark(scale))
+func (c *Comp) DecorGoldDark(scale int) *Comp {
+	c.El.Style(styles.DecorGoldDark(scale))
 	return c
 }
 
-func (c *component) DecorGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorGoldDarkAlpha(scale))
+func (c *Comp) DecorGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorGrass(scale int) *component {
-	c.el.Style(styles.DecorGrass(scale))
+func (c *Comp) DecorGrass(scale int) *Comp {
+	c.El.Style(styles.DecorGrass(scale))
 	return c
 }
 
-func (c *component) DecorGrassAlpha(scale int) *component {
-	c.el.Style(styles.DecorGrassAlpha(scale))
+func (c *Comp) DecorGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorGrassAlpha(scale))
 	return c
 }
 
-func (c *component) DecorGrassDark(scale int) *component {
-	c.el.Style(styles.DecorGrassDark(scale))
+func (c *Comp) DecorGrassDark(scale int) *Comp {
+	c.El.Style(styles.DecorGrassDark(scale))
 	return c
 }
 
-func (c *component) DecorGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorGrassDarkAlpha(scale))
+func (c *Comp) DecorGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorGray(scale int) *component {
-	c.el.Style(styles.DecorGray(scale))
+func (c *Comp) DecorGray(scale int) *Comp {
+	c.El.Style(styles.DecorGray(scale))
 	return c
 }
 
-func (c *component) DecorGrayAlpha(scale int) *component {
-	c.el.Style(styles.DecorGrayAlpha(scale))
+func (c *Comp) DecorGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorGrayAlpha(scale))
 	return c
 }
 
-func (c *component) DecorGrayDark(scale int) *component {
-	c.el.Style(styles.DecorGrayDark(scale))
+func (c *Comp) DecorGrayDark(scale int) *Comp {
+	c.El.Style(styles.DecorGrayDark(scale))
 	return c
 }
 
-func (c *component) DecorGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorGrayDarkAlpha(scale))
+func (c *Comp) DecorGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorGreen(scale int) *component {
-	c.el.Style(styles.DecorGreen(scale))
+func (c *Comp) DecorGreen(scale int) *Comp {
+	c.El.Style(styles.DecorGreen(scale))
 	return c
 }
 
-func (c *component) DecorGreenAlpha(scale int) *component {
-	c.el.Style(styles.DecorGreenAlpha(scale))
+func (c *Comp) DecorGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorGreenAlpha(scale))
 	return c
 }
 
-func (c *component) DecorGreenDark(scale int) *component {
-	c.el.Style(styles.DecorGreenDark(scale))
+func (c *Comp) DecorGreenDark(scale int) *Comp {
+	c.El.Style(styles.DecorGreenDark(scale))
 	return c
 }
 
-func (c *component) DecorGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorGreenDarkAlpha(scale))
+func (c *Comp) DecorGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorIndigo(scale int) *component {
-	c.el.Style(styles.DecorIndigo(scale))
+func (c *Comp) DecorIndigo(scale int) *Comp {
+	c.El.Style(styles.DecorIndigo(scale))
 	return c
 }
 
-func (c *component) DecorIndigoAlpha(scale int) *component {
-	c.el.Style(styles.DecorIndigoAlpha(scale))
+func (c *Comp) DecorIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) DecorIndigoDark(scale int) *component {
-	c.el.Style(styles.DecorIndigoDark(scale))
+func (c *Comp) DecorIndigoDark(scale int) *Comp {
+	c.El.Style(styles.DecorIndigoDark(scale))
 	return c
 }
 
-func (c *component) DecorIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorIndigoDarkAlpha(scale))
+func (c *Comp) DecorIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorInherit() *component {
-	c.el.Style(styles.DecorInherit())
+func (c *Comp) DecorInherit() *Comp {
+	c.El.Style(styles.DecorInherit())
 	return c
 }
 
-func (c *component) DecorIris(scale int) *component {
-	c.el.Style(styles.DecorIris(scale))
+func (c *Comp) DecorIris(scale int) *Comp {
+	c.El.Style(styles.DecorIris(scale))
 	return c
 }
 
-func (c *component) DecorIrisAlpha(scale int) *component {
-	c.el.Style(styles.DecorIrisAlpha(scale))
+func (c *Comp) DecorIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorIrisAlpha(scale))
 	return c
 }
 
-func (c *component) DecorIrisDark(scale int) *component {
-	c.el.Style(styles.DecorIrisDark(scale))
+func (c *Comp) DecorIrisDark(scale int) *Comp {
+	c.El.Style(styles.DecorIrisDark(scale))
 	return c
 }
 
-func (c *component) DecorIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorIrisDarkAlpha(scale))
+func (c *Comp) DecorIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorJade(scale int) *component {
-	c.el.Style(styles.DecorJade(scale))
+func (c *Comp) DecorJade(scale int) *Comp {
+	c.El.Style(styles.DecorJade(scale))
 	return c
 }
 
-func (c *component) DecorJadeAlpha(scale int) *component {
-	c.el.Style(styles.DecorJadeAlpha(scale))
+func (c *Comp) DecorJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorJadeAlpha(scale))
 	return c
 }
 
-func (c *component) DecorJadeDark(scale int) *component {
-	c.el.Style(styles.DecorJadeDark(scale))
+func (c *Comp) DecorJadeDark(scale int) *Comp {
+	c.El.Style(styles.DecorJadeDark(scale))
 	return c
 }
 
-func (c *component) DecorJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorJadeDarkAlpha(scale))
+func (c *Comp) DecorJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorLime(scale int) *component {
-	c.el.Style(styles.DecorLime(scale))
+func (c *Comp) DecorLime(scale int) *Comp {
+	c.El.Style(styles.DecorLime(scale))
 	return c
 }
 
-func (c *component) DecorLimeAlpha(scale int) *component {
-	c.el.Style(styles.DecorLimeAlpha(scale))
+func (c *Comp) DecorLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorLimeAlpha(scale))
 	return c
 }
 
-func (c *component) DecorLimeDark(scale int) *component {
-	c.el.Style(styles.DecorLimeDark(scale))
+func (c *Comp) DecorLimeDark(scale int) *Comp {
+	c.El.Style(styles.DecorLimeDark(scale))
 	return c
 }
 
-func (c *component) DecorLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorLimeDarkAlpha(scale))
+func (c *Comp) DecorLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorMauve(scale int) *component {
-	c.el.Style(styles.DecorMauve(scale))
+func (c *Comp) DecorMauve(scale int) *Comp {
+	c.El.Style(styles.DecorMauve(scale))
 	return c
 }
 
-func (c *component) DecorMauveAlpha(scale int) *component {
-	c.el.Style(styles.DecorMauveAlpha(scale))
+func (c *Comp) DecorMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorMauveAlpha(scale))
 	return c
 }
 
-func (c *component) DecorMauveDark(scale int) *component {
-	c.el.Style(styles.DecorMauveDark(scale))
+func (c *Comp) DecorMauveDark(scale int) *Comp {
+	c.El.Style(styles.DecorMauveDark(scale))
 	return c
 }
 
-func (c *component) DecorMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorMauveDarkAlpha(scale))
+func (c *Comp) DecorMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorMint(scale int) *component {
-	c.el.Style(styles.DecorMint(scale))
+func (c *Comp) DecorMint(scale int) *Comp {
+	c.El.Style(styles.DecorMint(scale))
 	return c
 }
 
-func (c *component) DecorMintAlpha(scale int) *component {
-	c.el.Style(styles.DecorMintAlpha(scale))
+func (c *Comp) DecorMintAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorMintAlpha(scale))
 	return c
 }
 
-func (c *component) DecorMintDark(scale int) *component {
-	c.el.Style(styles.DecorMintDark(scale))
+func (c *Comp) DecorMintDark(scale int) *Comp {
+	c.El.Style(styles.DecorMintDark(scale))
 	return c
 }
 
-func (c *component) DecorMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorMintDarkAlpha(scale))
+func (c *Comp) DecorMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorOlive(scale int) *component {
-	c.el.Style(styles.DecorOlive(scale))
+func (c *Comp) DecorOlive(scale int) *Comp {
+	c.El.Style(styles.DecorOlive(scale))
 	return c
 }
 
-func (c *component) DecorOliveAlpha(scale int) *component {
-	c.el.Style(styles.DecorOliveAlpha(scale))
+func (c *Comp) DecorOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorOliveAlpha(scale))
 	return c
 }
 
-func (c *component) DecorOliveDark(scale int) *component {
-	c.el.Style(styles.DecorOliveDark(scale))
+func (c *Comp) DecorOliveDark(scale int) *Comp {
+	c.El.Style(styles.DecorOliveDark(scale))
 	return c
 }
 
-func (c *component) DecorOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorOliveDarkAlpha(scale))
+func (c *Comp) DecorOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorOrange(scale int) *component {
-	c.el.Style(styles.DecorOrange(scale))
+func (c *Comp) DecorOrange(scale int) *Comp {
+	c.El.Style(styles.DecorOrange(scale))
 	return c
 }
 
-func (c *component) DecorOrangeAlpha(scale int) *component {
-	c.el.Style(styles.DecorOrangeAlpha(scale))
+func (c *Comp) DecorOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) DecorOrangeDark(scale int) *component {
-	c.el.Style(styles.DecorOrangeDark(scale))
+func (c *Comp) DecorOrangeDark(scale int) *Comp {
+	c.El.Style(styles.DecorOrangeDark(scale))
 	return c
 }
 
-func (c *component) DecorOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorOrangeDarkAlpha(scale))
+func (c *Comp) DecorOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorPink(scale int) *component {
-	c.el.Style(styles.DecorPink(scale))
+func (c *Comp) DecorPink(scale int) *Comp {
+	c.El.Style(styles.DecorPink(scale))
 	return c
 }
 
-func (c *component) DecorPinkAlpha(scale int) *component {
-	c.el.Style(styles.DecorPinkAlpha(scale))
+func (c *Comp) DecorPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorPinkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorPinkDark(scale int) *component {
-	c.el.Style(styles.DecorPinkDark(scale))
+func (c *Comp) DecorPinkDark(scale int) *Comp {
+	c.El.Style(styles.DecorPinkDark(scale))
 	return c
 }
 
-func (c *component) DecorPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorPinkDarkAlpha(scale))
+func (c *Comp) DecorPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorPlum(scale int) *component {
-	c.el.Style(styles.DecorPlum(scale))
+func (c *Comp) DecorPlum(scale int) *Comp {
+	c.El.Style(styles.DecorPlum(scale))
 	return c
 }
 
-func (c *component) DecorPlumAlpha(scale int) *component {
-	c.el.Style(styles.DecorPlumAlpha(scale))
+func (c *Comp) DecorPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorPlumAlpha(scale))
 	return c
 }
 
-func (c *component) DecorPlumDark(scale int) *component {
-	c.el.Style(styles.DecorPlumDark(scale))
+func (c *Comp) DecorPlumDark(scale int) *Comp {
+	c.El.Style(styles.DecorPlumDark(scale))
 	return c
 }
 
-func (c *component) DecorPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorPlumDarkAlpha(scale))
+func (c *Comp) DecorPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorPurple(scale int) *component {
-	c.el.Style(styles.DecorPurple(scale))
+func (c *Comp) DecorPurple(scale int) *Comp {
+	c.El.Style(styles.DecorPurple(scale))
 	return c
 }
 
-func (c *component) DecorPurpleAlpha(scale int) *component {
-	c.el.Style(styles.DecorPurpleAlpha(scale))
+func (c *Comp) DecorPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) DecorPurpleDark(scale int) *component {
-	c.el.Style(styles.DecorPurpleDark(scale))
+func (c *Comp) DecorPurpleDark(scale int) *Comp {
+	c.El.Style(styles.DecorPurpleDark(scale))
 	return c
 }
 
-func (c *component) DecorPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorPurpleDarkAlpha(scale))
+func (c *Comp) DecorPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorRed(scale int) *component {
-	c.el.Style(styles.DecorRed(scale))
+func (c *Comp) DecorRed(scale int) *Comp {
+	c.El.Style(styles.DecorRed(scale))
 	return c
 }
 
-func (c *component) DecorRedAlpha(scale int) *component {
-	c.el.Style(styles.DecorRedAlpha(scale))
+func (c *Comp) DecorRedAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorRedAlpha(scale))
 	return c
 }
 
-func (c *component) DecorRedDark(scale int) *component {
-	c.el.Style(styles.DecorRedDark(scale))
+func (c *Comp) DecorRedDark(scale int) *Comp {
+	c.El.Style(styles.DecorRedDark(scale))
 	return c
 }
 
-func (c *component) DecorRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorRedDarkAlpha(scale))
+func (c *Comp) DecorRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorRuby(scale int) *component {
-	c.el.Style(styles.DecorRuby(scale))
+func (c *Comp) DecorRuby(scale int) *Comp {
+	c.El.Style(styles.DecorRuby(scale))
 	return c
 }
 
-func (c *component) DecorRubyAlpha(scale int) *component {
-	c.el.Style(styles.DecorRubyAlpha(scale))
+func (c *Comp) DecorRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorRubyAlpha(scale))
 	return c
 }
 
-func (c *component) DecorRubyDark(scale int) *component {
-	c.el.Style(styles.DecorRubyDark(scale))
+func (c *Comp) DecorRubyDark(scale int) *Comp {
+	c.El.Style(styles.DecorRubyDark(scale))
 	return c
 }
 
-func (c *component) DecorRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorRubyDarkAlpha(scale))
+func (c *Comp) DecorRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorSage(scale int) *component {
-	c.el.Style(styles.DecorSage(scale))
+func (c *Comp) DecorSage(scale int) *Comp {
+	c.El.Style(styles.DecorSage(scale))
 	return c
 }
 
-func (c *component) DecorSageAlpha(scale int) *component {
-	c.el.Style(styles.DecorSageAlpha(scale))
+func (c *Comp) DecorSageAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorSageAlpha(scale))
 	return c
 }
 
-func (c *component) DecorSageDark(scale int) *component {
-	c.el.Style(styles.DecorSageDark(scale))
+func (c *Comp) DecorSageDark(scale int) *Comp {
+	c.El.Style(styles.DecorSageDark(scale))
 	return c
 }
 
-func (c *component) DecorSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorSageDarkAlpha(scale))
+func (c *Comp) DecorSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorSand(scale int) *component {
-	c.el.Style(styles.DecorSand(scale))
+func (c *Comp) DecorSand(scale int) *Comp {
+	c.El.Style(styles.DecorSand(scale))
 	return c
 }
 
-func (c *component) DecorSandAlpha(scale int) *component {
-	c.el.Style(styles.DecorSandAlpha(scale))
+func (c *Comp) DecorSandAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorSandAlpha(scale))
 	return c
 }
 
-func (c *component) DecorSandDark(scale int) *component {
-	c.el.Style(styles.DecorSandDark(scale))
+func (c *Comp) DecorSandDark(scale int) *Comp {
+	c.El.Style(styles.DecorSandDark(scale))
 	return c
 }
 
-func (c *component) DecorSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorSandDarkAlpha(scale))
+func (c *Comp) DecorSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorSky(scale int) *component {
-	c.el.Style(styles.DecorSky(scale))
+func (c *Comp) DecorSky(scale int) *Comp {
+	c.El.Style(styles.DecorSky(scale))
 	return c
 }
 
-func (c *component) DecorSkyAlpha(scale int) *component {
-	c.el.Style(styles.DecorSkyAlpha(scale))
+func (c *Comp) DecorSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorSkyAlpha(scale))
 	return c
 }
 
-func (c *component) DecorSkyDark(scale int) *component {
-	c.el.Style(styles.DecorSkyDark(scale))
+func (c *Comp) DecorSkyDark(scale int) *Comp {
+	c.El.Style(styles.DecorSkyDark(scale))
 	return c
 }
 
-func (c *component) DecorSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorSkyDarkAlpha(scale))
+func (c *Comp) DecorSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorSlate(scale int) *component {
-	c.el.Style(styles.DecorSlate(scale))
+func (c *Comp) DecorSlate(scale int) *Comp {
+	c.El.Style(styles.DecorSlate(scale))
 	return c
 }
 
-func (c *component) DecorSlateAlpha(scale int) *component {
-	c.el.Style(styles.DecorSlateAlpha(scale))
+func (c *Comp) DecorSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorSlateAlpha(scale))
 	return c
 }
 
-func (c *component) DecorSlateDark(scale int) *component {
-	c.el.Style(styles.DecorSlateDark(scale))
+func (c *Comp) DecorSlateDark(scale int) *Comp {
+	c.El.Style(styles.DecorSlateDark(scale))
 	return c
 }
 
-func (c *component) DecorSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorSlateDarkAlpha(scale))
+func (c *Comp) DecorSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorTeal(scale int) *component {
-	c.el.Style(styles.DecorTeal(scale))
+func (c *Comp) DecorTeal(scale int) *Comp {
+	c.El.Style(styles.DecorTeal(scale))
 	return c
 }
 
-func (c *component) DecorTealAlpha(scale int) *component {
-	c.el.Style(styles.DecorTealAlpha(scale))
+func (c *Comp) DecorTealAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorTealAlpha(scale))
 	return c
 }
 
-func (c *component) DecorTealDark(scale int) *component {
-	c.el.Style(styles.DecorTealDark(scale))
+func (c *Comp) DecorTealDark(scale int) *Comp {
+	c.El.Style(styles.DecorTealDark(scale))
 	return c
 }
 
-func (c *component) DecorTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorTealDarkAlpha(scale))
+func (c *Comp) DecorTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorTomato(scale int) *component {
-	c.el.Style(styles.DecorTomato(scale))
+func (c *Comp) DecorTomato(scale int) *Comp {
+	c.El.Style(styles.DecorTomato(scale))
 	return c
 }
 
-func (c *component) DecorTomatoAlpha(scale int) *component {
-	c.el.Style(styles.DecorTomatoAlpha(scale))
+func (c *Comp) DecorTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) DecorTomatoDark(scale int) *component {
-	c.el.Style(styles.DecorTomatoDark(scale))
+func (c *Comp) DecorTomatoDark(scale int) *Comp {
+	c.El.Style(styles.DecorTomatoDark(scale))
 	return c
 }
 
-func (c *component) DecorTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorTomatoDarkAlpha(scale))
+func (c *Comp) DecorTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorTransparent() *component {
-	c.el.Style(styles.DecorTransparent())
+func (c *Comp) DecorTransparent() *Comp {
+	c.El.Style(styles.DecorTransparent())
 	return c
 }
 
-func (c *component) DecorViolet(scale int) *component {
-	c.el.Style(styles.DecorViolet(scale))
+func (c *Comp) DecorViolet(scale int) *Comp {
+	c.El.Style(styles.DecorViolet(scale))
 	return c
 }
 
-func (c *component) DecorVioletAlpha(scale int) *component {
-	c.el.Style(styles.DecorVioletAlpha(scale))
+func (c *Comp) DecorVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorVioletAlpha(scale))
 	return c
 }
 
-func (c *component) DecorVioletDark(scale int) *component {
-	c.el.Style(styles.DecorVioletDark(scale))
+func (c *Comp) DecorVioletDark(scale int) *Comp {
+	c.El.Style(styles.DecorVioletDark(scale))
 	return c
 }
 
-func (c *component) DecorVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorVioletDarkAlpha(scale))
+func (c *Comp) DecorVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DecorWhite() *component {
-	c.el.Style(styles.DecorWhite())
+func (c *Comp) DecorWhite() *Comp {
+	c.El.Style(styles.DecorWhite())
 	return c
 }
 
-func (c *component) DecorWhiteAlpha(scale int) *component {
-	c.el.Style(styles.DecorWhiteAlpha(scale))
+func (c *Comp) DecorWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) DecorYellow(scale int) *component {
-	c.el.Style(styles.DecorYellow(scale))
+func (c *Comp) DecorYellow(scale int) *Comp {
+	c.El.Style(styles.DecorYellow(scale))
 	return c
 }
 
-func (c *component) DecorYellowAlpha(scale int) *component {
-	c.el.Style(styles.DecorYellowAlpha(scale))
+func (c *Comp) DecorYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorYellowAlpha(scale))
 	return c
 }
 
-func (c *component) DecorYellowDark(scale int) *component {
-	c.el.Style(styles.DecorYellowDark(scale))
+func (c *Comp) DecorYellowDark(scale int) *Comp {
+	c.El.Style(styles.DecorYellowDark(scale))
 	return c
 }
 
-func (c *component) DecorYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.DecorYellowDarkAlpha(scale))
+func (c *Comp) DecorYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DecorYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) Decoration(number int) *component {
-	c.el.Style(styles.Decoration(number))
+func (c *Comp) Decoration(number int) *Comp {
+	c.El.Style(styles.Decoration(number))
 	return c
 }
 
-func (c *component) DecorationAuto() *component {
-	c.el.Style(styles.DecorationAuto())
+func (c *Comp) DecorationAuto() *Comp {
+	c.El.Style(styles.DecorationAuto())
 	return c
 }
 
-func (c *component) DecorationBy(val value.Value) *component {
-	c.el.Style(styles.DecorationBy(val))
+func (c *Comp) DecorationBy(val value.Value) *Comp {
+	c.El.Style(styles.DecorationBy(val))
 	return c
 }
 
-func (c *component) DecorationDashed() *component {
-	c.el.Style(styles.DecorationDashed())
+func (c *Comp) DecorationDashed() *Comp {
+	c.El.Style(styles.DecorationDashed())
 	return c
 }
 
-func (c *component) DecorationDotted() *component {
-	c.el.Style(styles.DecorationDotted())
+func (c *Comp) DecorationDotted() *Comp {
+	c.El.Style(styles.DecorationDotted())
 	return c
 }
 
-func (c *component) DecorationDouble() *component {
-	c.el.Style(styles.DecorationDouble())
+func (c *Comp) DecorationDouble() *Comp {
+	c.El.Style(styles.DecorationDouble())
 	return c
 }
 
-func (c *component) DecorationFromFont() *component {
-	c.el.Style(styles.DecorationFromFont())
+func (c *Comp) DecorationFromFont() *Comp {
+	c.El.Style(styles.DecorationFromFont())
 	return c
 }
 
-func (c *component) DecorationSolid() *component {
-	c.el.Style(styles.DecorationSolid())
+func (c *Comp) DecorationSolid() *Comp {
+	c.El.Style(styles.DecorationSolid())
 	return c
 }
 
-func (c *component) DecorationWavy() *component {
-	c.el.Style(styles.DecorationWavy())
+func (c *Comp) DecorationWavy() *Comp {
+	c.El.Style(styles.DecorationWavy())
 	return c
 }
 
-func (c *component) Delay(val any) *component {
-	c.el.Style(styles.Delay(val))
+func (c *Comp) Delay(val any) *Comp {
+	c.El.Style(styles.Delay(val))
 	return c
 }
 
-func (c *component) DiagonalFractions() *component {
-	c.el.Style(styles.DiagonalFractions())
+func (c *Comp) DiagonalFractions() *Comp {
+	c.El.Style(styles.DiagonalFractions())
 	return c
 }
 
-func (c *component) DivideAmber(scale int) *component {
-	c.el.Style(styles.DivideAmber(scale))
+func (c *Comp) DivideAmber(scale int) *Comp {
+	c.El.Style(styles.DivideAmber(scale))
 	return c
 }
 
-func (c *component) DivideAmberAlpha(scale int) *component {
-	c.el.Style(styles.DivideAmberAlpha(scale))
+func (c *Comp) DivideAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideAmberAlpha(scale))
 	return c
 }
 
-func (c *component) DivideAmberDark(scale int) *component {
-	c.el.Style(styles.DivideAmberDark(scale))
+func (c *Comp) DivideAmberDark(scale int) *Comp {
+	c.El.Style(styles.DivideAmberDark(scale))
 	return c
 }
 
-func (c *component) DivideAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideAmberDarkAlpha(scale))
+func (c *Comp) DivideAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideBlack() *component {
-	c.el.Style(styles.DivideBlack())
+func (c *Comp) DivideBlack() *Comp {
+	c.El.Style(styles.DivideBlack())
 	return c
 }
 
-func (c *component) DivideBlackAlpha(scale int) *component {
-	c.el.Style(styles.DivideBlackAlpha(scale))
+func (c *Comp) DivideBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideBlackAlpha(scale))
 	return c
 }
 
-func (c *component) DivideBlue(scale int) *component {
-	c.el.Style(styles.DivideBlue(scale))
+func (c *Comp) DivideBlue(scale int) *Comp {
+	c.El.Style(styles.DivideBlue(scale))
 	return c
 }
 
-func (c *component) DivideBlueAlpha(scale int) *component {
-	c.el.Style(styles.DivideBlueAlpha(scale))
+func (c *Comp) DivideBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideBlueAlpha(scale))
 	return c
 }
 
-func (c *component) DivideBlueDark(scale int) *component {
-	c.el.Style(styles.DivideBlueDark(scale))
+func (c *Comp) DivideBlueDark(scale int) *Comp {
+	c.El.Style(styles.DivideBlueDark(scale))
 	return c
 }
 
-func (c *component) DivideBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideBlueDarkAlpha(scale))
+func (c *Comp) DivideBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideBronze(scale int) *component {
-	c.el.Style(styles.DivideBronze(scale))
+func (c *Comp) DivideBronze(scale int) *Comp {
+	c.El.Style(styles.DivideBronze(scale))
 	return c
 }
 
-func (c *component) DivideBronzeAlpha(scale int) *component {
-	c.el.Style(styles.DivideBronzeAlpha(scale))
+func (c *Comp) DivideBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) DivideBronzeDark(scale int) *component {
-	c.el.Style(styles.DivideBronzeDark(scale))
+func (c *Comp) DivideBronzeDark(scale int) *Comp {
+	c.El.Style(styles.DivideBronzeDark(scale))
 	return c
 }
 
-func (c *component) DivideBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideBronzeDarkAlpha(scale))
+func (c *Comp) DivideBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideBrown(scale int) *component {
-	c.el.Style(styles.DivideBrown(scale))
+func (c *Comp) DivideBrown(scale int) *Comp {
+	c.El.Style(styles.DivideBrown(scale))
 	return c
 }
 
-func (c *component) DivideBrownAlpha(scale int) *component {
-	c.el.Style(styles.DivideBrownAlpha(scale))
+func (c *Comp) DivideBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideBrownAlpha(scale))
 	return c
 }
 
-func (c *component) DivideBrownDark(scale int) *component {
-	c.el.Style(styles.DivideBrownDark(scale))
+func (c *Comp) DivideBrownDark(scale int) *Comp {
+	c.El.Style(styles.DivideBrownDark(scale))
 	return c
 }
 
-func (c *component) DivideBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideBrownDarkAlpha(scale))
+func (c *Comp) DivideBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideColor(val value.Value) *component {
-	c.el.Style(styles.DivideColor(val))
+func (c *Comp) DivideColor(val value.Value) *Comp {
+	c.El.Style(styles.DivideColor(val))
 	return c
 }
 
-func (c *component) DivideCrimson(scale int) *component {
-	c.el.Style(styles.DivideCrimson(scale))
+func (c *Comp) DivideCrimson(scale int) *Comp {
+	c.El.Style(styles.DivideCrimson(scale))
 	return c
 }
 
-func (c *component) DivideCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.DivideCrimsonAlpha(scale))
+func (c *Comp) DivideCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) DivideCrimsonDark(scale int) *component {
-	c.el.Style(styles.DivideCrimsonDark(scale))
+func (c *Comp) DivideCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.DivideCrimsonDark(scale))
 	return c
 }
 
-func (c *component) DivideCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideCrimsonDarkAlpha(scale))
+func (c *Comp) DivideCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideCurrent() *component {
-	c.el.Style(styles.DivideCurrent())
+func (c *Comp) DivideCurrent() *Comp {
+	c.El.Style(styles.DivideCurrent())
 	return c
 }
 
-func (c *component) DivideCyan(scale int) *component {
-	c.el.Style(styles.DivideCyan(scale))
+func (c *Comp) DivideCyan(scale int) *Comp {
+	c.El.Style(styles.DivideCyan(scale))
 	return c
 }
 
-func (c *component) DivideCyanAlpha(scale int) *component {
-	c.el.Style(styles.DivideCyanAlpha(scale))
+func (c *Comp) DivideCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideCyanAlpha(scale))
 	return c
 }
 
-func (c *component) DivideCyanDark(scale int) *component {
-	c.el.Style(styles.DivideCyanDark(scale))
+func (c *Comp) DivideCyanDark(scale int) *Comp {
+	c.El.Style(styles.DivideCyanDark(scale))
 	return c
 }
 
-func (c *component) DivideCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideCyanDarkAlpha(scale))
+func (c *Comp) DivideCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideDashed() *component {
-	c.el.Style(styles.DivideDashed())
+func (c *Comp) DivideDashed() *Comp {
+	c.El.Style(styles.DivideDashed())
 	return c
 }
 
-func (c *component) DivideDotted() *component {
-	c.el.Style(styles.DivideDotted())
+func (c *Comp) DivideDotted() *Comp {
+	c.El.Style(styles.DivideDotted())
 	return c
 }
 
-func (c *component) DivideDouble() *component {
-	c.el.Style(styles.DivideDouble())
+func (c *Comp) DivideDouble() *Comp {
+	c.El.Style(styles.DivideDouble())
 	return c
 }
 
-func (c *component) DivideGold(scale int) *component {
-	c.el.Style(styles.DivideGold(scale))
+func (c *Comp) DivideGold(scale int) *Comp {
+	c.El.Style(styles.DivideGold(scale))
 	return c
 }
 
-func (c *component) DivideGoldAlpha(scale int) *component {
-	c.el.Style(styles.DivideGoldAlpha(scale))
+func (c *Comp) DivideGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideGoldAlpha(scale))
 	return c
 }
 
-func (c *component) DivideGoldDark(scale int) *component {
-	c.el.Style(styles.DivideGoldDark(scale))
+func (c *Comp) DivideGoldDark(scale int) *Comp {
+	c.El.Style(styles.DivideGoldDark(scale))
 	return c
 }
 
-func (c *component) DivideGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideGoldDarkAlpha(scale))
+func (c *Comp) DivideGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideGrass(scale int) *component {
-	c.el.Style(styles.DivideGrass(scale))
+func (c *Comp) DivideGrass(scale int) *Comp {
+	c.El.Style(styles.DivideGrass(scale))
 	return c
 }
 
-func (c *component) DivideGrassAlpha(scale int) *component {
-	c.el.Style(styles.DivideGrassAlpha(scale))
+func (c *Comp) DivideGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideGrassAlpha(scale))
 	return c
 }
 
-func (c *component) DivideGrassDark(scale int) *component {
-	c.el.Style(styles.DivideGrassDark(scale))
+func (c *Comp) DivideGrassDark(scale int) *Comp {
+	c.El.Style(styles.DivideGrassDark(scale))
 	return c
 }
 
-func (c *component) DivideGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideGrassDarkAlpha(scale))
+func (c *Comp) DivideGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideGray(scale int) *component {
-	c.el.Style(styles.DivideGray(scale))
+func (c *Comp) DivideGray(scale int) *Comp {
+	c.El.Style(styles.DivideGray(scale))
 	return c
 }
 
-func (c *component) DivideGrayAlpha(scale int) *component {
-	c.el.Style(styles.DivideGrayAlpha(scale))
+func (c *Comp) DivideGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideGrayAlpha(scale))
 	return c
 }
 
-func (c *component) DivideGrayDark(scale int) *component {
-	c.el.Style(styles.DivideGrayDark(scale))
+func (c *Comp) DivideGrayDark(scale int) *Comp {
+	c.El.Style(styles.DivideGrayDark(scale))
 	return c
 }
 
-func (c *component) DivideGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideGrayDarkAlpha(scale))
+func (c *Comp) DivideGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideGreen(scale int) *component {
-	c.el.Style(styles.DivideGreen(scale))
+func (c *Comp) DivideGreen(scale int) *Comp {
+	c.El.Style(styles.DivideGreen(scale))
 	return c
 }
 
-func (c *component) DivideGreenAlpha(scale int) *component {
-	c.el.Style(styles.DivideGreenAlpha(scale))
+func (c *Comp) DivideGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideGreenAlpha(scale))
 	return c
 }
 
-func (c *component) DivideGreenDark(scale int) *component {
-	c.el.Style(styles.DivideGreenDark(scale))
+func (c *Comp) DivideGreenDark(scale int) *Comp {
+	c.El.Style(styles.DivideGreenDark(scale))
 	return c
 }
 
-func (c *component) DivideGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideGreenDarkAlpha(scale))
+func (c *Comp) DivideGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideHidden() *component {
-	c.el.Style(styles.DivideHidden())
+func (c *Comp) DivideHidden() *Comp {
+	c.El.Style(styles.DivideHidden())
 	return c
 }
 
-func (c *component) DivideIndigo(scale int) *component {
-	c.el.Style(styles.DivideIndigo(scale))
+func (c *Comp) DivideIndigo(scale int) *Comp {
+	c.El.Style(styles.DivideIndigo(scale))
 	return c
 }
 
-func (c *component) DivideIndigoAlpha(scale int) *component {
-	c.el.Style(styles.DivideIndigoAlpha(scale))
+func (c *Comp) DivideIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) DivideIndigoDark(scale int) *component {
-	c.el.Style(styles.DivideIndigoDark(scale))
+func (c *Comp) DivideIndigoDark(scale int) *Comp {
+	c.El.Style(styles.DivideIndigoDark(scale))
 	return c
 }
 
-func (c *component) DivideIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideIndigoDarkAlpha(scale))
+func (c *Comp) DivideIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideInherit() *component {
-	c.el.Style(styles.DivideInherit())
+func (c *Comp) DivideInherit() *Comp {
+	c.El.Style(styles.DivideInherit())
 	return c
 }
 
-func (c *component) DivideIris(scale int) *component {
-	c.el.Style(styles.DivideIris(scale))
+func (c *Comp) DivideIris(scale int) *Comp {
+	c.El.Style(styles.DivideIris(scale))
 	return c
 }
 
-func (c *component) DivideIrisAlpha(scale int) *component {
-	c.el.Style(styles.DivideIrisAlpha(scale))
+func (c *Comp) DivideIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideIrisAlpha(scale))
 	return c
 }
 
-func (c *component) DivideIrisDark(scale int) *component {
-	c.el.Style(styles.DivideIrisDark(scale))
+func (c *Comp) DivideIrisDark(scale int) *Comp {
+	c.El.Style(styles.DivideIrisDark(scale))
 	return c
 }
 
-func (c *component) DivideIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideIrisDarkAlpha(scale))
+func (c *Comp) DivideIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideJade(scale int) *component {
-	c.el.Style(styles.DivideJade(scale))
+func (c *Comp) DivideJade(scale int) *Comp {
+	c.El.Style(styles.DivideJade(scale))
 	return c
 }
 
-func (c *component) DivideJadeAlpha(scale int) *component {
-	c.el.Style(styles.DivideJadeAlpha(scale))
+func (c *Comp) DivideJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideJadeAlpha(scale))
 	return c
 }
 
-func (c *component) DivideJadeDark(scale int) *component {
-	c.el.Style(styles.DivideJadeDark(scale))
+func (c *Comp) DivideJadeDark(scale int) *Comp {
+	c.El.Style(styles.DivideJadeDark(scale))
 	return c
 }
 
-func (c *component) DivideJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideJadeDarkAlpha(scale))
+func (c *Comp) DivideJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideLime(scale int) *component {
-	c.el.Style(styles.DivideLime(scale))
+func (c *Comp) DivideLime(scale int) *Comp {
+	c.El.Style(styles.DivideLime(scale))
 	return c
 }
 
-func (c *component) DivideLimeAlpha(scale int) *component {
-	c.el.Style(styles.DivideLimeAlpha(scale))
+func (c *Comp) DivideLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideLimeAlpha(scale))
 	return c
 }
 
-func (c *component) DivideLimeDark(scale int) *component {
-	c.el.Style(styles.DivideLimeDark(scale))
+func (c *Comp) DivideLimeDark(scale int) *Comp {
+	c.El.Style(styles.DivideLimeDark(scale))
 	return c
 }
 
-func (c *component) DivideLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideLimeDarkAlpha(scale))
+func (c *Comp) DivideLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideMauve(scale int) *component {
-	c.el.Style(styles.DivideMauve(scale))
+func (c *Comp) DivideMauve(scale int) *Comp {
+	c.El.Style(styles.DivideMauve(scale))
 	return c
 }
 
-func (c *component) DivideMauveAlpha(scale int) *component {
-	c.el.Style(styles.DivideMauveAlpha(scale))
+func (c *Comp) DivideMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideMauveAlpha(scale))
 	return c
 }
 
-func (c *component) DivideMauveDark(scale int) *component {
-	c.el.Style(styles.DivideMauveDark(scale))
+func (c *Comp) DivideMauveDark(scale int) *Comp {
+	c.El.Style(styles.DivideMauveDark(scale))
 	return c
 }
 
-func (c *component) DivideMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideMauveDarkAlpha(scale))
+func (c *Comp) DivideMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideMint(scale int) *component {
-	c.el.Style(styles.DivideMint(scale))
+func (c *Comp) DivideMint(scale int) *Comp {
+	c.El.Style(styles.DivideMint(scale))
 	return c
 }
 
-func (c *component) DivideMintAlpha(scale int) *component {
-	c.el.Style(styles.DivideMintAlpha(scale))
+func (c *Comp) DivideMintAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideMintAlpha(scale))
 	return c
 }
 
-func (c *component) DivideMintDark(scale int) *component {
-	c.el.Style(styles.DivideMintDark(scale))
+func (c *Comp) DivideMintDark(scale int) *Comp {
+	c.El.Style(styles.DivideMintDark(scale))
 	return c
 }
 
-func (c *component) DivideMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideMintDarkAlpha(scale))
+func (c *Comp) DivideMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideNone() *component {
-	c.el.Style(styles.DivideNone())
+func (c *Comp) DivideNone() *Comp {
+	c.El.Style(styles.DivideNone())
 	return c
 }
 
-func (c *component) DivideOlive(scale int) *component {
-	c.el.Style(styles.DivideOlive(scale))
+func (c *Comp) DivideOlive(scale int) *Comp {
+	c.El.Style(styles.DivideOlive(scale))
 	return c
 }
 
-func (c *component) DivideOliveAlpha(scale int) *component {
-	c.el.Style(styles.DivideOliveAlpha(scale))
+func (c *Comp) DivideOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideOliveAlpha(scale))
 	return c
 }
 
-func (c *component) DivideOliveDark(scale int) *component {
-	c.el.Style(styles.DivideOliveDark(scale))
+func (c *Comp) DivideOliveDark(scale int) *Comp {
+	c.El.Style(styles.DivideOliveDark(scale))
 	return c
 }
 
-func (c *component) DivideOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideOliveDarkAlpha(scale))
+func (c *Comp) DivideOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideOrange(scale int) *component {
-	c.el.Style(styles.DivideOrange(scale))
+func (c *Comp) DivideOrange(scale int) *Comp {
+	c.El.Style(styles.DivideOrange(scale))
 	return c
 }
 
-func (c *component) DivideOrangeAlpha(scale int) *component {
-	c.el.Style(styles.DivideOrangeAlpha(scale))
+func (c *Comp) DivideOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) DivideOrangeDark(scale int) *component {
-	c.el.Style(styles.DivideOrangeDark(scale))
+func (c *Comp) DivideOrangeDark(scale int) *Comp {
+	c.El.Style(styles.DivideOrangeDark(scale))
 	return c
 }
 
-func (c *component) DivideOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideOrangeDarkAlpha(scale))
+func (c *Comp) DivideOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DividePink(scale int) *component {
-	c.el.Style(styles.DividePink(scale))
+func (c *Comp) DividePink(scale int) *Comp {
+	c.El.Style(styles.DividePink(scale))
 	return c
 }
 
-func (c *component) DividePinkAlpha(scale int) *component {
-	c.el.Style(styles.DividePinkAlpha(scale))
+func (c *Comp) DividePinkAlpha(scale int) *Comp {
+	c.El.Style(styles.DividePinkAlpha(scale))
 	return c
 }
 
-func (c *component) DividePinkDark(scale int) *component {
-	c.el.Style(styles.DividePinkDark(scale))
+func (c *Comp) DividePinkDark(scale int) *Comp {
+	c.El.Style(styles.DividePinkDark(scale))
 	return c
 }
 
-func (c *component) DividePinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.DividePinkDarkAlpha(scale))
+func (c *Comp) DividePinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DividePinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DividePlum(scale int) *component {
-	c.el.Style(styles.DividePlum(scale))
+func (c *Comp) DividePlum(scale int) *Comp {
+	c.El.Style(styles.DividePlum(scale))
 	return c
 }
 
-func (c *component) DividePlumAlpha(scale int) *component {
-	c.el.Style(styles.DividePlumAlpha(scale))
+func (c *Comp) DividePlumAlpha(scale int) *Comp {
+	c.El.Style(styles.DividePlumAlpha(scale))
 	return c
 }
 
-func (c *component) DividePlumDark(scale int) *component {
-	c.el.Style(styles.DividePlumDark(scale))
+func (c *Comp) DividePlumDark(scale int) *Comp {
+	c.El.Style(styles.DividePlumDark(scale))
 	return c
 }
 
-func (c *component) DividePlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.DividePlumDarkAlpha(scale))
+func (c *Comp) DividePlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DividePlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DividePurple(scale int) *component {
-	c.el.Style(styles.DividePurple(scale))
+func (c *Comp) DividePurple(scale int) *Comp {
+	c.El.Style(styles.DividePurple(scale))
 	return c
 }
 
-func (c *component) DividePurpleAlpha(scale int) *component {
-	c.el.Style(styles.DividePurpleAlpha(scale))
+func (c *Comp) DividePurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.DividePurpleAlpha(scale))
 	return c
 }
 
-func (c *component) DividePurpleDark(scale int) *component {
-	c.el.Style(styles.DividePurpleDark(scale))
+func (c *Comp) DividePurpleDark(scale int) *Comp {
+	c.El.Style(styles.DividePurpleDark(scale))
 	return c
 }
 
-func (c *component) DividePurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.DividePurpleDarkAlpha(scale))
+func (c *Comp) DividePurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DividePurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideRed(scale int) *component {
-	c.el.Style(styles.DivideRed(scale))
+func (c *Comp) DivideRed(scale int) *Comp {
+	c.El.Style(styles.DivideRed(scale))
 	return c
 }
 
-func (c *component) DivideRedAlpha(scale int) *component {
-	c.el.Style(styles.DivideRedAlpha(scale))
+func (c *Comp) DivideRedAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideRedAlpha(scale))
 	return c
 }
 
-func (c *component) DivideRedDark(scale int) *component {
-	c.el.Style(styles.DivideRedDark(scale))
+func (c *Comp) DivideRedDark(scale int) *Comp {
+	c.El.Style(styles.DivideRedDark(scale))
 	return c
 }
 
-func (c *component) DivideRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideRedDarkAlpha(scale))
+func (c *Comp) DivideRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideRuby(scale int) *component {
-	c.el.Style(styles.DivideRuby(scale))
+func (c *Comp) DivideRuby(scale int) *Comp {
+	c.El.Style(styles.DivideRuby(scale))
 	return c
 }
 
-func (c *component) DivideRubyAlpha(scale int) *component {
-	c.el.Style(styles.DivideRubyAlpha(scale))
+func (c *Comp) DivideRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideRubyAlpha(scale))
 	return c
 }
 
-func (c *component) DivideRubyDark(scale int) *component {
-	c.el.Style(styles.DivideRubyDark(scale))
+func (c *Comp) DivideRubyDark(scale int) *Comp {
+	c.El.Style(styles.DivideRubyDark(scale))
 	return c
 }
 
-func (c *component) DivideRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideRubyDarkAlpha(scale))
+func (c *Comp) DivideRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideSage(scale int) *component {
-	c.el.Style(styles.DivideSage(scale))
+func (c *Comp) DivideSage(scale int) *Comp {
+	c.El.Style(styles.DivideSage(scale))
 	return c
 }
 
-func (c *component) DivideSageAlpha(scale int) *component {
-	c.el.Style(styles.DivideSageAlpha(scale))
+func (c *Comp) DivideSageAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideSageAlpha(scale))
 	return c
 }
 
-func (c *component) DivideSageDark(scale int) *component {
-	c.el.Style(styles.DivideSageDark(scale))
+func (c *Comp) DivideSageDark(scale int) *Comp {
+	c.El.Style(styles.DivideSageDark(scale))
 	return c
 }
 
-func (c *component) DivideSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideSageDarkAlpha(scale))
+func (c *Comp) DivideSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideSand(scale int) *component {
-	c.el.Style(styles.DivideSand(scale))
+func (c *Comp) DivideSand(scale int) *Comp {
+	c.El.Style(styles.DivideSand(scale))
 	return c
 }
 
-func (c *component) DivideSandAlpha(scale int) *component {
-	c.el.Style(styles.DivideSandAlpha(scale))
+func (c *Comp) DivideSandAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideSandAlpha(scale))
 	return c
 }
 
-func (c *component) DivideSandDark(scale int) *component {
-	c.el.Style(styles.DivideSandDark(scale))
+func (c *Comp) DivideSandDark(scale int) *Comp {
+	c.El.Style(styles.DivideSandDark(scale))
 	return c
 }
 
-func (c *component) DivideSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideSandDarkAlpha(scale))
+func (c *Comp) DivideSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideSky(scale int) *component {
-	c.el.Style(styles.DivideSky(scale))
+func (c *Comp) DivideSky(scale int) *Comp {
+	c.El.Style(styles.DivideSky(scale))
 	return c
 }
 
-func (c *component) DivideSkyAlpha(scale int) *component {
-	c.el.Style(styles.DivideSkyAlpha(scale))
+func (c *Comp) DivideSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideSkyAlpha(scale))
 	return c
 }
 
-func (c *component) DivideSkyDark(scale int) *component {
-	c.el.Style(styles.DivideSkyDark(scale))
+func (c *Comp) DivideSkyDark(scale int) *Comp {
+	c.El.Style(styles.DivideSkyDark(scale))
 	return c
 }
 
-func (c *component) DivideSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideSkyDarkAlpha(scale))
+func (c *Comp) DivideSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideSlate(scale int) *component {
-	c.el.Style(styles.DivideSlate(scale))
+func (c *Comp) DivideSlate(scale int) *Comp {
+	c.El.Style(styles.DivideSlate(scale))
 	return c
 }
 
-func (c *component) DivideSlateAlpha(scale int) *component {
-	c.el.Style(styles.DivideSlateAlpha(scale))
+func (c *Comp) DivideSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideSlateAlpha(scale))
 	return c
 }
 
-func (c *component) DivideSlateDark(scale int) *component {
-	c.el.Style(styles.DivideSlateDark(scale))
+func (c *Comp) DivideSlateDark(scale int) *Comp {
+	c.El.Style(styles.DivideSlateDark(scale))
 	return c
 }
 
-func (c *component) DivideSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideSlateDarkAlpha(scale))
+func (c *Comp) DivideSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideSolid() *component {
-	c.el.Style(styles.DivideSolid())
+func (c *Comp) DivideSolid() *Comp {
+	c.El.Style(styles.DivideSolid())
 	return c
 }
 
-func (c *component) DivideTeal(scale int) *component {
-	c.el.Style(styles.DivideTeal(scale))
+func (c *Comp) DivideTeal(scale int) *Comp {
+	c.El.Style(styles.DivideTeal(scale))
 	return c
 }
 
-func (c *component) DivideTealAlpha(scale int) *component {
-	c.el.Style(styles.DivideTealAlpha(scale))
+func (c *Comp) DivideTealAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideTealAlpha(scale))
 	return c
 }
 
-func (c *component) DivideTealDark(scale int) *component {
-	c.el.Style(styles.DivideTealDark(scale))
+func (c *Comp) DivideTealDark(scale int) *Comp {
+	c.El.Style(styles.DivideTealDark(scale))
 	return c
 }
 
-func (c *component) DivideTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideTealDarkAlpha(scale))
+func (c *Comp) DivideTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideTomato(scale int) *component {
-	c.el.Style(styles.DivideTomato(scale))
+func (c *Comp) DivideTomato(scale int) *Comp {
+	c.El.Style(styles.DivideTomato(scale))
 	return c
 }
 
-func (c *component) DivideTomatoAlpha(scale int) *component {
-	c.el.Style(styles.DivideTomatoAlpha(scale))
+func (c *Comp) DivideTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) DivideTomatoDark(scale int) *component {
-	c.el.Style(styles.DivideTomatoDark(scale))
+func (c *Comp) DivideTomatoDark(scale int) *Comp {
+	c.El.Style(styles.DivideTomatoDark(scale))
 	return c
 }
 
-func (c *component) DivideTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideTomatoDarkAlpha(scale))
+func (c *Comp) DivideTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideTransparent() *component {
-	c.el.Style(styles.DivideTransparent())
+func (c *Comp) DivideTransparent() *Comp {
+	c.El.Style(styles.DivideTransparent())
 	return c
 }
 
-func (c *component) DivideViolet(scale int) *component {
-	c.el.Style(styles.DivideViolet(scale))
+func (c *Comp) DivideViolet(scale int) *Comp {
+	c.El.Style(styles.DivideViolet(scale))
 	return c
 }
 
-func (c *component) DivideVioletAlpha(scale int) *component {
-	c.el.Style(styles.DivideVioletAlpha(scale))
+func (c *Comp) DivideVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideVioletAlpha(scale))
 	return c
 }
 
-func (c *component) DivideVioletDark(scale int) *component {
-	c.el.Style(styles.DivideVioletDark(scale))
+func (c *Comp) DivideVioletDark(scale int) *Comp {
+	c.El.Style(styles.DivideVioletDark(scale))
 	return c
 }
 
-func (c *component) DivideVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideVioletDarkAlpha(scale))
+func (c *Comp) DivideVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DivideWhite() *component {
-	c.el.Style(styles.DivideWhite())
+func (c *Comp) DivideWhite() *Comp {
+	c.El.Style(styles.DivideWhite())
 	return c
 }
 
-func (c *component) DivideWhiteAlpha(scale int) *component {
-	c.el.Style(styles.DivideWhiteAlpha(scale))
+func (c *Comp) DivideWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) DivideX(val ...value.Value) *component {
-	c.el.Style(styles.DivideX(val...))
+func (c *Comp) DivideX(val ...value.Value) *Comp {
+	c.El.Style(styles.DivideX(val...))
 	return c
 }
 
-func (c *component) DivideXReverse(val ...value.Value) *component {
-	c.el.Style(styles.DivideXReverse(val...))
+func (c *Comp) DivideXReverse(val ...value.Value) *Comp {
+	c.El.Style(styles.DivideXReverse(val...))
 	return c
 }
 
-func (c *component) DivideY(val ...value.Value) *component {
-	c.el.Style(styles.DivideY(val...))
+func (c *Comp) DivideY(val ...value.Value) *Comp {
+	c.El.Style(styles.DivideY(val...))
 	return c
 }
 
-func (c *component) DivideYReverse(val ...value.Value) *component {
-	c.el.Style(styles.DivideYReverse(val...))
+func (c *Comp) DivideYReverse(val ...value.Value) *Comp {
+	c.El.Style(styles.DivideYReverse(val...))
 	return c
 }
 
-func (c *component) DivideYellow(scale int) *component {
-	c.el.Style(styles.DivideYellow(scale))
+func (c *Comp) DivideYellow(scale int) *Comp {
+	c.El.Style(styles.DivideYellow(scale))
 	return c
 }
 
-func (c *component) DivideYellowAlpha(scale int) *component {
-	c.el.Style(styles.DivideYellowAlpha(scale))
+func (c *Comp) DivideYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideYellowAlpha(scale))
 	return c
 }
 
-func (c *component) DivideYellowDark(scale int) *component {
-	c.el.Style(styles.DivideYellowDark(scale))
+func (c *Comp) DivideYellowDark(scale int) *Comp {
+	c.El.Style(styles.DivideYellowDark(scale))
 	return c
 }
 
-func (c *component) DivideYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.DivideYellowDarkAlpha(scale))
+func (c *Comp) DivideYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DivideYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadow(val value.Value) *component {
-	c.el.Style(styles.DropShadow(val))
+func (c *Comp) DropShadow(val value.Value) *Comp {
+	c.El.Style(styles.DropShadow(val))
 	return c
 }
 
-func (c *component) DropShadow2xl() *component {
-	c.el.Style(styles.DropShadow2xl())
+func (c *Comp) DropShadow2xl() *Comp {
+	c.El.Style(styles.DropShadow2xl())
 	return c
 }
 
-func (c *component) DropShadow2xs() *component {
-	c.el.Style(styles.DropShadow2xs())
+func (c *Comp) DropShadow2xs() *Comp {
+	c.El.Style(styles.DropShadow2xs())
 	return c
 }
 
-func (c *component) DropShadowAmber(scale int) *component {
-	c.el.Style(styles.DropShadowAmber(scale))
+func (c *Comp) DropShadowAmber(scale int) *Comp {
+	c.El.Style(styles.DropShadowAmber(scale))
 	return c
 }
 
-func (c *component) DropShadowAmberAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowAmberAlpha(scale))
+func (c *Comp) DropShadowAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowAmberAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowAmberDark(scale int) *component {
-	c.el.Style(styles.DropShadowAmberDark(scale))
+func (c *Comp) DropShadowAmberDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowAmberDark(scale))
 	return c
 }
 
-func (c *component) DropShadowAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowAmberDarkAlpha(scale))
+func (c *Comp) DropShadowAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowBlack() *component {
-	c.el.Style(styles.DropShadowBlack())
+func (c *Comp) DropShadowBlack() *Comp {
+	c.El.Style(styles.DropShadowBlack())
 	return c
 }
 
-func (c *component) DropShadowBlackAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowBlackAlpha(scale))
+func (c *Comp) DropShadowBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowBlackAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowBlue(scale int) *component {
-	c.el.Style(styles.DropShadowBlue(scale))
+func (c *Comp) DropShadowBlue(scale int) *Comp {
+	c.El.Style(styles.DropShadowBlue(scale))
 	return c
 }
 
-func (c *component) DropShadowBlueAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowBlueAlpha(scale))
+func (c *Comp) DropShadowBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowBlueAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowBlueDark(scale int) *component {
-	c.el.Style(styles.DropShadowBlueDark(scale))
+func (c *Comp) DropShadowBlueDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowBlueDark(scale))
 	return c
 }
 
-func (c *component) DropShadowBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowBlueDarkAlpha(scale))
+func (c *Comp) DropShadowBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowBronze(scale int) *component {
-	c.el.Style(styles.DropShadowBronze(scale))
+func (c *Comp) DropShadowBronze(scale int) *Comp {
+	c.El.Style(styles.DropShadowBronze(scale))
 	return c
 }
 
-func (c *component) DropShadowBronzeAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowBronzeAlpha(scale))
+func (c *Comp) DropShadowBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowBronzeDark(scale int) *component {
-	c.el.Style(styles.DropShadowBronzeDark(scale))
+func (c *Comp) DropShadowBronzeDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowBronzeDark(scale))
 	return c
 }
 
-func (c *component) DropShadowBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowBronzeDarkAlpha(scale))
+func (c *Comp) DropShadowBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowBrown(scale int) *component {
-	c.el.Style(styles.DropShadowBrown(scale))
+func (c *Comp) DropShadowBrown(scale int) *Comp {
+	c.El.Style(styles.DropShadowBrown(scale))
 	return c
 }
 
-func (c *component) DropShadowBrownAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowBrownAlpha(scale))
+func (c *Comp) DropShadowBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowBrownAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowBrownDark(scale int) *component {
-	c.el.Style(styles.DropShadowBrownDark(scale))
+func (c *Comp) DropShadowBrownDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowBrownDark(scale))
 	return c
 }
 
-func (c *component) DropShadowBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowBrownDarkAlpha(scale))
+func (c *Comp) DropShadowBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowColor(val value.Value) *component {
-	c.el.Style(styles.DropShadowColor(val))
+func (c *Comp) DropShadowColor(val value.Value) *Comp {
+	c.El.Style(styles.DropShadowColor(val))
 	return c
 }
 
-func (c *component) DropShadowCrimson(scale int) *component {
-	c.el.Style(styles.DropShadowCrimson(scale))
+func (c *Comp) DropShadowCrimson(scale int) *Comp {
+	c.El.Style(styles.DropShadowCrimson(scale))
 	return c
 }
 
-func (c *component) DropShadowCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowCrimsonAlpha(scale))
+func (c *Comp) DropShadowCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowCrimsonDark(scale int) *component {
-	c.el.Style(styles.DropShadowCrimsonDark(scale))
+func (c *Comp) DropShadowCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowCrimsonDark(scale))
 	return c
 }
 
-func (c *component) DropShadowCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowCrimsonDarkAlpha(scale))
+func (c *Comp) DropShadowCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowCurrent() *component {
-	c.el.Style(styles.DropShadowCurrent())
+func (c *Comp) DropShadowCurrent() *Comp {
+	c.El.Style(styles.DropShadowCurrent())
 	return c
 }
 
-func (c *component) DropShadowCyan(scale int) *component {
-	c.el.Style(styles.DropShadowCyan(scale))
+func (c *Comp) DropShadowCyan(scale int) *Comp {
+	c.El.Style(styles.DropShadowCyan(scale))
 	return c
 }
 
-func (c *component) DropShadowCyanAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowCyanAlpha(scale))
+func (c *Comp) DropShadowCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowCyanAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowCyanDark(scale int) *component {
-	c.el.Style(styles.DropShadowCyanDark(scale))
+func (c *Comp) DropShadowCyanDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowCyanDark(scale))
 	return c
 }
 
-func (c *component) DropShadowCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowCyanDarkAlpha(scale))
+func (c *Comp) DropShadowCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowGold(scale int) *component {
-	c.el.Style(styles.DropShadowGold(scale))
+func (c *Comp) DropShadowGold(scale int) *Comp {
+	c.El.Style(styles.DropShadowGold(scale))
 	return c
 }
 
-func (c *component) DropShadowGoldAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowGoldAlpha(scale))
+func (c *Comp) DropShadowGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowGoldAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowGoldDark(scale int) *component {
-	c.el.Style(styles.DropShadowGoldDark(scale))
+func (c *Comp) DropShadowGoldDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowGoldDark(scale))
 	return c
 }
 
-func (c *component) DropShadowGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowGoldDarkAlpha(scale))
+func (c *Comp) DropShadowGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowGrass(scale int) *component {
-	c.el.Style(styles.DropShadowGrass(scale))
+func (c *Comp) DropShadowGrass(scale int) *Comp {
+	c.El.Style(styles.DropShadowGrass(scale))
 	return c
 }
 
-func (c *component) DropShadowGrassAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowGrassAlpha(scale))
+func (c *Comp) DropShadowGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowGrassAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowGrassDark(scale int) *component {
-	c.el.Style(styles.DropShadowGrassDark(scale))
+func (c *Comp) DropShadowGrassDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowGrassDark(scale))
 	return c
 }
 
-func (c *component) DropShadowGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowGrassDarkAlpha(scale))
+func (c *Comp) DropShadowGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowGray(scale int) *component {
-	c.el.Style(styles.DropShadowGray(scale))
+func (c *Comp) DropShadowGray(scale int) *Comp {
+	c.El.Style(styles.DropShadowGray(scale))
 	return c
 }
 
-func (c *component) DropShadowGrayAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowGrayAlpha(scale))
+func (c *Comp) DropShadowGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowGrayAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowGrayDark(scale int) *component {
-	c.el.Style(styles.DropShadowGrayDark(scale))
+func (c *Comp) DropShadowGrayDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowGrayDark(scale))
 	return c
 }
 
-func (c *component) DropShadowGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowGrayDarkAlpha(scale))
+func (c *Comp) DropShadowGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowGreen(scale int) *component {
-	c.el.Style(styles.DropShadowGreen(scale))
+func (c *Comp) DropShadowGreen(scale int) *Comp {
+	c.El.Style(styles.DropShadowGreen(scale))
 	return c
 }
 
-func (c *component) DropShadowGreenAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowGreenAlpha(scale))
+func (c *Comp) DropShadowGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowGreenAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowGreenDark(scale int) *component {
-	c.el.Style(styles.DropShadowGreenDark(scale))
+func (c *Comp) DropShadowGreenDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowGreenDark(scale))
 	return c
 }
 
-func (c *component) DropShadowGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowGreenDarkAlpha(scale))
+func (c *Comp) DropShadowGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowIndigo(scale int) *component {
-	c.el.Style(styles.DropShadowIndigo(scale))
+func (c *Comp) DropShadowIndigo(scale int) *Comp {
+	c.El.Style(styles.DropShadowIndigo(scale))
 	return c
 }
 
-func (c *component) DropShadowIndigoAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowIndigoAlpha(scale))
+func (c *Comp) DropShadowIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowIndigoDark(scale int) *component {
-	c.el.Style(styles.DropShadowIndigoDark(scale))
+func (c *Comp) DropShadowIndigoDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowIndigoDark(scale))
 	return c
 }
 
-func (c *component) DropShadowIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowIndigoDarkAlpha(scale))
+func (c *Comp) DropShadowIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowInherit() *component {
-	c.el.Style(styles.DropShadowInherit())
+func (c *Comp) DropShadowInherit() *Comp {
+	c.El.Style(styles.DropShadowInherit())
 	return c
 }
 
-func (c *component) DropShadowIris(scale int) *component {
-	c.el.Style(styles.DropShadowIris(scale))
+func (c *Comp) DropShadowIris(scale int) *Comp {
+	c.El.Style(styles.DropShadowIris(scale))
 	return c
 }
 
-func (c *component) DropShadowIrisAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowIrisAlpha(scale))
+func (c *Comp) DropShadowIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowIrisAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowIrisDark(scale int) *component {
-	c.el.Style(styles.DropShadowIrisDark(scale))
+func (c *Comp) DropShadowIrisDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowIrisDark(scale))
 	return c
 }
 
-func (c *component) DropShadowIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowIrisDarkAlpha(scale))
+func (c *Comp) DropShadowIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowJade(scale int) *component {
-	c.el.Style(styles.DropShadowJade(scale))
+func (c *Comp) DropShadowJade(scale int) *Comp {
+	c.El.Style(styles.DropShadowJade(scale))
 	return c
 }
 
-func (c *component) DropShadowJadeAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowJadeAlpha(scale))
+func (c *Comp) DropShadowJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowJadeAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowJadeDark(scale int) *component {
-	c.el.Style(styles.DropShadowJadeDark(scale))
+func (c *Comp) DropShadowJadeDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowJadeDark(scale))
 	return c
 }
 
-func (c *component) DropShadowJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowJadeDarkAlpha(scale))
+func (c *Comp) DropShadowJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowLg() *component {
-	c.el.Style(styles.DropShadowLg())
+func (c *Comp) DropShadowLg() *Comp {
+	c.El.Style(styles.DropShadowLg())
 	return c
 }
 
-func (c *component) DropShadowLime(scale int) *component {
-	c.el.Style(styles.DropShadowLime(scale))
+func (c *Comp) DropShadowLime(scale int) *Comp {
+	c.El.Style(styles.DropShadowLime(scale))
 	return c
 }
 
-func (c *component) DropShadowLimeAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowLimeAlpha(scale))
+func (c *Comp) DropShadowLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowLimeAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowLimeDark(scale int) *component {
-	c.el.Style(styles.DropShadowLimeDark(scale))
+func (c *Comp) DropShadowLimeDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowLimeDark(scale))
 	return c
 }
 
-func (c *component) DropShadowLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowLimeDarkAlpha(scale))
+func (c *Comp) DropShadowLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowMauve(scale int) *component {
-	c.el.Style(styles.DropShadowMauve(scale))
+func (c *Comp) DropShadowMauve(scale int) *Comp {
+	c.El.Style(styles.DropShadowMauve(scale))
 	return c
 }
 
-func (c *component) DropShadowMauveAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowMauveAlpha(scale))
+func (c *Comp) DropShadowMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowMauveAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowMauveDark(scale int) *component {
-	c.el.Style(styles.DropShadowMauveDark(scale))
+func (c *Comp) DropShadowMauveDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowMauveDark(scale))
 	return c
 }
 
-func (c *component) DropShadowMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowMauveDarkAlpha(scale))
+func (c *Comp) DropShadowMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowMd() *component {
-	c.el.Style(styles.DropShadowMd())
+func (c *Comp) DropShadowMd() *Comp {
+	c.El.Style(styles.DropShadowMd())
 	return c
 }
 
-func (c *component) DropShadowMint(scale int) *component {
-	c.el.Style(styles.DropShadowMint(scale))
+func (c *Comp) DropShadowMint(scale int) *Comp {
+	c.El.Style(styles.DropShadowMint(scale))
 	return c
 }
 
-func (c *component) DropShadowMintAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowMintAlpha(scale))
+func (c *Comp) DropShadowMintAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowMintAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowMintDark(scale int) *component {
-	c.el.Style(styles.DropShadowMintDark(scale))
+func (c *Comp) DropShadowMintDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowMintDark(scale))
 	return c
 }
 
-func (c *component) DropShadowMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowMintDarkAlpha(scale))
+func (c *Comp) DropShadowMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowNone() *component {
-	c.el.Style(styles.DropShadowNone())
+func (c *Comp) DropShadowNone() *Comp {
+	c.El.Style(styles.DropShadowNone())
 	return c
 }
 
-func (c *component) DropShadowOlive(scale int) *component {
-	c.el.Style(styles.DropShadowOlive(scale))
+func (c *Comp) DropShadowOlive(scale int) *Comp {
+	c.El.Style(styles.DropShadowOlive(scale))
 	return c
 }
 
-func (c *component) DropShadowOliveAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowOliveAlpha(scale))
+func (c *Comp) DropShadowOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowOliveAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowOliveDark(scale int) *component {
-	c.el.Style(styles.DropShadowOliveDark(scale))
+func (c *Comp) DropShadowOliveDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowOliveDark(scale))
 	return c
 }
 
-func (c *component) DropShadowOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowOliveDarkAlpha(scale))
+func (c *Comp) DropShadowOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowOrange(scale int) *component {
-	c.el.Style(styles.DropShadowOrange(scale))
+func (c *Comp) DropShadowOrange(scale int) *Comp {
+	c.El.Style(styles.DropShadowOrange(scale))
 	return c
 }
 
-func (c *component) DropShadowOrangeAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowOrangeAlpha(scale))
+func (c *Comp) DropShadowOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowOrangeDark(scale int) *component {
-	c.el.Style(styles.DropShadowOrangeDark(scale))
+func (c *Comp) DropShadowOrangeDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowOrangeDark(scale))
 	return c
 }
 
-func (c *component) DropShadowOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowOrangeDarkAlpha(scale))
+func (c *Comp) DropShadowOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowPink(scale int) *component {
-	c.el.Style(styles.DropShadowPink(scale))
+func (c *Comp) DropShadowPink(scale int) *Comp {
+	c.El.Style(styles.DropShadowPink(scale))
 	return c
 }
 
-func (c *component) DropShadowPinkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowPinkAlpha(scale))
+func (c *Comp) DropShadowPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowPinkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowPinkDark(scale int) *component {
-	c.el.Style(styles.DropShadowPinkDark(scale))
+func (c *Comp) DropShadowPinkDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowPinkDark(scale))
 	return c
 }
 
-func (c *component) DropShadowPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowPinkDarkAlpha(scale))
+func (c *Comp) DropShadowPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowPlum(scale int) *component {
-	c.el.Style(styles.DropShadowPlum(scale))
+func (c *Comp) DropShadowPlum(scale int) *Comp {
+	c.El.Style(styles.DropShadowPlum(scale))
 	return c
 }
 
-func (c *component) DropShadowPlumAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowPlumAlpha(scale))
+func (c *Comp) DropShadowPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowPlumAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowPlumDark(scale int) *component {
-	c.el.Style(styles.DropShadowPlumDark(scale))
+func (c *Comp) DropShadowPlumDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowPlumDark(scale))
 	return c
 }
 
-func (c *component) DropShadowPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowPlumDarkAlpha(scale))
+func (c *Comp) DropShadowPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowPurple(scale int) *component {
-	c.el.Style(styles.DropShadowPurple(scale))
+func (c *Comp) DropShadowPurple(scale int) *Comp {
+	c.El.Style(styles.DropShadowPurple(scale))
 	return c
 }
 
-func (c *component) DropShadowPurpleAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowPurpleAlpha(scale))
+func (c *Comp) DropShadowPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowPurpleDark(scale int) *component {
-	c.el.Style(styles.DropShadowPurpleDark(scale))
+func (c *Comp) DropShadowPurpleDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowPurpleDark(scale))
 	return c
 }
 
-func (c *component) DropShadowPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowPurpleDarkAlpha(scale))
+func (c *Comp) DropShadowPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowRed(scale int) *component {
-	c.el.Style(styles.DropShadowRed(scale))
+func (c *Comp) DropShadowRed(scale int) *Comp {
+	c.El.Style(styles.DropShadowRed(scale))
 	return c
 }
 
-func (c *component) DropShadowRedAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowRedAlpha(scale))
+func (c *Comp) DropShadowRedAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowRedAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowRedDark(scale int) *component {
-	c.el.Style(styles.DropShadowRedDark(scale))
+func (c *Comp) DropShadowRedDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowRedDark(scale))
 	return c
 }
 
-func (c *component) DropShadowRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowRedDarkAlpha(scale))
+func (c *Comp) DropShadowRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowRuby(scale int) *component {
-	c.el.Style(styles.DropShadowRuby(scale))
+func (c *Comp) DropShadowRuby(scale int) *Comp {
+	c.El.Style(styles.DropShadowRuby(scale))
 	return c
 }
 
-func (c *component) DropShadowRubyAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowRubyAlpha(scale))
+func (c *Comp) DropShadowRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowRubyAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowRubyDark(scale int) *component {
-	c.el.Style(styles.DropShadowRubyDark(scale))
+func (c *Comp) DropShadowRubyDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowRubyDark(scale))
 	return c
 }
 
-func (c *component) DropShadowRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowRubyDarkAlpha(scale))
+func (c *Comp) DropShadowRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowSage(scale int) *component {
-	c.el.Style(styles.DropShadowSage(scale))
+func (c *Comp) DropShadowSage(scale int) *Comp {
+	c.El.Style(styles.DropShadowSage(scale))
 	return c
 }
 
-func (c *component) DropShadowSageAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowSageAlpha(scale))
+func (c *Comp) DropShadowSageAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowSageAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowSageDark(scale int) *component {
-	c.el.Style(styles.DropShadowSageDark(scale))
+func (c *Comp) DropShadowSageDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowSageDark(scale))
 	return c
 }
 
-func (c *component) DropShadowSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowSageDarkAlpha(scale))
+func (c *Comp) DropShadowSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowSand(scale int) *component {
-	c.el.Style(styles.DropShadowSand(scale))
+func (c *Comp) DropShadowSand(scale int) *Comp {
+	c.El.Style(styles.DropShadowSand(scale))
 	return c
 }
 
-func (c *component) DropShadowSandAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowSandAlpha(scale))
+func (c *Comp) DropShadowSandAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowSandAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowSandDark(scale int) *component {
-	c.el.Style(styles.DropShadowSandDark(scale))
+func (c *Comp) DropShadowSandDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowSandDark(scale))
 	return c
 }
 
-func (c *component) DropShadowSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowSandDarkAlpha(scale))
+func (c *Comp) DropShadowSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowSky(scale int) *component {
-	c.el.Style(styles.DropShadowSky(scale))
+func (c *Comp) DropShadowSky(scale int) *Comp {
+	c.El.Style(styles.DropShadowSky(scale))
 	return c
 }
 
-func (c *component) DropShadowSkyAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowSkyAlpha(scale))
+func (c *Comp) DropShadowSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowSkyAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowSkyDark(scale int) *component {
-	c.el.Style(styles.DropShadowSkyDark(scale))
+func (c *Comp) DropShadowSkyDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowSkyDark(scale))
 	return c
 }
 
-func (c *component) DropShadowSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowSkyDarkAlpha(scale))
+func (c *Comp) DropShadowSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowSlate(scale int) *component {
-	c.el.Style(styles.DropShadowSlate(scale))
+func (c *Comp) DropShadowSlate(scale int) *Comp {
+	c.El.Style(styles.DropShadowSlate(scale))
 	return c
 }
 
-func (c *component) DropShadowSlateAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowSlateAlpha(scale))
+func (c *Comp) DropShadowSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowSlateAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowSlateDark(scale int) *component {
-	c.el.Style(styles.DropShadowSlateDark(scale))
+func (c *Comp) DropShadowSlateDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowSlateDark(scale))
 	return c
 }
 
-func (c *component) DropShadowSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowSlateDarkAlpha(scale))
+func (c *Comp) DropShadowSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowSm() *component {
-	c.el.Style(styles.DropShadowSm())
+func (c *Comp) DropShadowSm() *Comp {
+	c.El.Style(styles.DropShadowSm())
 	return c
 }
 
-func (c *component) DropShadowTeal(scale int) *component {
-	c.el.Style(styles.DropShadowTeal(scale))
+func (c *Comp) DropShadowTeal(scale int) *Comp {
+	c.El.Style(styles.DropShadowTeal(scale))
 	return c
 }
 
-func (c *component) DropShadowTealAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowTealAlpha(scale))
+func (c *Comp) DropShadowTealAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowTealAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowTealDark(scale int) *component {
-	c.el.Style(styles.DropShadowTealDark(scale))
+func (c *Comp) DropShadowTealDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowTealDark(scale))
 	return c
 }
 
-func (c *component) DropShadowTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowTealDarkAlpha(scale))
+func (c *Comp) DropShadowTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowTomato(scale int) *component {
-	c.el.Style(styles.DropShadowTomato(scale))
+func (c *Comp) DropShadowTomato(scale int) *Comp {
+	c.El.Style(styles.DropShadowTomato(scale))
 	return c
 }
 
-func (c *component) DropShadowTomatoAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowTomatoAlpha(scale))
+func (c *Comp) DropShadowTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowTomatoDark(scale int) *component {
-	c.el.Style(styles.DropShadowTomatoDark(scale))
+func (c *Comp) DropShadowTomatoDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowTomatoDark(scale))
 	return c
 }
 
-func (c *component) DropShadowTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowTomatoDarkAlpha(scale))
+func (c *Comp) DropShadowTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowTransparent() *component {
-	c.el.Style(styles.DropShadowTransparent())
+func (c *Comp) DropShadowTransparent() *Comp {
+	c.El.Style(styles.DropShadowTransparent())
 	return c
 }
 
-func (c *component) DropShadowViolet(scale int) *component {
-	c.el.Style(styles.DropShadowViolet(scale))
+func (c *Comp) DropShadowViolet(scale int) *Comp {
+	c.El.Style(styles.DropShadowViolet(scale))
 	return c
 }
 
-func (c *component) DropShadowVioletAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowVioletAlpha(scale))
+func (c *Comp) DropShadowVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowVioletAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowVioletDark(scale int) *component {
-	c.el.Style(styles.DropShadowVioletDark(scale))
+func (c *Comp) DropShadowVioletDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowVioletDark(scale))
 	return c
 }
 
-func (c *component) DropShadowVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowVioletDarkAlpha(scale))
+func (c *Comp) DropShadowVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowWhite() *component {
-	c.el.Style(styles.DropShadowWhite())
+func (c *Comp) DropShadowWhite() *Comp {
+	c.El.Style(styles.DropShadowWhite())
 	return c
 }
 
-func (c *component) DropShadowWhiteAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowWhiteAlpha(scale))
+func (c *Comp) DropShadowWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowXl() *component {
-	c.el.Style(styles.DropShadowXl())
+func (c *Comp) DropShadowXl() *Comp {
+	c.El.Style(styles.DropShadowXl())
 	return c
 }
 
-func (c *component) DropShadowXs() *component {
-	c.el.Style(styles.DropShadowXs())
+func (c *Comp) DropShadowXs() *Comp {
+	c.El.Style(styles.DropShadowXs())
 	return c
 }
 
-func (c *component) DropShadowYellow(scale int) *component {
-	c.el.Style(styles.DropShadowYellow(scale))
+func (c *Comp) DropShadowYellow(scale int) *Comp {
+	c.El.Style(styles.DropShadowYellow(scale))
 	return c
 }
 
-func (c *component) DropShadowYellowAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowYellowAlpha(scale))
+func (c *Comp) DropShadowYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowYellowAlpha(scale))
 	return c
 }
 
-func (c *component) DropShadowYellowDark(scale int) *component {
-	c.el.Style(styles.DropShadowYellowDark(scale))
+func (c *Comp) DropShadowYellowDark(scale int) *Comp {
+	c.El.Style(styles.DropShadowYellowDark(scale))
 	return c
 }
 
-func (c *component) DropShadowYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.DropShadowYellowDarkAlpha(scale))
+func (c *Comp) DropShadowYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.DropShadowYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) Duration(val any) *component {
-	c.el.Style(styles.Duration(val))
+func (c *Comp) Duration(val any) *Comp {
+	c.El.Style(styles.Duration(val))
 	return c
 }
 
-func (c *component) DurationInitial() *component {
-	c.el.Style(styles.DurationInitial())
+func (c *Comp) DurationInitial() *Comp {
+	c.El.Style(styles.DurationInitial())
 	return c
 }
 
-func (c *component) Ease(val value.Value) *component {
-	c.el.Style(styles.Ease(val))
+func (c *Comp) Ease(val value.Value) *Comp {
+	c.El.Style(styles.Ease(val))
 	return c
 }
 
-func (c *component) EaseIn() *component {
-	c.el.Style(styles.EaseIn())
+func (c *Comp) EaseIn() *Comp {
+	c.El.Style(styles.EaseIn())
 	return c
 }
 
-func (c *component) EaseInOut() *component {
-	c.el.Style(styles.EaseInOut())
+func (c *Comp) EaseInOut() *Comp {
+	c.El.Style(styles.EaseInOut())
 	return c
 }
 
-func (c *component) EaseInitial() *component {
-	c.el.Style(styles.EaseInitial())
+func (c *Comp) EaseInitial() *Comp {
+	c.El.Style(styles.EaseInitial())
 	return c
 }
 
-func (c *component) EaseLinear() *component {
-	c.el.Style(styles.EaseLinear())
+func (c *Comp) EaseLinear() *Comp {
+	c.El.Style(styles.EaseLinear())
 	return c
 }
 
-func (c *component) EaseOut() *component {
-	c.el.Style(styles.EaseOut())
+func (c *Comp) EaseOut() *Comp {
+	c.El.Style(styles.EaseOut())
 	return c
 }
 
-func (c *component) End(number int) *component {
-	c.el.Style(styles.End(number))
+func (c *Comp) End(number int) *Comp {
+	c.El.Style(styles.End(number))
 	return c
 }
 
-func (c *component) EndAuto() *component {
-	c.el.Style(styles.EndAuto())
+func (c *Comp) EndAuto() *Comp {
+	c.El.Style(styles.EndAuto())
 	return c
 }
 
-func (c *component) EndBy(val value.Value) *component {
-	c.el.Style(styles.EndBy(val))
+func (c *Comp) EndBy(val value.Value) *Comp {
+	c.El.Style(styles.EndBy(val))
 	return c
 }
 
-func (c *component) EndFraction(fraction float64) *component {
-	c.el.Style(styles.EndFraction(fraction))
+func (c *Comp) EndFraction(fraction float64) *Comp {
+	c.El.Style(styles.EndFraction(fraction))
 	return c
 }
 
-func (c *component) EndFull() *component {
-	c.el.Style(styles.EndFull())
+func (c *Comp) EndFull() *Comp {
+	c.El.Style(styles.EndFull())
 	return c
 }
 
-func (c *component) EndPx() *component {
-	c.el.Style(styles.EndPx())
+func (c *Comp) EndPx() *Comp {
+	c.El.Style(styles.EndPx())
 	return c
 }
 
-func (c *component) FieldSizingContent() *component {
-	c.el.Style(styles.FieldSizingContent())
+func (c *Comp) FieldSizingContent() *Comp {
+	c.El.Style(styles.FieldSizingContent())
 	return c
 }
 
-func (c *component) FieldSizingFixed() *component {
-	c.el.Style(styles.FieldSizingFixed())
+func (c *Comp) FieldSizingFixed() *Comp {
+	c.El.Style(styles.FieldSizingFixed())
 	return c
 }
 
-func (c *component) Fill(val value.Value) *component {
-	c.el.Style(styles.Fill(val))
+func (c *Comp) Fill(val value.Value) *Comp {
+	c.El.Style(styles.Fill(val))
 	return c
 }
 
-func (c *component) FillAmber(scale int) *component {
-	c.el.Style(styles.FillAmber(scale))
+func (c *Comp) FillAmber(scale int) *Comp {
+	c.El.Style(styles.FillAmber(scale))
 	return c
 }
 
-func (c *component) FillAmberAlpha(scale int) *component {
-	c.el.Style(styles.FillAmberAlpha(scale))
+func (c *Comp) FillAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.FillAmberAlpha(scale))
 	return c
 }
 
-func (c *component) FillAmberDark(scale int) *component {
-	c.el.Style(styles.FillAmberDark(scale))
+func (c *Comp) FillAmberDark(scale int) *Comp {
+	c.El.Style(styles.FillAmberDark(scale))
 	return c
 }
 
-func (c *component) FillAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillAmberDarkAlpha(scale))
+func (c *Comp) FillAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillBlack() *component {
-	c.el.Style(styles.FillBlack())
+func (c *Comp) FillBlack() *Comp {
+	c.El.Style(styles.FillBlack())
 	return c
 }
 
-func (c *component) FillBlackAlpha(scale int) *component {
-	c.el.Style(styles.FillBlackAlpha(scale))
+func (c *Comp) FillBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.FillBlackAlpha(scale))
 	return c
 }
 
-func (c *component) FillBlue(scale int) *component {
-	c.el.Style(styles.FillBlue(scale))
+func (c *Comp) FillBlue(scale int) *Comp {
+	c.El.Style(styles.FillBlue(scale))
 	return c
 }
 
-func (c *component) FillBlueAlpha(scale int) *component {
-	c.el.Style(styles.FillBlueAlpha(scale))
+func (c *Comp) FillBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.FillBlueAlpha(scale))
 	return c
 }
 
-func (c *component) FillBlueDark(scale int) *component {
-	c.el.Style(styles.FillBlueDark(scale))
+func (c *Comp) FillBlueDark(scale int) *Comp {
+	c.El.Style(styles.FillBlueDark(scale))
 	return c
 }
 
-func (c *component) FillBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillBlueDarkAlpha(scale))
+func (c *Comp) FillBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillBronze(scale int) *component {
-	c.el.Style(styles.FillBronze(scale))
+func (c *Comp) FillBronze(scale int) *Comp {
+	c.El.Style(styles.FillBronze(scale))
 	return c
 }
 
-func (c *component) FillBronzeAlpha(scale int) *component {
-	c.el.Style(styles.FillBronzeAlpha(scale))
+func (c *Comp) FillBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.FillBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) FillBronzeDark(scale int) *component {
-	c.el.Style(styles.FillBronzeDark(scale))
+func (c *Comp) FillBronzeDark(scale int) *Comp {
+	c.El.Style(styles.FillBronzeDark(scale))
 	return c
 }
 
-func (c *component) FillBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillBronzeDarkAlpha(scale))
+func (c *Comp) FillBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillBrown(scale int) *component {
-	c.el.Style(styles.FillBrown(scale))
+func (c *Comp) FillBrown(scale int) *Comp {
+	c.El.Style(styles.FillBrown(scale))
 	return c
 }
 
-func (c *component) FillBrownAlpha(scale int) *component {
-	c.el.Style(styles.FillBrownAlpha(scale))
+func (c *Comp) FillBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.FillBrownAlpha(scale))
 	return c
 }
 
-func (c *component) FillBrownDark(scale int) *component {
-	c.el.Style(styles.FillBrownDark(scale))
+func (c *Comp) FillBrownDark(scale int) *Comp {
+	c.El.Style(styles.FillBrownDark(scale))
 	return c
 }
 
-func (c *component) FillBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillBrownDarkAlpha(scale))
+func (c *Comp) FillBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillCrimson(scale int) *component {
-	c.el.Style(styles.FillCrimson(scale))
+func (c *Comp) FillCrimson(scale int) *Comp {
+	c.El.Style(styles.FillCrimson(scale))
 	return c
 }
 
-func (c *component) FillCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.FillCrimsonAlpha(scale))
+func (c *Comp) FillCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.FillCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) FillCrimsonDark(scale int) *component {
-	c.el.Style(styles.FillCrimsonDark(scale))
+func (c *Comp) FillCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.FillCrimsonDark(scale))
 	return c
 }
 
-func (c *component) FillCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillCrimsonDarkAlpha(scale))
+func (c *Comp) FillCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillCurrent() *component {
-	c.el.Style(styles.FillCurrent())
+func (c *Comp) FillCurrent() *Comp {
+	c.El.Style(styles.FillCurrent())
 	return c
 }
 
-func (c *component) FillCyan(scale int) *component {
-	c.el.Style(styles.FillCyan(scale))
+func (c *Comp) FillCyan(scale int) *Comp {
+	c.El.Style(styles.FillCyan(scale))
 	return c
 }
 
-func (c *component) FillCyanAlpha(scale int) *component {
-	c.el.Style(styles.FillCyanAlpha(scale))
+func (c *Comp) FillCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.FillCyanAlpha(scale))
 	return c
 }
 
-func (c *component) FillCyanDark(scale int) *component {
-	c.el.Style(styles.FillCyanDark(scale))
+func (c *Comp) FillCyanDark(scale int) *Comp {
+	c.El.Style(styles.FillCyanDark(scale))
 	return c
 }
 
-func (c *component) FillCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillCyanDarkAlpha(scale))
+func (c *Comp) FillCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillGold(scale int) *component {
-	c.el.Style(styles.FillGold(scale))
+func (c *Comp) FillGold(scale int) *Comp {
+	c.El.Style(styles.FillGold(scale))
 	return c
 }
 
-func (c *component) FillGoldAlpha(scale int) *component {
-	c.el.Style(styles.FillGoldAlpha(scale))
+func (c *Comp) FillGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.FillGoldAlpha(scale))
 	return c
 }
 
-func (c *component) FillGoldDark(scale int) *component {
-	c.el.Style(styles.FillGoldDark(scale))
+func (c *Comp) FillGoldDark(scale int) *Comp {
+	c.El.Style(styles.FillGoldDark(scale))
 	return c
 }
 
-func (c *component) FillGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillGoldDarkAlpha(scale))
+func (c *Comp) FillGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillGrass(scale int) *component {
-	c.el.Style(styles.FillGrass(scale))
+func (c *Comp) FillGrass(scale int) *Comp {
+	c.El.Style(styles.FillGrass(scale))
 	return c
 }
 
-func (c *component) FillGrassAlpha(scale int) *component {
-	c.el.Style(styles.FillGrassAlpha(scale))
+func (c *Comp) FillGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.FillGrassAlpha(scale))
 	return c
 }
 
-func (c *component) FillGrassDark(scale int) *component {
-	c.el.Style(styles.FillGrassDark(scale))
+func (c *Comp) FillGrassDark(scale int) *Comp {
+	c.El.Style(styles.FillGrassDark(scale))
 	return c
 }
 
-func (c *component) FillGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillGrassDarkAlpha(scale))
+func (c *Comp) FillGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillGray(scale int) *component {
-	c.el.Style(styles.FillGray(scale))
+func (c *Comp) FillGray(scale int) *Comp {
+	c.El.Style(styles.FillGray(scale))
 	return c
 }
 
-func (c *component) FillGrayAlpha(scale int) *component {
-	c.el.Style(styles.FillGrayAlpha(scale))
+func (c *Comp) FillGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.FillGrayAlpha(scale))
 	return c
 }
 
-func (c *component) FillGrayDark(scale int) *component {
-	c.el.Style(styles.FillGrayDark(scale))
+func (c *Comp) FillGrayDark(scale int) *Comp {
+	c.El.Style(styles.FillGrayDark(scale))
 	return c
 }
 
-func (c *component) FillGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillGrayDarkAlpha(scale))
+func (c *Comp) FillGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillGreen(scale int) *component {
-	c.el.Style(styles.FillGreen(scale))
+func (c *Comp) FillGreen(scale int) *Comp {
+	c.El.Style(styles.FillGreen(scale))
 	return c
 }
 
-func (c *component) FillGreenAlpha(scale int) *component {
-	c.el.Style(styles.FillGreenAlpha(scale))
+func (c *Comp) FillGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.FillGreenAlpha(scale))
 	return c
 }
 
-func (c *component) FillGreenDark(scale int) *component {
-	c.el.Style(styles.FillGreenDark(scale))
+func (c *Comp) FillGreenDark(scale int) *Comp {
+	c.El.Style(styles.FillGreenDark(scale))
 	return c
 }
 
-func (c *component) FillGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillGreenDarkAlpha(scale))
+func (c *Comp) FillGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillIndigo(scale int) *component {
-	c.el.Style(styles.FillIndigo(scale))
+func (c *Comp) FillIndigo(scale int) *Comp {
+	c.El.Style(styles.FillIndigo(scale))
 	return c
 }
 
-func (c *component) FillIndigoAlpha(scale int) *component {
-	c.el.Style(styles.FillIndigoAlpha(scale))
+func (c *Comp) FillIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.FillIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) FillIndigoDark(scale int) *component {
-	c.el.Style(styles.FillIndigoDark(scale))
+func (c *Comp) FillIndigoDark(scale int) *Comp {
+	c.El.Style(styles.FillIndigoDark(scale))
 	return c
 }
 
-func (c *component) FillIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillIndigoDarkAlpha(scale))
+func (c *Comp) FillIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillInherit() *component {
-	c.el.Style(styles.FillInherit())
+func (c *Comp) FillInherit() *Comp {
+	c.El.Style(styles.FillInherit())
 	return c
 }
 
-func (c *component) FillIris(scale int) *component {
-	c.el.Style(styles.FillIris(scale))
+func (c *Comp) FillIris(scale int) *Comp {
+	c.El.Style(styles.FillIris(scale))
 	return c
 }
 
-func (c *component) FillIrisAlpha(scale int) *component {
-	c.el.Style(styles.FillIrisAlpha(scale))
+func (c *Comp) FillIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.FillIrisAlpha(scale))
 	return c
 }
 
-func (c *component) FillIrisDark(scale int) *component {
-	c.el.Style(styles.FillIrisDark(scale))
+func (c *Comp) FillIrisDark(scale int) *Comp {
+	c.El.Style(styles.FillIrisDark(scale))
 	return c
 }
 
-func (c *component) FillIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillIrisDarkAlpha(scale))
+func (c *Comp) FillIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillJade(scale int) *component {
-	c.el.Style(styles.FillJade(scale))
+func (c *Comp) FillJade(scale int) *Comp {
+	c.El.Style(styles.FillJade(scale))
 	return c
 }
 
-func (c *component) FillJadeAlpha(scale int) *component {
-	c.el.Style(styles.FillJadeAlpha(scale))
+func (c *Comp) FillJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.FillJadeAlpha(scale))
 	return c
 }
 
-func (c *component) FillJadeDark(scale int) *component {
-	c.el.Style(styles.FillJadeDark(scale))
+func (c *Comp) FillJadeDark(scale int) *Comp {
+	c.El.Style(styles.FillJadeDark(scale))
 	return c
 }
 
-func (c *component) FillJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillJadeDarkAlpha(scale))
+func (c *Comp) FillJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillLime(scale int) *component {
-	c.el.Style(styles.FillLime(scale))
+func (c *Comp) FillLime(scale int) *Comp {
+	c.El.Style(styles.FillLime(scale))
 	return c
 }
 
-func (c *component) FillLimeAlpha(scale int) *component {
-	c.el.Style(styles.FillLimeAlpha(scale))
+func (c *Comp) FillLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.FillLimeAlpha(scale))
 	return c
 }
 
-func (c *component) FillLimeDark(scale int) *component {
-	c.el.Style(styles.FillLimeDark(scale))
+func (c *Comp) FillLimeDark(scale int) *Comp {
+	c.El.Style(styles.FillLimeDark(scale))
 	return c
 }
 
-func (c *component) FillLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillLimeDarkAlpha(scale))
+func (c *Comp) FillLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillMauve(scale int) *component {
-	c.el.Style(styles.FillMauve(scale))
+func (c *Comp) FillMauve(scale int) *Comp {
+	c.El.Style(styles.FillMauve(scale))
 	return c
 }
 
-func (c *component) FillMauveAlpha(scale int) *component {
-	c.el.Style(styles.FillMauveAlpha(scale))
+func (c *Comp) FillMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.FillMauveAlpha(scale))
 	return c
 }
 
-func (c *component) FillMauveDark(scale int) *component {
-	c.el.Style(styles.FillMauveDark(scale))
+func (c *Comp) FillMauveDark(scale int) *Comp {
+	c.El.Style(styles.FillMauveDark(scale))
 	return c
 }
 
-func (c *component) FillMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillMauveDarkAlpha(scale))
+func (c *Comp) FillMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillMint(scale int) *component {
-	c.el.Style(styles.FillMint(scale))
+func (c *Comp) FillMint(scale int) *Comp {
+	c.El.Style(styles.FillMint(scale))
 	return c
 }
 
-func (c *component) FillMintAlpha(scale int) *component {
-	c.el.Style(styles.FillMintAlpha(scale))
+func (c *Comp) FillMintAlpha(scale int) *Comp {
+	c.El.Style(styles.FillMintAlpha(scale))
 	return c
 }
 
-func (c *component) FillMintDark(scale int) *component {
-	c.el.Style(styles.FillMintDark(scale))
+func (c *Comp) FillMintDark(scale int) *Comp {
+	c.El.Style(styles.FillMintDark(scale))
 	return c
 }
 
-func (c *component) FillMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillMintDarkAlpha(scale))
+func (c *Comp) FillMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillOlive(scale int) *component {
-	c.el.Style(styles.FillOlive(scale))
+func (c *Comp) FillOlive(scale int) *Comp {
+	c.El.Style(styles.FillOlive(scale))
 	return c
 }
 
-func (c *component) FillOliveAlpha(scale int) *component {
-	c.el.Style(styles.FillOliveAlpha(scale))
+func (c *Comp) FillOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.FillOliveAlpha(scale))
 	return c
 }
 
-func (c *component) FillOliveDark(scale int) *component {
-	c.el.Style(styles.FillOliveDark(scale))
+func (c *Comp) FillOliveDark(scale int) *Comp {
+	c.El.Style(styles.FillOliveDark(scale))
 	return c
 }
 
-func (c *component) FillOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillOliveDarkAlpha(scale))
+func (c *Comp) FillOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillOrange(scale int) *component {
-	c.el.Style(styles.FillOrange(scale))
+func (c *Comp) FillOrange(scale int) *Comp {
+	c.El.Style(styles.FillOrange(scale))
 	return c
 }
 
-func (c *component) FillOrangeAlpha(scale int) *component {
-	c.el.Style(styles.FillOrangeAlpha(scale))
+func (c *Comp) FillOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.FillOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) FillOrangeDark(scale int) *component {
-	c.el.Style(styles.FillOrangeDark(scale))
+func (c *Comp) FillOrangeDark(scale int) *Comp {
+	c.El.Style(styles.FillOrangeDark(scale))
 	return c
 }
 
-func (c *component) FillOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillOrangeDarkAlpha(scale))
+func (c *Comp) FillOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillPink(scale int) *component {
-	c.el.Style(styles.FillPink(scale))
+func (c *Comp) FillPink(scale int) *Comp {
+	c.El.Style(styles.FillPink(scale))
 	return c
 }
 
-func (c *component) FillPinkAlpha(scale int) *component {
-	c.el.Style(styles.FillPinkAlpha(scale))
+func (c *Comp) FillPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillPinkAlpha(scale))
 	return c
 }
 
-func (c *component) FillPinkDark(scale int) *component {
-	c.el.Style(styles.FillPinkDark(scale))
+func (c *Comp) FillPinkDark(scale int) *Comp {
+	c.El.Style(styles.FillPinkDark(scale))
 	return c
 }
 
-func (c *component) FillPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillPinkDarkAlpha(scale))
+func (c *Comp) FillPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillPlum(scale int) *component {
-	c.el.Style(styles.FillPlum(scale))
+func (c *Comp) FillPlum(scale int) *Comp {
+	c.El.Style(styles.FillPlum(scale))
 	return c
 }
 
-func (c *component) FillPlumAlpha(scale int) *component {
-	c.el.Style(styles.FillPlumAlpha(scale))
+func (c *Comp) FillPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.FillPlumAlpha(scale))
 	return c
 }
 
-func (c *component) FillPlumDark(scale int) *component {
-	c.el.Style(styles.FillPlumDark(scale))
+func (c *Comp) FillPlumDark(scale int) *Comp {
+	c.El.Style(styles.FillPlumDark(scale))
 	return c
 }
 
-func (c *component) FillPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillPlumDarkAlpha(scale))
+func (c *Comp) FillPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillPurple(scale int) *component {
-	c.el.Style(styles.FillPurple(scale))
+func (c *Comp) FillPurple(scale int) *Comp {
+	c.El.Style(styles.FillPurple(scale))
 	return c
 }
 
-func (c *component) FillPurpleAlpha(scale int) *component {
-	c.el.Style(styles.FillPurpleAlpha(scale))
+func (c *Comp) FillPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.FillPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) FillPurpleDark(scale int) *component {
-	c.el.Style(styles.FillPurpleDark(scale))
+func (c *Comp) FillPurpleDark(scale int) *Comp {
+	c.El.Style(styles.FillPurpleDark(scale))
 	return c
 }
 
-func (c *component) FillPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillPurpleDarkAlpha(scale))
+func (c *Comp) FillPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillRed(scale int) *component {
-	c.el.Style(styles.FillRed(scale))
+func (c *Comp) FillRed(scale int) *Comp {
+	c.El.Style(styles.FillRed(scale))
 	return c
 }
 
-func (c *component) FillRedAlpha(scale int) *component {
-	c.el.Style(styles.FillRedAlpha(scale))
+func (c *Comp) FillRedAlpha(scale int) *Comp {
+	c.El.Style(styles.FillRedAlpha(scale))
 	return c
 }
 
-func (c *component) FillRedDark(scale int) *component {
-	c.el.Style(styles.FillRedDark(scale))
+func (c *Comp) FillRedDark(scale int) *Comp {
+	c.El.Style(styles.FillRedDark(scale))
 	return c
 }
 
-func (c *component) FillRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillRedDarkAlpha(scale))
+func (c *Comp) FillRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillRuby(scale int) *component {
-	c.el.Style(styles.FillRuby(scale))
+func (c *Comp) FillRuby(scale int) *Comp {
+	c.El.Style(styles.FillRuby(scale))
 	return c
 }
 
-func (c *component) FillRubyAlpha(scale int) *component {
-	c.el.Style(styles.FillRubyAlpha(scale))
+func (c *Comp) FillRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.FillRubyAlpha(scale))
 	return c
 }
 
-func (c *component) FillRubyDark(scale int) *component {
-	c.el.Style(styles.FillRubyDark(scale))
+func (c *Comp) FillRubyDark(scale int) *Comp {
+	c.El.Style(styles.FillRubyDark(scale))
 	return c
 }
 
-func (c *component) FillRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillRubyDarkAlpha(scale))
+func (c *Comp) FillRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillSage(scale int) *component {
-	c.el.Style(styles.FillSage(scale))
+func (c *Comp) FillSage(scale int) *Comp {
+	c.El.Style(styles.FillSage(scale))
 	return c
 }
 
-func (c *component) FillSageAlpha(scale int) *component {
-	c.el.Style(styles.FillSageAlpha(scale))
+func (c *Comp) FillSageAlpha(scale int) *Comp {
+	c.El.Style(styles.FillSageAlpha(scale))
 	return c
 }
 
-func (c *component) FillSageDark(scale int) *component {
-	c.el.Style(styles.FillSageDark(scale))
+func (c *Comp) FillSageDark(scale int) *Comp {
+	c.El.Style(styles.FillSageDark(scale))
 	return c
 }
 
-func (c *component) FillSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillSageDarkAlpha(scale))
+func (c *Comp) FillSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillSand(scale int) *component {
-	c.el.Style(styles.FillSand(scale))
+func (c *Comp) FillSand(scale int) *Comp {
+	c.El.Style(styles.FillSand(scale))
 	return c
 }
 
-func (c *component) FillSandAlpha(scale int) *component {
-	c.el.Style(styles.FillSandAlpha(scale))
+func (c *Comp) FillSandAlpha(scale int) *Comp {
+	c.El.Style(styles.FillSandAlpha(scale))
 	return c
 }
 
-func (c *component) FillSandDark(scale int) *component {
-	c.el.Style(styles.FillSandDark(scale))
+func (c *Comp) FillSandDark(scale int) *Comp {
+	c.El.Style(styles.FillSandDark(scale))
 	return c
 }
 
-func (c *component) FillSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillSandDarkAlpha(scale))
+func (c *Comp) FillSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillSky(scale int) *component {
-	c.el.Style(styles.FillSky(scale))
+func (c *Comp) FillSky(scale int) *Comp {
+	c.El.Style(styles.FillSky(scale))
 	return c
 }
 
-func (c *component) FillSkyAlpha(scale int) *component {
-	c.el.Style(styles.FillSkyAlpha(scale))
+func (c *Comp) FillSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.FillSkyAlpha(scale))
 	return c
 }
 
-func (c *component) FillSkyDark(scale int) *component {
-	c.el.Style(styles.FillSkyDark(scale))
+func (c *Comp) FillSkyDark(scale int) *Comp {
+	c.El.Style(styles.FillSkyDark(scale))
 	return c
 }
 
-func (c *component) FillSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillSkyDarkAlpha(scale))
+func (c *Comp) FillSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillSlate(scale int) *component {
-	c.el.Style(styles.FillSlate(scale))
+func (c *Comp) FillSlate(scale int) *Comp {
+	c.El.Style(styles.FillSlate(scale))
 	return c
 }
 
-func (c *component) FillSlateAlpha(scale int) *component {
-	c.el.Style(styles.FillSlateAlpha(scale))
+func (c *Comp) FillSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.FillSlateAlpha(scale))
 	return c
 }
 
-func (c *component) FillSlateDark(scale int) *component {
-	c.el.Style(styles.FillSlateDark(scale))
+func (c *Comp) FillSlateDark(scale int) *Comp {
+	c.El.Style(styles.FillSlateDark(scale))
 	return c
 }
 
-func (c *component) FillSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillSlateDarkAlpha(scale))
+func (c *Comp) FillSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillTeal(scale int) *component {
-	c.el.Style(styles.FillTeal(scale))
+func (c *Comp) FillTeal(scale int) *Comp {
+	c.El.Style(styles.FillTeal(scale))
 	return c
 }
 
-func (c *component) FillTealAlpha(scale int) *component {
-	c.el.Style(styles.FillTealAlpha(scale))
+func (c *Comp) FillTealAlpha(scale int) *Comp {
+	c.El.Style(styles.FillTealAlpha(scale))
 	return c
 }
 
-func (c *component) FillTealDark(scale int) *component {
-	c.el.Style(styles.FillTealDark(scale))
+func (c *Comp) FillTealDark(scale int) *Comp {
+	c.El.Style(styles.FillTealDark(scale))
 	return c
 }
 
-func (c *component) FillTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillTealDarkAlpha(scale))
+func (c *Comp) FillTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillTomato(scale int) *component {
-	c.el.Style(styles.FillTomato(scale))
+func (c *Comp) FillTomato(scale int) *Comp {
+	c.El.Style(styles.FillTomato(scale))
 	return c
 }
 
-func (c *component) FillTomatoAlpha(scale int) *component {
-	c.el.Style(styles.FillTomatoAlpha(scale))
+func (c *Comp) FillTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.FillTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) FillTomatoDark(scale int) *component {
-	c.el.Style(styles.FillTomatoDark(scale))
+func (c *Comp) FillTomatoDark(scale int) *Comp {
+	c.El.Style(styles.FillTomatoDark(scale))
 	return c
 }
 
-func (c *component) FillTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillTomatoDarkAlpha(scale))
+func (c *Comp) FillTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillTransparent() *component {
-	c.el.Style(styles.FillTransparent())
+func (c *Comp) FillTransparent() *Comp {
+	c.El.Style(styles.FillTransparent())
 	return c
 }
 
-func (c *component) FillViolet(scale int) *component {
-	c.el.Style(styles.FillViolet(scale))
+func (c *Comp) FillViolet(scale int) *Comp {
+	c.El.Style(styles.FillViolet(scale))
 	return c
 }
 
-func (c *component) FillVioletAlpha(scale int) *component {
-	c.el.Style(styles.FillVioletAlpha(scale))
+func (c *Comp) FillVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.FillVioletAlpha(scale))
 	return c
 }
 
-func (c *component) FillVioletDark(scale int) *component {
-	c.el.Style(styles.FillVioletDark(scale))
+func (c *Comp) FillVioletDark(scale int) *Comp {
+	c.El.Style(styles.FillVioletDark(scale))
 	return c
 }
 
-func (c *component) FillVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillVioletDarkAlpha(scale))
+func (c *Comp) FillVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) FillWhite() *component {
-	c.el.Style(styles.FillWhite())
+func (c *Comp) FillWhite() *Comp {
+	c.El.Style(styles.FillWhite())
 	return c
 }
 
-func (c *component) FillWhiteAlpha(scale int) *component {
-	c.el.Style(styles.FillWhiteAlpha(scale))
+func (c *Comp) FillWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.FillWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) FillYellow(scale int) *component {
-	c.el.Style(styles.FillYellow(scale))
+func (c *Comp) FillYellow(scale int) *Comp {
+	c.El.Style(styles.FillYellow(scale))
 	return c
 }
 
-func (c *component) FillYellowAlpha(scale int) *component {
-	c.el.Style(styles.FillYellowAlpha(scale))
+func (c *Comp) FillYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.FillYellowAlpha(scale))
 	return c
 }
 
-func (c *component) FillYellowDark(scale int) *component {
-	c.el.Style(styles.FillYellowDark(scale))
+func (c *Comp) FillYellowDark(scale int) *Comp {
+	c.El.Style(styles.FillYellowDark(scale))
 	return c
 }
 
-func (c *component) FillYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.FillYellowDarkAlpha(scale))
+func (c *Comp) FillYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.FillYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) Filter(val value.Value) *component {
-	c.el.Style(styles.Filter(val))
+func (c *Comp) Filter(val value.Value) *Comp {
+	c.El.Style(styles.Filter(val))
 	return c
 }
 
-func (c *component) FilterNone() *component {
-	c.el.Style(styles.FilterNone())
+func (c *Comp) FilterNone() *Comp {
+	c.El.Style(styles.FilterNone())
 	return c
 }
 
-func (c *component) Fixed() *component {
-	c.el.Style(styles.Fixed())
+func (c *Comp) Fixed() *Comp {
+	c.El.Style(styles.Fixed())
 	return c
 }
 
-func (c *component) Flex() *component {
-	c.el.Style(styles.Flex())
+func (c *Comp) Flex() *Comp {
+	c.El.Style(styles.Flex())
 	return c
 }
 
-func (c *component) FlexAuto() *component {
-	c.el.Style(styles.FlexAuto())
+func (c *Comp) FlexAuto() *Comp {
+	c.El.Style(styles.FlexAuto())
 	return c
 }
 
-func (c *component) FlexBy(val value.Value) *component {
-	c.el.Style(styles.FlexBy(val))
+func (c *Comp) FlexBy(val value.Value) *Comp {
+	c.El.Style(styles.FlexBy(val))
 	return c
 }
 
-func (c *component) FlexCol() *component {
-	c.el.Style(styles.FlexCol())
+func (c *Comp) FlexCol() *Comp {
+	c.El.Style(styles.FlexCol())
 	return c
 }
 
-func (c *component) FlexColReverse() *component {
-	c.el.Style(styles.FlexColReverse())
+func (c *Comp) FlexColReverse() *Comp {
+	c.El.Style(styles.FlexColReverse())
 	return c
 }
 
-func (c *component) FlexFraction(fraction float64) *component {
-	c.el.Style(styles.FlexFraction(fraction))
+func (c *Comp) FlexFraction(fraction float64) *Comp {
+	c.El.Style(styles.FlexFraction(fraction))
 	return c
 }
 
-func (c *component) FlexInitial() *component {
-	c.el.Style(styles.FlexInitial())
+func (c *Comp) FlexInitial() *Comp {
+	c.El.Style(styles.FlexInitial())
 	return c
 }
 
-func (c *component) FlexNoWrap() *component {
-	c.el.Style(styles.FlexNoWrap())
+func (c *Comp) FlexNoWrap() *Comp {
+	c.El.Style(styles.FlexNoWrap())
 	return c
 }
 
-func (c *component) FlexNone() *component {
-	c.el.Style(styles.FlexNone())
+func (c *Comp) FlexNone() *Comp {
+	c.El.Style(styles.FlexNone())
 	return c
 }
 
-func (c *component) FlexRow() *component {
-	c.el.Style(styles.FlexRow())
+func (c *Comp) FlexRow() *Comp {
+	c.El.Style(styles.FlexRow())
 	return c
 }
 
-func (c *component) FlexRowReverse() *component {
-	c.el.Style(styles.FlexRowReverse())
+func (c *Comp) FlexRowReverse() *Comp {
+	c.El.Style(styles.FlexRowReverse())
 	return c
 }
 
-func (c *component) FlexWrap() *component {
-	c.el.Style(styles.FlexWrap())
+func (c *Comp) FlexWrap() *Comp {
+	c.El.Style(styles.FlexWrap())
 	return c
 }
 
-func (c *component) FlexWrapReverse() *component {
-	c.el.Style(styles.FlexWrapReverse())
+func (c *Comp) FlexWrapReverse() *Comp {
+	c.El.Style(styles.FlexWrapReverse())
 	return c
 }
 
-func (c *component) FloatEnd() *component {
-	c.el.Style(styles.FloatEnd())
+func (c *Comp) FloatEnd() *Comp {
+	c.El.Style(styles.FloatEnd())
 	return c
 }
 
-func (c *component) FloatLeft() *component {
-	c.el.Style(styles.FloatLeft())
+func (c *Comp) FloatLeft() *Comp {
+	c.El.Style(styles.FloatLeft())
 	return c
 }
 
-func (c *component) FloatNone() *component {
-	c.el.Style(styles.FloatNone())
+func (c *Comp) FloatNone() *Comp {
+	c.El.Style(styles.FloatNone())
 	return c
 }
 
-func (c *component) FloatRight() *component {
-	c.el.Style(styles.FloatRight())
+func (c *Comp) FloatRight() *Comp {
+	c.El.Style(styles.FloatRight())
 	return c
 }
 
-func (c *component) FloatStart() *component {
-	c.el.Style(styles.FloatStart())
+func (c *Comp) FloatStart() *Comp {
+	c.El.Style(styles.FloatStart())
 	return c
 }
 
-func (c *component) FlowRoot() *component {
-	c.el.Style(styles.FlowRoot())
+func (c *Comp) FlowRoot() *Comp {
+	c.El.Style(styles.FlowRoot())
 	return c
 }
 
-func (c *component) FontBlack() *component {
-	c.el.Style(styles.FontBlack())
+func (c *Comp) FontBlack() *Comp {
+	c.El.Style(styles.FontBlack())
 	return c
 }
 
-func (c *component) FontBold() *component {
-	c.el.Style(styles.FontBold())
+func (c *Comp) FontBold() *Comp {
+	c.El.Style(styles.FontBold())
 	return c
 }
 
-func (c *component) FontExtraBold() *component {
-	c.el.Style(styles.FontExtraBold())
+func (c *Comp) FontExtraBold() *Comp {
+	c.El.Style(styles.FontExtraBold())
 	return c
 }
 
-func (c *component) FontExtraLight() *component {
-	c.el.Style(styles.FontExtraLight())
+func (c *Comp) FontExtraLight() *Comp {
+	c.El.Style(styles.FontExtraLight())
 	return c
 }
 
-func (c *component) FontFamilyBy(val value.Value) *component {
-	c.el.Style(styles.FontFamilyBy(val))
+func (c *Comp) FontFamilyBy(val value.Value) *Comp {
+	c.El.Style(styles.FontFamilyBy(val))
 	return c
 }
 
-func (c *component) FontLight() *component {
-	c.el.Style(styles.FontLight())
+func (c *Comp) FontLight() *Comp {
+	c.El.Style(styles.FontLight())
 	return c
 }
 
-func (c *component) FontMedium() *component {
-	c.el.Style(styles.FontMedium())
+func (c *Comp) FontMedium() *Comp {
+	c.El.Style(styles.FontMedium())
 	return c
 }
 
-func (c *component) FontMono() *component {
-	c.el.Style(styles.FontMono())
+func (c *Comp) FontMono() *Comp {
+	c.El.Style(styles.FontMono())
 	return c
 }
 
-func (c *component) FontNormal() *component {
-	c.el.Style(styles.FontNormal())
+func (c *Comp) FontNormal() *Comp {
+	c.El.Style(styles.FontNormal())
 	return c
 }
 
-func (c *component) FontSans() *component {
-	c.el.Style(styles.FontSans())
+func (c *Comp) FontSans() *Comp {
+	c.El.Style(styles.FontSans())
 	return c
 }
 
-func (c *component) FontSemibold() *component {
-	c.el.Style(styles.FontSemibold())
+func (c *Comp) FontSemibold() *Comp {
+	c.El.Style(styles.FontSemibold())
 	return c
 }
 
-func (c *component) FontSerif() *component {
-	c.el.Style(styles.FontSerif())
+func (c *Comp) FontSerif() *Comp {
+	c.El.Style(styles.FontSerif())
 	return c
 }
 
-func (c *component) FontStretchBy(val value.Value) *component {
-	c.el.Style(styles.FontStretchBy(val))
+func (c *Comp) FontStretchBy(val value.Value) *Comp {
+	c.El.Style(styles.FontStretchBy(val))
 	return c
 }
 
-func (c *component) FontStretchCondensed() *component {
-	c.el.Style(styles.FontStretchCondensed())
+func (c *Comp) FontStretchCondensed() *Comp {
+	c.El.Style(styles.FontStretchCondensed())
 	return c
 }
 
-func (c *component) FontStretchExpanded() *component {
-	c.el.Style(styles.FontStretchExpanded())
+func (c *Comp) FontStretchExpanded() *Comp {
+	c.El.Style(styles.FontStretchExpanded())
 	return c
 }
 
-func (c *component) FontStretchExtraCondensed() *component {
-	c.el.Style(styles.FontStretchExtraCondensed())
+func (c *Comp) FontStretchExtraCondensed() *Comp {
+	c.El.Style(styles.FontStretchExtraCondensed())
 	return c
 }
 
-func (c *component) FontStretchExtraExpanded() *component {
-	c.el.Style(styles.FontStretchExtraExpanded())
+func (c *Comp) FontStretchExtraExpanded() *Comp {
+	c.El.Style(styles.FontStretchExtraExpanded())
 	return c
 }
 
-func (c *component) FontStretchNormal() *component {
-	c.el.Style(styles.FontStretchNormal())
+func (c *Comp) FontStretchNormal() *Comp {
+	c.El.Style(styles.FontStretchNormal())
 	return c
 }
 
-func (c *component) FontStretchPercentage(percentage int) *component {
-	c.el.Style(styles.FontStretchPercentage(percentage))
+func (c *Comp) FontStretchPercentage(percentage int) *Comp {
+	c.El.Style(styles.FontStretchPercentage(percentage))
 	return c
 }
 
-func (c *component) FontStretchSemiCondensed() *component {
-	c.el.Style(styles.FontStretchSemiCondensed())
+func (c *Comp) FontStretchSemiCondensed() *Comp {
+	c.El.Style(styles.FontStretchSemiCondensed())
 	return c
 }
 
-func (c *component) FontStretchSemiExpanded() *component {
-	c.el.Style(styles.FontStretchSemiExpanded())
+func (c *Comp) FontStretchSemiExpanded() *Comp {
+	c.El.Style(styles.FontStretchSemiExpanded())
 	return c
 }
 
-func (c *component) FontStretchUltraCondensed() *component {
-	c.el.Style(styles.FontStretchUltraCondensed())
+func (c *Comp) FontStretchUltraCondensed() *Comp {
+	c.El.Style(styles.FontStretchUltraCondensed())
 	return c
 }
 
-func (c *component) FontStretchUltraExpanded() *component {
-	c.el.Style(styles.FontStretchUltraExpanded())
+func (c *Comp) FontStretchUltraExpanded() *Comp {
+	c.El.Style(styles.FontStretchUltraExpanded())
 	return c
 }
 
-func (c *component) FontThin() *component {
-	c.el.Style(styles.FontThin())
+func (c *Comp) FontThin() *Comp {
+	c.El.Style(styles.FontThin())
 	return c
 }
 
-func (c *component) FontWeightBy(val value.Value) *component {
-	c.el.Style(styles.FontWeightBy(val))
+func (c *Comp) FontWeightBy(val value.Value) *Comp {
+	c.El.Style(styles.FontWeightBy(val))
 	return c
 }
 
-func (c *component) From(val value.Value) *component {
-	c.el.Style(styles.From(val))
+func (c *Comp) From(val value.Value) *Comp {
+	c.El.Style(styles.From(val))
 	return c
 }
 
-func (c *component) Gap(number int) *component {
-	c.el.Style(styles.Gap(number))
+func (c *Comp) Gap(number int) *Comp {
+	c.El.Style(styles.Gap(number))
 	return c
 }
 
-func (c *component) GapBy(val value.Value) *component {
-	c.el.Style(styles.GapBy(val))
+func (c *Comp) GapBy(val value.Value) *Comp {
+	c.El.Style(styles.GapBy(val))
 	return c
 }
 
-func (c *component) GapX(number int) *component {
-	c.el.Style(styles.GapX(number))
+func (c *Comp) GapX(number int) *Comp {
+	c.El.Style(styles.GapX(number))
 	return c
 }
 
-func (c *component) GapXBy(val value.Value) *component {
-	c.el.Style(styles.GapXBy(val))
+func (c *Comp) GapXBy(val value.Value) *Comp {
+	c.El.Style(styles.GapXBy(val))
 	return c
 }
 
-func (c *component) GapY(number int) *component {
-	c.el.Style(styles.GapY(number))
+func (c *Comp) GapY(number int) *Comp {
+	c.El.Style(styles.GapY(number))
 	return c
 }
 
-func (c *component) GapYBy(val value.Value) *component {
-	c.el.Style(styles.GapYBy(val))
+func (c *Comp) GapYBy(val value.Value) *Comp {
+	c.El.Style(styles.GapYBy(val))
 	return c
 }
 
-func (c *component) Grayscale(val ...any) *component {
-	c.el.Style(styles.Grayscale(val...))
+func (c *Comp) Grayscale(val ...any) *Comp {
+	c.El.Style(styles.Grayscale(val...))
 	return c
 }
 
-func (c *component) Grid() *component {
-	c.el.Style(styles.Grid())
+func (c *Comp) Grid() *Comp {
+	c.El.Style(styles.Grid())
 	return c
 }
 
-func (c *component) GridCols(number int) *component {
-	c.el.Style(styles.GridCols(number))
+func (c *Comp) GridCols(number int) *Comp {
+	c.El.Style(styles.GridCols(number))
 	return c
 }
 
-func (c *component) GridColsBy(val value.Value) *component {
-	c.el.Style(styles.GridColsBy(val))
+func (c *Comp) GridColsBy(val value.Value) *Comp {
+	c.El.Style(styles.GridColsBy(val))
 	return c
 }
 
-func (c *component) GridColsNone() *component {
-	c.el.Style(styles.GridColsNone())
+func (c *Comp) GridColsNone() *Comp {
+	c.El.Style(styles.GridColsNone())
 	return c
 }
 
-func (c *component) GridColsSubgrid() *component {
-	c.el.Style(styles.GridColsSubgrid())
+func (c *Comp) GridColsSubgrid() *Comp {
+	c.El.Style(styles.GridColsSubgrid())
 	return c
 }
 
-func (c *component) GridFlowCol() *component {
-	c.el.Style(styles.GridFlowCol())
+func (c *Comp) GridFlowCol() *Comp {
+	c.El.Style(styles.GridFlowCol())
 	return c
 }
 
-func (c *component) GridFlowColDense() *component {
-	c.el.Style(styles.GridFlowColDense())
+func (c *Comp) GridFlowColDense() *Comp {
+	c.El.Style(styles.GridFlowColDense())
 	return c
 }
 
-func (c *component) GridFlowDense() *component {
-	c.el.Style(styles.GridFlowDense())
+func (c *Comp) GridFlowDense() *Comp {
+	c.El.Style(styles.GridFlowDense())
 	return c
 }
 
-func (c *component) GridFlowRow() *component {
-	c.el.Style(styles.GridFlowRow())
+func (c *Comp) GridFlowRow() *Comp {
+	c.El.Style(styles.GridFlowRow())
 	return c
 }
 
-func (c *component) GridFlowRowDense() *component {
-	c.el.Style(styles.GridFlowRowDense())
+func (c *Comp) GridFlowRowDense() *Comp {
+	c.El.Style(styles.GridFlowRowDense())
 	return c
 }
 
-func (c *component) GridRows(number int) *component {
-	c.el.Style(styles.GridRows(number))
+func (c *Comp) GridRows(number int) *Comp {
+	c.El.Style(styles.GridRows(number))
 	return c
 }
 
-func (c *component) GridRowsBy(val value.Value) *component {
-	c.el.Style(styles.GridRowsBy(val))
+func (c *Comp) GridRowsBy(val value.Value) *Comp {
+	c.El.Style(styles.GridRowsBy(val))
 	return c
 }
 
-func (c *component) GridRowsNone() *component {
-	c.el.Style(styles.GridRowsNone())
+func (c *Comp) GridRowsNone() *Comp {
+	c.El.Style(styles.GridRowsNone())
 	return c
 }
 
-func (c *component) GridRowsSubgrid() *component {
-	c.el.Style(styles.GridRowsSubgrid())
+func (c *Comp) GridRowsSubgrid() *Comp {
+	c.El.Style(styles.GridRowsSubgrid())
 	return c
 }
 
-func (c *component) Grow() *component {
-	c.el.Style(styles.Grow())
+func (c *Comp) Grow() *Comp {
+	c.El.Style(styles.Grow())
 	return c
 }
 
-func (c *component) GrowNumber(number int) *component {
-	c.el.Style(styles.GrowNumber(number))
+func (c *Comp) GrowNumber(number int) *Comp {
+	c.El.Style(styles.GrowNumber(number))
 	return c
 }
 
-func (c *component) GrowValue(val value.Value) *component {
-	c.el.Style(styles.GrowValue(val))
+func (c *Comp) GrowValue(val value.Value) *Comp {
+	c.El.Style(styles.GrowValue(val))
 	return c
 }
 
-func (c *component) H(number int) *component {
-	c.el.Style(styles.H(number))
+func (c *Comp) H(number int) *Comp {
+	c.El.Style(styles.H(number))
 	return c
 }
 
-func (c *component) HAuto() *component {
-	c.el.Style(styles.HAuto())
+func (c *Comp) HAuto() *Comp {
+	c.El.Style(styles.HAuto())
 	return c
 }
 
-func (c *component) HDvh() *component {
-	c.el.Style(styles.HDvh())
+func (c *Comp) HDvh() *Comp {
+	c.El.Style(styles.HDvh())
 	return c
 }
 
-func (c *component) HDvw() *component {
-	c.el.Style(styles.HDvw())
+func (c *Comp) HDvw() *Comp {
+	c.El.Style(styles.HDvw())
 	return c
 }
 
-func (c *component) HFit() *component {
-	c.el.Style(styles.HFit())
+func (c *Comp) HFit() *Comp {
+	c.El.Style(styles.HFit())
 	return c
 }
 
-func (c *component) HFraction(fraction float32) *component {
-	c.el.Style(styles.HFraction(fraction))
+func (c *Comp) HFraction(fraction float32) *Comp {
+	c.El.Style(styles.HFraction(fraction))
 	return c
 }
 
-func (c *component) HFull() *component {
-	c.el.Style(styles.HFull())
+func (c *Comp) HFull() *Comp {
+	c.El.Style(styles.HFull())
 	return c
 }
 
-func (c *component) HLh() *component {
-	c.el.Style(styles.HLh())
+func (c *Comp) HLh() *Comp {
+	c.El.Style(styles.HLh())
 	return c
 }
 
-func (c *component) HLvh() *component {
-	c.el.Style(styles.HLvh())
+func (c *Comp) HLvh() *Comp {
+	c.El.Style(styles.HLvh())
 	return c
 }
 
-func (c *component) HLvw() *component {
-	c.el.Style(styles.HLvw())
+func (c *Comp) HLvw() *Comp {
+	c.El.Style(styles.HLvw())
 	return c
 }
 
-func (c *component) HMax() *component {
-	c.el.Style(styles.HMax())
+func (c *Comp) HMax() *Comp {
+	c.El.Style(styles.HMax())
 	return c
 }
 
-func (c *component) HMin() *component {
-	c.el.Style(styles.HMin())
+func (c *Comp) HMin() *Comp {
+	c.El.Style(styles.HMin())
 	return c
 }
 
-func (c *component) HPx() *component {
-	c.el.Style(styles.HPx())
+func (c *Comp) HPx() *Comp {
+	c.El.Style(styles.HPx())
 	return c
 }
 
-func (c *component) HScreen() *component {
-	c.el.Style(styles.HScreen())
+func (c *Comp) HScreen() *Comp {
+	c.El.Style(styles.HScreen())
 	return c
 }
 
-func (c *component) HSvh() *component {
-	c.el.Style(styles.HSvh())
+func (c *Comp) HSvh() *Comp {
+	c.El.Style(styles.HSvh())
 	return c
 }
 
-func (c *component) HSvw() *component {
-	c.el.Style(styles.HSvw())
+func (c *Comp) HSvw() *Comp {
+	c.El.Style(styles.HSvw())
 	return c
 }
 
-func (c *component) HValueBy(val value.Value) *component {
-	c.el.Style(styles.HValueBy(val))
+func (c *Comp) HValueBy(val value.Value) *Comp {
+	c.El.Style(styles.HValueBy(val))
 	return c
 }
 
-func (c *component) Hidden() *component {
-	c.el.Style(styles.Hidden())
+func (c *Comp) Hidden() *Comp {
+	c.El.Style(styles.Hidden())
 	return c
 }
 
-func (c *component) HueRotate(val any) *component {
-	c.el.Style(styles.HueRotate(val))
+func (c *Comp) HueRotate(val any) *Comp {
+	c.El.Style(styles.HueRotate(val))
 	return c
 }
 
-func (c *component) HyphensAuto() *component {
-	c.el.Style(styles.HyphensAuto())
+func (c *Comp) HyphensAuto() *Comp {
+	c.El.Style(styles.HyphensAuto())
 	return c
 }
 
-func (c *component) HyphensManual() *component {
-	c.el.Style(styles.HyphensManual())
+func (c *Comp) HyphensManual() *Comp {
+	c.El.Style(styles.HyphensManual())
 	return c
 }
 
-func (c *component) HyphensNone() *component {
-	c.el.Style(styles.HyphensNone())
+func (c *Comp) HyphensNone() *Comp {
+	c.El.Style(styles.HyphensNone())
 	return c
 }
 
-func (c *component) Indent(number int) *component {
-	c.el.Style(styles.Indent(number))
+func (c *Comp) Indent(number int) *Comp {
+	c.El.Style(styles.Indent(number))
 	return c
 }
 
-func (c *component) IndentBy(val value.Value) *component {
-	c.el.Style(styles.IndentBy(val))
+func (c *Comp) IndentBy(val value.Value) *Comp {
+	c.El.Style(styles.IndentBy(val))
 	return c
 }
 
-func (c *component) IndentPx() *component {
-	c.el.Style(styles.IndentPx())
+func (c *Comp) IndentPx() *Comp {
+	c.El.Style(styles.IndentPx())
 	return c
 }
 
-func (c *component) Inline() *component {
-	c.el.Style(styles.Inline())
+func (c *Comp) Inline() *Comp {
+	c.El.Style(styles.Inline())
 	return c
 }
 
-func (c *component) InlineBlock() *component {
-	c.el.Style(styles.InlineBlock())
+func (c *Comp) InlineBlock() *Comp {
+	c.El.Style(styles.InlineBlock())
 	return c
 }
 
-func (c *component) InlineFlex() *component {
-	c.el.Style(styles.InlineFlex())
+func (c *Comp) InlineFlex() *Comp {
+	c.El.Style(styles.InlineFlex())
 	return c
 }
 
-func (c *component) InlineGrid() *component {
-	c.el.Style(styles.InlineGrid())
+func (c *Comp) InlineGrid() *Comp {
+	c.El.Style(styles.InlineGrid())
 	return c
 }
 
-func (c *component) InlineTable() *component {
-	c.el.Style(styles.InlineTable())
+func (c *Comp) InlineTable() *Comp {
+	c.El.Style(styles.InlineTable())
 	return c
 }
 
-func (c *component) Inset(number int) *component {
-	c.el.Style(styles.Inset(number))
+func (c *Comp) Inset(number int) *Comp {
+	c.El.Style(styles.Inset(number))
 	return c
 }
 
-func (c *component) InsetAuto() *component {
-	c.el.Style(styles.InsetAuto())
+func (c *Comp) InsetAuto() *Comp {
+	c.El.Style(styles.InsetAuto())
 	return c
 }
 
-func (c *component) InsetBy(val value.Value) *component {
-	c.el.Style(styles.InsetBy(val))
+func (c *Comp) InsetBy(val value.Value) *Comp {
+	c.El.Style(styles.InsetBy(val))
 	return c
 }
 
-func (c *component) InsetFraction(fraction float64) *component {
-	c.el.Style(styles.InsetFraction(fraction))
+func (c *Comp) InsetFraction(fraction float64) *Comp {
+	c.El.Style(styles.InsetFraction(fraction))
 	return c
 }
 
-func (c *component) InsetFull() *component {
-	c.el.Style(styles.InsetFull())
+func (c *Comp) InsetFull() *Comp {
+	c.El.Style(styles.InsetFull())
 	return c
 }
 
-func (c *component) InsetPx() *component {
-	c.el.Style(styles.InsetPx())
+func (c *Comp) InsetPx() *Comp {
+	c.El.Style(styles.InsetPx())
 	return c
 }
 
-func (c *component) InsetRing(val ...value.Value) *component {
-	c.el.Style(styles.InsetRing(val...))
+func (c *Comp) InsetRing(val ...value.Value) *Comp {
+	c.El.Style(styles.InsetRing(val...))
 	return c
 }
 
-func (c *component) InsetRingAmber(scale int) *component {
-	c.el.Style(styles.InsetRingAmber(scale))
+func (c *Comp) InsetRingAmber(scale int) *Comp {
+	c.El.Style(styles.InsetRingAmber(scale))
 	return c
 }
 
-func (c *component) InsetRingAmberAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingAmberAlpha(scale))
+func (c *Comp) InsetRingAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingAmberAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingAmberDark(scale int) *component {
-	c.el.Style(styles.InsetRingAmberDark(scale))
+func (c *Comp) InsetRingAmberDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingAmberDark(scale))
 	return c
 }
 
-func (c *component) InsetRingAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingAmberDarkAlpha(scale))
+func (c *Comp) InsetRingAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingBlack() *component {
-	c.el.Style(styles.InsetRingBlack())
+func (c *Comp) InsetRingBlack() *Comp {
+	c.El.Style(styles.InsetRingBlack())
 	return c
 }
 
-func (c *component) InsetRingBlackAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingBlackAlpha(scale))
+func (c *Comp) InsetRingBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingBlackAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingBlue(scale int) *component {
-	c.el.Style(styles.InsetRingBlue(scale))
+func (c *Comp) InsetRingBlue(scale int) *Comp {
+	c.El.Style(styles.InsetRingBlue(scale))
 	return c
 }
 
-func (c *component) InsetRingBlueAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingBlueAlpha(scale))
+func (c *Comp) InsetRingBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingBlueAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingBlueDark(scale int) *component {
-	c.el.Style(styles.InsetRingBlueDark(scale))
+func (c *Comp) InsetRingBlueDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingBlueDark(scale))
 	return c
 }
 
-func (c *component) InsetRingBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingBlueDarkAlpha(scale))
+func (c *Comp) InsetRingBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingBronze(scale int) *component {
-	c.el.Style(styles.InsetRingBronze(scale))
+func (c *Comp) InsetRingBronze(scale int) *Comp {
+	c.El.Style(styles.InsetRingBronze(scale))
 	return c
 }
 
-func (c *component) InsetRingBronzeAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingBronzeAlpha(scale))
+func (c *Comp) InsetRingBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingBronzeDark(scale int) *component {
-	c.el.Style(styles.InsetRingBronzeDark(scale))
+func (c *Comp) InsetRingBronzeDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingBronzeDark(scale))
 	return c
 }
 
-func (c *component) InsetRingBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingBronzeDarkAlpha(scale))
+func (c *Comp) InsetRingBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingBrown(scale int) *component {
-	c.el.Style(styles.InsetRingBrown(scale))
+func (c *Comp) InsetRingBrown(scale int) *Comp {
+	c.El.Style(styles.InsetRingBrown(scale))
 	return c
 }
 
-func (c *component) InsetRingBrownAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingBrownAlpha(scale))
+func (c *Comp) InsetRingBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingBrownAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingBrownDark(scale int) *component {
-	c.el.Style(styles.InsetRingBrownDark(scale))
+func (c *Comp) InsetRingBrownDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingBrownDark(scale))
 	return c
 }
 
-func (c *component) InsetRingBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingBrownDarkAlpha(scale))
+func (c *Comp) InsetRingBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingColor(val value.Value) *component {
-	c.el.Style(styles.InsetRingColor(val))
+func (c *Comp) InsetRingColor(val value.Value) *Comp {
+	c.El.Style(styles.InsetRingColor(val))
 	return c
 }
 
-func (c *component) InsetRingCrimson(scale int) *component {
-	c.el.Style(styles.InsetRingCrimson(scale))
+func (c *Comp) InsetRingCrimson(scale int) *Comp {
+	c.El.Style(styles.InsetRingCrimson(scale))
 	return c
 }
 
-func (c *component) InsetRingCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingCrimsonAlpha(scale))
+func (c *Comp) InsetRingCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingCrimsonDark(scale int) *component {
-	c.el.Style(styles.InsetRingCrimsonDark(scale))
+func (c *Comp) InsetRingCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingCrimsonDark(scale))
 	return c
 }
 
-func (c *component) InsetRingCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingCrimsonDarkAlpha(scale))
+func (c *Comp) InsetRingCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingCurrent() *component {
-	c.el.Style(styles.InsetRingCurrent())
+func (c *Comp) InsetRingCurrent() *Comp {
+	c.El.Style(styles.InsetRingCurrent())
 	return c
 }
 
-func (c *component) InsetRingCyan(scale int) *component {
-	c.el.Style(styles.InsetRingCyan(scale))
+func (c *Comp) InsetRingCyan(scale int) *Comp {
+	c.El.Style(styles.InsetRingCyan(scale))
 	return c
 }
 
-func (c *component) InsetRingCyanAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingCyanAlpha(scale))
+func (c *Comp) InsetRingCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingCyanAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingCyanDark(scale int) *component {
-	c.el.Style(styles.InsetRingCyanDark(scale))
+func (c *Comp) InsetRingCyanDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingCyanDark(scale))
 	return c
 }
 
-func (c *component) InsetRingCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingCyanDarkAlpha(scale))
+func (c *Comp) InsetRingCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingGold(scale int) *component {
-	c.el.Style(styles.InsetRingGold(scale))
+func (c *Comp) InsetRingGold(scale int) *Comp {
+	c.El.Style(styles.InsetRingGold(scale))
 	return c
 }
 
-func (c *component) InsetRingGoldAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingGoldAlpha(scale))
+func (c *Comp) InsetRingGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingGoldAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingGoldDark(scale int) *component {
-	c.el.Style(styles.InsetRingGoldDark(scale))
+func (c *Comp) InsetRingGoldDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingGoldDark(scale))
 	return c
 }
 
-func (c *component) InsetRingGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingGoldDarkAlpha(scale))
+func (c *Comp) InsetRingGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingGrass(scale int) *component {
-	c.el.Style(styles.InsetRingGrass(scale))
+func (c *Comp) InsetRingGrass(scale int) *Comp {
+	c.El.Style(styles.InsetRingGrass(scale))
 	return c
 }
 
-func (c *component) InsetRingGrassAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingGrassAlpha(scale))
+func (c *Comp) InsetRingGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingGrassAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingGrassDark(scale int) *component {
-	c.el.Style(styles.InsetRingGrassDark(scale))
+func (c *Comp) InsetRingGrassDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingGrassDark(scale))
 	return c
 }
 
-func (c *component) InsetRingGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingGrassDarkAlpha(scale))
+func (c *Comp) InsetRingGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingGray(scale int) *component {
-	c.el.Style(styles.InsetRingGray(scale))
+func (c *Comp) InsetRingGray(scale int) *Comp {
+	c.El.Style(styles.InsetRingGray(scale))
 	return c
 }
 
-func (c *component) InsetRingGrayAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingGrayAlpha(scale))
+func (c *Comp) InsetRingGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingGrayAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingGrayDark(scale int) *component {
-	c.el.Style(styles.InsetRingGrayDark(scale))
+func (c *Comp) InsetRingGrayDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingGrayDark(scale))
 	return c
 }
 
-func (c *component) InsetRingGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingGrayDarkAlpha(scale))
+func (c *Comp) InsetRingGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingGreen(scale int) *component {
-	c.el.Style(styles.InsetRingGreen(scale))
+func (c *Comp) InsetRingGreen(scale int) *Comp {
+	c.El.Style(styles.InsetRingGreen(scale))
 	return c
 }
 
-func (c *component) InsetRingGreenAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingGreenAlpha(scale))
+func (c *Comp) InsetRingGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingGreenAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingGreenDark(scale int) *component {
-	c.el.Style(styles.InsetRingGreenDark(scale))
+func (c *Comp) InsetRingGreenDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingGreenDark(scale))
 	return c
 }
 
-func (c *component) InsetRingGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingGreenDarkAlpha(scale))
+func (c *Comp) InsetRingGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingIndigo(scale int) *component {
-	c.el.Style(styles.InsetRingIndigo(scale))
+func (c *Comp) InsetRingIndigo(scale int) *Comp {
+	c.El.Style(styles.InsetRingIndigo(scale))
 	return c
 }
 
-func (c *component) InsetRingIndigoAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingIndigoAlpha(scale))
+func (c *Comp) InsetRingIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingIndigoDark(scale int) *component {
-	c.el.Style(styles.InsetRingIndigoDark(scale))
+func (c *Comp) InsetRingIndigoDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingIndigoDark(scale))
 	return c
 }
 
-func (c *component) InsetRingIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingIndigoDarkAlpha(scale))
+func (c *Comp) InsetRingIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingInherit() *component {
-	c.el.Style(styles.InsetRingInherit())
+func (c *Comp) InsetRingInherit() *Comp {
+	c.El.Style(styles.InsetRingInherit())
 	return c
 }
 
-func (c *component) InsetRingIris(scale int) *component {
-	c.el.Style(styles.InsetRingIris(scale))
+func (c *Comp) InsetRingIris(scale int) *Comp {
+	c.El.Style(styles.InsetRingIris(scale))
 	return c
 }
 
-func (c *component) InsetRingIrisAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingIrisAlpha(scale))
+func (c *Comp) InsetRingIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingIrisAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingIrisDark(scale int) *component {
-	c.el.Style(styles.InsetRingIrisDark(scale))
+func (c *Comp) InsetRingIrisDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingIrisDark(scale))
 	return c
 }
 
-func (c *component) InsetRingIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingIrisDarkAlpha(scale))
+func (c *Comp) InsetRingIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingJade(scale int) *component {
-	c.el.Style(styles.InsetRingJade(scale))
+func (c *Comp) InsetRingJade(scale int) *Comp {
+	c.El.Style(styles.InsetRingJade(scale))
 	return c
 }
 
-func (c *component) InsetRingJadeAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingJadeAlpha(scale))
+func (c *Comp) InsetRingJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingJadeAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingJadeDark(scale int) *component {
-	c.el.Style(styles.InsetRingJadeDark(scale))
+func (c *Comp) InsetRingJadeDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingJadeDark(scale))
 	return c
 }
 
-func (c *component) InsetRingJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingJadeDarkAlpha(scale))
+func (c *Comp) InsetRingJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingLime(scale int) *component {
-	c.el.Style(styles.InsetRingLime(scale))
+func (c *Comp) InsetRingLime(scale int) *Comp {
+	c.El.Style(styles.InsetRingLime(scale))
 	return c
 }
 
-func (c *component) InsetRingLimeAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingLimeAlpha(scale))
+func (c *Comp) InsetRingLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingLimeAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingLimeDark(scale int) *component {
-	c.el.Style(styles.InsetRingLimeDark(scale))
+func (c *Comp) InsetRingLimeDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingLimeDark(scale))
 	return c
 }
 
-func (c *component) InsetRingLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingLimeDarkAlpha(scale))
+func (c *Comp) InsetRingLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingMauve(scale int) *component {
-	c.el.Style(styles.InsetRingMauve(scale))
+func (c *Comp) InsetRingMauve(scale int) *Comp {
+	c.El.Style(styles.InsetRingMauve(scale))
 	return c
 }
 
-func (c *component) InsetRingMauveAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingMauveAlpha(scale))
+func (c *Comp) InsetRingMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingMauveAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingMauveDark(scale int) *component {
-	c.el.Style(styles.InsetRingMauveDark(scale))
+func (c *Comp) InsetRingMauveDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingMauveDark(scale))
 	return c
 }
 
-func (c *component) InsetRingMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingMauveDarkAlpha(scale))
+func (c *Comp) InsetRingMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingMint(scale int) *component {
-	c.el.Style(styles.InsetRingMint(scale))
+func (c *Comp) InsetRingMint(scale int) *Comp {
+	c.El.Style(styles.InsetRingMint(scale))
 	return c
 }
 
-func (c *component) InsetRingMintAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingMintAlpha(scale))
+func (c *Comp) InsetRingMintAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingMintAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingMintDark(scale int) *component {
-	c.el.Style(styles.InsetRingMintDark(scale))
+func (c *Comp) InsetRingMintDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingMintDark(scale))
 	return c
 }
 
-func (c *component) InsetRingMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingMintDarkAlpha(scale))
+func (c *Comp) InsetRingMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingOlive(scale int) *component {
-	c.el.Style(styles.InsetRingOlive(scale))
+func (c *Comp) InsetRingOlive(scale int) *Comp {
+	c.El.Style(styles.InsetRingOlive(scale))
 	return c
 }
 
-func (c *component) InsetRingOliveAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingOliveAlpha(scale))
+func (c *Comp) InsetRingOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingOliveAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingOliveDark(scale int) *component {
-	c.el.Style(styles.InsetRingOliveDark(scale))
+func (c *Comp) InsetRingOliveDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingOliveDark(scale))
 	return c
 }
 
-func (c *component) InsetRingOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingOliveDarkAlpha(scale))
+func (c *Comp) InsetRingOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingOrange(scale int) *component {
-	c.el.Style(styles.InsetRingOrange(scale))
+func (c *Comp) InsetRingOrange(scale int) *Comp {
+	c.El.Style(styles.InsetRingOrange(scale))
 	return c
 }
 
-func (c *component) InsetRingOrangeAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingOrangeAlpha(scale))
+func (c *Comp) InsetRingOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingOrangeDark(scale int) *component {
-	c.el.Style(styles.InsetRingOrangeDark(scale))
+func (c *Comp) InsetRingOrangeDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingOrangeDark(scale))
 	return c
 }
 
-func (c *component) InsetRingOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingOrangeDarkAlpha(scale))
+func (c *Comp) InsetRingOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingPink(scale int) *component {
-	c.el.Style(styles.InsetRingPink(scale))
+func (c *Comp) InsetRingPink(scale int) *Comp {
+	c.El.Style(styles.InsetRingPink(scale))
 	return c
 }
 
-func (c *component) InsetRingPinkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingPinkAlpha(scale))
+func (c *Comp) InsetRingPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingPinkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingPinkDark(scale int) *component {
-	c.el.Style(styles.InsetRingPinkDark(scale))
+func (c *Comp) InsetRingPinkDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingPinkDark(scale))
 	return c
 }
 
-func (c *component) InsetRingPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingPinkDarkAlpha(scale))
+func (c *Comp) InsetRingPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingPlum(scale int) *component {
-	c.el.Style(styles.InsetRingPlum(scale))
+func (c *Comp) InsetRingPlum(scale int) *Comp {
+	c.El.Style(styles.InsetRingPlum(scale))
 	return c
 }
 
-func (c *component) InsetRingPlumAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingPlumAlpha(scale))
+func (c *Comp) InsetRingPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingPlumAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingPlumDark(scale int) *component {
-	c.el.Style(styles.InsetRingPlumDark(scale))
+func (c *Comp) InsetRingPlumDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingPlumDark(scale))
 	return c
 }
 
-func (c *component) InsetRingPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingPlumDarkAlpha(scale))
+func (c *Comp) InsetRingPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingPurple(scale int) *component {
-	c.el.Style(styles.InsetRingPurple(scale))
+func (c *Comp) InsetRingPurple(scale int) *Comp {
+	c.El.Style(styles.InsetRingPurple(scale))
 	return c
 }
 
-func (c *component) InsetRingPurpleAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingPurpleAlpha(scale))
+func (c *Comp) InsetRingPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingPurpleDark(scale int) *component {
-	c.el.Style(styles.InsetRingPurpleDark(scale))
+func (c *Comp) InsetRingPurpleDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingPurpleDark(scale))
 	return c
 }
 
-func (c *component) InsetRingPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingPurpleDarkAlpha(scale))
+func (c *Comp) InsetRingPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingRed(scale int) *component {
-	c.el.Style(styles.InsetRingRed(scale))
+func (c *Comp) InsetRingRed(scale int) *Comp {
+	c.El.Style(styles.InsetRingRed(scale))
 	return c
 }
 
-func (c *component) InsetRingRedAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingRedAlpha(scale))
+func (c *Comp) InsetRingRedAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingRedAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingRedDark(scale int) *component {
-	c.el.Style(styles.InsetRingRedDark(scale))
+func (c *Comp) InsetRingRedDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingRedDark(scale))
 	return c
 }
 
-func (c *component) InsetRingRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingRedDarkAlpha(scale))
+func (c *Comp) InsetRingRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingRuby(scale int) *component {
-	c.el.Style(styles.InsetRingRuby(scale))
+func (c *Comp) InsetRingRuby(scale int) *Comp {
+	c.El.Style(styles.InsetRingRuby(scale))
 	return c
 }
 
-func (c *component) InsetRingRubyAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingRubyAlpha(scale))
+func (c *Comp) InsetRingRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingRubyAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingRubyDark(scale int) *component {
-	c.el.Style(styles.InsetRingRubyDark(scale))
+func (c *Comp) InsetRingRubyDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingRubyDark(scale))
 	return c
 }
 
-func (c *component) InsetRingRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingRubyDarkAlpha(scale))
+func (c *Comp) InsetRingRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingSage(scale int) *component {
-	c.el.Style(styles.InsetRingSage(scale))
+func (c *Comp) InsetRingSage(scale int) *Comp {
+	c.El.Style(styles.InsetRingSage(scale))
 	return c
 }
 
-func (c *component) InsetRingSageAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingSageAlpha(scale))
+func (c *Comp) InsetRingSageAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingSageAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingSageDark(scale int) *component {
-	c.el.Style(styles.InsetRingSageDark(scale))
+func (c *Comp) InsetRingSageDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingSageDark(scale))
 	return c
 }
 
-func (c *component) InsetRingSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingSageDarkAlpha(scale))
+func (c *Comp) InsetRingSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingSand(scale int) *component {
-	c.el.Style(styles.InsetRingSand(scale))
+func (c *Comp) InsetRingSand(scale int) *Comp {
+	c.El.Style(styles.InsetRingSand(scale))
 	return c
 }
 
-func (c *component) InsetRingSandAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingSandAlpha(scale))
+func (c *Comp) InsetRingSandAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingSandAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingSandDark(scale int) *component {
-	c.el.Style(styles.InsetRingSandDark(scale))
+func (c *Comp) InsetRingSandDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingSandDark(scale))
 	return c
 }
 
-func (c *component) InsetRingSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingSandDarkAlpha(scale))
+func (c *Comp) InsetRingSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingSky(scale int) *component {
-	c.el.Style(styles.InsetRingSky(scale))
+func (c *Comp) InsetRingSky(scale int) *Comp {
+	c.El.Style(styles.InsetRingSky(scale))
 	return c
 }
 
-func (c *component) InsetRingSkyAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingSkyAlpha(scale))
+func (c *Comp) InsetRingSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingSkyAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingSkyDark(scale int) *component {
-	c.el.Style(styles.InsetRingSkyDark(scale))
+func (c *Comp) InsetRingSkyDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingSkyDark(scale))
 	return c
 }
 
-func (c *component) InsetRingSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingSkyDarkAlpha(scale))
+func (c *Comp) InsetRingSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingSlate(scale int) *component {
-	c.el.Style(styles.InsetRingSlate(scale))
+func (c *Comp) InsetRingSlate(scale int) *Comp {
+	c.El.Style(styles.InsetRingSlate(scale))
 	return c
 }
 
-func (c *component) InsetRingSlateAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingSlateAlpha(scale))
+func (c *Comp) InsetRingSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingSlateAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingSlateDark(scale int) *component {
-	c.el.Style(styles.InsetRingSlateDark(scale))
+func (c *Comp) InsetRingSlateDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingSlateDark(scale))
 	return c
 }
 
-func (c *component) InsetRingSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingSlateDarkAlpha(scale))
+func (c *Comp) InsetRingSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingTeal(scale int) *component {
-	c.el.Style(styles.InsetRingTeal(scale))
+func (c *Comp) InsetRingTeal(scale int) *Comp {
+	c.El.Style(styles.InsetRingTeal(scale))
 	return c
 }
 
-func (c *component) InsetRingTealAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingTealAlpha(scale))
+func (c *Comp) InsetRingTealAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingTealAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingTealDark(scale int) *component {
-	c.el.Style(styles.InsetRingTealDark(scale))
+func (c *Comp) InsetRingTealDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingTealDark(scale))
 	return c
 }
 
-func (c *component) InsetRingTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingTealDarkAlpha(scale))
+func (c *Comp) InsetRingTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingTomato(scale int) *component {
-	c.el.Style(styles.InsetRingTomato(scale))
+func (c *Comp) InsetRingTomato(scale int) *Comp {
+	c.El.Style(styles.InsetRingTomato(scale))
 	return c
 }
 
-func (c *component) InsetRingTomatoAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingTomatoAlpha(scale))
+func (c *Comp) InsetRingTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingTomatoDark(scale int) *component {
-	c.el.Style(styles.InsetRingTomatoDark(scale))
+func (c *Comp) InsetRingTomatoDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingTomatoDark(scale))
 	return c
 }
 
-func (c *component) InsetRingTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingTomatoDarkAlpha(scale))
+func (c *Comp) InsetRingTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingTransparent() *component {
-	c.el.Style(styles.InsetRingTransparent())
+func (c *Comp) InsetRingTransparent() *Comp {
+	c.El.Style(styles.InsetRingTransparent())
 	return c
 }
 
-func (c *component) InsetRingViolet(scale int) *component {
-	c.el.Style(styles.InsetRingViolet(scale))
+func (c *Comp) InsetRingViolet(scale int) *Comp {
+	c.El.Style(styles.InsetRingViolet(scale))
 	return c
 }
 
-func (c *component) InsetRingVioletAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingVioletAlpha(scale))
+func (c *Comp) InsetRingVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingVioletAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingVioletDark(scale int) *component {
-	c.el.Style(styles.InsetRingVioletDark(scale))
+func (c *Comp) InsetRingVioletDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingVioletDark(scale))
 	return c
 }
 
-func (c *component) InsetRingVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingVioletDarkAlpha(scale))
+func (c *Comp) InsetRingVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingWhite() *component {
-	c.el.Style(styles.InsetRingWhite())
+func (c *Comp) InsetRingWhite() *Comp {
+	c.El.Style(styles.InsetRingWhite())
 	return c
 }
 
-func (c *component) InsetRingWhiteAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingWhiteAlpha(scale))
+func (c *Comp) InsetRingWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingYellow(scale int) *component {
-	c.el.Style(styles.InsetRingYellow(scale))
+func (c *Comp) InsetRingYellow(scale int) *Comp {
+	c.El.Style(styles.InsetRingYellow(scale))
 	return c
 }
 
-func (c *component) InsetRingYellowAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingYellowAlpha(scale))
+func (c *Comp) InsetRingYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingYellowAlpha(scale))
 	return c
 }
 
-func (c *component) InsetRingYellowDark(scale int) *component {
-	c.el.Style(styles.InsetRingYellowDark(scale))
+func (c *Comp) InsetRingYellowDark(scale int) *Comp {
+	c.El.Style(styles.InsetRingYellowDark(scale))
 	return c
 }
 
-func (c *component) InsetRingYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetRingYellowDarkAlpha(scale))
+func (c *Comp) InsetRingYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetRingYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadow(val value.Value) *component {
-	c.el.Style(styles.InsetShadow(val))
+func (c *Comp) InsetShadow(val value.Value) *Comp {
+	c.El.Style(styles.InsetShadow(val))
 	return c
 }
 
-func (c *component) InsetShadow2xl() *component {
-	c.el.Style(styles.InsetShadow2xl())
+func (c *Comp) InsetShadow2xl() *Comp {
+	c.El.Style(styles.InsetShadow2xl())
 	return c
 }
 
-func (c *component) InsetShadow2xs() *component {
-	c.el.Style(styles.InsetShadow2xs())
+func (c *Comp) InsetShadow2xs() *Comp {
+	c.El.Style(styles.InsetShadow2xs())
 	return c
 }
 
-func (c *component) InsetShadowAmber(scale int) *component {
-	c.el.Style(styles.InsetShadowAmber(scale))
+func (c *Comp) InsetShadowAmber(scale int) *Comp {
+	c.El.Style(styles.InsetShadowAmber(scale))
 	return c
 }
 
-func (c *component) InsetShadowAmberAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowAmberAlpha(scale))
+func (c *Comp) InsetShadowAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowAmberAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowAmberDark(scale int) *component {
-	c.el.Style(styles.InsetShadowAmberDark(scale))
+func (c *Comp) InsetShadowAmberDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowAmberDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowAmberDarkAlpha(scale))
+func (c *Comp) InsetShadowAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowBlack() *component {
-	c.el.Style(styles.InsetShadowBlack())
+func (c *Comp) InsetShadowBlack() *Comp {
+	c.El.Style(styles.InsetShadowBlack())
 	return c
 }
 
-func (c *component) InsetShadowBlackAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowBlackAlpha(scale))
+func (c *Comp) InsetShadowBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBlackAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowBlue(scale int) *component {
-	c.el.Style(styles.InsetShadowBlue(scale))
+func (c *Comp) InsetShadowBlue(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBlue(scale))
 	return c
 }
 
-func (c *component) InsetShadowBlueAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowBlueAlpha(scale))
+func (c *Comp) InsetShadowBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBlueAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowBlueDark(scale int) *component {
-	c.el.Style(styles.InsetShadowBlueDark(scale))
+func (c *Comp) InsetShadowBlueDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBlueDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowBlueDarkAlpha(scale))
+func (c *Comp) InsetShadowBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowBronze(scale int) *component {
-	c.el.Style(styles.InsetShadowBronze(scale))
+func (c *Comp) InsetShadowBronze(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBronze(scale))
 	return c
 }
 
-func (c *component) InsetShadowBronzeAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowBronzeAlpha(scale))
+func (c *Comp) InsetShadowBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowBronzeDark(scale int) *component {
-	c.el.Style(styles.InsetShadowBronzeDark(scale))
+func (c *Comp) InsetShadowBronzeDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBronzeDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowBronzeDarkAlpha(scale))
+func (c *Comp) InsetShadowBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowBrown(scale int) *component {
-	c.el.Style(styles.InsetShadowBrown(scale))
+func (c *Comp) InsetShadowBrown(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBrown(scale))
 	return c
 }
 
-func (c *component) InsetShadowBrownAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowBrownAlpha(scale))
+func (c *Comp) InsetShadowBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBrownAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowBrownDark(scale int) *component {
-	c.el.Style(styles.InsetShadowBrownDark(scale))
+func (c *Comp) InsetShadowBrownDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBrownDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowBrownDarkAlpha(scale))
+func (c *Comp) InsetShadowBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowColor(val value.Value) *component {
-	c.el.Style(styles.InsetShadowColor(val))
+func (c *Comp) InsetShadowColor(val value.Value) *Comp {
+	c.El.Style(styles.InsetShadowColor(val))
 	return c
 }
 
-func (c *component) InsetShadowCrimson(scale int) *component {
-	c.el.Style(styles.InsetShadowCrimson(scale))
+func (c *Comp) InsetShadowCrimson(scale int) *Comp {
+	c.El.Style(styles.InsetShadowCrimson(scale))
 	return c
 }
 
-func (c *component) InsetShadowCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowCrimsonAlpha(scale))
+func (c *Comp) InsetShadowCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowCrimsonDark(scale int) *component {
-	c.el.Style(styles.InsetShadowCrimsonDark(scale))
+func (c *Comp) InsetShadowCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowCrimsonDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowCrimsonDarkAlpha(scale))
+func (c *Comp) InsetShadowCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowCurrent() *component {
-	c.el.Style(styles.InsetShadowCurrent())
+func (c *Comp) InsetShadowCurrent() *Comp {
+	c.El.Style(styles.InsetShadowCurrent())
 	return c
 }
 
-func (c *component) InsetShadowCyan(scale int) *component {
-	c.el.Style(styles.InsetShadowCyan(scale))
+func (c *Comp) InsetShadowCyan(scale int) *Comp {
+	c.El.Style(styles.InsetShadowCyan(scale))
 	return c
 }
 
-func (c *component) InsetShadowCyanAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowCyanAlpha(scale))
+func (c *Comp) InsetShadowCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowCyanAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowCyanDark(scale int) *component {
-	c.el.Style(styles.InsetShadowCyanDark(scale))
+func (c *Comp) InsetShadowCyanDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowCyanDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowCyanDarkAlpha(scale))
+func (c *Comp) InsetShadowCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowGold(scale int) *component {
-	c.el.Style(styles.InsetShadowGold(scale))
+func (c *Comp) InsetShadowGold(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGold(scale))
 	return c
 }
 
-func (c *component) InsetShadowGoldAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowGoldAlpha(scale))
+func (c *Comp) InsetShadowGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGoldAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowGoldDark(scale int) *component {
-	c.el.Style(styles.InsetShadowGoldDark(scale))
+func (c *Comp) InsetShadowGoldDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGoldDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowGoldDarkAlpha(scale))
+func (c *Comp) InsetShadowGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowGrass(scale int) *component {
-	c.el.Style(styles.InsetShadowGrass(scale))
+func (c *Comp) InsetShadowGrass(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGrass(scale))
 	return c
 }
 
-func (c *component) InsetShadowGrassAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowGrassAlpha(scale))
+func (c *Comp) InsetShadowGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGrassAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowGrassDark(scale int) *component {
-	c.el.Style(styles.InsetShadowGrassDark(scale))
+func (c *Comp) InsetShadowGrassDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGrassDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowGrassDarkAlpha(scale))
+func (c *Comp) InsetShadowGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowGray(scale int) *component {
-	c.el.Style(styles.InsetShadowGray(scale))
+func (c *Comp) InsetShadowGray(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGray(scale))
 	return c
 }
 
-func (c *component) InsetShadowGrayAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowGrayAlpha(scale))
+func (c *Comp) InsetShadowGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGrayAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowGrayDark(scale int) *component {
-	c.el.Style(styles.InsetShadowGrayDark(scale))
+func (c *Comp) InsetShadowGrayDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGrayDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowGrayDarkAlpha(scale))
+func (c *Comp) InsetShadowGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowGreen(scale int) *component {
-	c.el.Style(styles.InsetShadowGreen(scale))
+func (c *Comp) InsetShadowGreen(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGreen(scale))
 	return c
 }
 
-func (c *component) InsetShadowGreenAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowGreenAlpha(scale))
+func (c *Comp) InsetShadowGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGreenAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowGreenDark(scale int) *component {
-	c.el.Style(styles.InsetShadowGreenDark(scale))
+func (c *Comp) InsetShadowGreenDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGreenDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowGreenDarkAlpha(scale))
+func (c *Comp) InsetShadowGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowIndigo(scale int) *component {
-	c.el.Style(styles.InsetShadowIndigo(scale))
+func (c *Comp) InsetShadowIndigo(scale int) *Comp {
+	c.El.Style(styles.InsetShadowIndigo(scale))
 	return c
 }
 
-func (c *component) InsetShadowIndigoAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowIndigoAlpha(scale))
+func (c *Comp) InsetShadowIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowIndigoDark(scale int) *component {
-	c.el.Style(styles.InsetShadowIndigoDark(scale))
+func (c *Comp) InsetShadowIndigoDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowIndigoDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowIndigoDarkAlpha(scale))
+func (c *Comp) InsetShadowIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowInherit() *component {
-	c.el.Style(styles.InsetShadowInherit())
+func (c *Comp) InsetShadowInherit() *Comp {
+	c.El.Style(styles.InsetShadowInherit())
 	return c
 }
 
-func (c *component) InsetShadowIris(scale int) *component {
-	c.el.Style(styles.InsetShadowIris(scale))
+func (c *Comp) InsetShadowIris(scale int) *Comp {
+	c.El.Style(styles.InsetShadowIris(scale))
 	return c
 }
 
-func (c *component) InsetShadowIrisAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowIrisAlpha(scale))
+func (c *Comp) InsetShadowIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowIrisAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowIrisDark(scale int) *component {
-	c.el.Style(styles.InsetShadowIrisDark(scale))
+func (c *Comp) InsetShadowIrisDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowIrisDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowIrisDarkAlpha(scale))
+func (c *Comp) InsetShadowIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowJade(scale int) *component {
-	c.el.Style(styles.InsetShadowJade(scale))
+func (c *Comp) InsetShadowJade(scale int) *Comp {
+	c.El.Style(styles.InsetShadowJade(scale))
 	return c
 }
 
-func (c *component) InsetShadowJadeAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowJadeAlpha(scale))
+func (c *Comp) InsetShadowJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowJadeAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowJadeDark(scale int) *component {
-	c.el.Style(styles.InsetShadowJadeDark(scale))
+func (c *Comp) InsetShadowJadeDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowJadeDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowJadeDarkAlpha(scale))
+func (c *Comp) InsetShadowJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowLg() *component {
-	c.el.Style(styles.InsetShadowLg())
+func (c *Comp) InsetShadowLg() *Comp {
+	c.El.Style(styles.InsetShadowLg())
 	return c
 }
 
-func (c *component) InsetShadowLime(scale int) *component {
-	c.el.Style(styles.InsetShadowLime(scale))
+func (c *Comp) InsetShadowLime(scale int) *Comp {
+	c.El.Style(styles.InsetShadowLime(scale))
 	return c
 }
 
-func (c *component) InsetShadowLimeAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowLimeAlpha(scale))
+func (c *Comp) InsetShadowLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowLimeAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowLimeDark(scale int) *component {
-	c.el.Style(styles.InsetShadowLimeDark(scale))
+func (c *Comp) InsetShadowLimeDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowLimeDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowLimeDarkAlpha(scale))
+func (c *Comp) InsetShadowLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowMauve(scale int) *component {
-	c.el.Style(styles.InsetShadowMauve(scale))
+func (c *Comp) InsetShadowMauve(scale int) *Comp {
+	c.El.Style(styles.InsetShadowMauve(scale))
 	return c
 }
 
-func (c *component) InsetShadowMauveAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowMauveAlpha(scale))
+func (c *Comp) InsetShadowMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowMauveAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowMauveDark(scale int) *component {
-	c.el.Style(styles.InsetShadowMauveDark(scale))
+func (c *Comp) InsetShadowMauveDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowMauveDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowMauveDarkAlpha(scale))
+func (c *Comp) InsetShadowMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowMd() *component {
-	c.el.Style(styles.InsetShadowMd())
+func (c *Comp) InsetShadowMd() *Comp {
+	c.El.Style(styles.InsetShadowMd())
 	return c
 }
 
-func (c *component) InsetShadowMint(scale int) *component {
-	c.el.Style(styles.InsetShadowMint(scale))
+func (c *Comp) InsetShadowMint(scale int) *Comp {
+	c.El.Style(styles.InsetShadowMint(scale))
 	return c
 }
 
-func (c *component) InsetShadowMintAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowMintAlpha(scale))
+func (c *Comp) InsetShadowMintAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowMintAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowMintDark(scale int) *component {
-	c.el.Style(styles.InsetShadowMintDark(scale))
+func (c *Comp) InsetShadowMintDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowMintDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowMintDarkAlpha(scale))
+func (c *Comp) InsetShadowMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowNone() *component {
-	c.el.Style(styles.InsetShadowNone())
+func (c *Comp) InsetShadowNone() *Comp {
+	c.El.Style(styles.InsetShadowNone())
 	return c
 }
 
-func (c *component) InsetShadowOlive(scale int) *component {
-	c.el.Style(styles.InsetShadowOlive(scale))
+func (c *Comp) InsetShadowOlive(scale int) *Comp {
+	c.El.Style(styles.InsetShadowOlive(scale))
 	return c
 }
 
-func (c *component) InsetShadowOliveAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowOliveAlpha(scale))
+func (c *Comp) InsetShadowOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowOliveAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowOliveDark(scale int) *component {
-	c.el.Style(styles.InsetShadowOliveDark(scale))
+func (c *Comp) InsetShadowOliveDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowOliveDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowOliveDarkAlpha(scale))
+func (c *Comp) InsetShadowOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowOrange(scale int) *component {
-	c.el.Style(styles.InsetShadowOrange(scale))
+func (c *Comp) InsetShadowOrange(scale int) *Comp {
+	c.El.Style(styles.InsetShadowOrange(scale))
 	return c
 }
 
-func (c *component) InsetShadowOrangeAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowOrangeAlpha(scale))
+func (c *Comp) InsetShadowOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowOrangeDark(scale int) *component {
-	c.el.Style(styles.InsetShadowOrangeDark(scale))
+func (c *Comp) InsetShadowOrangeDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowOrangeDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowOrangeDarkAlpha(scale))
+func (c *Comp) InsetShadowOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowPink(scale int) *component {
-	c.el.Style(styles.InsetShadowPink(scale))
+func (c *Comp) InsetShadowPink(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPink(scale))
 	return c
 }
 
-func (c *component) InsetShadowPinkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowPinkAlpha(scale))
+func (c *Comp) InsetShadowPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPinkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowPinkDark(scale int) *component {
-	c.el.Style(styles.InsetShadowPinkDark(scale))
+func (c *Comp) InsetShadowPinkDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPinkDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowPinkDarkAlpha(scale))
+func (c *Comp) InsetShadowPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowPlum(scale int) *component {
-	c.el.Style(styles.InsetShadowPlum(scale))
+func (c *Comp) InsetShadowPlum(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPlum(scale))
 	return c
 }
 
-func (c *component) InsetShadowPlumAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowPlumAlpha(scale))
+func (c *Comp) InsetShadowPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPlumAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowPlumDark(scale int) *component {
-	c.el.Style(styles.InsetShadowPlumDark(scale))
+func (c *Comp) InsetShadowPlumDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPlumDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowPlumDarkAlpha(scale))
+func (c *Comp) InsetShadowPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowPurple(scale int) *component {
-	c.el.Style(styles.InsetShadowPurple(scale))
+func (c *Comp) InsetShadowPurple(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPurple(scale))
 	return c
 }
 
-func (c *component) InsetShadowPurpleAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowPurpleAlpha(scale))
+func (c *Comp) InsetShadowPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowPurpleDark(scale int) *component {
-	c.el.Style(styles.InsetShadowPurpleDark(scale))
+func (c *Comp) InsetShadowPurpleDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPurpleDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowPurpleDarkAlpha(scale))
+func (c *Comp) InsetShadowPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowRed(scale int) *component {
-	c.el.Style(styles.InsetShadowRed(scale))
+func (c *Comp) InsetShadowRed(scale int) *Comp {
+	c.El.Style(styles.InsetShadowRed(scale))
 	return c
 }
 
-func (c *component) InsetShadowRedAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowRedAlpha(scale))
+func (c *Comp) InsetShadowRedAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowRedAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowRedDark(scale int) *component {
-	c.el.Style(styles.InsetShadowRedDark(scale))
+func (c *Comp) InsetShadowRedDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowRedDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowRedDarkAlpha(scale))
+func (c *Comp) InsetShadowRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowRuby(scale int) *component {
-	c.el.Style(styles.InsetShadowRuby(scale))
+func (c *Comp) InsetShadowRuby(scale int) *Comp {
+	c.El.Style(styles.InsetShadowRuby(scale))
 	return c
 }
 
-func (c *component) InsetShadowRubyAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowRubyAlpha(scale))
+func (c *Comp) InsetShadowRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowRubyAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowRubyDark(scale int) *component {
-	c.el.Style(styles.InsetShadowRubyDark(scale))
+func (c *Comp) InsetShadowRubyDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowRubyDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowRubyDarkAlpha(scale))
+func (c *Comp) InsetShadowRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowSage(scale int) *component {
-	c.el.Style(styles.InsetShadowSage(scale))
+func (c *Comp) InsetShadowSage(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSage(scale))
 	return c
 }
 
-func (c *component) InsetShadowSageAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowSageAlpha(scale))
+func (c *Comp) InsetShadowSageAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSageAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowSageDark(scale int) *component {
-	c.el.Style(styles.InsetShadowSageDark(scale))
+func (c *Comp) InsetShadowSageDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSageDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowSageDarkAlpha(scale))
+func (c *Comp) InsetShadowSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowSand(scale int) *component {
-	c.el.Style(styles.InsetShadowSand(scale))
+func (c *Comp) InsetShadowSand(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSand(scale))
 	return c
 }
 
-func (c *component) InsetShadowSandAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowSandAlpha(scale))
+func (c *Comp) InsetShadowSandAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSandAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowSandDark(scale int) *component {
-	c.el.Style(styles.InsetShadowSandDark(scale))
+func (c *Comp) InsetShadowSandDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSandDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowSandDarkAlpha(scale))
+func (c *Comp) InsetShadowSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowSky(scale int) *component {
-	c.el.Style(styles.InsetShadowSky(scale))
+func (c *Comp) InsetShadowSky(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSky(scale))
 	return c
 }
 
-func (c *component) InsetShadowSkyAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowSkyAlpha(scale))
+func (c *Comp) InsetShadowSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSkyAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowSkyDark(scale int) *component {
-	c.el.Style(styles.InsetShadowSkyDark(scale))
+func (c *Comp) InsetShadowSkyDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSkyDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowSkyDarkAlpha(scale))
+func (c *Comp) InsetShadowSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowSlate(scale int) *component {
-	c.el.Style(styles.InsetShadowSlate(scale))
+func (c *Comp) InsetShadowSlate(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSlate(scale))
 	return c
 }
 
-func (c *component) InsetShadowSlateAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowSlateAlpha(scale))
+func (c *Comp) InsetShadowSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSlateAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowSlateDark(scale int) *component {
-	c.el.Style(styles.InsetShadowSlateDark(scale))
+func (c *Comp) InsetShadowSlateDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSlateDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowSlateDarkAlpha(scale))
+func (c *Comp) InsetShadowSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowSm() *component {
-	c.el.Style(styles.InsetShadowSm())
+func (c *Comp) InsetShadowSm() *Comp {
+	c.El.Style(styles.InsetShadowSm())
 	return c
 }
 
-func (c *component) InsetShadowTeal(scale int) *component {
-	c.el.Style(styles.InsetShadowTeal(scale))
+func (c *Comp) InsetShadowTeal(scale int) *Comp {
+	c.El.Style(styles.InsetShadowTeal(scale))
 	return c
 }
 
-func (c *component) InsetShadowTealAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowTealAlpha(scale))
+func (c *Comp) InsetShadowTealAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowTealAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowTealDark(scale int) *component {
-	c.el.Style(styles.InsetShadowTealDark(scale))
+func (c *Comp) InsetShadowTealDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowTealDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowTealDarkAlpha(scale))
+func (c *Comp) InsetShadowTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowTomato(scale int) *component {
-	c.el.Style(styles.InsetShadowTomato(scale))
+func (c *Comp) InsetShadowTomato(scale int) *Comp {
+	c.El.Style(styles.InsetShadowTomato(scale))
 	return c
 }
 
-func (c *component) InsetShadowTomatoAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowTomatoAlpha(scale))
+func (c *Comp) InsetShadowTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowTomatoDark(scale int) *component {
-	c.el.Style(styles.InsetShadowTomatoDark(scale))
+func (c *Comp) InsetShadowTomatoDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowTomatoDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowTomatoDarkAlpha(scale))
+func (c *Comp) InsetShadowTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowTransparent() *component {
-	c.el.Style(styles.InsetShadowTransparent())
+func (c *Comp) InsetShadowTransparent() *Comp {
+	c.El.Style(styles.InsetShadowTransparent())
 	return c
 }
 
-func (c *component) InsetShadowViolet(scale int) *component {
-	c.el.Style(styles.InsetShadowViolet(scale))
+func (c *Comp) InsetShadowViolet(scale int) *Comp {
+	c.El.Style(styles.InsetShadowViolet(scale))
 	return c
 }
 
-func (c *component) InsetShadowVioletAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowVioletAlpha(scale))
+func (c *Comp) InsetShadowVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowVioletAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowVioletDark(scale int) *component {
-	c.el.Style(styles.InsetShadowVioletDark(scale))
+func (c *Comp) InsetShadowVioletDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowVioletDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowVioletDarkAlpha(scale))
+func (c *Comp) InsetShadowVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowWhite() *component {
-	c.el.Style(styles.InsetShadowWhite())
+func (c *Comp) InsetShadowWhite() *Comp {
+	c.El.Style(styles.InsetShadowWhite())
 	return c
 }
 
-func (c *component) InsetShadowWhiteAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowWhiteAlpha(scale))
+func (c *Comp) InsetShadowWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowXl() *component {
-	c.el.Style(styles.InsetShadowXl())
+func (c *Comp) InsetShadowXl() *Comp {
+	c.El.Style(styles.InsetShadowXl())
 	return c
 }
 
-func (c *component) InsetShadowXs() *component {
-	c.el.Style(styles.InsetShadowXs())
+func (c *Comp) InsetShadowXs() *Comp {
+	c.El.Style(styles.InsetShadowXs())
 	return c
 }
 
-func (c *component) InsetShadowYellow(scale int) *component {
-	c.el.Style(styles.InsetShadowYellow(scale))
+func (c *Comp) InsetShadowYellow(scale int) *Comp {
+	c.El.Style(styles.InsetShadowYellow(scale))
 	return c
 }
 
-func (c *component) InsetShadowYellowAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowYellowAlpha(scale))
+func (c *Comp) InsetShadowYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowYellowAlpha(scale))
 	return c
 }
 
-func (c *component) InsetShadowYellowDark(scale int) *component {
-	c.el.Style(styles.InsetShadowYellowDark(scale))
+func (c *Comp) InsetShadowYellowDark(scale int) *Comp {
+	c.El.Style(styles.InsetShadowYellowDark(scale))
 	return c
 }
 
-func (c *component) InsetShadowYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.InsetShadowYellowDarkAlpha(scale))
+func (c *Comp) InsetShadowYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.InsetShadowYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) InsetX(number int) *component {
-	c.el.Style(styles.InsetX(number))
+func (c *Comp) InsetX(number int) *Comp {
+	c.El.Style(styles.InsetX(number))
 	return c
 }
 
-func (c *component) InsetXAuto() *component {
-	c.el.Style(styles.InsetXAuto())
+func (c *Comp) InsetXAuto() *Comp {
+	c.El.Style(styles.InsetXAuto())
 	return c
 }
 
-func (c *component) InsetXBy(val value.Value) *component {
-	c.el.Style(styles.InsetXBy(val))
+func (c *Comp) InsetXBy(val value.Value) *Comp {
+	c.El.Style(styles.InsetXBy(val))
 	return c
 }
 
-func (c *component) InsetXFraction(fraction float64) *component {
-	c.el.Style(styles.InsetXFraction(fraction))
+func (c *Comp) InsetXFraction(fraction float64) *Comp {
+	c.El.Style(styles.InsetXFraction(fraction))
 	return c
 }
 
-func (c *component) InsetXFull() *component {
-	c.el.Style(styles.InsetXFull())
+func (c *Comp) InsetXFull() *Comp {
+	c.El.Style(styles.InsetXFull())
 	return c
 }
 
-func (c *component) InsetXPx() *component {
-	c.el.Style(styles.InsetXPx())
+func (c *Comp) InsetXPx() *Comp {
+	c.El.Style(styles.InsetXPx())
 	return c
 }
 
-func (c *component) InsetY(number int) *component {
-	c.el.Style(styles.InsetY(number))
+func (c *Comp) InsetY(number int) *Comp {
+	c.El.Style(styles.InsetY(number))
 	return c
 }
 
-func (c *component) InsetYAuto() *component {
-	c.el.Style(styles.InsetYAuto())
+func (c *Comp) InsetYAuto() *Comp {
+	c.El.Style(styles.InsetYAuto())
 	return c
 }
 
-func (c *component) InsetYBy(val value.Value) *component {
-	c.el.Style(styles.InsetYBy(val))
+func (c *Comp) InsetYBy(val value.Value) *Comp {
+	c.El.Style(styles.InsetYBy(val))
 	return c
 }
 
-func (c *component) InsetYFraction(fraction float64) *component {
-	c.el.Style(styles.InsetYFraction(fraction))
+func (c *Comp) InsetYFraction(fraction float64) *Comp {
+	c.El.Style(styles.InsetYFraction(fraction))
 	return c
 }
 
-func (c *component) InsetYFull() *component {
-	c.el.Style(styles.InsetYFull())
+func (c *Comp) InsetYFull() *Comp {
+	c.El.Style(styles.InsetYFull())
 	return c
 }
 
-func (c *component) InsetYPx() *component {
-	c.el.Style(styles.InsetYPx())
+func (c *Comp) InsetYPx() *Comp {
+	c.El.Style(styles.InsetYPx())
 	return c
 }
 
-func (c *component) Invert(val ...any) *component {
-	c.el.Style(styles.Invert(val...))
+func (c *Comp) Invert(val ...any) *Comp {
+	c.El.Style(styles.Invert(val...))
 	return c
 }
 
-func (c *component) Invisible() *component {
-	c.el.Style(styles.Invisible())
+func (c *Comp) Invisible() *Comp {
+	c.El.Style(styles.Invisible())
 	return c
 }
 
-func (c *component) Isolate() *component {
-	c.el.Style(styles.Isolate())
+func (c *Comp) Isolate() *Comp {
+	c.El.Style(styles.Isolate())
 	return c
 }
 
-func (c *component) IsolationAuto() *component {
-	c.el.Style(styles.IsolationAuto())
+func (c *Comp) IsolationAuto() *Comp {
+	c.El.Style(styles.IsolationAuto())
 	return c
 }
 
-func (c *component) Italic() *component {
-	c.el.Style(styles.Italic())
+func (c *Comp) Italic() *Comp {
+	c.El.Style(styles.Italic())
 	return c
 }
 
-func (c *component) ItemsBaseline() *component {
-	c.el.Style(styles.ItemsBaseline())
+func (c *Comp) ItemsBaseline() *Comp {
+	c.El.Style(styles.ItemsBaseline())
 	return c
 }
 
-func (c *component) ItemsBaselineLast() *component {
-	c.el.Style(styles.ItemsBaselineLast())
+func (c *Comp) ItemsBaselineLast() *Comp {
+	c.El.Style(styles.ItemsBaselineLast())
 	return c
 }
 
-func (c *component) ItemsCenter() *component {
-	c.el.Style(styles.ItemsCenter())
+func (c *Comp) ItemsCenter() *Comp {
+	c.El.Style(styles.ItemsCenter())
 	return c
 }
 
-func (c *component) ItemsCenterSafe() *component {
-	c.el.Style(styles.ItemsCenterSafe())
+func (c *Comp) ItemsCenterSafe() *Comp {
+	c.El.Style(styles.ItemsCenterSafe())
 	return c
 }
 
-func (c *component) ItemsEnd() *component {
-	c.el.Style(styles.ItemsEnd())
+func (c *Comp) ItemsEnd() *Comp {
+	c.El.Style(styles.ItemsEnd())
 	return c
 }
 
-func (c *component) ItemsEndSafe() *component {
-	c.el.Style(styles.ItemsEndSafe())
+func (c *Comp) ItemsEndSafe() *Comp {
+	c.El.Style(styles.ItemsEndSafe())
 	return c
 }
 
-func (c *component) ItemsStart() *component {
-	c.el.Style(styles.ItemsStart())
+func (c *Comp) ItemsStart() *Comp {
+	c.El.Style(styles.ItemsStart())
 	return c
 }
 
-func (c *component) ItemsStretch() *component {
-	c.el.Style(styles.ItemsStretch())
+func (c *Comp) ItemsStretch() *Comp {
+	c.El.Style(styles.ItemsStretch())
 	return c
 }
 
-func (c *component) JustifyAround() *component {
-	c.el.Style(styles.JustifyAround())
+func (c *Comp) JustifyAround() *Comp {
+	c.El.Style(styles.JustifyAround())
 	return c
 }
 
-func (c *component) JustifyBaseline() *component {
-	c.el.Style(styles.JustifyBaseline())
+func (c *Comp) JustifyBaseline() *Comp {
+	c.El.Style(styles.JustifyBaseline())
 	return c
 }
 
-func (c *component) JustifyBetween() *component {
-	c.el.Style(styles.JustifyBetween())
+func (c *Comp) JustifyBetween() *Comp {
+	c.El.Style(styles.JustifyBetween())
 	return c
 }
 
-func (c *component) JustifyCenter() *component {
-	c.el.Style(styles.JustifyCenter())
+func (c *Comp) JustifyCenter() *Comp {
+	c.El.Style(styles.JustifyCenter())
 	return c
 }
 
-func (c *component) JustifyCenterSafe() *component {
-	c.el.Style(styles.JustifyCenterSafe())
+func (c *Comp) JustifyCenterSafe() *Comp {
+	c.El.Style(styles.JustifyCenterSafe())
 	return c
 }
 
-func (c *component) JustifyEnd() *component {
-	c.el.Style(styles.JustifyEnd())
+func (c *Comp) JustifyEnd() *Comp {
+	c.El.Style(styles.JustifyEnd())
 	return c
 }
 
-func (c *component) JustifyEndSafe() *component {
-	c.el.Style(styles.JustifyEndSafe())
+func (c *Comp) JustifyEndSafe() *Comp {
+	c.El.Style(styles.JustifyEndSafe())
 	return c
 }
 
-func (c *component) JustifyEvenly() *component {
-	c.el.Style(styles.JustifyEvenly())
+func (c *Comp) JustifyEvenly() *Comp {
+	c.El.Style(styles.JustifyEvenly())
 	return c
 }
 
-func (c *component) JustifyItemsCenter() *component {
-	c.el.Style(styles.JustifyItemsCenter())
+func (c *Comp) JustifyItemsCenter() *Comp {
+	c.El.Style(styles.JustifyItemsCenter())
 	return c
 }
 
-func (c *component) JustifyItemsCenterSafe() *component {
-	c.el.Style(styles.JustifyItemsCenterSafe())
+func (c *Comp) JustifyItemsCenterSafe() *Comp {
+	c.El.Style(styles.JustifyItemsCenterSafe())
 	return c
 }
 
-func (c *component) JustifyItemsEnd() *component {
-	c.el.Style(styles.JustifyItemsEnd())
+func (c *Comp) JustifyItemsEnd() *Comp {
+	c.El.Style(styles.JustifyItemsEnd())
 	return c
 }
 
-func (c *component) JustifyItemsEndSafe() *component {
-	c.el.Style(styles.JustifyItemsEndSafe())
+func (c *Comp) JustifyItemsEndSafe() *Comp {
+	c.El.Style(styles.JustifyItemsEndSafe())
 	return c
 }
 
-func (c *component) JustifyItemsNormal() *component {
-	c.el.Style(styles.JustifyItemsNormal())
+func (c *Comp) JustifyItemsNormal() *Comp {
+	c.El.Style(styles.JustifyItemsNormal())
 	return c
 }
 
-func (c *component) JustifyItemsStart() *component {
-	c.el.Style(styles.JustifyItemsStart())
+func (c *Comp) JustifyItemsStart() *Comp {
+	c.El.Style(styles.JustifyItemsStart())
 	return c
 }
 
-func (c *component) JustifyItemsStretch() *component {
-	c.el.Style(styles.JustifyItemsStretch())
+func (c *Comp) JustifyItemsStretch() *Comp {
+	c.El.Style(styles.JustifyItemsStretch())
 	return c
 }
 
-func (c *component) JustifyNormal() *component {
-	c.el.Style(styles.JustifyNormal())
+func (c *Comp) JustifyNormal() *Comp {
+	c.El.Style(styles.JustifyNormal())
 	return c
 }
 
-func (c *component) JustifySelfAuto() *component {
-	c.el.Style(styles.JustifySelfAuto())
+func (c *Comp) JustifySelfAuto() *Comp {
+	c.El.Style(styles.JustifySelfAuto())
 	return c
 }
 
-func (c *component) JustifySelfCenter() *component {
-	c.el.Style(styles.JustifySelfCenter())
+func (c *Comp) JustifySelfCenter() *Comp {
+	c.El.Style(styles.JustifySelfCenter())
 	return c
 }
 
-func (c *component) JustifySelfCenterSafe() *component {
-	c.el.Style(styles.JustifySelfCenterSafe())
+func (c *Comp) JustifySelfCenterSafe() *Comp {
+	c.El.Style(styles.JustifySelfCenterSafe())
 	return c
 }
 
-func (c *component) JustifySelfEnd() *component {
-	c.el.Style(styles.JustifySelfEnd())
+func (c *Comp) JustifySelfEnd() *Comp {
+	c.El.Style(styles.JustifySelfEnd())
 	return c
 }
 
-func (c *component) JustifySelfEndSafe() *component {
-	c.el.Style(styles.JustifySelfEndSafe())
+func (c *Comp) JustifySelfEndSafe() *Comp {
+	c.El.Style(styles.JustifySelfEndSafe())
 	return c
 }
 
-func (c *component) JustifySelfStart() *component {
-	c.el.Style(styles.JustifySelfStart())
+func (c *Comp) JustifySelfStart() *Comp {
+	c.El.Style(styles.JustifySelfStart())
 	return c
 }
 
-func (c *component) JustifySelfStretch() *component {
-	c.el.Style(styles.JustifySelfStretch())
+func (c *Comp) JustifySelfStretch() *Comp {
+	c.El.Style(styles.JustifySelfStretch())
 	return c
 }
 
-func (c *component) JustifyStart() *component {
-	c.el.Style(styles.JustifyStart())
+func (c *Comp) JustifyStart() *Comp {
+	c.El.Style(styles.JustifyStart())
 	return c
 }
 
-func (c *component) JustifyStretch() *component {
-	c.el.Style(styles.JustifyStretch())
+func (c *Comp) JustifyStretch() *Comp {
+	c.El.Style(styles.JustifyStretch())
 	return c
 }
 
-func (c *component) Leading(number int) *component {
-	c.el.Style(styles.Leading(number))
+func (c *Comp) Leading(number int) *Comp {
+	c.El.Style(styles.Leading(number))
 	return c
 }
 
-func (c *component) LeadingBy(val value.Value) *component {
-	c.el.Style(styles.LeadingBy(val))
+func (c *Comp) LeadingBy(val value.Value) *Comp {
+	c.El.Style(styles.LeadingBy(val))
 	return c
 }
 
-func (c *component) LeadingNone() *component {
-	c.el.Style(styles.LeadingNone())
+func (c *Comp) LeadingNone() *Comp {
+	c.El.Style(styles.LeadingNone())
 	return c
 }
 
-func (c *component) Left(number int) *component {
-	c.el.Style(styles.Left(number))
+func (c *Comp) Left(number int) *Comp {
+	c.El.Style(styles.Left(number))
 	return c
 }
 
-func (c *component) LeftAuto() *component {
-	c.el.Style(styles.LeftAuto())
+func (c *Comp) LeftAuto() *Comp {
+	c.El.Style(styles.LeftAuto())
 	return c
 }
 
-func (c *component) LeftBy(val value.Value) *component {
-	c.el.Style(styles.LeftBy(val))
+func (c *Comp) LeftBy(val value.Value) *Comp {
+	c.El.Style(styles.LeftBy(val))
 	return c
 }
 
-func (c *component) LeftFraction(fraction float64) *component {
-	c.el.Style(styles.LeftFraction(fraction))
+func (c *Comp) LeftFraction(fraction float64) *Comp {
+	c.El.Style(styles.LeftFraction(fraction))
 	return c
 }
 
-func (c *component) LeftFull() *component {
-	c.el.Style(styles.LeftFull())
+func (c *Comp) LeftFull() *Comp {
+	c.El.Style(styles.LeftFull())
 	return c
 }
 
-func (c *component) LeftPx() *component {
-	c.el.Style(styles.LeftPx())
+func (c *Comp) LeftPx() *Comp {
+	c.El.Style(styles.LeftPx())
 	return c
 }
 
-func (c *component) LineClamp(number int) *component {
-	c.el.Style(styles.LineClamp(number))
+func (c *Comp) LineClamp(number int) *Comp {
+	c.El.Style(styles.LineClamp(number))
 	return c
 }
 
-func (c *component) LineClampBy(val value.Value) *component {
-	c.el.Style(styles.LineClampBy(val))
+func (c *Comp) LineClampBy(val value.Value) *Comp {
+	c.El.Style(styles.LineClampBy(val))
 	return c
 }
 
-func (c *component) LineClampNone() *component {
-	c.el.Style(styles.LineClampNone())
+func (c *Comp) LineClampNone() *Comp {
+	c.El.Style(styles.LineClampNone())
 	return c
 }
 
-func (c *component) LineThrough() *component {
-	c.el.Style(styles.LineThrough())
+func (c *Comp) LineThrough() *Comp {
+	c.El.Style(styles.LineThrough())
 	return c
 }
 
-func (c *component) LiningNums() *component {
-	c.el.Style(styles.LiningNums())
+func (c *Comp) LiningNums() *Comp {
+	c.El.Style(styles.LiningNums())
 	return c
 }
 
-func (c *component) List(val value.Value) *component {
-	c.el.Style(styles.List(val))
+func (c *Comp) List(val value.Value) *Comp {
+	c.El.Style(styles.List(val))
 	return c
 }
 
-func (c *component) ListDecimal() *component {
-	c.el.Style(styles.ListDecimal())
+func (c *Comp) ListDecimal() *Comp {
+	c.El.Style(styles.ListDecimal())
 	return c
 }
 
-func (c *component) ListDisc() *component {
-	c.el.Style(styles.ListDisc())
+func (c *Comp) ListDisc() *Comp {
+	c.El.Style(styles.ListDisc())
 	return c
 }
 
-func (c *component) ListImage(val value.Value) *component {
-	c.el.Style(styles.ListImage(val))
+func (c *Comp) ListImage(val value.Value) *Comp {
+	c.El.Style(styles.ListImage(val))
 	return c
 }
 
-func (c *component) ListImageNone() *component {
-	c.el.Style(styles.ListImageNone())
+func (c *Comp) ListImageNone() *Comp {
+	c.El.Style(styles.ListImageNone())
 	return c
 }
 
-func (c *component) ListInside() *component {
-	c.el.Style(styles.ListInside())
+func (c *Comp) ListInside() *Comp {
+	c.El.Style(styles.ListInside())
 	return c
 }
 
-func (c *component) ListItem() *component {
-	c.el.Style(styles.ListItem())
+func (c *Comp) ListItem() *Comp {
+	c.El.Style(styles.ListItem())
 	return c
 }
 
-func (c *component) ListNone() *component {
-	c.el.Style(styles.ListNone())
+func (c *Comp) ListNone() *Comp {
+	c.El.Style(styles.ListNone())
 	return c
 }
 
-func (c *component) ListOutside() *component {
-	c.el.Style(styles.ListOutside())
+func (c *Comp) ListOutside() *Comp {
+	c.El.Style(styles.ListOutside())
 	return c
 }
 
-func (c *component) Lowercase() *component {
-	c.el.Style(styles.Lowercase())
+func (c *Comp) Lowercase() *Comp {
+	c.El.Style(styles.Lowercase())
 	return c
 }
 
-func (c *component) M(number int) *component {
-	c.el.Style(styles.M(number))
+func (c *Comp) M(number int) *Comp {
+	c.El.Style(styles.M(number))
 	return c
 }
 
-func (c *component) MAuto() *component {
-	c.el.Style(styles.MAuto())
+func (c *Comp) MAuto() *Comp {
+	c.El.Style(styles.MAuto())
 	return c
 }
 
-func (c *component) MBy(val value.Value) *component {
-	c.el.Style(styles.MBy(val))
+func (c *Comp) MBy(val value.Value) *Comp {
+	c.El.Style(styles.MBy(val))
 	return c
 }
 
-func (c *component) MPx() *component {
-	c.el.Style(styles.MPx())
+func (c *Comp) MPx() *Comp {
+	c.El.Style(styles.MPx())
 	return c
 }
 
-func (c *component) Mask(val value.Value) *component {
-	c.el.Style(styles.Mask(val))
+func (c *Comp) Mask(val value.Value) *Comp {
+	c.El.Style(styles.Mask(val))
 	return c
 }
 
-func (c *component) MaskAdd() *component {
-	c.el.Style(styles.MaskAdd())
+func (c *Comp) MaskAdd() *Comp {
+	c.El.Style(styles.MaskAdd())
 	return c
 }
 
-func (c *component) MaskAlpha() *component {
-	c.el.Style(styles.MaskAlpha())
+func (c *Comp) MaskAlpha() *Comp {
+	c.El.Style(styles.MaskAlpha())
 	return c
 }
 
-func (c *component) MaskAuto() *component {
-	c.el.Style(styles.MaskAuto())
+func (c *Comp) MaskAuto() *Comp {
+	c.El.Style(styles.MaskAuto())
 	return c
 }
 
-func (c *component) MaskBottom() *component {
-	c.el.Style(styles.MaskBottom())
+func (c *Comp) MaskBottom() *Comp {
+	c.El.Style(styles.MaskBottom())
 	return c
 }
 
-func (c *component) MaskBottomFrom(val any) *component {
-	c.el.Style(styles.MaskBottomFrom(val))
+func (c *Comp) MaskBottomFrom(val any) *Comp {
+	c.El.Style(styles.MaskBottomFrom(val))
 	return c
 }
 
-func (c *component) MaskBottomLeft() *component {
-	c.el.Style(styles.MaskBottomLeft())
+func (c *Comp) MaskBottomLeft() *Comp {
+	c.El.Style(styles.MaskBottomLeft())
 	return c
 }
 
-func (c *component) MaskBottomRight() *component {
-	c.el.Style(styles.MaskBottomRight())
+func (c *Comp) MaskBottomRight() *Comp {
+	c.El.Style(styles.MaskBottomRight())
 	return c
 }
 
-func (c *component) MaskBottomTo(val any) *component {
-	c.el.Style(styles.MaskBottomTo(val))
+func (c *Comp) MaskBottomTo(val any) *Comp {
+	c.El.Style(styles.MaskBottomTo(val))
 	return c
 }
 
-func (c *component) MaskCenter() *component {
-	c.el.Style(styles.MaskCenter())
+func (c *Comp) MaskCenter() *Comp {
+	c.El.Style(styles.MaskCenter())
 	return c
 }
 
-func (c *component) MaskCircle() *component {
-	c.el.Style(styles.MaskCircle())
+func (c *Comp) MaskCircle() *Comp {
+	c.El.Style(styles.MaskCircle())
 	return c
 }
 
-func (c *component) MaskClipBorder() *component {
-	c.el.Style(styles.MaskClipBorder())
+func (c *Comp) MaskClipBorder() *Comp {
+	c.El.Style(styles.MaskClipBorder())
 	return c
 }
 
-func (c *component) MaskClipContent() *component {
-	c.el.Style(styles.MaskClipContent())
+func (c *Comp) MaskClipContent() *Comp {
+	c.El.Style(styles.MaskClipContent())
 	return c
 }
 
-func (c *component) MaskClipFill() *component {
-	c.el.Style(styles.MaskClipFill())
+func (c *Comp) MaskClipFill() *Comp {
+	c.El.Style(styles.MaskClipFill())
 	return c
 }
 
-func (c *component) MaskClipPadding() *component {
-	c.el.Style(styles.MaskClipPadding())
+func (c *Comp) MaskClipPadding() *Comp {
+	c.El.Style(styles.MaskClipPadding())
 	return c
 }
 
-func (c *component) MaskClipStroke() *component {
-	c.el.Style(styles.MaskClipStroke())
+func (c *Comp) MaskClipStroke() *Comp {
+	c.El.Style(styles.MaskClipStroke())
 	return c
 }
 
-func (c *component) MaskClipView() *component {
-	c.el.Style(styles.MaskClipView())
+func (c *Comp) MaskClipView() *Comp {
+	c.El.Style(styles.MaskClipView())
 	return c
 }
 
-func (c *component) MaskConic(number float64) *component {
-	c.el.Style(styles.MaskConic(number))
+func (c *Comp) MaskConic(number float64) *Comp {
+	c.El.Style(styles.MaskConic(number))
 	return c
 }
 
-func (c *component) MaskConicFrom(val any) *component {
-	c.el.Style(styles.MaskConicFrom(val))
+func (c *Comp) MaskConicFrom(val any) *Comp {
+	c.El.Style(styles.MaskConicFrom(val))
 	return c
 }
 
-func (c *component) MaskConicTo(val any) *component {
-	c.el.Style(styles.MaskConicTo(val))
+func (c *Comp) MaskConicTo(val any) *Comp {
+	c.El.Style(styles.MaskConicTo(val))
 	return c
 }
 
-func (c *component) MaskContain() *component {
-	c.el.Style(styles.MaskContain())
+func (c *Comp) MaskContain() *Comp {
+	c.El.Style(styles.MaskContain())
 	return c
 }
 
-func (c *component) MaskCover() *component {
-	c.el.Style(styles.MaskCover())
+func (c *Comp) MaskCover() *Comp {
+	c.El.Style(styles.MaskCover())
 	return c
 }
 
-func (c *component) MaskEllipse() *component {
-	c.el.Style(styles.MaskEllipse())
+func (c *Comp) MaskEllipse() *Comp {
+	c.El.Style(styles.MaskEllipse())
 	return c
 }
 
-func (c *component) MaskExclude() *component {
-	c.el.Style(styles.MaskExclude())
+func (c *Comp) MaskExclude() *Comp {
+	c.El.Style(styles.MaskExclude())
 	return c
 }
 
-func (c *component) MaskIntersect() *component {
-	c.el.Style(styles.MaskIntersect())
+func (c *Comp) MaskIntersect() *Comp {
+	c.El.Style(styles.MaskIntersect())
 	return c
 }
 
-func (c *component) MaskLeft() *component {
-	c.el.Style(styles.MaskLeft())
+func (c *Comp) MaskLeft() *Comp {
+	c.El.Style(styles.MaskLeft())
 	return c
 }
 
-func (c *component) MaskLeftFrom(val any) *component {
-	c.el.Style(styles.MaskLeftFrom(val))
+func (c *Comp) MaskLeftFrom(val any) *Comp {
+	c.El.Style(styles.MaskLeftFrom(val))
 	return c
 }
 
-func (c *component) MaskLeftTo(val any) *component {
-	c.el.Style(styles.MaskLeftTo(val))
+func (c *Comp) MaskLeftTo(val any) *Comp {
+	c.El.Style(styles.MaskLeftTo(val))
 	return c
 }
 
-func (c *component) MaskLinear(degree int) *component {
-	c.el.Style(styles.MaskLinear(degree))
+func (c *Comp) MaskLinear(degree int) *Comp {
+	c.El.Style(styles.MaskLinear(degree))
 	return c
 }
 
-func (c *component) MaskLinearFrom(val any) *component {
-	c.el.Style(styles.MaskLinearFrom(val))
+func (c *Comp) MaskLinearFrom(val any) *Comp {
+	c.El.Style(styles.MaskLinearFrom(val))
 	return c
 }
 
-func (c *component) MaskLinearTo(val any) *component {
-	c.el.Style(styles.MaskLinearTo(val))
+func (c *Comp) MaskLinearTo(val any) *Comp {
+	c.El.Style(styles.MaskLinearTo(val))
 	return c
 }
 
-func (c *component) MaskLuminance() *component {
-	c.el.Style(styles.MaskLuminance())
+func (c *Comp) MaskLuminance() *Comp {
+	c.El.Style(styles.MaskLuminance())
 	return c
 }
 
-func (c *component) MaskMatch() *component {
-	c.el.Style(styles.MaskMatch())
+func (c *Comp) MaskMatch() *Comp {
+	c.El.Style(styles.MaskMatch())
 	return c
 }
 
-func (c *component) MaskNoClip() *component {
-	c.el.Style(styles.MaskNoClip())
+func (c *Comp) MaskNoClip() *Comp {
+	c.El.Style(styles.MaskNoClip())
 	return c
 }
 
-func (c *component) MaskNoRepeat() *component {
-	c.el.Style(styles.MaskNoRepeat())
+func (c *Comp) MaskNoRepeat() *Comp {
+	c.El.Style(styles.MaskNoRepeat())
 	return c
 }
 
-func (c *component) MaskNone() *component {
-	c.el.Style(styles.MaskNone())
+func (c *Comp) MaskNone() *Comp {
+	c.El.Style(styles.MaskNone())
 	return c
 }
 
-func (c *component) MaskOriginBorder() *component {
-	c.el.Style(styles.MaskOriginBorder())
+func (c *Comp) MaskOriginBorder() *Comp {
+	c.El.Style(styles.MaskOriginBorder())
 	return c
 }
 
-func (c *component) MaskOriginContent() *component {
-	c.el.Style(styles.MaskOriginContent())
+func (c *Comp) MaskOriginContent() *Comp {
+	c.El.Style(styles.MaskOriginContent())
 	return c
 }
 
-func (c *component) MaskOriginFill() *component {
-	c.el.Style(styles.MaskOriginFill())
+func (c *Comp) MaskOriginFill() *Comp {
+	c.El.Style(styles.MaskOriginFill())
 	return c
 }
 
-func (c *component) MaskOriginPadding() *component {
-	c.el.Style(styles.MaskOriginPadding())
+func (c *Comp) MaskOriginPadding() *Comp {
+	c.El.Style(styles.MaskOriginPadding())
 	return c
 }
 
-func (c *component) MaskOriginStroke() *component {
-	c.el.Style(styles.MaskOriginStroke())
+func (c *Comp) MaskOriginStroke() *Comp {
+	c.El.Style(styles.MaskOriginStroke())
 	return c
 }
 
-func (c *component) MaskOriginView() *component {
-	c.el.Style(styles.MaskOriginView())
+func (c *Comp) MaskOriginView() *Comp {
+	c.El.Style(styles.MaskOriginView())
 	return c
 }
 
-func (c *component) MaskPosition(val value.Value) *component {
-	c.el.Style(styles.MaskPosition(val))
+func (c *Comp) MaskPosition(val value.Value) *Comp {
+	c.El.Style(styles.MaskPosition(val))
 	return c
 }
 
-func (c *component) MaskRadial(val ...any) *component {
-	c.el.Style(styles.MaskRadial(val...))
+func (c *Comp) MaskRadial(val ...any) *Comp {
+	c.El.Style(styles.MaskRadial(val...))
 	return c
 }
 
-func (c *component) MaskRadialAtBottom() *component {
-	c.el.Style(styles.MaskRadialAtBottom())
+func (c *Comp) MaskRadialAtBottom() *Comp {
+	c.El.Style(styles.MaskRadialAtBottom())
 	return c
 }
 
-func (c *component) MaskRadialAtBottomLeft() *component {
-	c.el.Style(styles.MaskRadialAtBottomLeft())
+func (c *Comp) MaskRadialAtBottomLeft() *Comp {
+	c.El.Style(styles.MaskRadialAtBottomLeft())
 	return c
 }
 
-func (c *component) MaskRadialAtBottomRight() *component {
-	c.el.Style(styles.MaskRadialAtBottomRight())
+func (c *Comp) MaskRadialAtBottomRight() *Comp {
+	c.El.Style(styles.MaskRadialAtBottomRight())
 	return c
 }
 
-func (c *component) MaskRadialAtCenter() *component {
-	c.el.Style(styles.MaskRadialAtCenter())
+func (c *Comp) MaskRadialAtCenter() *Comp {
+	c.El.Style(styles.MaskRadialAtCenter())
 	return c
 }
 
-func (c *component) MaskRadialAtLeft() *component {
-	c.el.Style(styles.MaskRadialAtLeft())
+func (c *Comp) MaskRadialAtLeft() *Comp {
+	c.El.Style(styles.MaskRadialAtLeft())
 	return c
 }
 
-func (c *component) MaskRadialAtRight() *component {
-	c.el.Style(styles.MaskRadialAtRight())
+func (c *Comp) MaskRadialAtRight() *Comp {
+	c.El.Style(styles.MaskRadialAtRight())
 	return c
 }
 
-func (c *component) MaskRadialAtTop() *component {
-	c.el.Style(styles.MaskRadialAtTop())
+func (c *Comp) MaskRadialAtTop() *Comp {
+	c.El.Style(styles.MaskRadialAtTop())
 	return c
 }
 
-func (c *component) MaskRadialAtTopLeft() *component {
-	c.el.Style(styles.MaskRadialAtTopLeft())
+func (c *Comp) MaskRadialAtTopLeft() *Comp {
+	c.El.Style(styles.MaskRadialAtTopLeft())
 	return c
 }
 
-func (c *component) MaskRadialAtTopRight() *component {
-	c.el.Style(styles.MaskRadialAtTopRight())
+func (c *Comp) MaskRadialAtTopRight() *Comp {
+	c.El.Style(styles.MaskRadialAtTopRight())
 	return c
 }
 
-func (c *component) MaskRadialClosestCorner() *component {
-	c.el.Style(styles.MaskRadialClosestCorner())
+func (c *Comp) MaskRadialClosestCorner() *Comp {
+	c.El.Style(styles.MaskRadialClosestCorner())
 	return c
 }
 
-func (c *component) MaskRadialClosestSide() *component {
-	c.el.Style(styles.MaskRadialClosestSide())
+func (c *Comp) MaskRadialClosestSide() *Comp {
+	c.El.Style(styles.MaskRadialClosestSide())
 	return c
 }
 
-func (c *component) MaskRadialFarthestCorner() *component {
-	c.el.Style(styles.MaskRadialFarthestCorner())
+func (c *Comp) MaskRadialFarthestCorner() *Comp {
+	c.El.Style(styles.MaskRadialFarthestCorner())
 	return c
 }
 
-func (c *component) MaskRadialFarthestSide() *component {
-	c.el.Style(styles.MaskRadialFarthestSide())
+func (c *Comp) MaskRadialFarthestSide() *Comp {
+	c.El.Style(styles.MaskRadialFarthestSide())
 	return c
 }
 
-func (c *component) MaskRadialFrom(val any) *component {
-	c.el.Style(styles.MaskRadialFrom(val))
+func (c *Comp) MaskRadialFrom(val any) *Comp {
+	c.El.Style(styles.MaskRadialFrom(val))
 	return c
 }
 
-func (c *component) MaskRadialTo(val any) *component {
-	c.el.Style(styles.MaskRadialTo(val))
+func (c *Comp) MaskRadialTo(val any) *Comp {
+	c.El.Style(styles.MaskRadialTo(val))
 	return c
 }
 
-func (c *component) MaskRepeat() *component {
-	c.el.Style(styles.MaskRepeat())
+func (c *Comp) MaskRepeat() *Comp {
+	c.El.Style(styles.MaskRepeat())
 	return c
 }
 
-func (c *component) MaskRepeatRound() *component {
-	c.el.Style(styles.MaskRepeatRound())
+func (c *Comp) MaskRepeatRound() *Comp {
+	c.El.Style(styles.MaskRepeatRound())
 	return c
 }
 
-func (c *component) MaskRepeatSpace() *component {
-	c.el.Style(styles.MaskRepeatSpace())
+func (c *Comp) MaskRepeatSpace() *Comp {
+	c.El.Style(styles.MaskRepeatSpace())
 	return c
 }
 
-func (c *component) MaskRepeatX() *component {
-	c.el.Style(styles.MaskRepeatX())
+func (c *Comp) MaskRepeatX() *Comp {
+	c.El.Style(styles.MaskRepeatX())
 	return c
 }
 
-func (c *component) MaskRepeatY() *component {
-	c.el.Style(styles.MaskRepeatY())
+func (c *Comp) MaskRepeatY() *Comp {
+	c.El.Style(styles.MaskRepeatY())
 	return c
 }
 
-func (c *component) MaskRight() *component {
-	c.el.Style(styles.MaskRight())
+func (c *Comp) MaskRight() *Comp {
+	c.El.Style(styles.MaskRight())
 	return c
 }
 
-func (c *component) MaskRightFrom(val any) *component {
-	c.el.Style(styles.MaskRightFrom(val))
+func (c *Comp) MaskRightFrom(val any) *Comp {
+	c.El.Style(styles.MaskRightFrom(val))
 	return c
 }
 
-func (c *component) MaskRightTo(val any) *component {
-	c.el.Style(styles.MaskRightTo(val))
+func (c *Comp) MaskRightTo(val any) *Comp {
+	c.El.Style(styles.MaskRightTo(val))
 	return c
 }
 
-func (c *component) MaskSize(val value.Value) *component {
-	c.el.Style(styles.MaskSize(val))
+func (c *Comp) MaskSize(val value.Value) *Comp {
+	c.El.Style(styles.MaskSize(val))
 	return c
 }
 
-func (c *component) MaskSubtract() *component {
-	c.el.Style(styles.MaskSubtract())
+func (c *Comp) MaskSubtract() *Comp {
+	c.El.Style(styles.MaskSubtract())
 	return c
 }
 
-func (c *component) MaskTop() *component {
-	c.el.Style(styles.MaskTop())
+func (c *Comp) MaskTop() *Comp {
+	c.El.Style(styles.MaskTop())
 	return c
 }
 
-func (c *component) MaskTopFrom(val any) *component {
-	c.el.Style(styles.MaskTopFrom(val))
+func (c *Comp) MaskTopFrom(val any) *Comp {
+	c.El.Style(styles.MaskTopFrom(val))
 	return c
 }
 
-func (c *component) MaskTopLeft() *component {
-	c.el.Style(styles.MaskTopLeft())
+func (c *Comp) MaskTopLeft() *Comp {
+	c.El.Style(styles.MaskTopLeft())
 	return c
 }
 
-func (c *component) MaskTopRight() *component {
-	c.el.Style(styles.MaskTopRight())
+func (c *Comp) MaskTopRight() *Comp {
+	c.El.Style(styles.MaskTopRight())
 	return c
 }
 
-func (c *component) MaskTopTo(val any) *component {
-	c.el.Style(styles.MaskTopTo(val))
+func (c *Comp) MaskTopTo(val any) *Comp {
+	c.El.Style(styles.MaskTopTo(val))
 	return c
 }
 
-func (c *component) MaskTypeAlpha() *component {
-	c.el.Style(styles.MaskTypeAlpha())
+func (c *Comp) MaskTypeAlpha() *Comp {
+	c.El.Style(styles.MaskTypeAlpha())
 	return c
 }
 
-func (c *component) MaskTypeLuminance() *component {
-	c.el.Style(styles.MaskTypeLuminance())
+func (c *Comp) MaskTypeLuminance() *Comp {
+	c.El.Style(styles.MaskTypeLuminance())
 	return c
 }
 
-func (c *component) MaskXFrom(val any) *component {
-	c.el.Style(styles.MaskXFrom(val))
+func (c *Comp) MaskXFrom(val any) *Comp {
+	c.El.Style(styles.MaskXFrom(val))
 	return c
 }
 
-func (c *component) MaskXTo(val any) *component {
-	c.el.Style(styles.MaskXTo(val))
+func (c *Comp) MaskXTo(val any) *Comp {
+	c.El.Style(styles.MaskXTo(val))
 	return c
 }
 
-func (c *component) MaskYFrom(val any) *component {
-	c.el.Style(styles.MaskYFrom(val))
+func (c *Comp) MaskYFrom(val any) *Comp {
+	c.El.Style(styles.MaskYFrom(val))
 	return c
 }
 
-func (c *component) MaskYTo(val any) *component {
-	c.el.Style(styles.MaskYTo(val))
+func (c *Comp) MaskYTo(val any) *Comp {
+	c.El.Style(styles.MaskYTo(val))
 	return c
 }
 
-func (c *component) MaxH(number int) *component {
-	c.el.Style(styles.MaxH(number))
+func (c *Comp) MaxH(number int) *Comp {
+	c.El.Style(styles.MaxH(number))
 	return c
 }
 
-func (c *component) MaxHBy(val value.Value) *component {
-	c.el.Style(styles.MaxHBy(val))
+func (c *Comp) MaxHBy(val value.Value) *Comp {
+	c.El.Style(styles.MaxHBy(val))
 	return c
 }
 
-func (c *component) MaxHDvh() *component {
-	c.el.Style(styles.MaxHDvh())
+func (c *Comp) MaxHDvh() *Comp {
+	c.El.Style(styles.MaxHDvh())
 	return c
 }
 
-func (c *component) MaxHDvw() *component {
-	c.el.Style(styles.MaxHDvw())
+func (c *Comp) MaxHDvw() *Comp {
+	c.El.Style(styles.MaxHDvw())
 	return c
 }
 
-func (c *component) MaxHFit() *component {
-	c.el.Style(styles.MaxHFit())
+func (c *Comp) MaxHFit() *Comp {
+	c.El.Style(styles.MaxHFit())
 	return c
 }
 
-func (c *component) MaxHFraction(fraction float32) *component {
-	c.el.Style(styles.MaxHFraction(fraction))
+func (c *Comp) MaxHFraction(fraction float32) *Comp {
+	c.El.Style(styles.MaxHFraction(fraction))
 	return c
 }
 
-func (c *component) MaxHFull() *component {
-	c.el.Style(styles.MaxHFull())
+func (c *Comp) MaxHFull() *Comp {
+	c.El.Style(styles.MaxHFull())
 	return c
 }
 
-func (c *component) MaxHLh() *component {
-	c.el.Style(styles.MaxHLh())
+func (c *Comp) MaxHLh() *Comp {
+	c.El.Style(styles.MaxHLh())
 	return c
 }
 
-func (c *component) MaxHLvh() *component {
-	c.el.Style(styles.MaxHLvh())
+func (c *Comp) MaxHLvh() *Comp {
+	c.El.Style(styles.MaxHLvh())
 	return c
 }
 
-func (c *component) MaxHLvw() *component {
-	c.el.Style(styles.MaxHLvw())
+func (c *Comp) MaxHLvw() *Comp {
+	c.El.Style(styles.MaxHLvw())
 	return c
 }
 
-func (c *component) MaxHMax() *component {
-	c.el.Style(styles.MaxHMax())
+func (c *Comp) MaxHMax() *Comp {
+	c.El.Style(styles.MaxHMax())
 	return c
 }
 
-func (c *component) MaxHMin() *component {
-	c.el.Style(styles.MaxHMin())
+func (c *Comp) MaxHMin() *Comp {
+	c.El.Style(styles.MaxHMin())
 	return c
 }
 
-func (c *component) MaxHNone() *component {
-	c.el.Style(styles.MaxHNone())
+func (c *Comp) MaxHNone() *Comp {
+	c.El.Style(styles.MaxHNone())
 	return c
 }
 
-func (c *component) MaxHPx() *component {
-	c.el.Style(styles.MaxHPx())
+func (c *Comp) MaxHPx() *Comp {
+	c.El.Style(styles.MaxHPx())
 	return c
 }
 
-func (c *component) MaxHScreen() *component {
-	c.el.Style(styles.MaxHScreen())
+func (c *Comp) MaxHScreen() *Comp {
+	c.El.Style(styles.MaxHScreen())
 	return c
 }
 
-func (c *component) MaxHSvh() *component {
-	c.el.Style(styles.MaxHSvh())
+func (c *Comp) MaxHSvh() *Comp {
+	c.El.Style(styles.MaxHSvh())
 	return c
 }
 
-func (c *component) MaxHSvw() *component {
-	c.el.Style(styles.MaxHSvw())
+func (c *Comp) MaxHSvw() *Comp {
+	c.El.Style(styles.MaxHSvw())
 	return c
 }
 
-func (c *component) MaxW(number int) *component {
-	c.el.Style(styles.MaxW(number))
+func (c *Comp) MaxW(number int) *Comp {
+	c.El.Style(styles.MaxW(number))
 	return c
 }
 
-func (c *component) MaxW2xl() *component {
-	c.el.Style(styles.MaxW2xl())
+func (c *Comp) MaxW2xl() *Comp {
+	c.El.Style(styles.MaxW2xl())
 	return c
 }
 
-func (c *component) MaxW2xs() *component {
-	c.el.Style(styles.MaxW2xs())
+func (c *Comp) MaxW2xs() *Comp {
+	c.El.Style(styles.MaxW2xs())
 	return c
 }
 
-func (c *component) MaxW3xl() *component {
-	c.el.Style(styles.MaxW3xl())
+func (c *Comp) MaxW3xl() *Comp {
+	c.El.Style(styles.MaxW3xl())
 	return c
 }
 
-func (c *component) MaxW3xs() *component {
-	c.el.Style(styles.MaxW3xs())
+func (c *Comp) MaxW3xs() *Comp {
+	c.El.Style(styles.MaxW3xs())
 	return c
 }
 
-func (c *component) MaxW4xl() *component {
-	c.el.Style(styles.MaxW4xl())
+func (c *Comp) MaxW4xl() *Comp {
+	c.El.Style(styles.MaxW4xl())
 	return c
 }
 
-func (c *component) MaxW5xl() *component {
-	c.el.Style(styles.MaxW5xl())
+func (c *Comp) MaxW5xl() *Comp {
+	c.El.Style(styles.MaxW5xl())
 	return c
 }
 
-func (c *component) MaxW6xl() *component {
-	c.el.Style(styles.MaxW6xl())
+func (c *Comp) MaxW6xl() *Comp {
+	c.El.Style(styles.MaxW6xl())
 	return c
 }
 
-func (c *component) MaxW7xl() *component {
-	c.el.Style(styles.MaxW7xl())
+func (c *Comp) MaxW7xl() *Comp {
+	c.El.Style(styles.MaxW7xl())
 	return c
 }
 
-func (c *component) MaxWBy(val value.Value) *component {
-	c.el.Style(styles.MaxWBy(val))
+func (c *Comp) MaxWBy(val value.Value) *Comp {
+	c.El.Style(styles.MaxWBy(val))
 	return c
 }
 
-func (c *component) MaxWDvh() *component {
-	c.el.Style(styles.MaxWDvh())
+func (c *Comp) MaxWDvh() *Comp {
+	c.El.Style(styles.MaxWDvh())
 	return c
 }
 
-func (c *component) MaxWDvw() *component {
-	c.el.Style(styles.MaxWDvw())
+func (c *Comp) MaxWDvw() *Comp {
+	c.El.Style(styles.MaxWDvw())
 	return c
 }
 
-func (c *component) MaxWFit() *component {
-	c.el.Style(styles.MaxWFit())
+func (c *Comp) MaxWFit() *Comp {
+	c.El.Style(styles.MaxWFit())
 	return c
 }
 
-func (c *component) MaxWFraction(fraction float32) *component {
-	c.el.Style(styles.MaxWFraction(fraction))
+func (c *Comp) MaxWFraction(fraction float32) *Comp {
+	c.El.Style(styles.MaxWFraction(fraction))
 	return c
 }
 
-func (c *component) MaxWFull() *component {
-	c.el.Style(styles.MaxWFull())
+func (c *Comp) MaxWFull() *Comp {
+	c.El.Style(styles.MaxWFull())
 	return c
 }
 
-func (c *component) MaxWLg() *component {
-	c.el.Style(styles.MaxWLg())
+func (c *Comp) MaxWLg() *Comp {
+	c.El.Style(styles.MaxWLg())
 	return c
 }
 
-func (c *component) MaxWLvh() *component {
-	c.el.Style(styles.MaxWLvh())
+func (c *Comp) MaxWLvh() *Comp {
+	c.El.Style(styles.MaxWLvh())
 	return c
 }
 
-func (c *component) MaxWLvw() *component {
-	c.el.Style(styles.MaxWLvw())
+func (c *Comp) MaxWLvw() *Comp {
+	c.El.Style(styles.MaxWLvw())
 	return c
 }
 
-func (c *component) MaxWMax() *component {
-	c.el.Style(styles.MaxWMax())
+func (c *Comp) MaxWMax() *Comp {
+	c.El.Style(styles.MaxWMax())
 	return c
 }
 
-func (c *component) MaxWMd() *component {
-	c.el.Style(styles.MaxWMd())
+func (c *Comp) MaxWMd() *Comp {
+	c.El.Style(styles.MaxWMd())
 	return c
 }
 
-func (c *component) MaxWMin() *component {
-	c.el.Style(styles.MaxWMin())
+func (c *Comp) MaxWMin() *Comp {
+	c.El.Style(styles.MaxWMin())
 	return c
 }
 
-func (c *component) MaxWNone() *component {
-	c.el.Style(styles.MaxWNone())
+func (c *Comp) MaxWNone() *Comp {
+	c.El.Style(styles.MaxWNone())
 	return c
 }
 
-func (c *component) MaxWPx() *component {
-	c.el.Style(styles.MaxWPx())
+func (c *Comp) MaxWPx() *Comp {
+	c.El.Style(styles.MaxWPx())
 	return c
 }
 
-func (c *component) MaxWScreen() *component {
-	c.el.Style(styles.MaxWScreen())
+func (c *Comp) MaxWScreen() *Comp {
+	c.El.Style(styles.MaxWScreen())
 	return c
 }
 
-func (c *component) MaxWSm() *component {
-	c.el.Style(styles.MaxWSm())
+func (c *Comp) MaxWSm() *Comp {
+	c.El.Style(styles.MaxWSm())
 	return c
 }
 
-func (c *component) MaxWSvh() *component {
-	c.el.Style(styles.MaxWSvh())
+func (c *Comp) MaxWSvh() *Comp {
+	c.El.Style(styles.MaxWSvh())
 	return c
 }
 
-func (c *component) MaxWSvw() *component {
-	c.el.Style(styles.MaxWSvw())
+func (c *Comp) MaxWSvw() *Comp {
+	c.El.Style(styles.MaxWSvw())
 	return c
 }
 
-func (c *component) MaxWXl() *component {
-	c.el.Style(styles.MaxWXl())
+func (c *Comp) MaxWXl() *Comp {
+	c.El.Style(styles.MaxWXl())
 	return c
 }
 
-func (c *component) MaxWXs() *component {
-	c.el.Style(styles.MaxWXs())
+func (c *Comp) MaxWXs() *Comp {
+	c.El.Style(styles.MaxWXs())
 	return c
 }
 
-func (c *component) Mb(number int) *component {
-	c.el.Style(styles.Mb(number))
+func (c *Comp) Mb(number int) *Comp {
+	c.El.Style(styles.Mb(number))
 	return c
 }
 
-func (c *component) MbAuto() *component {
-	c.el.Style(styles.MbAuto())
+func (c *Comp) MbAuto() *Comp {
+	c.El.Style(styles.MbAuto())
 	return c
 }
 
-func (c *component) MbBy(val value.Value) *component {
-	c.el.Style(styles.MbBy(val))
+func (c *Comp) MbBy(val value.Value) *Comp {
+	c.El.Style(styles.MbBy(val))
 	return c
 }
 
-func (c *component) MbPx() *component {
-	c.el.Style(styles.MbPx())
+func (c *Comp) MbPx() *Comp {
+	c.El.Style(styles.MbPx())
 	return c
 }
 
-func (c *component) Me(number int) *component {
-	c.el.Style(styles.Me(number))
+func (c *Comp) Me(number int) *Comp {
+	c.El.Style(styles.Me(number))
 	return c
 }
 
-func (c *component) MeAuto() *component {
-	c.el.Style(styles.MeAuto())
+func (c *Comp) MeAuto() *Comp {
+	c.El.Style(styles.MeAuto())
 	return c
 }
 
-func (c *component) MeBy(val value.Value) *component {
-	c.el.Style(styles.MeBy(val))
+func (c *Comp) MeBy(val value.Value) *Comp {
+	c.El.Style(styles.MeBy(val))
 	return c
 }
 
-func (c *component) MePx() *component {
-	c.el.Style(styles.MePx())
+func (c *Comp) MePx() *Comp {
+	c.El.Style(styles.MePx())
 	return c
 }
 
-func (c *component) MinH(number int) *component {
-	c.el.Style(styles.MinH(number))
+func (c *Comp) MinH(number int) *Comp {
+	c.El.Style(styles.MinH(number))
 	return c
 }
 
-func (c *component) MinHAuto() *component {
-	c.el.Style(styles.MinHAuto())
+func (c *Comp) MinHAuto() *Comp {
+	c.El.Style(styles.MinHAuto())
 	return c
 }
 
-func (c *component) MinHBy(val value.Value) *component {
-	c.el.Style(styles.MinHBy(val))
+func (c *Comp) MinHBy(val value.Value) *Comp {
+	c.El.Style(styles.MinHBy(val))
 	return c
 }
 
-func (c *component) MinHDvh() *component {
-	c.el.Style(styles.MinHDvh())
+func (c *Comp) MinHDvh() *Comp {
+	c.El.Style(styles.MinHDvh())
 	return c
 }
 
-func (c *component) MinHDvw() *component {
-	c.el.Style(styles.MinHDvw())
+func (c *Comp) MinHDvw() *Comp {
+	c.El.Style(styles.MinHDvw())
 	return c
 }
 
-func (c *component) MinHFit() *component {
-	c.el.Style(styles.MinHFit())
+func (c *Comp) MinHFit() *Comp {
+	c.El.Style(styles.MinHFit())
 	return c
 }
 
-func (c *component) MinHFraction(fraction float32) *component {
-	c.el.Style(styles.MinHFraction(fraction))
+func (c *Comp) MinHFraction(fraction float32) *Comp {
+	c.El.Style(styles.MinHFraction(fraction))
 	return c
 }
 
-func (c *component) MinHFull() *component {
-	c.el.Style(styles.MinHFull())
+func (c *Comp) MinHFull() *Comp {
+	c.El.Style(styles.MinHFull())
 	return c
 }
 
-func (c *component) MinHLh() *component {
-	c.el.Style(styles.MinHLh())
+func (c *Comp) MinHLh() *Comp {
+	c.El.Style(styles.MinHLh())
 	return c
 }
 
-func (c *component) MinHLvh() *component {
-	c.el.Style(styles.MinHLvh())
+func (c *Comp) MinHLvh() *Comp {
+	c.El.Style(styles.MinHLvh())
 	return c
 }
 
-func (c *component) MinHLvw() *component {
-	c.el.Style(styles.MinHLvw())
+func (c *Comp) MinHLvw() *Comp {
+	c.El.Style(styles.MinHLvw())
 	return c
 }
 
-func (c *component) MinHMax() *component {
-	c.el.Style(styles.MinHMax())
+func (c *Comp) MinHMax() *Comp {
+	c.El.Style(styles.MinHMax())
 	return c
 }
 
-func (c *component) MinHMin() *component {
-	c.el.Style(styles.MinHMin())
+func (c *Comp) MinHMin() *Comp {
+	c.El.Style(styles.MinHMin())
 	return c
 }
 
-func (c *component) MinHPx() *component {
-	c.el.Style(styles.MinHPx())
+func (c *Comp) MinHPx() *Comp {
+	c.El.Style(styles.MinHPx())
 	return c
 }
 
-func (c *component) MinHScreen() *component {
-	c.el.Style(styles.MinHScreen())
+func (c *Comp) MinHScreen() *Comp {
+	c.El.Style(styles.MinHScreen())
 	return c
 }
 
-func (c *component) MinHSvh() *component {
-	c.el.Style(styles.MinHSvh())
+func (c *Comp) MinHSvh() *Comp {
+	c.El.Style(styles.MinHSvh())
 	return c
 }
 
-func (c *component) MinHSvw() *component {
-	c.el.Style(styles.MinHSvw())
+func (c *Comp) MinHSvw() *Comp {
+	c.El.Style(styles.MinHSvw())
 	return c
 }
 
-func (c *component) MinW(number int) *component {
-	c.el.Style(styles.MinW(number))
+func (c *Comp) MinW(number int) *Comp {
+	c.El.Style(styles.MinW(number))
 	return c
 }
 
-func (c *component) MinW2xl() *component {
-	c.el.Style(styles.MinW2xl())
+func (c *Comp) MinW2xl() *Comp {
+	c.El.Style(styles.MinW2xl())
 	return c
 }
 
-func (c *component) MinW2xs() *component {
-	c.el.Style(styles.MinW2xs())
+func (c *Comp) MinW2xs() *Comp {
+	c.El.Style(styles.MinW2xs())
 	return c
 }
 
-func (c *component) MinW3xl() *component {
-	c.el.Style(styles.MinW3xl())
+func (c *Comp) MinW3xl() *Comp {
+	c.El.Style(styles.MinW3xl())
 	return c
 }
 
-func (c *component) MinW3xs() *component {
-	c.el.Style(styles.MinW3xs())
+func (c *Comp) MinW3xs() *Comp {
+	c.El.Style(styles.MinW3xs())
 	return c
 }
 
-func (c *component) MinW4xl() *component {
-	c.el.Style(styles.MinW4xl())
+func (c *Comp) MinW4xl() *Comp {
+	c.El.Style(styles.MinW4xl())
 	return c
 }
 
-func (c *component) MinW5xl() *component {
-	c.el.Style(styles.MinW5xl())
+func (c *Comp) MinW5xl() *Comp {
+	c.El.Style(styles.MinW5xl())
 	return c
 }
 
-func (c *component) MinW6xl() *component {
-	c.el.Style(styles.MinW6xl())
+func (c *Comp) MinW6xl() *Comp {
+	c.El.Style(styles.MinW6xl())
 	return c
 }
 
-func (c *component) MinW7xl() *component {
-	c.el.Style(styles.MinW7xl())
+func (c *Comp) MinW7xl() *Comp {
+	c.El.Style(styles.MinW7xl())
 	return c
 }
 
-func (c *component) MinWAuto() *component {
-	c.el.Style(styles.MinWAuto())
+func (c *Comp) MinWAuto() *Comp {
+	c.El.Style(styles.MinWAuto())
 	return c
 }
 
-func (c *component) MinWBy(val value.Value) *component {
-	c.el.Style(styles.MinWBy(val))
+func (c *Comp) MinWBy(val value.Value) *Comp {
+	c.El.Style(styles.MinWBy(val))
 	return c
 }
 
-func (c *component) MinWDvh() *component {
-	c.el.Style(styles.MinWDvh())
+func (c *Comp) MinWDvh() *Comp {
+	c.El.Style(styles.MinWDvh())
 	return c
 }
 
-func (c *component) MinWDvw() *component {
-	c.el.Style(styles.MinWDvw())
+func (c *Comp) MinWDvw() *Comp {
+	c.El.Style(styles.MinWDvw())
 	return c
 }
 
-func (c *component) MinWFit() *component {
-	c.el.Style(styles.MinWFit())
+func (c *Comp) MinWFit() *Comp {
+	c.El.Style(styles.MinWFit())
 	return c
 }
 
-func (c *component) MinWFraction(fraction float32) *component {
-	c.el.Style(styles.MinWFraction(fraction))
+func (c *Comp) MinWFraction(fraction float32) *Comp {
+	c.El.Style(styles.MinWFraction(fraction))
 	return c
 }
 
-func (c *component) MinWFull() *component {
-	c.el.Style(styles.MinWFull())
+func (c *Comp) MinWFull() *Comp {
+	c.El.Style(styles.MinWFull())
 	return c
 }
 
-func (c *component) MinWLg() *component {
-	c.el.Style(styles.MinWLg())
+func (c *Comp) MinWLg() *Comp {
+	c.El.Style(styles.MinWLg())
 	return c
 }
 
-func (c *component) MinWLvh() *component {
-	c.el.Style(styles.MinWLvh())
+func (c *Comp) MinWLvh() *Comp {
+	c.El.Style(styles.MinWLvh())
 	return c
 }
 
-func (c *component) MinWLvw() *component {
-	c.el.Style(styles.MinWLvw())
+func (c *Comp) MinWLvw() *Comp {
+	c.El.Style(styles.MinWLvw())
 	return c
 }
 
-func (c *component) MinWMax() *component {
-	c.el.Style(styles.MinWMax())
+func (c *Comp) MinWMax() *Comp {
+	c.El.Style(styles.MinWMax())
 	return c
 }
 
-func (c *component) MinWMd() *component {
-	c.el.Style(styles.MinWMd())
+func (c *Comp) MinWMd() *Comp {
+	c.El.Style(styles.MinWMd())
 	return c
 }
 
-func (c *component) MinWMin() *component {
-	c.el.Style(styles.MinWMin())
+func (c *Comp) MinWMin() *Comp {
+	c.El.Style(styles.MinWMin())
 	return c
 }
 
-func (c *component) MinWPx() *component {
-	c.el.Style(styles.MinWPx())
+func (c *Comp) MinWPx() *Comp {
+	c.El.Style(styles.MinWPx())
 	return c
 }
 
-func (c *component) MinWScreen() *component {
-	c.el.Style(styles.MinWScreen())
+func (c *Comp) MinWScreen() *Comp {
+	c.El.Style(styles.MinWScreen())
 	return c
 }
 
-func (c *component) MinWSm() *component {
-	c.el.Style(styles.MinWSm())
+func (c *Comp) MinWSm() *Comp {
+	c.El.Style(styles.MinWSm())
 	return c
 }
 
-func (c *component) MinWSvh() *component {
-	c.el.Style(styles.MinWSvh())
+func (c *Comp) MinWSvh() *Comp {
+	c.El.Style(styles.MinWSvh())
 	return c
 }
 
-func (c *component) MinWSvw() *component {
-	c.el.Style(styles.MinWSvw())
+func (c *Comp) MinWSvw() *Comp {
+	c.El.Style(styles.MinWSvw())
 	return c
 }
 
-func (c *component) MinWXl() *component {
-	c.el.Style(styles.MinWXl())
+func (c *Comp) MinWXl() *Comp {
+	c.El.Style(styles.MinWXl())
 	return c
 }
 
-func (c *component) MinWXs() *component {
-	c.el.Style(styles.MinWXs())
+func (c *Comp) MinWXs() *Comp {
+	c.El.Style(styles.MinWXs())
 	return c
 }
 
-func (c *component) MixBlendColor() *component {
-	c.el.Style(styles.MixBlendColor())
+func (c *Comp) MixBlendColor() *Comp {
+	c.El.Style(styles.MixBlendColor())
 	return c
 }
 
-func (c *component) MixBlendColorBurn() *component {
-	c.el.Style(styles.MixBlendColorBurn())
+func (c *Comp) MixBlendColorBurn() *Comp {
+	c.El.Style(styles.MixBlendColorBurn())
 	return c
 }
 
-func (c *component) MixBlendColorDodge() *component {
-	c.el.Style(styles.MixBlendColorDodge())
+func (c *Comp) MixBlendColorDodge() *Comp {
+	c.El.Style(styles.MixBlendColorDodge())
 	return c
 }
 
-func (c *component) MixBlendDarken() *component {
-	c.el.Style(styles.MixBlendDarken())
+func (c *Comp) MixBlendDarken() *Comp {
+	c.El.Style(styles.MixBlendDarken())
 	return c
 }
 
-func (c *component) MixBlendDifference() *component {
-	c.el.Style(styles.MixBlendDifference())
+func (c *Comp) MixBlendDifference() *Comp {
+	c.El.Style(styles.MixBlendDifference())
 	return c
 }
 
-func (c *component) MixBlendExclusion() *component {
-	c.el.Style(styles.MixBlendExclusion())
+func (c *Comp) MixBlendExclusion() *Comp {
+	c.El.Style(styles.MixBlendExclusion())
 	return c
 }
 
-func (c *component) MixBlendHardLight() *component {
-	c.el.Style(styles.MixBlendHardLight())
+func (c *Comp) MixBlendHardLight() *Comp {
+	c.El.Style(styles.MixBlendHardLight())
 	return c
 }
 
-func (c *component) MixBlendHue() *component {
-	c.el.Style(styles.MixBlendHue())
+func (c *Comp) MixBlendHue() *Comp {
+	c.El.Style(styles.MixBlendHue())
 	return c
 }
 
-func (c *component) MixBlendLighten() *component {
-	c.el.Style(styles.MixBlendLighten())
+func (c *Comp) MixBlendLighten() *Comp {
+	c.El.Style(styles.MixBlendLighten())
 	return c
 }
 
-func (c *component) MixBlendLuminosity() *component {
-	c.el.Style(styles.MixBlendLuminosity())
+func (c *Comp) MixBlendLuminosity() *Comp {
+	c.El.Style(styles.MixBlendLuminosity())
 	return c
 }
 
-func (c *component) MixBlendMultiply() *component {
-	c.el.Style(styles.MixBlendMultiply())
+func (c *Comp) MixBlendMultiply() *Comp {
+	c.El.Style(styles.MixBlendMultiply())
 	return c
 }
 
-func (c *component) MixBlendNormal() *component {
-	c.el.Style(styles.MixBlendNormal())
+func (c *Comp) MixBlendNormal() *Comp {
+	c.El.Style(styles.MixBlendNormal())
 	return c
 }
 
-func (c *component) MixBlendOverlay() *component {
-	c.el.Style(styles.MixBlendOverlay())
+func (c *Comp) MixBlendOverlay() *Comp {
+	c.El.Style(styles.MixBlendOverlay())
 	return c
 }
 
-func (c *component) MixBlendPlusDarker() *component {
-	c.el.Style(styles.MixBlendPlusDarker())
+func (c *Comp) MixBlendPlusDarker() *Comp {
+	c.El.Style(styles.MixBlendPlusDarker())
 	return c
 }
 
-func (c *component) MixBlendPlusLighter() *component {
-	c.el.Style(styles.MixBlendPlusLighter())
+func (c *Comp) MixBlendPlusLighter() *Comp {
+	c.El.Style(styles.MixBlendPlusLighter())
 	return c
 }
 
-func (c *component) MixBlendSaturation() *component {
-	c.el.Style(styles.MixBlendSaturation())
+func (c *Comp) MixBlendSaturation() *Comp {
+	c.El.Style(styles.MixBlendSaturation())
 	return c
 }
 
-func (c *component) MixBlendScreen() *component {
-	c.el.Style(styles.MixBlendScreen())
+func (c *Comp) MixBlendScreen() *Comp {
+	c.El.Style(styles.MixBlendScreen())
 	return c
 }
 
-func (c *component) MixBlendSoftLight() *component {
-	c.el.Style(styles.MixBlendSoftLight())
+func (c *Comp) MixBlendSoftLight() *Comp {
+	c.El.Style(styles.MixBlendSoftLight())
 	return c
 }
 
-func (c *component) Ml(number int) *component {
-	c.el.Style(styles.Ml(number))
+func (c *Comp) Ml(number int) *Comp {
+	c.El.Style(styles.Ml(number))
 	return c
 }
 
-func (c *component) MlAuto() *component {
-	c.el.Style(styles.MlAuto())
+func (c *Comp) MlAuto() *Comp {
+	c.El.Style(styles.MlAuto())
 	return c
 }
 
-func (c *component) MlBy(val value.Value) *component {
-	c.el.Style(styles.MlBy(val))
+func (c *Comp) MlBy(val value.Value) *Comp {
+	c.El.Style(styles.MlBy(val))
 	return c
 }
 
-func (c *component) MlPx() *component {
-	c.el.Style(styles.MlPx())
+func (c *Comp) MlPx() *Comp {
+	c.El.Style(styles.MlPx())
 	return c
 }
 
-func (c *component) Mr(number int) *component {
-	c.el.Style(styles.Mr(number))
+func (c *Comp) Mr(number int) *Comp {
+	c.El.Style(styles.Mr(number))
 	return c
 }
 
-func (c *component) MrAuto() *component {
-	c.el.Style(styles.MrAuto())
+func (c *Comp) MrAuto() *Comp {
+	c.El.Style(styles.MrAuto())
 	return c
 }
 
-func (c *component) MrBy(val value.Value) *component {
-	c.el.Style(styles.MrBy(val))
+func (c *Comp) MrBy(val value.Value) *Comp {
+	c.El.Style(styles.MrBy(val))
 	return c
 }
 
-func (c *component) MrPx() *component {
-	c.el.Style(styles.MrPx())
+func (c *Comp) MrPx() *Comp {
+	c.El.Style(styles.MrPx())
 	return c
 }
 
-func (c *component) Ms(number int) *component {
-	c.el.Style(styles.Ms(number))
+func (c *Comp) Ms(number int) *Comp {
+	c.El.Style(styles.Ms(number))
 	return c
 }
 
-func (c *component) MsAuto() *component {
-	c.el.Style(styles.MsAuto())
+func (c *Comp) MsAuto() *Comp {
+	c.El.Style(styles.MsAuto())
 	return c
 }
 
-func (c *component) MsBy(val value.Value) *component {
-	c.el.Style(styles.MsBy(val))
+func (c *Comp) MsBy(val value.Value) *Comp {
+	c.El.Style(styles.MsBy(val))
 	return c
 }
 
-func (c *component) MsPx() *component {
-	c.el.Style(styles.MsPx())
+func (c *Comp) MsPx() *Comp {
+	c.El.Style(styles.MsPx())
 	return c
 }
 
-func (c *component) Mt(number int) *component {
-	c.el.Style(styles.Mt(number))
+func (c *Comp) Mt(number int) *Comp {
+	c.El.Style(styles.Mt(number))
 	return c
 }
 
-func (c *component) MtAuto() *component {
-	c.el.Style(styles.MtAuto())
+func (c *Comp) MtAuto() *Comp {
+	c.El.Style(styles.MtAuto())
 	return c
 }
 
-func (c *component) MtBy(val value.Value) *component {
-	c.el.Style(styles.MtBy(val))
+func (c *Comp) MtBy(val value.Value) *Comp {
+	c.El.Style(styles.MtBy(val))
 	return c
 }
 
-func (c *component) MtPx() *component {
-	c.el.Style(styles.MtPx())
+func (c *Comp) MtPx() *Comp {
+	c.El.Style(styles.MtPx())
 	return c
 }
 
-func (c *component) Mx(number int) *component {
-	c.el.Style(styles.Mx(number))
+func (c *Comp) Mx(number int) *Comp {
+	c.El.Style(styles.Mx(number))
 	return c
 }
 
-func (c *component) MxAuto() *component {
-	c.el.Style(styles.MxAuto())
+func (c *Comp) MxAuto() *Comp {
+	c.El.Style(styles.MxAuto())
 	return c
 }
 
-func (c *component) MxBy(val value.Value) *component {
-	c.el.Style(styles.MxBy(val))
+func (c *Comp) MxBy(val value.Value) *Comp {
+	c.El.Style(styles.MxBy(val))
 	return c
 }
 
-func (c *component) MxPx() *component {
-	c.el.Style(styles.MxPx())
+func (c *Comp) MxPx() *Comp {
+	c.El.Style(styles.MxPx())
 	return c
 }
 
-func (c *component) My(number int) *component {
-	c.el.Style(styles.My(number))
+func (c *Comp) My(number int) *Comp {
+	c.El.Style(styles.My(number))
 	return c
 }
 
-func (c *component) MyAuto() *component {
-	c.el.Style(styles.MyAuto())
+func (c *Comp) MyAuto() *Comp {
+	c.El.Style(styles.MyAuto())
 	return c
 }
 
-func (c *component) MyBy(val value.Value) *component {
-	c.el.Style(styles.MyBy(val))
+func (c *Comp) MyBy(val value.Value) *Comp {
+	c.El.Style(styles.MyBy(val))
 	return c
 }
 
-func (c *component) MyPx() *component {
-	c.el.Style(styles.MyPx())
+func (c *Comp) MyPx() *Comp {
+	c.El.Style(styles.MyPx())
 	return c
 }
 
-func (c *component) NegBottom(number int) *component {
-	c.el.Style(styles.NegBottom(number))
+func (c *Comp) NegBottom(number int) *Comp {
+	c.El.Style(styles.NegBottom(number))
 	return c
 }
 
-func (c *component) NegBottomFraction(fraction float64) *component {
-	c.el.Style(styles.NegBottomFraction(fraction))
+func (c *Comp) NegBottomFraction(fraction float64) *Comp {
+	c.El.Style(styles.NegBottomFraction(fraction))
 	return c
 }
 
-func (c *component) NegBottomFull() *component {
-	c.el.Style(styles.NegBottomFull())
+func (c *Comp) NegBottomFull() *Comp {
+	c.El.Style(styles.NegBottomFull())
 	return c
 }
 
-func (c *component) NegBottomPx() *component {
-	c.el.Style(styles.NegBottomPx())
+func (c *Comp) NegBottomPx() *Comp {
+	c.El.Style(styles.NegBottomPx())
 	return c
 }
 
-func (c *component) NegCol(number int) *component {
-	c.el.Style(styles.NegCol(number))
+func (c *Comp) NegCol(number int) *Comp {
+	c.El.Style(styles.NegCol(number))
 	return c
 }
 
-func (c *component) NegColEnd(number int) *component {
-	c.el.Style(styles.NegColEnd(number))
+func (c *Comp) NegColEnd(number int) *Comp {
+	c.El.Style(styles.NegColEnd(number))
 	return c
 }
 
-func (c *component) NegColStart(number int) *component {
-	c.el.Style(styles.NegColStart(number))
+func (c *Comp) NegColStart(number int) *Comp {
+	c.El.Style(styles.NegColStart(number))
 	return c
 }
 
-func (c *component) NegEnd(number int) *component {
-	c.el.Style(styles.NegEnd(number))
+func (c *Comp) NegEnd(number int) *Comp {
+	c.El.Style(styles.NegEnd(number))
 	return c
 }
 
-func (c *component) NegEndFraction(fraction float64) *component {
-	c.el.Style(styles.NegEndFraction(fraction))
+func (c *Comp) NegEndFraction(fraction float64) *Comp {
+	c.El.Style(styles.NegEndFraction(fraction))
 	return c
 }
 
-func (c *component) NegEndFull() *component {
-	c.el.Style(styles.NegEndFull())
+func (c *Comp) NegEndFull() *Comp {
+	c.El.Style(styles.NegEndFull())
 	return c
 }
 
-func (c *component) NegEndPx() *component {
-	c.el.Style(styles.NegEndPx())
+func (c *Comp) NegEndPx() *Comp {
+	c.El.Style(styles.NegEndPx())
 	return c
 }
 
-func (c *component) NegIndent(number int) *component {
-	c.el.Style(styles.NegIndent(number))
+func (c *Comp) NegIndent(number int) *Comp {
+	c.El.Style(styles.NegIndent(number))
 	return c
 }
 
-func (c *component) NegIndentPx() *component {
-	c.el.Style(styles.NegIndentPx())
+func (c *Comp) NegIndentPx() *Comp {
+	c.El.Style(styles.NegIndentPx())
 	return c
 }
 
-func (c *component) NegInset(number int) *component {
-	c.el.Style(styles.NegInset(number))
+func (c *Comp) NegInset(number int) *Comp {
+	c.El.Style(styles.NegInset(number))
 	return c
 }
 
-func (c *component) NegInsetFraction(fraction float64) *component {
-	c.el.Style(styles.NegInsetFraction(fraction))
+func (c *Comp) NegInsetFraction(fraction float64) *Comp {
+	c.El.Style(styles.NegInsetFraction(fraction))
 	return c
 }
 
-func (c *component) NegInsetFull() *component {
-	c.el.Style(styles.NegInsetFull())
+func (c *Comp) NegInsetFull() *Comp {
+	c.El.Style(styles.NegInsetFull())
 	return c
 }
 
-func (c *component) NegInsetPx() *component {
-	c.el.Style(styles.NegInsetPx())
+func (c *Comp) NegInsetPx() *Comp {
+	c.El.Style(styles.NegInsetPx())
 	return c
 }
 
-func (c *component) NegInsetX(number int) *component {
-	c.el.Style(styles.NegInsetX(number))
+func (c *Comp) NegInsetX(number int) *Comp {
+	c.El.Style(styles.NegInsetX(number))
 	return c
 }
 
-func (c *component) NegInsetXFraction(fraction float64) *component {
-	c.el.Style(styles.NegInsetXFraction(fraction))
+func (c *Comp) NegInsetXFraction(fraction float64) *Comp {
+	c.El.Style(styles.NegInsetXFraction(fraction))
 	return c
 }
 
-func (c *component) NegInsetXFull() *component {
-	c.el.Style(styles.NegInsetXFull())
+func (c *Comp) NegInsetXFull() *Comp {
+	c.El.Style(styles.NegInsetXFull())
 	return c
 }
 
-func (c *component) NegInsetXPx() *component {
-	c.el.Style(styles.NegInsetXPx())
+func (c *Comp) NegInsetXPx() *Comp {
+	c.El.Style(styles.NegInsetXPx())
 	return c
 }
 
-func (c *component) NegInsetY(number int) *component {
-	c.el.Style(styles.NegInsetY(number))
+func (c *Comp) NegInsetY(number int) *Comp {
+	c.El.Style(styles.NegInsetY(number))
 	return c
 }
 
-func (c *component) NegInsetYFraction(fraction float64) *component {
-	c.el.Style(styles.NegInsetYFraction(fraction))
+func (c *Comp) NegInsetYFraction(fraction float64) *Comp {
+	c.El.Style(styles.NegInsetYFraction(fraction))
 	return c
 }
 
-func (c *component) NegInsetYFull() *component {
-	c.el.Style(styles.NegInsetYFull())
+func (c *Comp) NegInsetYFull() *Comp {
+	c.El.Style(styles.NegInsetYFull())
 	return c
 }
 
-func (c *component) NegInsetYPx() *component {
-	c.el.Style(styles.NegInsetYPx())
+func (c *Comp) NegInsetYPx() *Comp {
+	c.El.Style(styles.NegInsetYPx())
 	return c
 }
 
-func (c *component) NegLeft(number int) *component {
-	c.el.Style(styles.NegLeft(number))
+func (c *Comp) NegLeft(number int) *Comp {
+	c.El.Style(styles.NegLeft(number))
 	return c
 }
 
-func (c *component) NegLeftFraction(fraction float64) *component {
-	c.el.Style(styles.NegLeftFraction(fraction))
+func (c *Comp) NegLeftFraction(fraction float64) *Comp {
+	c.El.Style(styles.NegLeftFraction(fraction))
 	return c
 }
 
-func (c *component) NegLeftFull() *component {
-	c.el.Style(styles.NegLeftFull())
+func (c *Comp) NegLeftFull() *Comp {
+	c.El.Style(styles.NegLeftFull())
 	return c
 }
 
-func (c *component) NegLeftPx() *component {
-	c.el.Style(styles.NegLeftPx())
+func (c *Comp) NegLeftPx() *Comp {
+	c.El.Style(styles.NegLeftPx())
 	return c
 }
 
-func (c *component) NegM(number int) *component {
-	c.el.Style(styles.NegM(number))
+func (c *Comp) NegM(number int) *Comp {
+	c.El.Style(styles.NegM(number))
 	return c
 }
 
-func (c *component) NegMPx() *component {
-	c.el.Style(styles.NegMPx())
+func (c *Comp) NegMPx() *Comp {
+	c.El.Style(styles.NegMPx())
 	return c
 }
 
-func (c *component) NegMb(number int) *component {
-	c.el.Style(styles.NegMb(number))
+func (c *Comp) NegMb(number int) *Comp {
+	c.El.Style(styles.NegMb(number))
 	return c
 }
 
-func (c *component) NegMbPx() *component {
-	c.el.Style(styles.NegMbPx())
+func (c *Comp) NegMbPx() *Comp {
+	c.El.Style(styles.NegMbPx())
 	return c
 }
 
-func (c *component) NegMe(number int) *component {
-	c.el.Style(styles.NegMe(number))
+func (c *Comp) NegMe(number int) *Comp {
+	c.El.Style(styles.NegMe(number))
 	return c
 }
 
-func (c *component) NegMePx() *component {
-	c.el.Style(styles.NegMePx())
+func (c *Comp) NegMePx() *Comp {
+	c.El.Style(styles.NegMePx())
 	return c
 }
 
-func (c *component) NegMl(number int) *component {
-	c.el.Style(styles.NegMl(number))
+func (c *Comp) NegMl(number int) *Comp {
+	c.El.Style(styles.NegMl(number))
 	return c
 }
 
-func (c *component) NegMlPx() *component {
-	c.el.Style(styles.NegMlPx())
+func (c *Comp) NegMlPx() *Comp {
+	c.El.Style(styles.NegMlPx())
 	return c
 }
 
-func (c *component) NegMr(number int) *component {
-	c.el.Style(styles.NegMr(number))
+func (c *Comp) NegMr(number int) *Comp {
+	c.El.Style(styles.NegMr(number))
 	return c
 }
 
-func (c *component) NegMrPx() *component {
-	c.el.Style(styles.NegMrPx())
+func (c *Comp) NegMrPx() *Comp {
+	c.El.Style(styles.NegMrPx())
 	return c
 }
 
-func (c *component) NegMs(number int) *component {
-	c.el.Style(styles.NegMs(number))
+func (c *Comp) NegMs(number int) *Comp {
+	c.El.Style(styles.NegMs(number))
 	return c
 }
 
-func (c *component) NegMsPx() *component {
-	c.el.Style(styles.NegMsPx())
+func (c *Comp) NegMsPx() *Comp {
+	c.El.Style(styles.NegMsPx())
 	return c
 }
 
-func (c *component) NegMt(number int) *component {
-	c.el.Style(styles.NegMt(number))
+func (c *Comp) NegMt(number int) *Comp {
+	c.El.Style(styles.NegMt(number))
 	return c
 }
 
-func (c *component) NegMtPx() *component {
-	c.el.Style(styles.NegMtPx())
+func (c *Comp) NegMtPx() *Comp {
+	c.El.Style(styles.NegMtPx())
 	return c
 }
 
-func (c *component) NegMx(number int) *component {
-	c.el.Style(styles.NegMx(number))
+func (c *Comp) NegMx(number int) *Comp {
+	c.El.Style(styles.NegMx(number))
 	return c
 }
 
-func (c *component) NegMxPx() *component {
-	c.el.Style(styles.NegMxPx())
+func (c *Comp) NegMxPx() *Comp {
+	c.El.Style(styles.NegMxPx())
 	return c
 }
 
-func (c *component) NegMy(number int) *component {
-	c.el.Style(styles.NegMy(number))
+func (c *Comp) NegMy(number int) *Comp {
+	c.El.Style(styles.NegMy(number))
 	return c
 }
 
-func (c *component) NegMyPx() *component {
-	c.el.Style(styles.NegMyPx())
+func (c *Comp) NegMyPx() *Comp {
+	c.El.Style(styles.NegMyPx())
 	return c
 }
 
-func (c *component) NegOrder(number int) *component {
-	c.el.Style(styles.NegOrder(number))
+func (c *Comp) NegOrder(number int) *Comp {
+	c.El.Style(styles.NegOrder(number))
 	return c
 }
 
-func (c *component) NegRight(number int) *component {
-	c.el.Style(styles.NegRight(number))
+func (c *Comp) NegRight(number int) *Comp {
+	c.El.Style(styles.NegRight(number))
 	return c
 }
 
-func (c *component) NegRightFraction(fraction float64) *component {
-	c.el.Style(styles.NegRightFraction(fraction))
+func (c *Comp) NegRightFraction(fraction float64) *Comp {
+	c.El.Style(styles.NegRightFraction(fraction))
 	return c
 }
 
-func (c *component) NegRightFull() *component {
-	c.el.Style(styles.NegRightFull())
+func (c *Comp) NegRightFull() *Comp {
+	c.El.Style(styles.NegRightFull())
 	return c
 }
 
-func (c *component) NegRightPx() *component {
-	c.el.Style(styles.NegRightPx())
+func (c *Comp) NegRightPx() *Comp {
+	c.El.Style(styles.NegRightPx())
 	return c
 }
 
-func (c *component) NegRow(number int) *component {
-	c.el.Style(styles.NegRow(number))
+func (c *Comp) NegRow(number int) *Comp {
+	c.El.Style(styles.NegRow(number))
 	return c
 }
 
-func (c *component) NegRowEnd(number int) *component {
-	c.el.Style(styles.NegRowEnd(number))
+func (c *Comp) NegRowEnd(number int) *Comp {
+	c.El.Style(styles.NegRowEnd(number))
 	return c
 }
 
-func (c *component) NegRowStart(number int) *component {
-	c.el.Style(styles.NegRowStart(number))
+func (c *Comp) NegRowStart(number int) *Comp {
+	c.El.Style(styles.NegRowStart(number))
 	return c
 }
 
-func (c *component) NegStart(number int) *component {
-	c.el.Style(styles.NegStart(number))
+func (c *Comp) NegStart(number int) *Comp {
+	c.El.Style(styles.NegStart(number))
 	return c
 }
 
-func (c *component) NegStartFraction(fraction float64) *component {
-	c.el.Style(styles.NegStartFraction(fraction))
+func (c *Comp) NegStartFraction(fraction float64) *Comp {
+	c.El.Style(styles.NegStartFraction(fraction))
 	return c
 }
 
-func (c *component) NegStartFull() *component {
-	c.el.Style(styles.NegStartFull())
+func (c *Comp) NegStartFull() *Comp {
+	c.El.Style(styles.NegStartFull())
 	return c
 }
 
-func (c *component) NegStartPx() *component {
-	c.el.Style(styles.NegStartPx())
+func (c *Comp) NegStartPx() *Comp {
+	c.El.Style(styles.NegStartPx())
 	return c
 }
 
-func (c *component) NegTop(number int) *component {
-	c.el.Style(styles.NegTop(number))
+func (c *Comp) NegTop(number int) *Comp {
+	c.El.Style(styles.NegTop(number))
 	return c
 }
 
-func (c *component) NegTopFraction(fraction float64) *component {
-	c.el.Style(styles.NegTopFraction(fraction))
+func (c *Comp) NegTopFraction(fraction float64) *Comp {
+	c.El.Style(styles.NegTopFraction(fraction))
 	return c
 }
 
-func (c *component) NegTopFull() *component {
-	c.el.Style(styles.NegTopFull())
+func (c *Comp) NegTopFull() *Comp {
+	c.El.Style(styles.NegTopFull())
 	return c
 }
 
-func (c *component) NegTopPx() *component {
-	c.el.Style(styles.NegTopPx())
+func (c *Comp) NegTopPx() *Comp {
+	c.El.Style(styles.NegTopPx())
 	return c
 }
 
-func (c *component) NegTranslate(val any) *component {
-	c.el.Style(styles.NegTranslate(val))
+func (c *Comp) NegTranslate(val any) *Comp {
+	c.El.Style(styles.NegTranslate(val))
 	return c
 }
 
-func (c *component) NegTranslateFull() *component {
-	c.el.Style(styles.NegTranslateFull())
+func (c *Comp) NegTranslateFull() *Comp {
+	c.El.Style(styles.NegTranslateFull())
 	return c
 }
 
-func (c *component) NegTranslatePx() *component {
-	c.el.Style(styles.NegTranslatePx())
+func (c *Comp) NegTranslatePx() *Comp {
+	c.El.Style(styles.NegTranslatePx())
 	return c
 }
 
-func (c *component) NegTranslateX(val any) *component {
-	c.el.Style(styles.NegTranslateX(val))
+func (c *Comp) NegTranslateX(val any) *Comp {
+	c.El.Style(styles.NegTranslateX(val))
 	return c
 }
 
-func (c *component) NegTranslateXFull() *component {
-	c.el.Style(styles.NegTranslateXFull())
+func (c *Comp) NegTranslateXFull() *Comp {
+	c.El.Style(styles.NegTranslateXFull())
 	return c
 }
 
-func (c *component) NegTranslateXPx() *component {
-	c.el.Style(styles.NegTranslateXPx())
+func (c *Comp) NegTranslateXPx() *Comp {
+	c.El.Style(styles.NegTranslateXPx())
 	return c
 }
 
-func (c *component) NegTranslateY(val any) *component {
-	c.el.Style(styles.NegTranslateY(val))
+func (c *Comp) NegTranslateY(val any) *Comp {
+	c.El.Style(styles.NegTranslateY(val))
 	return c
 }
 
-func (c *component) NegTranslateYFull() *component {
-	c.el.Style(styles.NegTranslateYFull())
+func (c *Comp) NegTranslateYFull() *Comp {
+	c.El.Style(styles.NegTranslateYFull())
 	return c
 }
 
-func (c *component) NegTranslateYPx() *component {
-	c.el.Style(styles.NegTranslateYPx())
+func (c *Comp) NegTranslateYPx() *Comp {
+	c.El.Style(styles.NegTranslateYPx())
 	return c
 }
 
-func (c *component) NegTranslateZ(val any) *component {
-	c.el.Style(styles.NegTranslateZ(val))
+func (c *Comp) NegTranslateZ(val any) *Comp {
+	c.El.Style(styles.NegTranslateZ(val))
 	return c
 }
 
-func (c *component) NegTranslateZPx() *component {
-	c.el.Style(styles.NegTranslateZPx())
+func (c *Comp) NegTranslateZPx() *Comp {
+	c.El.Style(styles.NegTranslateZPx())
 	return c
 }
 
-func (c *component) NegUnderlineOffset(number int) *component {
-	c.el.Style(styles.NegUnderlineOffset(number))
+func (c *Comp) NegUnderlineOffset(number int) *Comp {
+	c.El.Style(styles.NegUnderlineOffset(number))
 	return c
 }
 
-func (c *component) NoUnderline() *component {
-	c.el.Style(styles.NoUnderline())
+func (c *Comp) NoUnderline() *Comp {
+	c.El.Style(styles.NoUnderline())
 	return c
 }
 
-func (c *component) NormalCase() *component {
-	c.el.Style(styles.NormalCase())
+func (c *Comp) NormalCase() *Comp {
+	c.El.Style(styles.NormalCase())
 	return c
 }
 
-func (c *component) NormalNums() *component {
-	c.el.Style(styles.NormalNums())
+func (c *Comp) NormalNums() *Comp {
+	c.El.Style(styles.NormalNums())
 	return c
 }
 
-func (c *component) NotItalic() *component {
-	c.el.Style(styles.NotItalic())
+func (c *Comp) NotItalic() *Comp {
+	c.El.Style(styles.NotItalic())
 	return c
 }
 
-func (c *component) NotSrOnly() *component {
-	c.el.Style(styles.NotSrOnly())
+func (c *Comp) NotSrOnly() *Comp {
+	c.El.Style(styles.NotSrOnly())
 	return c
 }
 
-func (c *component) ObjectBottom() *component {
-	c.el.Style(styles.ObjectBottom())
+func (c *Comp) ObjectBottom() *Comp {
+	c.El.Style(styles.ObjectBottom())
 	return c
 }
 
-func (c *component) ObjectBottomLeft() *component {
-	c.el.Style(styles.ObjectBottomLeft())
+func (c *Comp) ObjectBottomLeft() *Comp {
+	c.El.Style(styles.ObjectBottomLeft())
 	return c
 }
 
-func (c *component) ObjectBottomRight() *component {
-	c.el.Style(styles.ObjectBottomRight())
+func (c *Comp) ObjectBottomRight() *Comp {
+	c.El.Style(styles.ObjectBottomRight())
 	return c
 }
 
-func (c *component) ObjectBy(val value.Value) *component {
-	c.el.Style(styles.ObjectBy(val))
+func (c *Comp) ObjectBy(val value.Value) *Comp {
+	c.El.Style(styles.ObjectBy(val))
 	return c
 }
 
-func (c *component) ObjectCenter() *component {
-	c.el.Style(styles.ObjectCenter())
+func (c *Comp) ObjectCenter() *Comp {
+	c.El.Style(styles.ObjectCenter())
 	return c
 }
 
-func (c *component) ObjectContain() *component {
-	c.el.Style(styles.ObjectContain())
+func (c *Comp) ObjectContain() *Comp {
+	c.El.Style(styles.ObjectContain())
 	return c
 }
 
-func (c *component) ObjectCover() *component {
-	c.el.Style(styles.ObjectCover())
+func (c *Comp) ObjectCover() *Comp {
+	c.El.Style(styles.ObjectCover())
 	return c
 }
 
-func (c *component) ObjectFill() *component {
-	c.el.Style(styles.ObjectFill())
+func (c *Comp) ObjectFill() *Comp {
+	c.El.Style(styles.ObjectFill())
 	return c
 }
 
-func (c *component) ObjectLeft() *component {
-	c.el.Style(styles.ObjectLeft())
+func (c *Comp) ObjectLeft() *Comp {
+	c.El.Style(styles.ObjectLeft())
 	return c
 }
 
-func (c *component) ObjectNone() *component {
-	c.el.Style(styles.ObjectNone())
+func (c *Comp) ObjectNone() *Comp {
+	c.El.Style(styles.ObjectNone())
 	return c
 }
 
-func (c *component) ObjectRight() *component {
-	c.el.Style(styles.ObjectRight())
+func (c *Comp) ObjectRight() *Comp {
+	c.El.Style(styles.ObjectRight())
 	return c
 }
 
-func (c *component) ObjectScaleDown() *component {
-	c.el.Style(styles.ObjectScaleDown())
+func (c *Comp) ObjectScaleDown() *Comp {
+	c.El.Style(styles.ObjectScaleDown())
 	return c
 }
 
-func (c *component) ObjectTop() *component {
-	c.el.Style(styles.ObjectTop())
+func (c *Comp) ObjectTop() *Comp {
+	c.El.Style(styles.ObjectTop())
 	return c
 }
 
-func (c *component) ObjectTopLeft() *component {
-	c.el.Style(styles.ObjectTopLeft())
+func (c *Comp) ObjectTopLeft() *Comp {
+	c.El.Style(styles.ObjectTopLeft())
 	return c
 }
 
-func (c *component) ObjectTopRight() *component {
-	c.el.Style(styles.ObjectTopRight())
+func (c *Comp) ObjectTopRight() *Comp {
+	c.El.Style(styles.ObjectTopRight())
 	return c
 }
 
-func (c *component) OldStyleNums() *component {
-	c.el.Style(styles.OldStyleNums())
+func (c *Comp) OldStyleNums() *Comp {
+	c.El.Style(styles.OldStyleNums())
 	return c
 }
 
-func (c *component) Opacity(val value.Value) *component {
-	c.el.Style(styles.Opacity(val))
+func (c *Comp) Opacity(val value.Value) *Comp {
+	c.El.Style(styles.Opacity(val))
 	return c
 }
 
-func (c *component) Order(number int) *component {
-	c.el.Style(styles.Order(number))
+func (c *Comp) Order(number int) *Comp {
+	c.El.Style(styles.Order(number))
 	return c
 }
 
-func (c *component) OrderBy(val value.Value) *component {
-	c.el.Style(styles.OrderBy(val))
+func (c *Comp) OrderBy(val value.Value) *Comp {
+	c.El.Style(styles.OrderBy(val))
 	return c
 }
 
-func (c *component) OrderFirst() *component {
-	c.el.Style(styles.OrderFirst())
+func (c *Comp) OrderFirst() *Comp {
+	c.El.Style(styles.OrderFirst())
 	return c
 }
 
-func (c *component) OrderLast() *component {
-	c.el.Style(styles.OrderLast())
+func (c *Comp) OrderLast() *Comp {
+	c.El.Style(styles.OrderLast())
 	return c
 }
 
-func (c *component) Ordinal() *component {
-	c.el.Style(styles.Ordinal())
+func (c *Comp) Ordinal() *Comp {
+	c.El.Style(styles.Ordinal())
 	return c
 }
 
-func (c *component) Origin(val value.Value) *component {
-	c.el.Style(styles.Origin(val))
+func (c *Comp) Origin(val value.Value) *Comp {
+	c.El.Style(styles.Origin(val))
 	return c
 }
 
-func (c *component) OriginBottom() *component {
-	c.el.Style(styles.OriginBottom())
+func (c *Comp) OriginBottom() *Comp {
+	c.El.Style(styles.OriginBottom())
 	return c
 }
 
-func (c *component) OriginBottomLeft() *component {
-	c.el.Style(styles.OriginBottomLeft())
+func (c *Comp) OriginBottomLeft() *Comp {
+	c.El.Style(styles.OriginBottomLeft())
 	return c
 }
 
-func (c *component) OriginBottomRight() *component {
-	c.el.Style(styles.OriginBottomRight())
+func (c *Comp) OriginBottomRight() *Comp {
+	c.El.Style(styles.OriginBottomRight())
 	return c
 }
 
-func (c *component) OriginCenter() *component {
-	c.el.Style(styles.OriginCenter())
+func (c *Comp) OriginCenter() *Comp {
+	c.El.Style(styles.OriginCenter())
 	return c
 }
 
-func (c *component) OriginLeft() *component {
-	c.el.Style(styles.OriginLeft())
+func (c *Comp) OriginLeft() *Comp {
+	c.El.Style(styles.OriginLeft())
 	return c
 }
 
-func (c *component) OriginRight() *component {
-	c.el.Style(styles.OriginRight())
+func (c *Comp) OriginRight() *Comp {
+	c.El.Style(styles.OriginRight())
 	return c
 }
 
-func (c *component) OriginTop() *component {
-	c.el.Style(styles.OriginTop())
+func (c *Comp) OriginTop() *Comp {
+	c.El.Style(styles.OriginTop())
 	return c
 }
 
-func (c *component) OriginTopLeft() *component {
-	c.el.Style(styles.OriginTopLeft())
+func (c *Comp) OriginTopLeft() *Comp {
+	c.El.Style(styles.OriginTopLeft())
 	return c
 }
 
-func (c *component) OriginTopRight() *component {
-	c.el.Style(styles.OriginTopRight())
+func (c *Comp) OriginTopRight() *Comp {
+	c.El.Style(styles.OriginTopRight())
 	return c
 }
 
-func (c *component) Outline(val ...value.Value) *component {
-	c.el.Style(styles.Outline(val...))
+func (c *Comp) Outline(val ...value.Value) *Comp {
+	c.El.Style(styles.Outline(val...))
 	return c
 }
 
-func (c *component) OutlineAmber(scale int) *component {
-	c.el.Style(styles.OutlineAmber(scale))
+func (c *Comp) OutlineAmber(scale int) *Comp {
+	c.El.Style(styles.OutlineAmber(scale))
 	return c
 }
 
-func (c *component) OutlineAmberAlpha(scale int) *component {
-	c.el.Style(styles.OutlineAmberAlpha(scale))
+func (c *Comp) OutlineAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineAmberAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineAmberDark(scale int) *component {
-	c.el.Style(styles.OutlineAmberDark(scale))
+func (c *Comp) OutlineAmberDark(scale int) *Comp {
+	c.El.Style(styles.OutlineAmberDark(scale))
 	return c
 }
 
-func (c *component) OutlineAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineAmberDarkAlpha(scale))
+func (c *Comp) OutlineAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineBlack() *component {
-	c.el.Style(styles.OutlineBlack())
+func (c *Comp) OutlineBlack() *Comp {
+	c.El.Style(styles.OutlineBlack())
 	return c
 }
 
-func (c *component) OutlineBlackAlpha(scale int) *component {
-	c.el.Style(styles.OutlineBlackAlpha(scale))
+func (c *Comp) OutlineBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineBlackAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineBlue(scale int) *component {
-	c.el.Style(styles.OutlineBlue(scale))
+func (c *Comp) OutlineBlue(scale int) *Comp {
+	c.El.Style(styles.OutlineBlue(scale))
 	return c
 }
 
-func (c *component) OutlineBlueAlpha(scale int) *component {
-	c.el.Style(styles.OutlineBlueAlpha(scale))
+func (c *Comp) OutlineBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineBlueAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineBlueDark(scale int) *component {
-	c.el.Style(styles.OutlineBlueDark(scale))
+func (c *Comp) OutlineBlueDark(scale int) *Comp {
+	c.El.Style(styles.OutlineBlueDark(scale))
 	return c
 }
 
-func (c *component) OutlineBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineBlueDarkAlpha(scale))
+func (c *Comp) OutlineBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineBronze(scale int) *component {
-	c.el.Style(styles.OutlineBronze(scale))
+func (c *Comp) OutlineBronze(scale int) *Comp {
+	c.El.Style(styles.OutlineBronze(scale))
 	return c
 }
 
-func (c *component) OutlineBronzeAlpha(scale int) *component {
-	c.el.Style(styles.OutlineBronzeAlpha(scale))
+func (c *Comp) OutlineBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineBronzeDark(scale int) *component {
-	c.el.Style(styles.OutlineBronzeDark(scale))
+func (c *Comp) OutlineBronzeDark(scale int) *Comp {
+	c.El.Style(styles.OutlineBronzeDark(scale))
 	return c
 }
 
-func (c *component) OutlineBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineBronzeDarkAlpha(scale))
+func (c *Comp) OutlineBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineBrown(scale int) *component {
-	c.el.Style(styles.OutlineBrown(scale))
+func (c *Comp) OutlineBrown(scale int) *Comp {
+	c.El.Style(styles.OutlineBrown(scale))
 	return c
 }
 
-func (c *component) OutlineBrownAlpha(scale int) *component {
-	c.el.Style(styles.OutlineBrownAlpha(scale))
+func (c *Comp) OutlineBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineBrownAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineBrownDark(scale int) *component {
-	c.el.Style(styles.OutlineBrownDark(scale))
+func (c *Comp) OutlineBrownDark(scale int) *Comp {
+	c.El.Style(styles.OutlineBrownDark(scale))
 	return c
 }
 
-func (c *component) OutlineBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineBrownDarkAlpha(scale))
+func (c *Comp) OutlineBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineColor(val value.Value) *component {
-	c.el.Style(styles.OutlineColor(val))
+func (c *Comp) OutlineColor(val value.Value) *Comp {
+	c.El.Style(styles.OutlineColor(val))
 	return c
 }
 
-func (c *component) OutlineCrimson(scale int) *component {
-	c.el.Style(styles.OutlineCrimson(scale))
+func (c *Comp) OutlineCrimson(scale int) *Comp {
+	c.El.Style(styles.OutlineCrimson(scale))
 	return c
 }
 
-func (c *component) OutlineCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.OutlineCrimsonAlpha(scale))
+func (c *Comp) OutlineCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineCrimsonDark(scale int) *component {
-	c.el.Style(styles.OutlineCrimsonDark(scale))
+func (c *Comp) OutlineCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.OutlineCrimsonDark(scale))
 	return c
 }
 
-func (c *component) OutlineCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineCrimsonDarkAlpha(scale))
+func (c *Comp) OutlineCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineCurrent() *component {
-	c.el.Style(styles.OutlineCurrent())
+func (c *Comp) OutlineCurrent() *Comp {
+	c.El.Style(styles.OutlineCurrent())
 	return c
 }
 
-func (c *component) OutlineCyan(scale int) *component {
-	c.el.Style(styles.OutlineCyan(scale))
+func (c *Comp) OutlineCyan(scale int) *Comp {
+	c.El.Style(styles.OutlineCyan(scale))
 	return c
 }
 
-func (c *component) OutlineCyanAlpha(scale int) *component {
-	c.el.Style(styles.OutlineCyanAlpha(scale))
+func (c *Comp) OutlineCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineCyanAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineCyanDark(scale int) *component {
-	c.el.Style(styles.OutlineCyanDark(scale))
+func (c *Comp) OutlineCyanDark(scale int) *Comp {
+	c.El.Style(styles.OutlineCyanDark(scale))
 	return c
 }
 
-func (c *component) OutlineCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineCyanDarkAlpha(scale))
+func (c *Comp) OutlineCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineDashed() *component {
-	c.el.Style(styles.OutlineDashed())
+func (c *Comp) OutlineDashed() *Comp {
+	c.El.Style(styles.OutlineDashed())
 	return c
 }
 
-func (c *component) OutlineDotted() *component {
-	c.el.Style(styles.OutlineDotted())
+func (c *Comp) OutlineDotted() *Comp {
+	c.El.Style(styles.OutlineDotted())
 	return c
 }
 
-func (c *component) OutlineDouble() *component {
-	c.el.Style(styles.OutlineDouble())
+func (c *Comp) OutlineDouble() *Comp {
+	c.El.Style(styles.OutlineDouble())
 	return c
 }
 
-func (c *component) OutlineGold(scale int) *component {
-	c.el.Style(styles.OutlineGold(scale))
+func (c *Comp) OutlineGold(scale int) *Comp {
+	c.El.Style(styles.OutlineGold(scale))
 	return c
 }
 
-func (c *component) OutlineGoldAlpha(scale int) *component {
-	c.el.Style(styles.OutlineGoldAlpha(scale))
+func (c *Comp) OutlineGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineGoldAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineGoldDark(scale int) *component {
-	c.el.Style(styles.OutlineGoldDark(scale))
+func (c *Comp) OutlineGoldDark(scale int) *Comp {
+	c.El.Style(styles.OutlineGoldDark(scale))
 	return c
 }
 
-func (c *component) OutlineGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineGoldDarkAlpha(scale))
+func (c *Comp) OutlineGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineGrass(scale int) *component {
-	c.el.Style(styles.OutlineGrass(scale))
+func (c *Comp) OutlineGrass(scale int) *Comp {
+	c.El.Style(styles.OutlineGrass(scale))
 	return c
 }
 
-func (c *component) OutlineGrassAlpha(scale int) *component {
-	c.el.Style(styles.OutlineGrassAlpha(scale))
+func (c *Comp) OutlineGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineGrassAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineGrassDark(scale int) *component {
-	c.el.Style(styles.OutlineGrassDark(scale))
+func (c *Comp) OutlineGrassDark(scale int) *Comp {
+	c.El.Style(styles.OutlineGrassDark(scale))
 	return c
 }
 
-func (c *component) OutlineGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineGrassDarkAlpha(scale))
+func (c *Comp) OutlineGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineGray(scale int) *component {
-	c.el.Style(styles.OutlineGray(scale))
+func (c *Comp) OutlineGray(scale int) *Comp {
+	c.El.Style(styles.OutlineGray(scale))
 	return c
 }
 
-func (c *component) OutlineGrayAlpha(scale int) *component {
-	c.el.Style(styles.OutlineGrayAlpha(scale))
+func (c *Comp) OutlineGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineGrayAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineGrayDark(scale int) *component {
-	c.el.Style(styles.OutlineGrayDark(scale))
+func (c *Comp) OutlineGrayDark(scale int) *Comp {
+	c.El.Style(styles.OutlineGrayDark(scale))
 	return c
 }
 
-func (c *component) OutlineGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineGrayDarkAlpha(scale))
+func (c *Comp) OutlineGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineGreen(scale int) *component {
-	c.el.Style(styles.OutlineGreen(scale))
+func (c *Comp) OutlineGreen(scale int) *Comp {
+	c.El.Style(styles.OutlineGreen(scale))
 	return c
 }
 
-func (c *component) OutlineGreenAlpha(scale int) *component {
-	c.el.Style(styles.OutlineGreenAlpha(scale))
+func (c *Comp) OutlineGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineGreenAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineGreenDark(scale int) *component {
-	c.el.Style(styles.OutlineGreenDark(scale))
+func (c *Comp) OutlineGreenDark(scale int) *Comp {
+	c.El.Style(styles.OutlineGreenDark(scale))
 	return c
 }
 
-func (c *component) OutlineGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineGreenDarkAlpha(scale))
+func (c *Comp) OutlineGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineHidden() *component {
-	c.el.Style(styles.OutlineHidden())
+func (c *Comp) OutlineHidden() *Comp {
+	c.El.Style(styles.OutlineHidden())
 	return c
 }
 
-func (c *component) OutlineIndigo(scale int) *component {
-	c.el.Style(styles.OutlineIndigo(scale))
+func (c *Comp) OutlineIndigo(scale int) *Comp {
+	c.El.Style(styles.OutlineIndigo(scale))
 	return c
 }
 
-func (c *component) OutlineIndigoAlpha(scale int) *component {
-	c.el.Style(styles.OutlineIndigoAlpha(scale))
+func (c *Comp) OutlineIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineIndigoDark(scale int) *component {
-	c.el.Style(styles.OutlineIndigoDark(scale))
+func (c *Comp) OutlineIndigoDark(scale int) *Comp {
+	c.El.Style(styles.OutlineIndigoDark(scale))
 	return c
 }
 
-func (c *component) OutlineIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineIndigoDarkAlpha(scale))
+func (c *Comp) OutlineIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineInherit() *component {
-	c.el.Style(styles.OutlineInherit())
+func (c *Comp) OutlineInherit() *Comp {
+	c.El.Style(styles.OutlineInherit())
 	return c
 }
 
-func (c *component) OutlineIris(scale int) *component {
-	c.el.Style(styles.OutlineIris(scale))
+func (c *Comp) OutlineIris(scale int) *Comp {
+	c.El.Style(styles.OutlineIris(scale))
 	return c
 }
 
-func (c *component) OutlineIrisAlpha(scale int) *component {
-	c.el.Style(styles.OutlineIrisAlpha(scale))
+func (c *Comp) OutlineIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineIrisAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineIrisDark(scale int) *component {
-	c.el.Style(styles.OutlineIrisDark(scale))
+func (c *Comp) OutlineIrisDark(scale int) *Comp {
+	c.El.Style(styles.OutlineIrisDark(scale))
 	return c
 }
 
-func (c *component) OutlineIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineIrisDarkAlpha(scale))
+func (c *Comp) OutlineIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineJade(scale int) *component {
-	c.el.Style(styles.OutlineJade(scale))
+func (c *Comp) OutlineJade(scale int) *Comp {
+	c.El.Style(styles.OutlineJade(scale))
 	return c
 }
 
-func (c *component) OutlineJadeAlpha(scale int) *component {
-	c.el.Style(styles.OutlineJadeAlpha(scale))
+func (c *Comp) OutlineJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineJadeAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineJadeDark(scale int) *component {
-	c.el.Style(styles.OutlineJadeDark(scale))
+func (c *Comp) OutlineJadeDark(scale int) *Comp {
+	c.El.Style(styles.OutlineJadeDark(scale))
 	return c
 }
 
-func (c *component) OutlineJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineJadeDarkAlpha(scale))
+func (c *Comp) OutlineJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineLime(scale int) *component {
-	c.el.Style(styles.OutlineLime(scale))
+func (c *Comp) OutlineLime(scale int) *Comp {
+	c.El.Style(styles.OutlineLime(scale))
 	return c
 }
 
-func (c *component) OutlineLimeAlpha(scale int) *component {
-	c.el.Style(styles.OutlineLimeAlpha(scale))
+func (c *Comp) OutlineLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineLimeAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineLimeDark(scale int) *component {
-	c.el.Style(styles.OutlineLimeDark(scale))
+func (c *Comp) OutlineLimeDark(scale int) *Comp {
+	c.El.Style(styles.OutlineLimeDark(scale))
 	return c
 }
 
-func (c *component) OutlineLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineLimeDarkAlpha(scale))
+func (c *Comp) OutlineLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineMauve(scale int) *component {
-	c.el.Style(styles.OutlineMauve(scale))
+func (c *Comp) OutlineMauve(scale int) *Comp {
+	c.El.Style(styles.OutlineMauve(scale))
 	return c
 }
 
-func (c *component) OutlineMauveAlpha(scale int) *component {
-	c.el.Style(styles.OutlineMauveAlpha(scale))
+func (c *Comp) OutlineMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineMauveAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineMauveDark(scale int) *component {
-	c.el.Style(styles.OutlineMauveDark(scale))
+func (c *Comp) OutlineMauveDark(scale int) *Comp {
+	c.El.Style(styles.OutlineMauveDark(scale))
 	return c
 }
 
-func (c *component) OutlineMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineMauveDarkAlpha(scale))
+func (c *Comp) OutlineMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineMint(scale int) *component {
-	c.el.Style(styles.OutlineMint(scale))
+func (c *Comp) OutlineMint(scale int) *Comp {
+	c.El.Style(styles.OutlineMint(scale))
 	return c
 }
 
-func (c *component) OutlineMintAlpha(scale int) *component {
-	c.el.Style(styles.OutlineMintAlpha(scale))
+func (c *Comp) OutlineMintAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineMintAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineMintDark(scale int) *component {
-	c.el.Style(styles.OutlineMintDark(scale))
+func (c *Comp) OutlineMintDark(scale int) *Comp {
+	c.El.Style(styles.OutlineMintDark(scale))
 	return c
 }
 
-func (c *component) OutlineMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineMintDarkAlpha(scale))
+func (c *Comp) OutlineMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineNone() *component {
-	c.el.Style(styles.OutlineNone())
+func (c *Comp) OutlineNone() *Comp {
+	c.El.Style(styles.OutlineNone())
 	return c
 }
 
-func (c *component) OutlineOffset(val ...value.Value) *component {
-	c.el.Style(styles.OutlineOffset(val...))
+func (c *Comp) OutlineOffset(val ...value.Value) *Comp {
+	c.El.Style(styles.OutlineOffset(val...))
 	return c
 }
 
-func (c *component) OutlineOlive(scale int) *component {
-	c.el.Style(styles.OutlineOlive(scale))
+func (c *Comp) OutlineOlive(scale int) *Comp {
+	c.El.Style(styles.OutlineOlive(scale))
 	return c
 }
 
-func (c *component) OutlineOliveAlpha(scale int) *component {
-	c.el.Style(styles.OutlineOliveAlpha(scale))
+func (c *Comp) OutlineOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineOliveAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineOliveDark(scale int) *component {
-	c.el.Style(styles.OutlineOliveDark(scale))
+func (c *Comp) OutlineOliveDark(scale int) *Comp {
+	c.El.Style(styles.OutlineOliveDark(scale))
 	return c
 }
 
-func (c *component) OutlineOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineOliveDarkAlpha(scale))
+func (c *Comp) OutlineOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineOrange(scale int) *component {
-	c.el.Style(styles.OutlineOrange(scale))
+func (c *Comp) OutlineOrange(scale int) *Comp {
+	c.El.Style(styles.OutlineOrange(scale))
 	return c
 }
 
-func (c *component) OutlineOrangeAlpha(scale int) *component {
-	c.el.Style(styles.OutlineOrangeAlpha(scale))
+func (c *Comp) OutlineOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineOrangeDark(scale int) *component {
-	c.el.Style(styles.OutlineOrangeDark(scale))
+func (c *Comp) OutlineOrangeDark(scale int) *Comp {
+	c.El.Style(styles.OutlineOrangeDark(scale))
 	return c
 }
 
-func (c *component) OutlineOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineOrangeDarkAlpha(scale))
+func (c *Comp) OutlineOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlinePink(scale int) *component {
-	c.el.Style(styles.OutlinePink(scale))
+func (c *Comp) OutlinePink(scale int) *Comp {
+	c.El.Style(styles.OutlinePink(scale))
 	return c
 }
 
-func (c *component) OutlinePinkAlpha(scale int) *component {
-	c.el.Style(styles.OutlinePinkAlpha(scale))
+func (c *Comp) OutlinePinkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlinePinkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlinePinkDark(scale int) *component {
-	c.el.Style(styles.OutlinePinkDark(scale))
+func (c *Comp) OutlinePinkDark(scale int) *Comp {
+	c.El.Style(styles.OutlinePinkDark(scale))
 	return c
 }
 
-func (c *component) OutlinePinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlinePinkDarkAlpha(scale))
+func (c *Comp) OutlinePinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlinePinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlinePlum(scale int) *component {
-	c.el.Style(styles.OutlinePlum(scale))
+func (c *Comp) OutlinePlum(scale int) *Comp {
+	c.El.Style(styles.OutlinePlum(scale))
 	return c
 }
 
-func (c *component) OutlinePlumAlpha(scale int) *component {
-	c.el.Style(styles.OutlinePlumAlpha(scale))
+func (c *Comp) OutlinePlumAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlinePlumAlpha(scale))
 	return c
 }
 
-func (c *component) OutlinePlumDark(scale int) *component {
-	c.el.Style(styles.OutlinePlumDark(scale))
+func (c *Comp) OutlinePlumDark(scale int) *Comp {
+	c.El.Style(styles.OutlinePlumDark(scale))
 	return c
 }
 
-func (c *component) OutlinePlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlinePlumDarkAlpha(scale))
+func (c *Comp) OutlinePlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlinePlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlinePurple(scale int) *component {
-	c.el.Style(styles.OutlinePurple(scale))
+func (c *Comp) OutlinePurple(scale int) *Comp {
+	c.El.Style(styles.OutlinePurple(scale))
 	return c
 }
 
-func (c *component) OutlinePurpleAlpha(scale int) *component {
-	c.el.Style(styles.OutlinePurpleAlpha(scale))
+func (c *Comp) OutlinePurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlinePurpleAlpha(scale))
 	return c
 }
 
-func (c *component) OutlinePurpleDark(scale int) *component {
-	c.el.Style(styles.OutlinePurpleDark(scale))
+func (c *Comp) OutlinePurpleDark(scale int) *Comp {
+	c.El.Style(styles.OutlinePurpleDark(scale))
 	return c
 }
 
-func (c *component) OutlinePurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlinePurpleDarkAlpha(scale))
+func (c *Comp) OutlinePurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlinePurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineRed(scale int) *component {
-	c.el.Style(styles.OutlineRed(scale))
+func (c *Comp) OutlineRed(scale int) *Comp {
+	c.El.Style(styles.OutlineRed(scale))
 	return c
 }
 
-func (c *component) OutlineRedAlpha(scale int) *component {
-	c.el.Style(styles.OutlineRedAlpha(scale))
+func (c *Comp) OutlineRedAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineRedAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineRedDark(scale int) *component {
-	c.el.Style(styles.OutlineRedDark(scale))
+func (c *Comp) OutlineRedDark(scale int) *Comp {
+	c.El.Style(styles.OutlineRedDark(scale))
 	return c
 }
 
-func (c *component) OutlineRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineRedDarkAlpha(scale))
+func (c *Comp) OutlineRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineRuby(scale int) *component {
-	c.el.Style(styles.OutlineRuby(scale))
+func (c *Comp) OutlineRuby(scale int) *Comp {
+	c.El.Style(styles.OutlineRuby(scale))
 	return c
 }
 
-func (c *component) OutlineRubyAlpha(scale int) *component {
-	c.el.Style(styles.OutlineRubyAlpha(scale))
+func (c *Comp) OutlineRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineRubyAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineRubyDark(scale int) *component {
-	c.el.Style(styles.OutlineRubyDark(scale))
+func (c *Comp) OutlineRubyDark(scale int) *Comp {
+	c.El.Style(styles.OutlineRubyDark(scale))
 	return c
 }
 
-func (c *component) OutlineRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineRubyDarkAlpha(scale))
+func (c *Comp) OutlineRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineSage(scale int) *component {
-	c.el.Style(styles.OutlineSage(scale))
+func (c *Comp) OutlineSage(scale int) *Comp {
+	c.El.Style(styles.OutlineSage(scale))
 	return c
 }
 
-func (c *component) OutlineSageAlpha(scale int) *component {
-	c.el.Style(styles.OutlineSageAlpha(scale))
+func (c *Comp) OutlineSageAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineSageAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineSageDark(scale int) *component {
-	c.el.Style(styles.OutlineSageDark(scale))
+func (c *Comp) OutlineSageDark(scale int) *Comp {
+	c.El.Style(styles.OutlineSageDark(scale))
 	return c
 }
 
-func (c *component) OutlineSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineSageDarkAlpha(scale))
+func (c *Comp) OutlineSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineSand(scale int) *component {
-	c.el.Style(styles.OutlineSand(scale))
+func (c *Comp) OutlineSand(scale int) *Comp {
+	c.El.Style(styles.OutlineSand(scale))
 	return c
 }
 
-func (c *component) OutlineSandAlpha(scale int) *component {
-	c.el.Style(styles.OutlineSandAlpha(scale))
+func (c *Comp) OutlineSandAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineSandAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineSandDark(scale int) *component {
-	c.el.Style(styles.OutlineSandDark(scale))
+func (c *Comp) OutlineSandDark(scale int) *Comp {
+	c.El.Style(styles.OutlineSandDark(scale))
 	return c
 }
 
-func (c *component) OutlineSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineSandDarkAlpha(scale))
+func (c *Comp) OutlineSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineSky(scale int) *component {
-	c.el.Style(styles.OutlineSky(scale))
+func (c *Comp) OutlineSky(scale int) *Comp {
+	c.El.Style(styles.OutlineSky(scale))
 	return c
 }
 
-func (c *component) OutlineSkyAlpha(scale int) *component {
-	c.el.Style(styles.OutlineSkyAlpha(scale))
+func (c *Comp) OutlineSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineSkyAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineSkyDark(scale int) *component {
-	c.el.Style(styles.OutlineSkyDark(scale))
+func (c *Comp) OutlineSkyDark(scale int) *Comp {
+	c.El.Style(styles.OutlineSkyDark(scale))
 	return c
 }
 
-func (c *component) OutlineSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineSkyDarkAlpha(scale))
+func (c *Comp) OutlineSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineSlate(scale int) *component {
-	c.el.Style(styles.OutlineSlate(scale))
+func (c *Comp) OutlineSlate(scale int) *Comp {
+	c.El.Style(styles.OutlineSlate(scale))
 	return c
 }
 
-func (c *component) OutlineSlateAlpha(scale int) *component {
-	c.el.Style(styles.OutlineSlateAlpha(scale))
+func (c *Comp) OutlineSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineSlateAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineSlateDark(scale int) *component {
-	c.el.Style(styles.OutlineSlateDark(scale))
+func (c *Comp) OutlineSlateDark(scale int) *Comp {
+	c.El.Style(styles.OutlineSlateDark(scale))
 	return c
 }
 
-func (c *component) OutlineSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineSlateDarkAlpha(scale))
+func (c *Comp) OutlineSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineSolid() *component {
-	c.el.Style(styles.OutlineSolid())
+func (c *Comp) OutlineSolid() *Comp {
+	c.El.Style(styles.OutlineSolid())
 	return c
 }
 
-func (c *component) OutlineTeal(scale int) *component {
-	c.el.Style(styles.OutlineTeal(scale))
+func (c *Comp) OutlineTeal(scale int) *Comp {
+	c.El.Style(styles.OutlineTeal(scale))
 	return c
 }
 
-func (c *component) OutlineTealAlpha(scale int) *component {
-	c.el.Style(styles.OutlineTealAlpha(scale))
+func (c *Comp) OutlineTealAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineTealAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineTealDark(scale int) *component {
-	c.el.Style(styles.OutlineTealDark(scale))
+func (c *Comp) OutlineTealDark(scale int) *Comp {
+	c.El.Style(styles.OutlineTealDark(scale))
 	return c
 }
 
-func (c *component) OutlineTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineTealDarkAlpha(scale))
+func (c *Comp) OutlineTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineTomato(scale int) *component {
-	c.el.Style(styles.OutlineTomato(scale))
+func (c *Comp) OutlineTomato(scale int) *Comp {
+	c.El.Style(styles.OutlineTomato(scale))
 	return c
 }
 
-func (c *component) OutlineTomatoAlpha(scale int) *component {
-	c.el.Style(styles.OutlineTomatoAlpha(scale))
+func (c *Comp) OutlineTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineTomatoDark(scale int) *component {
-	c.el.Style(styles.OutlineTomatoDark(scale))
+func (c *Comp) OutlineTomatoDark(scale int) *Comp {
+	c.El.Style(styles.OutlineTomatoDark(scale))
 	return c
 }
 
-func (c *component) OutlineTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineTomatoDarkAlpha(scale))
+func (c *Comp) OutlineTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineTransparent() *component {
-	c.el.Style(styles.OutlineTransparent())
+func (c *Comp) OutlineTransparent() *Comp {
+	c.El.Style(styles.OutlineTransparent())
 	return c
 }
 
-func (c *component) OutlineViolet(scale int) *component {
-	c.el.Style(styles.OutlineViolet(scale))
+func (c *Comp) OutlineViolet(scale int) *Comp {
+	c.El.Style(styles.OutlineViolet(scale))
 	return c
 }
 
-func (c *component) OutlineVioletAlpha(scale int) *component {
-	c.el.Style(styles.OutlineVioletAlpha(scale))
+func (c *Comp) OutlineVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineVioletAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineVioletDark(scale int) *component {
-	c.el.Style(styles.OutlineVioletDark(scale))
+func (c *Comp) OutlineVioletDark(scale int) *Comp {
+	c.El.Style(styles.OutlineVioletDark(scale))
 	return c
 }
 
-func (c *component) OutlineVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineVioletDarkAlpha(scale))
+func (c *Comp) OutlineVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineWhite() *component {
-	c.el.Style(styles.OutlineWhite())
+func (c *Comp) OutlineWhite() *Comp {
+	c.El.Style(styles.OutlineWhite())
 	return c
 }
 
-func (c *component) OutlineWhiteAlpha(scale int) *component {
-	c.el.Style(styles.OutlineWhiteAlpha(scale))
+func (c *Comp) OutlineWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineYellow(scale int) *component {
-	c.el.Style(styles.OutlineYellow(scale))
+func (c *Comp) OutlineYellow(scale int) *Comp {
+	c.El.Style(styles.OutlineYellow(scale))
 	return c
 }
 
-func (c *component) OutlineYellowAlpha(scale int) *component {
-	c.el.Style(styles.OutlineYellowAlpha(scale))
+func (c *Comp) OutlineYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineYellowAlpha(scale))
 	return c
 }
 
-func (c *component) OutlineYellowDark(scale int) *component {
-	c.el.Style(styles.OutlineYellowDark(scale))
+func (c *Comp) OutlineYellowDark(scale int) *Comp {
+	c.El.Style(styles.OutlineYellowDark(scale))
 	return c
 }
 
-func (c *component) OutlineYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.OutlineYellowDarkAlpha(scale))
+func (c *Comp) OutlineYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.OutlineYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) OverflowAuto() *component {
-	c.el.Style(styles.OverflowAuto())
+func (c *Comp) OverflowAuto() *Comp {
+	c.El.Style(styles.OverflowAuto())
 	return c
 }
 
-func (c *component) OverflowClip() *component {
-	c.el.Style(styles.OverflowClip())
+func (c *Comp) OverflowClip() *Comp {
+	c.El.Style(styles.OverflowClip())
 	return c
 }
 
-func (c *component) OverflowHidden() *component {
-	c.el.Style(styles.OverflowHidden())
+func (c *Comp) OverflowHidden() *Comp {
+	c.El.Style(styles.OverflowHidden())
 	return c
 }
 
-func (c *component) OverflowScroll() *component {
-	c.el.Style(styles.OverflowScroll())
+func (c *Comp) OverflowScroll() *Comp {
+	c.El.Style(styles.OverflowScroll())
 	return c
 }
 
-func (c *component) OverflowVisible() *component {
-	c.el.Style(styles.OverflowVisible())
+func (c *Comp) OverflowVisible() *Comp {
+	c.El.Style(styles.OverflowVisible())
 	return c
 }
 
-func (c *component) OverflowXAuto() *component {
-	c.el.Style(styles.OverflowXAuto())
+func (c *Comp) OverflowXAuto() *Comp {
+	c.El.Style(styles.OverflowXAuto())
 	return c
 }
 
-func (c *component) OverflowXClip() *component {
-	c.el.Style(styles.OverflowXClip())
+func (c *Comp) OverflowXClip() *Comp {
+	c.El.Style(styles.OverflowXClip())
 	return c
 }
 
-func (c *component) OverflowXHidden() *component {
-	c.el.Style(styles.OverflowXHidden())
+func (c *Comp) OverflowXHidden() *Comp {
+	c.El.Style(styles.OverflowXHidden())
 	return c
 }
 
-func (c *component) OverflowXScroll() *component {
-	c.el.Style(styles.OverflowXScroll())
+func (c *Comp) OverflowXScroll() *Comp {
+	c.El.Style(styles.OverflowXScroll())
 	return c
 }
 
-func (c *component) OverflowXVisible() *component {
-	c.el.Style(styles.OverflowXVisible())
+func (c *Comp) OverflowXVisible() *Comp {
+	c.El.Style(styles.OverflowXVisible())
 	return c
 }
 
-func (c *component) OverflowYAuto() *component {
-	c.el.Style(styles.OverflowYAuto())
+func (c *Comp) OverflowYAuto() *Comp {
+	c.El.Style(styles.OverflowYAuto())
 	return c
 }
 
-func (c *component) OverflowYClip() *component {
-	c.el.Style(styles.OverflowYClip())
+func (c *Comp) OverflowYClip() *Comp {
+	c.El.Style(styles.OverflowYClip())
 	return c
 }
 
-func (c *component) OverflowYHidden() *component {
-	c.el.Style(styles.OverflowYHidden())
+func (c *Comp) OverflowYHidden() *Comp {
+	c.El.Style(styles.OverflowYHidden())
 	return c
 }
 
-func (c *component) OverflowYScroll() *component {
-	c.el.Style(styles.OverflowYScroll())
+func (c *Comp) OverflowYScroll() *Comp {
+	c.El.Style(styles.OverflowYScroll())
 	return c
 }
 
-func (c *component) OverflowYVisible() *component {
-	c.el.Style(styles.OverflowYVisible())
+func (c *Comp) OverflowYVisible() *Comp {
+	c.El.Style(styles.OverflowYVisible())
 	return c
 }
 
-func (c *component) Overline() *component {
-	c.el.Style(styles.Overline())
+func (c *Comp) Overline() *Comp {
+	c.El.Style(styles.Overline())
 	return c
 }
 
-func (c *component) OverscrollAuto() *component {
-	c.el.Style(styles.OverscrollAuto())
+func (c *Comp) OverscrollAuto() *Comp {
+	c.El.Style(styles.OverscrollAuto())
 	return c
 }
 
-func (c *component) OverscrollContain() *component {
-	c.el.Style(styles.OverscrollContain())
+func (c *Comp) OverscrollContain() *Comp {
+	c.El.Style(styles.OverscrollContain())
 	return c
 }
 
-func (c *component) OverscrollNone() *component {
-	c.el.Style(styles.OverscrollNone())
+func (c *Comp) OverscrollNone() *Comp {
+	c.El.Style(styles.OverscrollNone())
 	return c
 }
 
-func (c *component) OverscrollXAuto() *component {
-	c.el.Style(styles.OverscrollXAuto())
+func (c *Comp) OverscrollXAuto() *Comp {
+	c.El.Style(styles.OverscrollXAuto())
 	return c
 }
 
-func (c *component) OverscrollXContain() *component {
-	c.el.Style(styles.OverscrollXContain())
+func (c *Comp) OverscrollXContain() *Comp {
+	c.El.Style(styles.OverscrollXContain())
 	return c
 }
 
-func (c *component) OverscrollXNone() *component {
-	c.el.Style(styles.OverscrollXNone())
+func (c *Comp) OverscrollXNone() *Comp {
+	c.El.Style(styles.OverscrollXNone())
 	return c
 }
 
-func (c *component) OverscrollYAuto() *component {
-	c.el.Style(styles.OverscrollYAuto())
+func (c *Comp) OverscrollYAuto() *Comp {
+	c.El.Style(styles.OverscrollYAuto())
 	return c
 }
 
-func (c *component) OverscrollYContain() *component {
-	c.el.Style(styles.OverscrollYContain())
+func (c *Comp) OverscrollYContain() *Comp {
+	c.El.Style(styles.OverscrollYContain())
 	return c
 }
 
-func (c *component) OverscrollYNone() *component {
-	c.el.Style(styles.OverscrollYNone())
+func (c *Comp) OverscrollYNone() *Comp {
+	c.El.Style(styles.OverscrollYNone())
 	return c
 }
 
-func (c *component) P(number int) *component {
-	c.el.Style(styles.P(number))
+func (c *Comp) P(number int) *Comp {
+	c.El.Style(styles.P(number))
 	return c
 }
 
-func (c *component) PBy(val value.Value) *component {
-	c.el.Style(styles.PBy(val))
+func (c *Comp) PBy(val value.Value) *Comp {
+	c.El.Style(styles.PBy(val))
 	return c
 }
 
-func (c *component) PPx(number int) *component {
-	c.el.Style(styles.PPx(number))
+func (c *Comp) PPx(number int) *Comp {
+	c.El.Style(styles.PPx(number))
 	return c
 }
 
-func (c *component) Pb(number int) *component {
-	c.el.Style(styles.Pb(number))
+func (c *Comp) Pb(number int) *Comp {
+	c.El.Style(styles.Pb(number))
 	return c
 }
 
-func (c *component) PbBy(val value.Value) *component {
-	c.el.Style(styles.PbBy(val))
+func (c *Comp) PbBy(val value.Value) *Comp {
+	c.El.Style(styles.PbBy(val))
 	return c
 }
 
-func (c *component) PbPx(number int) *component {
-	c.el.Style(styles.PbPx(number))
+func (c *Comp) PbPx(number int) *Comp {
+	c.El.Style(styles.PbPx(number))
 	return c
 }
 
-func (c *component) Pe(number int) *component {
-	c.el.Style(styles.Pe(number))
+func (c *Comp) Pe(number int) *Comp {
+	c.El.Style(styles.Pe(number))
 	return c
 }
 
-func (c *component) PeBy(val value.Value) *component {
-	c.el.Style(styles.PeBy(val))
+func (c *Comp) PeBy(val value.Value) *Comp {
+	c.El.Style(styles.PeBy(val))
 	return c
 }
 
-func (c *component) PePx(number int) *component {
-	c.el.Style(styles.PePx(number))
+func (c *Comp) PePx(number int) *Comp {
+	c.El.Style(styles.PePx(number))
 	return c
 }
 
-func (c *component) Perspective(val value.Value) *component {
-	c.el.Style(styles.Perspective(val))
+func (c *Comp) Perspective(val value.Value) *Comp {
+	c.El.Style(styles.Perspective(val))
 	return c
 }
 
-func (c *component) PerspectiveDistant() *component {
-	c.el.Style(styles.PerspectiveDistant())
+func (c *Comp) PerspectiveDistant() *Comp {
+	c.El.Style(styles.PerspectiveDistant())
 	return c
 }
 
-func (c *component) PerspectiveDramatic() *component {
-	c.el.Style(styles.PerspectiveDramatic())
+func (c *Comp) PerspectiveDramatic() *Comp {
+	c.El.Style(styles.PerspectiveDramatic())
 	return c
 }
 
-func (c *component) PerspectiveMidrange() *component {
-	c.el.Style(styles.PerspectiveMidrange())
+func (c *Comp) PerspectiveMidrange() *Comp {
+	c.El.Style(styles.PerspectiveMidrange())
 	return c
 }
 
-func (c *component) PerspectiveNear() *component {
-	c.el.Style(styles.PerspectiveNear())
+func (c *Comp) PerspectiveNear() *Comp {
+	c.El.Style(styles.PerspectiveNear())
 	return c
 }
 
-func (c *component) PerspectiveNone() *component {
-	c.el.Style(styles.PerspectiveNone())
+func (c *Comp) PerspectiveNone() *Comp {
+	c.El.Style(styles.PerspectiveNone())
 	return c
 }
 
-func (c *component) PerspectiveNormal() *component {
-	c.el.Style(styles.PerspectiveNormal())
+func (c *Comp) PerspectiveNormal() *Comp {
+	c.El.Style(styles.PerspectiveNormal())
 	return c
 }
 
-func (c *component) PerspectiveOrigin(val value.Value) *component {
-	c.el.Style(styles.PerspectiveOrigin(val))
+func (c *Comp) PerspectiveOrigin(val value.Value) *Comp {
+	c.El.Style(styles.PerspectiveOrigin(val))
 	return c
 }
 
-func (c *component) PerspectiveOriginBottom() *component {
-	c.el.Style(styles.PerspectiveOriginBottom())
+func (c *Comp) PerspectiveOriginBottom() *Comp {
+	c.El.Style(styles.PerspectiveOriginBottom())
 	return c
 }
 
-func (c *component) PerspectiveOriginBottomLeft() *component {
-	c.el.Style(styles.PerspectiveOriginBottomLeft())
+func (c *Comp) PerspectiveOriginBottomLeft() *Comp {
+	c.El.Style(styles.PerspectiveOriginBottomLeft())
 	return c
 }
 
-func (c *component) PerspectiveOriginBottomRight() *component {
-	c.el.Style(styles.PerspectiveOriginBottomRight())
+func (c *Comp) PerspectiveOriginBottomRight() *Comp {
+	c.El.Style(styles.PerspectiveOriginBottomRight())
 	return c
 }
 
-func (c *component) PerspectiveOriginCenter() *component {
-	c.el.Style(styles.PerspectiveOriginCenter())
+func (c *Comp) PerspectiveOriginCenter() *Comp {
+	c.El.Style(styles.PerspectiveOriginCenter())
 	return c
 }
 
-func (c *component) PerspectiveOriginLeft() *component {
-	c.el.Style(styles.PerspectiveOriginLeft())
+func (c *Comp) PerspectiveOriginLeft() *Comp {
+	c.El.Style(styles.PerspectiveOriginLeft())
 	return c
 }
 
-func (c *component) PerspectiveOriginRight() *component {
-	c.el.Style(styles.PerspectiveOriginRight())
+func (c *Comp) PerspectiveOriginRight() *Comp {
+	c.El.Style(styles.PerspectiveOriginRight())
 	return c
 }
 
-func (c *component) PerspectiveOriginTop() *component {
-	c.el.Style(styles.PerspectiveOriginTop())
+func (c *Comp) PerspectiveOriginTop() *Comp {
+	c.El.Style(styles.PerspectiveOriginTop())
 	return c
 }
 
-func (c *component) PerspectiveOriginTopLeft() *component {
-	c.el.Style(styles.PerspectiveOriginTopLeft())
+func (c *Comp) PerspectiveOriginTopLeft() *Comp {
+	c.El.Style(styles.PerspectiveOriginTopLeft())
 	return c
 }
 
-func (c *component) PerspectiveOriginTopRight() *component {
-	c.el.Style(styles.PerspectiveOriginTopRight())
+func (c *Comp) PerspectiveOriginTopRight() *Comp {
+	c.El.Style(styles.PerspectiveOriginTopRight())
 	return c
 }
 
-func (c *component) Pl(number int) *component {
-	c.el.Style(styles.Pl(number))
+func (c *Comp) Pl(number int) *Comp {
+	c.El.Style(styles.Pl(number))
 	return c
 }
 
-func (c *component) PlBy(val value.Value) *component {
-	c.el.Style(styles.PlBy(val))
+func (c *Comp) PlBy(val value.Value) *Comp {
+	c.El.Style(styles.PlBy(val))
 	return c
 }
 
-func (c *component) PlPx(number int) *component {
-	c.el.Style(styles.PlPx(number))
+func (c *Comp) PlPx(number int) *Comp {
+	c.El.Style(styles.PlPx(number))
 	return c
 }
 
-func (c *component) PlaceContentAround() *component {
-	c.el.Style(styles.PlaceContentAround())
+func (c *Comp) PlaceContentAround() *Comp {
+	c.El.Style(styles.PlaceContentAround())
 	return c
 }
 
-func (c *component) PlaceContentBaseline() *component {
-	c.el.Style(styles.PlaceContentBaseline())
+func (c *Comp) PlaceContentBaseline() *Comp {
+	c.El.Style(styles.PlaceContentBaseline())
 	return c
 }
 
-func (c *component) PlaceContentBetween() *component {
-	c.el.Style(styles.PlaceContentBetween())
+func (c *Comp) PlaceContentBetween() *Comp {
+	c.El.Style(styles.PlaceContentBetween())
 	return c
 }
 
-func (c *component) PlaceContentCenter() *component {
-	c.el.Style(styles.PlaceContentCenter())
+func (c *Comp) PlaceContentCenter() *Comp {
+	c.El.Style(styles.PlaceContentCenter())
 	return c
 }
 
-func (c *component) PlaceContentCenterSafe() *component {
-	c.el.Style(styles.PlaceContentCenterSafe())
+func (c *Comp) PlaceContentCenterSafe() *Comp {
+	c.El.Style(styles.PlaceContentCenterSafe())
 	return c
 }
 
-func (c *component) PlaceContentEnd() *component {
-	c.el.Style(styles.PlaceContentEnd())
+func (c *Comp) PlaceContentEnd() *Comp {
+	c.El.Style(styles.PlaceContentEnd())
 	return c
 }
 
-func (c *component) PlaceContentEndSafe() *component {
-	c.el.Style(styles.PlaceContentEndSafe())
+func (c *Comp) PlaceContentEndSafe() *Comp {
+	c.El.Style(styles.PlaceContentEndSafe())
 	return c
 }
 
-func (c *component) PlaceContentEvenly() *component {
-	c.el.Style(styles.PlaceContentEvenly())
+func (c *Comp) PlaceContentEvenly() *Comp {
+	c.El.Style(styles.PlaceContentEvenly())
 	return c
 }
 
-func (c *component) PlaceContentStart() *component {
-	c.el.Style(styles.PlaceContentStart())
+func (c *Comp) PlaceContentStart() *Comp {
+	c.El.Style(styles.PlaceContentStart())
 	return c
 }
 
-func (c *component) PlaceContentStretch() *component {
-	c.el.Style(styles.PlaceContentStretch())
+func (c *Comp) PlaceContentStretch() *Comp {
+	c.El.Style(styles.PlaceContentStretch())
 	return c
 }
 
-func (c *component) PlaceItemsBaseline() *component {
-	c.el.Style(styles.PlaceItemsBaseline())
+func (c *Comp) PlaceItemsBaseline() *Comp {
+	c.El.Style(styles.PlaceItemsBaseline())
 	return c
 }
 
-func (c *component) PlaceItemsCenter() *component {
-	c.el.Style(styles.PlaceItemsCenter())
+func (c *Comp) PlaceItemsCenter() *Comp {
+	c.El.Style(styles.PlaceItemsCenter())
 	return c
 }
 
-func (c *component) PlaceItemsCenterSafe() *component {
-	c.el.Style(styles.PlaceItemsCenterSafe())
+func (c *Comp) PlaceItemsCenterSafe() *Comp {
+	c.El.Style(styles.PlaceItemsCenterSafe())
 	return c
 }
 
-func (c *component) PlaceItemsEnd() *component {
-	c.el.Style(styles.PlaceItemsEnd())
+func (c *Comp) PlaceItemsEnd() *Comp {
+	c.El.Style(styles.PlaceItemsEnd())
 	return c
 }
 
-func (c *component) PlaceItemsEndSafe() *component {
-	c.el.Style(styles.PlaceItemsEndSafe())
+func (c *Comp) PlaceItemsEndSafe() *Comp {
+	c.El.Style(styles.PlaceItemsEndSafe())
 	return c
 }
 
-func (c *component) PlaceItemsStart() *component {
-	c.el.Style(styles.PlaceItemsStart())
+func (c *Comp) PlaceItemsStart() *Comp {
+	c.El.Style(styles.PlaceItemsStart())
 	return c
 }
 
-func (c *component) PlaceItemsStretch() *component {
-	c.el.Style(styles.PlaceItemsStretch())
+func (c *Comp) PlaceItemsStretch() *Comp {
+	c.El.Style(styles.PlaceItemsStretch())
 	return c
 }
 
-func (c *component) PlaceSelfAuto() *component {
-	c.el.Style(styles.PlaceSelfAuto())
+func (c *Comp) PlaceSelfAuto() *Comp {
+	c.El.Style(styles.PlaceSelfAuto())
 	return c
 }
 
-func (c *component) PlaceSelfCenter() *component {
-	c.el.Style(styles.PlaceSelfCenter())
+func (c *Comp) PlaceSelfCenter() *Comp {
+	c.El.Style(styles.PlaceSelfCenter())
 	return c
 }
 
-func (c *component) PlaceSelfCenterSafe() *component {
-	c.el.Style(styles.PlaceSelfCenterSafe())
+func (c *Comp) PlaceSelfCenterSafe() *Comp {
+	c.El.Style(styles.PlaceSelfCenterSafe())
 	return c
 }
 
-func (c *component) PlaceSelfEnd() *component {
-	c.el.Style(styles.PlaceSelfEnd())
+func (c *Comp) PlaceSelfEnd() *Comp {
+	c.El.Style(styles.PlaceSelfEnd())
 	return c
 }
 
-func (c *component) PlaceSelfEndSafe() *component {
-	c.el.Style(styles.PlaceSelfEndSafe())
+func (c *Comp) PlaceSelfEndSafe() *Comp {
+	c.El.Style(styles.PlaceSelfEndSafe())
 	return c
 }
 
-func (c *component) PlaceSelfStart() *component {
-	c.el.Style(styles.PlaceSelfStart())
+func (c *Comp) PlaceSelfStart() *Comp {
+	c.El.Style(styles.PlaceSelfStart())
 	return c
 }
 
-func (c *component) PlaceSelfStretch() *component {
-	c.el.Style(styles.PlaceSelfStretch())
+func (c *Comp) PlaceSelfStretch() *Comp {
+	c.El.Style(styles.PlaceSelfStretch())
 	return c
 }
 
-func (c *component) PointerEventsAuto() *component {
-	c.el.Style(styles.PointerEventsAuto())
+func (c *Comp) PointerEventsAuto() *Comp {
+	c.El.Style(styles.PointerEventsAuto())
 	return c
 }
 
-func (c *component) PointerEventsNone() *component {
-	c.el.Style(styles.PointerEventsNone())
+func (c *Comp) PointerEventsNone() *Comp {
+	c.El.Style(styles.PointerEventsNone())
 	return c
 }
 
-func (c *component) Pr(number int) *component {
-	c.el.Style(styles.Pr(number))
+func (c *Comp) Pr(number int) *Comp {
+	c.El.Style(styles.Pr(number))
 	return c
 }
 
-func (c *component) PrBy(val value.Value) *component {
-	c.el.Style(styles.PrBy(val))
+func (c *Comp) PrBy(val value.Value) *Comp {
+	c.El.Style(styles.PrBy(val))
 	return c
 }
 
-func (c *component) PrPx(number int) *component {
-	c.el.Style(styles.PrPx(number))
+func (c *Comp) PrPx(number int) *Comp {
+	c.El.Style(styles.PrPx(number))
 	return c
 }
 
-func (c *component) ProportionalNums() *component {
-	c.el.Style(styles.ProportionalNums())
+func (c *Comp) ProportionalNums() *Comp {
+	c.El.Style(styles.ProportionalNums())
 	return c
 }
 
-func (c *component) Ps(number int) *component {
-	c.el.Style(styles.Ps(number))
+func (c *Comp) Ps(number int) *Comp {
+	c.El.Style(styles.Ps(number))
 	return c
 }
 
-func (c *component) PsBy(val value.Value) *component {
-	c.el.Style(styles.PsBy(val))
+func (c *Comp) PsBy(val value.Value) *Comp {
+	c.El.Style(styles.PsBy(val))
 	return c
 }
 
-func (c *component) PsPx(number int) *component {
-	c.el.Style(styles.PsPx(number))
+func (c *Comp) PsPx(number int) *Comp {
+	c.El.Style(styles.PsPx(number))
 	return c
 }
 
-func (c *component) Pt(number int) *component {
-	c.el.Style(styles.Pt(number))
+func (c *Comp) Pt(number int) *Comp {
+	c.El.Style(styles.Pt(number))
 	return c
 }
 
-func (c *component) PtBy(val value.Value) *component {
-	c.el.Style(styles.PtBy(val))
+func (c *Comp) PtBy(val value.Value) *Comp {
+	c.El.Style(styles.PtBy(val))
 	return c
 }
 
-func (c *component) PtPx(number int) *component {
-	c.el.Style(styles.PtPx(number))
+func (c *Comp) PtPx(number int) *Comp {
+	c.El.Style(styles.PtPx(number))
 	return c
 }
 
-func (c *component) Px(number int) *component {
-	c.el.Style(styles.Px(number))
+func (c *Comp) Px(number int) *Comp {
+	c.El.Style(styles.Px(number))
 	return c
 }
 
-func (c *component) PxBy(val value.Value) *component {
-	c.el.Style(styles.PxBy(val))
+func (c *Comp) PxBy(val value.Value) *Comp {
+	c.El.Style(styles.PxBy(val))
 	return c
 }
 
-func (c *component) PxPx(number int) *component {
-	c.el.Style(styles.PxPx(number))
+func (c *Comp) PxPx(number int) *Comp {
+	c.El.Style(styles.PxPx(number))
 	return c
 }
 
-func (c *component) Py(number int) *component {
-	c.el.Style(styles.Py(number))
+func (c *Comp) Py(number int) *Comp {
+	c.El.Style(styles.Py(number))
 	return c
 }
 
-func (c *component) PyBy(val value.Value) *component {
-	c.el.Style(styles.PyBy(val))
+func (c *Comp) PyBy(val value.Value) *Comp {
+	c.El.Style(styles.PyBy(val))
 	return c
 }
 
-func (c *component) PyPx(number int) *component {
-	c.el.Style(styles.PyPx(number))
+func (c *Comp) PyPx(number int) *Comp {
+	c.El.Style(styles.PyPx(number))
 	return c
 }
 
-func (c *component) Relative() *component {
-	c.el.Style(styles.Relative())
+func (c *Comp) Relative() *Comp {
+	c.El.Style(styles.Relative())
 	return c
 }
 
-func (c *component) Resize() *component {
-	c.el.Style(styles.Resize())
+func (c *Comp) Resize() *Comp {
+	c.El.Style(styles.Resize())
 	return c
 }
 
-func (c *component) ResizeNone() *component {
-	c.el.Style(styles.ResizeNone())
+func (c *Comp) ResizeNone() *Comp {
+	c.El.Style(styles.ResizeNone())
 	return c
 }
 
-func (c *component) ResizeX() *component {
-	c.el.Style(styles.ResizeX())
+func (c *Comp) ResizeX() *Comp {
+	c.El.Style(styles.ResizeX())
 	return c
 }
 
-func (c *component) ResizeY() *component {
-	c.el.Style(styles.ResizeY())
+func (c *Comp) ResizeY() *Comp {
+	c.El.Style(styles.ResizeY())
 	return c
 }
 
-func (c *component) Right(number int) *component {
-	c.el.Style(styles.Right(number))
+func (c *Comp) Right(number int) *Comp {
+	c.El.Style(styles.Right(number))
 	return c
 }
 
-func (c *component) RightAuto() *component {
-	c.el.Style(styles.RightAuto())
+func (c *Comp) RightAuto() *Comp {
+	c.El.Style(styles.RightAuto())
 	return c
 }
 
-func (c *component) RightBy(val value.Value) *component {
-	c.el.Style(styles.RightBy(val))
+func (c *Comp) RightBy(val value.Value) *Comp {
+	c.El.Style(styles.RightBy(val))
 	return c
 }
 
-func (c *component) RightFraction(fraction float64) *component {
-	c.el.Style(styles.RightFraction(fraction))
+func (c *Comp) RightFraction(fraction float64) *Comp {
+	c.El.Style(styles.RightFraction(fraction))
 	return c
 }
 
-func (c *component) RightFull() *component {
-	c.el.Style(styles.RightFull())
+func (c *Comp) RightFull() *Comp {
+	c.El.Style(styles.RightFull())
 	return c
 }
 
-func (c *component) RightPx() *component {
-	c.el.Style(styles.RightPx())
+func (c *Comp) RightPx() *Comp {
+	c.El.Style(styles.RightPx())
 	return c
 }
 
-func (c *component) Ring(val ...value.Value) *component {
-	c.el.Style(styles.Ring(val...))
+func (c *Comp) Ring(val ...value.Value) *Comp {
+	c.El.Style(styles.Ring(val...))
 	return c
 }
 
-func (c *component) RingAmber(scale int) *component {
-	c.el.Style(styles.RingAmber(scale))
+func (c *Comp) RingAmber(scale int) *Comp {
+	c.El.Style(styles.RingAmber(scale))
 	return c
 }
 
-func (c *component) RingAmberAlpha(scale int) *component {
-	c.el.Style(styles.RingAmberAlpha(scale))
+func (c *Comp) RingAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.RingAmberAlpha(scale))
 	return c
 }
 
-func (c *component) RingAmberDark(scale int) *component {
-	c.el.Style(styles.RingAmberDark(scale))
+func (c *Comp) RingAmberDark(scale int) *Comp {
+	c.El.Style(styles.RingAmberDark(scale))
 	return c
 }
 
-func (c *component) RingAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingAmberDarkAlpha(scale))
+func (c *Comp) RingAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingBlack() *component {
-	c.el.Style(styles.RingBlack())
+func (c *Comp) RingBlack() *Comp {
+	c.El.Style(styles.RingBlack())
 	return c
 }
 
-func (c *component) RingBlackAlpha(scale int) *component {
-	c.el.Style(styles.RingBlackAlpha(scale))
+func (c *Comp) RingBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.RingBlackAlpha(scale))
 	return c
 }
 
-func (c *component) RingBlue(scale int) *component {
-	c.el.Style(styles.RingBlue(scale))
+func (c *Comp) RingBlue(scale int) *Comp {
+	c.El.Style(styles.RingBlue(scale))
 	return c
 }
 
-func (c *component) RingBlueAlpha(scale int) *component {
-	c.el.Style(styles.RingBlueAlpha(scale))
+func (c *Comp) RingBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.RingBlueAlpha(scale))
 	return c
 }
 
-func (c *component) RingBlueDark(scale int) *component {
-	c.el.Style(styles.RingBlueDark(scale))
+func (c *Comp) RingBlueDark(scale int) *Comp {
+	c.El.Style(styles.RingBlueDark(scale))
 	return c
 }
 
-func (c *component) RingBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingBlueDarkAlpha(scale))
+func (c *Comp) RingBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingBronze(scale int) *component {
-	c.el.Style(styles.RingBronze(scale))
+func (c *Comp) RingBronze(scale int) *Comp {
+	c.El.Style(styles.RingBronze(scale))
 	return c
 }
 
-func (c *component) RingBronzeAlpha(scale int) *component {
-	c.el.Style(styles.RingBronzeAlpha(scale))
+func (c *Comp) RingBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.RingBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) RingBronzeDark(scale int) *component {
-	c.el.Style(styles.RingBronzeDark(scale))
+func (c *Comp) RingBronzeDark(scale int) *Comp {
+	c.El.Style(styles.RingBronzeDark(scale))
 	return c
 }
 
-func (c *component) RingBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingBronzeDarkAlpha(scale))
+func (c *Comp) RingBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingBrown(scale int) *component {
-	c.el.Style(styles.RingBrown(scale))
+func (c *Comp) RingBrown(scale int) *Comp {
+	c.El.Style(styles.RingBrown(scale))
 	return c
 }
 
-func (c *component) RingBrownAlpha(scale int) *component {
-	c.el.Style(styles.RingBrownAlpha(scale))
+func (c *Comp) RingBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.RingBrownAlpha(scale))
 	return c
 }
 
-func (c *component) RingBrownDark(scale int) *component {
-	c.el.Style(styles.RingBrownDark(scale))
+func (c *Comp) RingBrownDark(scale int) *Comp {
+	c.El.Style(styles.RingBrownDark(scale))
 	return c
 }
 
-func (c *component) RingBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingBrownDarkAlpha(scale))
+func (c *Comp) RingBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingColor(val value.Value) *component {
-	c.el.Style(styles.RingColor(val))
+func (c *Comp) RingColor(val value.Value) *Comp {
+	c.El.Style(styles.RingColor(val))
 	return c
 }
 
-func (c *component) RingCrimson(scale int) *component {
-	c.el.Style(styles.RingCrimson(scale))
+func (c *Comp) RingCrimson(scale int) *Comp {
+	c.El.Style(styles.RingCrimson(scale))
 	return c
 }
 
-func (c *component) RingCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.RingCrimsonAlpha(scale))
+func (c *Comp) RingCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.RingCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) RingCrimsonDark(scale int) *component {
-	c.el.Style(styles.RingCrimsonDark(scale))
+func (c *Comp) RingCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.RingCrimsonDark(scale))
 	return c
 }
 
-func (c *component) RingCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingCrimsonDarkAlpha(scale))
+func (c *Comp) RingCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingCurrent() *component {
-	c.el.Style(styles.RingCurrent())
+func (c *Comp) RingCurrent() *Comp {
+	c.El.Style(styles.RingCurrent())
 	return c
 }
 
-func (c *component) RingCyan(scale int) *component {
-	c.el.Style(styles.RingCyan(scale))
+func (c *Comp) RingCyan(scale int) *Comp {
+	c.El.Style(styles.RingCyan(scale))
 	return c
 }
 
-func (c *component) RingCyanAlpha(scale int) *component {
-	c.el.Style(styles.RingCyanAlpha(scale))
+func (c *Comp) RingCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.RingCyanAlpha(scale))
 	return c
 }
 
-func (c *component) RingCyanDark(scale int) *component {
-	c.el.Style(styles.RingCyanDark(scale))
+func (c *Comp) RingCyanDark(scale int) *Comp {
+	c.El.Style(styles.RingCyanDark(scale))
 	return c
 }
 
-func (c *component) RingCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingCyanDarkAlpha(scale))
+func (c *Comp) RingCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingGold(scale int) *component {
-	c.el.Style(styles.RingGold(scale))
+func (c *Comp) RingGold(scale int) *Comp {
+	c.El.Style(styles.RingGold(scale))
 	return c
 }
 
-func (c *component) RingGoldAlpha(scale int) *component {
-	c.el.Style(styles.RingGoldAlpha(scale))
+func (c *Comp) RingGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.RingGoldAlpha(scale))
 	return c
 }
 
-func (c *component) RingGoldDark(scale int) *component {
-	c.el.Style(styles.RingGoldDark(scale))
+func (c *Comp) RingGoldDark(scale int) *Comp {
+	c.El.Style(styles.RingGoldDark(scale))
 	return c
 }
 
-func (c *component) RingGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingGoldDarkAlpha(scale))
+func (c *Comp) RingGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingGrass(scale int) *component {
-	c.el.Style(styles.RingGrass(scale))
+func (c *Comp) RingGrass(scale int) *Comp {
+	c.El.Style(styles.RingGrass(scale))
 	return c
 }
 
-func (c *component) RingGrassAlpha(scale int) *component {
-	c.el.Style(styles.RingGrassAlpha(scale))
+func (c *Comp) RingGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.RingGrassAlpha(scale))
 	return c
 }
 
-func (c *component) RingGrassDark(scale int) *component {
-	c.el.Style(styles.RingGrassDark(scale))
+func (c *Comp) RingGrassDark(scale int) *Comp {
+	c.El.Style(styles.RingGrassDark(scale))
 	return c
 }
 
-func (c *component) RingGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingGrassDarkAlpha(scale))
+func (c *Comp) RingGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingGray(scale int) *component {
-	c.el.Style(styles.RingGray(scale))
+func (c *Comp) RingGray(scale int) *Comp {
+	c.El.Style(styles.RingGray(scale))
 	return c
 }
 
-func (c *component) RingGrayAlpha(scale int) *component {
-	c.el.Style(styles.RingGrayAlpha(scale))
+func (c *Comp) RingGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.RingGrayAlpha(scale))
 	return c
 }
 
-func (c *component) RingGrayDark(scale int) *component {
-	c.el.Style(styles.RingGrayDark(scale))
+func (c *Comp) RingGrayDark(scale int) *Comp {
+	c.El.Style(styles.RingGrayDark(scale))
 	return c
 }
 
-func (c *component) RingGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingGrayDarkAlpha(scale))
+func (c *Comp) RingGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingGreen(scale int) *component {
-	c.el.Style(styles.RingGreen(scale))
+func (c *Comp) RingGreen(scale int) *Comp {
+	c.El.Style(styles.RingGreen(scale))
 	return c
 }
 
-func (c *component) RingGreenAlpha(scale int) *component {
-	c.el.Style(styles.RingGreenAlpha(scale))
+func (c *Comp) RingGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.RingGreenAlpha(scale))
 	return c
 }
 
-func (c *component) RingGreenDark(scale int) *component {
-	c.el.Style(styles.RingGreenDark(scale))
+func (c *Comp) RingGreenDark(scale int) *Comp {
+	c.El.Style(styles.RingGreenDark(scale))
 	return c
 }
 
-func (c *component) RingGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingGreenDarkAlpha(scale))
+func (c *Comp) RingGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingIndigo(scale int) *component {
-	c.el.Style(styles.RingIndigo(scale))
+func (c *Comp) RingIndigo(scale int) *Comp {
+	c.El.Style(styles.RingIndigo(scale))
 	return c
 }
 
-func (c *component) RingIndigoAlpha(scale int) *component {
-	c.el.Style(styles.RingIndigoAlpha(scale))
+func (c *Comp) RingIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.RingIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) RingIndigoDark(scale int) *component {
-	c.el.Style(styles.RingIndigoDark(scale))
+func (c *Comp) RingIndigoDark(scale int) *Comp {
+	c.El.Style(styles.RingIndigoDark(scale))
 	return c
 }
 
-func (c *component) RingIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingIndigoDarkAlpha(scale))
+func (c *Comp) RingIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingInherit() *component {
-	c.el.Style(styles.RingInherit())
+func (c *Comp) RingInherit() *Comp {
+	c.El.Style(styles.RingInherit())
 	return c
 }
 
-func (c *component) RingIris(scale int) *component {
-	c.el.Style(styles.RingIris(scale))
+func (c *Comp) RingIris(scale int) *Comp {
+	c.El.Style(styles.RingIris(scale))
 	return c
 }
 
-func (c *component) RingIrisAlpha(scale int) *component {
-	c.el.Style(styles.RingIrisAlpha(scale))
+func (c *Comp) RingIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.RingIrisAlpha(scale))
 	return c
 }
 
-func (c *component) RingIrisDark(scale int) *component {
-	c.el.Style(styles.RingIrisDark(scale))
+func (c *Comp) RingIrisDark(scale int) *Comp {
+	c.El.Style(styles.RingIrisDark(scale))
 	return c
 }
 
-func (c *component) RingIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingIrisDarkAlpha(scale))
+func (c *Comp) RingIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingJade(scale int) *component {
-	c.el.Style(styles.RingJade(scale))
+func (c *Comp) RingJade(scale int) *Comp {
+	c.El.Style(styles.RingJade(scale))
 	return c
 }
 
-func (c *component) RingJadeAlpha(scale int) *component {
-	c.el.Style(styles.RingJadeAlpha(scale))
+func (c *Comp) RingJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.RingJadeAlpha(scale))
 	return c
 }
 
-func (c *component) RingJadeDark(scale int) *component {
-	c.el.Style(styles.RingJadeDark(scale))
+func (c *Comp) RingJadeDark(scale int) *Comp {
+	c.El.Style(styles.RingJadeDark(scale))
 	return c
 }
 
-func (c *component) RingJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingJadeDarkAlpha(scale))
+func (c *Comp) RingJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingLime(scale int) *component {
-	c.el.Style(styles.RingLime(scale))
+func (c *Comp) RingLime(scale int) *Comp {
+	c.El.Style(styles.RingLime(scale))
 	return c
 }
 
-func (c *component) RingLimeAlpha(scale int) *component {
-	c.el.Style(styles.RingLimeAlpha(scale))
+func (c *Comp) RingLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.RingLimeAlpha(scale))
 	return c
 }
 
-func (c *component) RingLimeDark(scale int) *component {
-	c.el.Style(styles.RingLimeDark(scale))
+func (c *Comp) RingLimeDark(scale int) *Comp {
+	c.El.Style(styles.RingLimeDark(scale))
 	return c
 }
 
-func (c *component) RingLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingLimeDarkAlpha(scale))
+func (c *Comp) RingLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingMauve(scale int) *component {
-	c.el.Style(styles.RingMauve(scale))
+func (c *Comp) RingMauve(scale int) *Comp {
+	c.El.Style(styles.RingMauve(scale))
 	return c
 }
 
-func (c *component) RingMauveAlpha(scale int) *component {
-	c.el.Style(styles.RingMauveAlpha(scale))
+func (c *Comp) RingMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.RingMauveAlpha(scale))
 	return c
 }
 
-func (c *component) RingMauveDark(scale int) *component {
-	c.el.Style(styles.RingMauveDark(scale))
+func (c *Comp) RingMauveDark(scale int) *Comp {
+	c.El.Style(styles.RingMauveDark(scale))
 	return c
 }
 
-func (c *component) RingMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingMauveDarkAlpha(scale))
+func (c *Comp) RingMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingMint(scale int) *component {
-	c.el.Style(styles.RingMint(scale))
+func (c *Comp) RingMint(scale int) *Comp {
+	c.El.Style(styles.RingMint(scale))
 	return c
 }
 
-func (c *component) RingMintAlpha(scale int) *component {
-	c.el.Style(styles.RingMintAlpha(scale))
+func (c *Comp) RingMintAlpha(scale int) *Comp {
+	c.El.Style(styles.RingMintAlpha(scale))
 	return c
 }
 
-func (c *component) RingMintDark(scale int) *component {
-	c.el.Style(styles.RingMintDark(scale))
+func (c *Comp) RingMintDark(scale int) *Comp {
+	c.El.Style(styles.RingMintDark(scale))
 	return c
 }
 
-func (c *component) RingMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingMintDarkAlpha(scale))
+func (c *Comp) RingMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingOlive(scale int) *component {
-	c.el.Style(styles.RingOlive(scale))
+func (c *Comp) RingOlive(scale int) *Comp {
+	c.El.Style(styles.RingOlive(scale))
 	return c
 }
 
-func (c *component) RingOliveAlpha(scale int) *component {
-	c.el.Style(styles.RingOliveAlpha(scale))
+func (c *Comp) RingOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.RingOliveAlpha(scale))
 	return c
 }
 
-func (c *component) RingOliveDark(scale int) *component {
-	c.el.Style(styles.RingOliveDark(scale))
+func (c *Comp) RingOliveDark(scale int) *Comp {
+	c.El.Style(styles.RingOliveDark(scale))
 	return c
 }
 
-func (c *component) RingOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingOliveDarkAlpha(scale))
+func (c *Comp) RingOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingOrange(scale int) *component {
-	c.el.Style(styles.RingOrange(scale))
+func (c *Comp) RingOrange(scale int) *Comp {
+	c.El.Style(styles.RingOrange(scale))
 	return c
 }
 
-func (c *component) RingOrangeAlpha(scale int) *component {
-	c.el.Style(styles.RingOrangeAlpha(scale))
+func (c *Comp) RingOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.RingOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) RingOrangeDark(scale int) *component {
-	c.el.Style(styles.RingOrangeDark(scale))
+func (c *Comp) RingOrangeDark(scale int) *Comp {
+	c.El.Style(styles.RingOrangeDark(scale))
 	return c
 }
 
-func (c *component) RingOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingOrangeDarkAlpha(scale))
+func (c *Comp) RingOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingPink(scale int) *component {
-	c.el.Style(styles.RingPink(scale))
+func (c *Comp) RingPink(scale int) *Comp {
+	c.El.Style(styles.RingPink(scale))
 	return c
 }
 
-func (c *component) RingPinkAlpha(scale int) *component {
-	c.el.Style(styles.RingPinkAlpha(scale))
+func (c *Comp) RingPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingPinkAlpha(scale))
 	return c
 }
 
-func (c *component) RingPinkDark(scale int) *component {
-	c.el.Style(styles.RingPinkDark(scale))
+func (c *Comp) RingPinkDark(scale int) *Comp {
+	c.El.Style(styles.RingPinkDark(scale))
 	return c
 }
 
-func (c *component) RingPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingPinkDarkAlpha(scale))
+func (c *Comp) RingPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingPlum(scale int) *component {
-	c.el.Style(styles.RingPlum(scale))
+func (c *Comp) RingPlum(scale int) *Comp {
+	c.El.Style(styles.RingPlum(scale))
 	return c
 }
 
-func (c *component) RingPlumAlpha(scale int) *component {
-	c.el.Style(styles.RingPlumAlpha(scale))
+func (c *Comp) RingPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.RingPlumAlpha(scale))
 	return c
 }
 
-func (c *component) RingPlumDark(scale int) *component {
-	c.el.Style(styles.RingPlumDark(scale))
+func (c *Comp) RingPlumDark(scale int) *Comp {
+	c.El.Style(styles.RingPlumDark(scale))
 	return c
 }
 
-func (c *component) RingPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingPlumDarkAlpha(scale))
+func (c *Comp) RingPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingPurple(scale int) *component {
-	c.el.Style(styles.RingPurple(scale))
+func (c *Comp) RingPurple(scale int) *Comp {
+	c.El.Style(styles.RingPurple(scale))
 	return c
 }
 
-func (c *component) RingPurpleAlpha(scale int) *component {
-	c.el.Style(styles.RingPurpleAlpha(scale))
+func (c *Comp) RingPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.RingPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) RingPurpleDark(scale int) *component {
-	c.el.Style(styles.RingPurpleDark(scale))
+func (c *Comp) RingPurpleDark(scale int) *Comp {
+	c.El.Style(styles.RingPurpleDark(scale))
 	return c
 }
 
-func (c *component) RingPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingPurpleDarkAlpha(scale))
+func (c *Comp) RingPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingRed(scale int) *component {
-	c.el.Style(styles.RingRed(scale))
+func (c *Comp) RingRed(scale int) *Comp {
+	c.El.Style(styles.RingRed(scale))
 	return c
 }
 
-func (c *component) RingRedAlpha(scale int) *component {
-	c.el.Style(styles.RingRedAlpha(scale))
+func (c *Comp) RingRedAlpha(scale int) *Comp {
+	c.El.Style(styles.RingRedAlpha(scale))
 	return c
 }
 
-func (c *component) RingRedDark(scale int) *component {
-	c.el.Style(styles.RingRedDark(scale))
+func (c *Comp) RingRedDark(scale int) *Comp {
+	c.El.Style(styles.RingRedDark(scale))
 	return c
 }
 
-func (c *component) RingRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingRedDarkAlpha(scale))
+func (c *Comp) RingRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingRuby(scale int) *component {
-	c.el.Style(styles.RingRuby(scale))
+func (c *Comp) RingRuby(scale int) *Comp {
+	c.El.Style(styles.RingRuby(scale))
 	return c
 }
 
-func (c *component) RingRubyAlpha(scale int) *component {
-	c.el.Style(styles.RingRubyAlpha(scale))
+func (c *Comp) RingRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.RingRubyAlpha(scale))
 	return c
 }
 
-func (c *component) RingRubyDark(scale int) *component {
-	c.el.Style(styles.RingRubyDark(scale))
+func (c *Comp) RingRubyDark(scale int) *Comp {
+	c.El.Style(styles.RingRubyDark(scale))
 	return c
 }
 
-func (c *component) RingRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingRubyDarkAlpha(scale))
+func (c *Comp) RingRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingSage(scale int) *component {
-	c.el.Style(styles.RingSage(scale))
+func (c *Comp) RingSage(scale int) *Comp {
+	c.El.Style(styles.RingSage(scale))
 	return c
 }
 
-func (c *component) RingSageAlpha(scale int) *component {
-	c.el.Style(styles.RingSageAlpha(scale))
+func (c *Comp) RingSageAlpha(scale int) *Comp {
+	c.El.Style(styles.RingSageAlpha(scale))
 	return c
 }
 
-func (c *component) RingSageDark(scale int) *component {
-	c.el.Style(styles.RingSageDark(scale))
+func (c *Comp) RingSageDark(scale int) *Comp {
+	c.El.Style(styles.RingSageDark(scale))
 	return c
 }
 
-func (c *component) RingSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingSageDarkAlpha(scale))
+func (c *Comp) RingSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingSand(scale int) *component {
-	c.el.Style(styles.RingSand(scale))
+func (c *Comp) RingSand(scale int) *Comp {
+	c.El.Style(styles.RingSand(scale))
 	return c
 }
 
-func (c *component) RingSandAlpha(scale int) *component {
-	c.el.Style(styles.RingSandAlpha(scale))
+func (c *Comp) RingSandAlpha(scale int) *Comp {
+	c.El.Style(styles.RingSandAlpha(scale))
 	return c
 }
 
-func (c *component) RingSandDark(scale int) *component {
-	c.el.Style(styles.RingSandDark(scale))
+func (c *Comp) RingSandDark(scale int) *Comp {
+	c.El.Style(styles.RingSandDark(scale))
 	return c
 }
 
-func (c *component) RingSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingSandDarkAlpha(scale))
+func (c *Comp) RingSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingSky(scale int) *component {
-	c.el.Style(styles.RingSky(scale))
+func (c *Comp) RingSky(scale int) *Comp {
+	c.El.Style(styles.RingSky(scale))
 	return c
 }
 
-func (c *component) RingSkyAlpha(scale int) *component {
-	c.el.Style(styles.RingSkyAlpha(scale))
+func (c *Comp) RingSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.RingSkyAlpha(scale))
 	return c
 }
 
-func (c *component) RingSkyDark(scale int) *component {
-	c.el.Style(styles.RingSkyDark(scale))
+func (c *Comp) RingSkyDark(scale int) *Comp {
+	c.El.Style(styles.RingSkyDark(scale))
 	return c
 }
 
-func (c *component) RingSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingSkyDarkAlpha(scale))
+func (c *Comp) RingSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingSlate(scale int) *component {
-	c.el.Style(styles.RingSlate(scale))
+func (c *Comp) RingSlate(scale int) *Comp {
+	c.El.Style(styles.RingSlate(scale))
 	return c
 }
 
-func (c *component) RingSlateAlpha(scale int) *component {
-	c.el.Style(styles.RingSlateAlpha(scale))
+func (c *Comp) RingSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.RingSlateAlpha(scale))
 	return c
 }
 
-func (c *component) RingSlateDark(scale int) *component {
-	c.el.Style(styles.RingSlateDark(scale))
+func (c *Comp) RingSlateDark(scale int) *Comp {
+	c.El.Style(styles.RingSlateDark(scale))
 	return c
 }
 
-func (c *component) RingSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingSlateDarkAlpha(scale))
+func (c *Comp) RingSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingTeal(scale int) *component {
-	c.el.Style(styles.RingTeal(scale))
+func (c *Comp) RingTeal(scale int) *Comp {
+	c.El.Style(styles.RingTeal(scale))
 	return c
 }
 
-func (c *component) RingTealAlpha(scale int) *component {
-	c.el.Style(styles.RingTealAlpha(scale))
+func (c *Comp) RingTealAlpha(scale int) *Comp {
+	c.El.Style(styles.RingTealAlpha(scale))
 	return c
 }
 
-func (c *component) RingTealDark(scale int) *component {
-	c.el.Style(styles.RingTealDark(scale))
+func (c *Comp) RingTealDark(scale int) *Comp {
+	c.El.Style(styles.RingTealDark(scale))
 	return c
 }
 
-func (c *component) RingTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingTealDarkAlpha(scale))
+func (c *Comp) RingTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingTomato(scale int) *component {
-	c.el.Style(styles.RingTomato(scale))
+func (c *Comp) RingTomato(scale int) *Comp {
+	c.El.Style(styles.RingTomato(scale))
 	return c
 }
 
-func (c *component) RingTomatoAlpha(scale int) *component {
-	c.el.Style(styles.RingTomatoAlpha(scale))
+func (c *Comp) RingTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.RingTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) RingTomatoDark(scale int) *component {
-	c.el.Style(styles.RingTomatoDark(scale))
+func (c *Comp) RingTomatoDark(scale int) *Comp {
+	c.El.Style(styles.RingTomatoDark(scale))
 	return c
 }
 
-func (c *component) RingTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingTomatoDarkAlpha(scale))
+func (c *Comp) RingTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingTransparent() *component {
-	c.el.Style(styles.RingTransparent())
+func (c *Comp) RingTransparent() *Comp {
+	c.El.Style(styles.RingTransparent())
 	return c
 }
 
-func (c *component) RingViolet(scale int) *component {
-	c.el.Style(styles.RingViolet(scale))
+func (c *Comp) RingViolet(scale int) *Comp {
+	c.El.Style(styles.RingViolet(scale))
 	return c
 }
 
-func (c *component) RingVioletAlpha(scale int) *component {
-	c.el.Style(styles.RingVioletAlpha(scale))
+func (c *Comp) RingVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.RingVioletAlpha(scale))
 	return c
 }
 
-func (c *component) RingVioletDark(scale int) *component {
-	c.el.Style(styles.RingVioletDark(scale))
+func (c *Comp) RingVioletDark(scale int) *Comp {
+	c.El.Style(styles.RingVioletDark(scale))
 	return c
 }
 
-func (c *component) RingVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingVioletDarkAlpha(scale))
+func (c *Comp) RingVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) RingWhite() *component {
-	c.el.Style(styles.RingWhite())
+func (c *Comp) RingWhite() *Comp {
+	c.El.Style(styles.RingWhite())
 	return c
 }
 
-func (c *component) RingWhiteAlpha(scale int) *component {
-	c.el.Style(styles.RingWhiteAlpha(scale))
+func (c *Comp) RingWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.RingWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) RingYellow(scale int) *component {
-	c.el.Style(styles.RingYellow(scale))
+func (c *Comp) RingYellow(scale int) *Comp {
+	c.El.Style(styles.RingYellow(scale))
 	return c
 }
 
-func (c *component) RingYellowAlpha(scale int) *component {
-	c.el.Style(styles.RingYellowAlpha(scale))
+func (c *Comp) RingYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.RingYellowAlpha(scale))
 	return c
 }
 
-func (c *component) RingYellowDark(scale int) *component {
-	c.el.Style(styles.RingYellowDark(scale))
+func (c *Comp) RingYellowDark(scale int) *Comp {
+	c.El.Style(styles.RingYellowDark(scale))
 	return c
 }
 
-func (c *component) RingYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.RingYellowDarkAlpha(scale))
+func (c *Comp) RingYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.RingYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) Rotate(val any) *component {
-	c.el.Style(styles.Rotate(val))
+func (c *Comp) Rotate(val any) *Comp {
+	c.El.Style(styles.Rotate(val))
 	return c
 }
 
-func (c *component) RotateNone() *component {
-	c.el.Style(styles.RotateNone())
+func (c *Comp) RotateNone() *Comp {
+	c.El.Style(styles.RotateNone())
 	return c
 }
 
-func (c *component) RotateX(val any) *component {
-	c.el.Style(styles.RotateX(val))
+func (c *Comp) RotateX(val any) *Comp {
+	c.El.Style(styles.RotateX(val))
 	return c
 }
 
-func (c *component) RotateY(val any) *component {
-	c.el.Style(styles.RotateY(val))
+func (c *Comp) RotateY(val any) *Comp {
+	c.El.Style(styles.RotateY(val))
 	return c
 }
 
-func (c *component) RotateZ(val any) *component {
-	c.el.Style(styles.RotateZ(val))
+func (c *Comp) RotateZ(val any) *Comp {
+	c.El.Style(styles.RotateZ(val))
 	return c
 }
 
-func (c *component) Rounded(val value.Value) *component {
-	c.el.Style(styles.Rounded(val))
+func (c *Comp) Rounded(val value.Value) *Comp {
+	c.El.Style(styles.Rounded(val))
 	return c
 }
 
-func (c *component) Rounded2xl() *component {
-	c.el.Style(styles.Rounded2xl())
+func (c *Comp) Rounded2xl() *Comp {
+	c.El.Style(styles.Rounded2xl())
 	return c
 }
 
-func (c *component) Rounded3xl() *component {
-	c.el.Style(styles.Rounded3xl())
+func (c *Comp) Rounded3xl() *Comp {
+	c.El.Style(styles.Rounded3xl())
 	return c
 }
 
-func (c *component) Rounded4Xl() *component {
-	c.el.Style(styles.Rounded4Xl())
+func (c *Comp) Rounded4Xl() *Comp {
+	c.El.Style(styles.Rounded4Xl())
 	return c
 }
 
-func (c *component) RoundedB(val value.Value) *component {
-	c.el.Style(styles.RoundedB(val))
+func (c *Comp) RoundedB(val value.Value) *Comp {
+	c.El.Style(styles.RoundedB(val))
 	return c
 }
 
-func (c *component) RoundedB2xl() *component {
-	c.el.Style(styles.RoundedB2xl())
+func (c *Comp) RoundedB2xl() *Comp {
+	c.El.Style(styles.RoundedB2xl())
 	return c
 }
 
-func (c *component) RoundedB3xl() *component {
-	c.el.Style(styles.RoundedB3xl())
+func (c *Comp) RoundedB3xl() *Comp {
+	c.El.Style(styles.RoundedB3xl())
 	return c
 }
 
-func (c *component) RoundedB4Xl() *component {
-	c.el.Style(styles.RoundedB4Xl())
+func (c *Comp) RoundedB4Xl() *Comp {
+	c.El.Style(styles.RoundedB4Xl())
 	return c
 }
 
-func (c *component) RoundedBFull() *component {
-	c.el.Style(styles.RoundedBFull())
+func (c *Comp) RoundedBFull() *Comp {
+	c.El.Style(styles.RoundedBFull())
 	return c
 }
 
-func (c *component) RoundedBLg() *component {
-	c.el.Style(styles.RoundedBLg())
+func (c *Comp) RoundedBLg() *Comp {
+	c.El.Style(styles.RoundedBLg())
 	return c
 }
 
-func (c *component) RoundedBMd() *component {
-	c.el.Style(styles.RoundedBMd())
+func (c *Comp) RoundedBMd() *Comp {
+	c.El.Style(styles.RoundedBMd())
 	return c
 }
 
-func (c *component) RoundedBNone() *component {
-	c.el.Style(styles.RoundedBNone())
+func (c *Comp) RoundedBNone() *Comp {
+	c.El.Style(styles.RoundedBNone())
 	return c
 }
 
-func (c *component) RoundedBSm() *component {
-	c.el.Style(styles.RoundedBSm())
+func (c *Comp) RoundedBSm() *Comp {
+	c.El.Style(styles.RoundedBSm())
 	return c
 }
 
-func (c *component) RoundedBXl() *component {
-	c.el.Style(styles.RoundedBXl())
+func (c *Comp) RoundedBXl() *Comp {
+	c.El.Style(styles.RoundedBXl())
 	return c
 }
 
-func (c *component) RoundedBXs() *component {
-	c.el.Style(styles.RoundedBXs())
+func (c *Comp) RoundedBXs() *Comp {
+	c.El.Style(styles.RoundedBXs())
 	return c
 }
 
-func (c *component) RoundedBl(val value.Value) *component {
-	c.el.Style(styles.RoundedBl(val))
+func (c *Comp) RoundedBl(val value.Value) *Comp {
+	c.El.Style(styles.RoundedBl(val))
 	return c
 }
 
-func (c *component) RoundedBl2xl() *component {
-	c.el.Style(styles.RoundedBl2xl())
+func (c *Comp) RoundedBl2xl() *Comp {
+	c.El.Style(styles.RoundedBl2xl())
 	return c
 }
 
-func (c *component) RoundedBl3xl() *component {
-	c.el.Style(styles.RoundedBl3xl())
+func (c *Comp) RoundedBl3xl() *Comp {
+	c.El.Style(styles.RoundedBl3xl())
 	return c
 }
 
-func (c *component) RoundedBl4Xl() *component {
-	c.el.Style(styles.RoundedBl4Xl())
+func (c *Comp) RoundedBl4Xl() *Comp {
+	c.El.Style(styles.RoundedBl4Xl())
 	return c
 }
 
-func (c *component) RoundedBlFull() *component {
-	c.el.Style(styles.RoundedBlFull())
+func (c *Comp) RoundedBlFull() *Comp {
+	c.El.Style(styles.RoundedBlFull())
 	return c
 }
 
-func (c *component) RoundedBlLg() *component {
-	c.el.Style(styles.RoundedBlLg())
+func (c *Comp) RoundedBlLg() *Comp {
+	c.El.Style(styles.RoundedBlLg())
 	return c
 }
 
-func (c *component) RoundedBlMd() *component {
-	c.el.Style(styles.RoundedBlMd())
+func (c *Comp) RoundedBlMd() *Comp {
+	c.El.Style(styles.RoundedBlMd())
 	return c
 }
 
-func (c *component) RoundedBlNone() *component {
-	c.el.Style(styles.RoundedBlNone())
+func (c *Comp) RoundedBlNone() *Comp {
+	c.El.Style(styles.RoundedBlNone())
 	return c
 }
 
-func (c *component) RoundedBlSm() *component {
-	c.el.Style(styles.RoundedBlSm())
+func (c *Comp) RoundedBlSm() *Comp {
+	c.El.Style(styles.RoundedBlSm())
 	return c
 }
 
-func (c *component) RoundedBlXl() *component {
-	c.el.Style(styles.RoundedBlXl())
+func (c *Comp) RoundedBlXl() *Comp {
+	c.El.Style(styles.RoundedBlXl())
 	return c
 }
 
-func (c *component) RoundedBlXs() *component {
-	c.el.Style(styles.RoundedBlXs())
+func (c *Comp) RoundedBlXs() *Comp {
+	c.El.Style(styles.RoundedBlXs())
 	return c
 }
 
-func (c *component) RoundedBr(val value.Value) *component {
-	c.el.Style(styles.RoundedBr(val))
+func (c *Comp) RoundedBr(val value.Value) *Comp {
+	c.El.Style(styles.RoundedBr(val))
 	return c
 }
 
-func (c *component) RoundedBr2xl() *component {
-	c.el.Style(styles.RoundedBr2xl())
+func (c *Comp) RoundedBr2xl() *Comp {
+	c.El.Style(styles.RoundedBr2xl())
 	return c
 }
 
-func (c *component) RoundedBr3xl() *component {
-	c.el.Style(styles.RoundedBr3xl())
+func (c *Comp) RoundedBr3xl() *Comp {
+	c.El.Style(styles.RoundedBr3xl())
 	return c
 }
 
-func (c *component) RoundedBr4Xl() *component {
-	c.el.Style(styles.RoundedBr4Xl())
+func (c *Comp) RoundedBr4Xl() *Comp {
+	c.El.Style(styles.RoundedBr4Xl())
 	return c
 }
 
-func (c *component) RoundedBrFull() *component {
-	c.el.Style(styles.RoundedBrFull())
+func (c *Comp) RoundedBrFull() *Comp {
+	c.El.Style(styles.RoundedBrFull())
 	return c
 }
 
-func (c *component) RoundedBrLg() *component {
-	c.el.Style(styles.RoundedBrLg())
+func (c *Comp) RoundedBrLg() *Comp {
+	c.El.Style(styles.RoundedBrLg())
 	return c
 }
 
-func (c *component) RoundedBrMd() *component {
-	c.el.Style(styles.RoundedBrMd())
+func (c *Comp) RoundedBrMd() *Comp {
+	c.El.Style(styles.RoundedBrMd())
 	return c
 }
 
-func (c *component) RoundedBrNone() *component {
-	c.el.Style(styles.RoundedBrNone())
+func (c *Comp) RoundedBrNone() *Comp {
+	c.El.Style(styles.RoundedBrNone())
 	return c
 }
 
-func (c *component) RoundedBrSm() *component {
-	c.el.Style(styles.RoundedBrSm())
+func (c *Comp) RoundedBrSm() *Comp {
+	c.El.Style(styles.RoundedBrSm())
 	return c
 }
 
-func (c *component) RoundedBrXl() *component {
-	c.el.Style(styles.RoundedBrXl())
+func (c *Comp) RoundedBrXl() *Comp {
+	c.El.Style(styles.RoundedBrXl())
 	return c
 }
 
-func (c *component) RoundedBrXs() *component {
-	c.el.Style(styles.RoundedBrXs())
+func (c *Comp) RoundedBrXs() *Comp {
+	c.El.Style(styles.RoundedBrXs())
 	return c
 }
 
-func (c *component) RoundedE(val value.Value) *component {
-	c.el.Style(styles.RoundedE(val))
+func (c *Comp) RoundedE(val value.Value) *Comp {
+	c.El.Style(styles.RoundedE(val))
 	return c
 }
 
-func (c *component) RoundedE2xl() *component {
-	c.el.Style(styles.RoundedE2xl())
+func (c *Comp) RoundedE2xl() *Comp {
+	c.El.Style(styles.RoundedE2xl())
 	return c
 }
 
-func (c *component) RoundedE3xl() *component {
-	c.el.Style(styles.RoundedE3xl())
+func (c *Comp) RoundedE3xl() *Comp {
+	c.El.Style(styles.RoundedE3xl())
 	return c
 }
 
-func (c *component) RoundedE4Xl() *component {
-	c.el.Style(styles.RoundedE4Xl())
+func (c *Comp) RoundedE4Xl() *Comp {
+	c.El.Style(styles.RoundedE4Xl())
 	return c
 }
 
-func (c *component) RoundedEFull() *component {
-	c.el.Style(styles.RoundedEFull())
+func (c *Comp) RoundedEFull() *Comp {
+	c.El.Style(styles.RoundedEFull())
 	return c
 }
 
-func (c *component) RoundedELg() *component {
-	c.el.Style(styles.RoundedELg())
+func (c *Comp) RoundedELg() *Comp {
+	c.El.Style(styles.RoundedELg())
 	return c
 }
 
-func (c *component) RoundedEMd() *component {
-	c.el.Style(styles.RoundedEMd())
+func (c *Comp) RoundedEMd() *Comp {
+	c.El.Style(styles.RoundedEMd())
 	return c
 }
 
-func (c *component) RoundedENone() *component {
-	c.el.Style(styles.RoundedENone())
+func (c *Comp) RoundedENone() *Comp {
+	c.El.Style(styles.RoundedENone())
 	return c
 }
 
-func (c *component) RoundedESm() *component {
-	c.el.Style(styles.RoundedESm())
+func (c *Comp) RoundedESm() *Comp {
+	c.El.Style(styles.RoundedESm())
 	return c
 }
 
-func (c *component) RoundedEXl() *component {
-	c.el.Style(styles.RoundedEXl())
+func (c *Comp) RoundedEXl() *Comp {
+	c.El.Style(styles.RoundedEXl())
 	return c
 }
 
-func (c *component) RoundedEXs() *component {
-	c.el.Style(styles.RoundedEXs())
+func (c *Comp) RoundedEXs() *Comp {
+	c.El.Style(styles.RoundedEXs())
 	return c
 }
 
-func (c *component) RoundedEe(val value.Value) *component {
-	c.el.Style(styles.RoundedEe(val))
+func (c *Comp) RoundedEe(val value.Value) *Comp {
+	c.El.Style(styles.RoundedEe(val))
 	return c
 }
 
-func (c *component) RoundedEe2xl() *component {
-	c.el.Style(styles.RoundedEe2xl())
+func (c *Comp) RoundedEe2xl() *Comp {
+	c.El.Style(styles.RoundedEe2xl())
 	return c
 }
 
-func (c *component) RoundedEe3xl() *component {
-	c.el.Style(styles.RoundedEe3xl())
+func (c *Comp) RoundedEe3xl() *Comp {
+	c.El.Style(styles.RoundedEe3xl())
 	return c
 }
 
-func (c *component) RoundedEe4Xl() *component {
-	c.el.Style(styles.RoundedEe4Xl())
+func (c *Comp) RoundedEe4Xl() *Comp {
+	c.El.Style(styles.RoundedEe4Xl())
 	return c
 }
 
-func (c *component) RoundedEeFull() *component {
-	c.el.Style(styles.RoundedEeFull())
+func (c *Comp) RoundedEeFull() *Comp {
+	c.El.Style(styles.RoundedEeFull())
 	return c
 }
 
-func (c *component) RoundedEeLg() *component {
-	c.el.Style(styles.RoundedEeLg())
+func (c *Comp) RoundedEeLg() *Comp {
+	c.El.Style(styles.RoundedEeLg())
 	return c
 }
 
-func (c *component) RoundedEeMd() *component {
-	c.el.Style(styles.RoundedEeMd())
+func (c *Comp) RoundedEeMd() *Comp {
+	c.El.Style(styles.RoundedEeMd())
 	return c
 }
 
-func (c *component) RoundedEeNone() *component {
-	c.el.Style(styles.RoundedEeNone())
+func (c *Comp) RoundedEeNone() *Comp {
+	c.El.Style(styles.RoundedEeNone())
 	return c
 }
 
-func (c *component) RoundedEeSm() *component {
-	c.el.Style(styles.RoundedEeSm())
+func (c *Comp) RoundedEeSm() *Comp {
+	c.El.Style(styles.RoundedEeSm())
 	return c
 }
 
-func (c *component) RoundedEeXl() *component {
-	c.el.Style(styles.RoundedEeXl())
+func (c *Comp) RoundedEeXl() *Comp {
+	c.El.Style(styles.RoundedEeXl())
 	return c
 }
 
-func (c *component) RoundedEeXs() *component {
-	c.el.Style(styles.RoundedEeXs())
+func (c *Comp) RoundedEeXs() *Comp {
+	c.El.Style(styles.RoundedEeXs())
 	return c
 }
 
-func (c *component) RoundedEs(val value.Value) *component {
-	c.el.Style(styles.RoundedEs(val))
+func (c *Comp) RoundedEs(val value.Value) *Comp {
+	c.El.Style(styles.RoundedEs(val))
 	return c
 }
 
-func (c *component) RoundedEs2xl() *component {
-	c.el.Style(styles.RoundedEs2xl())
+func (c *Comp) RoundedEs2xl() *Comp {
+	c.El.Style(styles.RoundedEs2xl())
 	return c
 }
 
-func (c *component) RoundedEs3xl() *component {
-	c.el.Style(styles.RoundedEs3xl())
+func (c *Comp) RoundedEs3xl() *Comp {
+	c.El.Style(styles.RoundedEs3xl())
 	return c
 }
 
-func (c *component) RoundedEs4Xl() *component {
-	c.el.Style(styles.RoundedEs4Xl())
+func (c *Comp) RoundedEs4Xl() *Comp {
+	c.El.Style(styles.RoundedEs4Xl())
 	return c
 }
 
-func (c *component) RoundedEsFull() *component {
-	c.el.Style(styles.RoundedEsFull())
+func (c *Comp) RoundedEsFull() *Comp {
+	c.El.Style(styles.RoundedEsFull())
 	return c
 }
 
-func (c *component) RoundedEsLg() *component {
-	c.el.Style(styles.RoundedEsLg())
+func (c *Comp) RoundedEsLg() *Comp {
+	c.El.Style(styles.RoundedEsLg())
 	return c
 }
 
-func (c *component) RoundedEsMd() *component {
-	c.el.Style(styles.RoundedEsMd())
+func (c *Comp) RoundedEsMd() *Comp {
+	c.El.Style(styles.RoundedEsMd())
 	return c
 }
 
-func (c *component) RoundedEsNone() *component {
-	c.el.Style(styles.RoundedEsNone())
+func (c *Comp) RoundedEsNone() *Comp {
+	c.El.Style(styles.RoundedEsNone())
 	return c
 }
 
-func (c *component) RoundedEsSm() *component {
-	c.el.Style(styles.RoundedEsSm())
+func (c *Comp) RoundedEsSm() *Comp {
+	c.El.Style(styles.RoundedEsSm())
 	return c
 }
 
-func (c *component) RoundedEsXl() *component {
-	c.el.Style(styles.RoundedEsXl())
+func (c *Comp) RoundedEsXl() *Comp {
+	c.El.Style(styles.RoundedEsXl())
 	return c
 }
 
-func (c *component) RoundedEsXs() *component {
-	c.el.Style(styles.RoundedEsXs())
+func (c *Comp) RoundedEsXs() *Comp {
+	c.El.Style(styles.RoundedEsXs())
 	return c
 }
 
-func (c *component) RoundedFull() *component {
-	c.el.Style(styles.RoundedFull())
+func (c *Comp) RoundedFull() *Comp {
+	c.El.Style(styles.RoundedFull())
 	return c
 }
 
-func (c *component) RoundedL(val value.Value) *component {
-	c.el.Style(styles.RoundedL(val))
+func (c *Comp) RoundedL(val value.Value) *Comp {
+	c.El.Style(styles.RoundedL(val))
 	return c
 }
 
-func (c *component) RoundedL2xl() *component {
-	c.el.Style(styles.RoundedL2xl())
+func (c *Comp) RoundedL2xl() *Comp {
+	c.El.Style(styles.RoundedL2xl())
 	return c
 }
 
-func (c *component) RoundedL3xl() *component {
-	c.el.Style(styles.RoundedL3xl())
+func (c *Comp) RoundedL3xl() *Comp {
+	c.El.Style(styles.RoundedL3xl())
 	return c
 }
 
-func (c *component) RoundedL4Xl() *component {
-	c.el.Style(styles.RoundedL4Xl())
+func (c *Comp) RoundedL4Xl() *Comp {
+	c.El.Style(styles.RoundedL4Xl())
 	return c
 }
 
-func (c *component) RoundedLFull() *component {
-	c.el.Style(styles.RoundedLFull())
+func (c *Comp) RoundedLFull() *Comp {
+	c.El.Style(styles.RoundedLFull())
 	return c
 }
 
-func (c *component) RoundedLLg() *component {
-	c.el.Style(styles.RoundedLLg())
+func (c *Comp) RoundedLLg() *Comp {
+	c.El.Style(styles.RoundedLLg())
 	return c
 }
 
-func (c *component) RoundedLMd() *component {
-	c.el.Style(styles.RoundedLMd())
+func (c *Comp) RoundedLMd() *Comp {
+	c.El.Style(styles.RoundedLMd())
 	return c
 }
 
-func (c *component) RoundedLNone() *component {
-	c.el.Style(styles.RoundedLNone())
+func (c *Comp) RoundedLNone() *Comp {
+	c.El.Style(styles.RoundedLNone())
 	return c
 }
 
-func (c *component) RoundedLSm() *component {
-	c.el.Style(styles.RoundedLSm())
+func (c *Comp) RoundedLSm() *Comp {
+	c.El.Style(styles.RoundedLSm())
 	return c
 }
 
-func (c *component) RoundedLXl() *component {
-	c.el.Style(styles.RoundedLXl())
+func (c *Comp) RoundedLXl() *Comp {
+	c.El.Style(styles.RoundedLXl())
 	return c
 }
 
-func (c *component) RoundedLXs() *component {
-	c.el.Style(styles.RoundedLXs())
+func (c *Comp) RoundedLXs() *Comp {
+	c.El.Style(styles.RoundedLXs())
 	return c
 }
 
-func (c *component) RoundedLg() *component {
-	c.el.Style(styles.RoundedLg())
+func (c *Comp) RoundedLg() *Comp {
+	c.El.Style(styles.RoundedLg())
 	return c
 }
 
-func (c *component) RoundedMd() *component {
-	c.el.Style(styles.RoundedMd())
+func (c *Comp) RoundedMd() *Comp {
+	c.El.Style(styles.RoundedMd())
 	return c
 }
 
-func (c *component) RoundedNone() *component {
-	c.el.Style(styles.RoundedNone())
+func (c *Comp) RoundedNone() *Comp {
+	c.El.Style(styles.RoundedNone())
 	return c
 }
 
-func (c *component) RoundedR(val value.Value) *component {
-	c.el.Style(styles.RoundedR(val))
+func (c *Comp) RoundedR(val value.Value) *Comp {
+	c.El.Style(styles.RoundedR(val))
 	return c
 }
 
-func (c *component) RoundedR2xl() *component {
-	c.el.Style(styles.RoundedR2xl())
+func (c *Comp) RoundedR2xl() *Comp {
+	c.El.Style(styles.RoundedR2xl())
 	return c
 }
 
-func (c *component) RoundedR3xl() *component {
-	c.el.Style(styles.RoundedR3xl())
+func (c *Comp) RoundedR3xl() *Comp {
+	c.El.Style(styles.RoundedR3xl())
 	return c
 }
 
-func (c *component) RoundedR4Xl() *component {
-	c.el.Style(styles.RoundedR4Xl())
+func (c *Comp) RoundedR4Xl() *Comp {
+	c.El.Style(styles.RoundedR4Xl())
 	return c
 }
 
-func (c *component) RoundedRFull() *component {
-	c.el.Style(styles.RoundedRFull())
+func (c *Comp) RoundedRFull() *Comp {
+	c.El.Style(styles.RoundedRFull())
 	return c
 }
 
-func (c *component) RoundedRLg() *component {
-	c.el.Style(styles.RoundedRLg())
+func (c *Comp) RoundedRLg() *Comp {
+	c.El.Style(styles.RoundedRLg())
 	return c
 }
 
-func (c *component) RoundedRMd() *component {
-	c.el.Style(styles.RoundedRMd())
+func (c *Comp) RoundedRMd() *Comp {
+	c.El.Style(styles.RoundedRMd())
 	return c
 }
 
-func (c *component) RoundedRNone() *component {
-	c.el.Style(styles.RoundedRNone())
+func (c *Comp) RoundedRNone() *Comp {
+	c.El.Style(styles.RoundedRNone())
 	return c
 }
 
-func (c *component) RoundedRSm() *component {
-	c.el.Style(styles.RoundedRSm())
+func (c *Comp) RoundedRSm() *Comp {
+	c.El.Style(styles.RoundedRSm())
 	return c
 }
 
-func (c *component) RoundedRXl() *component {
-	c.el.Style(styles.RoundedRXl())
+func (c *Comp) RoundedRXl() *Comp {
+	c.El.Style(styles.RoundedRXl())
 	return c
 }
 
-func (c *component) RoundedRXs() *component {
-	c.el.Style(styles.RoundedRXs())
+func (c *Comp) RoundedRXs() *Comp {
+	c.El.Style(styles.RoundedRXs())
 	return c
 }
 
-func (c *component) RoundedS(val value.Value) *component {
-	c.el.Style(styles.RoundedS(val))
+func (c *Comp) RoundedS(val value.Value) *Comp {
+	c.El.Style(styles.RoundedS(val))
 	return c
 }
 
-func (c *component) RoundedS2xl() *component {
-	c.el.Style(styles.RoundedS2xl())
+func (c *Comp) RoundedS2xl() *Comp {
+	c.El.Style(styles.RoundedS2xl())
 	return c
 }
 
-func (c *component) RoundedS3xl() *component {
-	c.el.Style(styles.RoundedS3xl())
+func (c *Comp) RoundedS3xl() *Comp {
+	c.El.Style(styles.RoundedS3xl())
 	return c
 }
 
-func (c *component) RoundedS4Xl() *component {
-	c.el.Style(styles.RoundedS4Xl())
+func (c *Comp) RoundedS4Xl() *Comp {
+	c.El.Style(styles.RoundedS4Xl())
 	return c
 }
 
-func (c *component) RoundedSFull() *component {
-	c.el.Style(styles.RoundedSFull())
+func (c *Comp) RoundedSFull() *Comp {
+	c.El.Style(styles.RoundedSFull())
 	return c
 }
 
-func (c *component) RoundedSLg() *component {
-	c.el.Style(styles.RoundedSLg())
+func (c *Comp) RoundedSLg() *Comp {
+	c.El.Style(styles.RoundedSLg())
 	return c
 }
 
-func (c *component) RoundedSMd() *component {
-	c.el.Style(styles.RoundedSMd())
+func (c *Comp) RoundedSMd() *Comp {
+	c.El.Style(styles.RoundedSMd())
 	return c
 }
 
-func (c *component) RoundedSNone() *component {
-	c.el.Style(styles.RoundedSNone())
+func (c *Comp) RoundedSNone() *Comp {
+	c.El.Style(styles.RoundedSNone())
 	return c
 }
 
-func (c *component) RoundedSSm() *component {
-	c.el.Style(styles.RoundedSSm())
+func (c *Comp) RoundedSSm() *Comp {
+	c.El.Style(styles.RoundedSSm())
 	return c
 }
 
-func (c *component) RoundedSXl() *component {
-	c.el.Style(styles.RoundedSXl())
+func (c *Comp) RoundedSXl() *Comp {
+	c.El.Style(styles.RoundedSXl())
 	return c
 }
 
-func (c *component) RoundedSXs() *component {
-	c.el.Style(styles.RoundedSXs())
+func (c *Comp) RoundedSXs() *Comp {
+	c.El.Style(styles.RoundedSXs())
 	return c
 }
 
-func (c *component) RoundedSe(val value.Value) *component {
-	c.el.Style(styles.RoundedSe(val))
+func (c *Comp) RoundedSe(val value.Value) *Comp {
+	c.El.Style(styles.RoundedSe(val))
 	return c
 }
 
-func (c *component) RoundedSe2xl() *component {
-	c.el.Style(styles.RoundedSe2xl())
+func (c *Comp) RoundedSe2xl() *Comp {
+	c.El.Style(styles.RoundedSe2xl())
 	return c
 }
 
-func (c *component) RoundedSe3xl() *component {
-	c.el.Style(styles.RoundedSe3xl())
+func (c *Comp) RoundedSe3xl() *Comp {
+	c.El.Style(styles.RoundedSe3xl())
 	return c
 }
 
-func (c *component) RoundedSe4Xl() *component {
-	c.el.Style(styles.RoundedSe4Xl())
+func (c *Comp) RoundedSe4Xl() *Comp {
+	c.El.Style(styles.RoundedSe4Xl())
 	return c
 }
 
-func (c *component) RoundedSeFull() *component {
-	c.el.Style(styles.RoundedSeFull())
+func (c *Comp) RoundedSeFull() *Comp {
+	c.El.Style(styles.RoundedSeFull())
 	return c
 }
 
-func (c *component) RoundedSeLg() *component {
-	c.el.Style(styles.RoundedSeLg())
+func (c *Comp) RoundedSeLg() *Comp {
+	c.El.Style(styles.RoundedSeLg())
 	return c
 }
 
-func (c *component) RoundedSeMd() *component {
-	c.el.Style(styles.RoundedSeMd())
+func (c *Comp) RoundedSeMd() *Comp {
+	c.El.Style(styles.RoundedSeMd())
 	return c
 }
 
-func (c *component) RoundedSeNone() *component {
-	c.el.Style(styles.RoundedSeNone())
+func (c *Comp) RoundedSeNone() *Comp {
+	c.El.Style(styles.RoundedSeNone())
 	return c
 }
 
-func (c *component) RoundedSeSm() *component {
-	c.el.Style(styles.RoundedSeSm())
+func (c *Comp) RoundedSeSm() *Comp {
+	c.El.Style(styles.RoundedSeSm())
 	return c
 }
 
-func (c *component) RoundedSeXl() *component {
-	c.el.Style(styles.RoundedSeXl())
+func (c *Comp) RoundedSeXl() *Comp {
+	c.El.Style(styles.RoundedSeXl())
 	return c
 }
 
-func (c *component) RoundedSeXs() *component {
-	c.el.Style(styles.RoundedSeXs())
+func (c *Comp) RoundedSeXs() *Comp {
+	c.El.Style(styles.RoundedSeXs())
 	return c
 }
 
-func (c *component) RoundedSm() *component {
-	c.el.Style(styles.RoundedSm())
+func (c *Comp) RoundedSm() *Comp {
+	c.El.Style(styles.RoundedSm())
 	return c
 }
 
-func (c *component) RoundedSs(val value.Value) *component {
-	c.el.Style(styles.RoundedSs(val))
+func (c *Comp) RoundedSs(val value.Value) *Comp {
+	c.El.Style(styles.RoundedSs(val))
 	return c
 }
 
-func (c *component) RoundedSs2xl() *component {
-	c.el.Style(styles.RoundedSs2xl())
+func (c *Comp) RoundedSs2xl() *Comp {
+	c.El.Style(styles.RoundedSs2xl())
 	return c
 }
 
-func (c *component) RoundedSs3xl() *component {
-	c.el.Style(styles.RoundedSs3xl())
+func (c *Comp) RoundedSs3xl() *Comp {
+	c.El.Style(styles.RoundedSs3xl())
 	return c
 }
 
-func (c *component) RoundedSs4Xl() *component {
-	c.el.Style(styles.RoundedSs4Xl())
+func (c *Comp) RoundedSs4Xl() *Comp {
+	c.El.Style(styles.RoundedSs4Xl())
 	return c
 }
 
-func (c *component) RoundedSsFull() *component {
-	c.el.Style(styles.RoundedSsFull())
+func (c *Comp) RoundedSsFull() *Comp {
+	c.El.Style(styles.RoundedSsFull())
 	return c
 }
 
-func (c *component) RoundedSsLg() *component {
-	c.el.Style(styles.RoundedSsLg())
+func (c *Comp) RoundedSsLg() *Comp {
+	c.El.Style(styles.RoundedSsLg())
 	return c
 }
 
-func (c *component) RoundedSsMd() *component {
-	c.el.Style(styles.RoundedSsMd())
+func (c *Comp) RoundedSsMd() *Comp {
+	c.El.Style(styles.RoundedSsMd())
 	return c
 }
 
-func (c *component) RoundedSsNone() *component {
-	c.el.Style(styles.RoundedSsNone())
+func (c *Comp) RoundedSsNone() *Comp {
+	c.El.Style(styles.RoundedSsNone())
 	return c
 }
 
-func (c *component) RoundedSsSm() *component {
-	c.el.Style(styles.RoundedSsSm())
+func (c *Comp) RoundedSsSm() *Comp {
+	c.El.Style(styles.RoundedSsSm())
 	return c
 }
 
-func (c *component) RoundedSsXl() *component {
-	c.el.Style(styles.RoundedSsXl())
+func (c *Comp) RoundedSsXl() *Comp {
+	c.El.Style(styles.RoundedSsXl())
 	return c
 }
 
-func (c *component) RoundedSsXs() *component {
-	c.el.Style(styles.RoundedSsXs())
+func (c *Comp) RoundedSsXs() *Comp {
+	c.El.Style(styles.RoundedSsXs())
 	return c
 }
 
-func (c *component) RoundedT(val value.Value) *component {
-	c.el.Style(styles.RoundedT(val))
+func (c *Comp) RoundedT(val value.Value) *Comp {
+	c.El.Style(styles.RoundedT(val))
 	return c
 }
 
-func (c *component) RoundedT2xl() *component {
-	c.el.Style(styles.RoundedT2xl())
+func (c *Comp) RoundedT2xl() *Comp {
+	c.El.Style(styles.RoundedT2xl())
 	return c
 }
 
-func (c *component) RoundedT3xl() *component {
-	c.el.Style(styles.RoundedT3xl())
+func (c *Comp) RoundedT3xl() *Comp {
+	c.El.Style(styles.RoundedT3xl())
 	return c
 }
 
-func (c *component) RoundedT4Xl() *component {
-	c.el.Style(styles.RoundedT4Xl())
+func (c *Comp) RoundedT4Xl() *Comp {
+	c.El.Style(styles.RoundedT4Xl())
 	return c
 }
 
-func (c *component) RoundedTFull() *component {
-	c.el.Style(styles.RoundedTFull())
+func (c *Comp) RoundedTFull() *Comp {
+	c.El.Style(styles.RoundedTFull())
 	return c
 }
 
-func (c *component) RoundedTLg() *component {
-	c.el.Style(styles.RoundedTLg())
+func (c *Comp) RoundedTLg() *Comp {
+	c.El.Style(styles.RoundedTLg())
 	return c
 }
 
-func (c *component) RoundedTMd() *component {
-	c.el.Style(styles.RoundedTMd())
+func (c *Comp) RoundedTMd() *Comp {
+	c.El.Style(styles.RoundedTMd())
 	return c
 }
 
-func (c *component) RoundedTNone() *component {
-	c.el.Style(styles.RoundedTNone())
+func (c *Comp) RoundedTNone() *Comp {
+	c.El.Style(styles.RoundedTNone())
 	return c
 }
 
-func (c *component) RoundedTSm() *component {
-	c.el.Style(styles.RoundedTSm())
+func (c *Comp) RoundedTSm() *Comp {
+	c.El.Style(styles.RoundedTSm())
 	return c
 }
 
-func (c *component) RoundedTXl() *component {
-	c.el.Style(styles.RoundedTXl())
+func (c *Comp) RoundedTXl() *Comp {
+	c.El.Style(styles.RoundedTXl())
 	return c
 }
 
-func (c *component) RoundedTXs() *component {
-	c.el.Style(styles.RoundedTXs())
+func (c *Comp) RoundedTXs() *Comp {
+	c.El.Style(styles.RoundedTXs())
 	return c
 }
 
-func (c *component) RoundedTl(val value.Value) *component {
-	c.el.Style(styles.RoundedTl(val))
+func (c *Comp) RoundedTl(val value.Value) *Comp {
+	c.El.Style(styles.RoundedTl(val))
 	return c
 }
 
-func (c *component) RoundedTl2xl() *component {
-	c.el.Style(styles.RoundedTl2xl())
+func (c *Comp) RoundedTl2xl() *Comp {
+	c.El.Style(styles.RoundedTl2xl())
 	return c
 }
 
-func (c *component) RoundedTl3xl() *component {
-	c.el.Style(styles.RoundedTl3xl())
+func (c *Comp) RoundedTl3xl() *Comp {
+	c.El.Style(styles.RoundedTl3xl())
 	return c
 }
 
-func (c *component) RoundedTl4Xl() *component {
-	c.el.Style(styles.RoundedTl4Xl())
+func (c *Comp) RoundedTl4Xl() *Comp {
+	c.El.Style(styles.RoundedTl4Xl())
 	return c
 }
 
-func (c *component) RoundedTlFull() *component {
-	c.el.Style(styles.RoundedTlFull())
+func (c *Comp) RoundedTlFull() *Comp {
+	c.El.Style(styles.RoundedTlFull())
 	return c
 }
 
-func (c *component) RoundedTlLg() *component {
-	c.el.Style(styles.RoundedTlLg())
+func (c *Comp) RoundedTlLg() *Comp {
+	c.El.Style(styles.RoundedTlLg())
 	return c
 }
 
-func (c *component) RoundedTlMd() *component {
-	c.el.Style(styles.RoundedTlMd())
+func (c *Comp) RoundedTlMd() *Comp {
+	c.El.Style(styles.RoundedTlMd())
 	return c
 }
 
-func (c *component) RoundedTlNone() *component {
-	c.el.Style(styles.RoundedTlNone())
+func (c *Comp) RoundedTlNone() *Comp {
+	c.El.Style(styles.RoundedTlNone())
 	return c
 }
 
-func (c *component) RoundedTlSm() *component {
-	c.el.Style(styles.RoundedTlSm())
+func (c *Comp) RoundedTlSm() *Comp {
+	c.El.Style(styles.RoundedTlSm())
 	return c
 }
 
-func (c *component) RoundedTlXl() *component {
-	c.el.Style(styles.RoundedTlXl())
+func (c *Comp) RoundedTlXl() *Comp {
+	c.El.Style(styles.RoundedTlXl())
 	return c
 }
 
-func (c *component) RoundedTlXs() *component {
-	c.el.Style(styles.RoundedTlXs())
+func (c *Comp) RoundedTlXs() *Comp {
+	c.El.Style(styles.RoundedTlXs())
 	return c
 }
 
-func (c *component) RoundedTr(val value.Value) *component {
-	c.el.Style(styles.RoundedTr(val))
+func (c *Comp) RoundedTr(val value.Value) *Comp {
+	c.El.Style(styles.RoundedTr(val))
 	return c
 }
 
-func (c *component) RoundedTr2xl() *component {
-	c.el.Style(styles.RoundedTr2xl())
+func (c *Comp) RoundedTr2xl() *Comp {
+	c.El.Style(styles.RoundedTr2xl())
 	return c
 }
 
-func (c *component) RoundedTr3xl() *component {
-	c.el.Style(styles.RoundedTr3xl())
+func (c *Comp) RoundedTr3xl() *Comp {
+	c.El.Style(styles.RoundedTr3xl())
 	return c
 }
 
-func (c *component) RoundedTr4Xl() *component {
-	c.el.Style(styles.RoundedTr4Xl())
+func (c *Comp) RoundedTr4Xl() *Comp {
+	c.El.Style(styles.RoundedTr4Xl())
 	return c
 }
 
-func (c *component) RoundedTrFull() *component {
-	c.el.Style(styles.RoundedTrFull())
+func (c *Comp) RoundedTrFull() *Comp {
+	c.El.Style(styles.RoundedTrFull())
 	return c
 }
 
-func (c *component) RoundedTrLg() *component {
-	c.el.Style(styles.RoundedTrLg())
+func (c *Comp) RoundedTrLg() *Comp {
+	c.El.Style(styles.RoundedTrLg())
 	return c
 }
 
-func (c *component) RoundedTrMd() *component {
-	c.el.Style(styles.RoundedTrMd())
+func (c *Comp) RoundedTrMd() *Comp {
+	c.El.Style(styles.RoundedTrMd())
 	return c
 }
 
-func (c *component) RoundedTrNone() *component {
-	c.el.Style(styles.RoundedTrNone())
+func (c *Comp) RoundedTrNone() *Comp {
+	c.El.Style(styles.RoundedTrNone())
 	return c
 }
 
-func (c *component) RoundedTrSm() *component {
-	c.el.Style(styles.RoundedTrSm())
+func (c *Comp) RoundedTrSm() *Comp {
+	c.El.Style(styles.RoundedTrSm())
 	return c
 }
 
-func (c *component) RoundedTrXl() *component {
-	c.el.Style(styles.RoundedTrXl())
+func (c *Comp) RoundedTrXl() *Comp {
+	c.El.Style(styles.RoundedTrXl())
 	return c
 }
 
-func (c *component) RoundedTrXs() *component {
-	c.el.Style(styles.RoundedTrXs())
+func (c *Comp) RoundedTrXs() *Comp {
+	c.El.Style(styles.RoundedTrXs())
 	return c
 }
 
-func (c *component) RoundedXl() *component {
-	c.el.Style(styles.RoundedXl())
+func (c *Comp) RoundedXl() *Comp {
+	c.El.Style(styles.RoundedXl())
 	return c
 }
 
-func (c *component) RoundedXs() *component {
-	c.el.Style(styles.RoundedXs())
+func (c *Comp) RoundedXs() *Comp {
+	c.El.Style(styles.RoundedXs())
 	return c
 }
 
-func (c *component) Row(number int) *component {
-	c.el.Style(styles.Row(number))
+func (c *Comp) Row(number int) *Comp {
+	c.El.Style(styles.Row(number))
 	return c
 }
 
-func (c *component) RowAuto() *component {
-	c.el.Style(styles.RowAuto())
+func (c *Comp) RowAuto() *Comp {
+	c.El.Style(styles.RowAuto())
 	return c
 }
 
-func (c *component) RowBy(val value.Value) *component {
-	c.el.Style(styles.RowBy(val))
+func (c *Comp) RowBy(val value.Value) *Comp {
+	c.El.Style(styles.RowBy(val))
 	return c
 }
 
-func (c *component) RowEnd(number int) *component {
-	c.el.Style(styles.RowEnd(number))
+func (c *Comp) RowEnd(number int) *Comp {
+	c.El.Style(styles.RowEnd(number))
 	return c
 }
 
-func (c *component) RowEndAuto() *component {
-	c.el.Style(styles.RowEndAuto())
+func (c *Comp) RowEndAuto() *Comp {
+	c.El.Style(styles.RowEndAuto())
 	return c
 }
 
-func (c *component) RowEndBy(val value.Value) *component {
-	c.el.Style(styles.RowEndBy(val))
+func (c *Comp) RowEndBy(val value.Value) *Comp {
+	c.El.Style(styles.RowEndBy(val))
 	return c
 }
 
-func (c *component) RowSpan(number int) *component {
-	c.el.Style(styles.RowSpan(number))
+func (c *Comp) RowSpan(number int) *Comp {
+	c.El.Style(styles.RowSpan(number))
 	return c
 }
 
-func (c *component) RowSpanBy(val value.Value) *component {
-	c.el.Style(styles.RowSpanBy(val))
+func (c *Comp) RowSpanBy(val value.Value) *Comp {
+	c.El.Style(styles.RowSpanBy(val))
 	return c
 }
 
-func (c *component) RowSpanFull() *component {
-	c.el.Style(styles.RowSpanFull())
+func (c *Comp) RowSpanFull() *Comp {
+	c.El.Style(styles.RowSpanFull())
 	return c
 }
 
-func (c *component) RowStart(number int) *component {
-	c.el.Style(styles.RowStart(number))
+func (c *Comp) RowStart(number int) *Comp {
+	c.El.Style(styles.RowStart(number))
 	return c
 }
 
-func (c *component) RowStartAuto() *component {
-	c.el.Style(styles.RowStartAuto())
+func (c *Comp) RowStartAuto() *Comp {
+	c.El.Style(styles.RowStartAuto())
 	return c
 }
 
-func (c *component) RowStartBy(val value.Value) *component {
-	c.el.Style(styles.RowStartBy(val))
+func (c *Comp) RowStartBy(val value.Value) *Comp {
+	c.El.Style(styles.RowStartBy(val))
 	return c
 }
 
-func (c *component) Saturate(val any) *component {
-	c.el.Style(styles.Saturate(val))
+func (c *Comp) Saturate(val any) *Comp {
+	c.El.Style(styles.Saturate(val))
 	return c
 }
 
-func (c *component) Scale(val any) *component {
-	c.el.Style(styles.Scale(val))
+func (c *Comp) Scale(val any) *Comp {
+	c.El.Style(styles.Scale(val))
 	return c
 }
 
-func (c *component) Scale3d() *component {
-	c.el.Style(styles.Scale3d())
+func (c *Comp) Scale3d() *Comp {
+	c.El.Style(styles.Scale3d())
 	return c
 }
 
-func (c *component) ScaleNone() *component {
-	c.el.Style(styles.ScaleNone())
+func (c *Comp) ScaleNone() *Comp {
+	c.El.Style(styles.ScaleNone())
 	return c
 }
 
-func (c *component) ScaleX(val any) *component {
-	c.el.Style(styles.ScaleX(val))
+func (c *Comp) ScaleX(val any) *Comp {
+	c.El.Style(styles.ScaleX(val))
 	return c
 }
 
-func (c *component) ScaleY(val any) *component {
-	c.el.Style(styles.ScaleY(val))
+func (c *Comp) ScaleY(val any) *Comp {
+	c.El.Style(styles.ScaleY(val))
 	return c
 }
 
-func (c *component) ScaleZ(val any) *component {
-	c.el.Style(styles.ScaleZ(val))
+func (c *Comp) ScaleZ(val any) *Comp {
+	c.El.Style(styles.ScaleZ(val))
 	return c
 }
 
-func (c *component) SchemeDark() *component {
-	c.el.Style(styles.SchemeDark())
+func (c *Comp) SchemeDark() *Comp {
+	c.El.Style(styles.SchemeDark())
 	return c
 }
 
-func (c *component) SchemeLight() *component {
-	c.el.Style(styles.SchemeLight())
+func (c *Comp) SchemeLight() *Comp {
+	c.El.Style(styles.SchemeLight())
 	return c
 }
 
-func (c *component) SchemeLightDark() *component {
-	c.el.Style(styles.SchemeLightDark())
+func (c *Comp) SchemeLightDark() *Comp {
+	c.El.Style(styles.SchemeLightDark())
 	return c
 }
 
-func (c *component) SchemeNormal() *component {
-	c.el.Style(styles.SchemeNormal())
+func (c *Comp) SchemeNormal() *Comp {
+	c.El.Style(styles.SchemeNormal())
 	return c
 }
 
-func (c *component) SchemeOnlyDark() *component {
-	c.el.Style(styles.SchemeOnlyDark())
+func (c *Comp) SchemeOnlyDark() *Comp {
+	c.El.Style(styles.SchemeOnlyDark())
 	return c
 }
 
-func (c *component) SchemeOnlyLight() *component {
-	c.el.Style(styles.SchemeOnlyLight())
+func (c *Comp) SchemeOnlyLight() *Comp {
+	c.El.Style(styles.SchemeOnlyLight())
 	return c
 }
 
-func (c *component) ScrollAuto() *component {
-	c.el.Style(styles.ScrollAuto())
+func (c *Comp) ScrollAuto() *Comp {
+	c.El.Style(styles.ScrollAuto())
 	return c
 }
 
-func (c *component) ScrollM(val any) *component {
-	c.el.Style(styles.ScrollM(val))
+func (c *Comp) ScrollM(val any) *Comp {
+	c.El.Style(styles.ScrollM(val))
 	return c
 }
 
-func (c *component) ScrollMb(val any) *component {
-	c.el.Style(styles.ScrollMb(val))
+func (c *Comp) ScrollMb(val any) *Comp {
+	c.El.Style(styles.ScrollMb(val))
 	return c
 }
 
-func (c *component) ScrollMe(val any) *component {
-	c.el.Style(styles.ScrollMe(val))
+func (c *Comp) ScrollMe(val any) *Comp {
+	c.El.Style(styles.ScrollMe(val))
 	return c
 }
 
-func (c *component) ScrollMl(val any) *component {
-	c.el.Style(styles.ScrollMl(val))
+func (c *Comp) ScrollMl(val any) *Comp {
+	c.El.Style(styles.ScrollMl(val))
 	return c
 }
 
-func (c *component) ScrollMr(val any) *component {
-	c.el.Style(styles.ScrollMr(val))
+func (c *Comp) ScrollMr(val any) *Comp {
+	c.El.Style(styles.ScrollMr(val))
 	return c
 }
 
-func (c *component) ScrollMs(val any) *component {
-	c.el.Style(styles.ScrollMs(val))
+func (c *Comp) ScrollMs(val any) *Comp {
+	c.El.Style(styles.ScrollMs(val))
 	return c
 }
 
-func (c *component) ScrollMt(val any) *component {
-	c.el.Style(styles.ScrollMt(val))
+func (c *Comp) ScrollMt(val any) *Comp {
+	c.El.Style(styles.ScrollMt(val))
 	return c
 }
 
-func (c *component) ScrollMx(val any) *component {
-	c.el.Style(styles.ScrollMx(val))
+func (c *Comp) ScrollMx(val any) *Comp {
+	c.El.Style(styles.ScrollMx(val))
 	return c
 }
 
-func (c *component) ScrollMy(val any) *component {
-	c.el.Style(styles.ScrollMy(val))
+func (c *Comp) ScrollMy(val any) *Comp {
+	c.El.Style(styles.ScrollMy(val))
 	return c
 }
 
-func (c *component) ScrollP(val any) *component {
-	c.el.Style(styles.ScrollP(val))
+func (c *Comp) ScrollP(val any) *Comp {
+	c.El.Style(styles.ScrollP(val))
 	return c
 }
 
-func (c *component) ScrollPb(val any) *component {
-	c.el.Style(styles.ScrollPb(val))
+func (c *Comp) ScrollPb(val any) *Comp {
+	c.El.Style(styles.ScrollPb(val))
 	return c
 }
 
-func (c *component) ScrollPe(val any) *component {
-	c.el.Style(styles.ScrollPe(val))
+func (c *Comp) ScrollPe(val any) *Comp {
+	c.El.Style(styles.ScrollPe(val))
 	return c
 }
 
-func (c *component) ScrollPl(val any) *component {
-	c.el.Style(styles.ScrollPl(val))
+func (c *Comp) ScrollPl(val any) *Comp {
+	c.El.Style(styles.ScrollPl(val))
 	return c
 }
 
-func (c *component) ScrollPr(val any) *component {
-	c.el.Style(styles.ScrollPr(val))
+func (c *Comp) ScrollPr(val any) *Comp {
+	c.El.Style(styles.ScrollPr(val))
 	return c
 }
 
-func (c *component) ScrollPs(val any) *component {
-	c.el.Style(styles.ScrollPs(val))
+func (c *Comp) ScrollPs(val any) *Comp {
+	c.El.Style(styles.ScrollPs(val))
 	return c
 }
 
-func (c *component) ScrollPt(val any) *component {
-	c.el.Style(styles.ScrollPt(val))
+func (c *Comp) ScrollPt(val any) *Comp {
+	c.El.Style(styles.ScrollPt(val))
 	return c
 }
 
-func (c *component) ScrollPx(val any) *component {
-	c.el.Style(styles.ScrollPx(val))
+func (c *Comp) ScrollPx(val any) *Comp {
+	c.El.Style(styles.ScrollPx(val))
 	return c
 }
 
-func (c *component) ScrollPy(val any) *component {
-	c.el.Style(styles.ScrollPy(val))
+func (c *Comp) ScrollPy(val any) *Comp {
+	c.El.Style(styles.ScrollPy(val))
 	return c
 }
 
-func (c *component) ScrollSmooth() *component {
-	c.el.Style(styles.ScrollSmooth())
+func (c *Comp) ScrollSmooth() *Comp {
+	c.El.Style(styles.ScrollSmooth())
 	return c
 }
 
-func (c *component) SelectAll() *component {
-	c.el.Style(styles.SelectAll())
+func (c *Comp) SelectAll() *Comp {
+	c.El.Style(styles.SelectAll())
 	return c
 }
 
-func (c *component) SelectAuto() *component {
-	c.el.Style(styles.SelectAuto())
+func (c *Comp) SelectAuto() *Comp {
+	c.El.Style(styles.SelectAuto())
 	return c
 }
 
-func (c *component) SelectNone() *component {
-	c.el.Style(styles.SelectNone())
+func (c *Comp) SelectNone() *Comp {
+	c.El.Style(styles.SelectNone())
 	return c
 }
 
-func (c *component) SelectText() *component {
-	c.el.Style(styles.SelectText())
+func (c *Comp) SelectText() *Comp {
+	c.El.Style(styles.SelectText())
 	return c
 }
 
-func (c *component) SelectorParam(param string) *component {
-	c.el.Style(styles.SelectorParam(param))
+func (c *Comp) SelectorParam(param string) *Comp {
+	c.El.Style(styles.SelectorParam(param))
 	return c
 }
 
-func (c *component) SelfAuto() *component {
-	c.el.Style(styles.SelfAuto())
+func (c *Comp) SelfAuto() *Comp {
+	c.El.Style(styles.SelfAuto())
 	return c
 }
 
-func (c *component) SelfBaseline() *component {
-	c.el.Style(styles.SelfBaseline())
+func (c *Comp) SelfBaseline() *Comp {
+	c.El.Style(styles.SelfBaseline())
 	return c
 }
 
-func (c *component) SelfBaselineLast() *component {
-	c.el.Style(styles.SelfBaselineLast())
+func (c *Comp) SelfBaselineLast() *Comp {
+	c.El.Style(styles.SelfBaselineLast())
 	return c
 }
 
-func (c *component) SelfCenter() *component {
-	c.el.Style(styles.SelfCenter())
+func (c *Comp) SelfCenter() *Comp {
+	c.El.Style(styles.SelfCenter())
 	return c
 }
 
-func (c *component) SelfCenterSafe() *component {
-	c.el.Style(styles.SelfCenterSafe())
+func (c *Comp) SelfCenterSafe() *Comp {
+	c.El.Style(styles.SelfCenterSafe())
 	return c
 }
 
-func (c *component) SelfEnd() *component {
-	c.el.Style(styles.SelfEnd())
+func (c *Comp) SelfEnd() *Comp {
+	c.El.Style(styles.SelfEnd())
 	return c
 }
 
-func (c *component) SelfEndSafe() *component {
-	c.el.Style(styles.SelfEndSafe())
+func (c *Comp) SelfEndSafe() *Comp {
+	c.El.Style(styles.SelfEndSafe())
 	return c
 }
 
-func (c *component) SelfStart() *component {
-	c.el.Style(styles.SelfStart())
+func (c *Comp) SelfStart() *Comp {
+	c.El.Style(styles.SelfStart())
 	return c
 }
 
-func (c *component) SelfStretch() *component {
-	c.el.Style(styles.SelfStretch())
+func (c *Comp) SelfStretch() *Comp {
+	c.El.Style(styles.SelfStretch())
 	return c
 }
 
-func (c *component) Sepia(val ...any) *component {
-	c.el.Style(styles.Sepia(val...))
+func (c *Comp) Sepia(val ...any) *Comp {
+	c.El.Style(styles.Sepia(val...))
 	return c
 }
 
-func (c *component) Shadow(val value.Value) *component {
-	c.el.Style(styles.Shadow(val))
+func (c *Comp) Shadow(val value.Value) *Comp {
+	c.El.Style(styles.Shadow(val))
 	return c
 }
 
-func (c *component) Shadow2xl() *component {
-	c.el.Style(styles.Shadow2xl())
+func (c *Comp) Shadow2xl() *Comp {
+	c.El.Style(styles.Shadow2xl())
 	return c
 }
 
-func (c *component) Shadow2xs() *component {
-	c.el.Style(styles.Shadow2xs())
+func (c *Comp) Shadow2xs() *Comp {
+	c.El.Style(styles.Shadow2xs())
 	return c
 }
 
-func (c *component) ShadowAmber(scale int) *component {
-	c.el.Style(styles.ShadowAmber(scale))
+func (c *Comp) ShadowAmber(scale int) *Comp {
+	c.El.Style(styles.ShadowAmber(scale))
 	return c
 }
 
-func (c *component) ShadowAmberAlpha(scale int) *component {
-	c.el.Style(styles.ShadowAmberAlpha(scale))
+func (c *Comp) ShadowAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowAmberAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowAmberDark(scale int) *component {
-	c.el.Style(styles.ShadowAmberDark(scale))
+func (c *Comp) ShadowAmberDark(scale int) *Comp {
+	c.El.Style(styles.ShadowAmberDark(scale))
 	return c
 }
 
-func (c *component) ShadowAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowAmberDarkAlpha(scale))
+func (c *Comp) ShadowAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowBlack() *component {
-	c.el.Style(styles.ShadowBlack())
+func (c *Comp) ShadowBlack() *Comp {
+	c.El.Style(styles.ShadowBlack())
 	return c
 }
 
-func (c *component) ShadowBlackAlpha(scale int) *component {
-	c.el.Style(styles.ShadowBlackAlpha(scale))
+func (c *Comp) ShadowBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowBlackAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowBlue(scale int) *component {
-	c.el.Style(styles.ShadowBlue(scale))
+func (c *Comp) ShadowBlue(scale int) *Comp {
+	c.El.Style(styles.ShadowBlue(scale))
 	return c
 }
 
-func (c *component) ShadowBlueAlpha(scale int) *component {
-	c.el.Style(styles.ShadowBlueAlpha(scale))
+func (c *Comp) ShadowBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowBlueAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowBlueDark(scale int) *component {
-	c.el.Style(styles.ShadowBlueDark(scale))
+func (c *Comp) ShadowBlueDark(scale int) *Comp {
+	c.El.Style(styles.ShadowBlueDark(scale))
 	return c
 }
 
-func (c *component) ShadowBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowBlueDarkAlpha(scale))
+func (c *Comp) ShadowBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowBronze(scale int) *component {
-	c.el.Style(styles.ShadowBronze(scale))
+func (c *Comp) ShadowBronze(scale int) *Comp {
+	c.El.Style(styles.ShadowBronze(scale))
 	return c
 }
 
-func (c *component) ShadowBronzeAlpha(scale int) *component {
-	c.el.Style(styles.ShadowBronzeAlpha(scale))
+func (c *Comp) ShadowBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowBronzeDark(scale int) *component {
-	c.el.Style(styles.ShadowBronzeDark(scale))
+func (c *Comp) ShadowBronzeDark(scale int) *Comp {
+	c.El.Style(styles.ShadowBronzeDark(scale))
 	return c
 }
 
-func (c *component) ShadowBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowBronzeDarkAlpha(scale))
+func (c *Comp) ShadowBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowBrown(scale int) *component {
-	c.el.Style(styles.ShadowBrown(scale))
+func (c *Comp) ShadowBrown(scale int) *Comp {
+	c.El.Style(styles.ShadowBrown(scale))
 	return c
 }
 
-func (c *component) ShadowBrownAlpha(scale int) *component {
-	c.el.Style(styles.ShadowBrownAlpha(scale))
+func (c *Comp) ShadowBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowBrownAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowBrownDark(scale int) *component {
-	c.el.Style(styles.ShadowBrownDark(scale))
+func (c *Comp) ShadowBrownDark(scale int) *Comp {
+	c.El.Style(styles.ShadowBrownDark(scale))
 	return c
 }
 
-func (c *component) ShadowBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowBrownDarkAlpha(scale))
+func (c *Comp) ShadowBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowColor(val value.Value) *component {
-	c.el.Style(styles.ShadowColor(val))
+func (c *Comp) ShadowColor(val value.Value) *Comp {
+	c.El.Style(styles.ShadowColor(val))
 	return c
 }
 
-func (c *component) ShadowCrimson(scale int) *component {
-	c.el.Style(styles.ShadowCrimson(scale))
+func (c *Comp) ShadowCrimson(scale int) *Comp {
+	c.El.Style(styles.ShadowCrimson(scale))
 	return c
 }
 
-func (c *component) ShadowCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.ShadowCrimsonAlpha(scale))
+func (c *Comp) ShadowCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowCrimsonDark(scale int) *component {
-	c.el.Style(styles.ShadowCrimsonDark(scale))
+func (c *Comp) ShadowCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.ShadowCrimsonDark(scale))
 	return c
 }
 
-func (c *component) ShadowCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowCrimsonDarkAlpha(scale))
+func (c *Comp) ShadowCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowCurrent() *component {
-	c.el.Style(styles.ShadowCurrent())
+func (c *Comp) ShadowCurrent() *Comp {
+	c.El.Style(styles.ShadowCurrent())
 	return c
 }
 
-func (c *component) ShadowCyan(scale int) *component {
-	c.el.Style(styles.ShadowCyan(scale))
+func (c *Comp) ShadowCyan(scale int) *Comp {
+	c.El.Style(styles.ShadowCyan(scale))
 	return c
 }
 
-func (c *component) ShadowCyanAlpha(scale int) *component {
-	c.el.Style(styles.ShadowCyanAlpha(scale))
+func (c *Comp) ShadowCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowCyanAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowCyanDark(scale int) *component {
-	c.el.Style(styles.ShadowCyanDark(scale))
+func (c *Comp) ShadowCyanDark(scale int) *Comp {
+	c.El.Style(styles.ShadowCyanDark(scale))
 	return c
 }
 
-func (c *component) ShadowCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowCyanDarkAlpha(scale))
+func (c *Comp) ShadowCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowGold(scale int) *component {
-	c.el.Style(styles.ShadowGold(scale))
+func (c *Comp) ShadowGold(scale int) *Comp {
+	c.El.Style(styles.ShadowGold(scale))
 	return c
 }
 
-func (c *component) ShadowGoldAlpha(scale int) *component {
-	c.el.Style(styles.ShadowGoldAlpha(scale))
+func (c *Comp) ShadowGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowGoldAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowGoldDark(scale int) *component {
-	c.el.Style(styles.ShadowGoldDark(scale))
+func (c *Comp) ShadowGoldDark(scale int) *Comp {
+	c.El.Style(styles.ShadowGoldDark(scale))
 	return c
 }
 
-func (c *component) ShadowGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowGoldDarkAlpha(scale))
+func (c *Comp) ShadowGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowGrass(scale int) *component {
-	c.el.Style(styles.ShadowGrass(scale))
+func (c *Comp) ShadowGrass(scale int) *Comp {
+	c.El.Style(styles.ShadowGrass(scale))
 	return c
 }
 
-func (c *component) ShadowGrassAlpha(scale int) *component {
-	c.el.Style(styles.ShadowGrassAlpha(scale))
+func (c *Comp) ShadowGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowGrassAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowGrassDark(scale int) *component {
-	c.el.Style(styles.ShadowGrassDark(scale))
+func (c *Comp) ShadowGrassDark(scale int) *Comp {
+	c.El.Style(styles.ShadowGrassDark(scale))
 	return c
 }
 
-func (c *component) ShadowGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowGrassDarkAlpha(scale))
+func (c *Comp) ShadowGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowGray(scale int) *component {
-	c.el.Style(styles.ShadowGray(scale))
+func (c *Comp) ShadowGray(scale int) *Comp {
+	c.El.Style(styles.ShadowGray(scale))
 	return c
 }
 
-func (c *component) ShadowGrayAlpha(scale int) *component {
-	c.el.Style(styles.ShadowGrayAlpha(scale))
+func (c *Comp) ShadowGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowGrayAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowGrayDark(scale int) *component {
-	c.el.Style(styles.ShadowGrayDark(scale))
+func (c *Comp) ShadowGrayDark(scale int) *Comp {
+	c.El.Style(styles.ShadowGrayDark(scale))
 	return c
 }
 
-func (c *component) ShadowGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowGrayDarkAlpha(scale))
+func (c *Comp) ShadowGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowGreen(scale int) *component {
-	c.el.Style(styles.ShadowGreen(scale))
+func (c *Comp) ShadowGreen(scale int) *Comp {
+	c.El.Style(styles.ShadowGreen(scale))
 	return c
 }
 
-func (c *component) ShadowGreenAlpha(scale int) *component {
-	c.el.Style(styles.ShadowGreenAlpha(scale))
+func (c *Comp) ShadowGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowGreenAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowGreenDark(scale int) *component {
-	c.el.Style(styles.ShadowGreenDark(scale))
+func (c *Comp) ShadowGreenDark(scale int) *Comp {
+	c.El.Style(styles.ShadowGreenDark(scale))
 	return c
 }
 
-func (c *component) ShadowGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowGreenDarkAlpha(scale))
+func (c *Comp) ShadowGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowIndigo(scale int) *component {
-	c.el.Style(styles.ShadowIndigo(scale))
+func (c *Comp) ShadowIndigo(scale int) *Comp {
+	c.El.Style(styles.ShadowIndigo(scale))
 	return c
 }
 
-func (c *component) ShadowIndigoAlpha(scale int) *component {
-	c.el.Style(styles.ShadowIndigoAlpha(scale))
+func (c *Comp) ShadowIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowIndigoDark(scale int) *component {
-	c.el.Style(styles.ShadowIndigoDark(scale))
+func (c *Comp) ShadowIndigoDark(scale int) *Comp {
+	c.El.Style(styles.ShadowIndigoDark(scale))
 	return c
 }
 
-func (c *component) ShadowIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowIndigoDarkAlpha(scale))
+func (c *Comp) ShadowIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowInherit() *component {
-	c.el.Style(styles.ShadowInherit())
+func (c *Comp) ShadowInherit() *Comp {
+	c.El.Style(styles.ShadowInherit())
 	return c
 }
 
-func (c *component) ShadowIris(scale int) *component {
-	c.el.Style(styles.ShadowIris(scale))
+func (c *Comp) ShadowIris(scale int) *Comp {
+	c.El.Style(styles.ShadowIris(scale))
 	return c
 }
 
-func (c *component) ShadowIrisAlpha(scale int) *component {
-	c.el.Style(styles.ShadowIrisAlpha(scale))
+func (c *Comp) ShadowIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowIrisAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowIrisDark(scale int) *component {
-	c.el.Style(styles.ShadowIrisDark(scale))
+func (c *Comp) ShadowIrisDark(scale int) *Comp {
+	c.El.Style(styles.ShadowIrisDark(scale))
 	return c
 }
 
-func (c *component) ShadowIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowIrisDarkAlpha(scale))
+func (c *Comp) ShadowIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowJade(scale int) *component {
-	c.el.Style(styles.ShadowJade(scale))
+func (c *Comp) ShadowJade(scale int) *Comp {
+	c.El.Style(styles.ShadowJade(scale))
 	return c
 }
 
-func (c *component) ShadowJadeAlpha(scale int) *component {
-	c.el.Style(styles.ShadowJadeAlpha(scale))
+func (c *Comp) ShadowJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowJadeAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowJadeDark(scale int) *component {
-	c.el.Style(styles.ShadowJadeDark(scale))
+func (c *Comp) ShadowJadeDark(scale int) *Comp {
+	c.El.Style(styles.ShadowJadeDark(scale))
 	return c
 }
 
-func (c *component) ShadowJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowJadeDarkAlpha(scale))
+func (c *Comp) ShadowJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowLg() *component {
-	c.el.Style(styles.ShadowLg())
+func (c *Comp) ShadowLg() *Comp {
+	c.El.Style(styles.ShadowLg())
 	return c
 }
 
-func (c *component) ShadowLime(scale int) *component {
-	c.el.Style(styles.ShadowLime(scale))
+func (c *Comp) ShadowLime(scale int) *Comp {
+	c.El.Style(styles.ShadowLime(scale))
 	return c
 }
 
-func (c *component) ShadowLimeAlpha(scale int) *component {
-	c.el.Style(styles.ShadowLimeAlpha(scale))
+func (c *Comp) ShadowLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowLimeAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowLimeDark(scale int) *component {
-	c.el.Style(styles.ShadowLimeDark(scale))
+func (c *Comp) ShadowLimeDark(scale int) *Comp {
+	c.El.Style(styles.ShadowLimeDark(scale))
 	return c
 }
 
-func (c *component) ShadowLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowLimeDarkAlpha(scale))
+func (c *Comp) ShadowLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowMauve(scale int) *component {
-	c.el.Style(styles.ShadowMauve(scale))
+func (c *Comp) ShadowMauve(scale int) *Comp {
+	c.El.Style(styles.ShadowMauve(scale))
 	return c
 }
 
-func (c *component) ShadowMauveAlpha(scale int) *component {
-	c.el.Style(styles.ShadowMauveAlpha(scale))
+func (c *Comp) ShadowMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowMauveAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowMauveDark(scale int) *component {
-	c.el.Style(styles.ShadowMauveDark(scale))
+func (c *Comp) ShadowMauveDark(scale int) *Comp {
+	c.El.Style(styles.ShadowMauveDark(scale))
 	return c
 }
 
-func (c *component) ShadowMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowMauveDarkAlpha(scale))
+func (c *Comp) ShadowMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowMd() *component {
-	c.el.Style(styles.ShadowMd())
+func (c *Comp) ShadowMd() *Comp {
+	c.El.Style(styles.ShadowMd())
 	return c
 }
 
-func (c *component) ShadowMint(scale int) *component {
-	c.el.Style(styles.ShadowMint(scale))
+func (c *Comp) ShadowMint(scale int) *Comp {
+	c.El.Style(styles.ShadowMint(scale))
 	return c
 }
 
-func (c *component) ShadowMintAlpha(scale int) *component {
-	c.el.Style(styles.ShadowMintAlpha(scale))
+func (c *Comp) ShadowMintAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowMintAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowMintDark(scale int) *component {
-	c.el.Style(styles.ShadowMintDark(scale))
+func (c *Comp) ShadowMintDark(scale int) *Comp {
+	c.El.Style(styles.ShadowMintDark(scale))
 	return c
 }
 
-func (c *component) ShadowMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowMintDarkAlpha(scale))
+func (c *Comp) ShadowMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowNone() *component {
-	c.el.Style(styles.ShadowNone())
+func (c *Comp) ShadowNone() *Comp {
+	c.El.Style(styles.ShadowNone())
 	return c
 }
 
-func (c *component) ShadowOlive(scale int) *component {
-	c.el.Style(styles.ShadowOlive(scale))
+func (c *Comp) ShadowOlive(scale int) *Comp {
+	c.El.Style(styles.ShadowOlive(scale))
 	return c
 }
 
-func (c *component) ShadowOliveAlpha(scale int) *component {
-	c.el.Style(styles.ShadowOliveAlpha(scale))
+func (c *Comp) ShadowOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowOliveAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowOliveDark(scale int) *component {
-	c.el.Style(styles.ShadowOliveDark(scale))
+func (c *Comp) ShadowOliveDark(scale int) *Comp {
+	c.El.Style(styles.ShadowOliveDark(scale))
 	return c
 }
 
-func (c *component) ShadowOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowOliveDarkAlpha(scale))
+func (c *Comp) ShadowOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowOrange(scale int) *component {
-	c.el.Style(styles.ShadowOrange(scale))
+func (c *Comp) ShadowOrange(scale int) *Comp {
+	c.El.Style(styles.ShadowOrange(scale))
 	return c
 }
 
-func (c *component) ShadowOrangeAlpha(scale int) *component {
-	c.el.Style(styles.ShadowOrangeAlpha(scale))
+func (c *Comp) ShadowOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowOrangeDark(scale int) *component {
-	c.el.Style(styles.ShadowOrangeDark(scale))
+func (c *Comp) ShadowOrangeDark(scale int) *Comp {
+	c.El.Style(styles.ShadowOrangeDark(scale))
 	return c
 }
 
-func (c *component) ShadowOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowOrangeDarkAlpha(scale))
+func (c *Comp) ShadowOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowPink(scale int) *component {
-	c.el.Style(styles.ShadowPink(scale))
+func (c *Comp) ShadowPink(scale int) *Comp {
+	c.El.Style(styles.ShadowPink(scale))
 	return c
 }
 
-func (c *component) ShadowPinkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowPinkAlpha(scale))
+func (c *Comp) ShadowPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowPinkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowPinkDark(scale int) *component {
-	c.el.Style(styles.ShadowPinkDark(scale))
+func (c *Comp) ShadowPinkDark(scale int) *Comp {
+	c.El.Style(styles.ShadowPinkDark(scale))
 	return c
 }
 
-func (c *component) ShadowPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowPinkDarkAlpha(scale))
+func (c *Comp) ShadowPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowPlum(scale int) *component {
-	c.el.Style(styles.ShadowPlum(scale))
+func (c *Comp) ShadowPlum(scale int) *Comp {
+	c.El.Style(styles.ShadowPlum(scale))
 	return c
 }
 
-func (c *component) ShadowPlumAlpha(scale int) *component {
-	c.el.Style(styles.ShadowPlumAlpha(scale))
+func (c *Comp) ShadowPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowPlumAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowPlumDark(scale int) *component {
-	c.el.Style(styles.ShadowPlumDark(scale))
+func (c *Comp) ShadowPlumDark(scale int) *Comp {
+	c.El.Style(styles.ShadowPlumDark(scale))
 	return c
 }
 
-func (c *component) ShadowPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowPlumDarkAlpha(scale))
+func (c *Comp) ShadowPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowPurple(scale int) *component {
-	c.el.Style(styles.ShadowPurple(scale))
+func (c *Comp) ShadowPurple(scale int) *Comp {
+	c.El.Style(styles.ShadowPurple(scale))
 	return c
 }
 
-func (c *component) ShadowPurpleAlpha(scale int) *component {
-	c.el.Style(styles.ShadowPurpleAlpha(scale))
+func (c *Comp) ShadowPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowPurpleDark(scale int) *component {
-	c.el.Style(styles.ShadowPurpleDark(scale))
+func (c *Comp) ShadowPurpleDark(scale int) *Comp {
+	c.El.Style(styles.ShadowPurpleDark(scale))
 	return c
 }
 
-func (c *component) ShadowPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowPurpleDarkAlpha(scale))
+func (c *Comp) ShadowPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowRed(scale int) *component {
-	c.el.Style(styles.ShadowRed(scale))
+func (c *Comp) ShadowRed(scale int) *Comp {
+	c.El.Style(styles.ShadowRed(scale))
 	return c
 }
 
-func (c *component) ShadowRedAlpha(scale int) *component {
-	c.el.Style(styles.ShadowRedAlpha(scale))
+func (c *Comp) ShadowRedAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowRedAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowRedDark(scale int) *component {
-	c.el.Style(styles.ShadowRedDark(scale))
+func (c *Comp) ShadowRedDark(scale int) *Comp {
+	c.El.Style(styles.ShadowRedDark(scale))
 	return c
 }
 
-func (c *component) ShadowRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowRedDarkAlpha(scale))
+func (c *Comp) ShadowRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowRuby(scale int) *component {
-	c.el.Style(styles.ShadowRuby(scale))
+func (c *Comp) ShadowRuby(scale int) *Comp {
+	c.El.Style(styles.ShadowRuby(scale))
 	return c
 }
 
-func (c *component) ShadowRubyAlpha(scale int) *component {
-	c.el.Style(styles.ShadowRubyAlpha(scale))
+func (c *Comp) ShadowRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowRubyAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowRubyDark(scale int) *component {
-	c.el.Style(styles.ShadowRubyDark(scale))
+func (c *Comp) ShadowRubyDark(scale int) *Comp {
+	c.El.Style(styles.ShadowRubyDark(scale))
 	return c
 }
 
-func (c *component) ShadowRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowRubyDarkAlpha(scale))
+func (c *Comp) ShadowRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowSage(scale int) *component {
-	c.el.Style(styles.ShadowSage(scale))
+func (c *Comp) ShadowSage(scale int) *Comp {
+	c.El.Style(styles.ShadowSage(scale))
 	return c
 }
 
-func (c *component) ShadowSageAlpha(scale int) *component {
-	c.el.Style(styles.ShadowSageAlpha(scale))
+func (c *Comp) ShadowSageAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowSageAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowSageDark(scale int) *component {
-	c.el.Style(styles.ShadowSageDark(scale))
+func (c *Comp) ShadowSageDark(scale int) *Comp {
+	c.El.Style(styles.ShadowSageDark(scale))
 	return c
 }
 
-func (c *component) ShadowSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowSageDarkAlpha(scale))
+func (c *Comp) ShadowSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowSand(scale int) *component {
-	c.el.Style(styles.ShadowSand(scale))
+func (c *Comp) ShadowSand(scale int) *Comp {
+	c.El.Style(styles.ShadowSand(scale))
 	return c
 }
 
-func (c *component) ShadowSandAlpha(scale int) *component {
-	c.el.Style(styles.ShadowSandAlpha(scale))
+func (c *Comp) ShadowSandAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowSandAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowSandDark(scale int) *component {
-	c.el.Style(styles.ShadowSandDark(scale))
+func (c *Comp) ShadowSandDark(scale int) *Comp {
+	c.El.Style(styles.ShadowSandDark(scale))
 	return c
 }
 
-func (c *component) ShadowSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowSandDarkAlpha(scale))
+func (c *Comp) ShadowSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowSky(scale int) *component {
-	c.el.Style(styles.ShadowSky(scale))
+func (c *Comp) ShadowSky(scale int) *Comp {
+	c.El.Style(styles.ShadowSky(scale))
 	return c
 }
 
-func (c *component) ShadowSkyAlpha(scale int) *component {
-	c.el.Style(styles.ShadowSkyAlpha(scale))
+func (c *Comp) ShadowSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowSkyAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowSkyDark(scale int) *component {
-	c.el.Style(styles.ShadowSkyDark(scale))
+func (c *Comp) ShadowSkyDark(scale int) *Comp {
+	c.El.Style(styles.ShadowSkyDark(scale))
 	return c
 }
 
-func (c *component) ShadowSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowSkyDarkAlpha(scale))
+func (c *Comp) ShadowSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowSlate(scale int) *component {
-	c.el.Style(styles.ShadowSlate(scale))
+func (c *Comp) ShadowSlate(scale int) *Comp {
+	c.El.Style(styles.ShadowSlate(scale))
 	return c
 }
 
-func (c *component) ShadowSlateAlpha(scale int) *component {
-	c.el.Style(styles.ShadowSlateAlpha(scale))
+func (c *Comp) ShadowSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowSlateAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowSlateDark(scale int) *component {
-	c.el.Style(styles.ShadowSlateDark(scale))
+func (c *Comp) ShadowSlateDark(scale int) *Comp {
+	c.El.Style(styles.ShadowSlateDark(scale))
 	return c
 }
 
-func (c *component) ShadowSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowSlateDarkAlpha(scale))
+func (c *Comp) ShadowSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowSm() *component {
-	c.el.Style(styles.ShadowSm())
+func (c *Comp) ShadowSm() *Comp {
+	c.El.Style(styles.ShadowSm())
 	return c
 }
 
-func (c *component) ShadowTeal(scale int) *component {
-	c.el.Style(styles.ShadowTeal(scale))
+func (c *Comp) ShadowTeal(scale int) *Comp {
+	c.El.Style(styles.ShadowTeal(scale))
 	return c
 }
 
-func (c *component) ShadowTealAlpha(scale int) *component {
-	c.el.Style(styles.ShadowTealAlpha(scale))
+func (c *Comp) ShadowTealAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowTealAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowTealDark(scale int) *component {
-	c.el.Style(styles.ShadowTealDark(scale))
+func (c *Comp) ShadowTealDark(scale int) *Comp {
+	c.El.Style(styles.ShadowTealDark(scale))
 	return c
 }
 
-func (c *component) ShadowTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowTealDarkAlpha(scale))
+func (c *Comp) ShadowTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowTomato(scale int) *component {
-	c.el.Style(styles.ShadowTomato(scale))
+func (c *Comp) ShadowTomato(scale int) *Comp {
+	c.El.Style(styles.ShadowTomato(scale))
 	return c
 }
 
-func (c *component) ShadowTomatoAlpha(scale int) *component {
-	c.el.Style(styles.ShadowTomatoAlpha(scale))
+func (c *Comp) ShadowTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowTomatoDark(scale int) *component {
-	c.el.Style(styles.ShadowTomatoDark(scale))
+func (c *Comp) ShadowTomatoDark(scale int) *Comp {
+	c.El.Style(styles.ShadowTomatoDark(scale))
 	return c
 }
 
-func (c *component) ShadowTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowTomatoDarkAlpha(scale))
+func (c *Comp) ShadowTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowTransparent() *component {
-	c.el.Style(styles.ShadowTransparent())
+func (c *Comp) ShadowTransparent() *Comp {
+	c.El.Style(styles.ShadowTransparent())
 	return c
 }
 
-func (c *component) ShadowViolet(scale int) *component {
-	c.el.Style(styles.ShadowViolet(scale))
+func (c *Comp) ShadowViolet(scale int) *Comp {
+	c.El.Style(styles.ShadowViolet(scale))
 	return c
 }
 
-func (c *component) ShadowVioletAlpha(scale int) *component {
-	c.el.Style(styles.ShadowVioletAlpha(scale))
+func (c *Comp) ShadowVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowVioletAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowVioletDark(scale int) *component {
-	c.el.Style(styles.ShadowVioletDark(scale))
+func (c *Comp) ShadowVioletDark(scale int) *Comp {
+	c.El.Style(styles.ShadowVioletDark(scale))
 	return c
 }
 
-func (c *component) ShadowVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowVioletDarkAlpha(scale))
+func (c *Comp) ShadowVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowWhite() *component {
-	c.el.Style(styles.ShadowWhite())
+func (c *Comp) ShadowWhite() *Comp {
+	c.El.Style(styles.ShadowWhite())
 	return c
 }
 
-func (c *component) ShadowWhiteAlpha(scale int) *component {
-	c.el.Style(styles.ShadowWhiteAlpha(scale))
+func (c *Comp) ShadowWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowXl() *component {
-	c.el.Style(styles.ShadowXl())
+func (c *Comp) ShadowXl() *Comp {
+	c.El.Style(styles.ShadowXl())
 	return c
 }
 
-func (c *component) ShadowXs() *component {
-	c.el.Style(styles.ShadowXs())
+func (c *Comp) ShadowXs() *Comp {
+	c.El.Style(styles.ShadowXs())
 	return c
 }
 
-func (c *component) ShadowYellow(scale int) *component {
-	c.el.Style(styles.ShadowYellow(scale))
+func (c *Comp) ShadowYellow(scale int) *Comp {
+	c.El.Style(styles.ShadowYellow(scale))
 	return c
 }
 
-func (c *component) ShadowYellowAlpha(scale int) *component {
-	c.el.Style(styles.ShadowYellowAlpha(scale))
+func (c *Comp) ShadowYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowYellowAlpha(scale))
 	return c
 }
 
-func (c *component) ShadowYellowDark(scale int) *component {
-	c.el.Style(styles.ShadowYellowDark(scale))
+func (c *Comp) ShadowYellowDark(scale int) *Comp {
+	c.El.Style(styles.ShadowYellowDark(scale))
 	return c
 }
 
-func (c *component) ShadowYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.ShadowYellowDarkAlpha(scale))
+func (c *Comp) ShadowYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.ShadowYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) Shrink() *component {
-	c.el.Style(styles.Shrink())
+func (c *Comp) Shrink() *Comp {
+	c.El.Style(styles.Shrink())
 	return c
 }
 
-func (c *component) ShrinkBy(val value.Value) *component {
-	c.el.Style(styles.ShrinkBy(val))
+func (c *Comp) ShrinkBy(val value.Value) *Comp {
+	c.El.Style(styles.ShrinkBy(val))
 	return c
 }
 
-func (c *component) Size(number int) *component {
-	c.el.Style(styles.Size(number))
+func (c *Comp) Size(number int) *Comp {
+	c.El.Style(styles.Size(number))
 	return c
 }
 
-func (c *component) SizeAuto() *component {
-	c.el.Style(styles.SizeAuto())
+func (c *Comp) SizeAuto() *Comp {
+	c.El.Style(styles.SizeAuto())
 	return c
 }
 
-func (c *component) SizeBy(val value.Value) *component {
-	c.el.Style(styles.SizeBy(val))
+func (c *Comp) SizeBy(val value.Value) *Comp {
+	c.El.Style(styles.SizeBy(val))
 	return c
 }
 
-func (c *component) SizeDvh() *component {
-	c.el.Style(styles.SizeDvh())
+func (c *Comp) SizeDvh() *Comp {
+	c.El.Style(styles.SizeDvh())
 	return c
 }
 
-func (c *component) SizeDvw() *component {
-	c.el.Style(styles.SizeDvw())
+func (c *Comp) SizeDvw() *Comp {
+	c.El.Style(styles.SizeDvw())
 	return c
 }
 
-func (c *component) SizeFit() *component {
-	c.el.Style(styles.SizeFit())
+func (c *Comp) SizeFit() *Comp {
+	c.El.Style(styles.SizeFit())
 	return c
 }
 
-func (c *component) SizeFraction(fraction float32) *component {
-	c.el.Style(styles.SizeFraction(fraction))
+func (c *Comp) SizeFraction(fraction float32) *Comp {
+	c.El.Style(styles.SizeFraction(fraction))
 	return c
 }
 
-func (c *component) SizeLvh() *component {
-	c.el.Style(styles.SizeLvh())
+func (c *Comp) SizeLvh() *Comp {
+	c.El.Style(styles.SizeLvh())
 	return c
 }
 
-func (c *component) SizeLvw() *component {
-	c.el.Style(styles.SizeLvw())
+func (c *Comp) SizeLvw() *Comp {
+	c.El.Style(styles.SizeLvw())
 	return c
 }
 
-func (c *component) SizeMax() *component {
-	c.el.Style(styles.SizeMax())
+func (c *Comp) SizeMax() *Comp {
+	c.El.Style(styles.SizeMax())
 	return c
 }
 
-func (c *component) SizeMin() *component {
-	c.el.Style(styles.SizeMin())
+func (c *Comp) SizeMin() *Comp {
+	c.El.Style(styles.SizeMin())
 	return c
 }
 
-func (c *component) SizePx() *component {
-	c.el.Style(styles.SizePx())
+func (c *Comp) SizePx() *Comp {
+	c.El.Style(styles.SizePx())
 	return c
 }
 
-func (c *component) SizeSvh() *component {
-	c.el.Style(styles.SizeSvh())
+func (c *Comp) SizeSvh() *Comp {
+	c.El.Style(styles.SizeSvh())
 	return c
 }
 
-func (c *component) SizeSvw() *component {
-	c.el.Style(styles.SizeSvw())
+func (c *Comp) SizeSvw() *Comp {
+	c.El.Style(styles.SizeSvw())
 	return c
 }
 
-func (c *component) Skew(val any) *component {
-	c.el.Style(styles.Skew(val))
+func (c *Comp) Skew(val any) *Comp {
+	c.El.Style(styles.Skew(val))
 	return c
 }
 
-func (c *component) SkewX(val any) *component {
-	c.el.Style(styles.SkewX(val))
+func (c *Comp) SkewX(val any) *Comp {
+	c.El.Style(styles.SkewX(val))
 	return c
 }
 
-func (c *component) SkewY(val any) *component {
-	c.el.Style(styles.SkewY(val))
+func (c *Comp) SkewY(val any) *Comp {
+	c.El.Style(styles.SkewY(val))
 	return c
 }
 
-func (c *component) SlashedZero() *component {
-	c.el.Style(styles.SlashedZero())
+func (c *Comp) SlashedZero() *Comp {
+	c.El.Style(styles.SlashedZero())
 	return c
 }
 
-func (c *component) SnapAlignNone() *component {
-	c.el.Style(styles.SnapAlignNone())
+func (c *Comp) SnapAlignNone() *Comp {
+	c.El.Style(styles.SnapAlignNone())
 	return c
 }
 
-func (c *component) SnapAlways() *component {
-	c.el.Style(styles.SnapAlways())
+func (c *Comp) SnapAlways() *Comp {
+	c.El.Style(styles.SnapAlways())
 	return c
 }
 
-func (c *component) SnapBoth() *component {
-	c.el.Style(styles.SnapBoth())
+func (c *Comp) SnapBoth() *Comp {
+	c.El.Style(styles.SnapBoth())
 	return c
 }
 
-func (c *component) SnapCenter() *component {
-	c.el.Style(styles.SnapCenter())
+func (c *Comp) SnapCenter() *Comp {
+	c.El.Style(styles.SnapCenter())
 	return c
 }
 
-func (c *component) SnapEnd() *component {
-	c.el.Style(styles.SnapEnd())
+func (c *Comp) SnapEnd() *Comp {
+	c.El.Style(styles.SnapEnd())
 	return c
 }
 
-func (c *component) SnapMandatory() *component {
-	c.el.Style(styles.SnapMandatory())
+func (c *Comp) SnapMandatory() *Comp {
+	c.El.Style(styles.SnapMandatory())
 	return c
 }
 
-func (c *component) SnapNone() *component {
-	c.el.Style(styles.SnapNone())
+func (c *Comp) SnapNone() *Comp {
+	c.El.Style(styles.SnapNone())
 	return c
 }
 
-func (c *component) SnapNormal() *component {
-	c.el.Style(styles.SnapNormal())
+func (c *Comp) SnapNormal() *Comp {
+	c.El.Style(styles.SnapNormal())
 	return c
 }
 
-func (c *component) SnapProximity() *component {
-	c.el.Style(styles.SnapProximity())
+func (c *Comp) SnapProximity() *Comp {
+	c.El.Style(styles.SnapProximity())
 	return c
 }
 
-func (c *component) SnapStart() *component {
-	c.el.Style(styles.SnapStart())
+func (c *Comp) SnapStart() *Comp {
+	c.El.Style(styles.SnapStart())
 	return c
 }
 
-func (c *component) SnapX() *component {
-	c.el.Style(styles.SnapX())
+func (c *Comp) SnapX() *Comp {
+	c.El.Style(styles.SnapX())
 	return c
 }
 
-func (c *component) SnapY() *component {
-	c.el.Style(styles.SnapY())
+func (c *Comp) SnapY() *Comp {
+	c.El.Style(styles.SnapY())
 	return c
 }
 
-func (c *component) SrOnly() *component {
-	c.el.Style(styles.SrOnly())
+func (c *Comp) SrOnly() *Comp {
+	c.El.Style(styles.SrOnly())
 	return c
 }
 
-func (c *component) StackedFractions() *component {
-	c.el.Style(styles.StackedFractions())
+func (c *Comp) StackedFractions() *Comp {
+	c.El.Style(styles.StackedFractions())
 	return c
 }
 
-func (c *component) Start(number int) *component {
-	c.el.Style(styles.Start(number))
+func (c *Comp) Start(number int) *Comp {
+	c.El.Style(styles.Start(number))
 	return c
 }
 
-func (c *component) StartAuto() *component {
-	c.el.Style(styles.StartAuto())
+func (c *Comp) StartAuto() *Comp {
+	c.El.Style(styles.StartAuto())
 	return c
 }
 
-func (c *component) StartBy(val value.Value) *component {
-	c.el.Style(styles.StartBy(val))
+func (c *Comp) StartBy(val value.Value) *Comp {
+	c.El.Style(styles.StartBy(val))
 	return c
 }
 
-func (c *component) StartFraction(fraction float64) *component {
-	c.el.Style(styles.StartFraction(fraction))
+func (c *Comp) StartFraction(fraction float64) *Comp {
+	c.El.Style(styles.StartFraction(fraction))
 	return c
 }
 
-func (c *component) StartFull() *component {
-	c.el.Style(styles.StartFull())
+func (c *Comp) StartFull() *Comp {
+	c.El.Style(styles.StartFull())
 	return c
 }
 
-func (c *component) StartPx() *component {
-	c.el.Style(styles.StartPx())
+func (c *Comp) StartPx() *Comp {
+	c.El.Style(styles.StartPx())
 	return c
 }
 
-func (c *component) Static() *component {
-	c.el.Style(styles.Static())
+func (c *Comp) Static() *Comp {
+	c.El.Style(styles.Static())
 	return c
 }
 
-func (c *component) Sticky() *component {
-	c.el.Style(styles.Sticky())
+func (c *Comp) Sticky() *Comp {
+	c.El.Style(styles.Sticky())
 	return c
 }
 
-func (c *component) Stroke(val any) *component {
-	c.el.Style(styles.Stroke(val))
+func (c *Comp) Stroke(val any) *Comp {
+	c.El.Style(styles.Stroke(val))
 	return c
 }
 
-func (c *component) StrokeAmber(scale int) *component {
-	c.el.Style(styles.StrokeAmber(scale))
+func (c *Comp) StrokeAmber(scale int) *Comp {
+	c.El.Style(styles.StrokeAmber(scale))
 	return c
 }
 
-func (c *component) StrokeAmberAlpha(scale int) *component {
-	c.el.Style(styles.StrokeAmberAlpha(scale))
+func (c *Comp) StrokeAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeAmberAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeAmberDark(scale int) *component {
-	c.el.Style(styles.StrokeAmberDark(scale))
+func (c *Comp) StrokeAmberDark(scale int) *Comp {
+	c.El.Style(styles.StrokeAmberDark(scale))
 	return c
 }
 
-func (c *component) StrokeAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeAmberDarkAlpha(scale))
+func (c *Comp) StrokeAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeBlack() *component {
-	c.el.Style(styles.StrokeBlack())
+func (c *Comp) StrokeBlack() *Comp {
+	c.El.Style(styles.StrokeBlack())
 	return c
 }
 
-func (c *component) StrokeBlackAlpha(scale int) *component {
-	c.el.Style(styles.StrokeBlackAlpha(scale))
+func (c *Comp) StrokeBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeBlackAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeBlue(scale int) *component {
-	c.el.Style(styles.StrokeBlue(scale))
+func (c *Comp) StrokeBlue(scale int) *Comp {
+	c.El.Style(styles.StrokeBlue(scale))
 	return c
 }
 
-func (c *component) StrokeBlueAlpha(scale int) *component {
-	c.el.Style(styles.StrokeBlueAlpha(scale))
+func (c *Comp) StrokeBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeBlueAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeBlueDark(scale int) *component {
-	c.el.Style(styles.StrokeBlueDark(scale))
+func (c *Comp) StrokeBlueDark(scale int) *Comp {
+	c.El.Style(styles.StrokeBlueDark(scale))
 	return c
 }
 
-func (c *component) StrokeBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeBlueDarkAlpha(scale))
+func (c *Comp) StrokeBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeBronze(scale int) *component {
-	c.el.Style(styles.StrokeBronze(scale))
+func (c *Comp) StrokeBronze(scale int) *Comp {
+	c.El.Style(styles.StrokeBronze(scale))
 	return c
 }
 
-func (c *component) StrokeBronzeAlpha(scale int) *component {
-	c.el.Style(styles.StrokeBronzeAlpha(scale))
+func (c *Comp) StrokeBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeBronzeDark(scale int) *component {
-	c.el.Style(styles.StrokeBronzeDark(scale))
+func (c *Comp) StrokeBronzeDark(scale int) *Comp {
+	c.El.Style(styles.StrokeBronzeDark(scale))
 	return c
 }
 
-func (c *component) StrokeBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeBronzeDarkAlpha(scale))
+func (c *Comp) StrokeBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeBrown(scale int) *component {
-	c.el.Style(styles.StrokeBrown(scale))
+func (c *Comp) StrokeBrown(scale int) *Comp {
+	c.El.Style(styles.StrokeBrown(scale))
 	return c
 }
 
-func (c *component) StrokeBrownAlpha(scale int) *component {
-	c.el.Style(styles.StrokeBrownAlpha(scale))
+func (c *Comp) StrokeBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeBrownAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeBrownDark(scale int) *component {
-	c.el.Style(styles.StrokeBrownDark(scale))
+func (c *Comp) StrokeBrownDark(scale int) *Comp {
+	c.El.Style(styles.StrokeBrownDark(scale))
 	return c
 }
 
-func (c *component) StrokeBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeBrownDarkAlpha(scale))
+func (c *Comp) StrokeBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeColor(val value.Value) *component {
-	c.el.Style(styles.StrokeColor(val))
+func (c *Comp) StrokeColor(val value.Value) *Comp {
+	c.El.Style(styles.StrokeColor(val))
 	return c
 }
 
-func (c *component) StrokeCrimson(scale int) *component {
-	c.el.Style(styles.StrokeCrimson(scale))
+func (c *Comp) StrokeCrimson(scale int) *Comp {
+	c.El.Style(styles.StrokeCrimson(scale))
 	return c
 }
 
-func (c *component) StrokeCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.StrokeCrimsonAlpha(scale))
+func (c *Comp) StrokeCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeCrimsonDark(scale int) *component {
-	c.el.Style(styles.StrokeCrimsonDark(scale))
+func (c *Comp) StrokeCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.StrokeCrimsonDark(scale))
 	return c
 }
 
-func (c *component) StrokeCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeCrimsonDarkAlpha(scale))
+func (c *Comp) StrokeCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeCurrent() *component {
-	c.el.Style(styles.StrokeCurrent())
+func (c *Comp) StrokeCurrent() *Comp {
+	c.El.Style(styles.StrokeCurrent())
 	return c
 }
 
-func (c *component) StrokeCyan(scale int) *component {
-	c.el.Style(styles.StrokeCyan(scale))
+func (c *Comp) StrokeCyan(scale int) *Comp {
+	c.El.Style(styles.StrokeCyan(scale))
 	return c
 }
 
-func (c *component) StrokeCyanAlpha(scale int) *component {
-	c.el.Style(styles.StrokeCyanAlpha(scale))
+func (c *Comp) StrokeCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeCyanAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeCyanDark(scale int) *component {
-	c.el.Style(styles.StrokeCyanDark(scale))
+func (c *Comp) StrokeCyanDark(scale int) *Comp {
+	c.El.Style(styles.StrokeCyanDark(scale))
 	return c
 }
 
-func (c *component) StrokeCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeCyanDarkAlpha(scale))
+func (c *Comp) StrokeCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeGold(scale int) *component {
-	c.el.Style(styles.StrokeGold(scale))
+func (c *Comp) StrokeGold(scale int) *Comp {
+	c.El.Style(styles.StrokeGold(scale))
 	return c
 }
 
-func (c *component) StrokeGoldAlpha(scale int) *component {
-	c.el.Style(styles.StrokeGoldAlpha(scale))
+func (c *Comp) StrokeGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeGoldAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeGoldDark(scale int) *component {
-	c.el.Style(styles.StrokeGoldDark(scale))
+func (c *Comp) StrokeGoldDark(scale int) *Comp {
+	c.El.Style(styles.StrokeGoldDark(scale))
 	return c
 }
 
-func (c *component) StrokeGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeGoldDarkAlpha(scale))
+func (c *Comp) StrokeGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeGrass(scale int) *component {
-	c.el.Style(styles.StrokeGrass(scale))
+func (c *Comp) StrokeGrass(scale int) *Comp {
+	c.El.Style(styles.StrokeGrass(scale))
 	return c
 }
 
-func (c *component) StrokeGrassAlpha(scale int) *component {
-	c.el.Style(styles.StrokeGrassAlpha(scale))
+func (c *Comp) StrokeGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeGrassAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeGrassDark(scale int) *component {
-	c.el.Style(styles.StrokeGrassDark(scale))
+func (c *Comp) StrokeGrassDark(scale int) *Comp {
+	c.El.Style(styles.StrokeGrassDark(scale))
 	return c
 }
 
-func (c *component) StrokeGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeGrassDarkAlpha(scale))
+func (c *Comp) StrokeGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeGray(scale int) *component {
-	c.el.Style(styles.StrokeGray(scale))
+func (c *Comp) StrokeGray(scale int) *Comp {
+	c.El.Style(styles.StrokeGray(scale))
 	return c
 }
 
-func (c *component) StrokeGrayAlpha(scale int) *component {
-	c.el.Style(styles.StrokeGrayAlpha(scale))
+func (c *Comp) StrokeGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeGrayAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeGrayDark(scale int) *component {
-	c.el.Style(styles.StrokeGrayDark(scale))
+func (c *Comp) StrokeGrayDark(scale int) *Comp {
+	c.El.Style(styles.StrokeGrayDark(scale))
 	return c
 }
 
-func (c *component) StrokeGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeGrayDarkAlpha(scale))
+func (c *Comp) StrokeGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeGreen(scale int) *component {
-	c.el.Style(styles.StrokeGreen(scale))
+func (c *Comp) StrokeGreen(scale int) *Comp {
+	c.El.Style(styles.StrokeGreen(scale))
 	return c
 }
 
-func (c *component) StrokeGreenAlpha(scale int) *component {
-	c.el.Style(styles.StrokeGreenAlpha(scale))
+func (c *Comp) StrokeGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeGreenAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeGreenDark(scale int) *component {
-	c.el.Style(styles.StrokeGreenDark(scale))
+func (c *Comp) StrokeGreenDark(scale int) *Comp {
+	c.El.Style(styles.StrokeGreenDark(scale))
 	return c
 }
 
-func (c *component) StrokeGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeGreenDarkAlpha(scale))
+func (c *Comp) StrokeGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeIndigo(scale int) *component {
-	c.el.Style(styles.StrokeIndigo(scale))
+func (c *Comp) StrokeIndigo(scale int) *Comp {
+	c.El.Style(styles.StrokeIndigo(scale))
 	return c
 }
 
-func (c *component) StrokeIndigoAlpha(scale int) *component {
-	c.el.Style(styles.StrokeIndigoAlpha(scale))
+func (c *Comp) StrokeIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeIndigoDark(scale int) *component {
-	c.el.Style(styles.StrokeIndigoDark(scale))
+func (c *Comp) StrokeIndigoDark(scale int) *Comp {
+	c.El.Style(styles.StrokeIndigoDark(scale))
 	return c
 }
 
-func (c *component) StrokeIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeIndigoDarkAlpha(scale))
+func (c *Comp) StrokeIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeInherit() *component {
-	c.el.Style(styles.StrokeInherit())
+func (c *Comp) StrokeInherit() *Comp {
+	c.El.Style(styles.StrokeInherit())
 	return c
 }
 
-func (c *component) StrokeIris(scale int) *component {
-	c.el.Style(styles.StrokeIris(scale))
+func (c *Comp) StrokeIris(scale int) *Comp {
+	c.El.Style(styles.StrokeIris(scale))
 	return c
 }
 
-func (c *component) StrokeIrisAlpha(scale int) *component {
-	c.el.Style(styles.StrokeIrisAlpha(scale))
+func (c *Comp) StrokeIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeIrisAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeIrisDark(scale int) *component {
-	c.el.Style(styles.StrokeIrisDark(scale))
+func (c *Comp) StrokeIrisDark(scale int) *Comp {
+	c.El.Style(styles.StrokeIrisDark(scale))
 	return c
 }
 
-func (c *component) StrokeIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeIrisDarkAlpha(scale))
+func (c *Comp) StrokeIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeJade(scale int) *component {
-	c.el.Style(styles.StrokeJade(scale))
+func (c *Comp) StrokeJade(scale int) *Comp {
+	c.El.Style(styles.StrokeJade(scale))
 	return c
 }
 
-func (c *component) StrokeJadeAlpha(scale int) *component {
-	c.el.Style(styles.StrokeJadeAlpha(scale))
+func (c *Comp) StrokeJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeJadeAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeJadeDark(scale int) *component {
-	c.el.Style(styles.StrokeJadeDark(scale))
+func (c *Comp) StrokeJadeDark(scale int) *Comp {
+	c.El.Style(styles.StrokeJadeDark(scale))
 	return c
 }
 
-func (c *component) StrokeJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeJadeDarkAlpha(scale))
+func (c *Comp) StrokeJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeLime(scale int) *component {
-	c.el.Style(styles.StrokeLime(scale))
+func (c *Comp) StrokeLime(scale int) *Comp {
+	c.El.Style(styles.StrokeLime(scale))
 	return c
 }
 
-func (c *component) StrokeLimeAlpha(scale int) *component {
-	c.el.Style(styles.StrokeLimeAlpha(scale))
+func (c *Comp) StrokeLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeLimeAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeLimeDark(scale int) *component {
-	c.el.Style(styles.StrokeLimeDark(scale))
+func (c *Comp) StrokeLimeDark(scale int) *Comp {
+	c.El.Style(styles.StrokeLimeDark(scale))
 	return c
 }
 
-func (c *component) StrokeLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeLimeDarkAlpha(scale))
+func (c *Comp) StrokeLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeMauve(scale int) *component {
-	c.el.Style(styles.StrokeMauve(scale))
+func (c *Comp) StrokeMauve(scale int) *Comp {
+	c.El.Style(styles.StrokeMauve(scale))
 	return c
 }
 
-func (c *component) StrokeMauveAlpha(scale int) *component {
-	c.el.Style(styles.StrokeMauveAlpha(scale))
+func (c *Comp) StrokeMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeMauveAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeMauveDark(scale int) *component {
-	c.el.Style(styles.StrokeMauveDark(scale))
+func (c *Comp) StrokeMauveDark(scale int) *Comp {
+	c.El.Style(styles.StrokeMauveDark(scale))
 	return c
 }
 
-func (c *component) StrokeMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeMauveDarkAlpha(scale))
+func (c *Comp) StrokeMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeMint(scale int) *component {
-	c.el.Style(styles.StrokeMint(scale))
+func (c *Comp) StrokeMint(scale int) *Comp {
+	c.El.Style(styles.StrokeMint(scale))
 	return c
 }
 
-func (c *component) StrokeMintAlpha(scale int) *component {
-	c.el.Style(styles.StrokeMintAlpha(scale))
+func (c *Comp) StrokeMintAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeMintAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeMintDark(scale int) *component {
-	c.el.Style(styles.StrokeMintDark(scale))
+func (c *Comp) StrokeMintDark(scale int) *Comp {
+	c.El.Style(styles.StrokeMintDark(scale))
 	return c
 }
 
-func (c *component) StrokeMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeMintDarkAlpha(scale))
+func (c *Comp) StrokeMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeOlive(scale int) *component {
-	c.el.Style(styles.StrokeOlive(scale))
+func (c *Comp) StrokeOlive(scale int) *Comp {
+	c.El.Style(styles.StrokeOlive(scale))
 	return c
 }
 
-func (c *component) StrokeOliveAlpha(scale int) *component {
-	c.el.Style(styles.StrokeOliveAlpha(scale))
+func (c *Comp) StrokeOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeOliveAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeOliveDark(scale int) *component {
-	c.el.Style(styles.StrokeOliveDark(scale))
+func (c *Comp) StrokeOliveDark(scale int) *Comp {
+	c.El.Style(styles.StrokeOliveDark(scale))
 	return c
 }
 
-func (c *component) StrokeOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeOliveDarkAlpha(scale))
+func (c *Comp) StrokeOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeOrange(scale int) *component {
-	c.el.Style(styles.StrokeOrange(scale))
+func (c *Comp) StrokeOrange(scale int) *Comp {
+	c.El.Style(styles.StrokeOrange(scale))
 	return c
 }
 
-func (c *component) StrokeOrangeAlpha(scale int) *component {
-	c.el.Style(styles.StrokeOrangeAlpha(scale))
+func (c *Comp) StrokeOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeOrangeDark(scale int) *component {
-	c.el.Style(styles.StrokeOrangeDark(scale))
+func (c *Comp) StrokeOrangeDark(scale int) *Comp {
+	c.El.Style(styles.StrokeOrangeDark(scale))
 	return c
 }
 
-func (c *component) StrokeOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeOrangeDarkAlpha(scale))
+func (c *Comp) StrokeOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokePink(scale int) *component {
-	c.el.Style(styles.StrokePink(scale))
+func (c *Comp) StrokePink(scale int) *Comp {
+	c.El.Style(styles.StrokePink(scale))
 	return c
 }
 
-func (c *component) StrokePinkAlpha(scale int) *component {
-	c.el.Style(styles.StrokePinkAlpha(scale))
+func (c *Comp) StrokePinkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokePinkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokePinkDark(scale int) *component {
-	c.el.Style(styles.StrokePinkDark(scale))
+func (c *Comp) StrokePinkDark(scale int) *Comp {
+	c.El.Style(styles.StrokePinkDark(scale))
 	return c
 }
 
-func (c *component) StrokePinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokePinkDarkAlpha(scale))
+func (c *Comp) StrokePinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokePinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokePlum(scale int) *component {
-	c.el.Style(styles.StrokePlum(scale))
+func (c *Comp) StrokePlum(scale int) *Comp {
+	c.El.Style(styles.StrokePlum(scale))
 	return c
 }
 
-func (c *component) StrokePlumAlpha(scale int) *component {
-	c.el.Style(styles.StrokePlumAlpha(scale))
+func (c *Comp) StrokePlumAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokePlumAlpha(scale))
 	return c
 }
 
-func (c *component) StrokePlumDark(scale int) *component {
-	c.el.Style(styles.StrokePlumDark(scale))
+func (c *Comp) StrokePlumDark(scale int) *Comp {
+	c.El.Style(styles.StrokePlumDark(scale))
 	return c
 }
 
-func (c *component) StrokePlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokePlumDarkAlpha(scale))
+func (c *Comp) StrokePlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokePlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokePurple(scale int) *component {
-	c.el.Style(styles.StrokePurple(scale))
+func (c *Comp) StrokePurple(scale int) *Comp {
+	c.El.Style(styles.StrokePurple(scale))
 	return c
 }
 
-func (c *component) StrokePurpleAlpha(scale int) *component {
-	c.el.Style(styles.StrokePurpleAlpha(scale))
+func (c *Comp) StrokePurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokePurpleAlpha(scale))
 	return c
 }
 
-func (c *component) StrokePurpleDark(scale int) *component {
-	c.el.Style(styles.StrokePurpleDark(scale))
+func (c *Comp) StrokePurpleDark(scale int) *Comp {
+	c.El.Style(styles.StrokePurpleDark(scale))
 	return c
 }
 
-func (c *component) StrokePurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokePurpleDarkAlpha(scale))
+func (c *Comp) StrokePurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokePurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeRed(scale int) *component {
-	c.el.Style(styles.StrokeRed(scale))
+func (c *Comp) StrokeRed(scale int) *Comp {
+	c.El.Style(styles.StrokeRed(scale))
 	return c
 }
 
-func (c *component) StrokeRedAlpha(scale int) *component {
-	c.el.Style(styles.StrokeRedAlpha(scale))
+func (c *Comp) StrokeRedAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeRedAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeRedDark(scale int) *component {
-	c.el.Style(styles.StrokeRedDark(scale))
+func (c *Comp) StrokeRedDark(scale int) *Comp {
+	c.El.Style(styles.StrokeRedDark(scale))
 	return c
 }
 
-func (c *component) StrokeRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeRedDarkAlpha(scale))
+func (c *Comp) StrokeRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeRuby(scale int) *component {
-	c.el.Style(styles.StrokeRuby(scale))
+func (c *Comp) StrokeRuby(scale int) *Comp {
+	c.El.Style(styles.StrokeRuby(scale))
 	return c
 }
 
-func (c *component) StrokeRubyAlpha(scale int) *component {
-	c.el.Style(styles.StrokeRubyAlpha(scale))
+func (c *Comp) StrokeRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeRubyAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeRubyDark(scale int) *component {
-	c.el.Style(styles.StrokeRubyDark(scale))
+func (c *Comp) StrokeRubyDark(scale int) *Comp {
+	c.El.Style(styles.StrokeRubyDark(scale))
 	return c
 }
 
-func (c *component) StrokeRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeRubyDarkAlpha(scale))
+func (c *Comp) StrokeRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeSage(scale int) *component {
-	c.el.Style(styles.StrokeSage(scale))
+func (c *Comp) StrokeSage(scale int) *Comp {
+	c.El.Style(styles.StrokeSage(scale))
 	return c
 }
 
-func (c *component) StrokeSageAlpha(scale int) *component {
-	c.el.Style(styles.StrokeSageAlpha(scale))
+func (c *Comp) StrokeSageAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeSageAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeSageDark(scale int) *component {
-	c.el.Style(styles.StrokeSageDark(scale))
+func (c *Comp) StrokeSageDark(scale int) *Comp {
+	c.El.Style(styles.StrokeSageDark(scale))
 	return c
 }
 
-func (c *component) StrokeSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeSageDarkAlpha(scale))
+func (c *Comp) StrokeSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeSand(scale int) *component {
-	c.el.Style(styles.StrokeSand(scale))
+func (c *Comp) StrokeSand(scale int) *Comp {
+	c.El.Style(styles.StrokeSand(scale))
 	return c
 }
 
-func (c *component) StrokeSandAlpha(scale int) *component {
-	c.el.Style(styles.StrokeSandAlpha(scale))
+func (c *Comp) StrokeSandAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeSandAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeSandDark(scale int) *component {
-	c.el.Style(styles.StrokeSandDark(scale))
+func (c *Comp) StrokeSandDark(scale int) *Comp {
+	c.El.Style(styles.StrokeSandDark(scale))
 	return c
 }
 
-func (c *component) StrokeSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeSandDarkAlpha(scale))
+func (c *Comp) StrokeSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeSky(scale int) *component {
-	c.el.Style(styles.StrokeSky(scale))
+func (c *Comp) StrokeSky(scale int) *Comp {
+	c.El.Style(styles.StrokeSky(scale))
 	return c
 }
 
-func (c *component) StrokeSkyAlpha(scale int) *component {
-	c.el.Style(styles.StrokeSkyAlpha(scale))
+func (c *Comp) StrokeSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeSkyAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeSkyDark(scale int) *component {
-	c.el.Style(styles.StrokeSkyDark(scale))
+func (c *Comp) StrokeSkyDark(scale int) *Comp {
+	c.El.Style(styles.StrokeSkyDark(scale))
 	return c
 }
 
-func (c *component) StrokeSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeSkyDarkAlpha(scale))
+func (c *Comp) StrokeSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeSlate(scale int) *component {
-	c.el.Style(styles.StrokeSlate(scale))
+func (c *Comp) StrokeSlate(scale int) *Comp {
+	c.El.Style(styles.StrokeSlate(scale))
 	return c
 }
 
-func (c *component) StrokeSlateAlpha(scale int) *component {
-	c.el.Style(styles.StrokeSlateAlpha(scale))
+func (c *Comp) StrokeSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeSlateAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeSlateDark(scale int) *component {
-	c.el.Style(styles.StrokeSlateDark(scale))
+func (c *Comp) StrokeSlateDark(scale int) *Comp {
+	c.El.Style(styles.StrokeSlateDark(scale))
 	return c
 }
 
-func (c *component) StrokeSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeSlateDarkAlpha(scale))
+func (c *Comp) StrokeSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeTeal(scale int) *component {
-	c.el.Style(styles.StrokeTeal(scale))
+func (c *Comp) StrokeTeal(scale int) *Comp {
+	c.El.Style(styles.StrokeTeal(scale))
 	return c
 }
 
-func (c *component) StrokeTealAlpha(scale int) *component {
-	c.el.Style(styles.StrokeTealAlpha(scale))
+func (c *Comp) StrokeTealAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeTealAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeTealDark(scale int) *component {
-	c.el.Style(styles.StrokeTealDark(scale))
+func (c *Comp) StrokeTealDark(scale int) *Comp {
+	c.El.Style(styles.StrokeTealDark(scale))
 	return c
 }
 
-func (c *component) StrokeTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeTealDarkAlpha(scale))
+func (c *Comp) StrokeTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeTomato(scale int) *component {
-	c.el.Style(styles.StrokeTomato(scale))
+func (c *Comp) StrokeTomato(scale int) *Comp {
+	c.El.Style(styles.StrokeTomato(scale))
 	return c
 }
 
-func (c *component) StrokeTomatoAlpha(scale int) *component {
-	c.el.Style(styles.StrokeTomatoAlpha(scale))
+func (c *Comp) StrokeTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeTomatoDark(scale int) *component {
-	c.el.Style(styles.StrokeTomatoDark(scale))
+func (c *Comp) StrokeTomatoDark(scale int) *Comp {
+	c.El.Style(styles.StrokeTomatoDark(scale))
 	return c
 }
 
-func (c *component) StrokeTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeTomatoDarkAlpha(scale))
+func (c *Comp) StrokeTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeTransparent() *component {
-	c.el.Style(styles.StrokeTransparent())
+func (c *Comp) StrokeTransparent() *Comp {
+	c.El.Style(styles.StrokeTransparent())
 	return c
 }
 
-func (c *component) StrokeViolet(scale int) *component {
-	c.el.Style(styles.StrokeViolet(scale))
+func (c *Comp) StrokeViolet(scale int) *Comp {
+	c.El.Style(styles.StrokeViolet(scale))
 	return c
 }
 
-func (c *component) StrokeVioletAlpha(scale int) *component {
-	c.el.Style(styles.StrokeVioletAlpha(scale))
+func (c *Comp) StrokeVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeVioletAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeVioletDark(scale int) *component {
-	c.el.Style(styles.StrokeVioletDark(scale))
+func (c *Comp) StrokeVioletDark(scale int) *Comp {
+	c.El.Style(styles.StrokeVioletDark(scale))
 	return c
 }
 
-func (c *component) StrokeVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeVioletDarkAlpha(scale))
+func (c *Comp) StrokeVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeWhite() *component {
-	c.el.Style(styles.StrokeWhite())
+func (c *Comp) StrokeWhite() *Comp {
+	c.El.Style(styles.StrokeWhite())
 	return c
 }
 
-func (c *component) StrokeWhiteAlpha(scale int) *component {
-	c.el.Style(styles.StrokeWhiteAlpha(scale))
+func (c *Comp) StrokeWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeYellow(scale int) *component {
-	c.el.Style(styles.StrokeYellow(scale))
+func (c *Comp) StrokeYellow(scale int) *Comp {
+	c.El.Style(styles.StrokeYellow(scale))
 	return c
 }
 
-func (c *component) StrokeYellowAlpha(scale int) *component {
-	c.el.Style(styles.StrokeYellowAlpha(scale))
+func (c *Comp) StrokeYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeYellowAlpha(scale))
 	return c
 }
 
-func (c *component) StrokeYellowDark(scale int) *component {
-	c.el.Style(styles.StrokeYellowDark(scale))
+func (c *Comp) StrokeYellowDark(scale int) *Comp {
+	c.El.Style(styles.StrokeYellowDark(scale))
 	return c
 }
 
-func (c *component) StrokeYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.StrokeYellowDarkAlpha(scale))
+func (c *Comp) StrokeYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.StrokeYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) SubPixelAntialiazed() *component {
-	c.el.Style(styles.SubPixelAntialiazed())
+func (c *Comp) SubPixelAntialiazed() *Comp {
+	c.El.Style(styles.SubPixelAntialiazed())
 	return c
 }
 
-func (c *component) Table() *component {
-	c.el.Style(styles.Table())
+func (c *Comp) Table() *Comp {
+	c.El.Style(styles.Table())
 	return c
 }
 
-func (c *component) TableAuto() *component {
-	c.el.Style(styles.TableAuto())
+func (c *Comp) TableAuto() *Comp {
+	c.El.Style(styles.TableAuto())
 	return c
 }
 
-func (c *component) TableCaption() *component {
-	c.el.Style(styles.TableCaption())
+func (c *Comp) TableCaption() *Comp {
+	c.El.Style(styles.TableCaption())
 	return c
 }
 
-func (c *component) TableCell() *component {
-	c.el.Style(styles.TableCell())
+func (c *Comp) TableCell() *Comp {
+	c.El.Style(styles.TableCell())
 	return c
 }
 
-func (c *component) TableColumn() *component {
-	c.el.Style(styles.TableColumn())
+func (c *Comp) TableColumn() *Comp {
+	c.El.Style(styles.TableColumn())
 	return c
 }
 
-func (c *component) TableColumnGroup() *component {
-	c.el.Style(styles.TableColumnGroup())
+func (c *Comp) TableColumnGroup() *Comp {
+	c.El.Style(styles.TableColumnGroup())
 	return c
 }
 
-func (c *component) TableFixed() *component {
-	c.el.Style(styles.TableFixed())
+func (c *Comp) TableFixed() *Comp {
+	c.El.Style(styles.TableFixed())
 	return c
 }
 
-func (c *component) TableFooterGroup() *component {
-	c.el.Style(styles.TableFooterGroup())
+func (c *Comp) TableFooterGroup() *Comp {
+	c.El.Style(styles.TableFooterGroup())
 	return c
 }
 
-func (c *component) TableHeaderGroup() *component {
-	c.el.Style(styles.TableHeaderGroup())
+func (c *Comp) TableHeaderGroup() *Comp {
+	c.El.Style(styles.TableHeaderGroup())
 	return c
 }
 
-func (c *component) TableRow() *component {
-	c.el.Style(styles.TableRow())
+func (c *Comp) TableRow() *Comp {
+	c.El.Style(styles.TableRow())
 	return c
 }
 
-func (c *component) TableRowGroup() *component {
-	c.el.Style(styles.TableRowGroup())
+func (c *Comp) TableRowGroup() *Comp {
+	c.El.Style(styles.TableRowGroup())
 	return c
 }
 
-func (c *component) TabularNums() *component {
-	c.el.Style(styles.TabularNums())
+func (c *Comp) TabularNums() *Comp {
+	c.El.Style(styles.TabularNums())
 	return c
 }
 
-func (c *component) Text2xl(lineHeights ...any) *component {
-	c.el.Style(styles.Text2xl(lineHeights...))
+func (c *Comp) Text2xl(lineHeights ...any) *Comp {
+	c.El.Style(styles.Text2xl(lineHeights...))
 	return c
 }
 
-func (c *component) Text3xl(lineHeights ...any) *component {
-	c.el.Style(styles.Text3xl(lineHeights...))
+func (c *Comp) Text3xl(lineHeights ...any) *Comp {
+	c.El.Style(styles.Text3xl(lineHeights...))
 	return c
 }
 
-func (c *component) Text4xl(lineHeights ...any) *component {
-	c.el.Style(styles.Text4xl(lineHeights...))
+func (c *Comp) Text4xl(lineHeights ...any) *Comp {
+	c.El.Style(styles.Text4xl(lineHeights...))
 	return c
 }
 
-func (c *component) Text5xl(lineHeights ...any) *component {
-	c.el.Style(styles.Text5xl(lineHeights...))
+func (c *Comp) Text5xl(lineHeights ...any) *Comp {
+	c.El.Style(styles.Text5xl(lineHeights...))
 	return c
 }
 
-func (c *component) Text6xl(lineHeights ...any) *component {
-	c.el.Style(styles.Text6xl(lineHeights...))
+func (c *Comp) Text6xl(lineHeights ...any) *Comp {
+	c.El.Style(styles.Text6xl(lineHeights...))
 	return c
 }
 
-func (c *component) Text7xl(lineHeights ...any) *component {
-	c.el.Style(styles.Text7xl(lineHeights...))
+func (c *Comp) Text7xl(lineHeights ...any) *Comp {
+	c.El.Style(styles.Text7xl(lineHeights...))
 	return c
 }
 
-func (c *component) Text8xl(lineHeights ...any) *component {
-	c.el.Style(styles.Text8xl(lineHeights...))
+func (c *Comp) Text8xl(lineHeights ...any) *Comp {
+	c.El.Style(styles.Text8xl(lineHeights...))
 	return c
 }
 
-func (c *component) Text9xl(lineHeights ...any) *component {
-	c.el.Style(styles.Text9xl(lineHeights...))
+func (c *Comp) Text9xl(lineHeights ...any) *Comp {
+	c.El.Style(styles.Text9xl(lineHeights...))
 	return c
 }
 
-func (c *component) TextAmber(scale int) *component {
-	c.el.Style(styles.TextAmber(scale))
+func (c *Comp) TextAmber(scale int) *Comp {
+	c.El.Style(styles.TextAmber(scale))
 	return c
 }
 
-func (c *component) TextAmberAlpha(scale int) *component {
-	c.el.Style(styles.TextAmberAlpha(scale))
+func (c *Comp) TextAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.TextAmberAlpha(scale))
 	return c
 }
 
-func (c *component) TextAmberDark(scale int) *component {
-	c.el.Style(styles.TextAmberDark(scale))
+func (c *Comp) TextAmberDark(scale int) *Comp {
+	c.El.Style(styles.TextAmberDark(scale))
 	return c
 }
 
-func (c *component) TextAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextAmberDarkAlpha(scale))
+func (c *Comp) TextAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextBalance() *component {
-	c.el.Style(styles.TextBalance())
+func (c *Comp) TextBalance() *Comp {
+	c.El.Style(styles.TextBalance())
 	return c
 }
 
-func (c *component) TextBase(lineHeights ...any) *component {
-	c.el.Style(styles.TextBase(lineHeights...))
+func (c *Comp) TextBase(lineHeights ...any) *Comp {
+	c.El.Style(styles.TextBase(lineHeights...))
 	return c
 }
 
-func (c *component) TextBlack() *component {
-	c.el.Style(styles.TextBlack())
+func (c *Comp) TextBlack() *Comp {
+	c.El.Style(styles.TextBlack())
 	return c
 }
 
-func (c *component) TextBlackAlpha(scale int) *component {
-	c.el.Style(styles.TextBlackAlpha(scale))
+func (c *Comp) TextBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.TextBlackAlpha(scale))
 	return c
 }
 
-func (c *component) TextBlue(scale int) *component {
-	c.el.Style(styles.TextBlue(scale))
+func (c *Comp) TextBlue(scale int) *Comp {
+	c.El.Style(styles.TextBlue(scale))
 	return c
 }
 
-func (c *component) TextBlueAlpha(scale int) *component {
-	c.el.Style(styles.TextBlueAlpha(scale))
+func (c *Comp) TextBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.TextBlueAlpha(scale))
 	return c
 }
 
-func (c *component) TextBlueDark(scale int) *component {
-	c.el.Style(styles.TextBlueDark(scale))
+func (c *Comp) TextBlueDark(scale int) *Comp {
+	c.El.Style(styles.TextBlueDark(scale))
 	return c
 }
 
-func (c *component) TextBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextBlueDarkAlpha(scale))
+func (c *Comp) TextBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextBronze(scale int) *component {
-	c.el.Style(styles.TextBronze(scale))
+func (c *Comp) TextBronze(scale int) *Comp {
+	c.El.Style(styles.TextBronze(scale))
 	return c
 }
 
-func (c *component) TextBronzeAlpha(scale int) *component {
-	c.el.Style(styles.TextBronzeAlpha(scale))
+func (c *Comp) TextBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.TextBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) TextBronzeDark(scale int) *component {
-	c.el.Style(styles.TextBronzeDark(scale))
+func (c *Comp) TextBronzeDark(scale int) *Comp {
+	c.El.Style(styles.TextBronzeDark(scale))
 	return c
 }
 
-func (c *component) TextBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextBronzeDarkAlpha(scale))
+func (c *Comp) TextBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextBrown(scale int) *component {
-	c.el.Style(styles.TextBrown(scale))
+func (c *Comp) TextBrown(scale int) *Comp {
+	c.El.Style(styles.TextBrown(scale))
 	return c
 }
 
-func (c *component) TextBrownAlpha(scale int) *component {
-	c.el.Style(styles.TextBrownAlpha(scale))
+func (c *Comp) TextBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.TextBrownAlpha(scale))
 	return c
 }
 
-func (c *component) TextBrownDark(scale int) *component {
-	c.el.Style(styles.TextBrownDark(scale))
+func (c *Comp) TextBrownDark(scale int) *Comp {
+	c.El.Style(styles.TextBrownDark(scale))
 	return c
 }
 
-func (c *component) TextBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextBrownDarkAlpha(scale))
+func (c *Comp) TextBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextCenter() *component {
-	c.el.Style(styles.TextCenter())
+func (c *Comp) TextCenter() *Comp {
+	c.El.Style(styles.TextCenter())
 	return c
 }
 
-func (c *component) TextClip() *component {
-	c.el.Style(styles.TextClip())
+func (c *Comp) TextClip() *Comp {
+	c.El.Style(styles.TextClip())
 	return c
 }
 
-func (c *component) TextColor(val value.Value) *component {
-	c.el.Style(styles.TextColor(val))
+func (c *Comp) TextColor(val value.Value) *Comp {
+	c.El.Style(styles.TextColor(val))
 	return c
 }
 
-func (c *component) TextCrimson(scale int) *component {
-	c.el.Style(styles.TextCrimson(scale))
+func (c *Comp) TextCrimson(scale int) *Comp {
+	c.El.Style(styles.TextCrimson(scale))
 	return c
 }
 
-func (c *component) TextCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.TextCrimsonAlpha(scale))
+func (c *Comp) TextCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.TextCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) TextCrimsonDark(scale int) *component {
-	c.el.Style(styles.TextCrimsonDark(scale))
+func (c *Comp) TextCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.TextCrimsonDark(scale))
 	return c
 }
 
-func (c *component) TextCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextCrimsonDarkAlpha(scale))
+func (c *Comp) TextCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextCurrent() *component {
-	c.el.Style(styles.TextCurrent())
+func (c *Comp) TextCurrent() *Comp {
+	c.El.Style(styles.TextCurrent())
 	return c
 }
 
-func (c *component) TextCyan(scale int) *component {
-	c.el.Style(styles.TextCyan(scale))
+func (c *Comp) TextCyan(scale int) *Comp {
+	c.El.Style(styles.TextCyan(scale))
 	return c
 }
 
-func (c *component) TextCyanAlpha(scale int) *component {
-	c.el.Style(styles.TextCyanAlpha(scale))
+func (c *Comp) TextCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.TextCyanAlpha(scale))
 	return c
 }
 
-func (c *component) TextCyanDark(scale int) *component {
-	c.el.Style(styles.TextCyanDark(scale))
+func (c *Comp) TextCyanDark(scale int) *Comp {
+	c.El.Style(styles.TextCyanDark(scale))
 	return c
 }
 
-func (c *component) TextCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextCyanDarkAlpha(scale))
+func (c *Comp) TextCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextEllipsis() *component {
-	c.el.Style(styles.TextEllipsis())
+func (c *Comp) TextEllipsis() *Comp {
+	c.El.Style(styles.TextEllipsis())
 	return c
 }
 
-func (c *component) TextEnd() *component {
-	c.el.Style(styles.TextEnd())
+func (c *Comp) TextEnd() *Comp {
+	c.El.Style(styles.TextEnd())
 	return c
 }
 
-func (c *component) TextGold(scale int) *component {
-	c.el.Style(styles.TextGold(scale))
+func (c *Comp) TextGold(scale int) *Comp {
+	c.El.Style(styles.TextGold(scale))
 	return c
 }
 
-func (c *component) TextGoldAlpha(scale int) *component {
-	c.el.Style(styles.TextGoldAlpha(scale))
+func (c *Comp) TextGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.TextGoldAlpha(scale))
 	return c
 }
 
-func (c *component) TextGoldDark(scale int) *component {
-	c.el.Style(styles.TextGoldDark(scale))
+func (c *Comp) TextGoldDark(scale int) *Comp {
+	c.El.Style(styles.TextGoldDark(scale))
 	return c
 }
 
-func (c *component) TextGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextGoldDarkAlpha(scale))
+func (c *Comp) TextGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextGrass(scale int) *component {
-	c.el.Style(styles.TextGrass(scale))
+func (c *Comp) TextGrass(scale int) *Comp {
+	c.El.Style(styles.TextGrass(scale))
 	return c
 }
 
-func (c *component) TextGrassAlpha(scale int) *component {
-	c.el.Style(styles.TextGrassAlpha(scale))
+func (c *Comp) TextGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.TextGrassAlpha(scale))
 	return c
 }
 
-func (c *component) TextGrassDark(scale int) *component {
-	c.el.Style(styles.TextGrassDark(scale))
+func (c *Comp) TextGrassDark(scale int) *Comp {
+	c.El.Style(styles.TextGrassDark(scale))
 	return c
 }
 
-func (c *component) TextGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextGrassDarkAlpha(scale))
+func (c *Comp) TextGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextGray(scale int) *component {
-	c.el.Style(styles.TextGray(scale))
+func (c *Comp) TextGray(scale int) *Comp {
+	c.El.Style(styles.TextGray(scale))
 	return c
 }
 
-func (c *component) TextGrayAlpha(scale int) *component {
-	c.el.Style(styles.TextGrayAlpha(scale))
+func (c *Comp) TextGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.TextGrayAlpha(scale))
 	return c
 }
 
-func (c *component) TextGrayDark(scale int) *component {
-	c.el.Style(styles.TextGrayDark(scale))
+func (c *Comp) TextGrayDark(scale int) *Comp {
+	c.El.Style(styles.TextGrayDark(scale))
 	return c
 }
 
-func (c *component) TextGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextGrayDarkAlpha(scale))
+func (c *Comp) TextGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextGreen(scale int) *component {
-	c.el.Style(styles.TextGreen(scale))
+func (c *Comp) TextGreen(scale int) *Comp {
+	c.El.Style(styles.TextGreen(scale))
 	return c
 }
 
-func (c *component) TextGreenAlpha(scale int) *component {
-	c.el.Style(styles.TextGreenAlpha(scale))
+func (c *Comp) TextGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.TextGreenAlpha(scale))
 	return c
 }
 
-func (c *component) TextGreenDark(scale int) *component {
-	c.el.Style(styles.TextGreenDark(scale))
+func (c *Comp) TextGreenDark(scale int) *Comp {
+	c.El.Style(styles.TextGreenDark(scale))
 	return c
 }
 
-func (c *component) TextGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextGreenDarkAlpha(scale))
+func (c *Comp) TextGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextIndigo(scale int) *component {
-	c.el.Style(styles.TextIndigo(scale))
+func (c *Comp) TextIndigo(scale int) *Comp {
+	c.El.Style(styles.TextIndigo(scale))
 	return c
 }
 
-func (c *component) TextIndigoAlpha(scale int) *component {
-	c.el.Style(styles.TextIndigoAlpha(scale))
+func (c *Comp) TextIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.TextIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) TextIndigoDark(scale int) *component {
-	c.el.Style(styles.TextIndigoDark(scale))
+func (c *Comp) TextIndigoDark(scale int) *Comp {
+	c.El.Style(styles.TextIndigoDark(scale))
 	return c
 }
 
-func (c *component) TextIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextIndigoDarkAlpha(scale))
+func (c *Comp) TextIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextInherit() *component {
-	c.el.Style(styles.TextInherit())
+func (c *Comp) TextInherit() *Comp {
+	c.El.Style(styles.TextInherit())
 	return c
 }
 
-func (c *component) TextIris(scale int) *component {
-	c.el.Style(styles.TextIris(scale))
+func (c *Comp) TextIris(scale int) *Comp {
+	c.El.Style(styles.TextIris(scale))
 	return c
 }
 
-func (c *component) TextIrisAlpha(scale int) *component {
-	c.el.Style(styles.TextIrisAlpha(scale))
+func (c *Comp) TextIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.TextIrisAlpha(scale))
 	return c
 }
 
-func (c *component) TextIrisDark(scale int) *component {
-	c.el.Style(styles.TextIrisDark(scale))
+func (c *Comp) TextIrisDark(scale int) *Comp {
+	c.El.Style(styles.TextIrisDark(scale))
 	return c
 }
 
-func (c *component) TextIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextIrisDarkAlpha(scale))
+func (c *Comp) TextIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextJade(scale int) *component {
-	c.el.Style(styles.TextJade(scale))
+func (c *Comp) TextJade(scale int) *Comp {
+	c.El.Style(styles.TextJade(scale))
 	return c
 }
 
-func (c *component) TextJadeAlpha(scale int) *component {
-	c.el.Style(styles.TextJadeAlpha(scale))
+func (c *Comp) TextJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.TextJadeAlpha(scale))
 	return c
 }
 
-func (c *component) TextJadeDark(scale int) *component {
-	c.el.Style(styles.TextJadeDark(scale))
+func (c *Comp) TextJadeDark(scale int) *Comp {
+	c.El.Style(styles.TextJadeDark(scale))
 	return c
 }
 
-func (c *component) TextJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextJadeDarkAlpha(scale))
+func (c *Comp) TextJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextJustify() *component {
-	c.el.Style(styles.TextJustify())
+func (c *Comp) TextJustify() *Comp {
+	c.El.Style(styles.TextJustify())
 	return c
 }
 
-func (c *component) TextLeft() *component {
-	c.el.Style(styles.TextLeft())
+func (c *Comp) TextLeft() *Comp {
+	c.El.Style(styles.TextLeft())
 	return c
 }
 
-func (c *component) TextLg(lineHeights ...any) *component {
-	c.el.Style(styles.TextLg(lineHeights...))
+func (c *Comp) TextLg(lineHeights ...any) *Comp {
+	c.El.Style(styles.TextLg(lineHeights...))
 	return c
 }
 
-func (c *component) TextLime(scale int) *component {
-	c.el.Style(styles.TextLime(scale))
+func (c *Comp) TextLime(scale int) *Comp {
+	c.El.Style(styles.TextLime(scale))
 	return c
 }
 
-func (c *component) TextLimeAlpha(scale int) *component {
-	c.el.Style(styles.TextLimeAlpha(scale))
+func (c *Comp) TextLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.TextLimeAlpha(scale))
 	return c
 }
 
-func (c *component) TextLimeDark(scale int) *component {
-	c.el.Style(styles.TextLimeDark(scale))
+func (c *Comp) TextLimeDark(scale int) *Comp {
+	c.El.Style(styles.TextLimeDark(scale))
 	return c
 }
 
-func (c *component) TextLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextLimeDarkAlpha(scale))
+func (c *Comp) TextLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextMauve(scale int) *component {
-	c.el.Style(styles.TextMauve(scale))
+func (c *Comp) TextMauve(scale int) *Comp {
+	c.El.Style(styles.TextMauve(scale))
 	return c
 }
 
-func (c *component) TextMauveAlpha(scale int) *component {
-	c.el.Style(styles.TextMauveAlpha(scale))
+func (c *Comp) TextMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.TextMauveAlpha(scale))
 	return c
 }
 
-func (c *component) TextMauveDark(scale int) *component {
-	c.el.Style(styles.TextMauveDark(scale))
+func (c *Comp) TextMauveDark(scale int) *Comp {
+	c.El.Style(styles.TextMauveDark(scale))
 	return c
 }
 
-func (c *component) TextMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextMauveDarkAlpha(scale))
+func (c *Comp) TextMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextMint(scale int) *component {
-	c.el.Style(styles.TextMint(scale))
+func (c *Comp) TextMint(scale int) *Comp {
+	c.El.Style(styles.TextMint(scale))
 	return c
 }
 
-func (c *component) TextMintAlpha(scale int) *component {
-	c.el.Style(styles.TextMintAlpha(scale))
+func (c *Comp) TextMintAlpha(scale int) *Comp {
+	c.El.Style(styles.TextMintAlpha(scale))
 	return c
 }
 
-func (c *component) TextMintDark(scale int) *component {
-	c.el.Style(styles.TextMintDark(scale))
+func (c *Comp) TextMintDark(scale int) *Comp {
+	c.El.Style(styles.TextMintDark(scale))
 	return c
 }
 
-func (c *component) TextMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextMintDarkAlpha(scale))
+func (c *Comp) TextMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextNoWrap() *component {
-	c.el.Style(styles.TextNoWrap())
+func (c *Comp) TextNoWrap() *Comp {
+	c.El.Style(styles.TextNoWrap())
 	return c
 }
 
-func (c *component) TextOlive(scale int) *component {
-	c.el.Style(styles.TextOlive(scale))
+func (c *Comp) TextOlive(scale int) *Comp {
+	c.El.Style(styles.TextOlive(scale))
 	return c
 }
 
-func (c *component) TextOliveAlpha(scale int) *component {
-	c.el.Style(styles.TextOliveAlpha(scale))
+func (c *Comp) TextOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.TextOliveAlpha(scale))
 	return c
 }
 
-func (c *component) TextOliveDark(scale int) *component {
-	c.el.Style(styles.TextOliveDark(scale))
+func (c *Comp) TextOliveDark(scale int) *Comp {
+	c.El.Style(styles.TextOliveDark(scale))
 	return c
 }
 
-func (c *component) TextOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextOliveDarkAlpha(scale))
+func (c *Comp) TextOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextOrange(scale int) *component {
-	c.el.Style(styles.TextOrange(scale))
+func (c *Comp) TextOrange(scale int) *Comp {
+	c.El.Style(styles.TextOrange(scale))
 	return c
 }
 
-func (c *component) TextOrangeAlpha(scale int) *component {
-	c.el.Style(styles.TextOrangeAlpha(scale))
+func (c *Comp) TextOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.TextOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) TextOrangeDark(scale int) *component {
-	c.el.Style(styles.TextOrangeDark(scale))
+func (c *Comp) TextOrangeDark(scale int) *Comp {
+	c.El.Style(styles.TextOrangeDark(scale))
 	return c
 }
 
-func (c *component) TextOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextOrangeDarkAlpha(scale))
+func (c *Comp) TextOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextPink(scale int) *component {
-	c.el.Style(styles.TextPink(scale))
+func (c *Comp) TextPink(scale int) *Comp {
+	c.El.Style(styles.TextPink(scale))
 	return c
 }
 
-func (c *component) TextPinkAlpha(scale int) *component {
-	c.el.Style(styles.TextPinkAlpha(scale))
+func (c *Comp) TextPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextPinkAlpha(scale))
 	return c
 }
 
-func (c *component) TextPinkDark(scale int) *component {
-	c.el.Style(styles.TextPinkDark(scale))
+func (c *Comp) TextPinkDark(scale int) *Comp {
+	c.El.Style(styles.TextPinkDark(scale))
 	return c
 }
 
-func (c *component) TextPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextPinkDarkAlpha(scale))
+func (c *Comp) TextPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextPlum(scale int) *component {
-	c.el.Style(styles.TextPlum(scale))
+func (c *Comp) TextPlum(scale int) *Comp {
+	c.El.Style(styles.TextPlum(scale))
 	return c
 }
 
-func (c *component) TextPlumAlpha(scale int) *component {
-	c.el.Style(styles.TextPlumAlpha(scale))
+func (c *Comp) TextPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.TextPlumAlpha(scale))
 	return c
 }
 
-func (c *component) TextPlumDark(scale int) *component {
-	c.el.Style(styles.TextPlumDark(scale))
+func (c *Comp) TextPlumDark(scale int) *Comp {
+	c.El.Style(styles.TextPlumDark(scale))
 	return c
 }
 
-func (c *component) TextPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextPlumDarkAlpha(scale))
+func (c *Comp) TextPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextPretty() *component {
-	c.el.Style(styles.TextPretty())
+func (c *Comp) TextPretty() *Comp {
+	c.El.Style(styles.TextPretty())
 	return c
 }
 
-func (c *component) TextPurple(scale int) *component {
-	c.el.Style(styles.TextPurple(scale))
+func (c *Comp) TextPurple(scale int) *Comp {
+	c.El.Style(styles.TextPurple(scale))
 	return c
 }
 
-func (c *component) TextPurpleAlpha(scale int) *component {
-	c.el.Style(styles.TextPurpleAlpha(scale))
+func (c *Comp) TextPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.TextPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) TextPurpleDark(scale int) *component {
-	c.el.Style(styles.TextPurpleDark(scale))
+func (c *Comp) TextPurpleDark(scale int) *Comp {
+	c.El.Style(styles.TextPurpleDark(scale))
 	return c
 }
 
-func (c *component) TextPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextPurpleDarkAlpha(scale))
+func (c *Comp) TextPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextRed(scale int) *component {
-	c.el.Style(styles.TextRed(scale))
+func (c *Comp) TextRed(scale int) *Comp {
+	c.El.Style(styles.TextRed(scale))
 	return c
 }
 
-func (c *component) TextRedAlpha(scale int) *component {
-	c.el.Style(styles.TextRedAlpha(scale))
+func (c *Comp) TextRedAlpha(scale int) *Comp {
+	c.El.Style(styles.TextRedAlpha(scale))
 	return c
 }
 
-func (c *component) TextRedDark(scale int) *component {
-	c.el.Style(styles.TextRedDark(scale))
+func (c *Comp) TextRedDark(scale int) *Comp {
+	c.El.Style(styles.TextRedDark(scale))
 	return c
 }
 
-func (c *component) TextRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextRedDarkAlpha(scale))
+func (c *Comp) TextRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextRight() *component {
-	c.el.Style(styles.TextRight())
+func (c *Comp) TextRight() *Comp {
+	c.El.Style(styles.TextRight())
 	return c
 }
 
-func (c *component) TextRuby(scale int) *component {
-	c.el.Style(styles.TextRuby(scale))
+func (c *Comp) TextRuby(scale int) *Comp {
+	c.El.Style(styles.TextRuby(scale))
 	return c
 }
 
-func (c *component) TextRubyAlpha(scale int) *component {
-	c.el.Style(styles.TextRubyAlpha(scale))
+func (c *Comp) TextRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.TextRubyAlpha(scale))
 	return c
 }
 
-func (c *component) TextRubyDark(scale int) *component {
-	c.el.Style(styles.TextRubyDark(scale))
+func (c *Comp) TextRubyDark(scale int) *Comp {
+	c.El.Style(styles.TextRubyDark(scale))
 	return c
 }
 
-func (c *component) TextRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextRubyDarkAlpha(scale))
+func (c *Comp) TextRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextSage(scale int) *component {
-	c.el.Style(styles.TextSage(scale))
+func (c *Comp) TextSage(scale int) *Comp {
+	c.El.Style(styles.TextSage(scale))
 	return c
 }
 
-func (c *component) TextSageAlpha(scale int) *component {
-	c.el.Style(styles.TextSageAlpha(scale))
+func (c *Comp) TextSageAlpha(scale int) *Comp {
+	c.El.Style(styles.TextSageAlpha(scale))
 	return c
 }
 
-func (c *component) TextSageDark(scale int) *component {
-	c.el.Style(styles.TextSageDark(scale))
+func (c *Comp) TextSageDark(scale int) *Comp {
+	c.El.Style(styles.TextSageDark(scale))
 	return c
 }
 
-func (c *component) TextSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextSageDarkAlpha(scale))
+func (c *Comp) TextSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextSand(scale int) *component {
-	c.el.Style(styles.TextSand(scale))
+func (c *Comp) TextSand(scale int) *Comp {
+	c.El.Style(styles.TextSand(scale))
 	return c
 }
 
-func (c *component) TextSandAlpha(scale int) *component {
-	c.el.Style(styles.TextSandAlpha(scale))
+func (c *Comp) TextSandAlpha(scale int) *Comp {
+	c.El.Style(styles.TextSandAlpha(scale))
 	return c
 }
 
-func (c *component) TextSandDark(scale int) *component {
-	c.el.Style(styles.TextSandDark(scale))
+func (c *Comp) TextSandDark(scale int) *Comp {
+	c.El.Style(styles.TextSandDark(scale))
 	return c
 }
 
-func (c *component) TextSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextSandDarkAlpha(scale))
+func (c *Comp) TextSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadow(val value.Value) *component {
-	c.el.Style(styles.TextShadow(val))
+func (c *Comp) TextShadow(val value.Value) *Comp {
+	c.El.Style(styles.TextShadow(val))
 	return c
 }
 
-func (c *component) TextShadow2xl() *component {
-	c.el.Style(styles.TextShadow2xl())
+func (c *Comp) TextShadow2xl() *Comp {
+	c.El.Style(styles.TextShadow2xl())
 	return c
 }
 
-func (c *component) TextShadow2xs() *component {
-	c.el.Style(styles.TextShadow2xs())
+func (c *Comp) TextShadow2xs() *Comp {
+	c.El.Style(styles.TextShadow2xs())
 	return c
 }
 
-func (c *component) TextShadowAmber(scale int) *component {
-	c.el.Style(styles.TextShadowAmber(scale))
+func (c *Comp) TextShadowAmber(scale int) *Comp {
+	c.El.Style(styles.TextShadowAmber(scale))
 	return c
 }
 
-func (c *component) TextShadowAmberAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowAmberAlpha(scale))
+func (c *Comp) TextShadowAmberAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowAmberAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowAmberDark(scale int) *component {
-	c.el.Style(styles.TextShadowAmberDark(scale))
+func (c *Comp) TextShadowAmberDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowAmberDark(scale))
 	return c
 }
 
-func (c *component) TextShadowAmberDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowAmberDarkAlpha(scale))
+func (c *Comp) TextShadowAmberDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowAmberDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowBlack() *component {
-	c.el.Style(styles.TextShadowBlack())
+func (c *Comp) TextShadowBlack() *Comp {
+	c.El.Style(styles.TextShadowBlack())
 	return c
 }
 
-func (c *component) TextShadowBlackAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowBlackAlpha(scale))
+func (c *Comp) TextShadowBlackAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowBlackAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowBlue(scale int) *component {
-	c.el.Style(styles.TextShadowBlue(scale))
+func (c *Comp) TextShadowBlue(scale int) *Comp {
+	c.El.Style(styles.TextShadowBlue(scale))
 	return c
 }
 
-func (c *component) TextShadowBlueAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowBlueAlpha(scale))
+func (c *Comp) TextShadowBlueAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowBlueAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowBlueDark(scale int) *component {
-	c.el.Style(styles.TextShadowBlueDark(scale))
+func (c *Comp) TextShadowBlueDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowBlueDark(scale))
 	return c
 }
 
-func (c *component) TextShadowBlueDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowBlueDarkAlpha(scale))
+func (c *Comp) TextShadowBlueDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowBlueDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowBronze(scale int) *component {
-	c.el.Style(styles.TextShadowBronze(scale))
+func (c *Comp) TextShadowBronze(scale int) *Comp {
+	c.El.Style(styles.TextShadowBronze(scale))
 	return c
 }
 
-func (c *component) TextShadowBronzeAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowBronzeAlpha(scale))
+func (c *Comp) TextShadowBronzeAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowBronzeAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowBronzeDark(scale int) *component {
-	c.el.Style(styles.TextShadowBronzeDark(scale))
+func (c *Comp) TextShadowBronzeDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowBronzeDark(scale))
 	return c
 }
 
-func (c *component) TextShadowBronzeDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowBronzeDarkAlpha(scale))
+func (c *Comp) TextShadowBronzeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowBronzeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowBrown(scale int) *component {
-	c.el.Style(styles.TextShadowBrown(scale))
+func (c *Comp) TextShadowBrown(scale int) *Comp {
+	c.El.Style(styles.TextShadowBrown(scale))
 	return c
 }
 
-func (c *component) TextShadowBrownAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowBrownAlpha(scale))
+func (c *Comp) TextShadowBrownAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowBrownAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowBrownDark(scale int) *component {
-	c.el.Style(styles.TextShadowBrownDark(scale))
+func (c *Comp) TextShadowBrownDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowBrownDark(scale))
 	return c
 }
 
-func (c *component) TextShadowBrownDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowBrownDarkAlpha(scale))
+func (c *Comp) TextShadowBrownDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowBrownDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowColor(val value.Value) *component {
-	c.el.Style(styles.TextShadowColor(val))
+func (c *Comp) TextShadowColor(val value.Value) *Comp {
+	c.El.Style(styles.TextShadowColor(val))
 	return c
 }
 
-func (c *component) TextShadowCrimson(scale int) *component {
-	c.el.Style(styles.TextShadowCrimson(scale))
+func (c *Comp) TextShadowCrimson(scale int) *Comp {
+	c.El.Style(styles.TextShadowCrimson(scale))
 	return c
 }
 
-func (c *component) TextShadowCrimsonAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowCrimsonAlpha(scale))
+func (c *Comp) TextShadowCrimsonAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowCrimsonAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowCrimsonDark(scale int) *component {
-	c.el.Style(styles.TextShadowCrimsonDark(scale))
+func (c *Comp) TextShadowCrimsonDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowCrimsonDark(scale))
 	return c
 }
 
-func (c *component) TextShadowCrimsonDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowCrimsonDarkAlpha(scale))
+func (c *Comp) TextShadowCrimsonDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowCrimsonDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowCurrent() *component {
-	c.el.Style(styles.TextShadowCurrent())
+func (c *Comp) TextShadowCurrent() *Comp {
+	c.El.Style(styles.TextShadowCurrent())
 	return c
 }
 
-func (c *component) TextShadowCyan(scale int) *component {
-	c.el.Style(styles.TextShadowCyan(scale))
+func (c *Comp) TextShadowCyan(scale int) *Comp {
+	c.El.Style(styles.TextShadowCyan(scale))
 	return c
 }
 
-func (c *component) TextShadowCyanAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowCyanAlpha(scale))
+func (c *Comp) TextShadowCyanAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowCyanAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowCyanDark(scale int) *component {
-	c.el.Style(styles.TextShadowCyanDark(scale))
+func (c *Comp) TextShadowCyanDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowCyanDark(scale))
 	return c
 }
 
-func (c *component) TextShadowCyanDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowCyanDarkAlpha(scale))
+func (c *Comp) TextShadowCyanDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowCyanDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowGold(scale int) *component {
-	c.el.Style(styles.TextShadowGold(scale))
+func (c *Comp) TextShadowGold(scale int) *Comp {
+	c.El.Style(styles.TextShadowGold(scale))
 	return c
 }
 
-func (c *component) TextShadowGoldAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowGoldAlpha(scale))
+func (c *Comp) TextShadowGoldAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowGoldAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowGoldDark(scale int) *component {
-	c.el.Style(styles.TextShadowGoldDark(scale))
+func (c *Comp) TextShadowGoldDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowGoldDark(scale))
 	return c
 }
 
-func (c *component) TextShadowGoldDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowGoldDarkAlpha(scale))
+func (c *Comp) TextShadowGoldDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowGoldDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowGrass(scale int) *component {
-	c.el.Style(styles.TextShadowGrass(scale))
+func (c *Comp) TextShadowGrass(scale int) *Comp {
+	c.El.Style(styles.TextShadowGrass(scale))
 	return c
 }
 
-func (c *component) TextShadowGrassAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowGrassAlpha(scale))
+func (c *Comp) TextShadowGrassAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowGrassAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowGrassDark(scale int) *component {
-	c.el.Style(styles.TextShadowGrassDark(scale))
+func (c *Comp) TextShadowGrassDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowGrassDark(scale))
 	return c
 }
 
-func (c *component) TextShadowGrassDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowGrassDarkAlpha(scale))
+func (c *Comp) TextShadowGrassDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowGrassDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowGray(scale int) *component {
-	c.el.Style(styles.TextShadowGray(scale))
+func (c *Comp) TextShadowGray(scale int) *Comp {
+	c.El.Style(styles.TextShadowGray(scale))
 	return c
 }
 
-func (c *component) TextShadowGrayAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowGrayAlpha(scale))
+func (c *Comp) TextShadowGrayAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowGrayAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowGrayDark(scale int) *component {
-	c.el.Style(styles.TextShadowGrayDark(scale))
+func (c *Comp) TextShadowGrayDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowGrayDark(scale))
 	return c
 }
 
-func (c *component) TextShadowGrayDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowGrayDarkAlpha(scale))
+func (c *Comp) TextShadowGrayDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowGrayDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowGreen(scale int) *component {
-	c.el.Style(styles.TextShadowGreen(scale))
+func (c *Comp) TextShadowGreen(scale int) *Comp {
+	c.El.Style(styles.TextShadowGreen(scale))
 	return c
 }
 
-func (c *component) TextShadowGreenAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowGreenAlpha(scale))
+func (c *Comp) TextShadowGreenAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowGreenAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowGreenDark(scale int) *component {
-	c.el.Style(styles.TextShadowGreenDark(scale))
+func (c *Comp) TextShadowGreenDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowGreenDark(scale))
 	return c
 }
 
-func (c *component) TextShadowGreenDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowGreenDarkAlpha(scale))
+func (c *Comp) TextShadowGreenDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowGreenDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowIndigo(scale int) *component {
-	c.el.Style(styles.TextShadowIndigo(scale))
+func (c *Comp) TextShadowIndigo(scale int) *Comp {
+	c.El.Style(styles.TextShadowIndigo(scale))
 	return c
 }
 
-func (c *component) TextShadowIndigoAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowIndigoAlpha(scale))
+func (c *Comp) TextShadowIndigoAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowIndigoAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowIndigoDark(scale int) *component {
-	c.el.Style(styles.TextShadowIndigoDark(scale))
+func (c *Comp) TextShadowIndigoDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowIndigoDark(scale))
 	return c
 }
 
-func (c *component) TextShadowIndigoDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowIndigoDarkAlpha(scale))
+func (c *Comp) TextShadowIndigoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowIndigoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowInherit() *component {
-	c.el.Style(styles.TextShadowInherit())
+func (c *Comp) TextShadowInherit() *Comp {
+	c.El.Style(styles.TextShadowInherit())
 	return c
 }
 
-func (c *component) TextShadowIris(scale int) *component {
-	c.el.Style(styles.TextShadowIris(scale))
+func (c *Comp) TextShadowIris(scale int) *Comp {
+	c.El.Style(styles.TextShadowIris(scale))
 	return c
 }
 
-func (c *component) TextShadowIrisAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowIrisAlpha(scale))
+func (c *Comp) TextShadowIrisAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowIrisAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowIrisDark(scale int) *component {
-	c.el.Style(styles.TextShadowIrisDark(scale))
+func (c *Comp) TextShadowIrisDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowIrisDark(scale))
 	return c
 }
 
-func (c *component) TextShadowIrisDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowIrisDarkAlpha(scale))
+func (c *Comp) TextShadowIrisDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowIrisDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowJade(scale int) *component {
-	c.el.Style(styles.TextShadowJade(scale))
+func (c *Comp) TextShadowJade(scale int) *Comp {
+	c.El.Style(styles.TextShadowJade(scale))
 	return c
 }
 
-func (c *component) TextShadowJadeAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowJadeAlpha(scale))
+func (c *Comp) TextShadowJadeAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowJadeAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowJadeDark(scale int) *component {
-	c.el.Style(styles.TextShadowJadeDark(scale))
+func (c *Comp) TextShadowJadeDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowJadeDark(scale))
 	return c
 }
 
-func (c *component) TextShadowJadeDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowJadeDarkAlpha(scale))
+func (c *Comp) TextShadowJadeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowJadeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowLg() *component {
-	c.el.Style(styles.TextShadowLg())
+func (c *Comp) TextShadowLg() *Comp {
+	c.El.Style(styles.TextShadowLg())
 	return c
 }
 
-func (c *component) TextShadowLime(scale int) *component {
-	c.el.Style(styles.TextShadowLime(scale))
+func (c *Comp) TextShadowLime(scale int) *Comp {
+	c.El.Style(styles.TextShadowLime(scale))
 	return c
 }
 
-func (c *component) TextShadowLimeAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowLimeAlpha(scale))
+func (c *Comp) TextShadowLimeAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowLimeAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowLimeDark(scale int) *component {
-	c.el.Style(styles.TextShadowLimeDark(scale))
+func (c *Comp) TextShadowLimeDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowLimeDark(scale))
 	return c
 }
 
-func (c *component) TextShadowLimeDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowLimeDarkAlpha(scale))
+func (c *Comp) TextShadowLimeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowLimeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowMauve(scale int) *component {
-	c.el.Style(styles.TextShadowMauve(scale))
+func (c *Comp) TextShadowMauve(scale int) *Comp {
+	c.El.Style(styles.TextShadowMauve(scale))
 	return c
 }
 
-func (c *component) TextShadowMauveAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowMauveAlpha(scale))
+func (c *Comp) TextShadowMauveAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowMauveAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowMauveDark(scale int) *component {
-	c.el.Style(styles.TextShadowMauveDark(scale))
+func (c *Comp) TextShadowMauveDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowMauveDark(scale))
 	return c
 }
 
-func (c *component) TextShadowMauveDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowMauveDarkAlpha(scale))
+func (c *Comp) TextShadowMauveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowMauveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowMd() *component {
-	c.el.Style(styles.TextShadowMd())
+func (c *Comp) TextShadowMd() *Comp {
+	c.El.Style(styles.TextShadowMd())
 	return c
 }
 
-func (c *component) TextShadowMint(scale int) *component {
-	c.el.Style(styles.TextShadowMint(scale))
+func (c *Comp) TextShadowMint(scale int) *Comp {
+	c.El.Style(styles.TextShadowMint(scale))
 	return c
 }
 
-func (c *component) TextShadowMintAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowMintAlpha(scale))
+func (c *Comp) TextShadowMintAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowMintAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowMintDark(scale int) *component {
-	c.el.Style(styles.TextShadowMintDark(scale))
+func (c *Comp) TextShadowMintDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowMintDark(scale))
 	return c
 }
 
-func (c *component) TextShadowMintDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowMintDarkAlpha(scale))
+func (c *Comp) TextShadowMintDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowMintDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowNone() *component {
-	c.el.Style(styles.TextShadowNone())
+func (c *Comp) TextShadowNone() *Comp {
+	c.El.Style(styles.TextShadowNone())
 	return c
 }
 
-func (c *component) TextShadowOlive(scale int) *component {
-	c.el.Style(styles.TextShadowOlive(scale))
+func (c *Comp) TextShadowOlive(scale int) *Comp {
+	c.El.Style(styles.TextShadowOlive(scale))
 	return c
 }
 
-func (c *component) TextShadowOliveAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowOliveAlpha(scale))
+func (c *Comp) TextShadowOliveAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowOliveAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowOliveDark(scale int) *component {
-	c.el.Style(styles.TextShadowOliveDark(scale))
+func (c *Comp) TextShadowOliveDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowOliveDark(scale))
 	return c
 }
 
-func (c *component) TextShadowOliveDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowOliveDarkAlpha(scale))
+func (c *Comp) TextShadowOliveDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowOliveDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowOrange(scale int) *component {
-	c.el.Style(styles.TextShadowOrange(scale))
+func (c *Comp) TextShadowOrange(scale int) *Comp {
+	c.El.Style(styles.TextShadowOrange(scale))
 	return c
 }
 
-func (c *component) TextShadowOrangeAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowOrangeAlpha(scale))
+func (c *Comp) TextShadowOrangeAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowOrangeAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowOrangeDark(scale int) *component {
-	c.el.Style(styles.TextShadowOrangeDark(scale))
+func (c *Comp) TextShadowOrangeDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowOrangeDark(scale))
 	return c
 }
 
-func (c *component) TextShadowOrangeDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowOrangeDarkAlpha(scale))
+func (c *Comp) TextShadowOrangeDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowOrangeDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowPink(scale int) *component {
-	c.el.Style(styles.TextShadowPink(scale))
+func (c *Comp) TextShadowPink(scale int) *Comp {
+	c.El.Style(styles.TextShadowPink(scale))
 	return c
 }
 
-func (c *component) TextShadowPinkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowPinkAlpha(scale))
+func (c *Comp) TextShadowPinkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowPinkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowPinkDark(scale int) *component {
-	c.el.Style(styles.TextShadowPinkDark(scale))
+func (c *Comp) TextShadowPinkDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowPinkDark(scale))
 	return c
 }
 
-func (c *component) TextShadowPinkDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowPinkDarkAlpha(scale))
+func (c *Comp) TextShadowPinkDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowPinkDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowPlum(scale int) *component {
-	c.el.Style(styles.TextShadowPlum(scale))
+func (c *Comp) TextShadowPlum(scale int) *Comp {
+	c.El.Style(styles.TextShadowPlum(scale))
 	return c
 }
 
-func (c *component) TextShadowPlumAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowPlumAlpha(scale))
+func (c *Comp) TextShadowPlumAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowPlumAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowPlumDark(scale int) *component {
-	c.el.Style(styles.TextShadowPlumDark(scale))
+func (c *Comp) TextShadowPlumDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowPlumDark(scale))
 	return c
 }
 
-func (c *component) TextShadowPlumDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowPlumDarkAlpha(scale))
+func (c *Comp) TextShadowPlumDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowPlumDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowPurple(scale int) *component {
-	c.el.Style(styles.TextShadowPurple(scale))
+func (c *Comp) TextShadowPurple(scale int) *Comp {
+	c.El.Style(styles.TextShadowPurple(scale))
 	return c
 }
 
-func (c *component) TextShadowPurpleAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowPurpleAlpha(scale))
+func (c *Comp) TextShadowPurpleAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowPurpleAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowPurpleDark(scale int) *component {
-	c.el.Style(styles.TextShadowPurpleDark(scale))
+func (c *Comp) TextShadowPurpleDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowPurpleDark(scale))
 	return c
 }
 
-func (c *component) TextShadowPurpleDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowPurpleDarkAlpha(scale))
+func (c *Comp) TextShadowPurpleDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowPurpleDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowRed(scale int) *component {
-	c.el.Style(styles.TextShadowRed(scale))
+func (c *Comp) TextShadowRed(scale int) *Comp {
+	c.El.Style(styles.TextShadowRed(scale))
 	return c
 }
 
-func (c *component) TextShadowRedAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowRedAlpha(scale))
+func (c *Comp) TextShadowRedAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowRedAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowRedDark(scale int) *component {
-	c.el.Style(styles.TextShadowRedDark(scale))
+func (c *Comp) TextShadowRedDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowRedDark(scale))
 	return c
 }
 
-func (c *component) TextShadowRedDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowRedDarkAlpha(scale))
+func (c *Comp) TextShadowRedDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowRedDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowRuby(scale int) *component {
-	c.el.Style(styles.TextShadowRuby(scale))
+func (c *Comp) TextShadowRuby(scale int) *Comp {
+	c.El.Style(styles.TextShadowRuby(scale))
 	return c
 }
 
-func (c *component) TextShadowRubyAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowRubyAlpha(scale))
+func (c *Comp) TextShadowRubyAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowRubyAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowRubyDark(scale int) *component {
-	c.el.Style(styles.TextShadowRubyDark(scale))
+func (c *Comp) TextShadowRubyDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowRubyDark(scale))
 	return c
 }
 
-func (c *component) TextShadowRubyDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowRubyDarkAlpha(scale))
+func (c *Comp) TextShadowRubyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowRubyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowSage(scale int) *component {
-	c.el.Style(styles.TextShadowSage(scale))
+func (c *Comp) TextShadowSage(scale int) *Comp {
+	c.El.Style(styles.TextShadowSage(scale))
 	return c
 }
 
-func (c *component) TextShadowSageAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowSageAlpha(scale))
+func (c *Comp) TextShadowSageAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowSageAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowSageDark(scale int) *component {
-	c.el.Style(styles.TextShadowSageDark(scale))
+func (c *Comp) TextShadowSageDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowSageDark(scale))
 	return c
 }
 
-func (c *component) TextShadowSageDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowSageDarkAlpha(scale))
+func (c *Comp) TextShadowSageDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowSageDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowSand(scale int) *component {
-	c.el.Style(styles.TextShadowSand(scale))
+func (c *Comp) TextShadowSand(scale int) *Comp {
+	c.El.Style(styles.TextShadowSand(scale))
 	return c
 }
 
-func (c *component) TextShadowSandAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowSandAlpha(scale))
+func (c *Comp) TextShadowSandAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowSandAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowSandDark(scale int) *component {
-	c.el.Style(styles.TextShadowSandDark(scale))
+func (c *Comp) TextShadowSandDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowSandDark(scale))
 	return c
 }
 
-func (c *component) TextShadowSandDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowSandDarkAlpha(scale))
+func (c *Comp) TextShadowSandDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowSandDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowSky(scale int) *component {
-	c.el.Style(styles.TextShadowSky(scale))
+func (c *Comp) TextShadowSky(scale int) *Comp {
+	c.El.Style(styles.TextShadowSky(scale))
 	return c
 }
 
-func (c *component) TextShadowSkyAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowSkyAlpha(scale))
+func (c *Comp) TextShadowSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowSkyAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowSkyDark(scale int) *component {
-	c.el.Style(styles.TextShadowSkyDark(scale))
+func (c *Comp) TextShadowSkyDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowSkyDark(scale))
 	return c
 }
 
-func (c *component) TextShadowSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowSkyDarkAlpha(scale))
+func (c *Comp) TextShadowSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowSlate(scale int) *component {
-	c.el.Style(styles.TextShadowSlate(scale))
+func (c *Comp) TextShadowSlate(scale int) *Comp {
+	c.El.Style(styles.TextShadowSlate(scale))
 	return c
 }
 
-func (c *component) TextShadowSlateAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowSlateAlpha(scale))
+func (c *Comp) TextShadowSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowSlateAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowSlateDark(scale int) *component {
-	c.el.Style(styles.TextShadowSlateDark(scale))
+func (c *Comp) TextShadowSlateDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowSlateDark(scale))
 	return c
 }
 
-func (c *component) TextShadowSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowSlateDarkAlpha(scale))
+func (c *Comp) TextShadowSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowSm() *component {
-	c.el.Style(styles.TextShadowSm())
+func (c *Comp) TextShadowSm() *Comp {
+	c.El.Style(styles.TextShadowSm())
 	return c
 }
 
-func (c *component) TextShadowTeal(scale int) *component {
-	c.el.Style(styles.TextShadowTeal(scale))
+func (c *Comp) TextShadowTeal(scale int) *Comp {
+	c.El.Style(styles.TextShadowTeal(scale))
 	return c
 }
 
-func (c *component) TextShadowTealAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowTealAlpha(scale))
+func (c *Comp) TextShadowTealAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowTealAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowTealDark(scale int) *component {
-	c.el.Style(styles.TextShadowTealDark(scale))
+func (c *Comp) TextShadowTealDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowTealDark(scale))
 	return c
 }
 
-func (c *component) TextShadowTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowTealDarkAlpha(scale))
+func (c *Comp) TextShadowTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowTomato(scale int) *component {
-	c.el.Style(styles.TextShadowTomato(scale))
+func (c *Comp) TextShadowTomato(scale int) *Comp {
+	c.El.Style(styles.TextShadowTomato(scale))
 	return c
 }
 
-func (c *component) TextShadowTomatoAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowTomatoAlpha(scale))
+func (c *Comp) TextShadowTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowTomatoDark(scale int) *component {
-	c.el.Style(styles.TextShadowTomatoDark(scale))
+func (c *Comp) TextShadowTomatoDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowTomatoDark(scale))
 	return c
 }
 
-func (c *component) TextShadowTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowTomatoDarkAlpha(scale))
+func (c *Comp) TextShadowTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowTransparent() *component {
-	c.el.Style(styles.TextShadowTransparent())
+func (c *Comp) TextShadowTransparent() *Comp {
+	c.El.Style(styles.TextShadowTransparent())
 	return c
 }
 
-func (c *component) TextShadowViolet(scale int) *component {
-	c.el.Style(styles.TextShadowViolet(scale))
+func (c *Comp) TextShadowViolet(scale int) *Comp {
+	c.El.Style(styles.TextShadowViolet(scale))
 	return c
 }
 
-func (c *component) TextShadowVioletAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowVioletAlpha(scale))
+func (c *Comp) TextShadowVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowVioletAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowVioletDark(scale int) *component {
-	c.el.Style(styles.TextShadowVioletDark(scale))
+func (c *Comp) TextShadowVioletDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowVioletDark(scale))
 	return c
 }
 
-func (c *component) TextShadowVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowVioletDarkAlpha(scale))
+func (c *Comp) TextShadowVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowWhite() *component {
-	c.el.Style(styles.TextShadowWhite())
+func (c *Comp) TextShadowWhite() *Comp {
+	c.El.Style(styles.TextShadowWhite())
 	return c
 }
 
-func (c *component) TextShadowWhiteAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowWhiteAlpha(scale))
+func (c *Comp) TextShadowWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowXl() *component {
-	c.el.Style(styles.TextShadowXl())
+func (c *Comp) TextShadowXl() *Comp {
+	c.El.Style(styles.TextShadowXl())
 	return c
 }
 
-func (c *component) TextShadowXs() *component {
-	c.el.Style(styles.TextShadowXs())
+func (c *Comp) TextShadowXs() *Comp {
+	c.El.Style(styles.TextShadowXs())
 	return c
 }
 
-func (c *component) TextShadowYellow(scale int) *component {
-	c.el.Style(styles.TextShadowYellow(scale))
+func (c *Comp) TextShadowYellow(scale int) *Comp {
+	c.El.Style(styles.TextShadowYellow(scale))
 	return c
 }
 
-func (c *component) TextShadowYellowAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowYellowAlpha(scale))
+func (c *Comp) TextShadowYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowYellowAlpha(scale))
 	return c
 }
 
-func (c *component) TextShadowYellowDark(scale int) *component {
-	c.el.Style(styles.TextShadowYellowDark(scale))
+func (c *Comp) TextShadowYellowDark(scale int) *Comp {
+	c.El.Style(styles.TextShadowYellowDark(scale))
 	return c
 }
 
-func (c *component) TextShadowYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextShadowYellowDarkAlpha(scale))
+func (c *Comp) TextShadowYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextShadowYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextSizeBy(val value.Value) *component {
-	c.el.Style(styles.TextSizeBy(val))
+func (c *Comp) TextSizeBy(val value.Value) *Comp {
+	c.El.Style(styles.TextSizeBy(val))
 	return c
 }
 
-func (c *component) TextSky(scale int) *component {
-	c.el.Style(styles.TextSky(scale))
+func (c *Comp) TextSky(scale int) *Comp {
+	c.El.Style(styles.TextSky(scale))
 	return c
 }
 
-func (c *component) TextSkyAlpha(scale int) *component {
-	c.el.Style(styles.TextSkyAlpha(scale))
+func (c *Comp) TextSkyAlpha(scale int) *Comp {
+	c.El.Style(styles.TextSkyAlpha(scale))
 	return c
 }
 
-func (c *component) TextSkyDark(scale int) *component {
-	c.el.Style(styles.TextSkyDark(scale))
+func (c *Comp) TextSkyDark(scale int) *Comp {
+	c.El.Style(styles.TextSkyDark(scale))
 	return c
 }
 
-func (c *component) TextSkyDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextSkyDarkAlpha(scale))
+func (c *Comp) TextSkyDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextSkyDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextSlate(scale int) *component {
-	c.el.Style(styles.TextSlate(scale))
+func (c *Comp) TextSlate(scale int) *Comp {
+	c.El.Style(styles.TextSlate(scale))
 	return c
 }
 
-func (c *component) TextSlateAlpha(scale int) *component {
-	c.el.Style(styles.TextSlateAlpha(scale))
+func (c *Comp) TextSlateAlpha(scale int) *Comp {
+	c.El.Style(styles.TextSlateAlpha(scale))
 	return c
 }
 
-func (c *component) TextSlateDark(scale int) *component {
-	c.el.Style(styles.TextSlateDark(scale))
+func (c *Comp) TextSlateDark(scale int) *Comp {
+	c.El.Style(styles.TextSlateDark(scale))
 	return c
 }
 
-func (c *component) TextSlateDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextSlateDarkAlpha(scale))
+func (c *Comp) TextSlateDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextSlateDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextSm(lineHeights ...any) *component {
-	c.el.Style(styles.TextSm(lineHeights...))
+func (c *Comp) TextSm(lineHeights ...any) *Comp {
+	c.El.Style(styles.TextSm(lineHeights...))
 	return c
 }
 
-func (c *component) TextStart() *component {
-	c.el.Style(styles.TextStart())
+func (c *Comp) TextStart() *Comp {
+	c.El.Style(styles.TextStart())
 	return c
 }
 
-func (c *component) TextTeal(scale int) *component {
-	c.el.Style(styles.TextTeal(scale))
+func (c *Comp) TextTeal(scale int) *Comp {
+	c.El.Style(styles.TextTeal(scale))
 	return c
 }
 
-func (c *component) TextTealAlpha(scale int) *component {
-	c.el.Style(styles.TextTealAlpha(scale))
+func (c *Comp) TextTealAlpha(scale int) *Comp {
+	c.El.Style(styles.TextTealAlpha(scale))
 	return c
 }
 
-func (c *component) TextTealDark(scale int) *component {
-	c.el.Style(styles.TextTealDark(scale))
+func (c *Comp) TextTealDark(scale int) *Comp {
+	c.El.Style(styles.TextTealDark(scale))
 	return c
 }
 
-func (c *component) TextTealDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextTealDarkAlpha(scale))
+func (c *Comp) TextTealDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextTealDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextTomato(scale int) *component {
-	c.el.Style(styles.TextTomato(scale))
+func (c *Comp) TextTomato(scale int) *Comp {
+	c.El.Style(styles.TextTomato(scale))
 	return c
 }
 
-func (c *component) TextTomatoAlpha(scale int) *component {
-	c.el.Style(styles.TextTomatoAlpha(scale))
+func (c *Comp) TextTomatoAlpha(scale int) *Comp {
+	c.El.Style(styles.TextTomatoAlpha(scale))
 	return c
 }
 
-func (c *component) TextTomatoDark(scale int) *component {
-	c.el.Style(styles.TextTomatoDark(scale))
+func (c *Comp) TextTomatoDark(scale int) *Comp {
+	c.El.Style(styles.TextTomatoDark(scale))
 	return c
 }
 
-func (c *component) TextTomatoDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextTomatoDarkAlpha(scale))
+func (c *Comp) TextTomatoDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextTomatoDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextTransparent() *component {
-	c.el.Style(styles.TextTransparent())
+func (c *Comp) TextTransparent() *Comp {
+	c.El.Style(styles.TextTransparent())
 	return c
 }
 
-func (c *component) TextViolet(scale int) *component {
-	c.el.Style(styles.TextViolet(scale))
+func (c *Comp) TextViolet(scale int) *Comp {
+	c.El.Style(styles.TextViolet(scale))
 	return c
 }
 
-func (c *component) TextVioletAlpha(scale int) *component {
-	c.el.Style(styles.TextVioletAlpha(scale))
+func (c *Comp) TextVioletAlpha(scale int) *Comp {
+	c.El.Style(styles.TextVioletAlpha(scale))
 	return c
 }
 
-func (c *component) TextVioletDark(scale int) *component {
-	c.el.Style(styles.TextVioletDark(scale))
+func (c *Comp) TextVioletDark(scale int) *Comp {
+	c.El.Style(styles.TextVioletDark(scale))
 	return c
 }
 
-func (c *component) TextVioletDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextVioletDarkAlpha(scale))
+func (c *Comp) TextVioletDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextVioletDarkAlpha(scale))
 	return c
 }
 
-func (c *component) TextWhite() *component {
-	c.el.Style(styles.TextWhite())
+func (c *Comp) TextWhite() *Comp {
+	c.El.Style(styles.TextWhite())
 	return c
 }
 
-func (c *component) TextWhiteAlpha(scale int) *component {
-	c.el.Style(styles.TextWhiteAlpha(scale))
+func (c *Comp) TextWhiteAlpha(scale int) *Comp {
+	c.El.Style(styles.TextWhiteAlpha(scale))
 	return c
 }
 
-func (c *component) TextWrap() *component {
-	c.el.Style(styles.TextWrap())
+func (c *Comp) TextWrap() *Comp {
+	c.El.Style(styles.TextWrap())
 	return c
 }
 
-func (c *component) TextXl(lineHeights ...any) *component {
-	c.el.Style(styles.TextXl(lineHeights...))
+func (c *Comp) TextXl(lineHeights ...any) *Comp {
+	c.El.Style(styles.TextXl(lineHeights...))
 	return c
 }
 
-func (c *component) TextXs(lineHeights ...any) *component {
-	c.el.Style(styles.TextXs(lineHeights...))
+func (c *Comp) TextXs(lineHeights ...any) *Comp {
+	c.El.Style(styles.TextXs(lineHeights...))
 	return c
 }
 
-func (c *component) TextYellow(scale int) *component {
-	c.el.Style(styles.TextYellow(scale))
+func (c *Comp) TextYellow(scale int) *Comp {
+	c.El.Style(styles.TextYellow(scale))
 	return c
 }
 
-func (c *component) TextYellowAlpha(scale int) *component {
-	c.el.Style(styles.TextYellowAlpha(scale))
+func (c *Comp) TextYellowAlpha(scale int) *Comp {
+	c.El.Style(styles.TextYellowAlpha(scale))
 	return c
 }
 
-func (c *component) TextYellowDark(scale int) *component {
-	c.el.Style(styles.TextYellowDark(scale))
+func (c *Comp) TextYellowDark(scale int) *Comp {
+	c.El.Style(styles.TextYellowDark(scale))
 	return c
 }
 
-func (c *component) TextYellowDarkAlpha(scale int) *component {
-	c.el.Style(styles.TextYellowDarkAlpha(scale))
+func (c *Comp) TextYellowDarkAlpha(scale int) *Comp {
+	c.El.Style(styles.TextYellowDarkAlpha(scale))
 	return c
 }
 
-func (c *component) To(val value.Value) *component {
-	c.el.Style(styles.To(val))
+func (c *Comp) To(val value.Value) *Comp {
+	c.El.Style(styles.To(val))
 	return c
 }
 
-func (c *component) Top(number int) *component {
-	c.el.Style(styles.Top(number))
+func (c *Comp) Top(number int) *Comp {
+	c.El.Style(styles.Top(number))
 	return c
 }
 
-func (c *component) TopAuto() *component {
-	c.el.Style(styles.TopAuto())
+func (c *Comp) TopAuto() *Comp {
+	c.El.Style(styles.TopAuto())
 	return c
 }
 
-func (c *component) TopBy(val value.Value) *component {
-	c.el.Style(styles.TopBy(val))
+func (c *Comp) TopBy(val value.Value) *Comp {
+	c.El.Style(styles.TopBy(val))
 	return c
 }
 
-func (c *component) TopFraction(fraction float64) *component {
-	c.el.Style(styles.TopFraction(fraction))
+func (c *Comp) TopFraction(fraction float64) *Comp {
+	c.El.Style(styles.TopFraction(fraction))
 	return c
 }
 
-func (c *component) TopFull() *component {
-	c.el.Style(styles.TopFull())
+func (c *Comp) TopFull() *Comp {
+	c.El.Style(styles.TopFull())
 	return c
 }
 
-func (c *component) TopPx() *component {
-	c.el.Style(styles.TopPx())
+func (c *Comp) TopPx() *Comp {
+	c.El.Style(styles.TopPx())
 	return c
 }
 
-func (c *component) TouchAuto() *component {
-	c.el.Style(styles.TouchAuto())
+func (c *Comp) TouchAuto() *Comp {
+	c.El.Style(styles.TouchAuto())
 	return c
 }
 
-func (c *component) TouchManipulation() *component {
-	c.el.Style(styles.TouchManipulation())
+func (c *Comp) TouchManipulation() *Comp {
+	c.El.Style(styles.TouchManipulation())
 	return c
 }
 
-func (c *component) TouchNone() *component {
-	c.el.Style(styles.TouchNone())
+func (c *Comp) TouchNone() *Comp {
+	c.El.Style(styles.TouchNone())
 	return c
 }
 
-func (c *component) TouchPanDown() *component {
-	c.el.Style(styles.TouchPanDown())
+func (c *Comp) TouchPanDown() *Comp {
+	c.El.Style(styles.TouchPanDown())
 	return c
 }
 
-func (c *component) TouchPanLeft() *component {
-	c.el.Style(styles.TouchPanLeft())
+func (c *Comp) TouchPanLeft() *Comp {
+	c.El.Style(styles.TouchPanLeft())
 	return c
 }
 
-func (c *component) TouchPanRight() *component {
-	c.el.Style(styles.TouchPanRight())
+func (c *Comp) TouchPanRight() *Comp {
+	c.El.Style(styles.TouchPanRight())
 	return c
 }
 
-func (c *component) TouchPanUp() *component {
-	c.el.Style(styles.TouchPanUp())
+func (c *Comp) TouchPanUp() *Comp {
+	c.El.Style(styles.TouchPanUp())
 	return c
 }
 
-func (c *component) TouchPanX() *component {
-	c.el.Style(styles.TouchPanX())
+func (c *Comp) TouchPanX() *Comp {
+	c.El.Style(styles.TouchPanX())
 	return c
 }
 
-func (c *component) TouchPanY() *component {
-	c.el.Style(styles.TouchPanY())
+func (c *Comp) TouchPanY() *Comp {
+	c.El.Style(styles.TouchPanY())
 	return c
 }
 
-func (c *component) TouchPinchZoom() *component {
-	c.el.Style(styles.TouchPinchZoom())
+func (c *Comp) TouchPinchZoom() *Comp {
+	c.El.Style(styles.TouchPinchZoom())
 	return c
 }
 
-func (c *component) TrackingBy(val value.Value) *component {
-	c.el.Style(styles.TrackingBy(val))
+func (c *Comp) TrackingBy(val value.Value) *Comp {
+	c.El.Style(styles.TrackingBy(val))
 	return c
 }
 
-func (c *component) TrackingNormal() *component {
-	c.el.Style(styles.TrackingNormal())
+func (c *Comp) TrackingNormal() *Comp {
+	c.El.Style(styles.TrackingNormal())
 	return c
 }
 
-func (c *component) TrackingTight() *component {
-	c.el.Style(styles.TrackingTight())
+func (c *Comp) TrackingTight() *Comp {
+	c.El.Style(styles.TrackingTight())
 	return c
 }
 
-func (c *component) TrackingTighter() *component {
-	c.el.Style(styles.TrackingTighter())
+func (c *Comp) TrackingTighter() *Comp {
+	c.El.Style(styles.TrackingTighter())
 	return c
 }
 
-func (c *component) TrackingWide() *component {
-	c.el.Style(styles.TrackingWide())
+func (c *Comp) TrackingWide() *Comp {
+	c.El.Style(styles.TrackingWide())
 	return c
 }
 
-func (c *component) TrackingWider() *component {
-	c.el.Style(styles.TrackingWider())
+func (c *Comp) TrackingWider() *Comp {
+	c.El.Style(styles.TrackingWider())
 	return c
 }
 
-func (c *component) TrackingWidest() *component {
-	c.el.Style(styles.TrackingWidest())
+func (c *Comp) TrackingWidest() *Comp {
+	c.El.Style(styles.TrackingWidest())
 	return c
 }
 
-func (c *component) Transform(val value.Value) *component {
-	c.el.Style(styles.Transform(val))
+func (c *Comp) Transform(val value.Value) *Comp {
+	c.El.Style(styles.Transform(val))
 	return c
 }
 
-func (c *component) Transform3d() *component {
-	c.el.Style(styles.Transform3d())
+func (c *Comp) Transform3d() *Comp {
+	c.El.Style(styles.Transform3d())
 	return c
 }
 
-func (c *component) TransformCpu() *component {
-	c.el.Style(styles.TransformCpu())
+func (c *Comp) TransformCpu() *Comp {
+	c.El.Style(styles.TransformCpu())
 	return c
 }
 
-func (c *component) TransformFkat() *component {
-	c.el.Style(styles.TransformFkat())
+func (c *Comp) TransformFkat() *Comp {
+	c.El.Style(styles.TransformFkat())
 	return c
 }
 
-func (c *component) TransformGpu() *component {
-	c.el.Style(styles.TransformGpu())
+func (c *Comp) TransformGpu() *Comp {
+	c.El.Style(styles.TransformGpu())
 	return c
 }
 
-func (c *component) TransformNone() *component {
-	c.el.Style(styles.TransformNone())
+func (c *Comp) TransformNone() *Comp {
+	c.El.Style(styles.TransformNone())
 	return c
 }
 
-func (c *component) Transition(val ...value.Value) *component {
-	c.el.Style(styles.Transition(val...))
+func (c *Comp) Transition(val ...value.Value) *Comp {
+	c.El.Style(styles.Transition(val...))
 	return c
 }
 
-func (c *component) TransitionAll() *component {
-	c.el.Style(styles.TransitionAll())
+func (c *Comp) TransitionAll() *Comp {
+	c.El.Style(styles.TransitionAll())
 	return c
 }
 
-func (c *component) TransitionColors() *component {
-	c.el.Style(styles.TransitionColors())
+func (c *Comp) TransitionColors() *Comp {
+	c.El.Style(styles.TransitionColors())
 	return c
 }
 
-func (c *component) TransitionDiscrete() *component {
-	c.el.Style(styles.TransitionDiscrete())
+func (c *Comp) TransitionDiscrete() *Comp {
+	c.El.Style(styles.TransitionDiscrete())
 	return c
 }
 
-func (c *component) TransitionNone() *component {
-	c.el.Style(styles.TransitionNone())
+func (c *Comp) TransitionNone() *Comp {
+	c.El.Style(styles.TransitionNone())
 	return c
 }
 
-func (c *component) TransitionNormal() *component {
-	c.el.Style(styles.TransitionNormal())
+func (c *Comp) TransitionNormal() *Comp {
+	c.El.Style(styles.TransitionNormal())
 	return c
 }
 
-func (c *component) TransitionOpacity() *component {
-	c.el.Style(styles.TransitionOpacity())
+func (c *Comp) TransitionOpacity() *Comp {
+	c.El.Style(styles.TransitionOpacity())
 	return c
 }
 
-func (c *component) TransitionShadow() *component {
-	c.el.Style(styles.TransitionShadow())
+func (c *Comp) TransitionShadow() *Comp {
+	c.El.Style(styles.TransitionShadow())
 	return c
 }
 
-func (c *component) TransitionTransform() *component {
-	c.el.Style(styles.TransitionTransform())
+func (c *Comp) TransitionTransform() *Comp {
+	c.El.Style(styles.TransitionTransform())
 	return c
 }
 
-func (c *component) Translate(val any) *component {
-	c.el.Style(styles.Translate(val))
+func (c *Comp) Translate(val any) *Comp {
+	c.El.Style(styles.Translate(val))
 	return c
 }
 
-func (c *component) TranslateFull() *component {
-	c.el.Style(styles.TranslateFull())
+func (c *Comp) TranslateFull() *Comp {
+	c.El.Style(styles.TranslateFull())
 	return c
 }
 
-func (c *component) TranslateNone() *component {
-	c.el.Style(styles.TranslateNone())
+func (c *Comp) TranslateNone() *Comp {
+	c.El.Style(styles.TranslateNone())
 	return c
 }
 
-func (c *component) TranslatePx() *component {
-	c.el.Style(styles.TranslatePx())
+func (c *Comp) TranslatePx() *Comp {
+	c.El.Style(styles.TranslatePx())
 	return c
 }
 
-func (c *component) TranslateX(val any) *component {
-	c.el.Style(styles.TranslateX(val))
+func (c *Comp) TranslateX(val any) *Comp {
+	c.El.Style(styles.TranslateX(val))
 	return c
 }
 
-func (c *component) TranslateXFull() *component {
-	c.el.Style(styles.TranslateXFull())
+func (c *Comp) TranslateXFull() *Comp {
+	c.El.Style(styles.TranslateXFull())
 	return c
 }
 
-func (c *component) TranslateXPx() *component {
-	c.el.Style(styles.TranslateXPx())
+func (c *Comp) TranslateXPx() *Comp {
+	c.El.Style(styles.TranslateXPx())
 	return c
 }
 
-func (c *component) TranslateY(val any) *component {
-	c.el.Style(styles.TranslateY(val))
+func (c *Comp) TranslateY(val any) *Comp {
+	c.El.Style(styles.TranslateY(val))
 	return c
 }
 
-func (c *component) TranslateYFull() *component {
-	c.el.Style(styles.TranslateYFull())
+func (c *Comp) TranslateYFull() *Comp {
+	c.El.Style(styles.TranslateYFull())
 	return c
 }
 
-func (c *component) TranslateYPx() *component {
-	c.el.Style(styles.TranslateYPx())
+func (c *Comp) TranslateYPx() *Comp {
+	c.El.Style(styles.TranslateYPx())
 	return c
 }
 
-func (c *component) TranslateZ(val any) *component {
-	c.el.Style(styles.TranslateZ(val))
+func (c *Comp) TranslateZ(val any) *Comp {
+	c.El.Style(styles.TranslateZ(val))
 	return c
 }
 
-func (c *component) TranslateZPx() *component {
-	c.el.Style(styles.TranslateZPx())
+func (c *Comp) TranslateZPx() *Comp {
+	c.El.Style(styles.TranslateZPx())
 	return c
 }
 
-func (c *component) Truncate() *component {
-	c.el.Style(styles.Truncate())
+func (c *Comp) Truncate() *Comp {
+	c.El.Style(styles.Truncate())
 	return c
 }
 
-func (c *component) Underline() *component {
-	c.el.Style(styles.Underline())
+func (c *Comp) Underline() *Comp {
+	c.El.Style(styles.Underline())
 	return c
 }
 
-func (c *component) UnderlineOffset(number int) *component {
-	c.el.Style(styles.UnderlineOffset(number))
+func (c *Comp) UnderlineOffset(number int) *Comp {
+	c.El.Style(styles.UnderlineOffset(number))
 	return c
 }
 
-func (c *component) UnderlineOffsetAuto() *component {
-	c.el.Style(styles.UnderlineOffsetAuto())
+func (c *Comp) UnderlineOffsetAuto() *Comp {
+	c.El.Style(styles.UnderlineOffsetAuto())
 	return c
 }
 
-func (c *component) UnderlineOffsetBy(val value.Value) *component {
-	c.el.Style(styles.UnderlineOffsetBy(val))
+func (c *Comp) UnderlineOffsetBy(val value.Value) *Comp {
+	c.El.Style(styles.UnderlineOffsetBy(val))
 	return c
 }
 
-func (c *component) Uppercase() *component {
-	c.el.Style(styles.Uppercase())
+func (c *Comp) Uppercase() *Comp {
+	c.El.Style(styles.Uppercase())
 	return c
 }
 
-func (c *component) Via(val value.Value) *component {
-	c.el.Style(styles.Via(val))
+func (c *Comp) Via(val value.Value) *Comp {
+	c.El.Style(styles.Via(val))
 	return c
 }
 
-func (c *component) Visible() *component {
-	c.el.Style(styles.Visible())
+func (c *Comp) Visible() *Comp {
+	c.El.Style(styles.Visible())
 	return c
 }
 
-func (c *component) W(number int) *component {
-	c.el.Style(styles.W(number))
+func (c *Comp) W(number int) *Comp {
+	c.El.Style(styles.W(number))
 	return c
 }
 
-func (c *component) W2xl() *component {
-	c.el.Style(styles.W2xl())
+func (c *Comp) W2xl() *Comp {
+	c.El.Style(styles.W2xl())
 	return c
 }
 
-func (c *component) W2xs() *component {
-	c.el.Style(styles.W2xs())
+func (c *Comp) W2xs() *Comp {
+	c.El.Style(styles.W2xs())
 	return c
 }
 
-func (c *component) W3xl() *component {
-	c.el.Style(styles.W3xl())
+func (c *Comp) W3xl() *Comp {
+	c.El.Style(styles.W3xl())
 	return c
 }
 
-func (c *component) W3xs() *component {
-	c.el.Style(styles.W3xs())
+func (c *Comp) W3xs() *Comp {
+	c.El.Style(styles.W3xs())
 	return c
 }
 
-func (c *component) W4xl() *component {
-	c.el.Style(styles.W4xl())
+func (c *Comp) W4xl() *Comp {
+	c.El.Style(styles.W4xl())
 	return c
 }
 
-func (c *component) W5xl() *component {
-	c.el.Style(styles.W5xl())
+func (c *Comp) W5xl() *Comp {
+	c.El.Style(styles.W5xl())
 	return c
 }
 
-func (c *component) W6xl() *component {
-	c.el.Style(styles.W6xl())
+func (c *Comp) W6xl() *Comp {
+	c.El.Style(styles.W6xl())
 	return c
 }
 
-func (c *component) W7xl() *component {
-	c.el.Style(styles.W7xl())
+func (c *Comp) W7xl() *Comp {
+	c.El.Style(styles.W7xl())
 	return c
 }
 
-func (c *component) WAuto() *component {
-	c.el.Style(styles.WAuto())
+func (c *Comp) WAuto() *Comp {
+	c.El.Style(styles.WAuto())
 	return c
 }
 
-func (c *component) WBy(val value.Value) *component {
-	c.el.Style(styles.WBy(val))
+func (c *Comp) WBy(val value.Value) *Comp {
+	c.El.Style(styles.WBy(val))
 	return c
 }
 
-func (c *component) WDvh() *component {
-	c.el.Style(styles.WDvh())
+func (c *Comp) WDvh() *Comp {
+	c.El.Style(styles.WDvh())
 	return c
 }
 
-func (c *component) WDvw() *component {
-	c.el.Style(styles.WDvw())
+func (c *Comp) WDvw() *Comp {
+	c.El.Style(styles.WDvw())
 	return c
 }
 
-func (c *component) WFit() *component {
-	c.el.Style(styles.WFit())
+func (c *Comp) WFit() *Comp {
+	c.El.Style(styles.WFit())
 	return c
 }
 
-func (c *component) WFraction(fraction float32) *component {
-	c.el.Style(styles.WFraction(fraction))
+func (c *Comp) WFraction(fraction float32) *Comp {
+	c.El.Style(styles.WFraction(fraction))
 	return c
 }
 
-func (c *component) WFull() *component {
-	c.el.Style(styles.WFull())
+func (c *Comp) WFull() *Comp {
+	c.El.Style(styles.WFull())
 	return c
 }
 
-func (c *component) WLg() *component {
-	c.el.Style(styles.WLg())
+func (c *Comp) WLg() *Comp {
+	c.El.Style(styles.WLg())
 	return c
 }
 
-func (c *component) WLvh() *component {
-	c.el.Style(styles.WLvh())
+func (c *Comp) WLvh() *Comp {
+	c.El.Style(styles.WLvh())
 	return c
 }
 
-func (c *component) WLvw() *component {
-	c.el.Style(styles.WLvw())
+func (c *Comp) WLvw() *Comp {
+	c.El.Style(styles.WLvw())
 	return c
 }
 
-func (c *component) WMax() *component {
-	c.el.Style(styles.WMax())
+func (c *Comp) WMax() *Comp {
+	c.El.Style(styles.WMax())
 	return c
 }
 
-func (c *component) WMd() *component {
-	c.el.Style(styles.WMd())
+func (c *Comp) WMd() *Comp {
+	c.El.Style(styles.WMd())
 	return c
 }
 
-func (c *component) WMin() *component {
-	c.el.Style(styles.WMin())
+func (c *Comp) WMin() *Comp {
+	c.El.Style(styles.WMin())
 	return c
 }
 
-func (c *component) WPx() *component {
-	c.el.Style(styles.WPx())
+func (c *Comp) WPx() *Comp {
+	c.El.Style(styles.WPx())
 	return c
 }
 
-func (c *component) WScreen() *component {
-	c.el.Style(styles.WScreen())
+func (c *Comp) WScreen() *Comp {
+	c.El.Style(styles.WScreen())
 	return c
 }
 
-func (c *component) WSm() *component {
-	c.el.Style(styles.WSm())
+func (c *Comp) WSm() *Comp {
+	c.El.Style(styles.WSm())
 	return c
 }
 
-func (c *component) WSvh() *component {
-	c.el.Style(styles.WSvh())
+func (c *Comp) WSvh() *Comp {
+	c.El.Style(styles.WSvh())
 	return c
 }
 
-func (c *component) WSvw() *component {
-	c.el.Style(styles.WSvw())
+func (c *Comp) WSvw() *Comp {
+	c.El.Style(styles.WSvw())
 	return c
 }
 
-func (c *component) WXl() *component {
-	c.el.Style(styles.WXl())
+func (c *Comp) WXl() *Comp {
+	c.El.Style(styles.WXl())
 	return c
 }
 
-func (c *component) WXs() *component {
-	c.el.Style(styles.WXs())
+func (c *Comp) WXs() *Comp {
+	c.El.Style(styles.WXs())
 	return c
 }
 
-func (c *component) WhitespaceBreakSpaces() *component {
-	c.el.Style(styles.WhitespaceBreakSpaces())
+func (c *Comp) WhitespaceBreakSpaces() *Comp {
+	c.El.Style(styles.WhitespaceBreakSpaces())
 	return c
 }
 
-func (c *component) WhitespaceNormal() *component {
-	c.el.Style(styles.WhitespaceNormal())
+func (c *Comp) WhitespaceNormal() *Comp {
+	c.El.Style(styles.WhitespaceNormal())
 	return c
 }
 
-func (c *component) WhitespaceNowrap() *component {
-	c.el.Style(styles.WhitespaceNowrap())
+func (c *Comp) WhitespaceNowrap() *Comp {
+	c.El.Style(styles.WhitespaceNowrap())
 	return c
 }
 
-func (c *component) WhitespacePre() *component {
-	c.el.Style(styles.WhitespacePre())
+func (c *Comp) WhitespacePre() *Comp {
+	c.El.Style(styles.WhitespacePre())
 	return c
 }
 
-func (c *component) WhitespacePreLine() *component {
-	c.el.Style(styles.WhitespacePreLine())
+func (c *Comp) WhitespacePreLine() *Comp {
+	c.El.Style(styles.WhitespacePreLine())
 	return c
 }
 
-func (c *component) WhitespacePreWrap() *component {
-	c.el.Style(styles.WhitespacePreWrap())
+func (c *Comp) WhitespacePreWrap() *Comp {
+	c.El.Style(styles.WhitespacePreWrap())
 	return c
 }
 
-func (c *component) WillChange(val value.Value) *component {
-	c.el.Style(styles.WillChange(val))
+func (c *Comp) WillChange(val value.Value) *Comp {
+	c.El.Style(styles.WillChange(val))
 	return c
 }
 
-func (c *component) WillChangeAuto() *component {
-	c.el.Style(styles.WillChangeAuto())
+func (c *Comp) WillChangeAuto() *Comp {
+	c.El.Style(styles.WillChangeAuto())
 	return c
 }
 
-func (c *component) WillChangeContents() *component {
-	c.el.Style(styles.WillChangeContents())
+func (c *Comp) WillChangeContents() *Comp {
+	c.El.Style(styles.WillChangeContents())
 	return c
 }
 
-func (c *component) WillChangeScroll() *component {
-	c.el.Style(styles.WillChangeScroll())
+func (c *Comp) WillChangeScroll() *Comp {
+	c.El.Style(styles.WillChangeScroll())
 	return c
 }
 
-func (c *component) WillChangeTransform() *component {
-	c.el.Style(styles.WillChangeTransform())
+func (c *Comp) WillChangeTransform() *Comp {
+	c.El.Style(styles.WillChangeTransform())
 	return c
 }
 
-func (c *component) WrapAnywhere() *component {
-	c.el.Style(styles.WrapAnywhere())
+func (c *Comp) WrapAnywhere() *Comp {
+	c.El.Style(styles.WrapAnywhere())
 	return c
 }
 
-func (c *component) WrapBreakWord() *component {
-	c.el.Style(styles.WrapBreakWord())
+func (c *Comp) WrapBreakWord() *Comp {
+	c.El.Style(styles.WrapBreakWord())
 	return c
 }
 
-func (c *component) WrapNormal() *component {
-	c.el.Style(styles.WrapNormal())
+func (c *Comp) WrapNormal() *Comp {
+	c.El.Style(styles.WrapNormal())
 	return c
 }
 
-func (c *component) Z(index int) *component {
-	c.el.Style(styles.Z(index))
+func (c *Comp) Z(index int) *Comp {
+	c.El.Style(styles.Z(index))
 	return c
 }
 
-func (c *component) ZAuto() *component {
-	c.el.Style(styles.ZAuto())
+func (c *Comp) ZAuto() *Comp {
+	c.El.Style(styles.ZAuto())
 	return c
 }
 
-func (c *component) ZBy(val value.Value) *component {
-	c.el.Style(styles.ZBy(val))
+func (c *Comp) ZBy(val value.Value) *Comp {
+	c.El.Style(styles.ZBy(val))
 	return c
 }

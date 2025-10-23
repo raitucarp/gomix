@@ -7,7 +7,7 @@ import (
 type forEachComponent[T any] struct {
 	items      []T
 	fallback   IsComponent
-	component  *component
+	component  *Comp
 	components []IsComponent
 }
 
@@ -15,8 +15,8 @@ func ForEach[T any](items ...T) *forEachComponent[T] {
 	f := &forEachComponent[T]{
 		items:    items,
 		fallback: element.Fragment().Element(),
-		component: &component{
-			el: element.Fragment().Element(),
+		component: &Comp{
+			El: element.Fragment().Element(),
 		},
 	}
 

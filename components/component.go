@@ -17,16 +17,16 @@ type IsComponent interface {
 	// Render() string
 }
 
-type component struct {
-	el *element.HtmlElement
+type Comp struct {
+	El *element.HtmlElement
 
 	// stylesheets []string
 	// scripts     []string
 }
 
 func Component(c IsComponent) IsComponent {
-	comp := &component{
-		el: c.Element(),
+	comp := &Comp{
+		El: c.Element(),
 	}
 
 	return *comp
@@ -71,15 +71,20 @@ func ApplyLayout(layout IsComponent, e IsComponent) IsComponent {
 	return n
 }
 
-func (e *component) Children(components ...IsComponent) *component {
+func (e *Comp) Children(components ...IsComponent) *Comp {
 	for _, comp := range components {
-		e.el.Children(comp.Element())
+		e.El.Children(comp.Element())
 	}
 	return e
 }
 
-func (e component) Element() *element.HtmlElement {
-	return e.el
+func (e Comp) Element() *element.HtmlElement {
+	return e.El
+}
+
+func (c *Comp) As(el element.IsElement) *Comp {
+	c.El.As(el)
+	return c
 }
 
 var styleAttrPattern = regexp.MustCompile(`data-style-`)

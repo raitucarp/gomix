@@ -5,19 +5,25 @@ import (
 )
 
 type text struct {
-	component *component
+	component *Comp
 }
 
 func Text(content string) *text {
 	text := &text{
-		component: &component{
-			el: element.P(element.Text(content)).Element(),
+		component: &Comp{
+			El: element.P(element.Text(content)).Element(),
 		},
 	}
+
+	text.component.Me(0).Ms(0).My(0).Mx(0)
 
 	return text
 }
 
 func (s *text) Element() *element.HtmlElement {
-	return s.component.el
+	return s.component.El
+}
+
+func (s *text) Component() *Comp {
+	return s.component
 }

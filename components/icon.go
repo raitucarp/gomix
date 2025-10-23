@@ -7,10 +7,10 @@ import (
 )
 
 type icon struct {
-	component *component
+	component *Comp
 }
 
-func (i *icon) Component() *component {
+func (i *icon) Component() *Comp {
 	return i.component
 }
 
@@ -45,13 +45,13 @@ func (i *icon) Size3Xl() *icon {
 }
 
 func (i *icon) Element() *element.HtmlElement {
-	return i.component.el
+	return i.component.El
 }
 
 func Icon(ic icons.IsIcon) *icon {
 	i := &icon{
-		component: &component{
-			el: ic.Element(),
+		component: &Comp{
+			El: ic.Element(),
 		},
 	}
 	i.Large()

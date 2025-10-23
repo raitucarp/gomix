@@ -5,420 +5,420 @@ import (
 )
 
 type listComponent struct {
-	component *component
+	component *Comp
 	variant   string
 }
 
 func (l *listComponent) Ordered(items ...IsComponent) *listComponent {
-	l.component.el.ChangeTagName("ol")
+	l.component.El.ChangeTagName("ol")
 
 	for _, item := range items {
-		l.component.el.Children(item)
+		l.component.El.Children(item)
 	}
 	return l
 }
 
 func (l *listComponent) Unordered(items ...IsComponent) *listComponent {
-	l.component.el.ChangeTagName("ul")
+	l.component.El.ChangeTagName("ul")
 
 	for _, item := range items {
-		l.component.el.Children(item)
+		l.component.El.Children(item)
 	}
 	return l
 }
 
 func (l *listComponent) TypeArabicIndic() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "arabic-indic, -moz-arabic-indic")
+		l.component.El.CSSProperty("list-style-type", "arabic-indic, -moz-arabic-indic")
 	}
 	return l
 }
 
 func (l *listComponent) TypeArmenian() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "armenian")
+		l.component.El.CSSProperty("list-style-type", "armenian")
 	}
 	return l
 }
 
 func (l *listComponent) TypeBengali() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "bengali, -moz-bengali")
+		l.component.El.CSSProperty("list-style-type", "bengali, -moz-bengali")
 	}
 	return l
 }
 
 func (l *listComponent) TypeCambodianKhmer() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "cambodian/khmer")
+		l.component.El.CSSProperty("list-style-type", "cambodian/khmer")
 	}
 	return l
 }
 
 func (l *listComponent) TypeCircle() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "circle")
+		l.component.El.CSSProperty("list-style-type", "circle")
 	}
 	return l
 }
 
 func (l *listComponent) TypeCjkDecimal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "cjk-decimal")
+		l.component.El.CSSProperty("list-style-type", "cjk-decimal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeCjkEarthlyBranch() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "cjk-earthly-branch, -moz-cjk-earthly-branch")
+		l.component.El.CSSProperty("list-style-type", "cjk-earthly-branch, -moz-cjk-earthly-branch")
 	}
 	return l
 }
 
 func (l *listComponent) TypeCjkHeavenlyStem() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "cjk-heavenly-stem, -moz-cjk-heavenly-stem")
+		l.component.El.CSSProperty("list-style-type", "cjk-heavenly-stem, -moz-cjk-heavenly-stem")
 	}
 	return l
 }
 
 func (l *listComponent) TypeCjkIdeographic() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "cjk-ideographic")
+		l.component.El.CSSProperty("list-style-type", "cjk-ideographic")
 	}
 	return l
 }
 
 func (l *listComponent) TypeDecimal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "decimal")
+		l.component.El.CSSProperty("list-style-type", "decimal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeDecimalLeadingZero() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "decimal-leading-zero")
+		l.component.El.CSSProperty("list-style-type", "decimal-leading-zero")
 	}
 	return l
 }
 
 func (l *listComponent) TypeDevanagari() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "devanagari, -moz-devanagari")
+		l.component.El.CSSProperty("list-style-type", "devanagari, -moz-devanagari")
 	}
 	return l
 }
 
 func (l *listComponent) TypeDisc() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "disc")
+		l.component.El.CSSProperty("list-style-type", "disc")
 	}
 	return l
 }
 
 func (l *listComponent) TypeDisclosureClosed() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "disclosure-closed")
+		l.component.El.CSSProperty("list-style-type", "disclosure-closed")
 	}
 	return l
 }
 
 func (l *listComponent) TypeDisclosureOpen() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "disclosure-open")
+		l.component.El.CSSProperty("list-style-type", "disclosure-open")
 	}
 	return l
 }
 
 func (l *listComponent) TypeEthiopicNumeric() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "ethiopic-numeric")
+		l.component.El.CSSProperty("list-style-type", "ethiopic-numeric")
 	}
 	return l
 }
 
 func (l *listComponent) TypeGeorgian() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "georgian")
+		l.component.El.CSSProperty("list-style-type", "georgian")
 	}
 	return l
 }
 
 func (l *listComponent) TypeGujarati() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "gujarati, -moz-gujarati")
+		l.component.El.CSSProperty("list-style-type", "gujarati, -moz-gujarati")
 	}
 	return l
 }
 
 func (l *listComponent) TypeGurmukhi() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "gurmukhi, -moz-gurmukhi")
+		l.component.El.CSSProperty("list-style-type", "gurmukhi, -moz-gurmukhi")
 	}
 	return l
 }
 
 func (l *listComponent) TypeHebrew() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "hebrew")
+		l.component.El.CSSProperty("list-style-type", "hebrew")
 	}
 	return l
 }
 
 func (l *listComponent) TypeHiragana() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "hiragana")
+		l.component.El.CSSProperty("list-style-type", "hiragana")
 	}
 	return l
 }
 
 func (l *listComponent) TypeHiraganaIroha() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "hiragana-iroha")
+		l.component.El.CSSProperty("list-style-type", "hiragana-iroha")
 	}
 	return l
 }
 
 func (l *listComponent) TypeJapaneseFormal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "japanese-formal")
+		l.component.El.CSSProperty("list-style-type", "japanese-formal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeJapaneseInformal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "japanese-informal")
+		l.component.El.CSSProperty("list-style-type", "japanese-informal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeKannada() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "kannada, -moz-kannada")
+		l.component.El.CSSProperty("list-style-type", "kannada, -moz-kannada")
 	}
 	return l
 }
 
 func (l *listComponent) TypeKatakana() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "katakana")
+		l.component.El.CSSProperty("list-style-type", "katakana")
 	}
 	return l
 }
 
 func (l *listComponent) TypeKatakanaIroha() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "katakana-iroha")
+		l.component.El.CSSProperty("list-style-type", "katakana-iroha")
 	}
 	return l
 }
 
 func (l *listComponent) TypeKoreanHangulFormal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "korean-hangul-formal")
+		l.component.El.CSSProperty("list-style-type", "korean-hangul-formal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeKoreanHanjaFormal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "korean-hanja-formal")
+		l.component.El.CSSProperty("list-style-type", "korean-hanja-formal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeKoreanHanjaInformal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "korean-hanja-informal")
+		l.component.El.CSSProperty("list-style-type", "korean-hanja-informal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeLao() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "lao, -moz-lao")
+		l.component.El.CSSProperty("list-style-type", "lao, -moz-lao")
 	}
 	return l
 }
 
 func (l *listComponent) TypeLowerAlpha() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "lower-alpha")
+		l.component.El.CSSProperty("list-style-type", "lower-alpha")
 	}
 	return l
 }
 
 func (l *listComponent) TypeLowerArmenian() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "lower-armenian")
+		l.component.El.CSSProperty("list-style-type", "lower-armenian")
 	}
 	return l
 }
 
 func (l *listComponent) TypeLowerGreek() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "lower-greek")
+		l.component.El.CSSProperty("list-style-type", "lower-greek")
 	}
 	return l
 }
 
 func (l *listComponent) TypeLowerLatin() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "lower-latin")
+		l.component.El.CSSProperty("list-style-type", "lower-latin")
 	}
 	return l
 }
 
 func (l *listComponent) TypeLowerRoman() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "lower-roman")
+		l.component.El.CSSProperty("list-style-type", "lower-roman")
 	}
 	return l
 }
 
 func (l *listComponent) TypeMalayalam() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "malayalam, -moz-malayalam")
+		l.component.El.CSSProperty("list-style-type", "malayalam, -moz-malayalam")
 	}
 	return l
 }
 
 func (l *listComponent) TypeMongolian() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "mongolian")
+		l.component.El.CSSProperty("list-style-type", "mongolian")
 	}
 	return l
 }
 
 func (l *listComponent) TypeMyanmar() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "myanmar, -moz-myanmar")
+		l.component.El.CSSProperty("list-style-type", "myanmar, -moz-myanmar")
 	}
 	return l
 }
 
 func (l *listComponent) TypeNone() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "none")
+		l.component.El.CSSProperty("list-style-type", "none")
 	}
 	return l
 }
 
 func (l *listComponent) TypeOriya() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "oriya, -moz-oriya")
+		l.component.El.CSSProperty("list-style-type", "oriya, -moz-oriya")
 	}
 	return l
 }
 
 func (l *listComponent) TypePersian() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "persian, -moz-persian")
+		l.component.El.CSSProperty("list-style-type", "persian, -moz-persian")
 	}
 	return l
 }
 
 func (l *listComponent) TypeSimpChineseFormal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "simp-chinese-formal")
+		l.component.El.CSSProperty("list-style-type", "simp-chinese-formal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeSimpChineseInformal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "simp-chinese-informal")
+		l.component.El.CSSProperty("list-style-type", "simp-chinese-informal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeSquare() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "square")
+		l.component.El.CSSProperty("list-style-type", "square")
 	}
 	return l
 }
 
 func (l *listComponent) TypeTamil() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "tamil, -moz-tamil")
+		l.component.El.CSSProperty("list-style-type", "tamil, -moz-tamil")
 	}
 	return l
 }
 
 func (l *listComponent) TypeTelugu() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "telugu, -moz-telugu")
+		l.component.El.CSSProperty("list-style-type", "telugu, -moz-telugu")
 	}
 	return l
 }
 
 func (l *listComponent) TypeThai() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "thai, -moz-thai")
+		l.component.El.CSSProperty("list-style-type", "thai, -moz-thai")
 	}
 	return l
 }
 
 func (l *listComponent) TypeTibetan() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "tibetan")
+		l.component.El.CSSProperty("list-style-type", "tibetan")
 	}
 	return l
 }
 
 func (l *listComponent) TypeTradChineseFormal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "trad-chinese-formal")
+		l.component.El.CSSProperty("list-style-type", "trad-chinese-formal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeTradChineseInformal() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "trad-chinese-informal")
+		l.component.El.CSSProperty("list-style-type", "trad-chinese-informal")
 	}
 	return l
 }
 
 func (l *listComponent) TypeUpperAlpha() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "upper-alpha")
+		l.component.El.CSSProperty("list-style-type", "upper-alpha")
 	}
 	return l
 }
 
 func (l *listComponent) TypeUpperArmenian() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "upper-armenian")
+		l.component.El.CSSProperty("list-style-type", "upper-armenian")
 	}
 	return l
 }
 
 func (l *listComponent) TypeUpperLatin() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "upper-latin")
+		l.component.El.CSSProperty("list-style-type", "upper-latin")
 	}
 	return l
 }
 
 func (l *listComponent) TypeUpperRoman() *listComponent {
 	if l.variant == "marker" {
-		l.component.el.CSSProperty("list-style-type", "upper-roman")
+		l.component.El.CSSProperty("list-style-type", "upper-roman")
 	}
 	return l
 }
 
 func (l *listComponent) Outside() *listComponent {
-	l.component.el.CSSProperty("list-style-position", "outside")
+	l.component.El.CSSProperty("list-style-position", "outside")
 	return l
 }
 
 func (l *listComponent) Inside() *listComponent {
-	l.component.el.CSSProperty("list-style-position", "inside")
+	l.component.El.CSSProperty("list-style-position", "inside")
 	return l
 }
 
@@ -440,18 +440,18 @@ func (l *listComponent) Unstyled() *listComponent {
 	return l
 }
 
-func (l *listComponent) Component() *component {
+func (l *listComponent) Component() *Comp {
 	return l.component
 }
 
 func (l *listComponent) Element() *element.HtmlElement {
-	return l.component.el
+	return l.component.El
 }
 
 func List() *listComponent {
 	c := &listComponent{
-		component: &component{
-			el: element.Ol().Element(),
+		component: &Comp{
+			El: element.Ol().Element(),
 		},
 		variant: "marker",
 	}
@@ -462,22 +462,22 @@ func List() *listComponent {
 }
 
 type listItemComponent struct {
-	component *component
+	component *Comp
 }
 
-func (l *listItemComponent) Component() *component {
+func (l *listItemComponent) Component() *Comp {
 	return l.component
 }
 func (l *listItemComponent) IsListItem() {}
 
 func (l *listItemComponent) Element() *element.HtmlElement {
-	return l.component.el
+	return l.component.El
 }
 
 func ListItem(children ...IsComponent) *listItemComponent {
 	el := &listItemComponent{
-		component: &component{
-			el: element.Li().Element(),
+		component: &Comp{
+			El: element.Li().Element(),
 		},
 	}
 

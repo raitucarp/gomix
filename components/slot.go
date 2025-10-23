@@ -6,13 +6,13 @@ import (
 )
 
 type slot struct {
-	component *component
+	component *Comp
 }
 
 func Slot() *slot {
 	slot := &slot{
-		component: &component{
-			el: element.CreateElementByNode(&html.Node{
+		component: &Comp{
+			El: element.CreateElementByNode(&html.Node{
 				Type: html.ElementNode,
 				Data: "slot",
 			}),
@@ -23,5 +23,5 @@ func Slot() *slot {
 }
 
 func (s *slot) Element() *element.HtmlElement {
-	return s.component.el
+	return s.component.El
 }
