@@ -124,6 +124,11 @@ func (a *alpine) Element() *element.HtmlElement { return a.el }
 func (a *alpine) Render() string                { return a.el.Render() }
 
 func (a *alpine) Data(data any) *alpine {
+	if s, ok := data.(string); ok {
+		a.el.AddAttribute("x-data", s)
+		return a
+	}
+
 	jsonData, _ := json.Marshal(data)
 	a.el.AddAttribute("x-data", string(jsonData))
 	return a
