@@ -15,6 +15,14 @@ func removeFragment(n *html.Node) {
 			return
 		}
 
+		for child := n.FirstChild; child != nil; child = child.NextSibling {
+			if child.Type == html.ElementNode {
+				for _, attr := range n.Attr {
+					child.Attr = append(child.Attr, attr)
+				}
+			}
+		}
+
 		for child := n.FirstChild; child != nil; {
 			next := child.NextSibling
 			n.RemoveChild(child)
