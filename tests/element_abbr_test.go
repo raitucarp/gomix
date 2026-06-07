@@ -16,7 +16,7 @@ func TestElement_AbbrSimple(t *testing.T) {
 }
 
 func TestElementAbbr_GlobalAttributes(t *testing.T) {
-	text := element.Text("test")
+	//text := element.Text("test")
 
 	tests := []struct {
 		name     string
@@ -24,19 +24,19 @@ func TestElementAbbr_GlobalAttributes(t *testing.T) {
 		expected string
 	}{
 		{"id attribute",
-			element.Element(element.Abbr(text)).Id("test").Render(),
+			element.Element(element.Abbr(element.Text("test"))).Id("test").Render(),
 			`<abbr id="test">test</abbr>`},
 		{"class attribute",
-			element.Element(element.Abbr(text)).Class("test", "test2").Render(),
+			element.Element(element.Abbr(element.Text("test"))).Class("test", "test2").Render(),
 			`<abbr class="test test2">test</abbr>`},
 		{"data-name attribute",
-			element.Element(element.Abbr(text)).Data("name", "test").Render(),
+			element.Element(element.Abbr(element.Text("test"))).Data("name", "test").Render(),
 			`<abbr data-name="test">test</abbr>`},
 		{"data-dummy attribute",
-			element.Element(element.Abbr(text)).Data("dummy", "test").Render(),
+			element.Element(element.Abbr(element.Text("test"))).Data("dummy", "test").Render(),
 			`<abbr data-dummy="test">test</abbr>`},
 		{"dir attribute",
-			element.Element(element.Abbr(text)).Dir(element.DirectionLtr).Render(),
+			element.Element(element.Abbr(element.Text("test"))).Dir(element.DirectionLtr).Render(),
 			`<abbr dir="ltr">test</abbr>`},
 	}
 

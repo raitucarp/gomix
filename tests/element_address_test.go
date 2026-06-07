@@ -16,7 +16,7 @@ func TestElement_AddressSimple(t *testing.T) {
 }
 
 func TestElementAddress_GlobalAttributes(t *testing.T) {
-	text := element.Text("test")
+	//text := element.Text("test")
 
 	tests := []struct {
 		name     string
@@ -24,19 +24,19 @@ func TestElementAddress_GlobalAttributes(t *testing.T) {
 		expected string
 	}{
 		{"id attribute",
-			element.Element(element.Address(text)).Id("test").Render(),
+			element.Element(element.Address(element.Text("test"))).Id("test").Render(),
 			`<address id="test">test</address>`},
 		{"class attribute",
-			element.Element(element.Address(text)).Class("test", "test2").Render(),
+			element.Element(element.Address(element.Text("test"))).Class("test", "test2").Render(),
 			`<address class="test test2">test</address>`},
 		{"data-name attribute",
-			element.Element(element.Address(text)).Data("name", "test").Render(),
+			element.Element(element.Address(element.Text("test"))).Data("name", "test").Render(),
 			`<address data-name="test">test</address>`},
 		{"data-dummy attribute",
-			element.Element(element.Address(text)).Data("dummy", "test").Render(),
+			element.Element(element.Address(element.Text("test"))).Data("dummy", "test").Render(),
 			`<address data-dummy="test">test</address>`},
 		{"dir attribute",
-			element.Element(element.Address(text)).Dir(element.DirectionLtr).Render(),
+			element.Element(element.Address(element.Text("test"))).Dir(element.DirectionLtr).Render(),
 			`<address dir="ltr">test</address>`},
 	}
 

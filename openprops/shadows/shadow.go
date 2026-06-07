@@ -10,4 +10,3 @@ const (
 	Shadow_5 Shadow = "--shadow-5"
 	Shadow_6 Shadow = "--shadow-6"
 )
-

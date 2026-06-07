@@ -4,4 +4,3 @@ type Command interface {
 	Command()
 	String() string
 }
-

@@ -58,7 +58,7 @@ func TestOnClickAccentColorToBody(t *testing.T) {
 		),
 	)
 
-	expected := "on change add { --accent-color: my.value } to document.body"
+	expected := "on click add { --accent-color: my.value } to my."
 
 	if actual != expected {
 		t.Errorf("expected %s, but got %s", expected, actual)
