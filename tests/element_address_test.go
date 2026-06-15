@@ -16,7 +16,6 @@ func TestElement_AddressSimple(t *testing.T) {
 }
 
 func TestElementAddress_GlobalAttributes(t *testing.T) {
-	//text := element.Text("test")
 
 	tests := []struct {
 		name     string

@@ -51,14 +51,14 @@ func TestOnClickAddDisabled(t *testing.T) {
 
 func TestOnClickAccentColorToBody(t *testing.T) {
 	actual := h.String(
-		h.On(h.EventClick).Command(
+		h.On(h.EventChange).Command(
 			h.Add(
 				h.CSSObject("--accent-color", h.AttributeOf(h.My()).Value()),
-			).To(h.My().Attribute()),
+			).To(h.DocumentBody()),
 		),
 	)
 
-	expected := "on click add { --accent-color: my.value } to my."
+	expected := "on change add { --accent-color: my.value } to document.body"
 
 	if actual != expected {
 		t.Errorf("expected %s, but got %s", expected, actual)

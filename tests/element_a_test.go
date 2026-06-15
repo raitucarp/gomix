@@ -24,8 +24,7 @@ func TestElementA_Simple(t *testing.T) {
 }
 
 func TestElementA_Attributes(t *testing.T) {
-	////text := element.Text("test")
-
+	//
 	tests := []struct {
 		name     string
 		actual   string
@@ -52,8 +51,7 @@ func TestElementA_Attributes(t *testing.T) {
 }
 
 func TestElementA_GlobalAttributes(t *testing.T) {
-	////text := element.Text("test")
-
+	//
 	tests := []struct {
 		name     string
 		actual   string

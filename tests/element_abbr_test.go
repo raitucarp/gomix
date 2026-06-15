@@ -16,7 +16,6 @@ func TestElement_AbbrSimple(t *testing.T) {
 }
 
 func TestElementAbbr_GlobalAttributes(t *testing.T) {
-	//text := element.Text("test")
 
 	tests := []struct {
 		name     string
