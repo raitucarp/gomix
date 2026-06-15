@@ -20,10 +20,10 @@ func ComponentContent(page *gomix.Page) isComponent {
 		compName = compParam.(string)
 	}
 
-	return div(
-		h1(text(compName)),
+	return VStack(
+		Heading(text(compName)).Component().FontBold().TextXl(),
 		renderComponentExample(compName),
-	)
+	).Component().PBy(value.Rem(1)).GapBy(value.Rem(1)).WFull()
 }
 
 func ComponentsGallery(page *gomix.Page) isComponent {
