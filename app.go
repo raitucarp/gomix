@@ -4,7 +4,11 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"net/http/httptest"
+	"os"
+	"path/filepath"
 	"slices"
+	"strings"
 	"time"
 
 	"github.com/gorilla/mux"
@@ -17,6 +21,8 @@ type Application struct {
 	name string
 	port int
 	host string
+
+	static string
 
 	features []string
 	addons   []string
@@ -53,7 +59,9 @@ func App(params ...AppParam) {
 		}
 	}
 
-	if app.port > 0 {
+	if app.static != "" {
+		app.generateSSG()
+	} else if app.port > 0 {
 		app.serve()
 	}
 }
@@ -62,6 +70,14 @@ func Name(name string) AppParam {
 	return func(app *Application) (Scope, func(params ...any)) {
 		return AppScope, func(params ...any) {
 			app.name = name
+		}
+	}
+}
+
+func Static(dir string) AppParam {
+	return func(app *Application) (Scope, func(params ...any)) {
+		return AppScope, func(params ...any) {
+			app.static = dir
 		}
 	}
 }
@@ -194,7 +210,7 @@ func (app *Application) favicon(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte{})
 }
 
-func (app *Application) serve() {
+func (app *Application) getMuxRouter() *mux.Router {
 	r := mux.NewRouter()
 
 	allPages := app.flattenPages()
@@ -218,6 +234,91 @@ func (app *Application) serve() {
 	}
 
 	r.HandleFunc("/favicon.ico", app.favicon)
+
+	return r
+}
+
+func (app *Application) generateSSG() {
+	log.Printf("Generating static site to directory: %s\n", app.static)
+
+	err := os.MkdirAll(app.static, 0755)
+	if err != nil {
+		log.Fatalf("Failed to create static directory: %v", err)
+	}
+
+	r := app.getMuxRouter()
+	allPages := app.flattenPages()
+
+	for _, page := range allPages {
+		if page.kind == pageNormal {
+			pathsToGenerate := []string{string(page.path)}
+			if len(page.ssgPaths) > 0 {
+				pathsToGenerate = page.ssgPaths
+			}
+
+			for _, pathStr := range pathsToGenerate {
+				req := httptest.NewRequest("GET", pathStr, nil)
+				w := httptest.NewRecorder()
+
+				r.ServeHTTP(w, req)
+
+				if w.Result().StatusCode == http.StatusOK {
+					// create directory
+					dirPath := filepath.Join(app.static, pathStr)
+
+					// ensure it ends with html file
+					if !strings.HasSuffix(dirPath, ".html") {
+						if err := os.MkdirAll(dirPath, 0755); err != nil {
+							log.Printf("Failed to create directory %s: %v\n", dirPath, err)
+							continue
+						}
+						dirPath = filepath.Join(dirPath, "index.html")
+					} else {
+						if err := os.MkdirAll(filepath.Dir(dirPath), 0755); err != nil {
+							log.Printf("Failed to create directory %s: %v\n", filepath.Dir(dirPath), err)
+							continue
+						}
+					}
+
+
+					err := os.WriteFile(dirPath, w.Body.Bytes(), 0644)
+					if err != nil {
+						log.Printf("Failed to write file %s: %v\n", dirPath, err)
+					} else {
+						log.Printf("Generated: %s\n", dirPath)
+					}
+				} else {
+					log.Printf("Failed to generate path: %s, Status Code: %d\n", pathStr, w.Result().StatusCode)
+				}
+			}
+		}
+	}
+
+	// generate 404
+	req := httptest.NewRequest("GET", "/404", nil)
+	w := httptest.NewRecorder()
+
+	for _, page := range allPages {
+		if page.kind == pageNotFound {
+			r.ServeHTTP(w, req)
+			if w.Result().StatusCode == http.StatusOK || w.Result().StatusCode == http.StatusNotFound {
+				dirPath := filepath.Join(app.static, "404.html")
+				err := os.WriteFile(dirPath, w.Body.Bytes(), 0644)
+				if err != nil {
+					log.Printf("Failed to write file %s: %v\n", dirPath, err)
+				} else {
+					log.Printf("Generated: %s\n", dirPath)
+				}
+			}
+			break
+		}
+	}
+
+	log.Println("Static site generation completed.")
+}
+
+func (app *Application) serve() {
+	r := app.getMuxRouter()
 
 	logString := fmt.Sprintf("Server %s listening on %d", app.name, app.port)
 
