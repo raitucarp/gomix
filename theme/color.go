@@ -2,7 +2,6 @@ package theme
 
 import (
 	"fmt"
-
 )
 
 func ColorGray(scale int, value string) ThemeParam {

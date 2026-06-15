@@ -9,6 +9,7 @@ import (
 )
 
 type Namespace = constants.ThemeNamespace
+
 const Color = constants.ThemeColor
 const Font = constants.ThemeFont
 const Text = constants.ThemeText
@@ -29,7 +30,6 @@ const Aspect = constants.ThemeAspect
 const Ease = constants.ThemeEase
 const Animate = constants.ThemeAnimate
 const Custom = constants.ThemeCustom
-
 
 type UtilityClass map[string]string
 

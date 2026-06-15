@@ -51,10 +51,10 @@ func TestOnClickAddDisabled(t *testing.T) {
 
 func TestOnClickAccentColorToBody(t *testing.T) {
 	actual := h.String(
-		h.On(h.EventClick).Command(
+		h.On(h.EventChange).Command(
 			h.Add(
 				h.CSSObject("--accent-color", h.AttributeOf(h.My()).Value()),
-			).To(h.My().Attribute()),
+			).To(h.DocumentBody()),
 		),
 	)
 

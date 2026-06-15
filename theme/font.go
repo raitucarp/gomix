@@ -3,7 +3,6 @@ package theme
 import (
 	"fmt"
 	"strings"
-
 )
 
 func FontSans(fonts ...string) ThemeParam {
