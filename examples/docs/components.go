@@ -14,36 +14,16 @@ type DropdownData struct {
 }
 
 func ComponentContent(page *gomix.Page) isComponent {
+	compParam := page.Param("component")
+	var compName string
+	if compParam != nil {
+		compName = compParam.(string)
+	}
+
 	return div(
-
-		alpine(
-			div(
-				alpine(
-					button(text("Toggle Dropdown")),
-				).On("click", "open = ! open"),
-
-				alpine(
-					div(text("Dropdown Contents...")),
-				).Show("open"),
-			),
-		).Data(&DropdownData{Open: false}),
-
-		Accordion(
-			AccordionItem(
-				div(text("baraya")),
-				div(text("Content 1")),
-			),
-			AccordionItem(
-				div(text("baraya2")),
-				div(text("Content 2")),
-			),
-			AccordionItem(
-				div(text("babaa 3")),
-				div(text("Content 3")),
-			),
-		),
+		h1(text(compName)),
+		renderComponentExample(compName),
 	)
-
 }
 
 func ComponentsGallery(page *gomix.Page) isComponent {
