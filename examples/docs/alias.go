@@ -48,7 +48,7 @@ var fragment = gomix.FragmentComponent
 var title_ = gomix.PageTitle
 var component = gomix.PageComponent
 var fragment_component = gomix.FragmentComponent
-var ssg_paths = gomix.SSGPaths
+var static_paths = gomix.StaticGenerationPath
 
 // addons scope alias
 var _htmx = htmx.Addon

@@ -22,7 +22,8 @@ type Application struct {
 	port int
 	host string
 
-	static string
+	static        string
+	portSetByUser bool
 
 	features []string
 	addons   []string
@@ -57,6 +58,10 @@ func App(params ...AppParam) {
 		if scope == AppScope {
 			runFn()
 		}
+	}
+
+	if app.static != "" && app.portSetByUser {
+		log.Fatal("Conflict: Cannot use both Static generation and Port (Server) simultaneously. Please configure either Static() or Port().")
 	}
 
 	if app.static != "" {
@@ -125,6 +130,7 @@ func Port(port int) AppParam {
 	return func(app *Application) (Scope, func(params ...any)) {
 		return AppScope, func(params ...any) {
 			app.port = port
+			app.portSetByUser = true
 		}
 	}
 }
@@ -252,8 +258,8 @@ func (app *Application) generateSSG() {
 	for _, page := range allPages {
 		if page.kind == pageNormal {
 			pathsToGenerate := []string{string(page.path)}
-			if len(page.ssgPaths) > 0 {
-				pathsToGenerate = page.ssgPaths
+			if len(page.staticGenerationPaths) > 0 {
+				pathsToGenerate = page.staticGenerationPaths
 			}
 
 			for _, pathStr := range pathsToGenerate {

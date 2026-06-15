@@ -71,7 +71,7 @@ func webSetup() gomix.AppParam {
 			page_at(componentsPath,
 				title_("{component} Component"),
 				component(ComponentContent),
-				ssg_paths("/components/list", "/components/link", "/components/stack", "/components/card"),
+				static_paths("/components/list", "/components/link", "/components/stack", "/components/card"),
 			),
 		),
 		page_at(tutorialsPath,

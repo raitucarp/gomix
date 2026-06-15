@@ -55,7 +55,7 @@ type Page struct {
 	response  http.ResponseWriter
 	params    map[string]any
 
-	ssgPaths []string
+	staticGenerationPaths []string
 }
 
 func newPage(path LocationPath) *Page {
@@ -276,12 +276,12 @@ func PageTitle(title string) AppParam {
 	}
 }
 
-func SSGPaths(paths ...string) AppParam {
+func StaticGenerationPath(paths ...string) AppParam {
 	return func(app *Application) (scope Scope, fn func(params ...any)) {
 		return PageScope, func(params ...any) {
 			if len(params) > 0 {
 				if page, ok := params[0].(*Page); ok {
-					page.ssgPaths = append(page.ssgPaths, paths...)
+					page.staticGenerationPaths = append(page.staticGenerationPaths, paths...)
 				}
 			}
 
