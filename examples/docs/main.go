@@ -2,6 +2,7 @@ package main
 
 import (
 	"embed"
+	"flag"
 	"log"
 
 	"github.com/raitucarp/gomix"
@@ -70,6 +71,7 @@ func webSetup() gomix.AppParam {
 			page_at(componentsPath,
 				title_("{component} Component"),
 				component(ComponentContent),
+				static_paths("/components/list", "/components/link", "/components/stack", "/components/card"),
 			),
 		),
 		page_at(tutorialsPath,
@@ -86,13 +88,22 @@ func webSetup() gomix.AppParam {
 }
 
 func main() {
-	app(
+	isSsg := flag.Bool("ssg", false, "Enable SSG")
+	flag.Parse()
+
+	appParams := []gomix.AppParam{
 		name("gomix Documentation"),
 		features(
 			logger(),
 		),
 		webSetup(),
-		port(8080),
-	)
+	}
 
+	if *isSsg {
+		appParams = append(appParams, static("./dist"))
+	} else {
+		appParams = append(appParams, port(8080))
+	}
+
+	app(appParams...)
 }

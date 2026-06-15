@@ -54,6 +54,8 @@ type Page struct {
 	request   *http.Request
 	response  http.ResponseWriter
 	params    map[string]any
+
+	staticGenerationPaths []string
 }
 
 func newPage(path LocationPath) *Page {
@@ -267,6 +269,19 @@ func PageTitle(title string) AppParam {
 			if len(params) > 0 {
 				if page, ok := params[0].(*Page); ok {
 					page.title = title
+				}
+			}
+
+		}
+	}
+}
+
+func StaticGenerationPath(paths ...string) AppParam {
+	return func(app *Application) (scope Scope, fn func(params ...any)) {
+		return PageScope, func(params ...any) {
+			if len(params) > 0 {
+				if page, ok := params[0].(*Page); ok {
+					page.staticGenerationPaths = append(page.staticGenerationPaths, paths...)
 				}
 			}
 

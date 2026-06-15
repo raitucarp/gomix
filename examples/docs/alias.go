@@ -39,6 +39,7 @@ var style = gomix.Style
 var not_found_page = gomix.NotFoundPage
 var layout = gomix.PageLayout
 var title_template = gomix.TitleTemplate
+var static = gomix.Static
 
 // fragment scope
 var fragment = gomix.FragmentComponent
@@ -47,6 +48,7 @@ var fragment = gomix.FragmentComponent
 var title_ = gomix.PageTitle
 var component = gomix.PageComponent
 var fragment_component = gomix.FragmentComponent
+var static_paths = gomix.StaticGenerationPath
 
 // addons scope alias
 var _htmx = htmx.Addon
