@@ -22,9 +22,14 @@ func ComponentContent(page *gomix.Page) isComponent {
 		compName = compParam.(string)
 	}
 
+    rendered := pages.Render(compName)
+    if rendered == nil {
+        rendered = div(text("Not implemented fully mapped for " + compName))
+    }
+
 	return VStack(
 		Heading(text(compName)).Component().FontBold().TextXl(),
-		pages.Render(compName),
+		rendered,
 	).Component().PBy(value.Rem(1)).GapBy(value.Rem(1)).WFull()
 }
 
