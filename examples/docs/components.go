@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/raitucarp/gomix/examples/docs/pages"
 
 	"github.com/raitucarp/gomix"
 	"github.com/raitucarp/gomix/value"
@@ -22,7 +21,7 @@ func ComponentContent(page *gomix.Page) isComponent {
 		compName = compParam.(string)
 	}
 
-    rendered := pages.Render(compName)
+    rendered := Render(compName)
     if rendered == nil {
         rendered = div(text("Not implemented fully mapped for " + compName))
     }
