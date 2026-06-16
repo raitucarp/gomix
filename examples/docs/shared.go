@@ -23,7 +23,10 @@ func Playground(title string, description string, code string, child components.
         Heading(text(title)).Component().TextXl().FontBold(),
         TextCmp(text(description)).Component().TextSm().TextColor(value.Hex("#666")),
         preview,
-        Code(text(code)).Component().WFull().WhitespacePreWrap().PBy(value.Rem(1)).BgSlate(100).RoundedMd(),
+        VStack(
+            Heading(text("Code Example")).Component().TextLg().FontBold(),
+            Code(text(code)).Component().WFull().WhitespacePreWrap().PBy(value.Rem(1)).BgSlate(100).RoundedMd(),
+        ).Component().GapBy(value.Rem(0.5)).WFull().MtBy(value.Rem(1)),
     ).Component().GapBy(value.Rem(0.5)).WFull()
 }
 

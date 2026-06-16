@@ -7,7 +7,7 @@ import (
 
 func RenderButton() components.IsComponent {
 	return VStack(
-		// Playground("Import & Setup", "Define an alias to use the component cleanly throughout your project.", `import "github.com/raitucarp/gomix/components/buttons"
+		Playground("Import & Setup", "Define an alias to use the component cleanly throughout your project.", `import "github.com/raitucarp/gomix/components/buttons"
 
 var Button = buttons.Button`, nil),
 		Playground("Basic Usage", "Standard implementation of the Button component.", `Button(text("Button")).ColorScheme("blue")`, Button(text("Button")).ColorScheme("blue").Component()),

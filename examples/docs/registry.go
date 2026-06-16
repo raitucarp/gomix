@@ -60,6 +60,8 @@ func Render(componentName string) components.IsComponent {
 		return RenderIconButton()
 	case "accordion":
 		return RenderAccordion()
+	case "disclosure":
+		return RenderDisclosure()
 	case "text_cmp":
 		return RenderTextCmp()
 	case "slider":
