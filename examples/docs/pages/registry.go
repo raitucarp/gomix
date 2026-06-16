@@ -1,0 +1,102 @@
+package pages
+
+import "github.com/raitucarp/gomix/components"
+
+func Render(componentName string) components.IsComponent {
+    switch componentName {
+	case "accordion":
+		return RenderAccordionDoc()
+	case "tabs":
+		return RenderTabsDoc()
+	case "visually_hidden":
+		return RenderVisuallyHiddenDoc()
+	case "disclosure":
+		return RenderDisclosureDoc()
+	case "tooltip":
+		return RenderTooltipDoc()
+	case "menu":
+		return RenderMenuDoc()
+	case "modal":
+		return RenderModalDoc()
+	case "popover":
+		return RenderPopoverDoc()
+	case "drawer":
+		return RenderDrawerDoc()
+	case "alert_dialog":
+		return RenderAlertDialogDoc()
+	case "icon_button":
+		return RenderIconButtonDoc()
+	case "button":
+		return RenderButtonDoc()
+	case "close_button":
+		return RenderCloseButtonDoc()
+	case "kbd":
+		return RenderKbdDoc()
+	case "text_cmp":
+		return RenderTextCmpDoc()
+	case "code":
+		return RenderCodeDoc()
+	case "heading":
+		return RenderHeadingDoc()
+	case "skeleton":
+		return RenderSkeletonDoc()
+	case "toast":
+		return RenderToastDoc()
+	case "progress":
+		return RenderProgressDoc()
+	case "circular_progress":
+		return RenderCircularProgressDoc()
+	case "spinner":
+		return RenderSpinnerDoc()
+	case "alert":
+		return RenderAlertDoc()
+	case "image":
+		return RenderImageDoc()
+	case "icon":
+		return RenderIconDoc()
+	case "avatar":
+		return RenderAvatarDoc()
+	case "pin_input":
+		return RenderPinInputDoc()
+	case "input":
+		return RenderInputDoc()
+	case "slider":
+		return RenderSliderDoc()
+	case "radio":
+		return RenderRadioDoc()
+	case "switch_cmp":
+		return RenderSwitchCmpDoc()
+	case "checkbox":
+		return RenderCheckboxDoc()
+	case "textarea":
+		return RenderTextareaDoc()
+	case "number_input":
+		return RenderNumberInputDoc()
+	case "select_native":
+		return RenderSelectNativeDoc()
+	case "table":
+		return RenderTableDoc()
+	case "tag":
+		return RenderTagDoc()
+	case "badge":
+		return RenderBadgeDoc()
+	case "divider":
+		return RenderDividerDoc()
+	case "stat":
+		return RenderStatDoc()
+	case "spacer":
+		return RenderSpacerDoc()
+	case "stack":
+		return RenderStackDoc()
+	case "simple_grid":
+		return RenderSimpleGridDoc()
+	case "grid":
+		return RenderGridDoc()
+	case "center":
+		return RenderCenterDoc()
+	case "wrap":
+		return RenderWrapDoc()
+    default:
+        return nil
+    }
+}

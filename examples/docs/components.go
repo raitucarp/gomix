@@ -1,6 +1,8 @@
 package main
 
 import (
+	"github.com/raitucarp/gomix/examples/docs/pages"
+
 	"github.com/raitucarp/gomix"
 	"github.com/raitucarp/gomix/value"
 )
@@ -22,7 +24,7 @@ func ComponentContent(page *gomix.Page) isComponent {
 
 	return VStack(
 		Heading(text(compName)).Component().FontBold().TextXl(),
-		renderComponentExample(compName),
+		pages.Render(compName),
 	).Component().PBy(value.Rem(1)).GapBy(value.Rem(1)).WFull()
 }
 
