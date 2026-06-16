@@ -2,7 +2,6 @@ package main
 
 import (
 	"embed"
-	"flag"
 	"log"
 
 	"github.com/raitucarp/gomix"
@@ -17,10 +16,10 @@ func check(err error) {
 }
 
 const (
-	homePath          = page_path("/")
-	componentListPath = page_path("/components/")
-	componentsPath    = page_path("/components/{component}")
-	tutorialsPath     = page_path("/tutorials")
+	homePath          = page_path("/gomix/docs/")
+	componentListPath = page_path("/gomix/docs/components/")
+	componentsPath    = page_path("/gomix/docs/components/{component}")
+	tutorialsPath     = page_path("/gomix/docs/tutorials")
 )
 
 //go:embed alpine
@@ -71,7 +70,8 @@ func webSetup() gomix.AppParam {
 			page_at(componentsPath,
 				title_("{component} Component"),
 				component(ComponentContent),
-				static_paths("/components/list", "/components/link", "/components/stack", "/components/card"),
+				static_paths("/gomix/docs/components/button", "/gomix/docs/components/close_button", "/gomix/docs/components/icon_button", "/gomix/docs/components/badge", "/gomix/docs/components/divider", "/gomix/docs/components/stat", "/gomix/docs/components/table", "/gomix/docs/components/tag", "/gomix/docs/components/accordion", "/gomix/docs/components/disclosure", "/gomix/docs/components/tabs", "/gomix/docs/components/visually_hidden", "/gomix/docs/components/alert", "/gomix/docs/components/circular_progress", "/gomix/docs/components/progress", "/gomix/docs/components/skeleton", "/gomix/docs/components/spinner", "/gomix/docs/components/toast", "/gomix/docs/components/checkbox", "/gomix/docs/components/input", "/gomix/docs/components/number_input", "/gomix/docs/components/pin_input", "/gomix/docs/components/radio", "/gomix/docs/components/select_native", "/gomix/docs/components/slider", "/gomix/docs/components/switch_cmp", "/gomix/docs/components/textarea", "/gomix/docs/components/center", "/gomix/docs/components/grid", "/gomix/docs/components/simple_grid", "/gomix/docs/components/spacer", "/gomix/docs/components/stack", "/gomix/docs/components/wrap", "/gomix/docs/components/avatar", "/gomix/docs/components/icon", "/gomix/docs/components/image", "/gomix/docs/components/alert_dialog", "/gomix/docs/components/drawer", "/gomix/docs/components/menu", "/gomix/docs/components/modal", "/gomix/docs/components/popover", "/gomix/docs/components/tooltip", "/gomix/docs/components/code", "/gomix/docs/components/heading", "/gomix/docs/components/kbd", "/gomix/docs/components/text_cmp"),
+
 			),
 		),
 		page_at(tutorialsPath,
@@ -88,8 +88,6 @@ func webSetup() gomix.AppParam {
 }
 
 func main() {
-	isSsg := flag.Bool("ssg", false, "Enable SSG")
-	flag.Parse()
 
 	appParams := []gomix.AppParam{
 		name("gomix Documentation"),
@@ -99,11 +97,7 @@ func main() {
 		webSetup(),
 	}
 
-	if *isSsg {
-		appParams = append(appParams, static("./dist"))
-	} else {
-		appParams = append(appParams, port(8080))
-	}
+	appParams = append(appParams, static("./dist"))
 
 	app(appParams...)
 }

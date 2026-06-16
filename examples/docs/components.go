@@ -1,6 +1,7 @@
 package main
 
 import (
+
 	"github.com/raitucarp/gomix"
 	"github.com/raitucarp/gomix/value"
 )
@@ -14,36 +15,21 @@ type DropdownData struct {
 }
 
 func ComponentContent(page *gomix.Page) isComponent {
-	return div(
+	compParam := page.Param("component")
+	var compName string
+	if compParam != nil {
+		compName = compParam.(string)
+	}
 
-		alpine(
-			div(
-				alpine(
-					button(text("Toggle Dropdown")),
-				).On("click", "open = ! open"),
+    rendered := Render(compName)
+    if rendered == nil {
+        rendered = div(text("Not implemented fully mapped for " + compName))
+    }
 
-				alpine(
-					div(text("Dropdown Contents...")),
-				).Show("open"),
-			),
-		).Data(&DropdownData{Open: false}),
-
-		Accordion(
-			AccordionItem(
-				div(text("baraya")),
-				div(text("Content 1")),
-			),
-			AccordionItem(
-				div(text("baraya2")),
-				div(text("Content 2")),
-			),
-			AccordionItem(
-				div(text("babaa 3")),
-				div(text("Content 3")),
-			),
-		),
-	)
-
+	return VStack(
+		Heading(text(compName)).Component().FontBold().TextXl(),
+		rendered,
+	).Component().PBy(value.Rem(1)).GapBy(value.Rem(1)).WFull()
 }
 
 func ComponentsGallery(page *gomix.Page) isComponent {

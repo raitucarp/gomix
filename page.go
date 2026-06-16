@@ -135,6 +135,10 @@ func (page *Page) applyTitle(defaultTitle string, titleTemplate string) {
 	page.titleTemplate = titleTemplate
 }
 
+func (page *Page) Param(key string) any {
+	return page.params[key]
+}
+
 func (page *Page) Request() *http.Request {
 	return page.request
 }
